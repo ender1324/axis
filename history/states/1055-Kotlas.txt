@@ -1,0 +1,20 @@
+
+state={
+	id=1055
+	name="STATE_1055"
+	state_category = rural
+	history = {
+		owner = RKR
+		add_claim_by = RKR
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		186 3102 3177 6110 6213 11110 11192 
+	}
+	manpower=21484
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

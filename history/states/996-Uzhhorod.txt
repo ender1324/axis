@@ -1,0 +1,22 @@
+state={
+	id=996
+	name="STATE_996"
+	manpower = 30000
+	
+	state_category = developed_rural	#Uzhorod + Mukachevo - industrial centres of the region, were roughly there
+	
+	history={
+		victory_points = { 13301 1 }
+		buildings = {
+			infrastructure = 3
+		}
+		owner = HUN
+		add_core_of = HUN	#high Hungarian population, especially in the Southern part of it
+	}
+	
+	provinces={
+		13301
+	}
+
+	local_supplies = 0.0
+}

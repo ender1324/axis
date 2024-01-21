@@ -1,0 +1,26 @@
+state={
+	id=934
+	name="STATE_934"
+
+	history={
+		owner = GER
+		victory_points = {
+			3254 1
+		}
+		buildings = {
+			infrastructure = 2 #was 5
+		}
+		add_core_of = GER
+		add_claim_by = POL
+
+	}
+
+	provinces={
+		400 3254 
+	}
+	manpower=41683
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies = 0.0 
+}

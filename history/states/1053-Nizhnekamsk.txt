@@ -1,0 +1,19 @@
+
+state={
+	id=1053
+	name="STATE_1053"
+	state_category = rural
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		292 355 403 3214 3328 3348 6308 6352 6368 9385 9401 9514 10301 11339 11389 11496 
+	}
+	manpower=234044
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

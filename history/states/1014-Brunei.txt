@@ -1,0 +1,34 @@
+
+state={
+	id=1014
+	name="STATE_1014"
+	resources={
+		rubber=2
+		oil=8 # Couldn't say for certain how much they have but this seems reasonable
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			7371 2
+		}
+		buildings = {
+			infrastructure = 2 
+			7371 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={ # Could/should have an extra province for their little exclave
+		7371
+	}
+	manpower=31135
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

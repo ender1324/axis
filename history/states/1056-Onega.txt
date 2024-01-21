@@ -1,0 +1,23 @@
+
+state={
+	id=1056
+	name="STATE_1056"
+	state_category = rural
+	history = {
+		victory_points = {
+			9248 5 
+		}
+		owner = RKR
+		add_claim_by = RKR
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		140 312 3080 3092 3130 3168 6102 9248 11038 11171 
+	}
+	manpower=298053
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

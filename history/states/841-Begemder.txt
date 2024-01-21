@@ -1,0 +1,25 @@
+
+state={
+	id=841
+	name="STATE_841"
+
+	history={
+		buildings = {
+
+		}
+		victory_points = {
+			1984 2 
+		}
+		owner = ETH
+		add_core_of = ETH
+		add_core_of = QEM
+	}
+
+	provinces={
+		1984 2040 13137 13290
+	}
+	manpower=1100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,44 @@
+characters={	
+	FAK_lord_debug={
+		country_leader={
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = moderatism
+			traits = {
+				armaments_organizer
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				ideological_crusader
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				indomitable_perseverance
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		name="Lord Debug"
+	}
+}

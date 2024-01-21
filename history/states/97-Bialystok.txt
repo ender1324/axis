@@ -1,0 +1,27 @@
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+		owner = GER
+		victory_points = {
+			11301 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+		}
+		add_core_of = GER
+		add_claim_by = POL
+	}
+
+	provinces={
+		290 347 11247 11274 11301 11329 11357 
+	}
+	manpower=1115517
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

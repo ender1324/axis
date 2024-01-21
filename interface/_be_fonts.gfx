@@ -1,0 +1,20 @@
+bitmapfonts = {
+	bitmapfont = {
+		name = "Arialcap"
+		path = "gfx/fonts/Arialcap"
+		color = 0xffffffff
+		
+		textcolors = {
+			#
+		}
+	}
+	bitmapfont = {
+		name = "Arialsmallcap"
+		path = "gfx/fonts/Arialsmallcap"
+		color = 0xffffffff
+		
+		textcolors = {
+			#
+		}
+	}
+}
