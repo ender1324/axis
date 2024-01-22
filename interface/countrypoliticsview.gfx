@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_power_balance_icon"
+		textureFile = "gfx/interface/power_balance_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_power_balance_button"
+		textureFile = "gfx/interface/power_balance_button.dds"
+	}
+	
+	spriteType = {
+		name = "extended_country_button_vertical"
+		textureFile = "gfx/interface/extended_country_button_vertical.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pol_chart_hide"
+		textureFile = "gfx/interface/pol_chart_hide.dds"
+	}
+}
