@@ -10,6 +10,8 @@
  SL_state_tt: "[SL_state]"
  SL_gov_status_tt: "[SL_gov_status]"
  SL_desc_tt: "[SL_desc]"
+ country_special_gui_tt: "Click to ENTER or EXIT §6special mechanism§! interface"
+ country_special_icon_tt: "Special mechanisms have not been enabled yet"
  ###########
  
  SL_govstatus: "§C[FROM.GetVLGovStatus]§! of [FROM.GetFlag]§Y[FROM.GetName]§!\n" # King of [FLAG] England

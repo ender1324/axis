@@ -87,7 +87,7 @@ guiTypes = {
 			iconType ={
 				name ="pol_view_bg"
 				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x= -2 y = 1s }
+				position = { x= -2 y = 1 }
 			}
 		}
 		
@@ -1809,19 +1809,6 @@ guiTypes = {
 			maxHeight = 20
 			fixedsize = yes
 			alwaystransparent = yes
-		}
-	}
-	
-	containerWindowType = {
-		name = "country_chart_hide"
-		position = { x = 349 y = 236 }
-		
-		iconType = {
-			name = "pol_chart_hide_icon"
-			spriteType = "GFX_pol_chart_hide"
-			position = { x = 0 y = 0 }
-			Orientation = "UPPER_LEFT"
-			pdx_tooltip = country_chart_hide_tt
 		}
 	}
 	
