@@ -365,7 +365,7 @@ intelligence_agency = {
 	names = { "Hammer and Sickle" }
 	
 	available = { 
-		has_government = communism
+		is_communist_ideology = yes
 	}
 	
 	default = { always = yes } 

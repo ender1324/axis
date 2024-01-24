@@ -53,18 +53,19 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 18 y = 102 }
-			size = { width = 330 height = 70 }
-			clipping = no
-			
-#			background = {
-#				name = "Background"		
-#				spriteType ="GFX_pol_piechart_bg"
-#			}
+			position = { x=283 y=166 }
+			size = { width = 260 height = 130 }
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			#needed for scrollbar
+			background = {
+				name = "ideology_background"
+				spriteType = "GFX_ideology_background" # this things broken right now, i give up on trying to fix it
+			} # scrollbar works but the background clips the right border, re-positioning expands the background scroll trigger but does not move the background itself
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = 265 y = 64 }
+				position = { x = 0 y = 0 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 230 height = 16 }
 				format = "UPPER_LEFT"

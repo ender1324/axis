@@ -247,7 +247,7 @@ technologies = {
 
 			modifier = {
 				factor = 0
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 			}
 		}
 		
@@ -279,7 +279,7 @@ technologies = {
 
 			modifier = {
 				factor = 0
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 			}
 		}
 		

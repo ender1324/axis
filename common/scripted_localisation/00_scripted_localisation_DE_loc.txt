@@ -54,19 +54,19 @@ defined_text = {
 defined_text = {
 	name = GetRulingIdeologyNoun_DE_ART_DEF_S_N
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { is_fascist_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_fascism_noun
 	}
 	text = {
-		trigger = { has_government = communism }
+		trigger = { is_communist_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_communism_noun
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { is_democratic_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_democratic_noun
 	}
 	text = {
-		trigger = { has_government = neutrality }
+		trigger = { is_despotic_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_neutrality_noun
 	}
 }
@@ -75,19 +75,19 @@ defined_text = {
 defined_text = {
 	name = GetRulingIdeologyNoun_DE_ART_DEF_S_G
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { is_fascist_ideology = yes }
 		localization_key = DE_ART_DEF_S_G_fascism_noun
 	}
 	text = {
-		trigger = { has_government = communism }
+		trigger = { is_communist_ideology = yes }
 		localization_key = DE_ART_DEF_S_G_communism_noun
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { is_democratic_ideology = yes }
 		localization_key = DE_ART_DEF_S_G_democratic_noun
 	}
 	text = {
-		trigger = { has_government = neutrality }
+		trigger = { is_despotic_ideology = yes }
 		localization_key = DE_ART_DEF_S_G_neutrality_noun
 	}
 }
@@ -96,19 +96,19 @@ defined_text = {
 defined_text = {
 	name = GetRulingIdeologyNoun_DE_ART_DEF_S_D
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { is_fascist_ideology = yes }
 		localization_key = DE_ART_DEF_S_D_fascism_noun
 	}
 	text = {
-		trigger = { has_government = communism }
+		trigger = { is_communist_ideology = yes }
 		localization_key = DE_ART_DEF_S_D_communism_noun
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { is_democratic_ideology = yes }
 		localization_key = DE_ART_DEF_S_D_democratic_noun
 	}
 	text = {
-		trigger = { has_government = neutrality }
+		trigger = { is_despotic_ideology = yes }
 		localization_key = DE_ART_DEF_S_D_neutrality_noun
 	}
 }
@@ -117,19 +117,19 @@ defined_text = {
 defined_text = {
 	name = GetRulingIdeologyNoun_DE_ART_DEF_S_A
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { is_fascist_ideology = yes }
 		localization_key = DE_ART_DEF_S_A_fascism_noun
 	}
 	text = {
-		trigger = { has_government = communism }
+		trigger = { is_communist_ideology = yes }
 		localization_key = DE_ART_DEF_S_A_communism_noun
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { is_democratic_ideology = yes }
 		localization_key = DE_ART_DEF_S_A_democratic_noun
 	}
 	text = {
-		trigger = { has_government = neutrality }
+		trigger = { is_despotic_ideology = yes }
 		localization_key = DE_ART_DEF_S_A_neutrality_noun
 	}
 }
@@ -138,19 +138,19 @@ defined_text = {
 defined_text = {
 	name = GetRulingIdeologyNoun_DE_ART_DEF_S_N_Cap
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { is_fascist_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_Cap_fascism_noun
 	}
 	text = {
-		trigger = { has_government = communism }
+		trigger = { is_communist_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_Cap_communism_noun
 	}
 	text = {
-		trigger = { has_government = democratic }
+		trigger = { is_democratic_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_Cap_democratic_noun
 	}
 	text = {
-		trigger = { has_government = neutrality }
+		trigger = { is_despotic_ideology = yes }
 		localization_key = DE_ART_DEF_S_N_Cap_neutrality_noun
 	}
 }
@@ -162,7 +162,7 @@ defined_text = {
 	name = GetGermanCountryLeaderTitle_DE_ART_DEF_S_D
 	text = {
 		trigger = { 
-			GER = { has_government = fascism }
+			GER = { is_fascist_ideology = yes }
 		}
 		localization_key = DE_ART_DEF_S_D_GER_fascism_leader_title
 	}
@@ -176,7 +176,7 @@ defined_text = { #Blackshirt Assault Battalion name
 	name = GetBlackshirtAssaultBattalionName_DE_ART_DEF_S_N
 	text = {
 		trigger = { 
-			has_government = communism
+			is_communist_ideology = yes
 		}
 		localization_key = DE_ART_DEF_S_N_blackshirt_assault_battalion_communism
 	}

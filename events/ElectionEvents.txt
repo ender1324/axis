@@ -28,7 +28,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		NOT = {
 			OR = {
 				has_war = yes
@@ -76,7 +76,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_war = no
 		OR = {
 			any_neighbor_country = {
@@ -144,7 +144,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		fascism > 0.15
 	}
 	
@@ -179,7 +179,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.03
 		}
 		set_country_flag = government_declined_fascists
@@ -196,7 +196,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		communism > 0.15
 	}
 	
@@ -248,7 +248,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.03
 		}
 		set_country_flag = government_declined_communists
@@ -265,10 +265,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
-		democratic < 0.5
-		fascism < 0.5
-		communism < 0.5
+		is_democratic_ideology = yes
+		liberalism < 0.5
+		conservatism < 0.5
+		progressivism < 0.5
 	}
 	
 	option = {
@@ -313,7 +313,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.05
 		}
 		add_political_power = -80
@@ -332,10 +332,10 @@ country_event = {
 	}
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
-			has_government = fascism
+			is_fascist_ideology = yes
 			is_faction_leader = yes
 		}
 	}
@@ -355,7 +355,7 @@ country_event = {
 		}
 		random_other_country = {
 			limit = {
-				has_government = fascism
+				is_fascist_ideology = yes
 				is_faction_leader = yes
 			}
 			add_opinion_modifier = {
@@ -380,7 +380,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.03
 		}
 	}
@@ -398,10 +398,10 @@ country_event = {
 	}
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_country_flag = coalition_with_communists
 		any_other_country = {
-			has_government = communism
+			is_communist_ideology = yes
 			is_faction_leader = yes
 		}
 	}
@@ -421,7 +421,7 @@ country_event = {
 		}
 		random_other_country = {
 			limit = {
-				has_government = communism
+				is_communist_ideology = yes
 				is_faction_leader = yes
 				NOT = { has_war_with = ROOT }
 			}
@@ -447,7 +447,7 @@ country_event = {
 		}
 		add_stability = -0.05
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.03
 		}
 	}
@@ -463,7 +463,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		fascism > 0.5
 		is_puppet = no
 	}
@@ -502,7 +502,7 @@ country_event = {
 
 	trigger = {
 
-		has_government = democratic
+		is_democratic_ideology = yes
 		communism > 0.5
 		is_puppet = no
 	}
@@ -540,7 +540,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_idea_with_trait = motorized_equipment_manufacturer
 	}
 	
@@ -569,7 +569,7 @@ country_event = {
 			}
 		}
 		add_popularity = {
-			ideology = democratic
+			ideology = liberalism
 			popularity = 0.05
 		}
 		remove_ideas_with_trait = motorized_equipment_manufacturer
@@ -586,7 +586,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_war = yes
 	}
 	
@@ -638,7 +638,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = democratic
+		is_democratic_ideology = yes
 		has_war = yes
 		any_war_score < 20
 	}
@@ -692,7 +692,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = fascism
+		is_fascist_ideology = yes
 		fascism > 0.5
 	}
 	
@@ -712,7 +712,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_government = fascism
+		is_fascist_ideology = yes
 		NOT = { fascism > 0.5 }
 	}
 	

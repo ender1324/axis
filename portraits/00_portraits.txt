@@ -52,28 +52,87 @@ continent = {
 	}
 	
 	political = {
-		communism = {
+		vanguardism = {
 				male = { 
-				"GFX_Portrait_Europe_Generic_1"
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
+		communism = {
 				male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
 				male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
+		national_socialism = {
 				male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
-
 }
 
 continent = {
@@ -98,28 +157,87 @@ continent = {
 	}
 
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
-
 }
 
 continent = {
@@ -143,28 +261,87 @@ continent = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_3" 
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
 	}
-
 }
 
 continent = {
@@ -189,24 +366,84 @@ continent = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		progressivism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
@@ -234,34 +471,124 @@ continent = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_1"	
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_2" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+		communism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Army_Generic"
-				"GFX_Portrait_South_Africa_Army_Generic_2"
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
 			}
 		}
 	}
@@ -290,24 +617,84 @@ continent = {
 	}
 
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Asia_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Asia_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Asia_Generic_3" 
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Asia_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Asia_Generic_3" 
 			}
 		}
 	}	
@@ -333,24 +720,84 @@ continent = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_2"
+		communism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
 			}
 		}
 	}
@@ -365,10 +812,6 @@ GER = {
 			"GFX_Portrait_Germany_Generic_land_3"
 			"GFX_Portrait_Germany_Generic_land_4"
 			"GFX_Portrait_Germany_Generic_land_5"
-			"GFX_Portrait_Germany_Generic_land_6"
-			"GFX_Portrait_Germany_Generic_land_7"
-			"GFX_Portrait_Germany_Generic_land_8"
-			"GFX_Portrait_Germany_Generic_land_9"
 		}
 	}
 	
@@ -390,10 +833,6 @@ ENG = {
 			"GFX_Portrait_Britain_Generic_land_4"
 			"GFX_Portrait_Britain_Generic_land_5"
 			"GFX_Portrait_Britain_Generic_land_6"
-			"GFX_Portrait_Britain_Generic_land_7"
-			"GFX_Portrait_Britain_Generic_land_8"
-			"GFX_Portrait_Britain_Generic_land_9"
-			"GFX_Portrait_Britain_Generic_land_10"
 		}
 	}
 	
@@ -477,10 +916,6 @@ FRA = {
 			"GFX_Portrait_France_Generic_land_3"
 			"GFX_Portrait_France_Generic_land_4"
 			"GFX_Portrait_France_Generic_land_5"
-			"GFX_Portrait_France_Generic_land_6"
-			"GFX_Portrait_France_Generic_land_7"
-			"GFX_Portrait_France_Generic_land_8"
-			"GFX_Portrait_France_Generic_land_9"
 		}
 	}
 	
@@ -499,17 +934,7 @@ ITA = {
 			"GFX_Portrait_Italy_Generic_land_1"
 			"GFX_Portrait_Italy_Generic_land_2"
 			"GFX_Portrait_Italy_Generic_land_3"
-			"GFX_Portrait_Italy_Generic_land_4"
 			"GFX_Portrait_Italy_Generic_land_5"
-			"GFX_Portrait_Italy_Generic_land_6"
-			"GFX_Portrait_Italy_Generic_land_7"
-			"GFX_Portrait_Italy_Generic_land_8"
-		}
-		female = {
-			"GFX_portrait_ITA_generic_female_1"
-			"GFX_portrait_ITA_generic_female_2"
-			"GFX_portrait_ITA_generic_female_3"
-			"GFX_portrait_ITA_generic_female_4"
 		}
 	}
 	
@@ -530,10 +955,6 @@ JAP = {
 			"GFX_Portrait_Japan_Generic_land_3"
 			"GFX_Portrait_Japan_Generic_land_4"
 			"GFX_Portrait_Japan_Generic_land_5"
-			"GFX_Portrait_Japan_Generic_land_6"
-			"GFX_Portrait_Japan_Generic_land_7"
-			"GFX_Portrait_Japan_Generic_land_8"
-			"GFX_Portrait_Japan_Generic_land_9"
 		}
 	}
 	
@@ -555,10 +976,6 @@ SOV = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_Soviet_Generic_land_6"
-			"GFX_Portrait_Soviet_Generic_land_7"
-			"GFX_Portrait_Soviet_Generic_land_8"
-			"GFX_Portrait_Soviet_Generic_land_9"
 		}
 	}
 	
@@ -579,10 +996,6 @@ USA = {
 			"GFX_Portrait_USA_Generic_land_3"
 			"GFX_Portrait_USA_Generic_land_4"
 			"GFX_Portrait_USA_Generic_land_5"
-			"GFX_Portrait_USA_Generic_land_6"
-			"GFX_Portrait_USA_Generic_land_7"
-			"GFX_Portrait_USA_Generic_land_8"
-			"GFX_Portrait_USA_Generic_land_9"
 		}
 	}
 	
@@ -692,24 +1105,84 @@ RAJ = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+		communism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_The_Raj_Army_Generic"
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic"
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic"
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic"
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic"
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic"
 			}
 		}
 	}
@@ -725,24 +1198,84 @@ PAK = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+		communism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_The_Raj_Army_Generic_2"
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic_2"
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic_2"
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic_2" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Army_Generic_2"
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_The_Raj_Political_Leader_Generic_2"
 			}
 		}
 	}
@@ -787,24 +1320,84 @@ AFG = {
 		}
 	}
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_2"
+		communism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_2"
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Arabia_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Arabia_Generic_3" 
 			}
 		}
 	}
@@ -912,13 +1505,48 @@ GEO = {
 	}
 	political = {
 		fascism = {
-			male = { 
-				"GFX_Portrait_Soviet_Generic_3"
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Soviet_Generic_3"
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Soviet_Generic_3"
 			}
 		}
 	}	
@@ -944,33 +1572,121 @@ BAH = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_1"	
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_2" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+		communism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_1"	
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_2" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"		
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
-				"GFX_Portrait_South_Africa_Army_Generic"
-				"GFX_Portrait_South_Africa_Army_Generic_2"
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Africa_Generic_3" 
-				"GFX_Portrait_South_Africa_Political_Leader_Generic"
-				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+					"GFX_Portrait_South_Africa_Army_Generic"
+					"GFX_Portrait_South_Africa_Army_Generic_2"
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Africa_Generic_3" 
+					"GFX_Portrait_South_Africa_Political_Leader_Generic"
+					"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
 			}
 		}
 	}
@@ -996,154 +1712,1320 @@ BLZ = {
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_3" 
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_South_America_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
 			}
 		}
 	}
 }
-
-FIN = {
+FER = {
 	army = {
 		male = {
-			"GFX_portrait_Finland_Generic_land_1"
-			"GFX_portrait_Finland_Generic_land_2"
-			"GFX_portrait_Finland_Generic_land_3"
-			"GFX_portrait_Finland_Generic_land_4"
-			"GFX_portrait_Finland_Generic_land_5"
-			"GFX_portrait_Finland_Generic_land_6"
-			"GFX_portrait_Finland_Generic_land_7"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"GFX_portrait_Finland_Generic_navy_1"
-			"GFX_portrait_Finland_Generic_navy_2"
-			"GFX_portrait_Finland_Generic_navy_3"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
 }
-
-#SAMI
-SMI = {
+VLA = {
 	army = {
 		male = {
-			"GFX_portrait_generic_sami_army_general_1"
-			"GFX_portrait_generic_sami_army_general_2"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"GFX_portrait_generic_sami_navy_admiral_1"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_portrait_SMI_sami_council"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_portrait_SMI_sami_council" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_portrait_SMI_sami_council" 
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_portrait_SMI_sami_council" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}
 }
-
-# Karelia
-KAR = {
+NEN = {
 	army = {
 		male = {
-			"GFX_portrait_Finland_Generic_land_1"
-			"GFX_portrait_Finland_Generic_land_2"
-			"GFX_portrait_Finland_Generic_land_3"
-			"GFX_portrait_Finland_Generic_land_4"
-			"GFX_portrait_Finland_Generic_land_5"
-			"GFX_portrait_Finland_Generic_land_6"
-			"GFX_portrait_Finland_Generic_land_7"
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
 		}
 	}
 	
 	navy = {
 		male = {
-			"GFX_portrait_Finland_Generic_navy_1"
-			"GFX_portrait_Finland_Generic_navy_2"
-			"GFX_portrait_Finland_Generic_navy_3"
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
 		}
 	}
 	
 	political = {
-		communism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_1"
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
 			}
 		}
-		democratic = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_2" 
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
 			}
 		}
 		fascism = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
-		neutrality = {
-			male = { 
-				"GFX_Portrait_Europe_Generic_3" 
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+TAY = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+OVO = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+TAT = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+CHU = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+UDM = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+KOM = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+VGE = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+MEL = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+BSK = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		vanguardism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		anarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		liberalism1 = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		liberalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		conservatism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		national_socialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		racialism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		occultism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		paternalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		oligarchism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		despotism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		reactionism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		radical_traditionalism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
 			}
 		}
 	}

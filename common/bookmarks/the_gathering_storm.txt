@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
@@ -24,7 +24,7 @@ bookmarks = {
 		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { has_dlc = "La Resistance" } 
 			ideas = {
 				FRA_victors_of_wwi
@@ -39,7 +39,7 @@ bookmarks = {
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -53,7 +53,7 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
 				stiff_upper_lip
@@ -68,7 +68,7 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
@@ -183,7 +183,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
@@ -197,7 +197,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				AST_great_depression_1
 			}
@@ -210,7 +210,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				
 			}
@@ -223,7 +223,7 @@ bookmarks = {
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				SAF_ossewabrandwag
 				SAF_history_of_segregation
@@ -251,7 +251,7 @@ bookmarks = {
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				CZE_skoda_works
 				CZE_divided_nation
@@ -443,7 +443,7 @@ bookmarks = {
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				HOL_wilhelmina
 				HOL_shell_shocked_spectator_5
@@ -459,7 +459,7 @@ bookmarks = {
 		"SPR"={
 			minor = yes
 			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				SPR_military_disloyalty
 				SPA_carlism_1
@@ -475,7 +475,7 @@ bookmarks = {
 		"POR"={
 			minor = yes
 			history = "PORTUGAL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				POR_unstable_republic
 				POR_unreliable_army
@@ -607,7 +607,7 @@ bookmarks = {
 		"SWI"={
 			minor = yes
 			history = "SWI_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 			}
 			focuses = {
@@ -644,7 +644,7 @@ bookmarks = {
 		SWE={
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 				SWE_hungershield
@@ -660,7 +660,7 @@ bookmarks = {
 		"NOR"={
 			minor = yes
 			history = "NOR_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				NOR_complacent_cabinet_ns
 				NOR_the_hard_thirties_ns
@@ -675,7 +675,7 @@ bookmarks = {
 		"DEN"={
 			minor = yes
 			history = DEN_GATHERING_STORM_DESC
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				DEN_fake_neglected_military_ns 
 				DEN_fake_economic_crisis_ns

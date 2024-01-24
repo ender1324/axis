@@ -1435,7 +1435,7 @@ comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking all
 	}
 	enable = {
 		is_historical_focus_on = yes
-		SOV = { has_government = communism }
+		SOV = { is_communist_ideology = yes }
 		OR = {
 			USA = {
 				has_capitulated = no
@@ -1491,14 +1491,14 @@ allies_avoid_starting_wars_during_endgame = { #Allies should avoid attacking.. w
 	}
 	enable = {
 		is_historical_focus_on = yes
-		ENG = { has_government = democratic }
+		ENG = { is_democratic_ideology = yes }
 		OR = {
 			tag = ENG
 			is_in_faction_with = ENG
 		}
 		has_war_with = JAP
 		JAP = {
-			has_government = fascism #Just to make sure we're not looking at a puppet or sth
+			is_fascist_ideology = yes #Just to make sure we're not looking at a puppet or sth
 		}
 		date > 1943.1.1
 		date < 1945.1.1

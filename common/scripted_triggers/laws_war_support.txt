@@ -38,7 +38,6 @@ has_unsupported_manpower_law = {
 		}
 			has_idea = limited_conscription
 			has_war_support < 0.1
-			hidden_trigger = { NOT = { tag = TUR } }
 	}
 	else_if = {
 		limit = {
@@ -46,8 +45,8 @@ has_unsupported_manpower_law = {
 		}
 			has_idea = extensive_conscription
 			has_war_support < 0.2
-			NOT = { has_government = communism }
-			NOT = { has_government = fascism }
+			NOT = { is_communist_ideology = yes }
+			NOT = { is_fascist_ideology = yes }
 	}
 	else_if = {
 		limit = {
@@ -55,8 +54,8 @@ has_unsupported_manpower_law = {
 		}
 			has_idea = service_by_requirement
 			has_war_support < 0.6
-			NOT = { has_government = communism }
-			NOT = { has_government = fascism }
+			NOT = { is_communist_ideology = yes }
+			NOT = { is_fascist_ideology = yes }
 	}
 	else_if = {
 		limit = {
@@ -81,7 +80,7 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 250000 }
 			has_manpower < 1
 			NOT = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		AND = {
@@ -89,7 +88,7 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 500000 }
 			has_manpower < 1
 			NOT = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		AND = {
@@ -97,7 +96,7 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 750000 }
 			has_manpower < 1
 			NOT = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		AND = {
@@ -105,18 +104,18 @@ has_excessive_army_size = { #not currently used due to AI concerns
 			has_army_manpower = { size = 1000000 }
 			has_manpower < 1
 			NOT = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		AND = {
 			has_army_manpower = { size = 2500000 }
 			has_manpower < 1
-			has_government = democratic
+			is_democratic_ideology = yes
 		}
 		AND = {
 			has_army_manpower = { size = 3000000 }
 			has_manpower < 1
-			has_government = fascism
+			is_fascist_ideology = yes
 		}
 	}
 }

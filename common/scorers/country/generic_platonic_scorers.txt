@@ -46,7 +46,7 @@ fascist_major_scorer = { #Finds biggest Fascist
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -96,7 +96,7 @@ democratic_major_scorer = { # Finds biggest Democratic Nation
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -147,7 +147,7 @@ communist_major_scorer = { # Finds biggest Communist
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = communism }
+				NOT = { is_communist_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -190,7 +190,7 @@ non_aligned_major_scorer = { # Finds biggest Non-Aligned
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = neutrality }
+				NOT = { is_despotic_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -282,7 +282,7 @@ local_fascist_country = {
 				add = num_of_factories
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -337,7 +337,7 @@ fascist_bully_scorer = { #Finds meanest fascist
 				add = 100
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -390,7 +390,7 @@ democratic_faction_leader_scorer = { # Finds biggest Democratic Nation
 				factor = 0.1
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -444,7 +444,7 @@ democratic_sleeping_giant_scorer = { #Finds the least armed big democratic count
 				factor = 0.5
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 		}
@@ -501,7 +501,7 @@ european_fascist_major_scorer = { #Finds biggest Fascist in Europe
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -555,7 +555,7 @@ european_democratic_major_scorer = { # Finds biggest Democratic Nation in Europe
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -606,7 +606,7 @@ european_communist_major_scorer = { # Finds biggest Communist in Europe
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = communism }
+				NOT = { is_communist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -653,7 +653,7 @@ european_non_aligned_major_scorer = { # Finds biggest Non-Aligned in Europe
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = neutrality }
+				NOT = { is_despotic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -705,7 +705,7 @@ asian_fascist_major_scorer = { #Finds biggest Fascist in Asia
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -756,7 +756,7 @@ asian_democratic_major_scorer = { # Finds biggest Democratic Nation in Asia
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -811,7 +811,7 @@ asian_communist_major_scorer = { # Finds biggest Communist in Asia
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = communism }
+				NOT = { is_communist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -862,7 +862,7 @@ asian_non_aligned_major_scorer = { # Finds biggest Non-Aligned in Asia
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = neutrality }
+				NOT = { is_despotic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -914,7 +914,7 @@ american_fascist_major_scorer = { #Finds biggest Fascist in the Americas
 				add = 50
 			}
 			modifier = {
-				NOT = { has_government = fascism }
+				NOT = { is_fascist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -964,7 +964,7 @@ american_democratic_major_scorer = { # Finds biggest Democratic Nation in the Am
 				add = 100
 			}
 			modifier = {
-				NOT = { has_government = democratic }
+				NOT = { is_democratic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -1010,7 +1010,7 @@ american_communist_major_scorer = { # Finds biggest Communist in the Americas
 				add = 100
 			}
 			modifier = {
-				NOT = { has_government = communism }
+				NOT = { is_communist_ideology = yes }
 				factor = 0 
 			}
 			modifier = {
@@ -1056,7 +1056,7 @@ american_non_aligned_major_scorer = { # Finds biggest Non-Aligned in The America
 				add = 100
 			}
 			modifier = {
-				NOT = { has_government = neutrality }
+				NOT = { is_despotic_ideology = yes }
 				factor = 0 
 			}
 			modifier = {

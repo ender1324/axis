@@ -58,7 +58,7 @@ compliance_80 = {
 			AND = {
 				is_ai = yes
 				OR = {
-					has_government = communism
+					is_communist_ideology = yes
 					is_major = no
 					date > 1948.1.1
 				}

@@ -18,4 +18,10 @@ spriteTypes = {
 		name = "GFX_pol_chart_hide"
 		textureFile = "gfx/interface/pol_chart_hide.dds"
 	}
+
+	# this fucking shit is not ok and needs to be fixed but i have no idea have to
+	spriteType = {
+		name = "GFX_ideology_background"
+		textureFile = "gfx/interface/Untitled.dds"
+	}
 }

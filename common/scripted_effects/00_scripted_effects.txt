@@ -137,7 +137,7 @@ get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does s
 			any_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = democratic
+				is_democratic_ideology = yes
 				not = { has_war_with = ROOT }
 				set_temp_variable = { ROOT.best_leader = this }
 				set_temp_variable = { ROOT.best_leader_score = 0 }
@@ -149,7 +149,7 @@ get_best_alliance_match_democratic_effect = { #arguably a trigger, but it does s
 			all_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = democratic
+				is_democratic_ideology = yes
 				not = { has_war_with = ROOT }
 				set_temp_variable = { this.leader_score = num_of_factories }
 				add_to_temp_variable = { this.leader_score = num_battalions }
@@ -190,7 +190,7 @@ get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuf
 			any_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = fascism
+				is_fascist_ideology = yes
 				not = { has_war_with = ROOT }
 				set_temp_variable = { ROOT.best_leader = this }
 				set_temp_variable = { ROOT.best_leader_score = 0 }
@@ -203,7 +203,7 @@ get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuf
 
 				is_faction_leader = yes
 				is_major = yes
-				has_government = fascism
+				is_fascist_ideology = yes
 				not = { has_war_with = ROOT }
 
 				set_temp_variable = { this.leader_score = num_of_factories }
@@ -245,7 +245,7 @@ get_best_alliance_match_communism_effect = { #arguably a trigger, but it does st
 			any_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = communism
+				is_communist_ideology = yes
 				not = { has_war_with = ROOT }
 				set_temp_variable = { ROOT.best_leader = this }
 				set_temp_variable = { ROOT.best_leader_score = 0 }
@@ -257,7 +257,7 @@ get_best_alliance_match_communism_effect = { #arguably a trigger, but it does st
 			all_other_country = {
 				is_faction_leader = yes
 				is_major = yes
-				has_government = communism
+				is_communist_ideology = yes
 				not = { has_war_with = ROOT }
 				set_temp_variable = { this.leader_score = num_of_factories }
 				add_to_temp_variable = { this.leader_score = num_battalions }
@@ -458,19 +458,19 @@ clear_sabotaged_resources_if_necesary = {
 
 remove_from_allowed_party = {
 	if = {
-		limit = { has_government = democratic }
+		limit = { is_democratic_ideology = yes }
 		set_temp_variable = { allowed_party_democratic = 0 }
 	}
 	else_if = {
-		limit = { has_government = fascism }
+		limit = { is_fascist_ideology = yes }
 		set_temp_variable = { allowed_party_fascism = 0 }
 	}
 	else_if = {
-		limit = { has_government = communism }
+		limit = { is_communist_ideology = yes }
 		set_temp_variable = { allowed_party_communism = 0 }
 	}
 	else_if = {
-		limit = { has_government = neutrality }
+		limit = { is_despotic_ideology = yes }
 		set_temp_variable = { allowed_party_neutrality = 0 }
 	}
 }
@@ -1222,10 +1222,19 @@ find_local_dangerous_fascist = {
 
 # The idea is that you can use these effects to store the party popularities (and, if desired, the ruling party) when puppeting or possibly when starting civil wars, and then use the "restore" effects to reset it after the puppeting has happened, so that you don't have to use the overlord's ideology if you don't want to. 
 get_current_ideology_popularities = {
+	set_variable = { ROOT.vanguardist_support_before_change = ROOT.party_popularity_100@vanguardism }
+	set_variable = { ROOT.anarchy_support_before_change = ROOT.party_popularity_100@anarchy }
+	set_variable = { ROOT.socialist_support_before_change = ROOT.party_popularity_100@socialism }
 	set_variable = { ROOT.communist_support_before_change = ROOT.party_popularity_100@communism }
-	set_variable = { ROOT.democratic_support_before_change = ROOT.party_popularity_100@democratic }
+	set_variable = { ROOT.liberal_support_before_change = ROOT.party_popularity_100@liberalism }
+	set_variable = { ROOT.conservative_support_before_change = ROOT.party_popularity_100@conservatism }
+	set_variable = { ROOT.progressive_support_before_change = ROOT.party_popularity_100@progressivism }
 	set_variable = { ROOT.fascist_support_before_change = ROOT.party_popularity_100@fascism }
-	set_variable = { ROOT.neutrality_support_before_change = ROOT.party_popularity_100@neutrality }
+	set_variable = { ROOT.national_socialist_support_before_change = ROOT.party_popularity_100@national_socialism }
+	set_variable = { ROOT.ultranationalist_support_before_change = ROOT.party_popularity_100@ultranationalism }
+	set_variable = { ROOT.occulist_support_before_change = ROOT.party_popularity_100@occulism }
+	set_variable = { ROOT.paternalist_support_before_change = ROOT.party_popularity_100@paternalism }
+	set_variable = { ROOT.despotist_support_before_change = ROOT.party_popularity_100@despotism }
 }
 get_current_ruling_party = {
 	set_variable = { ROOT.ruling_ideology_before_change = ROOT.current_party_ideology_group }
@@ -1234,15 +1243,33 @@ restore_ideology_popularities = {
 	hidden_effect = {
 		# Reset popluarities to what they were before puppeting 
 		set_popularities = {
+			vanguardism = ROOT.vanguardist_support_before_change
+			anarchy = ROOT.anarchy_support_before_change
+			socialism = ROOT.socialist_support_before_change
 			communism = ROOT.communist_support_before_change
-			democratic = ROOT.democratic_support_before_change
+			liberalism = ROOT.liberal_support_before_change
+			conservatism = ROOT.conservative_support_before_change
+			progressivism = ROOT.progressive_support_before_change
+			national_socialism = ROOT.national_socialist_support_before_change
+			ultranationalism = ROOT.ultranationalist_support_before_change
+			occultism = ROOT.occulist_support_before_change
 			fascism = ROOT.fascist_support_before_change
-			neutrality = ROOT.neutrality_support_before_change
+			despotism = ROOT.despotist_support_before_change
+			paternalism = ROOT.paternalist_support_before_change
 		}
+		clear_variable = ROOT.vanguardist_support_before_change
+		clear_variable = ROOT.anarchy_support_before_change
+		clear_variable = root.socialist_support_before_change
+		clear_variable = root.conservative_support_before_change
 		clear_variable = ROOT.communist_support_before_change
-		clear_variable = ROOT.democratic_support_before_change
+		clear_variable = ROOT.liberal_support_before_change
+		clear_variable = ROOT.progressive_support_before_change
+		clear_variable = ROOT.national_socialist_support_before_change
+		clear_variable = ROOT.ultranationalist_support_before_change
+		clear_variable = ROOT.occulist_support_before_change
 		clear_variable = ROOT.fascist_support_before_change
-		clear_variable = ROOT.neutrality_support_before_change
+		clear_variable = ROOT.despotist_support_before_change
+		clear_variable = ROOT.paternalist_support_before_change
 	}
 }
 restore_ruling_party = {

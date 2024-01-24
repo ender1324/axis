@@ -1,30 +1,64 @@
+is_democratic_ideology = {
+	OR = {
+		has_government = conservatism
+		has_government = liberalism
+		has_government = progressivism
+		has_government = paternalism
+	}
+}
+
+is_fascist_ideology = {
+	OR = {
+		has_government = national_socialism
+		has_government = fascism
+		has_government = occultism
+		has_government = ultranationalism
+	}
+}
+
+is_communist_ideology = {
+	OR = {
+		has_government = socialism
+		has_government = communism
+		has_government = vanguardism
+	}
+}
+
+is_despotic_ideology = {
+	OR = {
+		has_government = despotism
+		has_government = anarchy
+		has_government = paternalism
+	}
+}
+
 
 is_enemy_ideology = {
 	OR = {
 		AND = {
-			has_government = communism
+			is_communist_ideology = yes
 			ROOT = {
 				OR = {
-					has_government = fascism
-					has_government = democratic
+					is_fascist_ideology = yes
+					is_democratic_ideology = yes
 				}
 			}
 		}
 		AND = {
-			has_government = democratic
+			is_democratic_ideology = yes
 			ROOT = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					is_communist_ideology = yes
+					is_fascist_ideology = yes
 				}
 			}
 		}
 		AND = {
-			has_government = fascism
+			is_fascist_ideology = yes
 			ROOT = {
 				OR = {
-					has_government = democratic
-					has_government = communism
+					is_communist_ideology = yes
+					is_democratic_ideology = yes
 				}
 			}
 		}

@@ -8,7 +8,7 @@ bookmarks = {
 	
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = liberalism
 			ideas={
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -22,7 +22,7 @@ bookmarks = {
 		}
 		USA = {
 			history = USA_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				home_of_the_free
 				great_depression_3
@@ -38,7 +38,7 @@ bookmarks = {
 		}
 		ENG = {
 			history = ENG_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -119,7 +119,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				CAN_great_depression_1
 				CAN_conscription_crisis
@@ -133,7 +133,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				AST_great_depression_1
 			}
@@ -146,7 +146,7 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				
 			}
@@ -159,7 +159,7 @@ bookmarks = {
 		"SAF"={
 			minor = yes
 			history = "SAF_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				SAF_ossewabrandwag
 				SAF_history_of_segregation
@@ -352,7 +352,7 @@ bookmarks = {
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				HOL_wilhelmina
 				HOL_shell_shocked_spectator_5
@@ -383,7 +383,7 @@ bookmarks = {
 		"POR"={
 			minor = yes
 			history = "PORTUGAL_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				POR_volunteers_in_the_war_nationalist
 				POR_colonial_assimilation_policy
@@ -505,7 +505,7 @@ bookmarks = {
 		"SWI"={
 			minor = yes
 			history = "SWI_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				SWI_spirit_of_helvetia_aggressive_war
 				SWI_frontier_defense_plan_idea_3
@@ -535,7 +535,7 @@ bookmarks = {
 		SWE={
 			minor = yes
 			history = "SWE_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
 				SWE_radiotjanst_democratic
@@ -551,7 +551,7 @@ bookmarks = {
 		"NOR"={
 			minor = yes
 			history = "NOR_BLITZKRIEG_DESC"
-			ideology = democratic
+			ideology = liberalism
 			ideas = {
 				NOR_defensive_rearmament_ns
 				NOR_crumbling_fortifications_ns
@@ -566,7 +566,7 @@ bookmarks = {
 		"DEN"={
 			minor = yes
 			history = DEN_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = liberalism
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
 				DEN_fake_industrial_capability_2_ns
@@ -582,7 +582,7 @@ bookmarks = {
 		"DEN"={
 			minor = yes
 			history = DEN_BLITZKRIEG_DESC
-			ideology = democratic
+			ideology = liberalism
 			available = { has_dlc = "By Blood Alone" }
 			ideas = {
 				DEN_fake_industrial_capability_2_ns

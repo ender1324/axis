@@ -13,9 +13,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -24,9 +24,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 	}
@@ -35,9 +35,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -47,21 +47,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -84,9 +84,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -105,9 +105,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -129,9 +129,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -153,21 +153,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -185,7 +185,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					has_government = neutrality
+					is_despotic_ideology = yes
 				}
 			}
 			
@@ -303,9 +303,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -314,9 +314,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 
@@ -327,9 +327,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -339,21 +339,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -375,9 +375,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -386,9 +386,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 	}
@@ -397,9 +397,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -409,21 +409,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -442,9 +442,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -453,9 +453,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 	}
@@ -464,9 +464,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -476,21 +476,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -514,9 +514,9 @@ country_event = {
 			is_in_faction = no
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -545,9 +545,9 @@ country_event = {
 			is_in_faction = no
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -574,9 +574,9 @@ country_event = {
 			is_in_faction = no
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 		ai_chance = {
@@ -604,21 +604,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -636,7 +636,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					has_government = neutrality
+					is_despotic_ideology = yes
 				}
 			}
 			
@@ -760,9 +760,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -771,9 +771,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 
@@ -784,9 +784,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -796,21 +796,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -832,9 +832,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 		}
 	}
@@ -843,9 +843,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 		}
 	}
@@ -854,9 +854,9 @@ country_event = {
 		trigger = {
 			AND = {
 				FROM = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		}
 	}
@@ -866,21 +866,21 @@ country_event = {
 			NOT = {
 				AND = {
 					FROM = {
-						has_government = democratic
+						is_democratic_ideology = yes
 					}
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = fascism
+						is_fascist_ideology = yes
 					}
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 				AND = {
 					FROM = {
-						has_government = communism
+						is_communist_ideology = yes
 					}
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 		}
@@ -1126,8 +1126,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = fascism }
-				NOT = { has_government = fascism }
+				FROM = { is_fascist_ideology = yes }
+				NOT = { is_fascist_ideology = yes }
 				fascism > 0.1
 				NOT = { fascism > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1137,8 +1137,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = fascism }
-				NOT = { has_government = fascism }
+				FROM = { is_fascist_ideology = yes }
+				NOT = { is_fascist_ideology = yes }
 				fascism > 0.2
 				NOT = { fascism > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1148,8 +1148,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = fascism }
-				NOT = { has_government = fascism }
+				FROM = { is_fascist_ideology = yes }
+				NOT = { is_fascist_ideology = yes }
 				fascism > 0.3
 				NOT = { fascism > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1159,8 +1159,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = fascism }
-				NOT = { has_government = fascism }
+				FROM = { is_fascist_ideology = yes }
+				NOT = { is_fascist_ideology = yes }
 				fascism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
@@ -1169,7 +1169,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = communism }
+				FROM = { is_communist_ideology = yes }
 				communism > 0.1
 				NOT = { communism > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1179,8 +1179,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = communism }
-				NOT = { has_government = communism }
+				FROM = { is_communist_ideology = yes }
+				NOT = { is_communist_ideology = yes }
 				communism > 0.2
 				NOT = { communism > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1190,8 +1190,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = communism }
-				NOT = { has_government = communism }
+				FROM = { is_communist_ideology = yes }
+				NOT = { is_communist_ideology = yes }
 				communism > 0.3
 				NOT = { communism > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
@@ -1201,8 +1201,8 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = communism }
-				NOT = { has_government = communism }
+				FROM = { is_communist_ideology = yes }
+				NOT = { is_communist_ideology = yes }
 				communism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
@@ -1211,10 +1211,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.1
-				NOT = { democratic > 0.2 }
+				FROM = { is_democratic_ideology = yes }
+				NOT = { is_democratic_ideology = yes }
+				liberalism > 0.1
+				NOT = { liberalism > 0.2 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1222,10 +1222,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.2
-				NOT = { democratic > 0.3 }
+				FROM = { is_democratic_ideology = yes }
+				NOT = { is_democratic_ideology = yes }
+				liberalism > 0.2
+				NOT = { liberalism > 0.3 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1233,10 +1233,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.3
-				NOT = { democratic > 0.4 }
+				FROM = { is_democratic_ideology = yes }
+				NOT = { is_democratic_ideology = yes }
+				liberalism > 0.3
+				NOT = { liberalism > 0.4 }
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
@@ -1244,9 +1244,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				FROM = { has_government = democratic }
-				NOT = { has_government = democratic }
-				democratic > 0.4
+				FROM = { is_democratic_ideology = yes }
+				NOT = { is_democratic_ideology = yes }
+				liberalism > 0.4
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt

@@ -97,7 +97,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 
 			removal_cost = -1
@@ -117,7 +117,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 
 			removal_cost = -1
@@ -139,7 +139,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 
 			removal_cost = -1
@@ -159,7 +159,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 
 			removal_cost = -1
@@ -180,7 +180,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 
 			removal_cost = -1
@@ -199,7 +199,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				is_despotic_ideology = yes
 			}
 
 			removal_cost = -1
@@ -239,7 +239,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 		
 			removal_cost = -1
@@ -259,7 +259,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				is_democratic_ideology = yes
 			}
 			
 			removal_cost = -1
@@ -279,7 +279,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				is_fascist_ideology = yes
 			}
 			
 			removal_cost = -1
@@ -301,8 +301,8 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					is_communist_ideology = yes
+					is_fascist_ideology = yes
 				}
 			}
 			
@@ -324,8 +324,8 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					is_communist_ideology = yes
+					is_fascist_ideology = yes
 				}
 			}
 			
@@ -347,8 +347,8 @@ ideas = {
 
 			allowed_civil_war = {
 				OR = {
-					has_government = communism
-					has_government = fascism
+					is_communist_ideology = yes
+					is_fascist_ideology = yes
 				}
 			}
 			
@@ -395,7 +395,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = communism
+				is_communist_ideology = yes
 			}
 			
 			removal_cost = -1
@@ -415,7 +415,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				is_despotic_ideology = yes
 			}
 
 			cancel = {
@@ -540,7 +540,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = communism
+					is_communist_ideology = yes
 				}
 			}
 
@@ -559,7 +559,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = fascism
+					is_fascist_ideology = yes
 				}
 			}
 

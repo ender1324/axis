@@ -188,7 +188,7 @@ news_event = {
 	trigger = {
 		202 = { is_controlled_by = GER }
 		202 = { is_owned_by = SOV }
-		SOV = { has_government = communism }
+		SOV = { is_communist_ideology = yes }
 		GER = { has_war_with = SOV }
 		NOT = { has_global_flag = fall_of_kiev }
 	}
@@ -2231,19 +2231,19 @@ news_event = {
 	title = news.159.t
 	desc = {
 		text = news.159.d_01
-		trigger = { FROM = { has_government = neutrality } }
+		trigger = { FROM = { is_despotic_ideology = yes } }
 	}
 	desc = {
 		text = news.159.d_02
-		trigger = { FROM = { has_government = democratic } }
+		trigger = { FROM = { is_democratic_ideology = yes } }
 	}
 	desc = {
 		text = news.159.d_03
-		trigger = { FROM = { has_government = fascism } }
+		trigger = { FROM = { is_fascist_ideology = yes } }
 	}
 	desc = {
 		text = news.159.d_04
-		trigger = { FROM = { has_government = communism } }
+		trigger = { FROM = { is_communist_ideology = yes } }
 	}
 
 	picture = GFX_news_event_009

@@ -1,8 +1,8 @@
 characters={	
 	FAK_lord_debug={
 		country_leader={
-			expire = "1965.1.1"
-			ideology = liberalism
+			expire = "1999.1.1"
+			ideology = liberalism_subtype
 			traits = {
 				political_dancer
 			}
@@ -10,8 +10,53 @@ characters={
 			desc="ty rt56"
 		}
 		country_leader={
-			expire = "1965.1.1"
-			ideology = moderatism
+			expire = "2500.1.1"
+			ideology = conservatism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "2500.1.1"
+			ideology = anarchy_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "2500.1.1"
+			ideology = occultism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1999.1.1"
+			ideology = paternalism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1999.1.1"
+			ideology = ultranationalism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1999.1.1"
+			ideology = despotism_subtype
 			traits = {
 				armaments_organizer
 				political_dancer
@@ -20,8 +65,26 @@ characters={
 			desc="ty rt56"
 		}
 		country_leader={
-			expire = "1965.1.1"
-			ideology = marxism
+			expire = "2500.1.1"
+			ideology = vanguardism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "2500.1.1"
+			ideology = socialism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1999.1.1"
+			ideology = communism_subtype
 			traits = {
 				ideological_crusader
 				political_dancer
@@ -30,8 +93,17 @@ characters={
 			desc="ty rt56"
 		}
 		country_leader={
-			expire = "1965.1.1"
-			ideology = fascism_ideology
+			expire = "2500.1.1"
+			ideology = national_socialism_subtype
+			traits = {
+				political_dancer
+			}
+			id=-1
+			desc="ty rt56"
+		}
+		country_leader={
+			expire = "1999.1.1"
+			ideology = fascism_subtype
 			traits = {
 				indomitable_perseverance
 				political_dancer

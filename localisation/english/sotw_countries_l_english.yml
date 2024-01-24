@@ -1,20 +1,20 @@
 ﻿l_english:
  RKP:0 "Reichskommissariat Polen"
  RKP_DEF:0 "The Reichskommissariat Polen"
- RKP_ADJ:0 "Polish Germans"
+ RKP_ADJ:0 "Polish German"
 
  RKO:0 "Reichskommissariat Ostland"
  RKO_DEF:0 "The Reichskommissariat Ostland"
- RKO_ADJ:0 "Eastern Germans"
+ RKO_ADJ:0 "Eastern German"
 
  RKR:0 "Reichskommissariat Rußland"
  RKR_DEF:0 "The Reichskommissariat Rußland"
- RKR_ADJ:0 "Far-Eastern Germans"
+ RKR_ADJ:0 "Far-Eastern German"
 
  RKU:0 "Reichskommissariat Ukraine"
  RKU_DEF:0 "The Reichskommissariat Ukraine"
- RKU_ADJ:0 "Carpatian Germans"
+ RKU_ADJ:0 "Carpatian German"
  
  RKK:0 "Reichskommissariat Kaukasien"
  RKK_DEF:0 "The Reichskommissariat Kaukasien"
- RKK_ADJ:0 "Caucasian Germans"
+ RKK_ADJ:0 "Caucasian German"

@@ -152,9 +152,9 @@ country_event = {
 						random_list = {
 							allowed_party_democratic = {
 								set_popularities = {
-									democratic = 100
+									liberalism = 100
 								}
-								set_politics = { ruling_party = democratic elections_allowed = yes }
+								set_politics = { ruling_party = liberalism elections_allowed = yes }
 							}
 							allowed_party_fascism = {
 								set_popularities = {
@@ -170,9 +170,9 @@ country_event = {
 							}
 							allowed_party_neutrality = {
 								set_popularities = {
-									neutrality = 100
+									despotism = 100
 								}
-								set_politics = { ruling_party = neutrality elections_allowed = no }
+								set_politics = { ruling_party = despotism elections_allowed = no }
 							}
 						}
 					}

@@ -49,7 +49,7 @@ autonomy_state = {
 				has_dlc = "No Step Back"
 			}
 		}
-		OVERLORD = { has_government = fascism }
+		OVERLORD = { is_fascist_ideology = yes }
 		if = {
 			limit = { has_dlc = "Waking the Tiger" }
 			NOT = { OVERLORD = { original_tag = JAP } }

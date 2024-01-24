@@ -144,7 +144,7 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = SOV
-					has_government = communism
+					is_communist_ideology = yes
 					FROM = {
 						has_idea = anti_soviet_pact
 					}
@@ -165,7 +165,7 @@ on_actions = {
 					has_idea = anti_soviet_pact
 					FROM = {
 						original_tag = SOV
-						has_government = communism
+						is_communist_ideology = yes
 					}
 				}
 				remove_ideas = anti_soviet_pact
@@ -196,7 +196,7 @@ on_actions = {
 				limit = {
 					ROOT = {
 						original_tag = SOV
-						has_government = communism
+						is_communist_ideology = yes
 					}
 					FROM = { has_idea = anti_soviet_pact }
 				}
@@ -249,7 +249,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = { original_tag = GER }
-					NOT = { has_government = fascism }
+					NOT = { is_fascist_ideology = yes }
 					has_civil_war = no
 				}
 				news_event = { id = country_capitulated.0 days = 0 }
@@ -263,7 +263,7 @@ on_actions = {
 			# if = {
 			# 	limit = {
 			# 		original_tag = FRA
-			# 		has_government = democratic
+			# 		is_democratic_ideology = yes
 			# 		is_puppet = no
 			# 	}
 			# 	drop_cosmetic_tag = yes
@@ -380,11 +380,11 @@ on_actions = {
 			#Turn elections on for democracies created from coup
 			random_other_country = {
 				limit = {
-					has_government = democratic
+					is_democratic_ideology = yes
 					original_tag = ROOT
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = liberalism
 					elections_allowed = yes
 				}
 			}
@@ -396,10 +396,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = liberalism
 					elections_allowed = yes
 				}
 			}
@@ -423,10 +423,10 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = { has_elections = yes }
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = liberalism
 					elections_allowed = yes
 				}
 			}
@@ -441,10 +441,10 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = { has_elections = yes }
-					has_government = democratic
+					is_democratic_ideology = yes
 				}
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = liberalism
 					elections_allowed = yes
 				}
 			}

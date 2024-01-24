@@ -3220,7 +3220,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = SWE
-						has_government = neutrality
+						is_despotic_ideology = yes
 					}
 				}
 			}
@@ -5520,7 +5520,7 @@ defined_text = {
 				OR = {
 					AND = {
 						original_tag = SWE
-						has_government = neutrality
+						is_despotic_ideology = yes
 					}
 				}
 			}
@@ -5535,7 +5535,7 @@ defined_text = {
 					NOT = {
 						OR = {
 							original_tag = SWE
-							has_government = neutrality
+							is_despotic_ideology = yes
 						}
 					}
 				}

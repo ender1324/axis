@@ -16,20 +16,20 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
+						ROOT = { is_fascist_ideology = yes }
+						FROM.FROM = { is_fascist_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
+						ROOT = { is_democratic_ideology = yes }
+						FROM.FROM = { is_democratic_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { is_communist_ideology = yes }
+						FROM.FROM = { is_communist_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
+						ROOT = { is_despotic_ideology = yes }
+						FROM.FROM = { is_despotic_ideology = yes }
 					}
 				}
 			}
@@ -46,12 +46,12 @@ news_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ROOT = { has_government = fascism }
-					FROM.FROM = { has_government = fascism }
+					ROOT = { is_fascist_ideology = yes }
+					FROM.FROM = { is_fascist_ideology = yes }
 				}
 				AND = {
-					ROOT = { has_government = communism }
-					FROM.FROM = { has_government = communism }
+					ROOT = { is_communist_ideology = yes }
+					FROM.FROM = { is_communist_ideology = yes }
 				}
 			}
 			FROM.FROM = {
@@ -127,20 +127,20 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = fascism }
-						FROM.FROM = { has_government = fascism }
+						ROOT = { is_fascist_ideology = yes }
+						FROM.FROM = { is_fascist_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = democratic }
-						FROM.FROM = { has_government = democratic }
+						ROOT = { is_democratic_ideology = yes }
+						FROM.FROM = { is_democratic_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = communism }
-						FROM.FROM = { has_government = communism }
+						ROOT = { is_communist_ideology = yes }
+						FROM.FROM = { is_communist_ideology = yes }
 					}
 					AND = {
-						ROOT = { has_government = neutrality }
-						FROM.FROM = { has_government = neutrality }
+						ROOT = { is_despotic_ideology = yes }
+						FROM.FROM = { is_despotic_ideology = yes }
 					}
 				}
 			}

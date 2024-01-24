@@ -4,10 +4,19 @@
 capital = 1
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	anarchy = 0
+	vanguardism = 0
+	communism = 5
+	socialism = 5
+	progressivism = 5
+	liberalism = 5
+	conservatism = 5
+	paternalism = 5
+	despotism = 50
+	ultranationalism = 5
+	fascism = 5
+	national_socialism = 5
+	occultism = 5
 }
 
 recruit_character = FAK_lord_debug
