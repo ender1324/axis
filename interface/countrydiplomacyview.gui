@@ -5165,7 +5165,7 @@ guiTypes = {
 			name = "diplo_leader_status"
 			position = { x = 129 y = 94 }
 			font = "hoi_18mbs"
-			text = "Country_Header"
+			text = "SL_guiscreen_mainleader_status"
 			maxWidth = 82
 			maxHeight = 36
 			format = center
@@ -5183,7 +5183,7 @@ guiTypes = {
 			name = "diplo_leader_name"
 			position = { x = 235 y = 104 }
 			font = "hoi_18mbs"
-			text = "L_name_tt"
+			text = "SL_mainleader_name_tt"
 			maxWidth = 145
 			maxHeight = 36
 			fixedsize = yes
@@ -5199,7 +5199,7 @@ guiTypes = {
 			name = "diplo_vice_leader_status"
 			position = { x = 129 y = 129 }
 			font = "hoi_18mbs"
-			text = "Country_Vice_Header"
+			text = "SL_guiscreen_secondleader_status"
 			maxWidth = 82
 			maxHeight = 36
 			format = center

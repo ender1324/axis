@@ -1,0 +1,17 @@
+defined_text = {
+	name = SL_main_status
+	text = {
+		trigger = { tag = GER }
+		localization_key = SL_status_fuhrer
+	}
+	text = { localization_key = SL_status_ficdefault }
+}
+
+defined_text = {
+	name = SL_second_status
+	text = {
+		trigger = { TAG = GER }
+		localization_key = SL_status_marshall
+	}
+	text = { localization_key = SL_status_default }
+}

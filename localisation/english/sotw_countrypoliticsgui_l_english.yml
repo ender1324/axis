@@ -15,9 +15,10 @@
  ###########
  
  SL_govstatus: "§C[FROM.GetVLGovStatus]§! of [FROM.GetFlag]§Y[FROM.GetName]§!\n" # King of [FLAG] England
- Country_Header: "Header"
- SL_name_tt: "[FROM.GetLeader]"
- Country_Vice_Header: "[GetVLStatus]"
+ SL_guiscreen_mainleader_status: "[SL_main_status]"
+ SL_mainleader_name_tt: "[FROM.GetLeader]"
+ SL_guiscreen_secondleader_status: "[SL_second_status]"
+ # Second in Command leader status
  SL_status_default: "Second in Command"
  SL_status_king: "King"
  SL_status_queen: "Queen"
@@ -25,11 +26,14 @@
  SL_status_marshall: "Marshall"
  SL_status_president: "President"
  SL_status_vicepresident: "Vice President"
+ # First in Command leader status
+ SL_status_fuhrer: "Fuhrer"
+ SL_status_ficdefault: "Leader"
  
  George_V: "George V"
  SL_name_George_V: "$George_V$"
  SL_trait_George_V: "§Y$popular_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+15.00%§!"
- SL_state_George_V: "§Y$George_V$§!\n$VL_trait_George_V$"
+ SL_state_George_V: "§Y$George_V$§!\n$SL_trait_George_V$"
  SL_Dip_state_George_V: "§Y$George_V$§!\n$SL_govstatus$\n$VL_trait_George_V$" # Tooltip: George V \n King of [FLAG] England \n Popular figurehead: +15% stability
  SL_desc_George_V: "§L$george_v_desc$§!"
  ENG_SL_George_V: "$George_V$"
