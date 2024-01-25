@@ -1232,7 +1232,7 @@ get_current_ideology_popularities = {
 	set_variable = { ROOT.fascist_support_before_change = ROOT.party_popularity_100@fascism }
 	set_variable = { ROOT.national_socialist_support_before_change = ROOT.party_popularity_100@national_socialism }
 	set_variable = { ROOT.ultranationalist_support_before_change = ROOT.party_popularity_100@ultranationalism }
-	set_variable = { ROOT.occulist_support_before_change = ROOT.party_popularity_100@occulism }
+	set_variable = { ROOT.occultist_support_before_change = ROOT.party_popularity_100@occultism }
 	set_variable = { ROOT.paternalist_support_before_change = ROOT.party_popularity_100@paternalism }
 	set_variable = { ROOT.despotist_support_before_change = ROOT.party_popularity_100@despotism }
 }
@@ -1252,7 +1252,7 @@ restore_ideology_popularities = {
 			progressivism = ROOT.progressive_support_before_change
 			national_socialism = ROOT.national_socialist_support_before_change
 			ultranationalism = ROOT.ultranationalist_support_before_change
-			occultism = ROOT.occulist_support_before_change
+			occultism = ROOT.occultist_support_before_change
 			fascism = ROOT.fascist_support_before_change
 			despotism = ROOT.despotist_support_before_change
 			paternalism = ROOT.paternalist_support_before_change
@@ -1266,7 +1266,7 @@ restore_ideology_popularities = {
 		clear_variable = ROOT.progressive_support_before_change
 		clear_variable = ROOT.national_socialist_support_before_change
 		clear_variable = ROOT.ultranationalist_support_before_change
-		clear_variable = ROOT.occulist_support_before_change
+		clear_variable = ROOT.occultist_support_before_change
 		clear_variable = ROOT.fascist_support_before_change
 		clear_variable = ROOT.despotist_support_before_change
 		clear_variable = ROOT.paternalist_support_before_change

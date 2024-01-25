@@ -1,0 +1,236 @@
+defined_text = {
+	name = GetSubIdeologyLoc
+	text = {
+		trigger = { has_government = anarchy }
+		localization_key = "[GetSubIdeologyAnarchy]"
+	}
+	text = {
+		trigger = { has_government = occultism }
+		localization_key = "[GetSubIdeologyLocOccultism]"
+	}
+	text = {
+		trigger = { has_government = national_socialism }
+		localization_key = "[GetSubIdeologyLocNationalSocialism]"
+	}
+	text = {
+		trigger = { has_government = fascism }
+		localization_key = "[GetSubIdeologyLocFascism]"
+	}
+	text = {
+		trigger = { has_government = ultranationalism }
+		localization_key = "[GetSubIdeologyLocUltranationalism]"
+	}
+	text = {
+		trigger = { has_government = despotism }
+		localization_key = "[GetSubIdeologyLocDespotism]"
+	}
+	text = {
+		trigger = { has_government = paternalism }
+		localization_key = "[GetSubIdeologyLocPaternalism]"
+	}
+	text = {
+		trigger = { has_government = conservatism }
+		localization_key = "[GetSubIdeologyLocConservatism]"
+	}
+	text = {
+		trigger = { has_government = liberalism }
+		localization_key = "[GetSubIdeologyLocLiberalism]"
+	}
+	text = {
+		trigger = { has_government = progressivism }
+		localization_key = "[GetSubIdeologyLocProgressivism]"
+	}
+	text = {
+		trigger = { has_government = socialism }
+		localization_key = "[GetSubIdeologyLocSocialism]"
+	}
+	text = {
+		trigger = { has_government = communism }
+		localization_key = "[GetSubIdeologyLocCommunism]"
+	}
+	text = {
+		trigger = { has_government = vanguardism }
+		localization_key = "[GetSubIdeologyLocVanguardism]"
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocAnarchy
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchy_subtype
+		}
+		localization_key = anarchism_subtype
+	}
+	text = {
+		localization_key = anarchism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocOccultism
+	text = {
+		trigger = {
+			has_country_leader_ideology = occultism_subtype
+		}
+		localization_key = occultism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = aryanracialism_subtype
+		}
+		localization_key = aryanracialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = accelerationism_subtype
+		}
+		localization_key = accelerationism_subtype
+	}
+	text = {
+		localization_key = occultism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocNationalSocialism
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_socialism_subtype
+		}
+		localization_key = national_socialism_subtype
+	}
+	text = {
+		localization_key = national_socialism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocFascism
+	text = {
+		trigger = {
+			has_country_leader_ideology = fascism_subtype
+		}
+		localization_key = fascism_subtype
+	}
+	text = {
+		localization_key = fascism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocUltranationalism
+	text = {
+		trigger = {
+			has_country_leader_ideology = ultranationalism_subtype
+		}
+		localization_key = ultranationalism_subtype
+	}
+	text = {
+		localization_key = ultranationalism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocDespotism
+	text = {
+		trigger = {
+			has_country_leader_ideology = despotism_subtype
+		}
+		localization_key = despotism_subtype
+	}
+	text = {
+		localization_key = despotism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocPaternalism
+	text = {
+		trigger = {
+			has_country_leader_ideology = paternalism_subtype
+		}
+		localization_key = paternalism_subtype
+	}
+	text = {
+		localization_key = paternalism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocConservatism
+	text = {
+		trigger = {
+			has_country_leader_ideology = conservatism_subtype
+		}
+		localization_key = conservatism_subtype
+	}
+	text = {
+		localization_key = conservatism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocLiberalism
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberalism_subtype
+		}
+		localization_key = liberalism_subtype
+	}
+	text = {
+		localization_key = liberalism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocProgressivism
+	text = {
+		trigger = {
+			has_country_leader_ideology = progressivism_subtype
+		}
+		localization_key = progressivism_subtype
+	}
+	text = {
+		localization_key = progressivism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocSocialism
+	text = {
+		trigger = {
+			has_country_leader_ideology = socialism_subtype
+		}
+		localization_key = socialism_subtype
+	}
+	text = {
+		localization_key = socialism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocCommunism
+	text = {
+		trigger = {
+			has_country_leader_ideology = communism_subtype
+		}
+		localization_key = communism_subtype
+	}
+	text = {
+		localization_key = communism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocVanguardism
+	text = {
+		trigger = {
+			has_country_leader_ideology = vanguardism_subtype
+		}
+		localization_key = vanguardism_subtype
+	}
+	text = {
+		localization_key = vanguardism
+	}
+}

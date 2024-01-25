@@ -8,8 +8,8 @@ anarchism_desc: "No Governance"
 anarchism_acceptance: "Acceptance of Anarchic Diplomacy"
 anarchism_drift: "Anarchism Drift"
 
-anarchism_subtype: "Anarchism"
-anarchism_subtype_desc: "A total collapse of meaningful government has occurred, with any remaining central authority competing with both roving bands and heavily-armed settlements for control."
+anarchy_subtype: "Anarchism"
+anarchy_subtype_desc: "A total collapse of meaningful government has occurred, with any remaining central authority competing with both roving bands and heavily-armed settlements for control."
 
 ### Vanguardism
 
@@ -137,3 +137,5 @@ occultism_subtype: "Occultism"
 occultism_subtype_desc: "Occultism is an eclectic yet fundamentally anti-democratic, anti-egalitarian, and above all hyper-reactionary philosophical and political movement.\n\nThe political Occultist rejects modernism and contemporary ideas in nearly all their forms, and ultimately desires the creation of a society where practices and institutions from an idealized previous epoch of esoteric enlightenment are restored."
 accelerationism_subtype: "Accelerationism"
 accelerationism_subtype_desc: "Accelerationism is the ultimate rejection of conventional politics, they simultaneously believe in both everything and nothing, and whose tenets are often intentionally eclectic and schizophrenic. The Accelerationist embraces violence and chaos in nearly all their forms, and is wholly and lucidly intent on driving the world mad with no reservation or restriction placed on the means by which their objectives should be accomplished."
+aryanracialism_subtype: "Ultra-Aryan Racialism"
+aryanracialism_subtype_desc: "When Himmler was finally given rule over Banat and Serbia, nobody imagined it would turn into this. §0How foolish they were.§! Ultra-Aryan Racialism combines the most esoteric racial beliefs of the nazi party into one massive tent of ideologies. By law, anyone below the aryan has to toil in the fields and serve the aryan, §0dying for their cause, while they reap the benefits.§! But even Himmler knows his experiment can't last forever. §RTime is running out.§!"
