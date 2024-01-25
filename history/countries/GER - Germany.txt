@@ -26,7 +26,8 @@ set_popularities = {
 	national_socialism = 5
 	occultism = 5
 }
-
+create_faction = "Wohlstandsbündnis"
+add_to_faction = GER
 set_autonomy = {
 	target = RKP
 	autonomous_state = autonomy_integrated_puppet
@@ -45,6 +46,18 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = RKK
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = RKN
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = RNO
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = RKD
 	autonomous_state = autonomy_integrated_puppet
 }
 

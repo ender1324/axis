@@ -12,7 +12,7 @@ GER = {
 # RK Polen
 RKP = {
 	color = rgb { 45 3 3 }
-	color_ui = rgb { 50 50 50 }
+	color_ui = rgb { 45 3 3 }
 }
 
 # RK Ostland
@@ -37,6 +37,25 @@ RKR = {
 RKK = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
+}
+
+# RK Danemark
+RKD = {
+	#color = rgb { 50 50 50 }
+	color = rgb { 61 45 35 }
+	color_ui = rgb { 50 50 50 }
+}
+
+# RK Norwegen
+RNO = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 50 50 50 }
+}
+
+# RK Niederlande
+RKN = {
+	color = rgb { 56 30 4 }
+	color_ui = rgb { 50 50 50 }
 }
 
 #######################

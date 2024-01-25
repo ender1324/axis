@@ -712,8 +712,7 @@ FIN_MTN_02 =
 	fallback_name = "%d. Vuoristodivisioona" #Not historical
 }
 
-FIN_PAR_01 = 
-{
+FIN_PAR_01 = {
 	name = "Paratrooper Divisions"
 
 	for_countries = { FIN }

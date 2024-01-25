@@ -1,0 +1,30 @@
+capital = 39
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = national_Socialism
+	last_election = "1953.01.01"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchy = 8
+	vanguardism = 0
+	communism = 0
+	socialism = 0
+	progressivism = 13
+	liberalism = 4
+	conservatism = 9
+	paternalism = 7
+	despotism = 7
+	ultranationalism = 3
+	fascism = 5
+	national_socialism = 44
+	occultism = 0
+}
+
+set_convoys = 50

@@ -1,30 +1,30 @@
-﻿capital = 1027
+capital = 7
 
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = national_Socialism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	anarchy = 0
+	anarchy = 7
 	vanguardism = 0
-	communism = 5
-	socialism = 5
+	communism = 0
+	socialism = 1
 	progressivism = 5
-	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
+	liberalism = 9
+	conservatism = 16
+	paternalism = 6
+	despotism = 7
+	ultranationalism = 4
 	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	national_socialism = 40
+	occultism = 0
 }
 
 set_convoys = 50

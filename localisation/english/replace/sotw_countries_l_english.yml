@@ -1,0 +1,55 @@
+﻿l_english:
+ # Germany and suvjects
+ GER:0 "Großgermanisches Reich"
+ GER_DEF:0 "The Großgermanisches Reich"
+ GER_ADJ:0 "German"
+
+ RKP:0 "Reichskommissariat Polen"
+ RKP_DEF:0 "The Reichskommissariat Polen"
+ RKP_ADJ:0 "Polish German"
+
+ RKO:0 "Reichskommissariat Ostland"
+ RKO_DEF:0 "The Reichskommissariat Ostland"
+ RKO_ADJ:0 "Eastern German"
+
+ RKR:0 "Reichskommissariat Rußland"
+ RKR_DEF:0 "The Reichskommissariat Rußland"
+ RKR_ADJ:0 "Far-Eastern German"
+
+ RKU:0 "Reichskommissariat Ukraine"
+ RKU_DEF:0 "The Reichskommissariat Ukraine"
+ RKU_ADJ:0 "Carpatian German"
+ 
+ RKK:0 "Reichskommissariat Kaukasien"
+ RKK_DEF:0 "The Reichskommissariat Kaukasien"
+ RKK_ADJ:0 "Caucasian German"
+
+ RKD:0 "Reichskommissariat Dänemark"
+ RKD_DEF:0 "The Reichkommissariat Dänemark"
+ RKD_ADJ:0 "Danish"
+
+ RKN:0 "Reichskommissariat Niederlande"
+ RKN_DEF:0 "The Reichkommissariat Niederlande"
+ RKN_ADJ:0 "Dutch German"
+
+ RNO:0 "Reichskommissariat Norwegen"
+ RNO_DEF:0 "The Reichskommissariat Norwegen"
+ RNO_ADJ:0 "Northern German"
+
+ # England
+ ENG:0 "England"
+ ENG_DEF:0 "England"
+ ENG_ADJ:0 "British"
+
+ # Russia and warlords
+ SOV:0 "Russia"
+ SOV_DEF:0 "Russia"
+ SOV_ADJ:0 "Russian"
+ FER:0 "Independent State of the Far East"
+ FER_DEF:0 "the Independent State of the Far East"
+ FER_ADJ:0 "Far-Eastern Russian"
+
+ # USA/America
+ USA:0 "United States of America"
+ USA_DEF:0 "the United States of America"
+ USA_ADJ:0 "American"

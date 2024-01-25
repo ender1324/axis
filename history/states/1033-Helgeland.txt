@@ -11,7 +11,8 @@ state = {
 	}
 
 	history = {
-		owner = NOR
+		owner = RNO
+		add_core_of = RNO
 		add_core_of = NOR
 		if = {
 			limit = {
