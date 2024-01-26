@@ -9,9 +9,9 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = XSM
+		owner = PRC
 		add_core_of = XSM
-		add_core_of = CHI
+		add_claim_by = CHI
 		add_core_of = PRC
 		victory_points = {
 			10750 5
@@ -21,23 +21,6 @@ state={
 			industrial_complex = 1
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
 	}
 
 	local_supplies=0.0 

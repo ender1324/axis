@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = MEN
 		buildings = {
 			infrastructure = 1
 		}
@@ -16,6 +16,7 @@ state={
 		victory_points = {
 			1834 1 #Erdenet
 		}
+		add_core_of = MEN
 		add_core_of = MON
 		add_claim_by = CHI
 	}

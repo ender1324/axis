@@ -10,7 +10,8 @@ state={
 
 
 	history={
-		owner = NZL
+		owner = AST
+		add_core_of = AST
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 1

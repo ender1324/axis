@@ -10,17 +10,16 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = AZH
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12730 1 
 		}
-		add_core_of = PRC
-		add_core_of = CHI
+		add_claim_by = PRC
+		add_core_of = AZH
 		add_core_of = RAJ
-		add_claim_by = TIB #removed in first focus of Tibet tree
 	}
 
 	provinces={

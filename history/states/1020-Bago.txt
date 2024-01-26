@@ -10,7 +10,7 @@ state={
 		tungsten = 132 #actually produced a lot more than portugal indian production insignificant (3500 vs 6 thousands of tons in 1939)
 	}
 	history={
-		owner = RAJ
+		owner = BRM
 		add_core_of = BRM
 		victory_points = {
 			1330 5 

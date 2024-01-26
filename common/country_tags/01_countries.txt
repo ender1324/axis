@@ -1,5 +1,6 @@
 KOS	= "countries/Kosovo.txt"
 FAK = "countries/Fake.txt"
+# German RKS
 RKP = "countries/RK_Polen.txt"
 RKO = "countries/RK_Ostland.txt"
 RKU = "countries/RK_Ukraine.txt"
@@ -9,5 +10,8 @@ RKD = "countries/RK_Danemark.txt"
 RKN = "countries/RK_Niederlande.txt"
 RNO = "countries/RK_Norwegen.txt"
 RKM = "countries/RK_Mittleafrika.txt"
+# Free france
 FFA = "countries/Free_France.txt"
+# Co-Prosperity Sphere puppets
+AZH = "countries/Azad_Hind.txt"
 #RKS = "countries/RK_Sudafrika.txt"

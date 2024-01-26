@@ -54,6 +54,11 @@
  ENG_DEF:0 "England"
  ENG_ADJ:0 "British"
 
+ # Australia and New Zealand
+ AST:0 "Australasian Union"
+ AST_DEF:0 "the Australasian Union"
+ AST_ADJ:0 "Australasian"
+
  # Russia and warlords
  SOV:0 "Russia"
  SOV_DEF:0 "Russia"
@@ -66,6 +71,22 @@
  USA:0 "United States of America"
  USA_DEF:0 "the United States of America"
  USA_ADJ:0 "American"
+
+ # China
+ CHI:0 "China"
+ CHI_DEF:0 "China"
+ CHI_ADJ:0 "Chinese"
+ PRC:0 "Chinese People's Resistance Front"
+ PRC_DEF:0 "the Chinese People's Resistance Front"
+ PRC_ADJ:0 "Chinese"
+
+ # India
+ RAJ:0 "India"
+ RAJ_DEF:0 "India"
+ RAJ_ADJ:0 "Indian"
+ AZH:0 "Provisional Government of Free India"
+ AZH_DEF:0 "the Provisional Government of Free India"
+ AZH_ADJ:0 "Indian"
 
  # Central African Republic
  CAR:0 "Central African Republic"
