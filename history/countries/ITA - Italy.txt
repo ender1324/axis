@@ -5,7 +5,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = fascism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,11 +20,32 @@ set_popularities = {
 	liberalism = 5
 	conservatism = 5
 	paternalism = 5
-	despotism = 50
+	despotism = 5
 	ultranationalism = 5
-	fascism = 5
+	fascism = 50
 	national_socialism = 5
 	occultism = 5
+}
+
+set_autonomy = {
+	target = CRO
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = ALB
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = GRE
+	autonomous_state = autonomy_dominion
+}
+set_autonomy = {
+	target = AOI
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = EGY
+	autonomous_state = autonomy_colony
 }
 
 set_convoys = 50

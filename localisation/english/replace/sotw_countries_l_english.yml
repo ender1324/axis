@@ -1,5 +1,5 @@
 ﻿l_english:
- # Germany and suvjects
+ # Germany and subjects
  GER:0 "Großgermanisches Reich"
  GER_DEF:0 "The Großgermanisches Reich"
  GER_ADJ:0 "German"
@@ -35,6 +35,19 @@
  RNO:0 "Reichskommissariat Norwegen"
  RNO_DEF:0 "The Reichskommissariat Norwegen"
  RNO_ADJ:0 "Northern German"
+ 
+ RKM:0 "Reichskommissariat Mittleafrika"
+ RKM_DEF:0 "The Reichskommissariat Mittleafrika"
+ RKM_AFJ:0 "Mittleafrikan"
+
+ # France and Free France
+ FRA:0 "French State"
+ FRA_DEF:0 "The French State"
+ FRA_ADJ:0 "French"
+
+ FFA:0 "Free French Colonial Authority"
+ FFA_DEF:0 "The Free French Colonial Authority"
+ FFA_AFJ:0 "Free French"
 
  # England
  ENG:0 "England"
@@ -53,3 +66,11 @@
  USA:0 "United States of America"
  USA_DEF:0 "the United States of America"
  USA_ADJ:0 "American"
+
+ # Central African Republic
+ CAR:0 "Central African Republic"
+ CAR_DEF:0 "the Central African Republic"
+ CAR_ADJ:0 "Central African"
+ CAR_vanguardism:0 "Central African People's Republic"
+ CAR_vanguardism_DEF:0 "the Central African People's Republic"
+ CAR_vanguardism_ADF:0 "Central African"

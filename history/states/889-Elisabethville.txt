@@ -9,7 +9,9 @@ state = {
 	}
 
 	history = {
-		owner = COG
+		owner = POR
+		add_claim_by = POR
+		add_claim_by = RKM
 		buildings = {
 			infrastructure = 1
 

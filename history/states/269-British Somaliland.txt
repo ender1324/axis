@@ -13,13 +13,14 @@ state=
 		victory_points = { #Hargeisa
 			5068 1
 		}
-		owner = ENG
+		owner = AOI
 		buildings = {
 			infrastructure = 2 #was 3
 			12759 = {
 				naval_base = 1
 			}		
-		}		
+		}	
+		add_claim_by = AOI
 		add_core_of = SOM
 	}
 	provinces={

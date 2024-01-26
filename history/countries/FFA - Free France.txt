@@ -1,4 +1,4 @@
-﻿capital = 337
+capital = 272 #DAKAR
 
 
 
@@ -15,18 +15,18 @@ set_politics = {
 
 set_popularities = {
 	anarchy = 0
-	vanguardism = 0
-	communism = 3
-	socialism = 8
-	progressivism = 16
-	liberalism = 9
-	conservatism = 3
-	paternalism = 49
-	despotism = 3
-	ultranationalism = 5
-	fascism = 4
+	vanguardism = 16
+	communism = 7
+	socialism = 3
+	progressivism = 8
+	liberalism = 7
+	conservatism = 5
+	paternalism = 42
+	despotism = 7
+	ultranationalism = 2
+	fascism = 0
 	national_socialism = 0
-	occultism = 0
+	occultism = 3
 }
 
 set_convoys = 50

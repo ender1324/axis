@@ -10,7 +10,8 @@ state={
 		victory_points = {
 			1984 2 
 		}
-		owner = ETH
+		owner = AOI
+		add_claim_by = AOI
 		add_core_of = ETH
 		add_core_of = QEM
 	}

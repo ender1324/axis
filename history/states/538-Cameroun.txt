@@ -9,7 +9,8 @@ state={
 	manpower = 1693974
 
 	history={
-		owner = COG
+		owner = RKM
+		add_claim_by = RKM
 		buildings = {
 			infrastructure = 1
 

@@ -41,7 +41,6 @@ RKK = {
 
 # RK Danemark
 RKD = {
-	#color = rgb { 50 50 50 }
 	color = rgb { 61 45 35 }
 	color_ui = rgb { 50 50 50 }
 }
@@ -58,6 +57,26 @@ RKN = {
 	color_ui = rgb { 50 50 50 }
 }
 
+# RK Mittleafrika
+RKM = {
+	color = rgb { 80 80 80 }
+	color_ui = rgb { 80 80 80 }
+}
+
+#######################
+###      FRANCE     ###
+#######################
+# French State
+FRA = {
+	color = rgb { 28 62 112 }
+	color_ui = rgb { 28 62 112 }
+}
+# Free France
+FFA = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 57 113 228 }
+}
+
 #######################
 ###      OTHERS     ###
 #######################
@@ -72,10 +91,6 @@ SOV = {
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }
-}
-FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
 }
 LUX = {
 	color = rgb { 65 175 179 }

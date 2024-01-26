@@ -24,7 +24,8 @@ state = {
 			13296 1 
 		}
 		
-		owner = ETH
+		owner = AOI
+		add_claim_by = AOI
 		add_core_of = ETH
 		add_core_of = SID
 		add_core_of = ORO

@@ -402,6 +402,7 @@ ideologies = {
 	vanguardism = {
 		types = {
 			vanguardism_subtype = {}
+			pan_africanism_subtype = {}
 		}
 		dynamic_faction_names = {}
 		color = { 140 0 10 }
