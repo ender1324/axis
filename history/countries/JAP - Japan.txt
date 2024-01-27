@@ -5,7 +5,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = fascism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,17 +14,54 @@ set_politics = {
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
-	socialism = 5
-	progressivism = 5
-	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	communism = 0
+	socialism = 1
+	progressivism = 2
+	liberalism = 7
+	conservatism = 9
+	paternalism = 4
+	despotism = 16
+	ultranationalism = 8
+	fascism = 47
+	national_socialism = 6
+	occultism = 0
+}
+
+create_faction = "Greater East Asian Co-Prosperity Sphere"
+add_to_faction = JAP
+add_to_faction = AZH
+add_to_faction = FER
+set_autonomy = {
+	target = MAN
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = CHI
+	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = MEN
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = PHI
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = VIN
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = LAO
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = CAM
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = BRM
+	autonomy_state = autonomy_dominion
 }
 
 set_convoys = 50

@@ -1,4 +1,7 @@
-﻿capital = 829 #Engels
+﻿
+
+
+capital = 829 #Engels
 
 set_technology = {
 	infantry_weapons = 1
