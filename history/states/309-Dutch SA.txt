@@ -11,8 +11,9 @@ state={
 	state_category = rural
 
 	history={
-		add_core_of = SUR
 		owner = HOL
+		add_core_of = HOL
+		add_core_of = SUR
 		buildings = {
 			infrastructure = 2 #was 3
 			industrial_complex = 1

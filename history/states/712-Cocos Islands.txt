@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = MAL
+		owner = JAP
 		buildings = {
 			infrastructure = 2 #was 3
 			13002 = {
