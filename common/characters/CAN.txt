@@ -1,0 +1,32 @@
+characters = {
+	CAN_louis_laurent = {
+		name = "Louis St. Laurent"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_CAN_loius_laurent"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_subtype
+			expire = 1957.1.1
+			traits = {
+				anti_nazi_crusader
+			}
+		}
+	}
+	CAN_elizabeth_II = {
+		name = "Elizabeth II"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_CAN_Elizabeth_II"
+			}
+		}
+		country_leader = {
+			ideology = despotism_subtype
+			expire = 2022.10.08
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+}

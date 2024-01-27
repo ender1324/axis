@@ -8,8 +8,8 @@ scripted_gui = {
 		
 		properties = {
 			vice_leader_picture = {
-				#image = "[VL_picture]"
-				image = GFX_leader_unknown
+				image = "[SL_picture]"
+				#image = GFX_leader_unknown
 			}
 		}
 	}
@@ -25,8 +25,8 @@ scripted_gui = {
 		
 		properties = {
 			vice_leader_portrait = {
-				#image = "[VL_picture]"
-				image = GFX_leader_unknown
+				image = "[SL_picture]"
+				#image = GFX_leader_unknown
 			}
 		}
 	}

@@ -1,0 +1,93 @@
+# Used in the diplomacy GUI to show the main leader status
+defined_text = {
+	name = SL_main_status
+	text = {
+		trigger = { tag = GER }
+		localization_key = SL_status_fuhrer
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = CAN
+				tag = ENG
+			}
+		}
+		localization_key = SL_status_primeminister
+	}
+	text = { localization_key = SL_status_ficdefault }
+}
+
+# Used in the diplomacy GUI to show the secondary leader status
+defined_text = {
+	name = SL_second_status
+	text = {
+		trigger = { TAG = GER }
+		localization_key = SL_status_marshall
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_idea = CAN_SL_Elizabeth_II_idea
+			}
+		}
+		localization_key = SL_status_queen
+	}
+	text = {
+		trigger = {
+			tag = CAN
+		}
+		localization_key = SL_status_king
+	}
+	text = { localization_key = SL_status_default }
+}
+
+defined_text = {
+	name = SL_picture
+	# Canada
+	text = {
+		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
+		localization_key = GFX_Portrait_CAN_Elizabeth_II
+	}
+	text = { localization_key = GFX_leader_unknown }
+}
+
+defined_text = {
+	name = SL_name
+	# CANADA
+	text = {
+		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
+		localization_key = SL_name_Elizabeth_II
+	}
+	text = { localization_key = SL_name }
+}
+
+defined_text = {
+	name = SL_name_with_trait
+	# CANADA
+	text = {
+		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
+		localization_key = SL_name_with_trait_Elizabeth_II
+	}
+	text = { localization_key = SL_name_with_trait }
+}
+
+defined_text = {
+	name = SL_diplomacy_name_with_trait
+	# CANADA
+	text = {
+		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
+		localization_key = SL_diplomacy_name_with_trait_Elizabeth_II
+	}
+	text = { localization_key = SL_diplomacy_name_with_trait }
+}
+
+defined_text = {
+	name = SL_desc
+	# CANADA
+	text = {
+		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
+		localization_key = SL_desc_Elizabeth_II
+	}
+	text = { localization_key = SL_desc }
+}

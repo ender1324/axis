@@ -5144,7 +5144,7 @@ guiTypes = {
 			position = { x = 0 y = 10 }
 			spriteType = "GFX_leader_unknown"
 			scale = 0.74
-			pdx_tooltip = SL_gov_status_tt
+			pdx_tooltip = SL_diplomacy_name_with_trait_tt
 			pdx_tooltip_delayed = SL_desc_tt
 		}
 		
@@ -5217,7 +5217,7 @@ guiTypes = {
 			name = "diplo_vice_leader_name"
 			position = { x = 235 y = 139 }
 			font = "hoi_18mbs"
-			text = "[VL_name]"
+			text = "[SL_name]"
 			maxWidth = 145
 			maxHeight = 36
 			fixedsize = yes

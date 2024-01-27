@@ -3,18 +3,19 @@
  power_balance_icon_tt: "Balance of power has not been activated yet"
  # Default locs if no hit in scripted LOCs and the loc value itself
  SL_name: "None"
- SL_state: ""
- SL_gov_status: "" # SL_gov_status_country
+ SL_name_with_trait: ""
+ SL_diplomacy_name_with_trait: ""
+
  SL_desc: ""
  # Tooltips
- SL_state_tt: "[SL_state]"
- SL_gov_status_tt: "[SL_gov_status]"
+ SL_name_with_trait_tt: "[SL_name_with_trait]"
+ SL_diplomacy_name_with_trait_tt: "[SL_diplomacy_name_with_trait]"
  SL_desc_tt: "[SL_desc]"
  country_special_gui_tt: "Click to ENTER or EXIT §6special mechanism§! interface"
  country_special_icon_tt: "Special mechanisms have not been enabled yet"
  ###########
  
- SL_govstatus: "§C[FROM.GetVLGovStatus]§! of [FROM.GetFlag]§Y[FROM.GetName]§!\n" # King of [FLAG] England
+ SL_fancy_status: "§C[FROM.SL_second_status]§! of [FROM.GetFlag]§Y[FROM.GetName]§!\n" # King of [FLAG] Country
  SL_guiscreen_mainleader_status: "[SL_main_status]"
  SL_mainleader_name_tt: "[FROM.GetLeader]"
  SL_guiscreen_secondleader_status: "[SL_second_status]"
@@ -22,7 +23,7 @@
  SL_status_default: "Second in Command"
  SL_status_king: "King"
  SL_status_queen: "Queen"
- SL_status_primeminister: "Prime Minister"
+ SL_status_primeminister: "PM"
  SL_status_marshall: "Marshall"
  SL_status_president: "President"
  SL_status_vicepresident: "Vice President"
@@ -30,10 +31,14 @@
  SL_status_fuhrer: "Fuhrer"
  SL_status_ficdefault: "Leader"
  
- George_V: "George V"
- SL_name_George_V: "$George_V$"
- SL_trait_George_V: "§Y$popular_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+15.00%§!"
- SL_state_George_V: "§Y$George_V$§!\n$SL_trait_George_V$"
- SL_Dip_state_George_V: "§Y$George_V$§!\n$SL_govstatus$\n$VL_trait_George_V$" # Tooltip: George V \n King of [FLAG] England \n Popular figurehead: +15% stability
- SL_desc_George_V: "§L$george_v_desc$§!"
- ENG_SL_George_V: "$George_V$"
+ ####################
+ ###    CANADA    ###
+ ####################
+ Elizabeth_II: "Elizabeth II"
+ SL_name_Elizabeth_II: "$Elizabeth_II$"
+ SL_trait_Elizabeth_II: "§Y$popular_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+15.00%§!"
+ SL_name_with_trait_Elizabeth_II: "§Y$Elizabeth_II$§!\n$SL_trait_Elizabeth_II$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Elizabeth_II: "§Y$Elizabeth_II$§!\n$SL_fancy_status$\n$SL_trait_Elizabeth_II$" # Tooltip for diplomacy: Elizabeth II \n Queen of [FLAG] England \n Popular figurehead: +15% stability
+ SL_desc_Elizabeth_II: "$CAN_SL_Elizabeth_II_idea_desc$"
+ CAN_SL_Elizabeth_II_idea: "$Elizabeth_II$"
+ CAN_SL_Elizabeth_II_idea_desc: "§LElizabeth Alexandra Mary was never supposed to be Queen. Born in 1926 during the reign of her grandfather George V, she was the eldest daughter of the king's second son, Albert, Prince of York. When her father acceded to the throne in 1936 following the abdication of his brother, a young Elizabeth became the heir apparent to the British throne.\n\nDuring the Second World War, a then-fourteen Princess Elizabeth fled Britain to their dominion in Canada, her father and the rest of the royal family and government joining her following the fall of the British Isles. The British crown was left divided, with George VI claiming the throne from Canada and the former king Edward placed on the throne by the Germans. Elizabeth acceded to this competition when her father died in 1952, leaving her as Queen Elizabeth II.\n\nHer reign has been respectable, compared to her adversary in London. Scaling back the crown's major sway over their Canadian hosts, she has won the people of the domains she still lays claim over. But as tensions begin to rise again across the globe, the Canadians are starting to grow tired of hosting the large community of British exiles and their politics.§!\n§RIf Canada commits too strongly to the British cause, there will be dire consequences...§!"

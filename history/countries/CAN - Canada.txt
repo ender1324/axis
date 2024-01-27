@@ -1,45 +1,35 @@
 ﻿capital = 276
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-
-}
-
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_politics = {
-	ruling_party = despotism
-	last_election = "1953.01.01"
+	ruling_party = liberalism
+	last_election = "1953.08.24"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
+# Actual results from election + some imaginary results from the axis victory
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
-	socialism = 5
-	progressivism = 5
-	liberalism = 5
-	conservatism = 5
+	communism = 4
+	socialism = 6
+	progressivism = 11
+	liberalism = 38
+	conservatism = 21
 	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	despotism = 4
+	ultranationalism = 0
+	fascism = 4
+	national_socialism = 7
+	occultism = 0
 }
+
+recruit_character = CAN_louis_laurent
+recruit_character = CAN_elizabeth_II
+add_ideas = CAN_SL_Elizabeth_II_idea
 
 set_convoys = 50

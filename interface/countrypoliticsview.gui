@@ -1771,7 +1771,7 @@ guiTypes = {
 		iconType = {
 			name = "vice_leader_picture"
 			position = { x = 183 y = 58 }
-			pdx_tooltip = SL_state_tt
+			pdx_tooltip = SL_name_with_trait_tt
 			pdx_tooltip_delayed = SL_desc_tt
 		}
 		
@@ -1787,7 +1787,7 @@ guiTypes = {
 			position = { x = 183 y = 262 }
 			font = "hoi_18mbs"
 			text = "[SL_name]"
-			pdx_tooltip = SL_state_tt
+			pdx_tooltip = SL_name_with_trait_tt
 			pdx_tooltip_delayed = SL_desc_tt
 			maxWidth = 155
 			maxHeight = 36
