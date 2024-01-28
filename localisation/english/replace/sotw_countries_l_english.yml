@@ -185,6 +185,13 @@
  FER_DEF: "the Independent State of the Far East"
  FER_ADJ: "Far-Eastern Russian"
 
+ # Central Asia
+ KKP: "Karakalpakstan"
+ KKP_DEF: "Karakalpakstan"
+ KKP_ADJ: "Karakalpakstani"
+ BUK: "Emirate of Bukhara"
+ BUK_DEF: "the Emirate of Bukhara"
+
  # USA/America
  USA: "United States of America"
  USA_DEF: "the United States of America"
