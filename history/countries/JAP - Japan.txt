@@ -29,6 +29,7 @@ set_popularities = {
 
 create_faction = "Greater East Asian Co-Prosperity Sphere"
 add_to_faction = JAP
+add_to_faction = SIA
 add_to_faction = AZH
 add_to_faction = FER
 set_autonomy = {

@@ -5,10 +5,10 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = progressivism
 	last_election = "1953.01.01"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
@@ -16,15 +16,37 @@ set_popularities = {
 	vanguardism = 0
 	communism = 5
 	socialism = 5
-	progressivism = 5
+	progressivism = 50
 	liberalism = 5
 	conservatism = 5
 	paternalism = 5
-	despotism = 50
+	despotism = 5
 	ultranationalism = 5
 	fascism = 5
 	national_socialism = 5
 	occultism = 5
 }
+
+create_faction = "Security Treaty of Sovereign Democracies"
+add_to_faction = CAN
+add_to_faction = MEX
+add_to_faction = GUA
+add_to_faction = HON
+add_to_faction = ELS
+add_to_faction = NIC
+add_to_faction = COS
+#add_to_faction = PAN
+add_to_faction = HOL
+add_to_faction = NOR
+add_to_faction = DEN
+add_to_faction = ICE
+add_to_faction = AUS
+
+give_guarantee = PAN
+give_guarantee = COL
+
+send_embargo = GER
+send_embargo = ITA
+send_embargo = JAP
 
 set_convoys = 50
