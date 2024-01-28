@@ -1,0 +1,17 @@
+characters = {
+	GER_Adolf_Hitler = {
+		name = "Adolf Hitler"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_adolf_hitler"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			expire = 1961.1.12
+			traits = {
+				figurehead_fuhrer
+			}
+		}
+	}	
+}

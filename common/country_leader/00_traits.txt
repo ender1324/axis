@@ -521,6 +521,12 @@ leader_traits = {
 			defense_bonus_against = 0.1
 		}
 	}
+	figurehead_fuhrer = {
+		random = no
+		political_power_gain = -0.05
+		stability_factor = -0.05
+		offensive_war_stability_factor = -0.05
+	}
 	### IDEA TRAITS ###
 
 	# drift is a percent applied weekly
