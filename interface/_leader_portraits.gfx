@@ -17,9 +17,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
 
+	# Canada
 	spriteType = {
 		name = "GFX_portrait_CAN_loius_laurent"
-		textureFile = "gfx/leaders/CAN/Portrait_Canada_Loius_Laurent.dds"
+		textureFile = "gfx/leaders/CAN/Portrait_Canada_Louis_Laurent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CAN_john_diefenbaker"
+		textureFile = "gfx/leaders/CAN/Portrait_Canada_John_Diefenbaker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_CAN_lester_pearson"
+		textureFile = "gfx/leaders/CAN/Portrait_Canada_lester_pearson.dds"
 	}
 
 	spriteType = {

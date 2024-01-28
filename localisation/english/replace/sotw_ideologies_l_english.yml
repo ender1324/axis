@@ -77,6 +77,8 @@ conservatism_drift: "Conservative Drift"
 
 conservatism_subtype: "Conservatism"
 conservatism_subtype_desc: "Conservatism is a political ideology centered on preserving traditional beliefs, attitudes, and philosophy as well as the traditional power dynamic of society within the democratic system. Opposed to both radical and sometimes even moderate changes to the status quo, Conservatives want to keep society stable and in good order. Usually they promote a regulated market economy, although more economically liberal traditions within Conservatism are not unheard of."
+progressive_conservatism_subtype: "Progressive Conservatism"
+progressive_conservatism_subtype_desc: "Progressive conservatism is a political ideology that attempts to combine conservative and progressive policies. While still supportive of capitalist economy, it stresses the importance of government intervention in order to improve human and environmental conditions."
 
 ### Paternalism
 paternalism: "Paternalists"

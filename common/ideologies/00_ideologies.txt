@@ -234,6 +234,7 @@ ideologies = {
 	conservatism = {
 		types = {
 			conservatism_subtype = {}
+			progressive_conservatism_subtype = {}
 		}
 		dynamic_faction_names = {}
 		color = { 35 35 135 }

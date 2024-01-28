@@ -14,6 +14,33 @@ characters = {
 			}
 		}
 	}
+	CAN_john_diefenbaker = {
+		name = "John Diefenbaker"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_CAN_john_diefenbaker"
+			}
+		}
+		country_leader = {
+			ideology = progressive_conservatism_subtype
+			expire = 1979.08.16
+		}
+	}
+	CAN_lester_pearson = {
+		name = "Lester B. Pearson"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_CAN_lester_pearson"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_subtype
+			expire = 1972.12.27
+			traits = {
+				canadian_stsd_cofounder
+			}
+		}
+	}
 	CAN_elizabeth_II = {
 		name = "Elizabeth II"
 		portraits = {
