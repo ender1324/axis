@@ -1,0 +1,17 @@
+characters = {
+	KAZ_leonid_brezhnev = {
+		name = KAZ_leonid_brezhnev
+		#portraits = {
+		#	civilian = {
+		#		large = "GFX_portrait_KAZ_leonid_brezhnev" # missing rn
+		#	}
+		#}
+		country_leader = {
+			ideology = vanguardism_subtype
+			expire = 1982.11.10
+			traits = {
+				prince_of_terror
+			}
+		}
+	}	
+}
