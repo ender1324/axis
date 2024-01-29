@@ -9,10 +9,10 @@ state={
 	history={
 		owner = GER
 		victory_points = {
-			587 5 
+			587 8 
 		}
 		victory_points = { # Bonn - for West German politics
-			3547 1
+			3547 5
 		}
 		buildings = {
 			infrastructure = 4
@@ -22,7 +22,6 @@ state={
 		}
 		add_core_of = GER
 		#add_core_of = PRE
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

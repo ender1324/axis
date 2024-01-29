@@ -6,6 +6,10 @@ state={
 
 	state_category = pastoral
 
+	resources={
+		oil=2
+	}
+
 	history={
 		owner = YEM
 		victory_points = {

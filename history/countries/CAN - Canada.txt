@@ -28,6 +28,11 @@ set_popularities = {
 	occultism = 0
 }
 
+set_autonomy = {
+	target = BLZ
+	autonomous_state = autonomy_dominion
+}
+
 recruit_character = CAN_louis_laurent
 recruit_character = CAN_john_diefenbaker
 recruit_character = CAN_lester_pearson

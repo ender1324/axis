@@ -158,6 +158,22 @@
  RKM_DEF: "The Reichskommissariat Mittleafrika"
  RKM_AFJ: "Mittleafrikan"
 
+ # Italy
+ ITA: "Italy"
+ ITA_DEF: "Italy"
+ ITA_ADJ: "Italian"
+ UAE: "United Arab Emirates"
+ UAE_DEF: "the United Arab Emirates"
+ UAE_ADJ: "Emirat"
+
+ # Egypt
+ EGY: "Egypt"
+ EGY_DEF: "Egypt"
+ EGY_ADJ: "Egyptian"
+ EGY_ITA_subject: "Kingdom of Egypt"
+ EGY_ITA_subject_DEF: "the Kingdom of Egypt"
+ EGY_ITA_subject_ADJ: "Egyptian"
+
  # France and Free France
  FRA: "French State"
  FRA_DEF: "The French State"
@@ -422,6 +438,12 @@
  MAN_JAP_subject: "Empire of Great Manchuria"
  MAN_JAP_subject_DEF: "the Empire of Manchuria"
  MAN_JAP_subject_ADJ: "Manchurian"
+ YUN: "Yunnan"
+ YUN_DEF: "Yunnan"
+ YUN_ADJ: "Yunnanese"
+ YUN_JAP_subject: "Yunnan Resource Extraction Zone"
+ YUN_JAP_subject_DEF: "the Yunnan Resource Extraction Zone"
+ YUN_JAP_subject_ADJ: "Yunnanese"
 
  # Siam
  SIA: "Thailand"

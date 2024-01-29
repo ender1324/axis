@@ -7,13 +7,14 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = ENG
+		owner = ISR
 		buildings = {
 			infrastructure = 1			
 		}
 		victory_points = {
 			1544 1 
 		}
+		add_claim_by = ISR
 		add_core_of = JOR
 	}
 

@@ -47,5 +47,9 @@ set_autonomy = {
 	target = EGY
 	autonomous_state = autonomy_colony
 }
+set_autonomy = {
+	target = UAE
+	autonomous_state = autonomy_dominion
+}
 
 set_convoys = 50

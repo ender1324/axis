@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ENG
+		owner = ISR
 		buildings = {
 			infrastructure = 2 #was 3
 			industrial_complex = 1
@@ -17,7 +17,7 @@ state={
 		victory_points = {
 			7151 5 
 		}
-
+		add_claim_by = ISR
 		add_core_of = JOR
 	}
 

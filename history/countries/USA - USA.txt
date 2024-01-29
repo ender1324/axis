@@ -42,6 +42,11 @@ add_to_faction = DEN
 add_to_faction = ICE
 add_to_faction = AUS
 
+# Carribean
+add_to_faction = CUB
+add_to_faction = HAI
+add_to_faction = DOM
+
 give_guarantee = PAN
 give_guarantee = COL
 

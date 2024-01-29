@@ -32,6 +32,9 @@ add_to_faction = JAP
 add_to_faction = SIA
 add_to_faction = AZH
 add_to_faction = FER
+add_to_faction = INS
+add_to_faction = MAL
+
 set_autonomy = {
 	target = MAN
 	autonomous_state = autonomy_puppet
@@ -39,6 +42,10 @@ set_autonomy = {
 set_autonomy = {
 	target = CHI
 	autonomy_state = autonomy_puppet
+}
+set_autonomy = {
+	target = YUN
+	autonomous_state = autonomy_colony
 }
 set_autonomy = {
 	target = MEN
