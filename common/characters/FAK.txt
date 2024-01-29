@@ -105,7 +105,6 @@ characters={
 			expire = "1999.1.1"
 			ideology = fascism_subtype
 			traits = {
-				indomitable_perseverance
 				political_dancer
 			}
 			id=-1

@@ -1,6 +1,6 @@
 characters = {
 	CAN_louis_laurent = {
-		name = "Louis St. Laurent"
+		name = CAN_louis_laurent
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_CAN_loius_laurent"
@@ -15,7 +15,7 @@ characters = {
 		}
 	}
 	CAN_john_diefenbaker = {
-		name = "John Diefenbaker"
+		name = CAN_john_diefenbaker
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_CAN_john_diefenbaker"
@@ -27,7 +27,7 @@ characters = {
 		}
 	}
 	CAN_lester_pearson = {
-		name = "Lester B. Pearson"
+		name = CAN_lester_pearson
 		portraits = {
 			civilian = {
 				large = "GFX_portrait_CAN_lester_pearson"
@@ -42,7 +42,7 @@ characters = {
 		}
 	}
 	CAN_elizabeth_II = {
-		name = "Elizabeth II"
+		name = SL_name_Elizabeth_II
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_CAN_Elizabeth_II"
