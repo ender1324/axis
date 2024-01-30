@@ -30,8 +30,8 @@ NDiplomacy = {
 	BASE_SURRENDER_LEVEL = 1.0,						-- Surrender when level reached. valid 0-1
 	MAX_TRUST_VALUE = 100,							-- Max trust value cap.
 	MIN_TRUST_VALUE = -100,							-- Min trust value cap.
-	MAX_OPINION_VALUE = 100,						-- Max opinion value cap.
-	MIN_OPINION_VALUE = -100,						-- Min opinion value cap.
+	MAX_OPINION_VALUE = 200,						-- Max opinion value cap.
+	MIN_OPINION_VALUE = -200,						-- Min opinion value cap.
 	BASE_TRUCE_PERIOD = 180,						-- Base truce period in days.
 	TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 60,				-- Truce period after kicking someone from faction in days.
 	NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 90,			-- Number of days before being able to kick a new member of faction
@@ -101,7 +101,7 @@ NDiplomacy = {
 	BASE_IMPROVE_RELATION_SAME_IDEOLOGY_GROUP_MAINTAIN_COST = 0.2, -- Political power cost each update when boosting relations with nation of same ideology
 	BASE_IMPROVE_RELATION_DIFFERENT_IDEOLOGY_GROUP_MAINTAIN_COST = 0.4,    -- Political power cost each update when boosting relations with nation of different ideology
 	BASE_SEND_ATTACHE_COST = 100,					-- Political power cost to send attache
-	BASE_SEND_ATTACHE_CP_COST = 50.0,				-- Command Power sent attache usage cost
+	BASE_SEND_ATTACHE_CP_COST = 30.0,				-- Command Power sent attache usage cost
 	BASE_GENERATE_WARGOAL_DAILY_PP = 0.2,	-- Daily pp cost for generation of wargoals
 	WARGOAL_VERSUS_MAJOR_AT_WAR_REDUCTION = -0.75, 	-- reduction of pp cost for wargoal vs major at war.
 	WARGOAL_WORLD_TENSION_REDUCTION = -0.5,			-- Reduction of pp cost for wargoal at 100% world tension, scales linearly
@@ -796,7 +796,7 @@ NMilitary = {
 	CORPS_COMMANDER_DIVISIONS_CAP = 24,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 	DIVISION_SIZE_FOR_XP = 8,                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
 	CORPS_COMMANDER_ARMIES_CAP = -1,			-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
-	FIELD_MARSHAL_DIVISIONS_CAP = 24,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+	FIELD_MARSHAL_DIVISIONS_CAP = 30,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 	FIELD_MARSHAL_ARMIES_CAP = 5,				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
 
 	UNIT_LEADER_GENERATION_CAPITAL_CONTINENT_FACTOR = 100, --Integer factor to multiply manpower.
