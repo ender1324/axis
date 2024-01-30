@@ -1,0 +1,59 @@
+has_WE_active = { check_variable = { war_exhaustion_start_up = 3 } }
+has_WE_month_2 = { check_variable = { war_exhaustion_start_up = 2 } }
+has_WE_month_1 = { check_variable = { war_exhaustion_start_up = 1 } }
+has_WE_month_0 = { check_variable = { war_exhaustion_start_up = 0 } }
+
+has_WE_value_greater_trigger = { 
+   custom_trigger_tooltip = {
+		tooltip = has_WE_value_greater_trigger_tt
+		check_variable = { war_exhaustion_value > temp_war_exhaustion_value } 
+   }
+}
+has_WE_value_lesser_trigger = { 
+   custom_trigger_tooltip = {
+		tooltip = has_WE_value_lesser_trigger_tt
+		check_variable = { war_exhaustion_value < temp_war_exhaustion_value } 
+   }
+}
+
+devastation_check = {
+	any_core_state = {
+		OR = {
+			AND = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level < 1
+				}
+				infrastructure > 0
+			}
+			AND = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level < 2
+				}
+				infrastructure > 1
+			}
+			AND = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level < 3
+				}
+				infrastructure > 2
+			}
+			AND = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level < 4
+				}
+				infrastructure > 3
+			}
+			AND = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level < 5
+				}
+				infrastructure > 4
+			}
+		}
+	}
+}

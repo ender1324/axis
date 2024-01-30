@@ -1,0 +1,343 @@
+war_exhaustion_category = {
+
+	###we_war_hero_narratives = {
+	###
+	###	icon = generic_nationalism
+	###
+	###	available = {
+	###		set_temp_variable = { temp_war_exhaustion_value = 0.1 }
+	###		has_WE_value_greater_trigger = yes
+	###	}
+	###
+	###	visible = {
+	###
+	###	}
+	###
+	###	fire_only_once = no
+	###	days_remove = 15
+	###
+	###	days_re_enable = 60
+	###	
+	###	ai_will_do = {
+	###		factor = 1
+	###		modifier = {
+	###			factor = 80
+	###			check_variable = { war_exhaustion_value > 0.15 }
+	###		}
+	###		modifier = {
+	###			factor = 180
+	###			check_variable = { war_exhaustion_value > 0.60 }
+	###		}
+	###	}
+	###
+	###	cost = 30
+	###
+	###	remove_effect = {
+	###		set_temp_variable = { temp_war_exhaustion_value = -0.05 }
+	###		custom_effect_tooltip = change_WE_value_effect_tt
+	###		change_WE_value_effect = yes
+	###	}
+	###}
+
+	###we_war_bond_drives = {
+	###
+	###	icon = generic_welfare
+	###
+	###	available = {
+	###		set_temp_variable = { temp_war_exhaustion_value = 0.15 }
+	###		has_WE_value_greater_trigger = yes
+	###	}
+	###
+	###	visible = {
+	###
+	###	}
+	###
+	###	fire_only_once = no
+	###	days_remove = 20
+	###
+	###	days_re_enable = 80
+	###	
+	###	ai_will_do = {
+	###		factor = 1
+	###		modifier = {
+	###			factor = 80
+	###			check_variable = { war_exhaustion_value > 0.15 }
+	###		}
+	###		modifier = {
+	###			factor = 180
+	###			check_variable = { war_exhaustion_value > 0.55 }
+	###		}
+	###	}
+	###
+	###	cost = 45
+	###
+	###	remove_effect = {
+	###		set_temp_variable = { temp_war_exhaustion_value = -0.075 }
+	###		custom_effect_tooltip = change_WE_value_effect_tt
+	###		change_WE_value_effect = yes
+	###	}
+	###}
+
+	we_public_recognitions = {
+
+		icon = generic_speech
+
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.2 }
+			has_WE_value_greater_trigger = yes
+		}
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+		days_remove = 30
+
+		days_re_enable = 120
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 80
+				check_variable = { war_exhaustion_value > 0.2 }
+			}
+			modifier = {
+				factor = 180
+				check_variable = { war_exhaustion_value > 0.50 }
+			}
+		}
+
+		cost = 100
+
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.1 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+		}
+	}
+
+	we_documentary_films = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.5 }
+			has_WE_value_greater_trigger = yes
+		}
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+		days_remove = 60
+
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 360
+				check_variable = { war_exhaustion_value > 0.55 }
+			}
+		}
+
+		cost = 75
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.1 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+		}
+	}
+	
+	we_rationing_reevaluation = {
+
+		icon = generic_consumer_goods
+
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.3 }
+			has_WE_value_greater_trigger = yes
+		}
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+		
+		days_remove = 120
+
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 80 
+				check_variable = { war_exhaustion_value > 0.3 }
+			}
+			modifier = {
+				factor = 360 
+				check_variable = { war_exhaustion_value > 0.60 }
+			}
+		}
+
+		cost = 50
+		
+        modifier = {
+            consumer_goods_factor = 0.075
+        }
+
+
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.15 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+		}
+	}
+	
+	accede_to_protests = {	
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.30 }
+			has_WE_value_greater_trigger = yes
+		}
+		fire_only_once = no
+		days_re_enable = 240
+		visible = {
+			
+		}
+		cost = 75
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.15 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+		}
+		
+		complete_effect = {
+			add_stability = -0.05
+		}
+		
+		modifier = {
+			political_power_gain = -0.25
+		}
+		
+		days_remove = 180
+		ai_will_do = {	
+			factor = 1
+			modifier = {
+				factor = 320
+				check_variable = { war_exhaustion_value > 0.60 }
+			}	
+		}
+	}
+
+	we_arrest_and_detain_dissidents = {
+
+		icon = generic_arrest
+
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.4 }
+			has_WE_value_greater_trigger = yes
+		}
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+		days_remove = 10
+
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 360
+				check_variable = { war_exhaustion_value > 0.4 }
+			}
+		}
+
+		cost = 100
+
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.2 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+			add_manpower = -5000
+			add_stability = -0.05
+		}
+	}
+
+	we_consumer_goods_subsidies = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			set_temp_variable = { temp_war_exhaustion_value = 0.75 }
+			has_WE_value_greater_trigger = yes
+		}
+
+		visible = {
+
+		}
+
+		fire_only_once = no
+		days_remove = 365
+
+		days_re_enable = 240
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 4000
+				check_variable = { war_exhaustion_value > 0.60 }
+			}
+		}
+		
+        modifier = {
+            consumer_goods_factor = 0.15
+			political_power_cost = 0.25
+        }
+
+		cost = 125
+
+		remove_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.35 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+		}
+	}
+	
+	martial_law_start = {
+		icon = GFX_decision_eng_support_imperialist_coup
+		available = {
+				set_temp_variable = { temp_war_exhaustion_value = 0.75 }
+				has_WE_value_greater_trigger = yes
+		}
+		fire_only_once = no
+		
+		visible = {
+			
+		}
+		
+		days_remove = -1
+		cancel_if_not_visible = yes
+		
+		cost = 150
+		
+		complete_effect = {
+			set_temp_variable = { temp_war_exhaustion_value = -0.5 }
+			custom_effect_tooltip = change_WE_value_effect_tt
+			change_WE_value_effect = yes
+			
+			add_stability = -0.15
+
+		}
+	}
+}

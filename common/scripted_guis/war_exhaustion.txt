@@ -1,0 +1,24 @@
+scripted_gui = {
+	
+	war_exhaustion_main = {
+	
+		context_type = player_context
+		
+        parent_window_token = top_bar
+		
+		window_name = "war_exhaustion_container"
+		
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+		}
+		
+		properties = {
+		}
+		
+		triggers = {
+		}
+	}
+}

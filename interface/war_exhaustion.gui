@@ -1,0 +1,36 @@
+guiTypes = {
+
+	containerWindowType = {
+
+		name = "war_exhaustion_container"
+		position = { x = 1108 y = 3 }
+		orientation = UPPER_LEFT
+		origo = upper_left
+
+		iconType = {
+			name = "text_bg"
+			quadTextureSprite = "GFX_generic_text_bg_88"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "war_exhaustion_tab"
+			pdx_tooltip_delayed = "war_exhaustion_desc"
+		}
+		iconType = {
+			name = "war_exhaustion_icon"
+			quadTextureSprite = "GFX_war_exhaustion"
+			position = { x = 10 y = 0 }
+			scale = 0.95
+			pdx_tooltip = "war_exhaustion_tab"
+			pdx_tooltip_delayed = "war_exhaustion_desc"
+		}
+		instantTextboxType = {
+			name = "war_exhaustion_value"
+			position = { x = 43 y = 4 }
+			font = "hoi_18mbs"
+			text = "war_exhaustion_value"
+			alwaystransparent = yes
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+	}
+}

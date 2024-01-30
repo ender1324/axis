@@ -1,0 +1,218 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					tag = THIS
+				}
+				set_variable = { war_exhaustion_max_value = 1 }
+				reset_WE_var = yes
+			}
+		}
+	}
+	
+	on_weekly = {
+		effect = {
+			reset_WE_var = yes
+			
+			subtract_from_variable = { WE_consecutive_wars = 1 }
+			if = {
+				limit = {
+					check_variable = { WE_consecutive_wars < 0 }
+				}
+				set_variable = { WE_consecutive_wars = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { WE_consecutive_wars > 10 }
+				}
+				set_variable = { WE_consecutive_wars = 0 }
+			}
+		}
+	}
+	
+	on_monthly = {
+		effect = {
+			if = {
+				limit = { has_war = yes }
+				
+				if = {
+					limit = {
+						has_WE_month_2 = yes
+					}
+					set_WE_active = yes
+				}
+				else_if = {
+					limit = {
+						has_WE_month_1 = yes
+					}
+					set_WE_month_2 = yes
+				}
+				else = {
+					set_WE_month_1 = yes
+				}
+			}
+			else = {
+				set_WE_month_0 = yes
+			}
+		}
+	}
+	
+	on_nuke_drop = {
+		effect = {
+			FROM.owner = {
+				add_to_variable = { war_exhaustion_value = 0.25 }
+				verify_WE_to_WE_max = yes
+			}
+		}
+	}
+	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						is_capital = yes
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.20 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.20 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			
+			if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = megalopolis #12	4
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.12 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = metropolis #10	3.5
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.10 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = large_city #8	3
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.08 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = city #6			2.5
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.06 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = large_town #5	2
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.05 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = town #4			1.5
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.04 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+			else_if = {
+				limit = {
+					FROM.FROM = {
+						has_state_category = rural #2			1
+					}
+				}
+				FROM = {
+					add_to_variable = { war_exhaustion_value = 0.00 }
+					verify_WE_to_WE_max = yes
+				}
+				ROOT = {
+					add_to_variable = { war_exhaustion_value = -0.02 }
+					verify_WE_to_WE_max = yes
+				}
+			}
+	
+	#megalopolis # 6
+	#metropolis # 5
+	#large_city # 4
+	#city # 3
+	#large_town # 2.5
+	#town # 2
+	#rural # 1
+	
+		}
+	}
+	
+	on_war = {
+		effect = {
+			THIS = {
+				add_to_variable = { WE_consecutive_wars = 1 }
+				if = {
+					limit = {
+						check_variable = { WE_consecutive_wars > 1 }
+					}
+					add_to_variable = { war_exhaustion_value = 0.005 }
+				}
+			}
+		}
+	}
+}
