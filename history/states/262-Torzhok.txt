@@ -2,7 +2,7 @@
 state={
 	id=262
 	name="STATE_262" # Pechora
-	manpower = 44005
+	manpower = 84005
 	
 	state_category = rural
 	

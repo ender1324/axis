@@ -2,7 +2,7 @@
 state={
 	id=351
 	name="STATE_351" # Vologda
-	manpower = 1799336
+	manpower = 1599336
 	
 	state_category = town
 

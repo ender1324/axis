@@ -2,7 +2,7 @@
 state={
 	id=590
 	name="STATE_590" # Akmolinsk
-	manpower = 1200543
+	manpower = 1590543
 	
 	state_category = pastoral
 
