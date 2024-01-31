@@ -1,27 +1,23 @@
 
 state={
-	id=262
-	name="STATE_262"
-
-	history={
+	id=1062
+	name="STATE_1062"
+	state_category = pastoral
+	history = {
 		owner = SOV
-		buildings = {
-			infrastructure = 1
-
-		}
 		add_core_of = SOV
 		add_core_of = KOM
 		victory_points = {
-			10723 3
+			9121 2
 		}
-
+		buildings = {
+			infrastructure = 2
+		}
 	}
-
 	provinces={
-		6538 10723 11182 
+		6177 9121 9230 
 	}
-	manpower=29005
+	manpower=6123
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }

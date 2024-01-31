@@ -9,19 +9,25 @@ state={
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			arms_factory = 1
 		}
 		add_core_of = SOV
 		add_core_of = KOM
+		victory_points = {
+			99 10
+		}
+		victory_points = {
+			6202 2 # its called Obyachevo
+		}
 
 	}
 
 	provinces={
-		6 99 108 1295 1307 3000 3155 4298 6121 6202 7318 7330 7712 7898 9145 9225 10579 11179 11200 11203 12558 
+		6 99 108 1307 3000 6121 6202 7318 9145 11179 11203 
 	}
-	manpower=417233
+	manpower=232117
 	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	state_category=developed_rural
+	local_supplies=2.000
 }

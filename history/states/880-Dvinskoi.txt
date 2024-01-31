@@ -4,7 +4,7 @@ state={
 	name="STATE_880"
 
 	history={
-		owner = SOV
+		owner = RAR
 		victory_points = {
 			3081 1 
 		}
@@ -12,6 +12,7 @@ state={
 			infrastructure = 1
 
 		}
+		add_core_of = RAR
 		add_core_of = SOV
 
 	}

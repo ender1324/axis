@@ -15,3 +15,5 @@ FFA = "countries/Free_France.txt"
 # Co-Prosperity Sphere puppets
 AZH = "countries/Azad_Hind.txt"
 #RKS = "countries/RK_Sudafrika.txt"
+# Russian Warlords
+RAR = "countries/Red_Army_Reminants.txt"

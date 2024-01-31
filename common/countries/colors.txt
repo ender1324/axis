@@ -85,16 +85,25 @@ AZH = {
 	color_ui = rgb { 4 106 56 }
 }
 
+################################
+###     RUSSIAN WARLORDS     ###
+################################
+# Generic russian tag used for claims and cores
+SOV = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+# Red Army Reminants
+RAR = {
+	color = rgb { 105 10 20 }
+	color_ui = { 105 10 20 }
+}
 #######################
 ###      OTHERS     ###
 #######################
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
-}
-SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
 }
 SWE = {
 	color = rgb { 36 132 247 }

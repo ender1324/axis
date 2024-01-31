@@ -1,0 +1,23 @@
+
+state={
+	id=1059
+	name="STATE_1059"
+	state_category = developed_rural
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		victory_points = {
+			11098 5
+		}
+		buildings = {
+			industrial_complex = 1 
+			infrastructure = 2
+		}
+	}
+	provinces={
+		198 6040 11047 11098 11119 
+	}
+	manpower=109632
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}
