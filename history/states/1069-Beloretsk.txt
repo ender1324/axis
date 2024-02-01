@@ -4,7 +4,7 @@ state={
 	name="STATE_1069"
 	state_category=rural
 	history={
-		owner = SOV
+		owner = BSK
 		buildings = {
 			infrastructure = 1
 		}

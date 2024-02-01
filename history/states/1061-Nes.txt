@@ -8,6 +8,7 @@ state={
 		owner = RAR
 		add_core_of = RAR
 		add_core_of = SOV
+		add_core_of = NEN
 		victory_points = {
 			6192 3
 		}

@@ -5,7 +5,8 @@ state={
 	state_category = pastoral
 	
 	history = {
-		owner = SOV
+		owner = RAR
+		add_core_of = RAR
 		add_core_of = SOV
 		add_core_of = KOM
 		victory_points = {
