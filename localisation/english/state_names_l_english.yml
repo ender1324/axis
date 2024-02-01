@@ -3246,29 +3246,51 @@
  STATE_1058_RENAMING:0 "[1058.controller.GetStateName_1058]"
 
  STATE_1059:0 "Vorkuta"
- STATE_1059_RENAMING:0 "TODO"
+ STATE_1059_RENAMING:0 "[1059.controller.GetStateName_1059]"
+ STATE_1059_GER:0 "Workuta"
 
  STATE_1060:0 "Kharp"
- STATE_1060_RENAMING:0 "TODO"
+ STATE_1060_RENAMING:0 "[1060.controller.GetStateName_1060]"
+ STATE_1060_GER:0 "Charp"
 
  STATE_1061:0 "Nes"
- STATE_1061_RENAMING:0 "TODO"
+ STATE_1061_RENAMING:0 "[1061.controller.GetStateName_1061]"
 
  STATE_1062:0 "Izhma"
- STATE_1062_RENAMING:0 "TODO"
+ STATE_1062_RENAMING:0 "[1062.controller.GetStateName_1062]"
+ STATE_1062_GER:0 "Ijma"
 
- STATE_1063:0 "Edoma"
- STATE_1063_RENAMING:0 "TODO"
+ STATE_1063:0 "Yedoma"
+ STATE_1063_RENAMING:0 "[1063.controller.GetStateName_1063]"
 
  STATE_1064:0 "Ukhta"
- STATE_1064_RENAMING:0 "TODO"
+ STATE_1064_RENAMING:0 "[1064.controller.GetStateName_1064]"
+ STATE_1064_GER:0 "Uchta"
 
  STATE_1065:0 "Yarensk"
- STATE_1065_RENAMING:0 "TODO"
+ STATE_1065_RENAMING:0 "[1065.controller.GetStateName_1065]"
+ STATE_1065_GER:0 "Jarensk"
 
  STATE_1066:0 "Krasnovishersk"
+ STATE_1066_RENAMING:0 "[1066.controller.GetStateName_1066]"
+ STATE_1066_GER:0 "Krasnowischersk"
+
  STATE_1067:0 "Berezniki"
+ STATE_1067_RENAMING:0 "[1067.controller.GetStateName_1067]"
+
  STATE_1068:0 "Nytva"
+ STATE_1068_RENAMING:0 "[1068.controller.GetStateName_1068]"
+ STATE_1068_GER:0 "Nytwa"
+
  STATE_1069:0 "Beloretsk"
+ STATE_1069_RENAMING:0 "[1069.controller.GetStateName_1069]"
+ STATE_1069_GER:0 "Belorezk"
+ STATE_1069_BSK:0 "Beloret"
+
  STATE_1070:0 "Kedrovy"
+ STATE_1070_RENAMING:0 "[1070.controller.GetStateName_1070]"
+ STATE_1070_GER:0 "Kedrowy"
+
  STATE_1071:0 "Nyagan"
+ STATE_1071_RENAMING:0 "[1071.controller.GetStateName_1071]"
+ STATE_1071_GER:0 "Njagan"

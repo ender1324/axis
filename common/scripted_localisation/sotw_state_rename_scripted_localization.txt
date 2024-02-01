@@ -28227,3 +28227,384 @@ defined_text = {
 		localization_key = STATE_1058
 	}
 }
+
+defined_text = {
+	name = GetStateName_1059
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1059_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1059
+	}
+}
+
+defined_text = {
+	name = GetStateName_1060
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1060_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1060
+	}
+}
+
+defined_text = {
+	name = GetStateName_1061
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = 	FAK
+				}
+			}
+		}
+		localization_key = STATE_1061
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = FAK
+					}
+				}
+			}
+		}
+		localization_key = STATE_1061
+	}
+}
+
+defined_text = {
+	name = GetStateName_1062
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1062_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1062
+	}
+}
+
+defined_text = {
+	name = GetStateName_1063
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = 	FAK
+				}
+			}
+		}
+		localization_key = STATE_1063
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = FAK
+					}
+				}
+			}
+		}
+		localization_key = STATE_1063
+	}
+}
+
+defined_text = {
+	name = GetStateName_1064
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1064_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1064
+	}
+}
+
+defined_text = {
+	name = GetStateName_1065
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1065_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1065
+	}
+}
+
+defined_text = {
+	name = GetStateName_1066
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1066_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1066
+	}
+}
+
+defined_text = {
+	name = GetStateName_1067
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = 	FAK
+				}
+			}
+		}
+		localization_key = STATE_1067
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = FAK
+					}
+				}
+			}
+		}
+		localization_key = STATE_1067
+	}
+}
+
+defined_text = {
+	name = GetStateName_1068
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1068_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1068
+	}
+}
+
+defined_text = {
+	name = GetStateName_1069
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1069_GER
+	}
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = BSK
+				}
+			}
+		}
+		localization_key = STATE_1069_BSK
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1069
+	}
+}
+
+defined_text = {
+	name = GetStateName_1070
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1070_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1070
+	}
+}
+
+defined_text = {
+	name = GetStateName_1071
+	text = {
+		trigger = {
+			controller = {
+				OR = {
+					original_tag = GER
+					original_tag = RKR
+				}
+			}
+		}
+		localization_key = STATE_1071_GER
+	}
+	text = {
+		trigger = { #default name if none of the above is controller OR prohibited in game rules
+			OR = {
+				has_global_flag = sotw_state_renaming_disabled_flag
+				controller = {
+					NOT = {
+						original_tag = GER
+						original_tag = RKR
+					}
+				}
+			}
+		}
+		localization_key = STATE_1071
+	}
+}
