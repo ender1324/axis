@@ -5,10 +5,7 @@ state = {
 	manpower = 318000
 	
 	state_category = rural
-	
-	resources={
-		
-	}
+
 	history={
 		owner = FIN
 		add_core_of = FIN
