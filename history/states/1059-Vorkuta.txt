@@ -4,8 +4,9 @@ state={
 	name="STATE_1059"
 	state_category = developed_rural
 	history = {
-		owner = SOV
+		owner = CIA
 		add_core_of = SOV
+		add_core_of = CIA
 		victory_points = {
 			11098 5
 		}

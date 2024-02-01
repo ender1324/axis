@@ -4,8 +4,9 @@ state={
 	name="STATE_1060"
 	state_category = pastoral
 	history = {
-		owner = SOV
+		owner = CIA
 		add_core_of = SOV
+		add_core_of = CIA
 		victory_points = {
 			12502 1
 		}

@@ -96,7 +96,21 @@ SOV = {
 # Red Army Reminants
 RAR = {
 	color = rgb { 105 10 20 }
-	color_ui = { 105 10 20 }
+	color_ui = rgb { 105 10 20 }
+}
+# NKVD
+CIA = {
+	color = rgb { 82 38 38 }
+	color_ui = rgb { 82 38 38 }
+}
+# Russian Liberation Army
+ROA = {
+	color = rgb { 65 102 120 }
+	color_ui = rgb { 65 102 120 }
+}
+RRO = {
+	color = rgb { 68 24 92 }
+	color_ui = rgb { 68 24 92 }
 }
 #######################
 ###      OTHERS     ###

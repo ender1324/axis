@@ -17,3 +17,6 @@ AZH = "countries/Azad_Hind.txt"
 #RKS = "countries/RK_Sudafrika.txt"
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"
+CIA = "countries/NKVD.txt"
+ROA = "countries/Russian_Liberation_Army.txt"
+RRO = "countries/Russian_Religious_Order.txt"
