@@ -1,9 +1,9 @@
 
 state={
-	id=578
-	name="STATE_578"
+	id=1068
+	name="STATE_1068"
 	resources={
-		oil=3
+		aluminium=2.000
 	}
 
 	history={
@@ -11,19 +11,20 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
+		}
+		victory_points = {
+			390 5 
 		}
 		add_core_of = SOV
-		victory_points = {
-			7789 10 
-		}
 
 	}
 
 	provinces={
-		1718 4681 7789 7849 10613 10617 10673 10686 12174 12536 12599 
+		123 189 390 1336 1365 3127 4326 6025 7346 9283 11111 11352 
 	}
-	manpower=631304
+	manpower=715879
 	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=1.000
+	state_category=rural
+	local_supplies=0.000
 }

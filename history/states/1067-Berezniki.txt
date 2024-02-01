@@ -1,9 +1,10 @@
 
 state={
-	id=578
-	name="STATE_578"
+	id=1067
+	name="STATE_1067"
+	state_category=pastoral
 	resources={
-		oil=3
+		aluminium=3.000
 	}
 
 	history={
@@ -11,19 +12,18 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
+		}
+		victory_points = {
+			12527 5
 		}
 		add_core_of = SOV
-		victory_points = {
-			7789 10 
-		}
 
 	}
-
 	provinces={
-		1718 4681 7789 7849 10613 10617 10673 10686 12174 12536 12599 
+		4314 11195 12175 12187 12527 12587 
 	}
-	manpower=631304
+	manpower=271920
 	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=1.000
+	local_supplies=0.000
 }

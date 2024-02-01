@@ -1,0 +1,25 @@
+
+state={
+	id=1069
+	name="STATE_1069"
+	state_category=rural
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			4311 3
+		}
+		add_core_of = SOV
+		add_core_of = BSK
+		add_claim_by = TAT
+
+	}
+	provinces={
+		1406 4261 4265 4311 4383 7300 7373 10142 10185 12117 12200 
+	}
+	manpower=141931
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

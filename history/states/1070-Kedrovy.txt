@@ -1,0 +1,34 @@
+
+state={
+	id=1070
+	name="STATE_1070"
+	state_category=rural
+	resources={
+		oil=4
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SOV
+		victory_points = {
+			12510 5
+		}
+		victory_points = {
+			10529 1 # called: Novyi Vasiugan
+		}
+		victory_points = {
+			7655 1 # called: Krivosheino
+		}
+
+	}
+	provinces={
+		1674 1765 1824 4767 4827 7655 7793 7861 10529 12510 
+	}
+	manpower=263193
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

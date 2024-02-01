@@ -1,15 +1,17 @@
 
 state={
-	id=577
-	name="STATE_577"
+	id=1071
+	name="STATE_1071"
+	state_category=pastoral
 	resources={
-		oil=10.000
+		oil=7.000
+		steel=2
 	}
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		add_core_of = SOV
@@ -18,10 +20,9 @@ state={
 	}
 
 	provinces={
-		1726 1784 1856 4730 4817 7781 7837 7882 10533 10561 10663 12514 12574 12672 
+		1768 4771 7685 10692 12542 12639 
 	}
-	manpower=43299
+	manpower=23012
 	buildings_max_level_factor=1.000
-	state_category=rural
 	local_supplies=0.000
 }
