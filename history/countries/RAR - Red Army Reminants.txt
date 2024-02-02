@@ -27,4 +27,6 @@ set_popularities = {
 	occultism = 0
 }
 
+recruit_character = RAR_semyon_timoshenko
+
 set_convoys = 71

@@ -2,14 +2,25 @@
  ### GERMANY ###
  # LEADERS
  GER_adolf_hitler: "Adolf Hitler"
- ######################
-
+ ##############
  ### CANADA ###
+ ##############
  # LEADERS
  CAN_louis_laurent: "Louis St. Laurent"
  CAN_john_diefenbaker: "John Diefenbaker"
  CAN_lester_pearson: "Lester B. Pearson"
- ######################
+ ##################
  ### KAZAKHSTAN ###
+ ##################
  # LEADERS
  KAZ_leonid_brezhnev: "Leonid Brezhnev"
+ ##################################
+ ### RUSSIAN DEMOCRATIC COUNCIL ###
+ ##################################
+ # LEADERS
+ RDC_vasily_maklakov: "Vasily Maklakov"
+ ##########################
+ ### RED ARMY REMINANTS ###
+ ##########################
+ # LEADERS
+ RAR_semyon_timoshenko: "Semyon Timoshenko"

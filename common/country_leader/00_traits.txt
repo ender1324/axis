@@ -339,8 +339,10 @@ leader_traits = {
 
 	anti_communist = {
 		random = no
-		communism_acceptance = -50
+		communism_acceptance = -30
+		vanguardism_acceptance = -30
 		communism_drift = -0.01
+		vanguardism_drift = -0.01
 
 		ai_will_do = {
 			factor = 1
@@ -431,12 +433,12 @@ leader_traits = {
 
 	anti_democrat = {
 		random = no
-		liberalism_acceptance = -50
-		conservatism_acceptance = -50
-		progressivism_acceptance = -50
-		liberalism_drift = -0.02
-		conservatism_drift = -0.02
-		progressivism_drift = -0.02
+		liberalism_acceptance = -30
+		conservatism_acceptance = -30
+		progressivism_acceptance = -30
+		liberalism_drift = -0.01
+		conservatism_drift = -0.01
+		progressivism_drift = -0.01
 		stability_factor = 0.02
 
 		ai_will_do = {
@@ -526,6 +528,16 @@ leader_traits = {
 		political_power_gain = -0.05
 		stability_factor = -0.05
 		offensive_war_stability_factor = -0.05
+	}
+	exiled_kadet = {
+		random = no
+		war_support_factor = 0.05
+		liberalism_drift = 0.01
+		targeted_modifier = {
+			tag = FER
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.01
+		}
 	}
 	### IDEA TRAITS ###
 

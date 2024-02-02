@@ -27,4 +27,6 @@ set_popularities = {
 	occultism = 5
 }
 
+recruit_character = RDC_vasily_maklakov
+
 set_convoys = 50

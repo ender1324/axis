@@ -1,0 +1,17 @@
+characters = {
+	RDC_vasily_maklakov = {
+		name = RDC_vasily_maklakov
+		#portraits = {
+		#	civilian = {
+		#		large = "GFX_portrait_RDC_vasily_maklakov" # missing rn
+		#	}
+		#}
+		country_leader = {
+			ideology = liberalism_subtype
+			expire = 1960.07.15
+			traits = {
+				exiled_kadet
+			}
+		}
+	}	
+}

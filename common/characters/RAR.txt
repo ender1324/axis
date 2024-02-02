@@ -1,0 +1,17 @@
+characters = {
+	RAR_semyon_timoshenko = {
+		name = RAR_semyon_timoshenko
+		#portraits = {
+		#	civilian = {
+		#		large = "GFX_portrait_RAR_semyon_timoshenko" # missing rn
+		#	}
+		#}
+		country_leader = {
+			ideology = military_junta_subtype
+			expire = 1971.03.31
+			traits = {
+				militant_socialist
+			}
+		}
+	}	
+}
