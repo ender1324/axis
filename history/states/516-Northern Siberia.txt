@@ -4,7 +4,7 @@ state={
 	name = "STATE_516" # Taymyria / Dudinka
 	manpower = 6004
 	history={
-		owner = SOV
+		owner = ANR
 		victory_points = {
 			4859 1
 		}

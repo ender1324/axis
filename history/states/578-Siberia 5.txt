@@ -7,11 +7,12 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RDC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		add_core_of = RDC
 		add_core_of = SOV
 		victory_points = {
 			7789 10 

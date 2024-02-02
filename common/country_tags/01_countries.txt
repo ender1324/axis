@@ -1,5 +1,5 @@
 KOS	= "countries/Kosovo.txt"
-FAK = "countries/Fake.txt"
+
 # German RKS
 RKP = "countries/RK_Polen.txt"
 RKO = "countries/RK_Ostland.txt"
@@ -10,13 +10,21 @@ RKD = "countries/RK_Danemark.txt"
 RKN = "countries/RK_Niederlande.txt"
 RNO = "countries/RK_Norwegen.txt"
 RKM = "countries/RK_Mittleafrika.txt"
+#RKS = "countries/RK_Sudafrika.txt"
+
 # Free france
 FFA = "countries/Free_France.txt"
+
 # Co-Prosperity Sphere puppets
 AZH = "countries/Azad_Hind.txt"
-#RKS = "countries/RK_Sudafrika.txt"
+
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"
 CIA = "countries/NKVD.txt"
 ROA = "countries/Russian_Liberation_Army.txt"
 RRO = "countries/Russian_Religious_Order.txt"
+RDC = "countries/Russian_Democratic_Council.txt"
+
+# Misc tags
+ANR = "countries/Anarchy.txt"
+FAK = "countries/Fake.txt"

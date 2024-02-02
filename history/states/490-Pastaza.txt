@@ -8,13 +8,13 @@ state={
 
 	history={
 		#conquered by Peru in 1941 war
-		owner = ECU 
+		owner = PRU
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 		}
 		add_core_of = PRU
-		add_core_of = ECU
+		add_claim_by = ECU
                 victory_points = {
 			8149 3
 		}

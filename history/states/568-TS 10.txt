@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = SOV
+		owner = RDC
 		buildings = {
 			infrastructure = 2
 		}
@@ -15,6 +15,7 @@ state={
 			4724 10
 		}
 		add_core_of = SOV
+		add_core_of = RDC
 	}
 
 	provinces={

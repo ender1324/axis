@@ -108,13 +108,24 @@ ROA = {
 	color = rgb { 65 102 120 }
 	color_ui = rgb { 65 102 120 }
 }
+# Russian Religious/Orthodox Order
 RRO = {
 	color = rgb { 68 24 92 }
 	color_ui = rgb { 68 24 92 }
 }
+# Russian Democratic Council
+RDC = {
+	color = rgb { 28 53 120 }
+	color_ui = rgb { 28 53 120 }
+}
 #######################
 ###      OTHERS     ###
 #######################
+# Anarchy
+ANR = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
