@@ -24,6 +24,7 @@ CIA = "countries/NKVD.txt"
 ROA = "countries/Russian_Liberation_Army.txt"
 RRO = "countries/Russian_Religious_Order.txt"
 RDC = "countries/Russian_Democratic_Council.txt"
+COD = "countries/Cult_of_Destruction.txt"
 
 # Misc tags
 ANR = "countries/Anarchy.txt"

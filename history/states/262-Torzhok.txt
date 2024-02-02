@@ -4,11 +4,12 @@ state={
 	name="STATE_262"
 
 	history={
-		owner = SOV
+		owner = NEN
 		buildings = {
 			infrastructure = 1
 
 		}
+		add_core_of = NEN
 		add_core_of = SOV
 		add_core_of = KOM
 		victory_points = {
@@ -22,6 +23,6 @@ state={
 	}
 	manpower=29005
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 	local_supplies=0.000
 }

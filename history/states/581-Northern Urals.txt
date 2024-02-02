@@ -8,10 +8,11 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = NEN
+		add_core_of = NEN
 		buildings = {
 			infrastructure = 1
-
+			arms_factory = 1
 		}
 		add_core_of = SOV
 		add_core_of = KOM
@@ -23,6 +24,6 @@ state={
 	}
 	manpower=211331
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

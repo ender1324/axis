@@ -8,14 +8,16 @@ state={
 
 	history={
 		victory_points = {
-			105 3
+			105 5
 		}
-		owner = SOV
+		owner = NEN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
 			12530 = {
-				naval_base = 1
-
+				naval_base = 2
+				costal_fort = 1
 			}
 
 		}

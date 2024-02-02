@@ -118,6 +118,11 @@ RDC = {
 	color = rgb { 28 53 120 }
 	color_ui = rgb { 28 53 120 }
 }
+# Cult of Death
+COD = {
+	color = rgb { 115 7 64 }
+	color_ui = rgb { 115 7 64 }
+}
 #######################
 ###      OTHERS     ###
 #######################
