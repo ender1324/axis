@@ -74,4 +74,60 @@ on_actions = {
 			}
 		}
 	}
+	# Automatically give military access to countries you are sending volunteers to
+	on_send_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						not = {
+							has_military_access_to = FROM
+						}
+					}
+				}
+				ROOT = {
+					set_country_flag = sotw_volunteer_sender
+				}
+				FROM = {
+					give_military_access = ROOT
+				}
+				FROM = {
+					set_country_flag = sotw_volunteer_receiever
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect  = {
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_country_flag = {
+						flag = sotw_volunteer_receiever
+						days > 20
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_country_flag = sotw_volunteer_sender
+						PREV = {
+							has_volunteers_amount_from = {
+								tag = PREV
+								count < 1
+							}
+						}
+					}
+					diplomatic_relation = {
+						country = PREV
+						relation = military_access
+						active = no
+					}
+					clr_country_flag = sotw_volunteer_sender
+					PREV = {
+						clr_country_flag = sotw_volunteer_receiever
+					}
+				}
+			}
+		}
+	}
 }
