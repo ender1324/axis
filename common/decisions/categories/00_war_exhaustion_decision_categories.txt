@@ -6,6 +6,6 @@ war_exhaustion_category = {
 	picture = GFX_decision_cat_war_exhaustion
 
 	visible = {
-		always = yes
+		has_war = yes
 	}
 }
