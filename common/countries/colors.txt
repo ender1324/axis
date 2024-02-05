@@ -118,6 +118,11 @@ RDC = {
 	color = rgb { 28 53 120 }
 	color_ui = rgb { 28 53 120 }
 }
+# Russian Military Union / East Siberian Military Command
+RMU = {
+	color = rgb { 9 59 15 }
+	color_ui = rgb { 9 59 15 }
+}
 # Cult of Death
 COD = {
 	color = rgb { 115 7 64 }
@@ -133,6 +138,27 @@ NEN = {
 	color = rgb { 90 132 143 }
 	color_ui = rgb { 90 132 143 }
 }
+# Magnitogorsk
+MAG = {
+	color = rgb { 117 117 117 }
+	color_ui = { 117 117 117 }
+}
+# Soviet People's Empire
+SPE = {
+	color = rgb { 212 176 34 }
+	color_ui = rgb { 212 176 34 }
+}
+# German Aviators
+DFR = {
+	color = rgb { 161 144 104 }
+	color_ui = rgb { 161 144 104 }
+}
+# West Siberian Republic
+WSR = {
+	color = rgb { 150 162 181 }
+	color_ui = { 150 162 181 }
+}
+
 #######################
 ###      OTHERS     ###
 #######################

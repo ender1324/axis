@@ -4,19 +4,24 @@ state={
 	name="STATE_573" # Zlatoust
 	manpower = 918677
 	
-	state_category = pastoral
+	state_category = rural
 	resources={
 		chromium=23 # was: 32
 	}
 
 	history={
 		victory_points = {
-			10329 1
+			10329 5
 		}
-		owner = SOV
+		owner = MAG
+		add_core_of = MAG
 		buildings = {
 			infrastructure = 2
-
+			arms_factory = 2
+			anti_air_building = 1
+			10329 = {
+				bunker = 3
+			}
 		}
 		add_core_of = SOV
 	}
@@ -25,5 +30,5 @@ state={
 		237 278 361 3280 4758 7320 10136 10329 11223 11307 
 	}
 
-	local_supplies=7.0 
+	local_supplies=7.0
 }

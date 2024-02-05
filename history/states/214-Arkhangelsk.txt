@@ -3,18 +3,21 @@ state={
 	id=214
 	name="STATE_214"
 
+	resources = {
+		steel = 3
+	}
 	history={
 		owner = RAR
 		victory_points = {
 			3338 10 
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
 			3338 = {
-				naval_base = 3
-
+				naval_base = 5
+				bunker = 3
 			}
 
 		}

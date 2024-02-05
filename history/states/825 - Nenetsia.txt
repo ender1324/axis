@@ -13,11 +13,11 @@ state={
 		owner = NEN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 			air_base = 3
-			12530 = {
+			105 = {
 				naval_base = 2
-				costal_fort = 1
+				coastal_bunker = 1
 			}
 
 		}

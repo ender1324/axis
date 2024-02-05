@@ -6,7 +6,8 @@ state={
 	
 	state_category = city
 	history={
-		owner = SOV
+		owner = RMU
+		add_core_of = RMU
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

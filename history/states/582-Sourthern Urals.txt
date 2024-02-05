@@ -7,15 +7,19 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = MAG
+		add_core_of = MAG
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 1
+			anti_air_building = 3
+			10256 = {
+				bunker = 5
+			}
 		}
 		add_core_of = SOV
-		add_claim_by = TAT
 		victory_points = {
-			10256 5
+			10256 7
 		}
 
 	}
@@ -25,6 +29,6 @@ state={
 	}
 	manpower=1019841
 	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	state_category=large_town
+	local_supplies=4
 }
