@@ -66,6 +66,10 @@ set_autonomy = {
 	target = RKM
 	autonomous_state = autonomy_colony
 }
+set_autonomy = {
+	target = SLO
+	autonomy_state = autonomy_dominion
+}
 
 recruit_character = GER_Adolf_Hitler
 
