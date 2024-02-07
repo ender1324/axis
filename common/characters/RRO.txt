@@ -1,0 +1,14 @@
+characters = {
+	RRO_alexy_I = {
+		name = RRO_alexy_I
+		#portraits = {
+		#	civilian = {
+		#		large = "GFX_portrait_RDC_vasily_maklakov" # missing rn
+		#	}
+		#}
+		country_leader = {
+			ideology = theocracy_subtype
+			expire = 1970.04.17
+		}
+	}	
+}

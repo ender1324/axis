@@ -175,6 +175,7 @@ ideologies = {
 		types = {
 			despotism_subtype = {}
 			military_junta_subtype = {}
+			theocracy_subtype = {}
 		}
 		dynamic_faction_names = {}
 		color = { 90 90 90 }
@@ -346,6 +347,7 @@ ideologies = {
 	socialism = {
 		types = {
 			socialism_subtype = {}
+			mladorossi_subtype = {}
 		}
 		dynamic_faction_names = {}
 		color = { 245 45 65 }

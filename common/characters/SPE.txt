@@ -1,0 +1,14 @@
+characters = {
+	SPE_alexander_kazembek = {
+		name = SPE_alexander_kazembek
+		#portraits = {
+		#	civilian = {
+		#		large = "GFX_portrait_RDC_vasily_maklakov" # missing rn
+		#	}
+		#}
+		country_leader = {
+			ideology = mladorossi_subtype
+			expire = 1977.02.21
+		}
+	}	
+}

@@ -45,6 +45,8 @@ socialism_drift: "Socialist Drift"
 
 socialism_subtype: "Socialism"
 socialism_subtype_desc: "Socialism is a vast political philosophy and movement encompassing a range of economic and social systems characterized by social ownership of the means of production, as opposed to private ownership. It describes the economic, political, and social theories and movements associated with the implementation of such systems.\n\nSocial ownership can take various forms including: public, community, collective, cooperative, or employee. No single definition encapsulates the many strands of the socialist worldview, but social ownership remains a unifying common element.\n\nTraditionally, Socialism is a left-wing ideology, although its many forms and inflections have presented forms of socialism that veer greatly towards centrism or even to the right, particularly when concerning social as opposed to economic issues."
+mladorossi_subtype: "Mladorossism"
+mladorossi_subtype_desc: "TODO"
 
 ### Progressivism
 
@@ -101,6 +103,8 @@ despotism_subtype: "Despotism"
 despotism_subtype_desc: "Despotism is not a political ideology in the normal sense of the word, but rather a general term for the attitude that this kind of government holds towards its citizens: The people are all subjects of the leader, who may be an autocrat of many or a single color, and whose role and duty is to lead the state and its society towards the most righteous and best path while uniting the people under their benevolent protection."
 military_junta_subtype: "Military Junta"
 military_junta_subtype_desc: "A military junta is a government led by a committee of military leaders. The term is used to refer to an authoritarian form of government characterized by oligarchic military dictatorship. A junta often comes to power as a result of a coup d'état. The junta may either formally take power as the nation's governing body, with the power to rule by decree, or may wield power by exercising binding (but informal) control over a nominally civilian government."
+theocracy_subtype: "Theocracy"
+theocracy_subtype_desc: "Theocracy is a form of government in which one or more deities are recognized as supreme ruling authorities, giving divine guidance to human intermediaries who manage the government's daily affairs. In a pure theocracy, the civil leader is believed to have a personal connection with the deity or deities of that civilization's religion or belief, such as Muhammad's leadership of the early Muslims with prophecies from Allah. In an ecclesiocracy, the religious leaders assume a leading role in the state, but do not claim that they are instruments of divine revelation."
 
 ### Ultranationalism
 ultranationalism: "Ultranationalists"

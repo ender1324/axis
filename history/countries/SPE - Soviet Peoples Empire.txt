@@ -27,4 +27,6 @@ set_popularities = {
 	occultism = 5
 }
 
+recruit_character = SPE_alexander_kazembek
+
 set_convoys = 50
