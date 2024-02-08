@@ -1,0 +1,115 @@
+ideas = {
+	# Government Structure
+	sl_government_centralization = {
+        law = yes
+        use_list_view = yes
+
+        unitary_state = {
+            allowed_to_remove = {
+                always = no
+            }
+            # available = {
+			# 	always = no
+            # }
+
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+            }
+            
+            cancel_if_invalid = no
+        }
+
+        devolved_unitary_state = {
+            allowed_to_remove = {
+                always = no
+            }
+
+            # available = {
+			# 	always = yes
+            # }
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+                compliance_growth = 0.10
+                resistance_growth = -0.20
+            }
+
+            cancel_if_invalid = no
+        }
+
+        federated_state = {
+            allowed_to_remove = {
+                always = no
+            }
+
+            # available = {
+            #     NOT = {
+            #         has_government = fascism
+            #     }
+            # }
+
+            modifier = {
+                political_power_factor = 0.05
+                war_support_factor = -0.10
+                global_building_slots_factor = 0.10
+                resistance_target = -0.10
+                resistance_decay = 0.20
+            }
+
+			cancel_if_invalid = no
+        }
+
+        communal_state = {
+            allowed_to_remove = {
+                always = no
+            }
+
+            # available = {
+            #     OR = {
+            #     has_government = communism
+            #     has_country_leader_ideology = anarchism
+            #   }
+            # }
+
+            modifier = {
+                political_power_factor = 0.15
+                stability_factor = -0.10
+                war_support_factor = -0.15
+                compliance_growth = 0.15
+                resistance_damage_to_garrison = -0.40
+                #required_garrison_factor #= #-0.10
+            }
+
+            cancel_if_invalid = no
+        }
+
+        city_state = {
+            allowed_to_remove = {
+                always = no
+            }
+
+            available = {
+                num_of_controlled_states < 2
+            }
+
+            modifier = {
+                global_building_slots_factor = 5
+                industrial_capacity_factory = 2
+                industrial_capacity_dockyard = 5
+                conscription_factor = 0.20
+                production_speed_buildings_factor = 3
+                #production_speed_infrastructure_factor #= #2
+                #production_speed_bunker_factor = #3
+                #production_speed_coastal_bunker_factor #= #3
+                #production_speed_anti_air_building_factor #= #3
+                #production_speed_radar_station_factor #= #3
+                special_forces_min = 100
+
+            }
+
+            cancel_if_invalid = yes
+        }
+    }
+}

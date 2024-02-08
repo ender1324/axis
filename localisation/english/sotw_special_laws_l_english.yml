@@ -1,0 +1,25 @@
+﻿l_english:
+ # Gov Structure Related Ideas
+ government_structure: "Government Structure"
+ sl_government_centralization: "Government Centralization"
+ sl_press_freedom: "Press Freedom"
+ sl_religion_status: "Religion Stance"
+ sl_minority_rights: "Minority Rights"
+ sl_gender_equality: "Gender Equality"
+ sl_protest_rights: "Right to Protest"
+
+ economic_structure: "Economics Structure"
+ sl_economic_model: "Economic Model"
+ sl_taxation_model: "Taxation Model"
+ sl_trade_tarrifs: "Trade Tarrifs"
+ sl_trade_unions: "Trade Unions"
+ sl_work_hours: "Work Hours"
+ sl_unemployment_benefits: "Unemployment Benefits"
+
+ public_structure: "Public Structure"
+ sl_population_control: "Population Control"
+ sl_state_policing: "State Policing"
+ sl_penal_system: "Penal System"
+ sl_education_system: "Education System"
+ sl_healthcare_system: "Healthcare System"
+ sl_immigration_policy: "Immigration Policy"

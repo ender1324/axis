@@ -1,0 +1,40 @@
+idea_categories = {
+	government_structure = {
+		slot = sl_government_centralization
+		slot = sl_press_freedom
+		slot = sl_religion_status
+		slot = sl_minority_rights
+		slot = sl_gender_equality
+		slot = sl_protest_rights
+
+		ledger = civilian
+		
+		cost = 0
+		removal_cost = -1
+		#cancel_if_invalid = no
+	}
+
+	economic_structure = {
+		slot = sl_economic_model
+		slot = sl_taxation_model
+		slot = sl_trade_tarrifs
+		slot = sl_trade_unions
+		slot = sl_work_hours
+		slot = sl_unemployment_benefits
+
+		cost = 0
+		removal_cost = -1
+	}
+
+	public_structure = {
+		slot = sl_population_control
+		slot = sl_state_policing
+		slot = sl_penal_system
+		slot = sl_education_system
+		slot = sl_healthcare_system
+		slot = sl_immigration_policy
+
+		cost = 0
+		removal_cost = -1
+	}
+}
