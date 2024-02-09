@@ -22,12 +22,18 @@ spriteTypes = {
 		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
 	}
 
-	# England
+	# Scotland
 	spriteType = {
-		name = "GFX_portrait_ENG_Archibald_Ramsay"
-		textureFile = "gfx/leaders/ENG/Portrait_England_Archibald_Ramsay.dds"
+		name = "GFX_portrait_SCO_Archibald_Ramsay"
+		textureFile = "gfx/leaders/SCO/Portrait_Scotland_Archibald_Ramsay.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_SCO_Walter_I"
+		textureFile = "gfx/leaders/SCO/Portrait_Scotland_Walter_I.dds"
+	}
+
+	# England
 	spriteType = {
 		name = "GFX_portrait_ENG_Edward_VIII"
 		textureFile = "gfx/leaders/ENG/Portrait_England_Edward_VIII.dds"

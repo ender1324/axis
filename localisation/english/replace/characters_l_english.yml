@@ -9,11 +9,11 @@
  CAN_louis_laurent: "Louis St. Laurent"
  CAN_john_diefenbaker: "John Diefenbaker"
  CAN_lester_pearson: "Lester B. Pearson"
- ###############
- ### ENGLAND ###
- ###############
+ ################
+ ### SCOTLAND ###
+ ################
  # LEADERS
- ENG_archibald_ramsay: "Archibald Ramsay"
+ SCO_archibald_ramsay: "Archibald Ramsay"
  ##################
  ### KAZAKHSTAN ###
  ##################

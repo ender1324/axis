@@ -1,9 +1,9 @@
 characters = {
-	ENG_Archibald_Ramsay = {
-		name = ENG_archibald_ramsay
+	SCO_Archibald_Ramsay = {
+		name = SCO_archibald_ramsay
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_ENG_Archibald_Ramsay"
+				large = "GFX_portrait_SCO_Archibald_Ramsay"
 			}
 		}
 		country_leader = {

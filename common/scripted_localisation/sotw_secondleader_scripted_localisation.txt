@@ -49,12 +49,17 @@ defined_text = {
 	# Canada
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
-		localization_key = GFX_Portrait_CAN_Elizabeth_II
+		localization_key = GFX_portrait_CAN_Elizabeth_II
 	}
 	# England
 	text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
-		localization_key = GFX_Portrait_ENG_Edward_VIII
+		localization_key = GFX_portrait_ENG_Edward_VIII
+	}
+	# Scotland (forever)
+	text = {
+		trigger = { tag = SCO }
+		localization_key = GFX_portrait_SCO_Walter_I
 	}
 	text = { localization_key = GFX_leader_unknown }
 }
@@ -70,6 +75,12 @@ defined_text = {
 	text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_name_Edward_VIII
+	}
+	# Scotland forever
+	# TODO FIX THIS THIS ITS TEMPORARY
+	text = {
+		trigger = { tag = SCO }
+		localization_key = "Walter I"
 	}
 	text = { localization_key = SL_name }
 }
