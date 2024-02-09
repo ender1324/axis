@@ -42,9 +42,9 @@ leader_traits = {
 
 	collaborator_king = {
 		random = no
-		fascism_drift = 0.1
-		fascism_acceptance = 75
 		political_power_factor = 0.1
+		stability_factor = -0.1
+		war_support_factor = -0.1
 	}
 
 	stout_defender = { # This particular trait will make the AI heavily prioritize defensive warfare, rarely, if ever, attacking out of fortified locations

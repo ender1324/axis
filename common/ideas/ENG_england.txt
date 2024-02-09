@@ -1,0 +1,17 @@
+ideas = {
+	hidden_ideas = {
+		ENG_SL_Edward_VIII_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			traits = { collaborator_king }
+		}
+	}
+}

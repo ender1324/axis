@@ -22,6 +22,17 @@ spriteTypes = {
 		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
 	}
 
+	# England
+	spriteType = {
+		name = "GFX_portrait_ENG_Archibald_Ramsay"
+		textureFile = "gfx/leaders/ENG/Portrait_England_Archibald_Ramsay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ENG_Edward_VIII"
+		textureFile = "gfx/leaders/ENG/Portrait_England_Edward_VIII.dds"
+	}
+	
 	# Canada
 	spriteType = {
 		name = "GFX_portrait_CAN_loius_laurent"
@@ -35,11 +46,23 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_portrait_CAN_lester_pearson"
-		textureFile = "gfx/leaders/CAN/Portrait_Canada_lester_pearson.dds"
+		textureFile = "gfx/leaders/CAN/Portrait_Canada_Lester_Pearson.dds"
 	}
 
 	spriteType = {
-		name = "GFX_Portrait_CAN_Elizabeth_II"
+		name = "GFX_portrait_CAN_Elizabeth_II"
 		textureFile = "gfx/leaders/CAN/Portrait_Canada_Elizabeth.dds"
+	}
+
+	# Kazakhstan
+	spriteType = {
+		name = "GFX_portrait_KAZ_Leonid_Brezhnev"
+		textureFile = "gfx/leaders/KAZ/Portrait_Kazakhstan_Leonid_Brezhnev.dds"
+	}
+
+	# Kyrgyzstan
+	spriteType = {
+		name = "GFX_portrait_KYR_Iskhak_Razzakov"
+		textureFile = "gfx/leaders/KYR/Portrait_Kyrgyztan_Iskhak_Razzakov.dds"
 	}
 }

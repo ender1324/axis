@@ -4,8 +4,18 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	# SPECIAL LAWS
+	sl_unitary_state
+	sl_controlled_protests
+	sl_minorities_no_stance
+	sl_opposition_censorship
+	sl_state_atheism
+	sl_women_in_workplace
+}
+
 set_politics = {
-	ruling_party = despotism
+	ruling_party = communism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,17 +24,19 @@ set_politics = {
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
+	communism = 50
 	socialism = 5
 	progressivism = 5
 	liberalism = 5
 	conservatism = 5
 	paternalism = 5
-	despotism = 50
+	despotism = 5
 	ultranationalism = 5
 	fascism = 5
 	national_socialism = 5
 	occultism = 5
 }
+
+recruit_character = KYR_Iskhak_Razzakov
 
 set_convoys = 50

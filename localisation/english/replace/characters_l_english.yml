@@ -9,11 +9,21 @@
  CAN_louis_laurent: "Louis St. Laurent"
  CAN_john_diefenbaker: "John Diefenbaker"
  CAN_lester_pearson: "Lester B. Pearson"
+ ###############
+ ### ENGLAND ###
+ ###############
+ # LEADERS
+ ENG_archibald_ramsay: "Archibald Ramsay"
  ##################
  ### KAZAKHSTAN ###
  ##################
  # LEADERS
  KAZ_leonid_brezhnev: "Leonid Brezhnev"
+ ##################
+ ### KYRGYZSTAN ###
+ ##################
+ # LEADERS
+ KYR_Iskhak_Razzakov: "Iskhak Razzakov"
  ##################################
  ### RUSSIAN DEMOCRATIC COUNCIL ###
  ##################################

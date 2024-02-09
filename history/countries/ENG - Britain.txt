@@ -5,7 +5,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = national_socialism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,11 +20,14 @@ set_popularities = {
 	liberalism = 5
 	conservatism = 5
 	paternalism = 5
-	despotism = 50
+	despotism = 5
 	ultranationalism = 5
 	fascism = 5
-	national_socialism = 5
+	national_socialism = 50
 	occultism = 5
 }
+
+recruit_character = ENG_Archibald_Ramsay
+add_ideas = ENG_SL_Edward_VIII_idea
 
 set_convoys = 50

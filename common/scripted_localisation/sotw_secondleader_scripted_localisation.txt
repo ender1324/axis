@@ -24,6 +24,7 @@ defined_text = {
 		trigger = { TAG = GER }
 		localization_key = SL_status_marshall
 	}
+	# Canada
 	text = {
 		trigger = {
 			AND = {
@@ -33,9 +34,10 @@ defined_text = {
 		}
 		localization_key = SL_status_queen
 	}
+	# England
 	text = {
 		trigger = {
-			tag = CAN
+			tag = ENG
 		}
 		localization_key = SL_status_king
 	}
@@ -49,6 +51,11 @@ defined_text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = GFX_Portrait_CAN_Elizabeth_II
 	}
+	# England
+	text = {
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
+		localization_key = GFX_Portrait_ENG_Edward_VIII
+	}
 	text = { localization_key = GFX_leader_unknown }
 }
 
@@ -58,6 +65,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_name_Elizabeth_II
+	}
+	# ENGLAND
+	text = {
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
+		localization_key = SL_name_Edward_VIII
 	}
 	text = { localization_key = SL_name }
 }
@@ -69,6 +81,11 @@ defined_text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_name_with_trait_Elizabeth_II
 	}
+	# ENGLAND
+	text = {
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
+		localization_key = SL_name_with_trait_Edward_VIII
+	}
 	text = { localization_key = SL_name_with_trait }
 }
 
@@ -79,6 +96,11 @@ defined_text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_diplomacy_name_with_trait_Elizabeth_II
 	}
+	# ENGLAND
+	text = {
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
+		localization_key = SL_diplomacy_name_with_trait_Edward_VIII
+	}
 	text = { localization_key = SL_diplomacy_name_with_trait }
 }
 
@@ -88,6 +110,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_desc_Elizabeth_II
+	}
+	# ENGLAND
+	text = {
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
+		localization_key = SL_desc_Edward_VIII
 	}
 	text = { localization_key = SL_desc }
 }
