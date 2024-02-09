@@ -1,12 +1,46 @@
 ﻿l_english:
  # Gov Structure Related Ideas
  government_structure: "Government Structure"
+
+ # Government Centralization Ideas
  sl_government_centralization: "Government Centralization"
+ sl_unitary_state: "Unitary State"
+ sl_devolved_unitary_state: "Devolved Unitary State"
+ sl_federated_state: "Federated State"
+ sl_communal_state: "Communal State"
+ sl_city_state: "City State"
+
+ # Press Freedom ideas
  sl_press_freedom: "Press Freedom"
+ sl_free_press: "Free Press"
+ sl_extremist_censorship: "Censorship of Extremism"
+ sl_opposition_censorship: "Censorship of Opposition"
+ sl_state_press: "State Press only"
+
+ # Religion Stance ideas
  sl_religion_status: "Religion Stance"
+ sl_state_religion: "State Religion"
+ sl_secularism: "Secularism"
+ sl_state_atheism: "State Atheism"
+
+ # Minority Rights ideas
  sl_minority_rights: "Minority Rights"
+ sl_minorities_state_protection: "State Protection"
+ sl_minorities_no_stance: "No Stance"
+ sl_racial_segregation: "Racial Segregation"
+ sl_racial_hierarchy: "Racial Hierarchy"
+
+ # Gender Equality Ideas
  sl_gender_equality: "Gender Equality"
+ sl_total_equality: "Total Equality"
+ sl_women_in_workplace: "Women in the Workplace"
+ sl_legal_guardianship: "Legal Guardianship"
+
+ # Protesting Ideas
  sl_protest_rights: "Right to Protest"
+ sl_banned_protests: "Banned Protesting"
+ sl_controlled_protests: "Controlled Protesting"
+ sl_protected_protesting: "Right to Protest Protected"
 
  economic_structure: "Economics Structure"
  sl_economic_model: "Economic Model"
@@ -23,3 +57,6 @@
  sl_education_system: "Education System"
  sl_healthcare_system: "Healthcare System"
  sl_immigration_policy: "Immigration Policy"
+
+ # Tooltip for the idea screen
+ sl_cant_remove_tt: "Special Laws can be removed only by focuses or decisions."
