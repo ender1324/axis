@@ -1654,10 +1654,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			
-		}
-
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -1712,7 +1708,7 @@ technologies = {
 			motorized_rocket_equipment_1
 		}
 		dependencies = {
-			rocket_artillery = 1
+			rocket_artillery1 = 1
 		}
 	
 		research_cost = 1.5

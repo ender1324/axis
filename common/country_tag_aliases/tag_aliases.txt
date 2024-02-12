@@ -52,3 +52,7 @@ MOT = {
 	variable = generic_operation_target
 }
 
+RUS = {
+	global_event_target = RUS_russian_unifier
+	fallback = SOV
+}
