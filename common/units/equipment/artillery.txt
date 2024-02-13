@@ -1,7 +1,7 @@
 equipments = {
 
 	artillery_equipment = {
-		year = 1945
+		year = 1950
 
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
@@ -48,6 +48,8 @@ equipments = {
 	artillery_equipment_2 = {
 		archetype = artillery_equipment
 		parent = artillery_equipment_1
+		year = 1953
+
 		soft_attack = 38
 		hard_attack = 8
 
@@ -58,22 +60,37 @@ equipments = {
 
 	artillery_equipment_3 = {
 		archetype = artillery_equipment
-		parent = artillery_equipment_3
+		parent = artillery_equipment_2
+		year = 1958
 
 		soft_attack = 40
 		hard_attack = 10
 
 		defense = 22
 		build_cost_ic = 5.5
+		visual_level = 2
 		resources = {
 			tungsten = 2
 			steel = 2
 		}
 	}
 
+	artillery_equipment_4 = {
+		archetype = artillery_equipment
+		parent = artillery_equipment_3
+		year = 1960
+
+		soft_attack = 43
+		hard_attack = 12
+
+		defense = 25
+		build_cost_ic = 6
+		visual_level = 3
+	}
+
 	# Nebelwerfers!
 	rocket_artillery_equipment = {
-		year = 1940
+		year = 1950
 
 		is_archetype = yes
 		picture = archetype_rocket_artillery_equipment		
@@ -109,7 +126,7 @@ equipments = {
 	}
 	
 	rocket_artillery_equipment_1 = {
-		year = 1940
+		year = 1953
 
 		archetype = rocket_artillery_equipment
 		priority = 60
@@ -117,7 +134,7 @@ equipments = {
 	}
 	
 	rocket_artillery_equipment_2 = {
-		year = 1943
+		year = 1958
 
 		archetype = rocket_artillery_equipment
 		parent = rocket_artillery_equipment_1
@@ -134,10 +151,26 @@ equipments = {
 			steel = 1
 		}
 	}
+
+	rocket_artillery_equipment_3 = {
+		archetype = rocket_artillery_equipment
+		parent = rocket_artillery_equipment_2
+		priority = 60
+
+		soft_attack = 40
+		breakthrough = 15
+		defense = 17
+
+		build_cost_ic = 5.5
+		resources = {
+			tungsten = 2
+			steel = 2
+		}
+	}
 	
 	#Katyusha 
 	motorized_rocket_equipment = {
-		year = 1934
+		year = 1950
 
 		is_archetype = yes
 		picture = archetype_motorized_rocket_equipment			
@@ -177,7 +210,7 @@ equipments = {
 	}
 	
 	motorized_rocket_equipment_1 = {
-		year = 1939
+		year = 1953
 
 		archetype = motorized_rocket_equipment
 		priority = 70

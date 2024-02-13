@@ -1,0 +1,33 @@
+spriteTypes = {
+	### GENERIC ###
+	# BASIC ARTILLERY
+	spriteType = {
+		name = "GFX_basic_artillery_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/basic_artillery.dds"
+	}
+	# TOWED ARTILLERY
+	spriteType = {
+		name = "GFX_towed_artillery1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_towed_artillery2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery2.dds"
+	}
+	spriteType = {
+		name = "GFX_towed_artillery3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery3.dds"
+	}
+	spriteType = {
+		name = "GFX_towed_artillery_update1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery_update1.dds"
+	}
+	spriteType = {
+		name = "GFX_towed_artillery_update2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery_update2.dds"
+	}
+	spriteType = {
+		name = "GFX_towed_artillery_update3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery_update3.dds"
+	}
+}
