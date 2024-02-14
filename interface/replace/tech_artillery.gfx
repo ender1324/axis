@@ -30,4 +30,94 @@ spriteTypes = {
 		name = "GFX_towed_artillery_update3_medium"
 		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/towed_artillery_update3.dds"
 	}
+
+	# ROCKET ARTILLERY
+	spriteType = {
+		name = "GFX_rocket_artillery1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery2.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery3.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery_update1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery_update1.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery_update2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery_update2.dds"
+	}
+	spriteType = {
+		name = "GFX_rocket_artillery_update3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/rocket_artillery_update3.dds"
+	}
+	
+	# ANTI TANK
+	spriteType = {
+		name = "GFX_antitank1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank1.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank2.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank3.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank_update1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank_update1.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank_update2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank_update2.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank_update3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank_update3.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank_update4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank_update4.dds"
+	}
+	spriteType = {
+		name = "GFX_antitank_update5_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antitank_update5.dds"
+	}
+
+	# ANTI AIR
+	spriteType = {
+		name = "GFX_antiair1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair1.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair2.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair3.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair4.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair_update1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair_update1.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair_update2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair_update2.dds"
+	}
+	spriteType = {
+		name = "GFX_antiair_update3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARTILLERY/antiair_update3.dds"
+	}
 }
