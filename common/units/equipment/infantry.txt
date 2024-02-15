@@ -3,7 +3,7 @@
 equipments = {
 
 	infantry_equipment = {
-		year = 1936
+		year = 1940
 	
 		is_archetype = yes
 		picture = archetype_infantry_equipment		
@@ -41,8 +41,9 @@ equipments = {
 		
 	}
 
+	# Pre-WW2 Infantry Equipment
 	infantry_equipment_0 = {
-		year = 1918
+		year = 1940
 	
 		archetype = infantry_equipment
 		active = yes
@@ -52,9 +53,9 @@ equipments = {
 
 
 
-	# Regular infantry  1936
+	# WW2-era Infantry Equipment 1945
 	infantry_equipment_1 = {
-		year = 1936
+		year = 1945
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
@@ -74,9 +75,9 @@ equipments = {
 		build_cost_ic = 0.50
 	}
 
-	# Improved weapons  ~1939
+	# 1953 Infantry Equipment
 	infantry_equipment_2 = {
-		year = 1939
+		year = 1953
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
@@ -100,9 +101,9 @@ equipments = {
 		
 	}
 	
-	# Advanced weapons  ~1942
+	# 1956 Infantry Equipment
 	infantry_equipment_3 = {
-		year = 1942
+		year = 1956
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
@@ -123,6 +124,31 @@ equipments = {
 		build_cost_ic = 0.69
 		resources = {
 			steel = 4
+		}
+	}
+
+	infantry_equipment_4 = {
+		year = 1960
+
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 15
+		visual_level = 4
+
+		# Defense
+		defense = 40
+		breakthrough = 6
+
+		# Offensive
+		soft_attack = 15
+		hard_attack = 4
+		ap_attack = 13
+		air_attack = 0
+
+		reliability = 0.75
+		build_cost_ic = 0.80
+		resources = {
+			steel = 5
 		}
 	}
 }

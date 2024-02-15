@@ -1004,18 +1004,18 @@ DEFAULT_early_template_design = {
 		NOT = {
 			OR = {
 				tag = GER
-				tag = ENG
-				tag = SOV
+				tag = PRC
+				tag = RUS
 				tag = ITA
 				tag = JAP
 				tag = USA
-				tag = POL
+				tag = CAN
 			}
 		}
-		date < 1940.1.1
+		date < 1956.1.1
 	}
 	abort = {
-		date > 1940.1.1
+		date > 1956.1.1
 	}
 
 	ai_strategy = {
@@ -1066,15 +1066,15 @@ DEFAULT_midlate_template_design = {
 		NOT = {
 			OR = {
 				tag = GER
-				tag = ENG
-				tag = SOV
+				tag = PRC
+				tag = RUS
 				tag = ITA
 				tag = JAP
 				tag = USA
-				tag = POL
+				tag = CAN
 			}
 		}
-		date > 1940.1.1
+		date > 1956.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1158,10 +1158,6 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 		OR = {
 			manpower_per_military_factory > 500
 			has_war = no
-			AND = {
-				original_tag = ETH
-				is_government_in_exile = yes
-			}
 		}
 	}
 
@@ -1183,7 +1179,7 @@ build_intelligence_agency_as_major = {
 		is_major = yes
 		OR = {
 			has_war = yes
-			date > 1938.1.1
+			date > 1957.1.1
 		}
 	}
 	abort_when_not_enabled = yes
@@ -1197,7 +1193,7 @@ build_intelligence_agency_as_major = {
 
 build_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 1958.1.1
 		has_war = no
 		num_of_civilian_factories > 25
 	}
@@ -1217,7 +1213,7 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 1957.1.1
 		num_of_civilian_factories > 50
 	}
 	abort = {
@@ -1409,7 +1405,6 @@ default_produce_some_trucks_for_buffer = {
 
 default_produce_floating_harbors = {
 	enable = {
-		is_historical_focus_on = no
 		has_war = yes
 		num_of_naval_factories > 25
 		num_of_military_factories > 40 # floating harbors are used for invasions. Why do large invasions if you don't have the industrial capacity?
@@ -1420,112 +1415,5 @@ default_produce_floating_harbors = {
 		type = unit_ratio
 		id = floating_harbor # for floating harbors, 'unit_ratio' is actually not a ratio but an absolute desired number
 		value = 10
-	}
-}
-
-###
-
-comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking allies while ww2 is still going on
-
-	allowed = {
-		OR = {
-			original_tag = SOV
-			is_in_faction_with = SOV
-		}
-	}
-	enable = {
-		is_historical_focus_on = yes
-		SOV = { is_communist_ideology = yes }
-		OR = {
-			USA = {
-				has_capitulated = no
-				has_war_with = JAP
-			}
-			ENG = {
-				has_capitulated = no
-				has_war_with = JAP
-			}
-		}
-		date > 1943.1.1
-		date < 1945.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = avoid_starting_wars
-		value = -400
-	}
-	ai_strategy = {
-		type = conquer
-		id = POL
-		value = -400 #REALLY dont try and conquer poland
-	}
-	ai_strategy = {
-		type = befriend
-		id = "POL"
-		value = 200
-	}
-	ai_strategy = {
-		type = conquer
-		id = JAP
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for japan while this strategy is active
-	}
-	ai_strategy = {
-		type = conquer
-		id = FIN
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for finland while this strategy is active
-	}
-	ai_strategy = {
-		type = conquer
-		id = PER
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for iran while this strategy is active
-	}
-}
-
-allies_avoid_starting_wars_during_endgame = { #Allies should avoid attacking.. well, anyone while ww2 is in endgame
-	allowed = {
-		OR = {
-			tag = ENG
-			is_in_faction_with = ENG
-		}
-	}
-	enable = {
-		is_historical_focus_on = yes
-		ENG = { is_democratic_ideology = yes }
-		OR = {
-			tag = ENG
-			is_in_faction_with = ENG
-		}
-		has_war_with = JAP
-		JAP = {
-			is_fascist_ideology = yes #Just to make sure we're not looking at a puppet or sth
-		}
-		date > 1943.1.1
-		date < 1945.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = avoid_starting_wars
-		value = -400
-	}
-}
-
-we_dont_believe_in_mountain_tanks = {
-	enable = {
-		is_historical_focus_on = yes
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_armor_score
-		id = "GRE"
-		value = -100
-	}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = "YUG"
-		value = -100
 	}
 }
