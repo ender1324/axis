@@ -2,6 +2,7 @@ axis
 mod is wip, all pushed changes dont crash but they arent really playable either
 feel free to use anything from here with credit
 credit:
+- Road to 56 (States, assets and some infantry research used from mod)
 - Beyond Earth mod (assets used from mod)
 - Better Mechanics: War Exhaustion and Better Training (mechanics used from mods)
 - Better Laws and Policies (directly inspired features from mod)
