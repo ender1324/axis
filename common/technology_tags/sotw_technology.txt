@@ -1,0 +1,10 @@
+technology_categories = {
+	# Infantry
+	anti_tank_infantry_weapons
+	camo_tech
+	winter_clothing_tech
+	jaeger_infantry_tech
+	summer_clothing_tech
+	desert_infantry_tech
+	jungle_infantry_tech
+}
