@@ -1,0 +1,224 @@
+spriteTypes = {
+
+	### GENERIC ###
+	spriteType = {
+		name = "GFX_flamethrower_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/flamethrower.dds"
+	}
+	spriteType = {
+		name = "GFX_sniper_rifle_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/sniper_rifle.dds"
+	}
+
+	# support weapons
+	spriteType = {
+		name = "GFX_support_weapons_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/support_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/support_weapons2.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/support_weapons3.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/support_weapons4.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/support_weapons5.dds"
+	}
+
+	# infantry equipment / infantry weapons
+	spriteType = {
+		name = "GFX_infantry_weapons_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons2.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons3.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons4.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons_update1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons_update1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons_update2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons_update2.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_weapons_update3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_weapons_update3.dds"
+	}
+
+	# Infantry AT shit
+	spriteType = {
+		name = "GFX_anti_tank_kit_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/anti_tank_kit.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_at1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_at1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_at2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_at2.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_at3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/infantry_at3.dds"
+	}
+
+	# night vision
+	spriteType = {
+		name = "GFX_night_vision_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/night_vision.dds"
+	}
+	spriteType = {
+		name = "GFX_night_vision2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/night_vision2.dds"
+	}
+
+	# camo
+	spriteType = {
+		name = "GFX_camo1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/camo1.dds"
+	}
+	spriteType = {
+		name = "GFX_camo2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/camo2.dds"
+	}
+	spriteType = {
+		name = "GFX_camo3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/camo3.dds"
+	}
+	spriteType = {
+		name = "GFX_camo4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/camo4.dds"
+	}
+	spriteType = {
+		name = "GFX_camo5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/camo5.dds"
+	}
+
+	# clothes
+	spriteType = {
+		name = "GFX_winter_clothes1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/winter_clothes1.dds"
+	}
+	spriteType = {
+		name = "GFX_winter_clothes2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/winter_clothes2.dds"
+	}
+	spriteType = {
+		name = "GFX_winter_clothes3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/winter_clothes3.dds"
+	}
+	spriteType = {
+		name = "GFX_winter_clothes4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/winter_clothes4.dds"
+	}
+	spriteType = {
+		name = "GFX_winter_clothes5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/winter_clothes5.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers1.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers2.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers3.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers4.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers5.dds"
+	}
+	spriteType = {
+		name = "GFX_jaegers6_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jaegers6.dds"
+	}
+
+	# hot temp clothes
+	spriteType = {
+		name = "GFX_jngdst_clothes1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jngdst_clothes1.dds"
+	}
+	spriteType = {
+		name = "GFX_jngdst_clothes2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jngdst_clothes2.dds"
+	}
+	spriteType = {
+		name = "GFX_jngdst_clothes3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jngdst_clothes3.dds"
+	}
+	spriteType = {
+		name = "GFX_jngdst_clothes4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jngdst_clothes4.dds"
+	}
+	spriteType = {
+		name = "GFX_jngdst_clothes5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/jngdst_clothes5.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry1_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry1.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry2_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry2.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry3_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry3.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry4.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry5_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry5.dds"
+	}
+	spriteType = {
+		name = "GFX_hightempinfantry6_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/hightempinfantry6.dds"
+	}
+
+	# special forces
+	spriteType = {
+		name = "GFX_paratroopers4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/paratroopers4.dds"
+	}
+	spriteType = {
+		name = "GFX_marines4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/marines4.dds"
+	}
+	spriteType = {
+		name = "GFX_mountaineers4_medium"
+		textureFile = "gfx/interface/technologies/GEN/INFANTRY/mountaineers4.dds"
+	}
+}
