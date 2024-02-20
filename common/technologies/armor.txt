@@ -619,7 +619,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1953
+		start_year = 1956
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 2 }
@@ -645,17 +645,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "1953.6.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1938.1.1"
+				date > "1954.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "1955.1.1"
 			}
 			modifier = {
 				is_major = no
@@ -663,4 +663,238 @@ technologies = {
 			}
 		}
 	}
+
+	tech_trucks2 = {
+		enable_equipments = {
+			motorized_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = tech_trucks3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1956
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1957.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1958.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1959.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.75
+			}
+		}
+	}
+
+	tech_trucks3 = {
+		enable_equipments = {
+			motorized_equipment_3
+		}
+
+		# path = {
+		# 	leads_to_tech = tech_trucks4
+		# 	research_cost_coeff = 1
+		# }
+
+		research_cost = 2
+		start_year = 1958
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1958.6.1"
+			}
+			modifier = {
+				factor = 2
+				date > "1959.1.1"
+			}
+		}
+	}
+
+	armored_car1 = {
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			gw_armored_car_equipment
+		}
+
+		allow_branch = { has_dlc = "La Resistance" }
+
+		path = {
+			leads_to_tech = armored_car2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1953.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1954.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1955.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car2 = {
+
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = armored_car3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1953.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1954.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1956.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car3 = {
+
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1956
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		sub_technologies = {
+			armored_car_at_upgrade
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
 }
