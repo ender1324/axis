@@ -1,0 +1,155 @@
+duplicate_archetypes = {
+	infantry_fighting_vehicle_chassis = {
+		archetype = infantry_fighting_vehicle_chassis
+		type = { mechanized }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+		}
+	}
+}
+
+equipments = {
+
+	infantry_fighting_vehicle_equipment = {
+		year = 1945
+
+		is_archetype = yes
+		picture = archetype_ifv_equipment
+		is_buildable = no
+		# type = {
+		# 	#infantry #Removing inf type
+		# 	ifv_mechanized
+		# }
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			mech_cost_upgrade
+		}
+
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		maximum_speed = 9
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 28
+		breakthrough = 9
+		hardness = 0.50
+		armor_value = 12
+
+		#Offensive Abilities
+		soft_attack = 6
+		ap_attack = 11
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+			rubber = 1
+		}
+
+		fuel_consumption = 2.5
+		supply_truck = no
+	}
+
+	# ~1945
+	infantry_fighting_vehicle_equipment_1 = {
+		year = 1945
+
+		archetype = infantry_fighting_vehicle_equipment
+		priority = 40
+		visual_level = 0
+	}
+
+	# ~1953
+	infantry_fighting_vehicle_equipment_2 = {
+		year = 1953
+
+		archetype = infantry_fighting_vehicle_equipment
+		parent = infantry_fighting_vehicle_equipment_1
+		priority = 40
+		visual_level = 1
+
+		maximum_speed = 11
+
+		#Defensive Abilities
+		defense = 34
+		breakthrough = 12
+		hardness = 0.60
+		armor_value = 16
+
+		#Offensive Abilities
+		soft_attack = 8
+		ap_attack = 16
+
+		build_cost_ic = 10
+		resources = {
+			steel = 3
+			rubber = 1
+		}
+	}
+
+	# ~1956
+	infantry_fighting_vehicle_equipment_3 = {
+		year = 1956
+
+		archetype = infantry_fighting_vehicle_equipment
+		parent = infantry_fighting_vehicle_equipment_2
+		priority = 40
+		visual_level = 2
+
+		maximum_speed = 14
+
+		#Defensive Abilities
+		defense = 39
+		breakthrough = 17
+		hardness = 0.70
+		armor_value = 23
+
+		#Offensive Abilities
+		soft_attack = 10
+		ap_attack = 21
+
+		build_cost_ic = 12
+		resources = {
+			steel = 4
+			rubber = 1
+		}
+	}
+
+	infantry_fighting_vehicle_equipment_4 = {
+		year = 1958
+
+		archetype = infantry_fighting_vehicle_equipment
+		parent = infantry_fighting_vehicle_equipment_3
+		priority = 40
+		visual_level = 3
+
+		maximum_speed = 16
+
+		#Defensive Abilities
+		defense = 42
+		breakthrough = 21
+		hardness = 0.70
+		armor_value = 30
+
+		#Offensive Abilities
+		soft_attack = 12
+		ap_attack = 26
+
+		build_cost_ic = 13
+		resources = {
+			steel = 4
+			tungsten = 1
+			rubber = 1
+		}
+	}
+}

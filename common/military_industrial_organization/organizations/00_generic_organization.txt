@@ -20,7 +20,7 @@ generic_tank_organization = {
 	}
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
+	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_main_armor_and_modules }
 
 	tree_header_text = {
 		text = mio_header_tank_construction
@@ -739,7 +739,7 @@ generic_medium_tank_organization = {
 	}
 
 	equipment_type = { mio_cat_eq_all_medium_tank }
-	research_categories = { mio_cat_tech_medium_armor_and_modules }
+	research_categories = { mio_cat_tech_main_armor_and_modules }
 
 	tree_header_text = {
 		text = mio_header_design
@@ -976,7 +976,7 @@ generic_heavy_tank_organization = {
 	}
 
 	equipment_type = { mio_cat_eq_all_heavy_tank }
-	research_categories = { mio_cat_tech_heavy_armor_and_modules }
+	research_categories = { mio_cat_tech_main_armor_and_modules }
 
 	tree_header_text = {
 		text = mio_header_engine_and_drive_system

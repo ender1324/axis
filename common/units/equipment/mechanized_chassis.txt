@@ -1,0 +1,179 @@
+equipments = {
+	infantry_fighting_vehicle_chassis = {
+		year = 1945
+		is_archetype = yes
+		is_buildable = no
+		is_convertable = yes
+
+		picture = archetype_ifv_equipment
+		type = mechanized
+		group_by = archetype
+		interface_category = interface_category_land
+		priority = 2000
+
+		module_slots = {
+			turret_type_slot = { #Turrets must go at the top
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type
+				}
+			}
+		
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					tank_flamethrower
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_suspension_type
+					tank_non_tracked_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+		}
+		default_modules = {
+			main_armament_slot = empty
+			turret_type_slot = empty
+			suspension_type_slot = empty
+			armor_type_slot = empty
+			engine_type_slot = empty
+		}
+		fuel_consumption = 0
+		maximum_speed = 6
+		build_cost_ic = 1
+		reliability = 0.8
+		hardness = 0.5
+		armor_value = 12
+		resources = {
+			steel = 1
+		}
+
+		lend_lease_cost = 10
+
+		manpower = 3
+	}
+
+	infantry_fighting_vehicle_chassis_0 = {
+		abbreviation = "if0"
+		derived_variant_name = infantry_fighting_vehicle_0
+		visual_level = 0
+		year = 1945
+		archetype = infantry_fighting_vehicle_chassis
+		priority = 2000
+		module_slots = inherit
+
+		upgrades = {
+			tank_nsb_armor_upgrade
+			tank_nsb_engine_upgrade
+		}
+	}
+	infantry_fighting_vehicle_chassis_1 = {
+		abbreviation = "if1"
+		derived_variant_name = infantry_fighting_vehicle_2
+		visual_level = 1
+		year = 1953
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_chassis_0
+		priority = 2001
+		module_slots = inherit
+		maximum_speed = 7
+		build_cost_ic = 1.25
+		reliability = 0.8
+		hardness = 0.60
+		armor_value = 16
+		resources = {
+			steel = 2
+		}
+	}
+	infantry_fighting_vehicle_chassis_2 = {
+		abbreviation = "if2"
+		derived_variant_name = infantry_fighting_vehicle_2
+		visual_level = 2
+		year = 1956
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_chassis_1
+		priority = 2002
+		module_slots = inherit
+		maximum_speed = 8
+		build_cost_ic = 1.75
+		reliability = 0.9
+		hardness = 0.65
+		armor_value = 23
+		resources = {
+			steel = 2
+		}
+	}
+	infantry_fighting_vehicle_chassis_3 = {
+		abbreviation = "if3"
+		derived_variant_name = infantry_fighting_vehicle_3
+		visual_level = 3
+		year = 1958
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_chassis_2
+		priority = 2003
+		module_slots = inherit
+		maximum_speed = 9
+		build_cost_ic = 2.25
+		reliability = 1
+		hardness = 0.7
+		armor_value = 27
+		resources = {
+			steel = 2
+			tungsten = 1
+		}
+	}
+}
