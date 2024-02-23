@@ -213,6 +213,10 @@
  anti_air_equipment_2_desc: "Anti-air guns with longer cartridges and barrels, able to target high-flying aircraft."
  anti_air_equipment_3: "1960s Anti-Air"
  anti_air_equipment_3_desc: "An advanced mobile flak gun with greater reach and firing capacity, to combat even the fastest and highest-flying enemy aircraft."
+ # Tanks & Motorized
+ ARMOUR_TITLE_MODULES: "MODULES"
+ ARMOUR_TITLE_MOTORISED: "MOTORISED & MECHANISED"
+ ARMOUR_TITLE_MBT: "MAIN BATTLE TANKS"
  # New Categories
  anti_tank_infantry_weapons: "Portable Anti-Tank Weapons"
  camo_tech: "Camo Technologies"

@@ -391,9 +391,9 @@ equipments = {
 		manpower = 2
 	}
 
-	main_battle_tank_chassis_1 = {
+	main_battle_tank_chassis_0 = {
 		abbreviation = "mbt0"
-		derived_variant_name = main_battle_tank_equipment_1
+		derived_variant_name = main_battle_tank_equipment_0
 		visual_level = 0
 		year = 1945
 		archetype = main_battle_tank_chassis
@@ -406,9 +406,9 @@ equipments = {
 		}
 	}
 
-	main_battle_tank_chassis_2 = {
+	main_battle_tank_chassis_1 = {
 		abbreviation = "mbt1"
-		derived_variant_name = main_battle_tank_equipment_2
+		derived_variant_name = main_battle_tank_equipment_1
 		visual_level = 1
 		year = 1953
 		archetype = main_battle_tank_chassis
@@ -432,9 +432,9 @@ equipments = {
 		}
 	}
 
-	main_battle_tank_chassis_3 = {
+	main_battle_tank_chassis_2 = {
 		abbreviation = "mbt2"
-		derived_variant_name = main_battle_tank_equipment_3
+		derived_variant_name = main_battle_tank_equipment_2
 		visual_level = 1
 		year = 1956
 		archetype = main_battle_tank_chassis
@@ -459,9 +459,9 @@ equipments = {
 		}
 	}
 
-	main_battle_tank_chassis_4 = {
+	main_battle_tank_chassis_3 = {
 		abbreviation = "mbt3"
-		derived_variant_name = main_battle_tank_equipment_4
+		derived_variant_name = main_battle_tank_equipment_3
 		visual_level = 2
 		year = 1958
 		archetype = main_battle_tank_chassis
