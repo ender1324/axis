@@ -71,4 +71,16 @@ spriteTypes = {
 		name = "GFX_portrait_KYR_Iskhak_Razzakov"
 		textureFile = "gfx/leaders/KYR/Portrait_Kyrgyztan_Iskhak_Razzakov.dds"
 	}
+
+	# Bukhara
+	spriteType = {
+		name = "GFX_portrait_BUK_abdusattar"
+		textureFile = "gfx/leaders/BUK/Portrait_Bukhara_Abdusattar.dds"
+	}
+
+	# Chinese People's Resistance Front
+	spriteType = {
+		name = "GFX_portrait_PRC_mao_zedong"
+		textureFile = "gfx/leaders/PRC/Portrait_China_Mao_Zedong.dds"
+	}
 }

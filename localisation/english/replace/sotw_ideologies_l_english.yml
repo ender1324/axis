@@ -101,6 +101,8 @@ despotism_drift: "Despotic Drift"
 
 despotism_subtype: "Despotism"
 despotism_subtype_desc: "Despotism is not a political ideology in the normal sense of the word, but rather a general term for the attitude that this kind of government holds towards its citizens: The people are all subjects of the leader, who may be an autocrat of many or a single color, and whose role and duty is to lead the state and its society towards the most righteous and best path while uniting the people under their benevolent protection."
+absolute_monarchy_subtype: "Absolute Monarchy"
+absolute_monarchy_subtype_desc: "Absolute monarchy is a form of monarchy in which the monarch rules in their own right or power. In an absolute monarchy, the king or queen is by no means limited and has absolute power."
 military_junta_subtype: "Military Junta"
 military_junta_subtype_desc: "A military junta is a government led by a committee of military leaders. The term is used to refer to an authoritarian form of government characterized by oligarchic military dictatorship. A junta often comes to power as a result of a coup d'état. The junta may either formally take power as the nation's governing body, with the power to rule by decree, or may wield power by exercising binding (but informal) control over a nominally civilian government."
 theocracy_subtype: "Theocracy"

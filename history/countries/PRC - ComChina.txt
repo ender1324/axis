@@ -5,7 +5,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = vanguardism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,5 +26,7 @@ set_popularities = {
 	national_socialism = 0
 	occultism = 5
 }
+
+recruit_character = PRC_Mao_Zedong
 
 set_convoys = 50

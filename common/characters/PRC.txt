@@ -1,0 +1,18 @@
+characters = {
+	PRC_Mao_Zedong = {
+		name = PRC_mao_zedong
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_PRC_mao_zedong"
+			}
+		}
+		country_leader = {
+			ideology = vanguardism_subtype
+			desc = PRC_mao_zedong_desc
+			expire = 1999.1.1
+			traits = {
+				militant_socialist
+			}
+		}
+	}
+}

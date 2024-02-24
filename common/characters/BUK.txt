@@ -1,0 +1,19 @@
+characters = {
+	BUK_Abdusattar_I = {
+		name = BUK_Abdusattar_I
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BUK_abdusattar"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy_subtype
+			desc = BUK_Abdusattar_I_desc
+			expire = 1999.1.1
+			traits = {
+				returning_emir
+				anti_communist
+			}
+		}
+	}
+}
