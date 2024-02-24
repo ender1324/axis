@@ -234,7 +234,7 @@
 		generic_pattern = "UNIT_GENERIC_NAME_FRA"
 		unique = {}
 	}
-	medium_armor = {
+	main_armor = {
 		prefix = ""
 		generic = { "Brigade de Chars de Combat" }
 		generic_pattern = "UNIT_GENERIC_NAME_FRA"

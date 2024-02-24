@@ -184,7 +184,7 @@ technologies = {
 			maximum_speed = 0.1
 			default_morale = 0.2
 		}
-		mechanized = {
+		ifv_mechanized = {
 			maximum_speed = 0.1
 			default_morale = 0.2
 		}
@@ -302,7 +302,7 @@ technologies = {
 			max_organisation = 15
 			
 		}
-		mechanized = {
+		ifv_mechanized = {
 			max_organisation = 15
 		}
 		amphibious_mechanized = {
@@ -509,7 +509,7 @@ technologies = {
 		motorized = {
 			max_organisation = 5
 		}
-		mechanized = {
+		ifv_mechanized = {
 			max_organisation = 5
 		}
 		amphibious_mechanized = {
@@ -1994,7 +1994,7 @@ technologies = {
 		armored_car = {
 			max_organisation = 5
 		}
-		mechanized = {
+		ifv_mechanized = {
 			max_organisation = 5
 		}
 		amphibious_mechanized = {
@@ -3093,7 +3093,7 @@ technologies = {
 			default_morale = 0.1
 		}	
 
-		mechanized = {
+		ifv_mechanized = {
 			max_organisation = 10
 			default_morale = 0.1
 		}

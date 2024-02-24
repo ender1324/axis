@@ -282,7 +282,7 @@
 		generic_pattern = "UNIT_GENERIC_NAME_GER"
 		unique = {}
 	}
-	medium_armor = {
+	main_armor = {
 		prefix = ""
 		generic = { "Panzer-Division" }
 		generic_pattern = "UNIT_GENERIC_NAME_GER"

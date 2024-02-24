@@ -181,7 +181,7 @@
 		generic_pattern = "UNIT_GENERIC_NAME_JAP"
 		unique = {}
 	}
-	medium_armor = {
+	main_armor = {
 		prefix = ""
 		generic = { "Senshashidan" }
 		generic_pattern = "UNIT_GENERIC_NAME_JAP"

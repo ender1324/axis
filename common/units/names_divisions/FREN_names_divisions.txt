@@ -189,7 +189,7 @@ FREN_MEC_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "mechanized" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FREN_INF_01 }
@@ -221,7 +221,7 @@ FREN_ARM_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FREN_INF_01 }
@@ -253,7 +253,7 @@ FREN_ARM_02 =
 
 	can_use = { always = yes }
 
-	division_types = { "medium_armor" "modern_armor" }
+	division_types = { "main_armor" "light_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FREN_ARM_01 }
@@ -285,7 +285,7 @@ FREN_ARM_03 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FREN_INF_01 }

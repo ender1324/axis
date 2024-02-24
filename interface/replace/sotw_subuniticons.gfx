@@ -1,0 +1,129 @@
+spriteTypes = {
+	# Normal icons
+	spriteType = { 
+		name = "GFX_unit_jaeger_icon_medium"									
+		textureFile = "gfx/interface/counters/divisions_large/unit_jaeger_icon.dds"
+		noOfFrames = 2 
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_jungletroop_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_jungletroop_icon.dds"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_desertinfantry_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_desertinfantry_icon.dds"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_main_armor_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_main_armor_icon.dds"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_main_battle_armor_at_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_main_armor_at_icon.dds"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_main_battle_armor_antiair_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_main_armor_antiair_icon.dds"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_main_battle_armor_artillery_icon_medium"							
+		textureFile = "gfx/interface/counters/divisions_large/unit_main_armor_icon.dds"
+		noOfFrames = 2 
+	}
+
+	# White icons
+	spriteType = { 
+		name = "GFX_unit_jaeger_icon_medium_white"							
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jaeger_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_unit_jungletroop_icon_medium_white"						
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_jungletroop_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_desertinfantry_icon_medium_white"					
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_desertinfantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_main_armor_icon_medium_white"							
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_main_armor_icon.dds"
+		noOfFrames = 2 
+	}
+
+	# Texticons
+	spriteType = {
+		name = "GFX_nato_unit_jaeger_icon_small"
+		texturefile = "gfx/texticons/nato_unit_jaegers_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_jaeger_icon_small"
+		texturefile = "gfx/texticons/unit_jaegers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_nato_unit_jungletroop_icon_small"
+		texturefile = "gfx/texticons/nato_unit_jungletroops_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_jungletroop_icon_small"
+		texturefile = "gfx/texticons/unit_jungletroops_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_desertinfantry_icon_small"
+		texturefile = "gfx/texticons/unit_desertinfantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_desertinfantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_desertinfantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nato_unit_main_armor_icon_small"
+		texturefile = "gfx/texticons/nato_unit_main_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_main_battle_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_main_armor_icon_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_main_battle_tank_destroyer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_main_armor_icon_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_main_battle_sp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_main_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_main_armor_icon_small"
+		texturefile = "gfx/texticons/unit_main_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+}

@@ -173,7 +173,7 @@ BEL_MEC_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "mechanized" }
+	division_types = { "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { BEL_MOT_01 }
@@ -205,7 +205,7 @@ BEL_ARM_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { BEL_INF_01 }

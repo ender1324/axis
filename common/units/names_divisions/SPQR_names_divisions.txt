@@ -214,7 +214,7 @@ SPQR_ARM_01 =
 
 	can_use = { has_cosmetic_tag = SPQR_UNIFIED }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SPQR_INF_01 }
@@ -285,7 +285,7 @@ SPQR_MEC_01 =
 
 	can_use = { has_cosmetic_tag = SPQR_UNIFIED }
 
-	division_types = { "mechanized"  }
+	division_types = { "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { SPQR_INF_01 }

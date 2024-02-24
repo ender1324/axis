@@ -1,0 +1,211 @@
+spriteTypes = {
+	### GENERIC ###
+	# truck
+	spriteType = {
+		name = "GFX_tech_trucks_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_motorised_infantry_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_trucks2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_trucks3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks3.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_service_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/combat_service.dds"
+	}
+	spriteType = {
+		name = "GFX_convoy_highways1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways1.dds"
+	}
+	spriteType = {
+		name = "GFX_convoy_highways2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways2.dds"
+	}
+	spriteType = {
+		name = "GFX_convoy_highways3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways3.dds"
+	}
+	spriteType = {
+		name = "GFX_convoy_highways4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways4.dds"
+	}
+
+	# nsb trucks
+	spriteType = {
+		name = "GFX_nsb_tech_trucks_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_motorised_infantry_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_tech_trucks2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks2.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_tech_trucks3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/tech_trucks3.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_combat_service_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/combat_service.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_convoy_highways1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways1.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_convoy_highways2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways2.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_convoy_highways3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways3.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_convoy_highways4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/convoy_highways4.dds"
+	}
+
+	# armored car
+	spriteType = {
+		name = "GFX_armored_car1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car1.dds"
+	}
+	spriteType = {
+		name = "GFX_armored_car2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car2.dds"
+	}
+	spriteType = {
+		name = "GFX_armored_car3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car3.dds"
+	}
+	# nsb armored car
+	spriteType = {
+		name = "GFX_nsb_armored_car1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car1.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_armored_car2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car2.dds"
+	}
+	spriteType = {
+		name = "GFX_nsb_armored_car3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/armored_car3.dds"
+	}
+
+	# non-NSB armor / armour
+	spriteType = {
+		name = "GFX_light_tank1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank1.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank2.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank3.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank4.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank1.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank2.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank3.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle2.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle3.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle4.dds"
+	}
+
+	# NSB Armor / Armour
+	# Light tank Chassis
+	spriteType = {
+		name = "GFX_light_tank_chassis1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank_chassis1.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank_chassis2.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank_chassis3.dds"
+	}
+	spriteType = {
+		name = "GFX_light_tank_chassis4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/light_tank_chassis4.dds"
+	}
+
+	# Main Battle Tank Chassis
+	spriteType = {
+		name = "GFX_main_battle_tank_chassis1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank_chassis1.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank_chassis2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank_chassis2.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank_chassis3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank_chassis3.dds"
+	}
+	spriteType = {
+		name = "GFX_main_battle_tank_chassis4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/main_battle_tank_chassis4.dds"
+	}
+
+	# IFV chassis
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_chassis1_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle_chassis1.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_chassis2_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle_chassis2.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_chassis3_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle_chassis3.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_fighting_vehicle_chassis4_medium"
+		textureFile = "gfx/interface/technologies/GEN/ARMOUR/infantry_fighting_vehicle_chassis4.dds"
+	}
+}

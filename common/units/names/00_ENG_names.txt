@@ -189,7 +189,7 @@
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
 		unique = {}
 	}
-	medium_armor = {
+	main_armor = {
 		prefix = ""
 		generic = { "Tank Regiment" }
 		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"

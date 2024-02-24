@@ -224,7 +224,7 @@ VIN_ARM_01 =
 
 	can_use = { NOT = { is_puppet_of = FRA } }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { VIN_INF_01 }
@@ -257,7 +257,7 @@ VIN_MEC_01 =
 
 	can_use = { NOT = { is_puppet_of = FRA } }
 
-	division_types = { "mechanized"  }
+	division_types = { "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { VIN_INF_01 }
@@ -612,7 +612,7 @@ VIN_MEC_02 =
 
 	can_use = { is_puppet_of = FRA }
 
-	division_types = { "light_armor" "medium_armor" "mechanized" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { VIN_INF_02 }
@@ -644,7 +644,7 @@ VIN_ARM_02 =
 
 	can_use = { is_puppet_of = FRA }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { FREN_INF_01 }

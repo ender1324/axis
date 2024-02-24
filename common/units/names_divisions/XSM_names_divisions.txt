@@ -187,7 +187,7 @@ XSM_MEC_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "mechanized" }
+	division_types = { "ifv_mechanized" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XSM_INF_01 }

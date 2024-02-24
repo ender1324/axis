@@ -1,7 +1,14 @@
 technologies = {
+	# used only for the shared techs
+	@1945 = 0
+	@1953 = 2
+	@1956 = 4
+	@1958 = 6
+	################################
+
 	light_tank1 = {
 		enable_equipments = {
-			light_tank_equipment_1
+			light_tank_equipment_0
 		}
 		enable_subunits = {
 			light_armor
@@ -54,7 +61,7 @@ technologies = {
 	}
 	light_tank2 = {
 		enable_equipments = {
-			light_tank_equipment_2
+			light_tank_equipment_1
 		}
 
 		path = {
@@ -104,7 +111,7 @@ technologies = {
 	}
 	light_tank3 = {
 		enable_equipments = {
-			light_tank_equipment_3
+			light_tank_equipment_2
 		}
 
 		path = {
@@ -154,7 +161,7 @@ technologies = {
 	}
 	light_tank4 = {
 		enable_equipments = {
-			light_tank_equipment_4
+			light_tank_equipment_3
 		}
 
 		# path = {
@@ -205,11 +212,11 @@ technologies = {
 	# Main Battle Tanks
 	main_battle_tank1 = {
 		enable_equipments = {
-			main_battle_tank_equipment_1
+			main_battle_tank_equipment_0
 		}
 
 		enable_subunits = {
-			modern_armor
+			main_armor
 		}
 
 		path = {
@@ -222,14 +229,14 @@ technologies = {
 
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 
-		sub_technologies = {
-			modern_td
-			modern_art
-			modern_spaa
-		}
+		# sub_technologies = {
+		# 	modern_td
+		# 	modern_art
+		# 	modern_spaa
+		# }
 
 		ai_will_do = {
 			base = 1
@@ -267,7 +274,7 @@ technologies = {
 
 	main_battle_tank_destroyer1 = {
 		enable_equipments = {
-			main_battle_tank_destroyer_equipment_1
+			main_battle_tank_destroyer_equipment_0
 		}
 		enable_subunits = {
 			main_battle_tank_destroyer_brigade
@@ -300,7 +307,7 @@ technologies = {
 	}
 	main_battle_artillery1 = {
 		enable_equipments = {
-			main_battle_artillery_equipment_1
+			main_battle_artillery_equipment_0
 		}
 
 		enable_subunits = {
@@ -334,7 +341,7 @@ technologies = {
 	}
 	main_battle_spaa = {
 		enable_equipments = {
-			main_battle_aa_equipment_1
+			main_battle_aa_equipment_0
 		}
 
 		enable_subunits = {
@@ -358,7 +365,7 @@ technologies = {
 	# Main Battle Tanks
 	main_battle_tank2 = {
 		enable_equipments = {
-			main_battle_tank_equipment_2
+			main_battle_tank_equipment_1
 		}
 	
 		research_cost = 2.5
@@ -371,7 +378,7 @@ technologies = {
 
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 	
 			# sub_technologies = {
@@ -417,7 +424,7 @@ technologies = {
 	# Main Battle Tanks
 	main_battle_tank3 = {
 		enable_equipments = {
-			main_battle_tank_equipment_3
+			main_battle_tank_equipment_2
 		}
 	
 		research_cost = 2.5
@@ -430,7 +437,7 @@ technologies = {
 
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 	
 			# sub_technologies = {
@@ -476,7 +483,7 @@ technologies = {
 	# Main Battle Tanks
 	main_battle_tank4 = {
 		enable_equipments = {
-			main_battle_tank_equipment_4
+			main_battle_tank_equipment_3
 		}
 	
 		research_cost = 2.5
@@ -484,7 +491,7 @@ technologies = {
 
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 	
 			# sub_technologies = {
@@ -527,9 +534,151 @@ technologies = {
 		}
 	}
 
-	# Trucks
-	tech_trucks = {
+	infantry_fighting_vehicle1 = {
 
+		enable_subunits = {
+			ifv_mechanized
+		}
+
+		enable_equipments = {
+			infantry_fighting_vehicle_equipment_0
+		}
+
+		# enable_equipment_modules = {
+		# 	tank_half_track_suspension
+		# }
+
+		path = {
+			leads_to_tech = infantry_fighting_vehicle2
+			research_cost_coeff = 1
+		}
+
+		# path = {
+		# 	leads_to_tech = amphibious_mechanized_infantry
+		# 	research_cost_coeff = 1
+		# }
+
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			armor
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+					tag = USA
+					tag = CAN
+					tag = RUS
+					tag = FFA
+				}
+				factor = 2
+			}
+		}
+	}
+	infantry_fighting_vehicle2 = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = infantry_fighting_vehicle3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1953
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			armor
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_fighting_vehicle3 = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = infantry_fighting_vehicle4
+			research_cost_coeff = 1
+		}
+
+		ifv_mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+
+		research_cost = 3
+		start_year = 1956
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			armor
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	infantry_fighting_vehicle4 = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle_equipment_3
+		}
+
+		research_cost = 3
+		start_year = 1958
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			armor
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		# Trucks
+	tech_trucks = {
 		enable_subunits = {
 			mot_anti_tank_brigade
 			mot_artillery_brigade
@@ -538,6 +687,10 @@ technologies = {
 
 		enable_equipments = {
 			motorized_equipment_0
+		}
+
+		enable_equipment_modules = {
+			tank_wheeled_suspension
 		}
 		
 		path = {
@@ -552,9 +705,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1945
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = @1945 }
 		}
 		
 		categories = {
@@ -598,6 +752,10 @@ technologies = {
 			motorized_equipment_1
 		}
 
+		#enable_equipment_modules = {
+		#	tank_wheeled_suspension
+		#}
+
 		on_research_complete_limit = {
 			NOT = {
 				has_template_containing_unit = motorized
@@ -616,10 +774,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1956
+		start_year = 1953
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = @1953 }
 		}
 		
 		folder = {
@@ -673,9 +832,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1956
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = @1956 }
 		}
 		
 		categories = {
@@ -720,9 +880,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1958
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = @1958 }
 		}
 
 		categories = {
@@ -749,6 +910,7 @@ technologies = {
 		research_cost = 1.75
 		start_year = 1945
 		force_use_small_tech_layout = yes
+
 		folder = {
 			name = armour_folder
 			position = { x = 3 y = 1 }
@@ -826,13 +988,14 @@ technologies = {
 	convoy_highways1 = {
 		research_cost = 1.75
 		start_year = 1953
+
 		folder = {
 			name = armour_folder
 			position = { x = 3 y = 3 }
 		}
 
 		path = {
-			leads_to_tech = convoy_highways_2
+			leads_to_tech = convoy_highways2
 			research_cost_coeff = 1
 		}
 
@@ -901,16 +1064,17 @@ technologies = {
 		}
 	}
 
-	convoy_highways_2 = {
+	convoy_highways2 = {
 		research_cost = 1.75
 		start_year = 1956
+
 		folder = {
 			name = armour_folder
 			position = { x = 3 y = 5 }
 		}
 
 		path = {
-			leads_to_tech = convoy_highways_3
+			leads_to_tech = convoy_highways3
 			research_cost_coeff = 1
 		}
 
@@ -930,16 +1094,17 @@ technologies = {
 		}
 	}
 
-	convoy_highways_3 = {
+	convoy_highways3 = {
 		research_cost = 2
 		start_year = 1958
+
 		folder = {
 			name = armour_folder
 			position = { x = 3 y = 7 }
 		}
 
 		path = {
-			leads_to_tech = convoy_highways_4
+			leads_to_tech = convoy_highways4
 			research_cost_coeff = 1
 		}
 
@@ -959,9 +1124,10 @@ technologies = {
 		}
 	}
 
-	convoy_highways_4 = {
+	convoy_highways4 = {
 		research_cost = 2.25
 		start_year = 1960
+
 		folder = {
 			name = armour_folder
 			position = { x = 3 y = 9 }
@@ -1002,9 +1168,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1945
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = @1945 }
 		}
 		
 		categories = {
@@ -1050,9 +1217,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1953
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = @1953 }
 		}
 		
 		categories = {
@@ -1093,9 +1261,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1956
+		
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = @1956 }
 		}
 		
 		categories = {
@@ -1104,9 +1273,9 @@ technologies = {
 			cat_armored_cars
 		}
 		
-		sub_technologies = {
-			armored_car_at_upgrade
-		}
+		# sub_technologies = {
+		# 	armored_car_at_upgrade
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -1129,149 +1298,6 @@ technologies = {
 				is_major = no
 				factor = 0.5
 			}
-		}
-	}
-
-	infantry_fighting_vehicle1 = {
-
-		enable_subunits = {
-			ifv_mechanized
-		}
-
-		enable_equipments = {
-			infantry_fighting_vehicle_equipment_1
-		}
-
-		# enable_equipment_modules = {
-		# 	tank_half_track_suspension
-		# }
-
-		path = {
-			leads_to_tech = infantry_fighting_vehicle2
-			research_cost_coeff = 1
-		}
-
-		# path = {
-		# 	leads_to_tech = amphibious_mechanized_infantry
-		# 	research_cost_coeff = 1
-		# }
-
-		research_cost = 2
-		start_year = 1945
-		folder = {
-			name = armour_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			armor
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = GER
-					tag = JAP
-					tag = USA
-					tag = CAN
-					tag = RUS
-					tag = FFA
-				}
-				factor = 2
-			}
-		}
-	}
-	infantry_fighting_vehicle2 = {
-
-		enable_equipments = {
-			infantry_fighting_vehicle_equipment_2
-		}
-		
-		path = {
-			leads_to_tech = infantry_fighting_vehicle3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1953
-		folder = {
-			name = armour_folder
-			position = { x = 0 y = 2 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			armor
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	infantry_fighting_vehicle3 = {
-
-		enable_equipments = {
-			infantry_fighting_vehicle_equipment_3
-		}
-		
-		path = {
-			leads_to_tech = infantry_fighting_vehicle4
-			research_cost_coeff = 1
-		}
-
-		ifv_mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
-
-		research_cost = 3
-		start_year = 1956
-		folder = {
-			name = armour_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			armor
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	infantry_fighting_vehicle4 = {
-
-		enable_equipments = {
-			infantry_fighting_vehicle_equipment_4
-		}
-
-		research_cost = 3
-		start_year = 1958
-		folder = {
-			name = armour_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			armor
-			cat_mechanized_equipment
-		}
-		
-		ai_will_do = {
-			factor = 1
 		}
 	}
 

@@ -1,25 +1,23 @@
-duplicate_archetypes = {
-	infantry_fighting_vehicle_chassis = {
-		archetype = infantry_fighting_vehicle_chassis
-		type = { mechanized }
-		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
-		}
-	}
-}
-
+# duplicate_archetypes = {
+# 	infantry_fighting_vehicle_chassis = {
+# 		archetype = infantry_fighting_vehicle_chassis
+# 		type = { mechanized }
+# 		for_each = {
+# 			variant_name = { find_and_replace = { "chassis" "equipment" } }
+# 		}
+# 	}
+# }
 equipments = {
 
-	infantry_fighting_vehicle_equipment = {
+	# ~1945
+	infantry_fighting_vehicle_equipment_0 = {
 		year = 1945
 
-		is_archetype = yes
-		picture = archetype_ifv_equipment
-		is_buildable = no
-		# type = {
-		# 	#infantry #Removing inf type
-		# 	ifv_mechanized
-		# }
+		archetype = infantry_fighting_vehicle_chassis
+		priority = 40
+		visual_level = 0
+
+		#picture = archetype_ifv_equipment
 
 		upgrades = {
 			tank_reliability_upgrade
@@ -60,21 +58,12 @@ equipments = {
 		supply_truck = no
 	}
 
-	# ~1945
-	infantry_fighting_vehicle_equipment_1 = {
-		year = 1945
-
-		archetype = infantry_fighting_vehicle_equipment
-		priority = 40
-		visual_level = 0
-	}
-
 	# ~1953
-	infantry_fighting_vehicle_equipment_2 = {
+	infantry_fighting_vehicle_equipment_1 = {
 		year = 1953
 
-		archetype = infantry_fighting_vehicle_equipment
-		parent = infantry_fighting_vehicle_equipment_1
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_equipment_0
 		priority = 40
 		visual_level = 1
 
@@ -98,11 +87,11 @@ equipments = {
 	}
 
 	# ~1956
-	infantry_fighting_vehicle_equipment_3 = {
+	infantry_fighting_vehicle_equipment_2 = {
 		year = 1956
 
-		archetype = infantry_fighting_vehicle_equipment
-		parent = infantry_fighting_vehicle_equipment_2
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_equipment_1
 		priority = 40
 		visual_level = 2
 
@@ -125,11 +114,11 @@ equipments = {
 		}
 	}
 
-	infantry_fighting_vehicle_equipment_4 = {
+	infantry_fighting_vehicle_equipment_3 = {
 		year = 1958
 
-		archetype = infantry_fighting_vehicle_equipment
-		parent = infantry_fighting_vehicle_equipment_3
+		archetype = infantry_fighting_vehicle_chassis
+		parent = infantry_fighting_vehicle_equipment_2
 		priority = 40
 		visual_level = 3
 

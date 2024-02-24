@@ -541,7 +541,7 @@ GER_MEC_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "mechanized"  }
+	division_types = { "ifv_mechanized" }
 
 	fallback_name = "%d. Panzergrenadier-Division"
 
@@ -785,7 +785,7 @@ GER_Arm_01 =
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "main_armor" "ifv_mechanized" }
 
 	fallback_name = "%d. Panzer-Division"
 
@@ -905,7 +905,7 @@ GER_SS_01 =
 		is_fascist_ideology = yes
 	}
 
-	division_types = { "infantry" "motorized" "medium_armor" "mechanized" }
+	division_types = { "infantry" "motorized" "main_armor" "ifv_mechanized" }
 
 	fallback_name = "%d. SS-Division"
 
@@ -959,7 +959,7 @@ GER_MONINF_01 =
 
 	can_use = { always = no } # TODO: FIX THIS
 
-	division_types = { "infantry" "mechanized" "mountaineers" "paratrooper" "marine" }
+	division_types = { "infantry" "ifv_mechanized" "mountaineers" "paratrooper" "marine" }
 
 	fallback_name = "%d. Division"
 
@@ -1190,7 +1190,7 @@ GER_MONMOB_01 =
 
 	can_use = { always = no } # TODO: FIX THIS
 
-	division_types = {  "cavalry" "light_armor" "medium_armor" "heavy_armor" "modern_armor"  }
+	division_types = {  "cavalry" "light_armor" "main_armor" "ifv_mechanized" }
 
 	fallback_name = "%d. Schnell-Division"
 
