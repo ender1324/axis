@@ -58,6 +58,34 @@
  GER_vanguardism_party: "Partisanen"
  GER_vanguardism_party_long: "Partisanen"
 
+ # SS SERBIA
+ SSW_anarchy_party: "Anarchy"
+ SSW_anarchy_party_long: "Anarchy"
+ SSW_occultism_party: "NSDAP - H"
+ SSW_occultism_party_long: "Nationalsozialistische Deutsche Arbeiterpartei - Himmlerite"
+ SSW_national_socialism_party: "NSDAP - PG"
+ SSW_national_socialism_party_long: "Nationalsozialistische Deutsche Arbeiterpartei - Pro-Government"
+ SSW_fascism_party: "Collaborators"
+ SSW_fascism_party_long: "Collaborators"
+ SSW_ultranationalism_party: "Partisanen"
+ SSW_ultranationalism_party_long: "Partisanen"
+ SSW_despotism_party: "Verbotene Organisation"
+ SSW_despotism_party_long: "Verbotene Organisation"
+ SSW_paternalism_party: "Verbotene Organisation"
+ SSW_paternalism_party_long: "Verbotene Organisation"
+ SSW_conservatism_party: "Verbotene Organisation"
+ SSW_conservatism_party_long: "Verbotene Organisation"
+ SSW_liberalism_party: "Verbotene Organisation"
+ SSW_liberalism_party_long: "Verbotene Organisation"
+ SSW_progressivism_party: "Verbotene Organisation"
+ SSW_progressivism_party_long: "Verbotene Organisation"
+ SSW_socialism_party: "Partisanen"
+ SSW_socialism_party_long: "Partisanen"
+ SSW_communism_party: "Partisanen"
+ SSW_communism_party_long: "Partisanen"
+ SSW_vanguardism_party: "Partisanen"
+ SSW_vanguardism_party_long: "Partisanen"
+
  # CANADA
  CAN_anarchy_party: "Anarchy"
  CAN_anarchy_party_long: "Anarchy"
@@ -115,7 +143,7 @@
  KAZ_vanguardism_party_long: "Communist Party of Kazakhstan"
 
  ### RUSSIA AND WARLORDS ###
- # bASHKIROSTAN
+ # BASHKIROSTAN
  BSK_anarchy_party: "Anarchy"
  BSK_anarchy_party_long: "Anarchy"
  BSK_occultism_party: "BTS"

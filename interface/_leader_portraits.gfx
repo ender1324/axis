@@ -22,6 +22,17 @@ spriteTypes = {
 		textureFile = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_GER_joseph_goebbels"
+		textureFile = "gfx/leaders/GER/Portrait_Germany_Joseph_Goebbels.dds"
+	}
+
+	# SS serbia
+	spriteType = {
+		name = "GFX_portrait_SSW_heinrich_himmler"
+		textureFile = "gfx/leaders/SSW/Portrait_Serbia_Heinrich_Himmler.dds"
+	}
+
 	# Scotland
 	spriteType = {
 		name = "GFX_portrait_SCO_Archibald_Ramsay"
@@ -70,6 +81,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_KYR_Iskhak_Razzakov"
 		textureFile = "gfx/leaders/KYR/Portrait_Kyrgyztan_Iskhak_Razzakov.dds"
+	}
+
+	# Uzbekistan
+	spriteType = {
+		name = "GFX_portrait_UZB_nuriddin_muhiddinov"
+		textureFile = "gfx/leaders/UZB/Portrait_Uzbekistan_Nuriddin_Muhiddinov.dds"
 	}
 
 	# Bukhara

@@ -1,4 +1,20 @@
 characters = {
+	GER_Joseph_Goebbels = {
+		name = GER_joseph_goebbels
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_joseph_goebbels"
+			}
+		}
+		country_leader = {
+			desc = GER_joseph_goebbels_desc
+			ideology = national_socialism_subtype
+			expire = 1968.7.23
+			traits = {
+				dictator
+			}
+		}
+	}
 	GER_Adolf_Hitler = {
 		name = GER_adolf_hitler
 		portraits = {
@@ -13,5 +29,5 @@ characters = {
 				figurehead_fuhrer
 			}
 		}
-	}	
+	}
 }

@@ -3,7 +3,7 @@ defined_text = {
 	name = SL_main_status
 	text = {
 		trigger = { tag = GER }
-		localization_key = SL_status_fuhrer
+		localization_key = SL_status_reichspresident
 	}
 	text = {
 		trigger = {
@@ -21,8 +21,10 @@ defined_text = {
 defined_text = {
 	name = SL_second_status
 	text = {
-		trigger = { TAG = GER }
-		localization_key = SL_status_marshall
+		trigger = {
+			tag = GER
+		}
+		localization_key = SL_status_fuhrer
 	}
 	# Canada
 	text = {
@@ -46,6 +48,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_picture
+	# Germany
+	text = {
+		trigger = { has_idea = GER_SL_adolf_hitler_idea }
+		localization_key = GFX_portrait_GER_adolf_hitler
+	}
 	# Canada
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
@@ -66,6 +73,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_name
+	# Germany
+	text = {
+		trigger = { has_idea = GER_SL_adolf_hitler_idea }
+		localization_key = SL_name_adolf_hitler
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
@@ -87,6 +99,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_name_with_trait
+	# Germany
+	text = {
+		trigger = { has_idea = GER_SL_adolf_hitler_idea }
+		localization_key = SL_name_with_trait_adolf_hitler
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
@@ -102,6 +119,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_diplomacy_name_with_trait
+	# Germany
+	text = {
+		trigger = { has_idea = GER_SL_adolf_hitler_idea }
+		localization_key = SL_diplomacy_name_with_trait_adolf_hitler
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
@@ -117,6 +139,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_desc
+	# Germany
+	text = {
+		trigger = { has_idea = GER_SL_adolf_hitler_idea }
+		localization_key = SL_desc_adolf_hitler
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }

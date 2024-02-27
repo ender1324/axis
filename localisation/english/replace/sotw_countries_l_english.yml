@@ -156,7 +156,14 @@
  
  RKM: "Reichskommissariat Mittleafrika"
  RKM_DEF: "The Reichskommissariat Mittleafrika"
- RKM_AFJ: "Mittleafrikan"
+ RKM_ADJ: "Mittleafrikan"
+
+ SSW: "SS-Arisches-Siedlungsgebiet Südslawiens"
+ SSW_DEF: "the SS-Arisches-Siedlungsgebiet Südslawiens"
+ SSW_ADJ: "Südslawien"
+ SSW_GER_SUBJECT: "Reichskommissariat Südslawien"
+ SSW_GER_SUBJECT_DEF: "the Reichskommissariat Südslawien"
+ SSW_GER_SUBJECT_ADJ: "Südslawien"
 
  # Italy
  ITA: "Italy"

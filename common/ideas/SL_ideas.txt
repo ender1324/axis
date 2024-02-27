@@ -1,0 +1,45 @@
+ideas = {
+	hidden_ideas = {
+		# GERMANY
+		GER_SL_adolf_hitler_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { figurehead_fuhrer }
+		}
+		# CANADA
+		CAN_SL_Elizabeth_II_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+		}
+		# ENGLAND
+		ENG_SL_Edward_VIII_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			traits = { collaborator_king }
+		}
+	}
+}

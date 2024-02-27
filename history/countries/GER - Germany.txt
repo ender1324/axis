@@ -21,6 +21,8 @@ add_ideas = {
 	sl_racial_hierarchy
 	sl_women_in_workplace
 	sl_banned_protests
+	# Secondary Leaders
+	GER_SL_adolf_hitler_idea
 }
 
 set_popularities = {
@@ -85,6 +87,7 @@ set_autonomy = {
 	autonomy_state = autonomy_dominion
 }
 
+recruit_character = GER_Joseph_Goebbels
 recruit_character = GER_Adolf_Hitler
 
 set_convoys = 50

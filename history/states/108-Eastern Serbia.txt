@@ -8,13 +8,14 @@ state={
 
 	history={
 		victory_points = {
-			9602 3 
+			9602 5
 		}
-		owner = SER
+		owner = SSW
 		buildings = {
 			infrastructure = 2
 
 		}
+		add_claim_by = SSW
 		add_core_of = SER
 	}
 

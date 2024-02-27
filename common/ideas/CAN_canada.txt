@@ -1,17 +1,3 @@
 ideas = {
-	hidden_ideas = {
-		CAN_SL_Elizabeth_II_idea = {
-			allowed = {
-				always = no
-			}
-			
-			allowed_civil_war = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			traits = { popular_figurehead }
-		}
-	}
+
 }

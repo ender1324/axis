@@ -10,6 +10,7 @@ RKD = "countries/RK_Danemark.txt"
 RKN = "countries/RK_Niederlande.txt"
 RNO = "countries/RK_Norwegen.txt"
 RKM = "countries/RK_Mittleafrika.txt"
+SSW = "countries/SS_Serbia.txt"
 #RKS = "countries/RK_Sudafrika.txt"
 
 # Free france

@@ -1,0 +1,19 @@
+characters = {
+	SSW_heinrich_himmler = {
+		name = SSW_heinrich_himmler
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SSW_heinrich_himmler" # missing rn
+			}
+		}
+		country_leader = {
+			desc = SSW_heinrich_himmler_desc
+			ideology = aryanracialism_subtype
+			expire = 1962.02.21
+			traits = {
+				dictator
+				prince_of_terror
+			}
+		}
+	}	
+}

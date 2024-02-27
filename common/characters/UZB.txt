@@ -1,0 +1,18 @@
+characters = {
+	UZB_nuriddin_muhiddinov = {
+		name = UZB_nuriddin_muhiddinov
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_UZB_nuriddin_muhiddinov"
+			}
+		}
+		country_leader = {
+			desc = UZB_nuriddin_muhiddinov_desc
+			ideology = paternalism_subtype
+			expire = 2008.04.27
+			traits = {
+				reluctant_interventionist
+			}
+		}
+	}	
+}
