@@ -1,0 +1,19 @@
+characters = {
+	FER_Konstantin_Rodzaevsky = {
+		name = FER_Konstantin_Rodzaevsky
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FER_Konstantin_Rodzaevsky"
+			}
+		}
+		country_leader = {
+			desc = FER_Konstantin_Rodzaevsky_desc
+			ideology = fascism_subtype
+			expire = 1980.9.11
+			traits = {
+				eager_collaborator
+				anti_communist
+			}
+		}
+	}	
+}

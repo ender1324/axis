@@ -39,7 +39,10 @@ defined_text = {
 	# England
 	text = {
 		trigger = {
-			tag = ENG
+			OR = {
+				tag = ENG
+				tag = FER
+			}
 		}
 		localization_key = SL_status_king
 	}
@@ -68,6 +71,11 @@ defined_text = {
 		trigger = { tag = SCO }
 		localization_key = GFX_portrait_SCO_Walter_I
 	}
+	# Far Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = GFX_portrait_RUS_Vsevolod
+	}
 	text = { localization_key = GFX_leader_unknown }
 }
 
@@ -94,6 +102,11 @@ defined_text = {
 		trigger = { tag = SCO }
 		localization_key = "Walter I"
 	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_name_Vsevolod
+	}
 	text = { localization_key = SL_name }
 }
 
@@ -113,6 +126,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_name_with_trait_Edward_VIII
+	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_name_with_trait_Vsevolod
 	}
 	text = { localization_key = SL_name_with_trait }
 }
@@ -134,6 +152,11 @@ defined_text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_diplomacy_name_with_trait_Edward_VIII
 	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_diplomacy_name_with_trait_Vsevolod
+	}
 	text = { localization_key = SL_diplomacy_name_with_trait }
 }
 
@@ -153,6 +176,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_desc_Edward_VIII
+	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_desc_Vsevolod
 	}
 	text = { localization_key = SL_desc }
 }

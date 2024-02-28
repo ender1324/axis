@@ -71,6 +71,12 @@ spriteTypes = {
 		textureFile = "gfx/leaders/CAN/Portrait_Canada_Elizabeth.dds"
 	}
 
+	# General Russian Portraits
+	spriteType = {
+		name = "GFX_portrait_RUS_Vsevolod"
+		textureFile = "gfx/leaders/RUS/Portrait_Russia_Vsevolod.dds"
+	}
+
 	# Kazakhstan
 	spriteType = {
 		name = "GFX_portrait_KAZ_Leonid_Brezhnev"

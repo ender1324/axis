@@ -41,5 +41,19 @@ ideas = {
 			
 			traits = { collaborator_king }
 		}
+		# Far Eastern Russia
+		FER_SL_Vsevolod_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { wary_figurehead }
+		}
 	}
 }

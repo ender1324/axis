@@ -547,7 +547,13 @@ leader_traits = {
 	returning_emir = {
 		random = no
 		war_support_factor = 0.05
-		max_surrender_limit_offset = 0.1
+		surrender_limit = 0.1
+	}
+	wary_figurehead = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		surrender_limit = -0.1
 	}
 	### IDEA TRAITS ###
 
