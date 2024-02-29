@@ -195,12 +195,14 @@
  antitank_update2_desc: ""
  antitank_update3: "Anti-Tank Upgrade III"
  antitank_update3_desc: ""
+ anti_tank_equipment: "Towed Anti-Tank"
+ anti_tank_equipment_desc: "Artillery specialized in defeating armored targets like Tanks, it generally fires armor piercing shells."
  anti_tank_equipment_1: "1953 Towed Anti-Tank"
  anti_tank_equipment_1_desc: "Artillery specialized in defeating armored targets like Tanks, it generally fires armor piercing shells."
  anti_tank_equipment_2: "1956 Towed Anti-Tank"
- anti_tank_equipment_2_desc: ""
+ anti_tank_equipment_2_desc: "Artillery specialized in defeating armored targets like Tanks, it generally fires armor piercing shells."
  anti_tank_equipment_3: "1960 Towed Anti-Tank"
- anti_tank_equipment_3_desc: "" 
+ anti_tank_equipment_3_desc: "Artillery specialized in defeating armored targets like Tanks, it generally fires armor piercing shells." 
 
  antiair1: "1950s Anti-Air"
  antiair1_desc: ""
@@ -214,8 +216,10 @@
  antiair_update2_desc: ""
  antiair_update3: "Anti-Air Upgrade III"
  antiair_update3_desc: ""
+ anti_air_equipment: "Anti-Air"
+ anti_air_equipment_desc: ""
  anti_air_equipment_1: "1950s Anti-Air"
- anti_air_equipment_1: ""
+ anti_air_equipment_1_desc: ""
  anti_air_equipment_2: "1954 Anti-Air"
  anti_air_equipment_2_desc: "Anti-air guns with longer cartridges and barrels, able to target high-flying aircraft."
  anti_air_equipment_3: "1960s Anti-Air"
@@ -259,7 +263,7 @@
  light_tank_chassis_3_desc: "Although it cannot take much of a beating, this chassis is light, designed to move fast and with great force."
  light_tank_chassis_4: "1960 Light Tank Chassis"
  light_tank_chassis_4_desc: "Although it cannot take much of a beating, this chassis is light, designed to move fast and with great force."
- ### LIGHT TANK CHASSIS TECH NAMES (fixes loc not working for some reason)
+ ### LIGHT TANK CHASSIS TECH NAMES (fixes loc not working for some reason by hardcoding tech names)
  light_tank_chassis0: "WW2 Light Chassis"
  light_tank_chassis0_desc: "Although it cannot take much of a beating, this chassis is light, designed to move fast and with great force."
  light_tank_chassis1: "1953 Light Chassis"
@@ -301,7 +305,7 @@
  main_battle_tank_chassis_3_desc: "Main battle tanks are agile multi-purpose tanks that can take on many roles such as scouts, support, or even front-line tanks."
  main_battle_tank_chassis_4: "1960 Main Battle Tank Chassis"
  main_battle_tank_chassis_4_desc: "Main battle tanks are agile multi-purpose tanks that can take on many roles such as scouts, support, or even front-line tanks."
- ### MBT CHASSIS TECH NAMES (this fixes the loc not working for some reason)
+ ### MBT CHASSIS TECH NAMES (fixes loc not working for some reason by hardcoding tech names)
  main_battle_tank_chassis0: "WW2 MBT Chassis"
  main_battle_tank_chassis0_desc: "A new era for armoured development means that unlike previous tank designs it allows for it to be fast and maneuverable while also having a large amount of armor and hefty firepower. This results in a reliable vehicle that can act as a definitive design and play a role on all parts of the battlefield."
  main_battle_tank_chassis1: "1953 MBT Chassis"
