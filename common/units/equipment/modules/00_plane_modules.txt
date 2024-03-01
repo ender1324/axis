@@ -7,13 +7,112 @@ equipment_modules = {
 	### ENGINES ###
 	###############
 
-##      ## ########    ###    ########   #######  ##    ##  ######  
-##  ##  ## ##         ## ##   ##     ## ##     ## ###   ## ##    ## 
-##  ##  ## ##        ##   ##  ##     ## ##     ## ####  ## ##       
-##  ##  ## ######   ##     ## ########  ##     ## ## ## ##  ######  
-##  ##  ## ##       ######### ##        ##     ## ##  ####       ## 
-##  ##  ## ##       ##     ## ##        ##     ## ##   ### ##    ## 
- ###  ###  ######## ##     ## ##         #######  ##    ##  ######  
+	##      ## ########    ###    ########   #######  ##    ##  ######  
+	##  ##  ## ##         ## ##   ##     ## ##     ## ###   ## ##    ## 
+	##  ##  ## ##        ##   ##  ##     ## ##     ## ####  ## ##       
+	##  ##  ## ######   ##     ## ########  ##     ## ## ## ##  ######  
+	##  ##  ## ##       ######### ##        ##     ## ##  ####       ## 
+	##  ##  ## ##       ##     ## ##        ##     ## ##   ### ##    ## 
+	 ###  ###  ######## ##     ## ##         #######  ##    ##  ######  
  
-	
+	# rocket pods
+ 	2x_rocketpods_0 = {
+		abbreviation = "2rp0"
+		category = cas_weapon # changes to rockets in the future
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+		add_stats = {
+			# ic
+			build_cost_ic = 4
+			# attack
+			air_ground_attack = 8
+			naval_strike_attack = 3
+			# engine stats
+			air_agility = -6
+			weight = 4
+		}
+		add_average_stats = {
+			naval_strike_targetting = 4
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+	}
+
+	4x_rocketpods_0 = {
+		abbreviation = "4rp0"
+		category = cas_weapon # change to rockets in the future
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { cas tactical_bomber }
+		add_stats = {
+			# ic
+			build_cost_ic = 8
+			# attack
+			air_ground_attack = 8
+			naval_strike_attack = 3
+			# engine stats
+			air_agility = -12
+			weight = 8
+		}
+		add_average_stats = {
+			naval_strike_targetting = 4
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+	}
+
+	# missiles
+	2x_aa_missile_0 = {
+		abbreviation = "2am0"
+		category = fighter_weapon # change to missiles in the future
+		sfx = sfx_ui_sd_module_turret # fix
+		add_equipment_type = { fighter heavy_fighter }
+		add_stats = {
+			#ic
+			build_cost_ic = 10
+			# attack
+			air_attack = 16
+			air_agility = -16
+			weight = 10
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+
+	4x_aa_missile_0 = {
+		abbreviation = "4am0"
+		category = fighter_weapon # change to missiles in the future
+		sfx = sfx_ui_sd_module_turret # fix
+		add_equipment_type = { fighter heavy_fighter }
+		add_stats = {
+			#ic
+			build_cost_ic = 20
+			# attack
+			air_attack = 32
+			air_agility = -28
+			weight = 20
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+
+	2x_ag_missile_0 = {
+		abbreviation = "2gm0"
+		category = fighter_weapon # change to missiles in the future
+		sfx = sfx_ui_sd_module_turret # fix
+		add_equipment_type = { cas tactical_bomber }
+	}
 }
