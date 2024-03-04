@@ -2932,29 +2932,29 @@ guiTypes = {
 				format = "UP"
 			}
 
-			# gridboxtype = {
-			# 	name = "early_bombs_tree"
-			# 	position = { x = 800 y = 32 }
-			# 	size = { width = 400 height = 1000 }
-			# 	slotsize = { width = 70 height = 70 }
-			# 	format = "UP"
-			# }
+			gridboxtype = {
+				name = "bba_aa_cannons0_tree"
+				position = { x = 800 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 
-			# gridboxtype = {
-			# 	name = "aa_lmg_tree"
-			# 	position = { x = 1080 y = 32 }
-			# 	size = { width = 400 height = 1000 }
-			# 	slotsize = { width = 70 height = 70 }
-			# 	format = "UP"
-			# }
+			gridboxtype = {
+				name = "bba_rocketpods0_tree"
+				position = { x = 1080 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 
-			# gridboxtype = {
-			# 	name = "photo_reconnaisance_tree"
-			# 	position = { x = 1200 y = 32 }
-			# 	size = { width = 400 height = 1000 }
-			# 	slotsize = { width = 70 height = 70 }
-			# 	format = "UP"
-			# }
+			gridboxtype = {
+				name = "bba_air_torpedoe0_tree"
+				position = { x = 1500 y = 32 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 
 			# gridboxtype = {
 			# 	name = "engines_1_tree"
