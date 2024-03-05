@@ -7,37 +7,377 @@ equipment_modules = {
 	### ENGINES ###
 	###############
 	# piston engines
-	piston_engine_1x = {
-		abbreviation = "pe1"
-		category = plane_engine_type
+	1x_piston_engine = {
+		abbreviation = "1pe0"
+		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
+			maximum_speed = 350 # km/h
 			thrust = 18
 			build_cost_ic = 14
 			fuel_consumption = 0.18
 		}
 	}
-	piston_engine_2x = {
-		abbreviation = "pe2"
-		category = plane_engine_type
+	2x_piston_engine = {
+		abbreviation = "2pe0"
+		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
+			maximum_speed = 450 # km/h
 			thrust = 28
 			build_cost_ic = 28
 			fuel_consumption = 0.32
 		}
 	}
-	piston_engine_4x = {
-		abbreviation = "pe4"
-		category = plane_engine_type
+	4x_piston_engine = {
+		abbreviation = "4pe0"
+		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
+			maximum_speed = 500 # km/h
 			thrust = 39
 			build_cost_ic = 50
 			fuel_consumption = 0.64
+		}
+	}
+
+	# JET ENGINES
+	1x_jet_engine_0 = {
+		abbreviation = "1je0"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 800
+			thrust = 28
+			build_cost_ic = 24
+			fuel_consumption = 0.3
+		}
+
+		multiply_stats = {
+			air_agility = 0.05
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 15
+		}
+	}
+
+	1x_jet_engine_1 = {
+		abbreviation = "1je1"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = 1x_jet_engine_0
+
+		add_stats = {
+			maximum_speed = 900
+			thrust = 32
+			build_cost_ic = 28
+			fuel_consumption = 0.38
+		}
+
+		multiply_stats = {
+			air_agility = 0.06
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 15
+		}
+	}
+
+	1x_jet_engine_2 = {
+		abbreviation = "1je2"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = 1x_jet_engine_0
+
+		add_stats = {
+			maximum_speed = 950
+			thrust = 38
+			build_cost_ic = 32
+			fuel_consumption = 0.38
+		}
+
+		multiply_stats = {
+			air_agility = 0.07
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 15
+		}
+	}
+
+	2x_jet_engine_0 = {
+		abbreviation = "2je0"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 850
+			thrust = 39
+			build_cost_ic = 42
+			fuel_consumption = 0.58
+		}
+
+		multiply_stats = {
+			air_agility = 0.06
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 20
+		}
+	}
+
+	2x_jet_engine_1 = {
+		abbreviation = "2je1"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 950
+			thrust = 46
+			build_cost_ic = 46
+			fuel_consumption = 0.62
+		}
+
+		multiply_stats = {
+			air_agility = 0.07
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 20
+		}
+	}
+
+	2x_jet_engine_2 = {
+		abbreviation = "2je2"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1000
+			thrust = 50
+			build_cost_ic = 50
+			fuel_consumption = 0.65
+		}
+
+		multiply_stats = {
+			air_agility = 0.08
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 20
+		}
+	}
+
+	4x_jet_engine_0 = {
+		abbreviation = "4je0"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 900
+			thrust = 52
+			build_cost_ic = 64
+			fuel_consumption = 0.58
+		}
+
+		multiply_stats = {
+			air_agility = 0.07
+		}
+
+		build_cost_resources = {
+			chromium = 2
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 25
+		}
+	}
+
+	4x_jet_engine_1 = {
+		abbreviation = "4je1"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1000
+			thrust = 58
+			build_cost_ic = 68
+			fuel_consumption = 0.64
+		}
+
+		multiply_stats = {
+			air_agility = 0.08
+		}
+
+		build_cost_resources = {
+			chromium = 2
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 25
+		}
+	}
+
+	4x_jet_engine_2 = {
+		abbreviation = "4je2"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1100
+			thrust = 64
+			build_cost_ic = 72
+			fuel_consumption = 0.68
+		}
+
+		multiply_stats = {
+			air_agility = 0.09
+		}
+
+		build_cost_resources = {
+			chromium = 2
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 25
+		}
+	}
+
+	6x_jet_engine_0 = {
+		abbreviation = "6je0"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1000
+			thrust = 68
+			build_cost_ic = 86
+			fuel_consumption = 0.7
+		}
+
+		multiply_stats = {
+			air_agility = 0.08
+		}
+
+		build_cost_resources = {
+			chromium = 3
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 30
+		}
+	}
+
+	6x_jet_engine_1 = {
+		abbreviation = "6je1"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1100
+			thrust = 74
+			build_cost_ic = 92
+			fuel_consumption = 0.8
+		}
+
+		multiply_stats = {
+			air_agility = 0.09
+		}
+
+		build_cost_resources = {
+			chromium = 3
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 30
+		}
+	}
+
+	6x_jet_engine_2 = {
+		abbreviation = "6je2"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1150
+			thrust = 82
+			build_cost_ic = 104
+			fuel_consumption = 0.84
+		}
+
+		multiply_stats = {
+			air_agility = 0.1
+		}
+
+		build_cost_resources = {
+			chromium = 3
+		}
+
+		can_convert_from = {
+			module_category = plane_piston_engine_type
+			convert_cost_ic = 30
+		}
+	}
+
+	1x_afterburner_jet_engine_0 = {
+		abbreviation = "1ae2"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1400
+			thrust = 38
+			build_cost_ic = 32
+			fuel_consumption = 0.4
+		}
+
+		multiply_stats = {
+			air_range = -0.25
+			air_agility = 0.20
+		}
+
+		build_cost_resources = {
+			chromium = 1
 		}
 	}
 
