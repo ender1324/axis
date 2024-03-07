@@ -385,6 +385,7 @@
  infantry_fighting_vehicle_chassis_4_desc: "An armoured combat vehicle which is designed and equipped primarily to transport a combat infantry squad, and which is armed with an integral or organic cannon of at least 20 millimeters calibre and sometimes an antitank missile launcher."
  ifv_mechanized: "Infantry Fighting Vehicle"
  ifv_mechanized_desc: "A unit which utilizes IFVs to punch hard though enemy lines and surround enemy units using the speed of the vehicles."
+
  # BBA Plane / Plane Modules / Plane Folder
  1x_piston_engine: "1x Piston Engine"
  1x_piston_engine_desc: "An aircraft piston engine, also commonly referred to as a reciprocating engine or \"recip\", is an internal combustion engine that uses one or more reciprocating pistons to convert pressure into a rotational motion."

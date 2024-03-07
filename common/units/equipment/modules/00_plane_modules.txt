@@ -1084,7 +1084,7 @@ equipment_modules = {
 
 	# Torpedoes
 	torpedo_mounting_0 = {
-		abbreviation = "tpm"
+		abbreviation = "tm0"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
@@ -1110,7 +1110,7 @@ equipment_modules = {
 	}
 
 	torpedo_mounting_1 = {
-		abbreviation = "tpm"
+		abbreviation = "tm1"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
 		parent = torpedo_mounting_0
@@ -1127,6 +1127,33 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			naval_strike_targetting = 8
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+	}
+
+	torpedo_mounting_2 = {
+		abbreviation = "tm2"
+		category = nav_bomber_weapon
+		sfx = sfx_ui_sd_module_turret
+		parent = torpedo_mounting_1
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
+
+		add_stats = {
+			# ic
+			build_cost_ic = 10
+			# offensive
+			naval_strike_attack = 20
+			air_agility = -10
+			# misc stats
+			weight = 7
+		}
+		add_average_stats = {
+			naval_strike_targetting = 10
 		}
 		xp_cost = 2
 		allow_mission_type = {

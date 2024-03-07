@@ -838,6 +838,7 @@ technologies = {
 		enable_equipment_modules = {
 			1x_at_cannon_0
 			2x_at_cannon_0
+			gunpods
 		}
 
 		research_cost = 0.5
@@ -1092,6 +1093,11 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 
+		path = {
+			leads_to_tech = bba_air_torpedoe2
+			research_cost_coeff = 1
+		}
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1114,4 +1120,257 @@ technologies = {
 			}
 		}
 	}
+
+	bba_air_torpedoe2 = {
+		enable_equipment_modules = {
+			torpedo_mounting_2
+		}
+
+		research_cost = 0.5
+		start_year = 1958
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = small_airframe3
+					has_tech = medium_airframe3
+					has_tech = large_airframe3
+				}
+				factor = 5
+			}
+		}
+	}
+
+	bomb_bay0 = {
+		enable_equipment_modules = {
+			bomb_bay_0
+		}
+
+		research_cost = 0.5
+		start_year = 1945
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = bomb_bay1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = small_airframe0
+					has_tech = medium_airframe0
+					has_tech = large_airframe0
+				}
+	
+				factor = 5	
+			}
+		}
+	}
+
+	bomb_bay1 = {
+		enable_equipment_modules = {
+			bomb_bay_1
+		}
+
+		research_cost = 0.5
+		start_year = 1953
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = bomb_bay2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = small_airframe0
+					has_tech = medium_airframe0
+					has_tech = large_airframe0
+				}
+	
+				factor = 5	
+			}
+		}
+	}
+
+	bomb_bay2 = {
+		enable_equipment_modules = {
+			bomb_bay_2
+		}
+
+		research_cost = 0.5
+		start_year = 1958
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					has_tech = small_airframe3
+					has_tech = medium_airframe3
+					has_tech = large_airframe3
+				}
+	
+				factor = 5	
+			}
+		}
+	}
+
+	air_defense0 = {
+		enable_equipment_modules = {
+			flare_pods
+			armor_plates0
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = air_defense1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_defense1 = {
+		enable_equipment_modules = {
+			air_body_armor
+			radar_warning_receiver
+			ecm_emitter
+		}
+
+		research_cost = 1
+		start_year = 1953
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = air_defense2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_defense2 = {
+		enable_equipment_modules = {
+			stealth_paint
+			stealth_body
+			ejection_seats
+		}
+
+		research_cost = 1
+		start_year = 1956
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = air_defense2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
 }
