@@ -740,8 +740,8 @@ technologies = {
 	bba_aa_cannons0 = {
 
 		enable_equipment_modules = {
-			1x_aa_cannon_0
-			2x_aa_cannon_0
+			aa_cannon_1x_0
+			aa_cannon_2x_0
 		}
 		
 		research_cost = 0.5
@@ -836,8 +836,8 @@ technologies = {
 	bba_at_cannons0 = {
 
 		enable_equipment_modules = {
-			1x_at_cannon_0
-			2x_at_cannon_0
+			at_cannon_1x_0
+			at_cannon_2x_0
 			gunpods
 		}
 
@@ -880,8 +880,8 @@ technologies = {
 
 	bba_rocketpods0 = {
 		enable_equipment_modules = {
-			2x_rocketpods_0
-			4x_rocketpods_0
+			rocketpods_2x_0
+			rocketpods_4x_0
 		}
 
 		research_cost = 1
@@ -938,8 +938,8 @@ technologies = {
 
 	bba_rocketpods1 = {
 		enable_equipment_modules = {
-			2x_rocketpods_1
-			4x_rocketpods_1
+			rocketpods_2x_1
+			rocketpods_4x_1
 		}
 
 		research_cost = 1
@@ -967,8 +967,8 @@ technologies = {
 
 	bba_aa_missiles0 = {
 		enable_equipment_modules = {
-			2x_aa_missile_0
-			4x_aa_missile_0
+			aa_missile_2x_0
+			aa_missile_4x_0
 		}
 
 		research_cost = 1
@@ -1010,10 +1010,10 @@ technologies = {
 	
 	bba_ag_missiles0 = {
 		enable_equipment_modules = {
-			2x_ag_missile_0
-			2x_as_missile_0
-			4x_ag_missile_0
-			4x_as_missile_0
+			ag_missile_2x_0
+			as_missile_2x_0
+			ag_missile_4x_0
+			as_missile_4x_0
 		}
 
 		research_cost = 1
@@ -1356,14 +1356,247 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 
+		categories = {
+			air_equipment
+			plane_modules_tech
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	# Engines
+	air_engines0 = {
+		enable_equipment_modules = {
+			piston_engine_1x
+			piston_engine_2x
+			piston_engine_4x
+		}
+
+		research_cost = 0.5
+		start_year = 1945
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
 		path = {
-			leads_to_tech = air_defense2
+			leads_to_tech = air_engines1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = air_afterburner_engines0
 			research_cost_coeff = 1
 		}
 
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_engines1 = {
+		enable_equipment_modules = {
+			jet_engine_1x_0
+			jet_engine_2x_0
+			jet_engine_4x_0
+			jet_engine_6x_0
+		}
+
+		research_cost = 0.5
+		start_year = 1953
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = air_engines2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_engines2 = {
+		enable_equipment_modules = {
+			jet_engine_1x_1
+			jet_engine_2x_1
+			jet_engine_4x_1
+			jet_engine_6x_1
+		}
+
+		research_cost = 0.5
+		start_year = 1956
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = air_engines3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_engines3 = {
+		enable_equipment_modules = {
+			jet_engine_1x_2
+			jet_engine_2x_2
+			jet_engine_4x_2
+			jet_engine_6x_2
+		}
+
+		research_cost = 0.5
+		start_year = 1958
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_afterburner_engines0 = {
+		enable_equipment_modules = {
+			afterburner_jet_engine_1x_0
+			afterburner_jet_engine_2x_0
+			afterburner_jet_engine_4x_0
+			afterburner_jet_engine_6x_0
+		}
+
+		research_cost = 0.5
+		start_year = 1953
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = air_afterburner_engines1
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_afterburner_engines1 = {
+		enable_equipment_modules = {
+			afterburner_jet_engine_1x_1
+			afterburner_jet_engine_2x_1
+			afterburner_jet_engine_4x_1
+			afterburner_jet_engine_6x_1
+		}
+
+		research_cost = 0.5
+		start_year = 1956
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = air_afterburner_engines2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_cas_and_modules
+			mio_cat_all_naval_bomber_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+
+	air_afterburner_engines2 = {
+		enable_equipment_modules = {
+			afterburner_jet_engine_1x_2
+			afterburner_jet_engine_2x_2
+			afterburner_jet_engine_4x_2
+			afterburner_jet_engine_6x_2
+		}
+
+		research_cost = 0.5
+		start_year = 1958
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 8 }
+		}
+
+		path = {
+			leads_to_tech = air_afterburner_engines2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
 			mio_cat_all_light_fighter_and_modules
 			mio_cat_all_cas_and_modules
 			mio_cat_all_naval_bomber_and_modules

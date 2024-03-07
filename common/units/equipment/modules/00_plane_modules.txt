@@ -7,7 +7,7 @@ equipment_modules = {
 	### ENGINES ###
 	###############
 	# piston engines
-	1x_piston_engine = {
+	piston_engine_1x = {
 		abbreviation = "1pe0"
 		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -19,7 +19,7 @@ equipment_modules = {
 			fuel_consumption = 0.18
 		}
 	}
-	2x_piston_engine = {
+	piston_engine_2x = {
 		abbreviation = "2pe0"
 		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -31,7 +31,7 @@ equipment_modules = {
 			fuel_consumption = 0.32
 		}
 	}
-	4x_piston_engine = {
+	piston_engine_4x = {
 		abbreviation = "4pe0"
 		category = plane_piston_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -45,7 +45,7 @@ equipment_modules = {
 	}
 
 	# JET ENGINES
-	1x_jet_engine_0 = {
+	jet_engine_1x_0 = {
 		abbreviation = "1je0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -71,11 +71,11 @@ equipment_modules = {
 		}
 	}
 
-	1x_jet_engine_1 = {
+	jet_engine_1x_1 = {
 		abbreviation = "1je1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 1x_jet_engine_0
+		parent = jet_engine_1x_0
 
 		add_stats = {
 			maximum_speed = 900
@@ -98,11 +98,11 @@ equipment_modules = {
 		}
 	}
 
-	1x_jet_engine_2 = {
+	jet_engine_1x_2 = {
 		abbreviation = "1je2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 1x_jet_engine_1
+		parent = jet_engine_1x_1
 
 		add_stats = {
 			maximum_speed = 950
@@ -125,7 +125,7 @@ equipment_modules = {
 		}
 	}
 
-	2x_jet_engine_0 = {
+	jet_engine_2x_0 = {
 		abbreviation = "2je0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -151,11 +151,11 @@ equipment_modules = {
 		}
 	}
 
-	2x_jet_engine_1 = {
+	jet_engine_2x_1 = {
 		abbreviation = "2je1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 2x_jet_engine_0
+		parent = jet_engine_2x_0
 
 		add_stats = {
 			maximum_speed = 950
@@ -178,11 +178,11 @@ equipment_modules = {
 		}
 	}
 
-	2x_jet_engine_2 = {
+	jet_engine_2x_2 = {
 		abbreviation = "2je2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 2x_jet_engine_1
+		parent = jet_engine_2x_1
 
 		add_stats = {
 			maximum_speed = 1000
@@ -205,7 +205,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_jet_engine_0 = {
+	jet_engine_4x_0 = {
 		abbreviation = "4je0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -231,11 +231,11 @@ equipment_modules = {
 		}
 	}
 
-	4x_jet_engine_1 = {
+	jet_engine_4x_1 = {
 		abbreviation = "4je1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 4x_jet_engine_0
+		parent = jet_engine_4x_0
 
 		add_stats = {
 			maximum_speed = 1000
@@ -258,11 +258,11 @@ equipment_modules = {
 		}
 	}
 
-	4x_jet_engine_2 = {
+	jet_engine_4x_2 = {
 		abbreviation = "4je2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 4x_jet_engine_1
+		parent = jet_engine_4x_1
 
 		add_stats = {
 			maximum_speed = 1100
@@ -285,7 +285,7 @@ equipment_modules = {
 		}
 	}
 
-	6x_jet_engine_0 = {
+	jet_engine_6x_0 = {
 		abbreviation = "6je0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -311,11 +311,11 @@ equipment_modules = {
 		}
 	}
 
-	6x_jet_engine_1 = {
+	jet_engine_6x_1 = {
 		abbreviation = "6je1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 6x_jet_engine_0
+		parent = jet_engine_6x_0
 
 		add_stats = {
 			maximum_speed = 1100
@@ -338,11 +338,11 @@ equipment_modules = {
 		}
 	}
 
-	6x_jet_engine_2 = {
+	jet_engine_6x_2 = {
 		abbreviation = "6je2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 6x_jet_engine_1
+		parent = jet_engine_6x_1
 
 		add_stats = {
 			maximum_speed = 1150
@@ -365,7 +365,7 @@ equipment_modules = {
 		}
 	}
 
-	1x_afterburner_jet_engine_0 = {
+	afterburner_jet_engine_1x_0 = {
 		abbreviation = "1ae0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -387,11 +387,11 @@ equipment_modules = {
 		}
 	}
 
-	1x_afterburner_jet_engine_1 = {
+	afterburner_jet_engine_1x_1 = {
 		abbreviation = "1ae1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 1x_afterburner_jet_engine_0
+		parent = afterburner_jet_engine_1x_0
 
 		add_stats = {
 			maximum_speed = 1500
@@ -410,11 +410,11 @@ equipment_modules = {
 		}
 	}
 
-	1x_afterburner_jet_engine_2 = {
+	afterburner_jet_engine_1x_2 = {
 		abbreviation = "1ae2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 1x_afterburner_jet_engine_1
+		parent = afterburner_jet_engine_1x_1
 
 		add_stats = {
 			maximum_speed = 1600
@@ -433,7 +433,7 @@ equipment_modules = {
 		}
 	}
 
-	2x_afterburner_jet_engine_0 = {
+	afterburner_jet_engine_2x_0 = {
 		abbreviation = "2ae0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -455,11 +455,11 @@ equipment_modules = {
 		}
 	}
 
-	2x_afterburner_jet_engine_1 = {
+	afterburner_jet_engine_2x_1 = {
 		abbreviation = "2ae1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 2x_afterburner_jet_engine_0
+		parent = afterburner_jet_engine_2x_0
 
 		add_stats = {
 			maximum_speed = 1700
@@ -478,11 +478,11 @@ equipment_modules = {
 		}
 	}
 
-	2x_afterburner_jet_engine_2 = {
+	afterburner_jet_engine_2x_2 = {
 		abbreviation = "2ae2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 2x_afterburner_jet_engine_1
+		parent = afterburner_jet_engine_2x_1
 
 		add_stats = {
 			maximum_speed = 1800
@@ -501,7 +501,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_afterburner_jet_engine_0 = {
+	afterburner_jet_engine_4x_0 = {
 		abbreviation = "4ae0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -523,11 +523,11 @@ equipment_modules = {
 		}
 	}
 
-	4x_afterburner_jet_engine_1 = {
+	afterburner_jet_engine_4x_1 = {
 		abbreviation = "4ae1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 4x_afterburner_jet_engine_0
+		parent = afterburner_jet_engine_4x_0
 
 		add_stats = {
 			maximum_speed = 1900
@@ -546,11 +546,11 @@ equipment_modules = {
 		}
 	}
 
-	4x_afterburner_jet_engine_2 = {
+	afterburner_jet_engine_4x_2 = {
 		abbreviation = "4ae2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 4x_afterburner_jet_engine_1
+		parent = afterburner_jet_engine_4x_1
 
 		add_stats = {
 			maximum_speed = 2000
@@ -569,7 +569,7 @@ equipment_modules = {
 		}
 	}
 
-	6x_afterburner_jet_engine_0 = {
+	afterburner_jet_engine_6x_0 = {
 		abbreviation = "6ae0"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
@@ -591,11 +591,11 @@ equipment_modules = {
 		}
 	}
 
-	6x_afterburner_jet_engine_1 = {
+	afterburner_jet_engine_6x_1 = {
 		abbreviation = "6ae1"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 6x_afterburner_jet_engine_0
+		parent = afterburner_jet_engine_6x_0
 
 		add_stats = {
 			maximum_speed = 2100
@@ -614,11 +614,11 @@ equipment_modules = {
 		}
 	}
 
-	6x_afterburner_jet_engine_2 = {
+	afterburner_jet_engine_6x_2 = {
 		abbreviation = "6ae2"
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
-		parent = 6x_afterburner_jet_engine_1
+		parent = afterburner_jet_engine_6x_1
 
 		add_stats = {
 			maximum_speed = 2200
@@ -648,7 +648,7 @@ equipment_modules = {
 	 ###  ###  ######## ##     ## ##         #######  ##    ##  ######  
  
 	# rocket pods
- 	2x_rocketpods_0 = {
+ 	rocketpods_2x_0 = {
 		abbreviation = "2rp0"
 		category = plane_rocket_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -674,7 +674,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_rocketpods_0 = {
+	rocketpods_4x_0 = {
 		abbreviation = "4rp0"
 		category = plane_rocket_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -700,11 +700,11 @@ equipment_modules = {
 		}
 	}
 
-	2x_rocketpods_1 = {
+	rocketpods_2x_1 = {
 		abbreviation = "2rp1"
 		category = plane_rocket_weapon
 		sfx = sfx_ui_sd_module_turret
-		parent = 2x_rocketpods_0
+		parent = rocketpods_2x_0
 
 		add_equipment_type = { cas tactical_bomber }
 		add_stats = {
@@ -728,11 +728,11 @@ equipment_modules = {
 		}
 	}
 
-	4x_rocketpods_1 = {
+	rocketpods_4x_1 = {
 		abbreviation = "4rp1"
 		category = plane_rocket_weapon
 		sfx = sfx_ui_sd_module_turret
-		parent = 4x_rocketpods_0
+		parent = rocketpods_4x_0
 
 		add_equipment_type = { cas tactical_bomber }
 		add_stats = {
@@ -757,7 +757,7 @@ equipment_modules = {
 	}
 
 	# missiles
-	2x_aa_missile_0 = {
+	aa_missile_2x_0 = {
 		abbreviation = "2am0"
 		category = plane_aa_missile
 		sfx = sfx_ui_sd_module_turret # fix
@@ -777,7 +777,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_aa_missile_0 = {
+	aa_missile_4x_0 = {
 		abbreviation = "4am0"
 		category = plane_aa_missile
 		sfx = sfx_ui_sd_module_turret # fix
@@ -797,7 +797,7 @@ equipment_modules = {
 		}
 	}
 
-	2x_ag_missile_0 = {
+	ag_missile_2x_0 = {
 		abbreviation = "2gm0"
 		category = plane_ag_missile
 		sfx = sfx_ui_sd_module_turret # fix
@@ -832,7 +832,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_ag_missile_0 = {
+	ag_missile_4x_0 = {
 		abbreviation = "4gm0"
 		category = plane_ag_missile
 		sfx = sfx_ui_sd_module_turret # fix
@@ -867,7 +867,7 @@ equipment_modules = {
 		}
 	}
 
-	2x_as_missile_0 = {
+	as_missile_2x_0 = {
 		abbreviation = "2sm0"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -892,7 +892,7 @@ equipment_modules = {
 		}
 	}
 
-	4x_as_missile_0 = {
+	as_missile_4x_0 = {
 		abbreviation = "4sm0"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -918,7 +918,7 @@ equipment_modules = {
 	}
 
 	# Cannons
-	1x_aa_cannon_0 = {
+	aa_cannon_1x_0 = {
 		abbreviation = "1ac0"
 		category = plane_aa_cannon_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -937,7 +937,7 @@ equipment_modules = {
 			interception
 		}
 	}
-	2x_aa_cannon_0 = {
+	aa_cannon_2x_0 = {
 		abbreviation = "2ac0"
 		category = plane_aa_cannon_weapon
 		sfx = sfx_ui_sd_module_turret
@@ -957,7 +957,7 @@ equipment_modules = {
 		}
 	}
 
-	1x_at_cannon_0 = {
+	at_cannon_1x_0 = {
 		abbreviation = "1tc0"
 		category = plane_cas_cannon_weapon
 		sfx = sfx_ui_sd_module_turret # fix
@@ -977,7 +977,7 @@ equipment_modules = {
 			attack_logistics
 		}
 	}
-	2x_at_cannon_0 = {
+	at_cannon_2x_0 = {
 		abbreviation = "2tc0"
 		category = plane_cas_cannon_weapon
 		sfx = sfx_ui_sd_module_turret # fix
@@ -1311,7 +1311,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_defense = -8
+				air_defence = -8
 			}
 		}
 		allow_mission_type = cas
