@@ -35,7 +35,6 @@
  ####################
  ###    GERMANY   ###
  ####################
- GER_adolf_hitler: "Adolf Hitler"
  SL_name_adolf_hitler: "$GER_adolf_hitler$"
  SL_trait_adolf_hitler: "§Y$figurehead_fuhrer$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_FACTOR$: §R-5.00%§!\n  - Stability while at war: §R-10.00%§!"
  SL_name_with_trait_adolf_hitler: "§Y$GER_adolf_hitler$§!\n$SL_trait_adolf_hitler$"

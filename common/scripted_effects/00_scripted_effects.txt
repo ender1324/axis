@@ -876,7 +876,7 @@ set_add_communist_weight_small = {
 bba_create_cas_license_effect = { #this assumes that the corresponding get_cas_effect has run already to generate a design template if necessary
 	if = {
 		limit = {
-			has_tech = advanced_small_airframe
+			has_tech = small_airframe3
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -888,7 +888,7 @@ bba_create_cas_license_effect = { #this assumes that the corresponding get_cas_e
 	}
 	else_if = {
 		limit = {
-			has_tech = improved_small_airframe
+			has_tech = small_airframe2
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -900,7 +900,7 @@ bba_create_cas_license_effect = { #this assumes that the corresponding get_cas_e
 	}
 	else_if = {
 		limit = {
-			has_tech = basic_small_airframe
+			has_tech = small_airframe1
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -915,7 +915,7 @@ bba_create_cas_license_effect = { #this assumes that the corresponding get_cas_e
 bba_create_fighter_license_effect = { #this assumes that the corresponding get_fighter_effect has run already to generate a design template if necessary
 	if = {
 		limit = {
-			has_tech = advanced_small_airframe
+			has_tech = small_airframe3
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -927,7 +927,7 @@ bba_create_fighter_license_effect = { #this assumes that the corresponding get_f
 	}
 	else_if = {
 		limit = {
-			has_tech = improved_small_airframe
+			has_tech = small_airframe2
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -939,7 +939,7 @@ bba_create_fighter_license_effect = { #this assumes that the corresponding get_f
 	}
 	else_if = {
 		limit = {
-			has_tech = basic_small_airframe
+			has_tech = small_airframe1
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -954,7 +954,7 @@ bba_create_fighter_license_effect = { #this assumes that the corresponding get_f
 bba_create_tac_license_effect = { #this assumes that the corresponding get_tac_effect has run already to generate a design template if necessary
 	if = {
 		limit = {
-			has_tech = advanced_medium_airframe
+			has_tech = medium_airframe3
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -966,7 +966,7 @@ bba_create_tac_license_effect = { #this assumes that the corresponding get_tac_e
 	}
 	else_if = {
 		limit = {
-			has_tech = improved_medium_airframe
+			has_tech = medium_airframe2
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -978,7 +978,7 @@ bba_create_tac_license_effect = { #this assumes that the corresponding get_tac_e
 	}
 	else_if = {
 		limit = {
-			has_tech = basic_medium_airframe
+			has_tech = medium_airframe1
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -993,7 +993,7 @@ bba_create_tac_license_effect = { #this assumes that the corresponding get_tac_e
 bba_create_heavy_fighter_license_effect = { #this assumes that the corresponding get_fighter_effect has run already to generate a design template if necessary
 	if = {
 		limit = {
-			has_tech = advanced_medium_airframe
+			has_tech = medium_airframe3
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -1005,7 +1005,7 @@ bba_create_heavy_fighter_license_effect = { #this assumes that the corresponding
 	}
 	else_if = {
 		limit = {
-			has_tech = improved_medium_airframe
+			has_tech = medium_airframe2
 		}
 		create_production_license = {
 			target = event_target:license_target
@@ -1017,7 +1017,7 @@ bba_create_heavy_fighter_license_effect = { #this assumes that the corresponding
 	}
 	else_if = {
 		limit = {
-			has_tech = basic_medium_airframe
+			has_tech = medium_airframe1
 		}
 		create_production_license = {
 			target = event_target:license_target

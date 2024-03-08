@@ -1317,7 +1317,7 @@ default_spyplanes_production = {
 	enable = {
 		OR = {
 			has_tech = scout_plane1
-			has_tech = photo_reconnaisance
+			has_tech = small_airframe0
 		}
 		is_major = yes
 		#OR = {
@@ -1356,7 +1356,7 @@ minors_dont_spy = {
 	enable = {
 		OR = {
 			has_tech = scout_plane1
-			has_tech = photo_reconnaisance
+			has_tech = small_airframe0
 		}
 		is_major = no
 	}
