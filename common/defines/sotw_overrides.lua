@@ -1,3 +1,20 @@
+--- Country overrides
+NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.1				-- Default stability war factor
+NDefines.NCountry.WAR_SUPPORT_OFFENSIVE_WAR = -0.1				-- Impact of being in offensive war
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = -0.1				-- Impact of being in defensive war
+
+--- Diplomacy overrides
+NDefines.NDiplomacy.MAX_OPINION_VALUE = 200						-- Max opinion value cap.
+NDefines.NDiplomacy.MIN_OPINION_VALUE = -200						-- Min opinion value cap.
+NDefines.NDiplomacy.FIELD_MARSHAL_DIVISIONS_CAP = 30 			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+
+--- Resistance re-balancing
+NDefines.NResistance.COMPLIANCE_GROWTH_HAS_CLAIM = 10           -- compliance growth buff if state has a claim
+NDefines.NResistance.INITIAL_HISTORY_RESISTANCE = 10.0			-- resistance value for initial colony states
+NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 50.0			-- compliance value for initial colony states
+NDefines.NResistance.INITIAL_GARRISON_STRENGTH = 1				-- garrison value for initial colony states
+
+
 
 ---- Military additions
 

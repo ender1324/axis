@@ -19,7 +19,7 @@ state= {
 		add_core_of = ARG
 		add_claim_by = CAN
 	}
-	provinces= { 12960 }
+	provinces= { 12960 13353 }
 
 	local_supplies=0.0 
 }

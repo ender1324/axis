@@ -1,0 +1,25 @@
+
+state={
+	id=1072
+	name="STATE_1072"
+	manpower = 107435
+	
+	state_category = rural
+
+	history={
+		owner = BUL
+		victory_points = { #Pazardzhik
+			3937 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BUL
+	}
+
+	provinces={
+		3937 6857 9818 11813 
+	}
+
+	local_supplies=2.0 
+}
