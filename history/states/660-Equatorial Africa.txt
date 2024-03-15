@@ -11,6 +11,7 @@ state={
 	history={
 		owner = CAR
 		add_core_of = CAR
+		add_claim_by = FFA
 		victory_points = {
 			12830 1
 		}

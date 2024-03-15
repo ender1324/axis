@@ -158,20 +158,26 @@
  RKM_DEF: "The Reichskommissariat Mittleafrika"
  RKM_ADJ: "Mittleafrikan"
 
+ # SS Serbia
  SSW: "SS-Arisches-Siedlungsgebiet Südslawiens"
  SSW_DEF: "the SS-Arisches-Siedlungsgebiet Südslawiens"
  SSW_ADJ: "Südslawien"
- SSW_GER_SUBJECT: "Reichskommissariat Südslawien"
- SSW_GER_SUBJECT_DEF: "the Reichskommissariat Südslawien"
- SSW_GER_SUBJECT_ADJ: "Südslawien"
+ SSW_GER_subject: "Reichskommissariat Südslawien"
+ SSW_GER_subject_DEF: "the Reichskommissariat Südslawien"
+ SSW_GER_subject_ADJ: "Südslawien"
 
  # Italy
  ITA: "Italy"
  ITA_DEF: "Italy"
  ITA_ADJ: "Italian"
+
+ # Italian Emirates / UAE
  UAE: "United Arab Emirates"
  UAE_DEF: "the United Arab Emirates"
- UAE_ADJ: "Emirat"
+ UAE_ADJ: "Emirati"
+ UAE_subject: "$OVERLORDADJ$ Arabian Administration"
+ UAE_subject_DEF: "the $OVERLORDADJ$ Arabian Administration"
+ UAE_subject_ADJ: "Arab"
 
  # Egypt
  EGY: "Egypt"
@@ -180,6 +186,22 @@
  EGY_ITA_subject: "Kingdom of Egypt"
  EGY_ITA_subject_DEF: "the Kingdom of Egypt"
  EGY_ITA_subject_ADJ: "Egyptian"
+
+ # Italian Levant / Palestine
+ PAL: "Palestine"
+ PAL_DEF: "Palestine"
+ PAL_ADJ: "Palestinian"
+ PAL_subject: "$OVERLORDADJ$ Levantine Administration"
+ PAL_subject_DEF: "the $OVERLORDADJ$ Levantine Administration"
+ PAL_subject_ADJ: "Levantine"
+
+ # Israel
+ ISR: "Israel"
+ ISR_DEF: "Israel"
+ ISR_ADJ: "Israeli"
+ ISR_subject: "$OVERLORDADJ$ Protectorate of Israel"
+ ISR_subject_DEF: "the $OVERLORDADJ$ Protectorate of Israel"
+ ISR_subject_ADJ: "Israeli"
 
  # France and Free France
  FRA: "French State"
@@ -461,6 +483,7 @@
  KKP_ADJ: "Karakalpakstani"
  BUK: "Emirate of Bukhara"
  BUK_DEF: "the Emirate of Bukhara"
+ BUK_ADJ: "Bukharian"
 
  # USA/America
  USA: "United States of America"

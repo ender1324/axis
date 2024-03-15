@@ -8,6 +8,7 @@ state={
 	history={
 		owner = IVO
 		add_core_of = IVO
+		add_claim_by = FFA
 		victory_points = {
 			10803 2
 		}

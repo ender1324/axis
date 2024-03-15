@@ -8,6 +8,7 @@ state={
 	history={
 		owner = CAR
 		add_claim_by = CAR
+		add_claim_by = FFA
 		add_core_of = CHA
 		buildings = {
 			infrastructure = 0

@@ -8,6 +8,7 @@ state={
 	history={
 		owner = VOL
 		add_core_of = VOL
+		add_claim_by = FFA
 		victory_points = {
 			10836 1
 		}

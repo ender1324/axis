@@ -6,6 +6,7 @@ state={
 		owner = CAR
 		add_core_of = CAR
 		add_core_of = CHA
+		add_claim_by = FFA
 		victory_points = {
 			2081 2
 		}

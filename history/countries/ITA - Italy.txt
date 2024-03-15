@@ -48,8 +48,12 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 }
 set_autonomy = {
+	target = PAL
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
 	target = UAE
-	autonomous_state = autonomy_dominion
+	autonomous_state = autonomy_colony
 }
 
 set_convoys = 50

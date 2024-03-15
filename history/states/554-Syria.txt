@@ -7,8 +7,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = ISR
-		add_claim_by = ISR
+		owner = PAL
+		add_claim_by = PAL
 		add_claim_by = TUR
 		victory_points = {
 			4111 5

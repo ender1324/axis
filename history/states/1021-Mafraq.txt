@@ -4,17 +4,17 @@ state={
 	name="STATE_1021"
 	manpower = 177080
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
-		owner = ISR
+		owner = PAL
 		buildings = {
 			infrastructure = 1			
 		}
 		victory_points = {
 			1544 1 
 		}
-		add_claim_by = ISR
+		add_claim_by = PAL
 		add_core_of = JOR
 	}
 
