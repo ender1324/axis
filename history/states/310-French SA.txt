@@ -7,7 +7,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = CAN
+		owner = USA
 		add_core_of = CAY
 		buildings = {
 			infrastructure = 1
