@@ -15,9 +15,9 @@ idea_categories = {
 	}
 
 	economic_structure = {
-		slot = sl_economic_model
+		slot = sl_economic_system
 		slot = sl_taxation_model
-		slot = sl_trade_tarrifs
+		slot = sl_trade_tariffs
 		slot = sl_trade_unions
 		slot = sl_work_hours
 		slot = sl_unemployment_benefits

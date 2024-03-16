@@ -21,6 +21,13 @@ add_ideas = {
 	sl_racial_hierarchy
 	sl_women_in_workplace
 	sl_banned_protests
+	# economy laws
+	sl_rentier_economy
+	sl_low_income_taxation
+	sl_protectionist_tariffs
+	sl_state_controlled_unions
+	sl_twelve_hour_workday
+	sl_tiny_unemployment_benefits
 	# Secondary Leaders
 	GER_SL_adolf_hitler_idea
 }

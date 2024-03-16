@@ -11,6 +11,23 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	# LAWS
+	sl_unitary_state
+	sl_state_press
+	sl_state_atheism
+	sl_racial_hierarchy
+	sl_legal_guardianship
+	sl_banned_protests
+	# economy laws
+	sl_planned_economy
+	sl_no_taxation
+	sl_high_tariffs
+	sl_illegal_unions
+	sl_no_work_hour_limits
+	sl_no_unemployment_benefits
+}
+
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0

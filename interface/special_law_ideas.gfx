@@ -1,0 +1,229 @@
+spriteTypes = {
+	############################
+	### Government Structure ###
+	############################
+	# Government Centralization
+	spriteType = {
+		name = "GFX_idea_sl_unitary_state"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_government_centralization/sl_unitary_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_devolved_unitary_state"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_government_centralization/sl_devolved_unitary_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_federated_state"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_government_centralization/sl_federated_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_communal_state"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_government_centralization/sl_communal_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_city_state"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_government_centralization/sl_city_state.dds"
+	}
+
+	# Press Freedom
+	spriteType = {
+		name = "GFX_idea_sl_free_press"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_press_freedom/sl_free_press.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_extremist_censorship"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_press_freedom/sl_extremist_censorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_opposition_censorship"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_press_freedom/sl_opposition_censorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_state_press"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_press_freedom/sl_state_press.dds"
+	}
+
+	# Minority rights
+	spriteType = {
+		name = "GFX_idea_sl_minorities_state_protection"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_minority_rights/sl_minorities_state_protection.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_minorities_no_stance"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_minority_rights/sl_minorities_no_stance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_racial_segregation"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_minority_rights/sl_racial_segregation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_racial_hierarchy"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_minority_rights/sl_racial_hierarchy.dds"
+	}
+	# Gender Equality
+	spriteType = {
+		name = "GFX_idea_sl_total_equality"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_gender_equality/sl_total_equality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_women_in_workplace"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_gender_equality/sl_women_in_workplace.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_legal_guardianship"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_gender_equality/sl_legal_guardianship.dds"
+	}
+	# protesting rights
+	spriteType = {
+		name = "GFX_idea_sl_banned_protests"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_protest_rights/sl_banned_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_controlled_protests"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_protest_rights/sl_controlled_protests.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_protected_protesting"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_protest_rights/sl_protected_protesting.dds"
+	}
+
+	############################
+	###  Economic Structure  ###
+	############################
+	# Economic System
+	spriteType = {
+		name = "GFX_idea_sl_rentier_economy"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_economic_system/sl_rentier_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_laissez_faire"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_economic_system/sl_laissez_faire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_interventionism"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_economic_system/sl_interventionism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_market_socialism"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_economic_system/sl_market_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_planned_economy"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_economic_system/sl_planned_economy.dds"
+	}
+
+	# Taxation Model
+	spriteType = {
+		name = "GFX_idea_sl_no_taxation"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_no_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_high_income_taxation"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_high_income_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_flat_taxation"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_flat_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_low_income_taxation"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_low_income_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_tax_exemptions"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_tax_exemptions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_tax_haven"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_taxation_model/sl_tax_haven.dds"
+	}
+	# Trade Tariffs
+	spriteType = {
+		name = "GFX_idea_sl_free_trade_tariffs"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_tariffs/sl_free_trade_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_low_tariffs"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_tariffs/sl_low_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_strategic_tariffs"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_tariffs/sl_strategic_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_protectionist_tariffs"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_tariffs/sl_protectionist_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_high_tariffs"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_tariffs/sl_high_tariffs.dds"
+	}
+
+	# Trade Unions
+	spriteType = {
+		name = "GFX_idea_sl_illegal_unions"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_unions/sl_illegal_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_controlled_unions"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_unions/sl_state_controlled_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_non_socialist_unions"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_unions/sl_non_socialist_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_allowed_unions"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_trade_unions/sl_allowed_unions.dds"
+	}
+
+	# Work Hours
+	spriteType = {
+		name = "GFX_idea_sl_eight_hour_workday"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_eight_hour_workday.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_twelve_hour_workday"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_twelve_hour_workday.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_fourteen_hour_workday"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_fourteen_hour_workday.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_eighteen_hour_workday"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_eighteen_hour_workday.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_no_work_hour_limits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_no_work_hour_limits.dds"
+	}
+
+	# Unemployment
+	spriteType = {
+		name = "GFX_idea_sl_no_unemployment_benefits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_no_unemployment_benefits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_tiny_unemployment_benefits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_tiny_unemployment_benefits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_basic_unemployment_benefits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_basic_unemployment_benefits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_generous_unemployment_benefits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_generous_unemployment_benefits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_high_unemployment_benefits"
+		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_high_unemployment_benefits.dds"
+	}
+}

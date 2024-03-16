@@ -43,12 +43,49 @@
  sl_protected_protesting: "Right to Protest Protected"
 
  economic_structure: "Economics Structure"
- sl_economic_model: "Economic Model"
+ # Economic System ideas
+ sl_economic_system: "Economic System"
+ sl_rentier_economy: "Rentier Economy"
+ sl_laissez_faire: "Laissez Faire"
+ sl_interventionism: "Dirigisme"
+ sl_market_socialism: "Market Socialism"
+ sl_planned_economy: "Planned Economy"
+
  sl_taxation_model: "Taxation Model"
- sl_trade_tarrifs: "Trade Tarrifs"
+ sl_no_taxation: "No Taxation"
+ sl_high_income_taxation: "High Income Weighted"
+ sl_flat_taxation: "Flat Taxation"
+ sl_low_income_taxation: "Low Income Weighted"
+ sl_tax_exemptions: "Business Tax Exemptions"
+ sl_tax_haven: "Tax Haven"
+
+ sl_trade_tariffs: "Trade Tariffs"
+ sl_free_trade_tariffs: "Free Tree"
+ sl_low_tariffs: "Low Tariffs"
+ sl_strategic_tariffs: "Strategic Tariffs only"
+ sl_protectionist_tariffs: "Protectionist Tariffs"
+ sl_high_tariffs: "Extremely High Tariffs"
+
  sl_trade_unions: "Trade Unions"
+ sl_illegal_unions: "Outlawed Trade Unions"
+ sl_state_controlled_unions: "State-Controlled Unions only"
+ sl_non_socialist_unions: "Non-Socialist Unions allowed"
+ sl_allowed_unions: "All Trade Unions allowed"
+ 
  sl_work_hours: "Work Hours"
+ sl_eight_hour_workday: "8 Hour Work Day"
+ sl_twelve_hour_workday: "12 Hour Work Day"
+ sl_fourteen_hour_workday: "14 Hour Work Day"
+ sl_eighteen_hour_workday: "18 Hour Work Day"
+ sl_no_work_hour_limits: "No Work Hour Limits"
+
  sl_unemployment_benefits: "Unemployment Benefits"
+ sl_no_unemployment_benefits: "No Unemployment Benefits"
+ sl_tiny_unemployment_benefits: "Tiny Unemployment Benefits"
+ sl_basic_unemployment_benefits: "Basic Unemployment Benefits"
+ sl_generous_unemployment_benefits: "Generous Unemployment Benefits"
+ sl_high_unemployment_benefits: "Universal Income"
+ 
 
  public_structure: "Public Structure"
  sl_population_control: "Population Control"
@@ -59,4 +96,4 @@
  sl_immigration_policy: "Immigration Policy"
 
  # Tooltip for the idea screen
- sl_cant_remove_tt: "Special Laws can be removed only by focuses or decisions."
+ sl_cant_remove_tt: "Special Laws can only be changed by focuses or decisions."
