@@ -8,4 +8,9 @@ spriteTypes = {
 		name = "GFX_diplo_placeholder"
 		textureFile = "gfx/interface/diplo_placeholder.dds"
 	}
+
+	spriteType = {
+		name = "GFX_tax_rate"
+		textureFile = "gfx/interface/money/tax_rate.dds"
+	}
 }

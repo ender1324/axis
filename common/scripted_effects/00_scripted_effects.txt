@@ -734,10 +734,6 @@ gain_random_agency_upgrade = { #Gives a random agency upgrade or grants a free a
 	}
 }
 
-on_daily = {
-
-}
-
 #on_daily_USA = {
 #	# you can specify an on daily action for a specific country
 #}

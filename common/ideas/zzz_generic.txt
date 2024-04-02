@@ -89,7 +89,20 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-		
+
+		MICROSTATE_fix = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+		}
+
 		nationalism = {
 			
 			allowed = {

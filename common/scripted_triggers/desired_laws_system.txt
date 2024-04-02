@@ -1,0 +1,103 @@
+has_police_idea_law_desired = {
+	OR = {
+		AND = {
+			has_country_flag = wants_police_01
+			has_idea = sl_state_policing1
+		}
+		AND = {
+			has_country_flag = wants_police_02
+			has_idea = sl_state_policing2
+		}
+		AND = {
+			has_country_flag = wants_police_03
+			has_idea = sl_state_policing3
+		}
+		AND = {
+			has_country_flag = wants_police_04
+			has_idea = sl_state_policing4
+		}
+		AND = {
+			has_country_flag = wants_police_05
+			has_idea = sl_state_policing5
+		}
+	}
+}
+
+has_education_law_desired = {
+	OR = {
+		AND = {
+			has_country_flag = wants_edu_01
+			has_idea = sl_education_system1
+		}
+		AND = {
+			has_country_flag = wants_edu_02
+			has_idea = sl_education_system2
+		}
+		AND = {
+			has_country_flag = wants_edu_03
+			has_idea = sl_education_system3
+		}
+		AND = {
+			has_country_flag = wants_edu_04
+			has_idea = sl_education_system4
+		}
+		AND = {
+			has_country_flag = wants_edu_05
+			has_idea = sl_education_system5
+		}
+	}
+}
+
+has_health_law_desired = {
+	OR = {
+		AND = {
+			has_country_flag = wants_health_01
+			has_idea = sl_healthcare_system1
+		}
+		AND = {
+			has_country_flag = wants_health_02
+			has_idea = sl_healthcare_system2
+		}
+		AND = {
+			has_country_flag = wants_health_03
+			has_idea = sl_healthcare_system3
+		}
+		AND = {
+			has_country_flag = wants_health_04
+			has_idea = sl_healthcare_system4
+		}
+		AND = {
+			has_country_flag = wants_health_05
+			has_idea = sl_healthcare_system5
+		}
+		AND = {
+			has_country_flag = wants_health_06
+			has_idea = sl_healthcare_system6
+		}
+	}
+}
+
+has_social_law_desired = {
+	OR = {
+		AND = {
+			has_country_flag = wants_social_01
+			has_idea = sl_unemployment_benefits1
+		}
+		AND = {
+			has_country_flag = wants_social_02
+			has_idea = sl_unemployment_benefits2
+		}
+		AND = {
+			has_country_flag = wants_social_03
+			has_idea = sl_unemployment_benefits3
+		}
+		AND = {
+			has_country_flag = wants_social_04
+			has_idea = sl_unemployment_benefits4
+		}
+		AND = {
+			has_country_flag = wants_social_05
+			has_idea = sl_unemployment_benefits5
+		}
+	}
+}

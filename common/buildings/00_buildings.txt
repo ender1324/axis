@@ -43,6 +43,17 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	offices = {
+		#base_cost = 40000
+		base_cost = 20100
+		icon_frame = 1
+		max_level = 50
+		damage_factor = 1
+		shares_slots = yes
+		value = 1
+		infrastructure_construction_effect = yes
+	}
+
 	air_base = {
 		show_on_map = 1
 		base_cost = 1250
@@ -153,21 +164,21 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	synthetic_refinery = {
-		show_on_map = 1
-		base_cost = 14500
-		icon_frame = 10
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 3 # This is the max unlock level
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
+	# synthetic_refinery = {
+	# 	show_on_map = 1
+	# 	base_cost = 14500
+	# 	icon_frame = 10
+	# 	#local_resources_oil = 1 # May use local_resources_ + any resource name
+	# 	local_resources_rubber = 1 # May use local_resources_ + any resource name
+	# 	refinery = yes
+	# 	max_level = 3 # This is the max unlock level
+	# 	shares_slots = yes
+	# 	value = 5
+	# 	infrastructure_construction_effect = yes
 		
-		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
-	}
+	# 	show_modifier = yes
+	# 	fuel_gain_from_states = 2.0 #per hour
+	# }
 
 	fuel_silo = {
 		show_on_map = 1
@@ -209,15 +220,56 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
+	# nuclear_reactor = {
+	# 	show_on_map = 1
+	# 	base_cost = 30000
+	# 	icon_frame = 13
+	# 	nuclear_reactor = yes
+	# 	nuclear_production_factor = 1
+	# 	max_level = 1 # This is the max unlock level
+	# 	shares_slots = yes
+	# 	value = 10
+	# 	infrastructure_construction_effect = yes
+	# }
+
+	# MD Energy shit
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 30000
-		icon_frame = 13
-		nuclear_reactor = yes
-		nuclear_production_factor = 1
-		max_level = 1 # This is the max unlock level
-		shares_slots = yes
-		value = 10
+		base_cost = 50000
+		icon_frame = 12
+		nuclear_energy_gain = 2 #in gigawatts
+		nuclear_fuel_consumption = 2 # how much uranium does ONE reactor use
+		max_level = 20 # This is the max unlock level
+		damage_factor = 1
+		shares_slots = no
+		value = 1
+		infrastructure_construction_effect = yes
+	}
+
+	# this is a fucking renewable energy plant (??????)
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 50000
+		icon_frame = 22
+		renewable_energy_gain = 0.5 #in gigawatts
+		refinery = yes
+		max_level = 20 # This is the max unlock level
+		damage_factor = 1
+		shares_slots = no
+		value = 1
+		infrastructure_construction_effect = yes
+	}
+
+	fossil_powerplant = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 21
+		fossil_energy_gain = 1 #in gigawatts
+		fossil_fuel_consumption = 2 #hourly consumption
+		max_level = 20 # This is the max unlock level
+		damage_factor = 1
+		shares_slots = no
+		value = 1
 		infrastructure_construction_effect = yes
 	}
 }

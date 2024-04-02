@@ -1,0 +1,912 @@
+clear_law_desire_flags = {
+	clr_country_flag = wants_police_01
+	clr_country_flag = wants_police_02
+	clr_country_flag = wants_police_03
+	clr_country_flag = wants_police_04
+	clr_country_flag = wants_police_05
+	clr_country_flag = wants_edu_01
+	clr_country_flag = wants_edu_02
+	clr_country_flag = wants_edu_03
+	clr_country_flag = wants_edu_04
+	clr_country_flag = wants_edu_05
+	clr_country_flag = wants_health_01
+	clr_country_flag = wants_health_02
+	clr_country_flag = wants_health_03
+	clr_country_flag = wants_health_04
+	clr_country_flag = wants_health_05
+	clr_country_flag = wants_health_06
+	clr_country_flag = wants_social_01
+	clr_country_flag = wants_social_02
+	clr_country_flag = wants_social_03
+	clr_country_flag = wants_social_04
+	clr_country_flag = wants_social_05
+}
+
+# Police Desires
+# Police desire should tend to gravitate toward the middle (police_03) in most nations. This is also affected by politics - repressive governments
+# want more police apparatus than more liberal/libertarian ones. Also influenced by GDP - impoverished nations cannot afford large police forces.
+recalculate_police_desire = {
+	set_temp_variable = { police_law_desire = 0.0 }
+	# First, set desire based upon GDP. Poverty tends toward low values, all else toward middling.
+	if = { limit = { check_variable = { gdp_per_capita < 2.000 } }
+		add_to_temp_variable = {
+			police_law_desire = 2.0 # police_01
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 1.999 }
+			check_variable = { gdp_per_capita < 10.000 }
+		}
+		add_to_temp_variable = {
+			police_law_desire = 5.0 # police_02
+		}
+	}
+	else_if = { limit = { check_variable = { gdp_per_capita > 9.999 } }
+		add_to_temp_variable = {
+			police_law_desire = 8.0 # police_03
+		}
+	}
+	# Adjust based on national focuses completed
+	# if = { limit = { has_completed_focus = GRE_abandon_army }
+	# 	add_to_temp_variable = { police_law_desire = 3.0 }
+	# }
+	##
+	if = { limit = { check_variable = { treasury_rate < -5.0 } }
+		subtract_from_temp_variable = { #Reduce spending when possible!
+			police_law_desire = 8.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -4.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			police_law_desire = 6.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -3.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			police_law_desire = 4.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -2.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			police_law_desire = 2.0
+		}
+	}
+	# Reduce if debt is high
+	if = {
+		limit = {
+			check_variable = { debt_ratio > 1.50 }
+		}
+		subtract_from_temp_variable = { police_law_desire = 3.0 }
+	}
+	# Next, modify based upon ruling ideology and coalition partners.
+	if = { limit = { is_fascist_ideology = yes }
+		add_to_temp_variable = { police_law_desire = 3.0 }
+	}
+	if = { limit = { is_communist_ideology = yes }
+		add_to_temp_variable = { police_law_desire = 2.0 }
+	}
+	if = { limit = { is_despotic_ideology = yes }
+		add_to_temp_variable = { police_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = conservatism } 
+		add_to_temp_variable = { police_law_desire = 1.0 }
+	}
+	if = { limit = { has_government = progressivism }
+		add_to_temp_variable = { police_law_desire = -1.0 }
+	}
+
+	# Governments that are supposed to be oppressive should get a massive boost
+	if = {
+		limit = {
+			OR = {
+				original_tag = SSW # SS Serbia
+				# Western RKs
+				original_tag = RKN
+				original_tag = RNO
+				original_tag = RKD
+				# Eastern RKs
+				original_tag = RKP
+				original_tag = RKO
+				original_tag = RKU
+				original_tag = RKR
+				# Misc RKs
+				original_tag = RKM
+				# Misc
+				original_tag = CHI
+				original_tag = PRC
+				original_tag = FFA
+			}
+		}
+		add_to_temp_variable = { police_law_desire = 3.0 }
+	}
+
+	# Finally, set country flag based on result.
+	if = { limit = { check_variable = { police_law_desire < 4 } }
+		set_country_flag = wants_police_01
+	}
+	else_if = { limit = { check_variable = { police_law_desire < 7 } }
+		set_country_flag = wants_police_02
+	}
+	else_if = { limit = { check_variable = { police_law_desire < 10 } }
+		set_country_flag = wants_police_03
+	}
+	else_if = { limit = { check_variable = { police_law_desire < 13 } }
+		set_country_flag = wants_police_04
+	}
+	else_if = { limit = { check_variable = { var = police_law_desire value = 13 compare = greater_than_or_equals } }
+		set_country_flag = wants_police_05
+	}
+}
+
+# Education desire is highly dependent on wealth and development level. Underdeveloped or developing nations should have edu_01 or edu_02.
+# Most developed nations should never go below edu_03. Richer nations should have edu_04. Also dependent on political policies.
+recalculate_edu_desire = {
+	set_temp_variable = { edu_law_desire = 0.0 }
+	# First, set base from GDP
+	if = { limit = { check_variable = { gdp_per_capita < 2.000 } }
+		add_to_temp_variable = {
+			edu_law_desire = 2.0 # edu_01
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 1.999 }
+			check_variable = { gdp_per_capita < 10.000 }
+		}
+		add_to_temp_variable = {
+			edu_law_desire = 5.0 # edu_02
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 9.999 }
+			check_variable = { gdp_per_capita < 90.000 }
+		}
+		add_to_temp_variable = {
+			edu_law_desire = 8.0 # edu_03
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 89.999 }
+		}
+		add_to_temp_variable = {
+			edu_law_desire = 11.0 # edu_04
+		}
+	}
+	# Adjust based on completed national focuses
+	# if = { limit = { has_completed_focus = UKR_education_reform }
+	# 	add_to_temp_variable = { edu_law_desire = 3.0 }
+	# }
+
+	##Edit based on factories
+	if = {
+		limit = {
+			num_of_factories < 40
+		}
+		subtract_from_temp_variable = {  #Can't afford a crazy amount of education
+			edu_law_desire = 6.0
+		}
+	}
+	else_if = {
+		limit = {
+			num_of_factories > 39
+			num_of_factories < 80
+		}
+		subtract_from_temp_variable = { ##Just one level lower
+ 			edu_law_desire = 3.0
+		}
+	}
+	else_if = {
+		limit = { ##Great
+			num_of_factories > 79
+		}
+		add_to_temp_variable = {
+			edu_law_desire = 3.0
+		}
+	}
+	##
+	if = { limit = { check_variable = { treasury_rate < -5.0 } }
+		subtract_from_temp_variable = { #Reduce spending when possible!
+			edu_law_desire = 8.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -4.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			edu_law_desire = 6.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -3.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			edu_law_desire = 4.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -2.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			edu_law_desire = 2.0
+		}
+	}
+	# Reduce if debt is high
+	if = {
+		limit = {
+			check_variable = { debt_ratio > 1.50 }
+		}
+		subtract_from_temp_variable = { edu_law_desire = 3.0 }
+	}
+
+	# Next, modify based upon ruling ideology and coalition partners.
+	if = { limit = { is_communist_ideology = yes }
+		add_to_temp_variable = { edu_law_desire = 1.0 }
+	}
+	if = { limit = { has_government = conservatism } 
+		add_to_temp_variable = { edu_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = progressivism }
+		add_to_temp_variable = { edu_law_desire = 3.0 }
+	}
+
+	# Shit countries should have expectations lowered
+	if = { limit = { is_shithole_country = yes }
+		subtract_from_temp_variable = { edu_law_desire = 4.0 }
+	}
+
+	# Finally, set country flag based on result.
+	if = { limit = { check_variable = { edu_law_desire < 4 } }
+		set_country_flag = wants_edu_01
+	}
+	else_if = { limit = { check_variable = { edu_law_desire < 7 } }
+		set_country_flag = wants_edu_02
+	}
+	else_if = { limit = { check_variable = { edu_law_desire < 10 } }
+		set_country_flag = wants_edu_03
+	}
+	else_if = { limit = { check_variable = { edu_law_desire < 13 } }
+		set_country_flag = wants_edu_04
+	}
+	else_if = { limit = { check_variable = { var = edu_law_desire value = 13 compare = greater_than_or_equals } }
+		set_country_flag = wants_edu_05
+	}
+}
+
+# Health is again highly dependent on development.
+recalculate_health_desire = {
+	set_temp_variable = { health_law_desire = 0.0 }
+	# First, set base from GDP
+	if = { limit = { check_variable = { gdp_per_capita < 2.000 } }
+		add_to_temp_variable = {
+			health_law_desire = 2.0 # health_01
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 1.999 }
+			check_variable = { gdp_per_capita < 4.000 }
+		}
+		add_to_temp_variable = {
+			health_law_desire = 5.0 # health_02
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 3.999 }
+			check_variable = { gdp_per_capita < 15.000 }
+		}
+		add_to_temp_variable = {
+			health_law_desire = 8.0 # health_03
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 14.999 }
+			check_variable = { gdp_per_capita < 30.000 }
+		}
+		add_to_temp_variable = {
+			health_law_desire = 11.0 # health_04
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 29.999 }
+			check_variable = { gdp_per_capita < 90.000 }
+		}
+		add_to_temp_variable = {
+			health_law_desire = 14.0 # health_05
+		}
+	}
+	else_if = { limit = { check_variable = { gdp_per_capita > 89.999 } }
+		add_to_temp_variable = {
+			health_law_desire = 17.0 # health_06
+		}
+	}
+	# Adjust based on national focuses
+	# if = {
+	# 	limit = {
+	# 		has_completed_focus = FRA_reformed_universal_healthcare
+	# 	}
+	# 	add_to_temp_variable = {
+	# 		health_law_desire = 3.0
+	# 	}
+	# }
+	##
+	if = { limit = { check_variable = { treasury_rate < -5.0 } }
+		subtract_from_temp_variable = { #Reduce spending when possible!
+			health_law_desire = 8.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -4.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			health_law_desire = 6.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -3.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			health_law_desire = 4.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -2.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			health_law_desire = 2.0
+		}
+	}
+	# Reduce if debt is high
+	if = {
+		limit = {
+			check_variable = { debt_ratio > 1.50 }
+		}
+		subtract_from_temp_variable = { health_law_desire = 3.0 }
+	}
+
+	# Next, modify based upon ruling ideology and coalition partners.
+	if = { limit = { is_fascist_ideology = yes }
+		subtract_from_temp_variable = { health_law_desire = 2.0 }
+	}
+	if = { limit = { is_communist_ideology = yes }
+		add_to_temp_variable = { health_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = conservatism } 
+		add_to_temp_variable = { health_law_desire = 1.0 }
+	}
+	if = { limit = { has_government = liberalism } 
+		add_to_temp_variable = { health_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = progressivism }
+		add_to_temp_variable = { health_law_desire = 3.0 }
+	}
+
+	# Shit countries should have expectations lowered
+	if = { limit = { is_shithole_country = yes }
+		subtract_from_temp_variable = { health_law_desire = 4.0 }
+	}
+
+	# Finally, set country flag based on result.
+	if = {
+		limit = {
+			check_variable = {
+				health_law_desire < 4
+			}
+		}
+		set_country_flag = wants_health_01
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				health_law_desire < 7
+			}
+		}
+		set_country_flag = wants_health_02
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				health_law_desire < 10
+			}
+		}
+		set_country_flag = wants_health_03
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				health_law_desire < 13
+			}
+		}
+		set_country_flag = wants_health_04
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				health_law_desire < 16
+			}
+		}
+		set_country_flag = wants_health_05
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = health_law_desire
+				value = 16
+				compare = greater_than_or_equals
+			}
+		}
+		set_country_flag = wants_health_06
+	}
+}
+
+# Welfare is highly dependent on development, but with more GDP categories skewing lower.
+recalculate_social_desire = {
+	set_temp_variable = { social_law_desire = 0.0 }
+	# First, set base from GDP
+	if = {
+		limit = {
+			check_variable = { gdp_per_capita < 4.000 }
+		}
+		add_to_temp_variable = {
+			social_law_desire = 3.0 # social_01
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 3.999 }
+			check_variable = { gdp_per_capita < 10.000 }
+		}
+		add_to_temp_variable = {
+			social_law_desire = 4.0 # social_02
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 9.999 }
+			check_variable = { gdp_per_capita < 20.000 }
+		}
+		add_to_temp_variable = {
+			social_law_desire = 6.0 # social_03
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 19.999 }
+			check_variable = { gdp_per_capita < 90.000 }
+		}
+		add_to_temp_variable = {
+			social_law_desire = 8.0 # social_04
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { gdp_per_capita > 89.999 }
+		}
+		add_to_temp_variable = {
+			social_law_desire = 11.0 # social_05
+		}
+	}
+	# Add modifiers based upon completed focuses, to prevent AI countries from immediately changing again
+	# if = {
+	# 	limit = {
+	# 		has_completed_focus = GCC_shrink_the_safety_net
+	# 	}
+	# 	subtract_from_temp_variable = {
+	# 		social_law_desire = 3.0
+	# 	}
+	# }
+	##
+	if = { limit = { check_variable = { treasury_rate < -5.0 } }
+		subtract_from_temp_variable = { #Reduce spending when possible!
+			social_law_desire = 8.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -4.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			social_law_desire = 6.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -3.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			social_law_desire = 4.0
+		}
+	}
+	else_if = { limit = { check_variable = { treasury_rate < -2.50 } }
+		subtract_from_temp_variable = { #Reduce when issues start becoming more relevant
+			social_law_desire = 2.0
+		}
+	}
+	# Reduce if debt is high
+	if = {
+		limit = {
+			check_variable = { debt_ratio > 1.50 }
+		}
+		subtract_from_temp_variable = { social_law_desire = 3.0 }
+	}
+
+	# Next, modify based upon ruling ideology and coalition partners.
+	if = { limit = { is_fascist_ideology = yes }
+		subtract_from_temp_variable = { social_law_desire = 4.0 }
+	}
+	if = { limit = { is_communist_ideology = yes }
+		add_to_temp_variable = { social_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = conservatism } 
+		add_to_temp_variable = { social_law_desire = 2.0 }
+	}
+	if = { limit = { has_government = liberalism } 
+		add_to_temp_variable = { social_law_desire = 3.0 }
+	}
+	if = { limit = { has_government = progressivism }
+		add_to_temp_variable = { social_law_desire = 5.0 }
+	}
+
+	# Shit countries should have expectations lowered
+	if = { limit = { is_shithole_country = yes }
+		subtract_from_temp_variable = { social_law_desire = 6.0 }
+		# Bro thinks he'll get welfare in SS-Arisches-Siedlungsgebiet Südslawiens
+	}
+
+	# Finally, set country flag based on result.
+	if = { limit = { check_variable = { social_law_desire < 4 } }
+		set_country_flag = wants_social_01
+	}
+	else_if = { limit = { check_variable = { social_law_desire < 7 } }
+		set_country_flag = wants_social_02
+	}
+	else_if = { limit = { check_variable = { social_law_desire < 10 } }
+		set_country_flag = wants_social_03
+	}
+	else_if = { limit = { check_variable = { social_law_desire < 13 } }
+		set_country_flag = wants_social_04
+	}
+	else_if = { limit = { check_variable = { var = social_law_desire value = 13 compare = greater_than_or_equals } }
+		set_country_flag = wants_social_05
+	}
+}
+
+# Wrapper function to do everything in one place.
+recalculate_law_desires = {
+	clear_law_desire_flags = yes # First, clear law desire flags.
+	focus_on_laws_due_to_economic_despair = yes # This should trigger economic despair
+	recalculate_police_desire = yes
+	recalculate_edu_desire = yes
+	recalculate_health_desire = yes
+	recalculate_social_desire = yes
+}
+
+focus_on_laws_due_to_economic_despair = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = AI_economic_downspiral }
+			OR = {
+				# has_idea = depression
+				# has_idea = recession
+				ai_has_major_economic_problems = yes
+				ai_has_moderate_economic_problems = yes
+			}
+		}
+		set_country_flag = AI_economic_downspiral
+		log = "[GetDateText]: [Root.GetName]: AI Scripted Trigger: focus_on_laws_due_to_economic_despair fired"
+	}
+	else_if = {
+		limit = {
+			has_country_flag = AI_economic_downspiral
+			OR = {
+				ai_has_acceptable_deficit = yes
+				# NOT = {
+				# 	has_idea = depression
+				# 	has_idea = recession
+				# }
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: AI Scripted Trigger: focus_on_laws_due_to_economic_despair removed" #To log when the AI actuall needs to fire these
+		clr_country_flag = AI_economic_downspiral
+	}
+}
+
+set_law_vars = {
+	if = {
+		limit = { has_idea = sl_city_state }
+		set_variable = { bureaucracy = 1 }
+	}
+	else_if = {
+		limit = { has_idea = sl_unitary_state }
+		set_variable = { bureaucracy = 2 }
+	}
+	else_if = {
+		limit = { has_idea = sl_devolved_unitary_state }
+		set_variable = { bureaucracy = 3 }
+	}
+	else_if = {
+		limit = { has_idea = sl_federated_state }
+		set_variable = { bureaucracy = 4 }
+	}
+	else_if = {
+		limit = { has_idea = sl_communal_state }
+		set_variable = { bureaucracy = 5 }
+	}
+	else = {
+		set_variable = { bureaucracy = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_idea = sl_state_policing1 }
+		set_variable = { sl_state_policing = 1 }
+	}
+	else_if = {
+		limit = { has_idea = sl_state_policing2 }
+		set_variable = { sl_state_policing = 2 }
+	}
+	else_if = {
+		limit = { has_idea = sl_state_policing3 }
+		set_variable = { sl_state_policing = 3 }
+	}
+	else_if = {
+		limit = { has_idea = sl_state_policing4 }
+		set_variable = { sl_state_policing = 4 }
+	}
+	else_if = {
+		limit = { has_idea = sl_state_policing5 }
+		set_variable = { sl_state_policing = 5 }
+	}
+	else = {
+		set_variable = { sl_state_policing = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_idea = sl_education_system1 }
+		set_variable = { sl_education_system = 1 }
+	}
+	else_if = {
+		limit = { has_idea = sl_education_system2 }
+		set_variable = { sl_education_system = 2 }
+	}
+	else_if = {
+		limit = { has_idea = sl_education_system3 }
+		set_variable = { sl_education_system = 3 }
+	}
+	else_if = {
+		limit = { has_idea = sl_education_system4 }
+		set_variable = { sl_education_system = 4 }
+	}
+	else_if = {
+		limit = { has_idea = sl_education_system5 }
+		set_variable = { sl_education_system = 5 }
+	}
+	else = {
+		set_variable = { sl_education_system = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_idea = sl_healthcare_system1 }
+		set_variable = { sl_healthcare_system = 1 }
+	}
+	else_if = {
+		limit = { has_idea = sl_healthcare_system2 }
+		set_variable = { sl_healthcare_system = 2 }
+	}
+	else_if = {
+		limit = { has_idea = sl_healthcare_system3 }
+		set_variable = { sl_healthcare_system = 3 }
+	}
+	else_if = {
+		limit = { has_idea = sl_healthcare_system4 }
+		set_variable = { sl_healthcare_system = 4 }
+	}
+	else_if = {
+		limit = { has_idea = sl_healthcare_system5 }
+		set_variable = { sl_healthcare_system = 5 }
+	}
+	else_if = {
+		limit = { has_idea = sl_healthcare_system6 }
+		set_variable = { sl_healthcare_system = 6 }
+	}
+	else = {
+		set_variable = { sl_healthcare_system = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_idea = sl_unemployment_benefits1 }
+		set_variable = { sl_unemployment_benefits = 1 }
+	}
+	else_if = {
+		limit = { has_idea = sl_unemployment_benefits2 }
+		set_variable = { sl_unemployment_benefits = 2 }
+	}
+	else_if = {
+		limit = { has_idea = sl_unemployment_benefits3 }
+		set_variable = { sl_unemployment_benefits = 3 }
+	}
+	else_if = {
+		limit = { has_idea = sl_unemployment_benefits4 }
+		set_variable = { sl_unemployment_benefits = 4 }
+	}
+	else_if = {
+		limit = { has_idea = sl_unemployment_benefits5 }
+		set_variable = { sl_unemployment_benefits = 5 }
+	}
+	else = {
+		set_variable = { sl_unemployment_benefits = 1 } #Failsafe Measure
+	}
+
+	#Military Spending Laws
+	# if = {
+	# 	limit = { has_idea = defence_00 }
+	# 	set_variable = { Military_Spending = 1 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_01 }
+	# 	set_variable = { Military_Spending = 2 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_02 }
+	# 	set_variable = { Military_Spending = 3 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_03 }
+	# 	set_variable = { Military_Spending = 4 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_04 }
+	# 	set_variable = { Military_Spending = 5 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_05 }
+	# 	set_variable = { Military_Spending = 6 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_06 }
+	# 	set_variable = { Military_Spending = 7 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_07 }
+	# 	set_variable = { Military_Spending = 8 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_08 }
+	# 	set_variable = { Military_Spending = 9 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_09 }
+	# 	set_variable = { Military_Spending = 10 }
+	# }
+}
+
+# edit this to set what the expected spending system should want :)
+set_law_desire_vars = {
+	if = {
+		limit = { has_country_flag = wants_police_01 }
+		set_variable = { protest_state_policing_desire = 1 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_police_02 }
+		set_variable = { protest_state_policing_desire = 2 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_police_03 }
+		set_variable = { protest_state_policing_desire = 3 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_police_04 }
+		set_variable = { protest_state_policing_desire = 4 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_police_05 }
+		set_variable = { protest_state_policing_desire = 5 }
+	}
+	else = {
+		set_variable = { protest_state_policing_desire = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_country_flag = wants_edu_01 }
+		set_variable = { protest_education_system_desire = 1 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_edu_02 }
+		set_variable = { protest_education_system_desire = 2 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_edu_03 }
+		set_variable = { protest_education_system_desire = 3 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_edu_04 }
+		set_variable = { protest_education_system_desire = 4 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_edu_05 }
+		set_variable = { protest_education_system_desire = 5 }
+	}
+	else = {
+		set_variable = { protest_education_system_desire = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_country_flag = wants_health_01 }
+		set_variable = { protest_healthcare_system_desire = 1 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_health_02 }
+		set_variable = { protest_healthcare_system_desire = 2 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_health_03 }
+		set_variable = { protest_healthcare_system_desire = 3 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_health_04 }
+		set_variable = { protest_healthcare_system_desire = 4 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_health_05 }
+		set_variable = { protest_healthcare_system_desire = 5 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_health_06 }
+		set_variable = { protest_healthcare_system_desire = 6 }
+	}
+	else = {
+		set_variable = { protest_healthcare_system_desire = 1 } #Failsafe Measure
+	}
+
+	if = {
+		limit = { has_country_flag = wants_social_01 }
+		set_variable = { protest_unemployment_benefits_desire = 1 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_social_02 }
+		set_variable = { protest_unemployment_benefits_desire = 2 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_social_03 }
+		set_variable = { protest_unemployment_benefits_desire = 3 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_social_04 }
+		set_variable = { protest_unemployment_benefits_desire = 4 }
+	}
+	else_if = {
+		limit = { has_country_flag = wants_social_05 }
+		set_variable = { protest_unemployment_benefits_desire = 5 }
+	}
+	else = {
+		set_variable = { protest_unemployment_benefits_desire = 1 } #Failsafe Measure
+	}
+
+	#Military Spending Laws
+	# if = {
+	# 	limit = { has_idea = defence_00 }
+	# 	set_variable = { Military_Spending = 1 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_01 }
+	# 	set_variable = { Military_Spending = 2 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_02 }
+	# 	set_variable = { Military_Spending = 3 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_03 }
+	# 	set_variable = { Military_Spending = 4 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_04 }
+	# 	set_variable = { Military_Spending = 5 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_05 }
+	# 	set_variable = { Military_Spending = 6 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_06 }
+	# 	set_variable = { Military_Spending = 7 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_07 }
+	# 	set_variable = { Military_Spending = 8 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_08 }
+	# 	set_variable = { Military_Spending = 9 }
+	# }
+	# else_if = {
+	# 	limit = { has_idea = defence_09 }
+	# 	set_variable = { Military_Spending = 10 }
+	# }
+}

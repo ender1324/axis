@@ -14,10 +14,27 @@ NDefines.NResistance.INITIAL_HISTORY_RESISTANCE = 10.0			-- resistance value for
 NDefines.NResistance.INITIAL_HISTORY_COMPLIANCE = 50.0			-- compliance value for initial colony states
 NDefines.NResistance.INITIAL_GARRISON_STRENGTH = 1				-- garrison value for initial colony states
 
+--- Fuel Balancing for fuel system
+NDefines.NCountry.STARTING_FUEL_RATIO = 0.8		    			-- starting fuel ratio compared to max fuel for countries
+NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 6   					-- base amount of fuel gained hourly per excess oil
+NDefines.NCountry.BASE_FUEL_GAIN = 2							-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_CAPACITY = 75000
 
+--- (N)AI additions
+NDefines.NAI.FUEL_CONSUMPTION_MULT_FOR_FUEL_SAVING_MODE = 1.0			-- fuel consumptions will be limited by this ratio in fuel saving mode
+NDefines.NAI.FUEL_CONSUMPTION_MULT_REGULAR_FUEL_MODE = 2.0				-- fuel consumptions will be limited by this ratio in regular fuel mode
+NDefines.NAI.FUEL_CONSUMPTION_MULT_AGRESSIVE_FUEL_MODE = 5.0				-- fuel consumptions will be limited by this ratio in aggressive fuel usage mode
+NDefines.NAI.DAYS_FUEL_REMAINING_TO_ENTER_FUEL_SAVING_MODE = 60				-- countries will enter fuel saving mode if they will be out of fuel in this number of days and their fuel ratio is below next define
+NDefines.NAI.DAYS_FUEL_REMAINING_TO_ENTER_FUEL_SAVING_MODE_FUEL_RATIO = 0.25
+NDefines.NAI.FUEL_RATIO_TO_EXIST_FUEL_SAVING_MODE = 0.30 					-- countries will exit fuel saving mode if they have more fuel ratio than this
+NDefines.NAI.NUM_SILOS_PER_CIVILIAN_FACTORIES = 0.03		-- ai will try to build a silo per this ratio of civ factories
+NDefines.NAI.NUM_SILOS_PER_MILITARY_FACTORIES = 0.03		-- ai will try to build a silo per this ratio of mil factories
+NDefines.NAI.NUM_SILOS_PER_DOCKYARDS = 0.03
+NDefines.NAI.BUILDING_TARGETS_BUILDING_PRIORITIES = {				-- buildings in order of priority when considering building targets strategies. First has the greatest priority, omitted has the lowest. NOTE: not all buildings are supported by building targets strategies.
+'fossil_powerplant', 'industrial_complex', 'synthetic_refinery', 'nuclear_reactor', 'fuel_silo', 'offices', 'infrastructure', 'arms_factory'
+}
 
 ---- Military additions
-
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 4                    -- how many battalions should a division have to count as a full divisions when calculating XP stuff
 NDefines.NMilitary.SPOTTING_QUALITY_DROP_HOURS = 3  	-- Each X hours the intel quality drops after unit was spotted.
 NDefines.NMilitary.MIN_SUPPLY_CONSUMPTION = 0.03 					-- minimum value of supply consumption that a unit can get

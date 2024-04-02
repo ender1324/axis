@@ -7,6 +7,28 @@ ideas = {
         law = yes
         use_list_view = yes
 
+        sl_city_state = {
+            allowed_to_remove = {
+                always = no
+                custom_trigger_tooltip = {
+                    tooltip = sl_cant_remove_tt
+                }
+            }
+
+            available = {
+                num_of_controlled_states < 2
+            }
+
+            modifier = {
+                party_popularity_stability_factor = 0.2
+                consumer_goods_factor = 0.2
+                global_building_slots_factor = 1
+                industrial_capacity_factory = 0.5
+                industrial_capacity_dockyard = 0.2
+                production_speed_buildings_factor = 0.5
+            }
+        }
+
         sl_unitary_state = {
             allowed_to_remove = {
                 always = no
@@ -75,28 +97,6 @@ ideas = {
             }
 
             cancel_if_invalid = no
-        }
-
-        sl_city_state = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-
-            available = {
-                num_of_controlled_states < 2
-            }
-
-            modifier = {
-                party_popularity_stability_factor = 0.2
-                consumer_goods_factor = 0.2
-                global_building_slots_factor = 1
-                industrial_capacity_factory = 0.5
-                industrial_capacity_dockyard = 0.2
-                production_speed_buildings_factor = 0.5
-            }
         }
     }
     #####################
@@ -914,46 +914,1851 @@ ideas = {
         }
     }
 
+
+
+    ########################
+    ### Public Structure ###
+    ########################
+    # population control
+    sl_population_control = {
+        law = yes
+        use_list_view = yes
+
+        sl_encouraged_growth = {
+            level = 2
+            modifier = {
+                social_cost_multiplier_modifier = 0.10
+                monthly_population = 0.30
+            }
+        }
+
+        sl_natural_growth = {
+            level = 1
+        }
+
+        sl_controlled_birth_rates = {
+            level = 2
+            modifier = {
+                monthly_population = -0.20
+                social_cost_multiplier_modifier = -0.07
+            }
+        }
+
+        sl_racial_purity = {
+            available = {
+                OR = {
+                    is_german_or_germanrk = yes
+                    tag = JAP
+                }
+            }
+
+            allowed_to_remove = {
+                NOT = {
+                    is_german_or_germanrk = yes
+                }
+            }
+
+            level = 3
+
+            modifier = {
+                political_power_cost = 0.05
+                stability_factor = -0.05
+                war_support_factor = 0.05
+                monthly_population = 0.05
+                health_cost_multiplier_modifier = 0.10
+            }
+        }
+    }
+
+    sl_state_policing = {
+        law = yes
+        use_list_view = yes
+
+        sl_state_policing1 = {
+            level = 1
+
+            available = {
+                is_major = no
+            }
+
+            on_add = {
+                custom_effect_tooltip = sl_state_policing1_tt
+				set_variable = { sl_state_policing = 1 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+            }
+
+            modifier = {
+                stability_factor = -0.05
+                foreign_subversive_activites = 0.10
+                encryption_factor = -0.1
+                decryption_factor = -0.1
+                drift_defence_factor = -0.10
+                resistance_activity = 0.1
+                compliance_growth = -0.05
+                civilian_intel_to_others = 5
+                army_intel_to_others = 5
+                navy_intel_to_others = 5
+                airforce_intel_to_others = 5
+                planning_speed = -0.05
+                intelligence_agency_defense = -0.1
+            }
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_state_policing2
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 25
+					has_idea = sl_state_policing2
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0.25
+					has_idea = sl_state_policing2
+					ai_has_minor_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_state_policing2
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 15
+					has_idea = sl_state_policing2
+					has_country_flag = wants_police_01
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_state_policing1
+					has_country_flag = wants_police_01
+				}
+				modifier = {
+					factor = 0
+					has_police_idea_law_desired = yes
+				}
+				modifier = { #Absoultely no reduction in policing in a police state.
+					factor = 0
+					is_fascist_ideology = yes
+				}
+			}
+        }
+
+        sl_state_policing2 = {
+            level = 2
+
+            modifier = {
+                foreign_subversive_activites = 0.05
+                stability_factor = 0.03
+                drift_defence_factor = -0.05
+            }
+
+            on_add = {
+                custom_effect_tooltip = sl_state_policing2_tt
+				set_variable = { sl_state_policing = 2 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+            }
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_state_policing3
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 25
+					has_idea = sl_state_policing3
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0.25
+					has_idea = sl_state_policing3
+					ai_has_minor_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_state_policing3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Totalitarian governments less willing to reduce police/security spending
+					factor = 0.10
+					has_idea = sl_state_policing3
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 15
+					has_idea = sl_state_policing1
+					OR = {
+						has_country_flag = wants_police_02
+						has_country_flag = wants_police_03
+						has_country_flag = wants_police_04
+						has_country_flag = wants_police_05
+					}
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_state_policing3
+					OR = {
+						has_country_flag = wants_police_01
+						has_country_flag = wants_police_02
+					}
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_state_policing2
+					has_country_flag = wants_police_02
+				}
+				modifier = {
+					factor = 0
+					has_police_idea_law_desired = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_state_policing1
+					has_country_flag = AI_economic_downspiral
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_state_policing1
+					ai_has_deficit = yes
+				}
+			}
+        }
+
+        sl_state_policing3 = {
+            level = 3
+
+            modifier = {
+                command_power_gain = 0.1
+                foreign_subversive_activites = -0.1
+                stability_factor = 0.05
+                encryption_factor = 0.3
+                decryption_factor = 0.3
+                resistance_target = -0.05
+                resistance_activity = -0.05
+                planning_speed = 0.10
+                intelligence_agency_defense = 0.05
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_state_policing3_tt
+				set_variable = { sl_state_policing = 3 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea police_03"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_state_policing4
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 25
+					has_idea = sl_state_policing4
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0.25
+					has_idea = sl_state_policing4
+					ai_has_minor_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_state_policing3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { #totalitarian governments less wiling to reduce police/security
+					factor = 0.10
+					has_idea = sl_state_policing4
+					is_fascist_ideology = yes
+				}
+				modifier = { #Make law more appealing to raise if is below desired level
+					factor = 15
+					has_idea = sl_state_policing1
+					OR = {
+						has_country_flag = wants_police_02
+						has_country_flag = wants_police_03
+						has_country_flag = wants_police_04
+						has_country_flag = wants_police_05
+					}
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_state_policing4
+					OR = {
+						has_country_flag = wants_police_01
+						has_country_flag = wants_police_02
+						has_country_flag = wants_police_03
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_state_policing3
+					has_country_flag = wants_police_03
+				}
+				modifier = {
+					factor = 0
+					has_police_idea_law_desired = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_state_policing2
+					has_country_flag = AI_economic_downspiral
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_state_policing2
+					ai_has_deficit = yes
+				}
+			}
+        }
+
+        sl_state_policing4 = {
+            level = 4
+
+            modifier = {
+                command_power_gain = 0.3
+                stability_factor = 0.1
+                encryption_factor = 0.5
+                decryption_factor = 0.5
+                resistance_target = -0.10
+                resistance_growth = -0.10
+                resistance_activity = -0.10
+                foreign_subversive_activites = -0.30
+                civilian_intel_to_others = -3
+                army_intel_to_others = -5
+                navy_intel_to_others = -5
+                airforce_intel_to_others = -5
+                planning_speed = 0.15
+                intelligence_agency_defense = 0.1
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_state_policing4_tt
+				set_variable = { sl_state_policing = 4 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea police_04"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_state_policing5
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 25
+					has_idea = sl_state_policing5
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0.25
+					has_idea = sl_state_policing5
+					ai_has_minor_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_state_policing3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_state_policing5
+					is_fascist_ideology = yes
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_state_policing1
+					OR = {
+						has_country_flag = wants_police_02
+						has_country_flag = wants_police_03
+						has_country_flag = wants_police_04
+						has_country_flag = wants_police_05
+					}
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_state_policing4
+					OR = {
+						has_country_flag = wants_police_01
+						has_country_flag = wants_police_02
+						has_country_flag = wants_police_03
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_state_policing4
+					has_country_flag = wants_police_04
+				}
+				modifier = {
+					factor = 0
+					has_police_idea_law_desired = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_state_policing3
+					has_country_flag = AI_economic_downspiral
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_state_policing3
+					ai_has_deficit = yes
+				}
+			}
+        }
+
+        sl_state_policing5 = {
+            level = 5
+
+            modifier = {
+                command_power_gain = 0.5
+                stability_factor = 0.15
+                encryption_factor = 1
+                decryption_factor = 1
+                resistance_target = -0.15
+                resistance_growth = -0.15
+                resistance_activity = -0.15
+                foreign_subversive_activites = -0.50
+                civilian_intel_to_others = -5
+                army_intel_to_others = -10
+                navy_intel_to_others = -10
+                airforce_intel_to_others = -10
+                planning_speed = 0.20
+                intelligence_agency_defense = 0.2
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_state_policing5_tt
+				set_variable = { sl_state_policing = 5 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea police_05"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0.5
+					is_fascist_ideology = yes
+				}
+				modifier = {
+					factor = 25
+					has_idea = sl_state_policing4
+					has_country_flag = wants_police_05
+				}
+				modifier = {
+					factor = 15
+					AND = {
+						OR = {
+							has_idea = sl_state_policing1
+							has_idea = sl_state_policing2
+							has_idea = sl_state_policing3
+							has_idea = sl_state_policing5
+						}
+						OR = {
+							has_country_flag = wants_police_04
+							has_country_flag = wants_police_05
+						}
+					}
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_state_policing3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					factor = 0.10
+					OR = {
+						ai_has_major_economic_problems = yes
+						ai_has_moderate_economic_problems = yes
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_state_policing5
+					has_country_flag = wants_police_05
+				}
+				modifier = {
+					factor = 0
+					has_police_idea_law_desired = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_state_policing4
+					has_country_flag = AI_economic_downspiral
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_state_policing4
+					ai_has_deficit = yes
+				}
+			}
+        }
+    }
+
+    sl_penal_system = {
+        law = yes
+        use_list_view = yes
+
+        sl_penal_rehabilitation = {
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = 0.05
+                research_speed_factor = 0.05
+                police_cost_multiplier_modifier = 0.1
+            }
+
+            ai_will_do = {
+                base = 10
+                modifier = {
+                    is_democratic_ideology = yes
+                    factor = 2
+                }
+
+                modifier = {
+                    has_idea = sl_unemployment_benefits3
+                    factor = 2
+                }
+            }
+        }
+
+        sl_penal_incarceration = {
+            modifier = {
+                stability_factor = 0.03
+            }
+
+            ai_will_do = {
+                base = 10
+            }
+        }
+
+        sl_penal_labour = {
+            modifier = {
+                political_power_cost = 0.05
+                war_support_factor = -0.05
+                production_speed_buildings_factor = 0.05
+                industry_free_repair_factor = 0.40
+                required_garrison_factor = 0.05
+            }
+
+            ai_will_do = {
+                base = 10
+
+                modifier = {
+                    is_despotic_ideology = yes
+                    factor = 2
+                }
+
+                modifier = {
+                    is_fascist_ideology = yes
+                    factor = 3
+                }
+
+                modifier = {
+                    is_democratic_ideology = yes
+                    factor = 0.5
+                }
+            }
+        }
+
+        sl_penal_slavery = {
+            available = {
+                is_democratic_ideology = no
+            }
+
+            allowed_to_remove = {
+                NOT = {
+                    is_german_or_germanrk = yes
+                }
+            }
+
+            modifier = {
+                stability_factor = -0.10
+                resistance_growth = 0.1
+                resistance_activity = 0.1
+                resistance_damage_to_garrison = 0.05
+                compliance_growth = -0.1
+                production_speed_buildings_factor = 0.15
+                repair_speed_arms_factory_factor = 0.75
+                repair_speed_industrial_complex_factor = 0.75
+                industry_free_repair_factor = 1
+                trade_opinion_factor = -0.20
+                required_garrison_factor = 0.1
+                police_cost_multiplier_modifier = 0.05
+            }
+
+            ai_will_do = {
+                base = 0
+
+                modifier = {
+                    is_fascist_ideology = yes
+                    add = 10
+                }
+
+                modifier = {
+                    has_idea = sl_racial_hierarchy
+                    add = 60
+                }
+
+                modifier = {
+                    has_idea = sl_racial_purity
+                    add = 20
+                }
+            }
+        }
+    }
+
+    sl_education_system = {
+        law = yes
+        use_list_view = yes
+
+        sl_education_system1 = {
+            level = 1
+            modifier = {
+                stability_factor = -0.5
+                research_speed_factor = -0.2
+                research_sharing_per_country_bonus_factor = -0.5
+                experience_gain_factor = -0.4
+                experience_loss_factor = 0.2
+                productivity_growth_modifier = -0.2
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_education_system1_tt
+				set_variable = { sl_education_system = 1 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_education_system1"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_education_system2
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_education_system2
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_education_system2
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { #Make law more appealling if you need to get to desired levle
+					factor = 15
+					has_idea = sl_education_system2
+					has_country_flag = wants_edu_01
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_education_system1
+					has_country_flag = wants_edu_01
+				}
+				modifier = { #Liberal governments less willing
+					factor = 0.50
+					has_government = liberalism
+				}
+				modifier = { # Socialist governments less willing to reduce education spending
+					factor = 0.25
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_government = conservatism
+				}
+				modifier = { #ABSOLUTELY NO CHANGE IF YOU HAVE REACHED DESIRED LAW
+					factor = 0
+					has_education_law_desired = yes
+				}
+			}
+        }
+
+        sl_education_system2 = {
+            level = 2
+            modifier = {
+                research_speed_factor = -0.05
+                productivity_growth_modifier = -0.1
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_education_system2_tt
+				set_variable = { sl_education_system = 2 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_education_system2"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_education_system3
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_education_system3
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_education_system3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_education_system3
+					has_country_flag = wants_edu_02
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_education_system2
+					has_country_flag = wants_edu_02
+				}
+				modifier = { #Liberal governments less willing
+					factor = 0.50
+					has_government = liberalism
+				}
+				modifier = { # Socialist governments less willing to reduce education spending
+					factor = 0.25
+                    OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_education_system3
+					has_government = conservatism
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_education_system1
+					OR = {
+						has_country_flag = wants_edu_02
+						has_country_flag = wants_edu_03
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_education_system3
+					OR = {
+						has_country_flag = wants_edu_01
+						has_country_flag = wants_edu_02
+					}
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_education_system1
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 10
+					has_idea = sl_education_system1
+					check_variable = { treasury_rate > 1.00 }
+					OR = {
+						has_country_flag = wants_edu_02
+						has_country_flag = wants_edu_03
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+				modifier = { #ABSOLUTELY NO CHANGE IF YOU HAVE REACHED DESIRED LAW
+					factor = 0
+					has_education_law_desired = yes
+				}
+
+			}
+        }
+
+        sl_education_system3 = {
+            level = 3
+
+            modifier = {
+                political_power_cost = 0.03
+                stability_factor = 0.03
+                research_speed_factor = 0.05
+                production_factory_max_efficiency_factor = 0.04
+                production_speed_buildings_factor = 0.04
+                experience_gain_factor = 0.08
+                productivity_growth_modifier = 0.08
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_education_system3_tt
+				set_variable = { sl_education_system = 3 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_education_system3"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_education_system4
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_education_system4
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_education_system4
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_education_system4
+					has_country_flag = wants_edu_03
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_education_system3
+					has_country_flag = wants_edu_03
+				}
+				modifier = { #Liberal governments less willing
+					factor = 0.50
+					has_government = liberalism
+				}
+				modifier = { # Socialist governments less willing to reduce education spending
+					factor = 0.25
+					OR = {
+                        has_government = progressivism
+                        has_government = socialism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_education_system4
+					has_government = conservatism
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_education_system2
+					OR = {
+						has_country_flag = wants_edu_03
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_education_system4
+					OR = {
+						has_country_flag = wants_edu_01
+						has_country_flag = wants_edu_02
+						has_country_flag = wants_edu_03
+					}
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_education_system2
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 10
+					has_idea = sl_education_system2
+					check_variable = { treasury_rate > 2.00 }
+					OR = {
+						has_country_flag = wants_edu_03
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+			}
+        }
+
+        sl_education_system4 = {
+            level = 4
+            modifier = {
+                political_power_cost = 0.05
+                stability_factor = 0.05
+                research_speed_factor = 0.12
+                production_factory_max_efficiency_factor = 0.08
+                production_speed_buildings_factor = 0.08
+                army_org_factor = 0.05
+                experience_gain_factor = 0.12
+                productivity_growth_modifier = 0.12
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_education_system4_tt
+				set_variable = { sl_education_system = 4 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_education_system4"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = { # High priority to downsize if major economic problems
+					factor = 50
+					has_idea = sl_education_system5
+					ai_has_major_economic_problems = yes
+				}
+				modifier = { # Moderate priority to downsize if moderate economic problems
+					factor = 5
+					has_idea = sl_education_system5
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_education_system5
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					factor = 15
+					has_idea = sl_education_system5
+					has_country_flag = wants_edu_04
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_education_system4
+					has_country_flag = wants_edu_04
+				}
+				modifier = { #Liberal governments less willing
+					factor = 0.50
+					has_government = liberalism
+				}
+				modifier = { # Socialist governments less willing to reduce education spending
+					factor = 0.25
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_education_system5
+					has_government = conservatism
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_education_system3
+					OR = {
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_education_system5
+					OR = {
+						has_country_flag = wants_edu_01
+						has_country_flag = wants_edu_02
+						has_country_flag = wants_edu_03
+						has_country_flag = wants_edu_04
+					}
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_education_system3
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 10
+					has_idea = sl_education_system3
+					check_variable = { treasury_rate > 3.00 }
+					OR = {
+						has_country_flag = wants_edu_04
+						has_country_flag = wants_edu_05
+					}
+				}
+			}
+        }
+
+        sl_education_system5 = {
+            level = 5
+
+            modifier = {
+                political_power_cost = 0.1
+                stability_factor = 0.1
+                research_speed_factor = 0.24
+                production_factory_max_efficiency_factor = 0.12
+                production_speed_buildings_factor = 0.12
+                army_org_factor = 0.1
+                experience_gain_factor = 0.24
+                productivity_growth_modifier = 0.24
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_education_system5_tt
+				set_variable = { sl_education_system = 5 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_education_system5"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = { ##Totally disregard if have no issues with current spending values
+					factor = 0
+					has_idea = sl_education_system4
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 15
+					has_idea = sl_education_system4
+					has_country_flag = wants_edu_05
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_education_system5
+					has_country_flag = wants_edu_05
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_education_system4
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 10
+					has_idea = sl_education_system4
+					check_variable = { treasury_rate > 4.00 }
+					has_country_flag = wants_edu_05
+				}
+			}
+        }
+    }
+
+    sl_healthcare_system = {
+        law = yes
+        use_list_view = yes
+
+        sl_healthcare_system1 = {
+            level = 1
+
+            modifier = {
+                war_support_factor = -0.1
+                weekly_casualties_war_support = -0.01
+                monthly_population = -0.3
+                army_morale_factor = -0.1
+                experience_loss_factor = 0.2
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system1_tt
+				set_variable = { sl_healthcare_system = 1 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system1 [sl_healthcare_system idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_healthcare_system2
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_healthcare_system2
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0.25
+					has_idea = sl_healthcare_system2
+					ai_has_minor_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system2
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = {
+					add = 25
+					has_idea = sl_healthcare_system2
+					has_country_flag = wants_health_01
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_healthcare_system2
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_healthcare_system2
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system2
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_healthcare_system2
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					add = 25
+					has_idea = sl_healthcare_system2
+					has_country_flag = wants_health_01
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system1
+					has_country_flag = wants_health_01
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+			}
+        }
+        
+        sl_healthcare_system2 = {
+            level = 2
+
+            modifier = {
+                monthly_population = -0.01
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system2_tt
+				set_variable = { sl_healthcare_system = 2 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system2 [sl_healthcare_system idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_healthcare_system3
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_healthcare_system3
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_healthcare_system3
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_healthcare_system3
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system3
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_healthcare_system3
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_healthcare_system1
+					OR = {
+						has_country_flag = wants_health_02
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_healthcare_system3
+					OR = {
+						has_country_flag = wants_health_01
+						has_country_flag = wants_health_02
+					}
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system2
+					has_country_flag = wants_health_02
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_healthcare_system1
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 9
+					has_idea = sl_healthcare_system1
+					check_variable = { treasury_rate > 1.00 }
+					OR = {
+						has_country_flag = wants_health_02
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+
+			}
+        }
+        sl_healthcare_system3 = {
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = 0.03
+                war_support_factor = 0.03
+                weekly_casualties_war_support = 0.010
+				monthly_population = 0.25
+				army_morale_factor = 0.05
+                experience_loss_factor = -0.05
+				consumer_goods_factor = -0.01
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system3_tt
+				set_variable = { sl_healthcare_system = 3 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system3 [health_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_healthcare_system4
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_healthcare_system4
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system4
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_healthcare_system4
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_healthcare_system4
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system4
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_healthcare_system4
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_healthcare_system3
+					OR = {
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_healthcare_system4
+					OR = {
+						has_country_flag = wants_health_01
+						has_country_flag = wants_health_02
+						has_country_flag = wants_health_03
+					}
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system3
+					has_country_flag = wants_health_03
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_healthcare_system2
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 9
+					has_idea = sl_healthcare_system2
+					check_variable = { treasury_rate > 2.00 }
+					OR = {
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+			}
+        }
+
+        sl_healthcare_system4 = {
+            modifier = {
+                political_power_gain = 0.1
+                stability_factor = 0.06
+                war_support_factor = 0.06
+                weekly_casualties_war_support = 0.015
+				monthly_population = 0.40
+				army_morale_factor = 0.075
+                experience_loss_factor = -0.1
+				consumer_goods_factor = -0.02
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system4_tt
+				set_variable = { sl_healthcare_system = 4 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system4 [health_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_healthcare_system5
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_healthcare_system5
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system5
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_healthcare_system5
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_healthcare_system5
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system5
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_healthcare_system5
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_healthcare_system3
+					OR = {
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_healthcare_system5
+					OR = {
+						has_country_flag = wants_health_01
+						has_country_flag = wants_health_02
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+					}
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system4
+					has_country_flag = wants_health_04
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_healthcare_system3
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 9
+					has_idea = sl_healthcare_system3
+					check_variable = { treasury_rate > 3.00 }
+					OR = {
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+			}
+        }
+
+        sl_healthcare_system5 = {
+            modifier = {
+                political_power_gain = 0.15
+                stability_factor = 0.09
+                war_support_factor = 0.09
+                weekly_casualties_war_support = 0.02
+				monthly_population = 0.55
+				army_morale_factor = 0.10
+                experience_loss_factor = -0.15
+				consumer_goods_factor = -0.03
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system5_tt
+				set_variable = { sl_healthcare_system = 5 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system5 [health_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_healthcare_system6
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_healthcare_system6
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system6
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_healthcare_system6
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_healthcare_system6
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system6
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_healthcare_system6
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_healthcare_system4
+					OR = {
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_healthcare_system6
+					OR = {
+						has_country_flag = wants_health_01
+						has_country_flag = wants_health_02
+						has_country_flag = wants_health_03
+						has_country_flag = wants_health_04
+						has_country_flag = wants_health_05
+					}
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system5
+					has_country_flag = wants_health_05
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_healthcare_system4
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 9
+					has_idea = sl_healthcare_system4
+					check_variable = { treasury_rate > 5.00 }
+					OR = {
+						has_country_flag = wants_health_05
+						has_country_flag = wants_health_06
+					}
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+			}
+        }
+        sl_healthcare_system6 = {
+            modifier = {
+                political_power_gain = 0.2
+                stability_factor = 0.12
+                war_support_factor = 0.12
+                weekly_casualties_war_support = 0.025
+				monthly_population = 0.75
+				army_morale_factor = 0.125
+                experience_loss_factor = -0.2
+				consumer_goods_factor = -0.04
+            }
+
+            on_add = {
+				custom_effect_tooltip = sl_healthcare_system6_tt
+				set_variable = { sl_healthcare_system = 6 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_healthcare_system6 [health_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_idea = sl_healthcare_system5
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 1.30
+					has_idea = sl_healthcare_system5
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_healthcare_system5
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_healthcare_system5
+					has_country_flag = wants_health_05
+				}
+				modifier = { # Make law more appealing to keep if is at desired level
+					factor = 20
+					has_idea = sl_healthcare_system6
+					has_country_flag = wants_health_06
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_healthcare_system5
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 9
+					has_idea = sl_healthcare_system5
+					check_variable = { treasury_rate > 6.00 }
+					has_country_flag = wants_health_06
+				}
+				modifier = {
+					factor = 0
+					has_health_law_desired = yes
+				}
+			}
+        }
+    }
+
     sl_unemployment_benefits = {
         law = yes
         use_list_view = yes
 
-        sl_no_unemployment_benefits = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-
+        sl_unemployment_benefits1 = {
             modifier = {
                 monthly_population = -0.05
                 drift_defence_factor = -0.1
             }
+
+            on_add = {
+				custom_effect_tooltip = sl_unemployment_benefits1_tt
+				set_variable = { sl_unemployment_benefits = 1 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_unemployment_benefits1 [social_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_unemployment_benefits2
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_unemployment_benefits2
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_unemployment_benefits2
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_unemployment_benefits2
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_unemployment_benefits2
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_unemployment_benefits2
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_unemployment_benefits2
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits2
+					has_country_flag = wants_social_01
+				}
+				modifier = {
+					factor = 10
+					has_idea = sl_unemployment_benefits1
+					has_country_flag = wants_social_01
+				}
+				modifier = {
+					factor = 0
+					has_social_law_desired = yes
+				}
+			}
         }
 
-        sl_tiny_unemployment_benefits = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-
+        sl_unemployment_benefits2 = {
             modifier = {
                 stability_factor = 0.01
                 drift_defence_factor = -0.05
             }
+
+            on_add = {
+				custom_effect_tooltip = sl_unemployment_benefits2_tt
+				set_variable = { sl_unemployment_benefits = 2 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_unemployment_benefits2 [social_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_unemployment_benefits3
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_unemployment_benefits3
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_unemployment_benefits3
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_unemployment_benefits3
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_unemployment_benefits3
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_unemployment_benefits3
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_unemployment_benefits3
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits1
+					OR = {
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits3
+					OR = {
+						has_country_flag = wants_social_01
+						has_country_flag = wants_social_02
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_unemployment_benefits2
+					has_country_flag = wants_social_02
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_unemployment_benefits1
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 8
+					has_idea = sl_unemployment_benefits1
+					check_variable = { treasury_rate > 1.00 }
+					OR = {
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = {
+					factor = 0
+					has_social_law_desired = yes
+				}
+				modifier = {
+					add = 50
+					has_idea = sl_unemployment_benefits1
+					set_temp_variable = { unemployment_threshold_twice = unemployment_threshold_display_var }
+					multiply_temp_variable = { unemployment_threshold_twice = 2 }
+					check_variable = { total_unemployed_percentage_display > unemployment_threshold_twice }
+				}
+			}
         }
 
-        sl_basic_unemployment_benefits = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-
+        sl_unemployment_benefits3 = {
             modifier = {
                 political_power_factor = 0.05
                 stability_factor = 0.05
@@ -963,16 +2768,113 @@ ideas = {
 
                 line_change_production_efficiency_factor = 0.025
             }
+
+            on_add = {
+				custom_effect_tooltip = sl_unemployment_benefits3
+
+				set_variable = { sl_unemployment_benefits = 3 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_unemployment_benefits3 [social_budget idea_law]"
+			}
+            
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_unemployment_benefits4
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_unemployment_benefits4
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_unemployment_benefits4
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_unemployment_benefits4
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_unemployment_benefits4
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_unemployment_benefits4
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_unemployment_benefits4
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits2
+					OR = {
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits4
+					OR = {
+						has_country_flag = wants_social_01
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_unemployment_benefits3
+					has_country_flag = wants_social_03
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_unemployment_benefits2
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 8
+					has_idea = sl_unemployment_benefits2
+					check_variable = { treasury_rate > 2.00 }
+					OR = {
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = {
+					factor = 0
+					has_social_law_desired = yes
+				}
+				modifier = {
+					add = 50
+					has_idea = sl_unemployment_benefits2
+					set_temp_variable = { unemployment_threshold_twice = unemployment_threshold_display_var }
+					multiply_temp_variable = { unemployment_threshold_twice = 2 }
+					check_variable = { total_unemployed_percentage_display > unemployment_threshold_twice }
+				}
+			}
         }
 
-        sl_generous_unemployment_benefits = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-            
+        sl_unemployment_benefits4 = {
             modifier = {
                 political_power_factor = 0.1
                 stability_factor = 0.1
@@ -982,16 +2884,115 @@ ideas = {
 
                 line_change_production_efficiency_factor = 0.05
             }
+
+            on_add = {
+				custom_effect_tooltip = sl_unemployment_benefits4_tt
+
+				set_variable = { sl_unemployment_benefits = 4 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_unemployment_benefits4 [social_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 50
+					has_idea = sl_unemployment_benefits5
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 5
+					has_idea = sl_unemployment_benefits5
+					ai_has_moderate_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_unemployment_benefits5
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 0.05
+					has_idea = sl_unemployment_benefits5
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 0.10
+					has_idea = sl_unemployment_benefits5
+					has_government = liberalism
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_unemployment_benefits5
+					has_government = conservatism
+				}
+				modifier = {
+					factor = 1.25
+					has_idea = sl_unemployment_benefits5
+					is_fascist_ideology = yes
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits3
+					OR = {
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = { # Make law more appealing to reduce if is above desired level
+					factor = 10
+					has_idea = sl_unemployment_benefits5
+					OR = {
+						has_country_flag = wants_social_01
+						has_country_flag = wants_social_02
+						has_country_flag = wants_social_03
+						has_country_flag = wants_social_04
+					}
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_unemployment_benefits4
+					has_country_flag = wants_social_04
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_unemployment_benefits3
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 8
+					has_idea = sl_unemployment_benefits3
+					check_variable = { treasury_rate > 4.00 }
+					OR = {
+						has_country_flag = wants_social_04
+						has_country_flag = wants_social_05
+					}
+				}
+				modifier = {
+					factor = 0
+					has_social_law_desired = yes
+				}
+				modifier = {
+					add = 50
+					has_idea = sl_unemployment_benefits4
+					set_temp_variable = { unemployment_threshold_twice = unemployment_threshold_display_var }
+					multiply_temp_variable = { unemployment_threshold_twice = 2 }
+					check_variable = { total_unemployed_percentage_display > unemployment_threshold_twice }
+				}
+			}
         }
 
-        sl_high_unemployment_benefits = {
-            allowed_to_remove = {
-                always = no
-                custom_trigger_tooltip = {
-                    tooltip = sl_cant_remove_tt
-                }
-            }
-            
+        sl_unemployment_benefits5 = {
+            level = 5
+
             modifier = {
                 political_power_factor = 0.15
                 stability_factor = 0.15
@@ -1001,6 +3002,950 @@ ideas = {
 
                 line_change_production_efficiency_factor = 0.075
             }
+
+            on_add = {
+				custom_effect_tooltip = sl_unemployment_benefits5_tt
+
+				set_variable = { sl_unemployment_benefits = 5 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_unemployment_benefits5 [social_budget idea_law]"
+			}
+
+            ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_idea = sl_unemployment_benefits4
+					ai_has_minor_economic_problems = no
+					ai_has_major_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_acceptable_deficit = yes
+				}
+				modifier = { # Socialist governments less willing to reduce health spending
+					factor = 1.30
+					has_idea = sl_unemployment_benefits4
+					OR = {
+                        has_government = socialism
+                        has_government = progressivism
+                    }
+				}
+				modifier = {
+					factor = 1.10
+					has_idea = sl_unemployment_benefits4
+					has_government = liberalism
+				}
+				modifier = { # Make law more appealing to raise if is below desired level
+					factor = 20
+					has_idea = sl_unemployment_benefits4
+					has_country_flag = wants_social_05
+				}
+				modifier = {
+					factor = 20
+					has_idea = sl_unemployment_benefits5
+					has_country_flag = wants_social_05
+				}
+				modifier = { # no money
+					factor = 0
+					has_idea = sl_unemployment_benefits4
+					ai_has_deficit = yes
+				}
+				modifier = { # money? go!
+					factor = 8
+					has_idea = sl_unemployment_benefits4
+					check_variable = { treasury_rate > 6.00 }
+					has_country_flag = wants_social_05
+				}
+				modifier = {
+					factor = 0
+					has_social_law_desired = yes
+				}
+				modifier = {
+					add = 50
+					has_idea = sl_unemployment_benefits4
+					set_temp_variable = { unemployment_threshold_twice = unemployment_threshold_display_var }
+					multiply_temp_variable = { unemployment_threshold_twice = 2 }
+					check_variable = { total_unemployed_percentage_display > unemployment_threshold_twice }
+				}
+			}
         }
+    }
+	##########################
+	### Military Structure ###
+	##########################
+    sl_military_spending = {
+        law = yes
+        use_list_view = yes
+
+        sl_military_spending0 = {
+            level = 1
+
+            available = {
+                is_major_player = no
+            }
+
+            modifier = {
+				stability_weekly = 0.02
+				war_support_weekly = -0.05
+
+				max_command_power = -80
+				command_power_gain = -0.5
+				experience_gain_army_factor = -0.5
+                experience_gain_navy_factor = -0.5
+                experience_gain_air_factor = -0.5
+                conscription_factor = -0.50
+                production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				mil_facs_worker_requirement_modifier = -0.5
+				military_factories_productivity = -0.5
+            }
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending0_tt
+
+				set_variable = { sl_military_spending = 1 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending0"
+			}
+
+			ai_will_do = {
+				factor = 1
+				# TODO: Fix this in the future
+				# modifier = {
+				# 	add = 500
+				# 	is_useless_country = yes
+				# }
+				modifier = {
+					factor = 2.5
+					has_idea = sl_military_spending1
+					ai_has_major_economic_problems = yes
+				}
+				modifier = {
+					factor = 0
+					has_idea = sl_military_spending1
+					NOT = { has_idea = disarmed_nation }
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+			}
+        }
+
+		sl_military_spending1 = {
+			level = 2
+
+			available = {
+				is_major_player = no
+			}
+
+			modifier = {
+                conscription_factor = -0.40
+
+				max_command_power_mult = 0.1
+
+				production_factory_max_efficiency_factor = 0.11
+				industrial_capacity_dockyard = 0.11
+				production_speed_arms_factory_factor = 0.02
+				production_speed_dockyard_factor = 0.02
+				stability_factor = -0.05
+				war_stability_factor = 0.05
+				mil_facs_worker_requirement_modifier = 0.1
+				military_factories_productivity = 0.1
+				dockyard_productivity = 0.1
+				total_workforce_modifier = -0.01 #mobilized people can't work
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending1_tt
+
+				set_variable = { sl_military_spending = 2 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending1"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = { # Neutral nations as neighbors, dont spend anything on military
+					factor = 5
+					has_war = no
+					threat < 0.5
+					has_idea = sl_military_spending1
+					OR = {
+						has_idea = neutrality_idea
+					}
+					all_neighbor_country = {
+						OR = {
+							has_idea = neutrality_idea
+						}
+					}
+				}
+				modifier = { # NATO bloc feeling of safety encourages lower spending
+					factor = 5
+					has_war = no
+					threat < 0.5
+					has_idea = sl_military_spending1
+					is_in_faction_with = USA
+				}
+				modifier = { # Mobility one step either direction.
+					add = 25
+					OR = {
+						has_idea = sl_military_spending0
+						has_idea = sl_military_spending1
+					}
+				}
+				modifier = {
+					add = 15
+					has_idea = sl_military_spending0
+					OR = {
+						has_country_flag = ai_yes_unit_build
+						has_country_flag = AI_is_threatened
+					}
+				}
+				modifier = { # Inertia to remain at current spending levels without other circumstances intervening
+					factor = 0
+					ai_has_minor_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_major_economic_problems = no
+					NOT = {
+						has_country_flag = ai_yes_unit_build
+						has_country_flag = AI_is_threatened
+					}
+					has_idea = sl_military_spending1
+				}
+				modifier = { # Minor powers shouldn't waste their money on large militaries
+					factor = 2
+					has_war = no
+					is_major_player = no
+					OR = {
+						has_idea = sl_military_spending1
+						has_idea = sl_military_spending2
+					}
+				}
+				modifier = {
+					factor = 2
+					has_idea = sl_military_spending1
+					has_war = no
+					is_major = no
+					manpower_per_military_factory > 1000 # If is a nonmajor nation without enemies and with sufficient manpower, don't bother increasing
+				}
+				modifier = { # Autocratic governments want larger militaries
+					factor = 2
+					has_idea = sl_military_spending0
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+				modifier = { # Consider increasing spending if threat is high
+					add = 10
+					has_idea = sl_military_spending0
+					OR = {
+						threat > 0.20
+						any_neighbor_country = {
+							has_war = yes
+						}
+					}
+				}
+				modifier = { # Consider increasing spending if threat is very high
+					factor = 2.5
+					has_idea = sl_military_spending0
+					OR = {
+						threat > 0.50
+						any_neighbor_country = {
+							has_war = yes
+						}
+					}
+				}
+				modifier = { #Tries to boost for the extra manpower
+					#Prio if low on manpower
+					add = 150
+					manpower_per_military_factory < 250
+					has_idea = sl_military_spending0 #Next Level up from defence_01
+				}
+				modifier = { # Military buildup while at war
+					add = 500
+					has_idea = sl_military_spending0
+					has_war = yes
+				}
+				modifier = { # Urgent military buildup if any neighbor country has or is justifying a wargoal against us
+					factor = 100
+					has_idea = sl_military_spending0
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_idea = disarmed_nation
+				}
+			}
+		}
+
+		sl_military_spending2 = {
+			level = 3
+
+			modifier = {
+				conscription_factor = -0.30
+
+				max_command_power_mult = 0.2
+
+				production_factory_max_efficiency_factor = 0.22
+				industrial_capacity_dockyard = 0.22
+				production_speed_arms_factory_factor = 0.04
+				production_speed_dockyard_factor = 0.04
+				stability_factor = -0.10
+				war_stability_factor = 0.10
+				mil_facs_worker_requirement_modifier = 0.2
+				military_factories_productivity = 0.2
+				dockyard_productivity = 0.2
+				total_workforce_modifier = -0.02 #mobilized people can't work
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending2_tt
+
+				set_variable = { sl_military_spending = 3 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending2"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					factor = 0
+					original_tag = CHI
+					num_of_available_military_factories < 100
+				}
+				modifier = { ##AI is under threat
+					add = 15
+					has_idea = sl_military_spending2
+					OR = {
+						has_country_flag = ai_yes_unit_build
+						has_country_flag = AI_is_threatened
+					}
+				}
+				modifier = { # Inertia to remain at current spending levels without other circumstances intervening
+					factor = 0
+					ai_has_minor_economic_problems = no
+					ai_has_moderate_economic_problems = no
+					ai_has_major_economic_problems = no
+					NOT = {
+						has_country_flag = ai_yes_unit_build
+						has_country_flag = AI_is_threatened
+					}
+					has_idea = sl_military_spending2
+				}
+				modifier = { # EU bloc feeling of safety encourages lower spending.
+					factor = 4
+					has_war = no
+					threat < 0.5
+					has_idea = sl_military_spending2
+					OR = {
+						has_idea = neutrality_idea
+					}
+					all_neighbor_country = {
+						OR = {
+							has_idea = neutrality_idea
+						}
+					}
+				}
+				modifier = { # NATO bloc feeling of safety encourages lower spending
+					factor = 4
+					has_war = no
+					threat < 0.5
+					has_idea = sl_military_spending2
+					is_in_faction_with = USA
+					all_neighbor_country = {
+						is_in_faction_with = USA
+					}
+				}
+				modifier = {
+					factor = 2
+					has_idea = sl_military_spending2
+					has_war = no
+					is_major = no
+					manpower_per_military_factory > 1000 # If is a nonmajor nation without enemies and with sufficient manpower, don't bother increasing
+				}
+				modifier = { # Minor powers shouldn't waste their money on large militaries
+					factor = 2
+					has_war = no
+					is_major_player = no
+					OR = {
+						has_idea = sl_military_spending2
+						has_idea = sl_military_spending3
+					}
+				}
+				modifier = { # Autocratic governments want larger militaries
+					factor = 2
+					has_idea = sl_military_spending1
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+				modifier = { # Consider increasing spending if threat is high
+					add = 10
+					has_idea = sl_military_spending1
+					OR = {
+						threat > 0.20
+						any_neighbor_country = {
+							has_war = yes
+						}
+					}
+				}
+				modifier = { # Consider increasing spending if threat is very high
+					factor = 2.5
+					has_idea = sl_military_spending1
+					OR = {
+						threat > 0.50
+						any_neighbor_country = {
+							has_war = yes
+						}
+					}
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 150
+					manpower_per_military_factory <  450
+					has_idea = sl_military_spending1
+				}
+				modifier = {
+					#Higher chance if doing badly
+					factor = 15
+					has_idea = sl_military_spending1
+					surrender_progress > 0.1
+				}
+				modifier = {
+					add = 500
+					has_idea = sl_military_spending1
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+				modifier = { # Military buildup while at war. Will want to get at least to medium spending.
+					factor = 25
+					has_idea = sl_military_spending1
+					has_war = yes
+				}
+				modifier = { # Military drawdown if war is over
+					add = 15
+					has_idea = sl_military_spending3
+					has_war = no
+					manpower_per_military_factory > 10000
+				}
+				modifier = { # Urgent military buildup if any neighbor country has or is justifying a wargoal against us
+					factor = 100
+					has_idea = sl_military_spending1
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		sl_military_spending3 = {
+			level = 4
+
+			modifier = {
+				conscription_factor = -0.30
+
+				max_command_power_mult = 0.3
+
+				production_factory_max_efficiency_factor = 0.33
+				industrial_capacity_dockyard = 0.33
+				production_speed_arms_factory_factor = 0.06
+				production_speed_dockyard_factor = 0.06
+				stability_factor = -0.15
+				war_stability_factor = 0.15
+				mil_facs_worker_requirement_modifier = 0.3
+				military_factories_productivity = 0.3
+				dockyard_productivity = 0.3
+				total_workforce_modifier = -0.03 #mobilized people can't work
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending3_tt
+
+				set_variable = { sl_military_spending = 4 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending3"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					add = 15
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending4
+				}
+				modifier = {
+					factor = 0
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending4
+				}
+				modifier = { # Inertia to remain at current spending levels without other circumstances intervening
+					add = 2
+					has_idea = sl_military_spending3
+				}
+				modifier = {
+					factor = 2
+					has_idea = sl_military_spending3
+					has_war = no
+					is_major = no
+					OR = {
+						manpower_per_military_factory > 1000 # If is a nonmajor nation without enemies and with sufficient manpower, don't bother increasing
+						num_of_military_factories < 1
+					}
+				}
+				modifier = {
+					add = 1
+					has_idea = sl_military_spending2
+				}
+				modifier = { # Autocratic governments want larger militaries
+					factor = 2
+					has_idea = sl_military_spending2
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+				modifier = { # Consider increasing spending if threat is high
+					factor = 2
+					has_idea = sl_military_spending2
+					threat > 0.4
+				}
+				modifier = { # Consider increasing spending if threat is very high
+					factor = 4
+					has_idea = sl_military_spending2
+					threat > 0.8
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 22
+					manpower_per_military_factory <  450
+					num_of_military_factories > 0
+					has_idea = sl_military_spending2
+				}
+				modifier = {
+					#Higher chance if doing badly
+					factor = 3
+					has_idea = sl_military_spending2
+					surrender_progress > 0.1
+				}
+				modifier = { # Urgent military buildup if at war with a major.
+					factor = 1000
+					has_idea = sl_military_spending2
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+				modifier = { # Military buildup while at war. Will want to get at least to medium spending.
+					factor = 80
+					has_idea = sl_military_spending2
+					has_war = yes
+				}
+				modifier = { # Military drawdown if war is over
+					add = 10
+					has_idea = sl_military_spending4
+					has_war = no
+					manpower_per_military_factory > 8000
+				}
+				modifier = { # Urgent military buildup if any neighbor country has or is justifying a wargoal against us
+					factor = 100
+					has_idea = sl_military_spending2
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		sl_military_spending4 = {
+			level = 5
+
+			modifier = {
+				conscription_factor = -0.20
+
+				max_command_power_mult = 0.4
+
+				production_factory_max_efficiency_factor = 0.44
+				industrial_capacity_dockyard = 0.44
+				production_speed_arms_factory_factor = 0.09
+				production_speed_dockyard_factor = 0.09
+				stability_factor = -0.20
+				war_stability_factor = 0.20
+				mil_facs_worker_requirement_modifier = 0.45
+				military_factories_productivity = 0.45
+				dockyard_productivity = 0.45
+				total_workforce_modifier = -0.045 #mobilized people can't work
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending4_tt
+
+				set_variable = { sl_military_spending = 5 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending4"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = { # Inertia to remain at current spending levels without other circumstances intervening
+					add = 2
+					has_idea = sl_military_spending4
+				}
+				modifier = {
+					add = 15
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending3
+				}
+				modifier = {
+					factor = 0
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending5
+				}
+				modifier = {
+					factor = 2
+					has_idea = sl_military_spending4
+					has_war = no
+					is_major = no
+					OR = {
+						manpower_per_military_factory > 1000 # If is a nonmajor nation without enemies and with sufficient manpower, don't bother increasing
+						num_of_military_factories < 1
+					}
+				}
+				modifier = {
+					add = 1
+					has_idea = sl_military_spending3
+				}
+				modifier = { # Salafists want to increase military
+					factor = 4
+					has_idea = sl_military_spending3
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+				modifier = { # Consider increasing spending if threat is high
+					factor = 2
+					has_idea = sl_military_spending3
+					threat > 0.4
+				}
+				modifier = { # Consider increasing spending if threat is very high
+					factor = 4
+					has_idea = sl_military_spending3
+					threat > 0.8
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 23
+					has_war = yes
+					manpower_per_military_factory < 450
+					num_of_military_factories > 0
+					has_idea = sl_military_spending3
+				}
+				modifier = {
+					#Higher chance if doing badly
+					factor = 3
+					has_idea = sl_military_spending3
+					surrender_progress > 0.1
+				}
+				modifier = { # Urgent military buildup if at war with a major.
+					factor = 1000
+					has_idea = sl_military_spending3
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+				modifier = { # Military buildup while at war. Will want to get at least to medium spending.
+					factor = 80
+					has_idea = sl_military_spending3
+					has_war = yes
+				}
+				modifier = { # Military drawdown if war is over
+					add = 10
+					has_idea = sl_military_spending5
+					has_war = no
+					manpower_per_military_factory > 6000
+				}
+				modifier = { # Urgent military buildup if any neighbor country has or is justifying a wargoal against us
+					factor = 100
+					has_idea = sl_military_spending3
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		sl_military_spending5 = {
+			level = 6
+			
+			modifier = {
+				conscription_factor = -0.10
+
+				max_command_power_mult = 0.5
+
+				production_factory_max_efficiency_factor = 0.55
+				industrial_capacity_dockyard = 0.55
+				production_speed_arms_factory_factor = 0.12
+				production_speed_dockyard_factor = 0.12
+				stability_factor = -0.25
+				war_stability_factor = 0.25
+				mil_facs_worker_requirement_modifier = 0.6
+				military_factories_productivity = 0.6
+				dockyard_productivity = 0.6
+				total_workforce_modifier = -0.06 #mobilized people can't work	
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending5_tt
+
+				set_variable = { sl_military_spending = 6 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending5"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = { # Inertia to remain at current spending levels without other circumstances intervening
+					add = 2
+					has_idea = sl_military_spending5
+				}
+				modifier = {
+					add = 15
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending4
+				}
+				modifier = {
+					factor = 0
+					original_tag = CHI
+					num_of_available_military_factories < 100
+					has_idea = sl_military_spending6
+				}
+				modifier = {
+					factor = 2
+					has_idea = sl_military_spending5
+					has_war = no
+					OR = {
+						manpower_per_military_factory > 1000 # If is a nonmajor nation without enemies and with sufficient manpower, don't bother increasing
+						num_of_military_factories < 1
+					}
+				}
+				modifier = {
+					add = 1
+					has_idea = sl_military_spending4
+				}
+				modifier = { # Salafists want to increase military
+					factor = 6
+					has_idea = sl_military_spending4
+					OR = {
+						is_fascist_ideology = yes
+						is_despotic_ideology = yes
+						has_government = vanguardism
+					}
+				}
+				modifier = { # Consider increasing spending if threat is very high
+					factor = 6
+					has_idea = sl_military_spending4
+					threat > 0.8
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 23
+					manpower_per_military_factory < 450
+					num_of_military_factories > 0
+					has_idea = sl_military_spending4
+					has_war = yes
+				}
+				modifier = {
+					#Higher chance if doing badly
+					factor = 3
+					has_war = yes
+					has_idea = sl_military_spending4
+					surrender_progress > 0.1
+				}
+				modifier = { # Urgent military buildup if at war with a major.
+					factor = 1000
+					has_idea = sl_military_spending4
+					has_war = yes
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+				modifier = { # Military buildup while at war. Will want to get at least to medium spending.
+					factor = 80
+					has_idea = sl_military_spending4
+					has_war = yes
+					manpower_per_military_factory < 1000 # If already has enough manpower, will not urgently increase spending.
+				}
+				modifier = { # Military drawdown if war is over
+					add = 10
+					has_idea = sl_military_spending6
+					has_war = no
+					manpower_per_military_factory > 3000
+				}
+				modifier = { # Urgent military buildup if any powerful neighbor country has or is justifying a wargoal against us
+					factor = 100
+					has_idea = sl_military_spending4
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+						OR = {
+							is_major = yes
+							strength_ratio = {
+								tag = ROOT
+								ratio > 1.0
+							}
+							ic_ratio = {
+								tag = ROOT
+								ratio > 1.0
+							}
+						}
+					}
+				}
+				modifier = { # Shouldn't increase to large spending if lower and significantly stronger than enemies
+					factor = 0
+					OR = {
+						has_idea = sl_military_spending4
+					}
+					alliance_strength_ratio > 2
+				}
+			}
+		}
+
+		sl_military_spending6 = {
+			level = 7
+
+			modifier = {
+				conscription_factor = 0.10
+
+				max_command_power_mult = 0.6
+
+				production_factory_max_efficiency_factor = 0.66
+				industrial_capacity_dockyard = 0.66
+				production_speed_arms_factory_factor = 0.16
+				production_speed_dockyard_factor = 0.16
+				stability_factor = -0.30
+				war_stability_factor = 0.30
+				mil_facs_worker_requirement_modifier = 0.8
+				military_factories_productivity = 0.8
+				dockyard_productivity = 0.8
+				total_workforce_modifier = -0.08 #mobilized people can't work
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_military_spending6_tt
+
+				set_variable = { sl_military_spending = 7 }
+				ingame_update_setup = yes
+				set_law_vars = yes
+				log = "[GetDateText]: [Root.GetName]: add idea sl_military_spending6"
+			}
+
+			ai_will_do = {
+				factor = 0
+				modifier = { # Should never maintain total war spending when not at war
+					factor = 0
+					has_war = no
+				}
+				modifier = {
+					add = 1
+					has_idea = sl_military_spending5
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 27
+					has_war = yes
+					manpower_per_military_factory < 450
+					has_idea = sl_military_spending5
+				}
+				modifier = {
+					#Higher chance if doing badly
+					factor = 3
+					has_idea = sl_military_spending5
+					surrender_progress > 0.1
+				}
+				modifier = { # Urgent military buildup if at war with a major.
+					factor = 5
+					has_idea = sl_military_spending5
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+				modifier = { # Military buildup while at war. Will want to get at least to medium spending.
+					factor = 10
+					has_idea = sl_military_spending5
+					has_war = yes
+					manpower_per_military_factory < 1000 # If already has enough manpower, will not urgently increase spending.
+				}
+				modifier = { # Urgent military buildup if any powerful neighbor country has or is justifying a wargoal against us
+					factor = 10
+					has_idea = sl_military_spending5
+					any_home_area_neighbor_country = {
+						OR = {
+							has_war_with = ROOT
+							has_wargoal_against = ROOT
+							is_justifying_wargoal_against = ROOT
+						}
+						OR = {
+							is_major = yes
+							strength_ratio = {
+								tag = ROOT
+								ratio > 1.8
+							}
+							ic_ratio = {
+								tag = ROOT
+								ratio > 1.8
+							}
+						}
+					}
+				}
+				modifier = { # Shouldn't go to total war if not at war with powerful enemies.
+					factor = 0
+					has_war = yes
+					alliance_strength_ratio > 0.9
+				}
+			}
+		}
     }
 }

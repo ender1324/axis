@@ -1,0 +1,140 @@
+guiTypes = {
+	containerWindowType = {
+		name = "hide_money_button"
+		position = { x = 1025 y = 4 }
+
+		buttonType ={
+			name ="hide_money_bg"
+			spriteType = "GFX_AC_left_arrow"
+			position = { x=0 y=0 }
+		}
+
+		instantTextBoxType = {
+			name ="hide_money_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_18mbs"
+			format = centre
+			maxWidth = 18
+			maxHeight = 19
+			fixedsize = yes
+
+			pdx_tooltip = "HIDE_MONEY_TOOLTIP"
+		}
+	}
+	containerWindowType = {
+		name = "show_money_button"
+		position = { x = 1025 y = 4 }
+
+		buttonType ={
+			name ="show_money_bg"
+			spriteType = "GFX_AC_right_arrow"
+			position = { x=0 y=0 }
+		}
+
+		instantTextBoxType = {
+			name ="show_money_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_18mbs"
+			format = centre
+			maxWidth = 18
+			maxHeight = 19
+			fixedsize = yes
+
+			pdx_tooltip = "SHOW_MONEY_TOOLTIP"
+		}
+	}
+
+	containerWindowType = {
+		name = "debt_container"
+		position = { x = 1044 y = 4 }
+
+		buttonType ={
+			name ="debt_bg"
+			spriteType = "GFX_generic_box_wider"
+			position = { x=0 y=0 }
+			#shortcut = "ctrl+k"
+		}
+
+		iconType = {
+			name ="debt_icon"
+			spriteType = "GFX_debt"
+			position = { x= -1 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name ="debt_text"
+			position = { x= 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?debt]"
+			format = centre
+			maxWidth = 55
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "DEBT_TOOLTIP"
+			pdx_tooltip_delayed = "DEBT_TOOLTIP_DELAYED"
+		}
+	}
+	containerWindowType = {
+		name = "treasury_container"
+		position = { x = 1125 y = 4 }
+
+		buttonType ={
+			name ="treasury_bg"
+			spriteType = "GFX_generic_box_wider"
+			position = { x=0 y=0 }
+			#shortcut = "ctrl+k"
+		}
+
+		iconType = {
+			name ="treasury_icon"
+			spriteType = "GFX_treasury"
+			position = { x= -3 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name ="treasury_text"
+			position = { x= 19 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?treasury]"
+			format = centre
+			maxWidth = 55
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "TREASURY_TOOLTIP"
+			pdx_tooltip_delayed = "TREASURY_TOOLTIP_DELAYED"
+		}
+	}
+	containerWindowType = {
+		name = "int_investments_container"
+		position = { x = 1206 y = 4 }
+
+		buttonType ={
+			name ="int_investments_bg"
+			spriteType = "GFX_generic_box_wider"
+			position = { x=0 y=0 }
+			#shortcut = "ctrl+k"
+		}
+
+		iconType = {
+			name ="int_investments_icon"
+			spriteType = "GFX_int_investments"
+			position = { x= -1 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name ="int_investments_text"
+			position = { x= 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?int_investments]"
+			format = centre
+			maxWidth = 55
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "INT_INVESTMENTS_TOOLTIP"
+			pdx_tooltip_delayed = "INT_INVESTMENTS_TOOLTIP_DELAYED"
+		}
+	}
+}

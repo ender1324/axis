@@ -1,0 +1,108 @@
+#Dynamic modifier for GDP/capita
+gdp_per_capita_country_modifiers = {
+	enable = { always = yes }
+	production_speed_buildings_factor = production_speed_buildings_factor_gdp_modifier
+	monthly_population = monthly_population_gdp_modifier
+	research_speed_factor = research_speed_factor_gdp_modifier
+	stability_factor = stability_factor_gdp_modifier
+	education_cost_multiplier_modifier = research_slot_modifier
+	total_workforce_modifier = total_workforce_gdp_c_modifier_var
+	production_speed_fossil_powerplant_factor = fossil_pp_construction_gdp_c_modifier_var
+}
+
+very_high_interest_country_modifiers = {
+	icon = "GFX_idea_great_depression2"
+	enable = { always = yes }
+
+	production_speed_buildings_factor = production_speed_buildings_factor_very_high_interest_modifier
+	industrial_capacity_factory = industrial_capacity_factory_very_high_interest_modifier
+	industrial_capacity_dockyard = industrial_capacity_dockyard_very_high_interest_modifier
+	stability_factor = stability_factor_very_high_interest_modifier
+	# ideology drifts removed
+	custom_modifier_tooltip = very_high_interest_country_modifiers_tt
+}
+
+population_tax_stability_hit = {
+	enable = { always = yes }
+	stability_factor = stability_factor_from_population_tax
+}
+
+corporate_tax_consumer_goods_hit = {
+	enable = { always = yes }
+
+	consumer_goods_expected_value = consumer_goods_from_corporate_tax
+	#receiving_investment_cost_modifier = receiving_investment_cost_form_corporate_tax
+}
+
+resources_manpower_fulfillment_modifier = {
+	enable = { always = yes }
+	local_resources_factor = resource_sector_worker_fulfillment_var
+}
+
+high_unemployment_modifier = {
+	enable = { always = yes }
+	stability_factor = high_unemployment_modifier_var
+	social_cost_multiplier_modifier = high_unemployment_modifier_var_2
+}
+
+productivity_and_employment_modifier = {
+	enable = { always = yes }
+	industrial_capacity_factory = military_factories_output_var
+	industrial_capacity_dockyard = dockyards_output_var
+	production_speed_buildings_factor = construction_speed_output_var
+}
+
+# Energy dynamic modifiers
+energy_dynamic_modifier = {
+	icon = GFX_idea_electric_grid
+	enable = { always = yes }
+	custom_modifier_tooltip = energy_dynamic_modifier_TT
+
+	#maluses for not fulfilling energy requirement
+	production_speed_buildings_factor = unfulfilled_energy_demand_dynmod_var
+	research_speed_factor = unfulfilled_energy_demand_dynmod_var
+	tax_gain_multiplier_modifier = unfulfilled_energy_demand_dynmod_var_3
+	industrial_capacity_dockyard = unfulfilled_energy_demand_dynmod_var
+	industrial_capacity_factory = unfulfilled_energy_demand_dynmod_var
+	stability_factor = unfulfilled_energy_demand_dynmod_var_2
+
+	#fuel consumed by fossil power plants and non electric fuel consumption
+	base_fuel_gain = powerplants_and_pop_fuel_consumption
+	# uranium consumed by nuclear reactors
+	# this might need changes to the uranium resource getting system
+	country_resource_cost_uranium = nuclear_fuel_consumption
+}
+
+hydroelectric_infrastructure_in_state = {
+	enable = { always = yes }
+	icon = GFX_idea_hydroelectric
+	custom_modifier_tooltip = hydroelectric_infrastructure_in_state_TT #use this to explain what the dam does
+	energy_gain = hydroelectric_energy_production_var #GW output of the damn
+	hydroelectric_energy_storage = hydroelectric_energy_storage_var #the amount of energy stored in GWh #modifier only used for localization
+}
+geothermal_infrastructure_in_state = {
+	enable = { always = yes }
+	icon = GFX_idea_resource_production
+	custom_modifier_tooltip = geothermal_infrastructure_in_state_TT
+	energy_gain = geothermal_energy_production_var #GW output
+}
+renewable_capacity_factor_dyn_mod = {
+	enable = { always = yes }
+	icon = GFX_idea_resource_production
+	custom_modifier_tooltip = renewable_capacity_factor_dyn_mod_TT
+	state_renewable_capacity_factor_modifier = state_renewable_capacity_factor_modifier_var
+}
+no_fuel_penalties_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_lack_of_fuel
+	custom_modifier_tooltip = no_fuel_penalties_modifier_TT
+
+	#maluses for not having enough fuel for the pop consumption
+	tax_gain_multiplier_modifier = no_fuel_penalties_var
+	stability_factor = no_fuel_penalties_var
+}
+
+# energy_resource_taker = {
+# 	enable = { always = yes }
+# 	country_resource_cost_uranium = buildings_uranium_demand
+# }

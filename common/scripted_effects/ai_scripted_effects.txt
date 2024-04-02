@@ -1,0 +1,84 @@
+# TODO: give templates to ai
+give_AI_templates = {
+	if = {
+		limit = {
+			is_major = yes
+		}
+		#generic_AI_templates = yes
+		#Major_Power_AI_templates = yes
+	}
+	else = {
+		#Militia_AI_templates = yes
+		#generic_AI_templates = yes
+	}
+}
+
+# should ai build units
+ai_update_build_units = { #default is not to build units
+	if = { #Stop building units
+		limit = {
+			NOT = {
+				has_country_flag = ai_yes_unit_build
+				has_country_flag = AI_is_threatened
+			}
+			OR = {
+				has_war = yes
+				if = {
+					limit = { is_democratic_ideology = yes }
+					threat > 0.20
+				}
+				else_if = {
+					limit = { is_communist_ideology = yes }
+					threat > 0.15
+				}
+				else = {
+					threat > 0.10
+				}
+				is_fascist_ideology = yes
+				any_other_country = {
+					OR = {
+						is_justifying_wargoal_against = THIS
+						has_wargoal_against = THIS
+					}
+				}
+			}
+		}
+		set_country_flag = ai_yes_unit_build
+		add_to_variable = { var = ai_wants_divisions value = 100 }
+		log = "[GetDateText]: [THIS.GetName]: AI Update - AI Build Unit Flag Set"
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = ai_yes_unit_build #check will end here if they don't have the flag thus avoiding the expensive triggers below
+				has_country_flag = AI_is_threatened
+			}
+			has_war = no
+			if = {
+				limit = { is_democratic_ideology = yes }
+				threat < 0.20
+			}
+			else_if = {
+				limit = { is_communist_ideology = yes }
+				threat < 0.15
+			}
+			else = {
+				threat < 0.10
+			}
+			NOT = { is_fascist_ideology = yes }
+			any_other_country = {
+				NOT = {
+					is_justifying_wargoal_against = this
+					has_wargoal_against = this
+				}
+			}
+		}
+		clr_country_flag = ai_yes_unit_build
+		if = {
+			limit = { has_country_flag = AI_is_threatened }
+			clr_country_flag = AI_is_threatened
+		}
+		log = "[GetDateText]: [THIS.GetName]: AI Update - AI Build Unit Flag clear"
+		add_to_variable = { var = ai_wants_divisions value = -100 } #maybe causing a crash? You can edit vanilla vars? idk who did this
+	}
+}

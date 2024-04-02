@@ -1,0 +1,154 @@
+﻿l_english:
+ ####################
+ ### Money System ###
+ ####################
+ # Productivity
+ flat_productivity_change_effect_TT: "§YProductivity§!: [?temp_productivity_change|3+]\n"
+
+ # Dynamic Modifiers
+ very_high_interest_country_modifiers: "Very High Interest Rate"
+ very_high_interest_country_modifiers_desc: "Very High Interest Rate"
+ very_high_interest_country_modifiers_tt: "The ever increasing interest rates are eroding the trust that people and financial institutions have towards the government. If we don't remedy the situation soon, things will only get worse and worse.\n\n"
+
+ # Tax Rate Changes
+ disables_personal_tax_rate_change: "§RDisables§! §YPopulation Tax Rate§! changes\n"
+ enables_personal_tax_rate_change: "§GEnables§! §YPopulation Tax Rate§! changes\n"
+ disables_corporate_tax_rate_change: "§RDisables§! §YCorporate Tax Rate§! changes\n"
+ enables_corporate_tax_rate_change: "§GEnables§! §YCorporate Tax Rate§! changes\n"
+
+ ### Building
+ offices: "Office Sector"
+ offices_plural: "Office Sectors"
+ offices_desc: "The office sectors represents all the other industries of the economy beyond the extraction and heavy industries. These includes financial, customer, information technology, retail services and so much more.\n\nProvides the state with:\nBase Number of Required Workers: §Y630K§!\nBase GDP Output per §YOffice Sector§!: $§Y50 Billion§!\nBase Energy Consumption: §R-0.2§! GW"
+
+ #################
+ ### Money GUI ###
+ #################
+ # Topbar tooltips
+ HIDE_MONEY_TOOLTIP: "Click to hide money interface"
+ SHOW_MONEY_TOOLTIP: "Click to show money interface"
+ TREASURY_TOOLTIP: "We have $[?treasury] §Hbillion§! in the treasury.\nOur weekly balance is $[?treasury_rate|+3] §Hbillion§!."
+ TREASURY_TOOLTIP_DELAYED: "Our treasury reflects the amount of money we have available to spend, and can be used for purchases and investments. If the treasury goes into the red, debt will automatically be issued weekly to keep it positive."
+ AC_TREASURY_TOOLTIP: "We have $[?ROOT.treasury] §Hbillion§! in the treasury.\nOur weekly balance is $[?treasury_rate|+] §Hbillion§!."
+ AC_TREASURY_TOOLTIP_DELAYED: "The money in our treasury is the money we can spend. It is used for purchases and investments. If it turns negative, debt will automatically be taken to keep it positive."
+ INT_INVESTMENTS_TOOLTIP: "We have $[?int_investments] §Hbillion§! in international investments.\nWe will gain [?roi_rate|%0] §HReturn on Investment§! on this each year, giving us weekly [int_investment_rate_color] §Hbillion§! in §Hinvestment income§! into the treasury from this.\nCurrent Active §YInvestment Projects§!: [?active_projects]/15"
+ INT_INVESTMENTS_TOOLTIP_DELAYED: "£shift_texticon  + £left_mouse_texticon §YShift L Click§! to enable/disable automatic reinvestment of §Hinvestment income§! into our §YInternational Investments§! (When the reinvestment is enabled the §YInternational Investments§! §Gincome§! value will turn yellow in the Economic Preview screen.)\n\n£GFX_ctrl_texticon + £left_mouse_texticon §YControl L Click§! to Enable/Disable automatic investment rejection. This means that you will automatically reject ALL incoming investment offers.\n\n £GFX_right_mouse_texticon §YR Click§! to sell off $1 billion in foreign investments. Only 60% of the sum can be recovered. £GFX_ctrl_texticon §YCtrl§! (10x) or £shift_texticon §YShift§!(100x) to increase the amount sold.\n\n[int_reinvestment_toggled]\n[int_auto_rejection_toggled]"
+ AC_INT_INVESTMENTS_TOOLTIP: "We have $[?ROOT.int_investments] §Hbillion§! in international investments.\nWe weekly earn $[?ROOT.int_investments_rate] §Hbillion§! in §Hinvestment income§! into the treasury from this."
+ DEBT_TOOLTIP: "Total Debt: [?debt|3]\n\nOur §YInterest Rate§! is [?interest_rate|2]%\nWe have a §YDebt-to-GDP§! Ratio of: §Y[?debt_ratio|-%1]§!\nWe paid $[?debt_rate|-3] §Ybillion§! in §YInterest on Debt§! this week.\nIdea impact on §YInterest Rate§!: [?interest_rate_multiplier|-0] (% Points)"
+ DEBT_TOOLTIP_DELAYED: "£left_mouse_texticon §YL Click§! to borrow manually, £GFX_right_mouse_texticon §YR Click§! to repay, §YAlt R Click§! to repay maximum.\nDefault: $1 §Hbillion§! (Hold £GFX_ctrl_texticon §YCtrl§!(10x) or £shift_texticon §YShift§!(100x) for greater amounts. If you cannot pay the full amount, it will pay with the remainder.)\n\n1% fee on manual and automatic debt borrowing, added on top of the debt borrowed.\nAn §YInterest Rate§! higher than §Y10%§! will give us access to emergency decisions to handle our growing debt.\nIf the §YInterest Rate§! rises above §Y15%§!, our economy will begin to §Rslow down§! and we will begin to suffer from other §Radverse effects.\n§!At this point, we will have the ability to default on our debt, but at great cost.\nIf our §YInterest Rate§! exceeds §Y20%§!, our borrowing will become restricted, and we will only be able to receive loans for budget deficits.\nIf our §YInterest on Debt§! ever exceeds our §YGross Income§!, our nation will §Rcollapse!§!"
+ REFRESH_TAX_RATE: "Refresh"
+ REFRESH_TAX_RATES_TOOLTIP: "Clicking this button will update your income and expense rates."
+
+ # Diplo view tooltips
+ F_DEBT_TOOLTIP: "They have $[?debt] §Hbillion§! in §Rdebt§!.\nThey currently have a §Hinterest rate§! of [?interest_rate]%.\n\n$§R[?debt_rate|-3]§! §Hbillion§! will be taken from their treasury each week to service the debt.[literacy_rate_tooltip]"
+ F_TREASURY_TOOLTIP: "GDP of §Y[THIS.GetName]§!: $§U[?gdp_total|0]§!b\nGDP/C of §Y[THIS.GetName]§!: $§U[?gdp_per_capita]§!k\n---------\nThey have $[?treasury] §Hbillion§! in the treasury.\nTheir weekly balance is $[?treasury_rate|+] §Hbillion§!."
+ F_INT_INVESTMENTS_TOOLTIP: "They have $[?int_investments] §Hbillion§! in investments in other countries.\nThey earn $[?int_investments_rate] §Hbillion§! weekly in §Hinvestment income§! from their total investments."
+ F_EXPENSE_GAIN_TOOLTIP: "They lose $[?display_expense] §Hbillion§! each week in expenditure."
+ F_EXPENSE_GAIN_TOOLTIP_DELAYED: "§CBureaucracy:§! $§R[?bureaucracy_gain|-3]§!\n§ODefence:§! $§R[?defence_gain|-3]§!\n§UInternal Security:§! $§R[?security_gain|-3]§!\n§JEducation:§! $§R[?education_gain|-3]§!\n§PHealth:§! $§R[?health_gain|-3]§!\n§BWelfare:§! $§R[?welfare_gain|-3]§!\n§RInterest on Debt:§! $§R[?debt_rate|-3]§!\n§HAdditional Expenses:§! $§R[?additional_expenses_rate|-3]§!\n\nTotal Expenditure: $§R[?display_expense]§!"
+ F_TAX_RATE_TOOLTIP: "Their §HAverage Tax Rate§! is [?tax_rate]%.\n\n§YCorporate Tax Rate:§! [?corporate_tax_rate]%\n§YPopulation Tax Rate:§! [?population_tax_rate]%\n"
+ F_TAX_GAIN_TOOLTIP: "They gain $[?display_income] §Hbillion§! each week in income."
+ F_TAX_GAIN_TOOLTIP_DELAYED: "GDP of §Y[THIS.GetName]§!: $§U[?THIS.gdp_total|0]§!b\nGDP/C of §Y[THIS.GetName]§!: $§U[?THIS.gdp_per_capita]§!k\n---------\n§CPopulation Income:§! $§G[?population_tax|+3]§!\n§LCorporate Income:§! $§G[?corporate_tax|+3]§!\n§GInternational Investments:§! $§G[?int_investments_rate|+3]§!\n§UResource Exports:§! $§G[?resource_sale_rate|+3]§!\n§HAdditional Income:§! $§G[?additional_income_rate|+3]§!\n\nGross Income: $§G[?display_income]§!"
+
+ # Income / Expenses Overview
+ GOVERNMENT_INVESTMENT: "§GInternational Investments:§!"
+ GOVERNMENT_INVESTMENT_RATE: "[int_investment_rate_color]"
+ GOVERNMENT_INVESTMENT_RATE_1: "$$§G[?int_investments_rate|3]§!"
+ GOVERNMENT_INVESTMENT_RATE_2: "$$§Y[?int_investments_rate|3]§!"
+ GOVERNMENT_INVESTMENT_RATE_YES: "International Investment Reinvestment: §GENABLED§!"
+ GOVERNMENT_INVESTMENT_RATE_NO: "International Investment Reinvestment: §YDISABLED§!"
+
+ # Increase / Decrease Tax Rate Tooltips
+ increases_population_tax_tooltip: "This button increases the §YPopulation Tax Rate§! in our nation.\n\n§YPrerequisites:§!\n[tax_button_req]\n\n[allowed_to_adjust_personal_tax_laws]"
+ increases_population_tax_delayed_tooltip: "£left_mouse_texticon §YL Click§! to increase §YPopulation Tax Rate§! by 1%.\n£shift_texticon + £left_mouse_texticon §YShift L Click§! to increase §YPopulation Tax Rate§! by 5% (£pol_power_icon [?tax_rate_change_5])\n"
+ decreases_population_tax_tooltip: "This button decreases the §YPopulation Tax Rate§! in our nation.\n\n§YPrerequisites:§!\n[tax_button_req]\n\n[allowed_to_adjust_personal_tax_laws]"
+ decreases_population_tax_delayed_tooltip: "£left_mouse_texticon §YL Click§! to decrease §YPopulation Tax Rate§! by 1%.\n£shift_texticon + £left_mouse_texticon §YShift L Click§! to decrease §YPopulation Tax Rate§! by 5% (£pol_power_icon [?tax_rate_change_5])\n"
+ increases_corporate_tax_tooltip: "This button increases the §YCorporate Tax Rate§! in our nation.\n\n§YPrerequisites:§!\n[tax_button_req]\n\n[allowed_to_adjust_corporate_tax_laws]"
+ increases_corporate_tax_delayed_tooltip: "£left_mouse_texticon §YL Click§! to increase §YCorporate Tax Rate§! by 1%.\n£shift_texticon + £left_mouse_texticon §YShift L Click§! to increase §YCorporate Tax Rate§! by 5% (£pol_power_icon [?tax_rate_change_5])\n"
+ decreases_corporate_tax_tooltip: "This button decreases the §YCorporate Tax Rate§! in our nation.\n\n§YPrerequisites:§!\n[tax_button_req]\n\n[allowed_to_adjust_corporate_tax_laws]"
+ decreases_corporate_tax_delayed_tooltip: "£left_mouse_texticon §YL Click§! to decrease §YCorporate Tax Rate§! by 1%.\n£shift_texticon + £left_mouse_texticon §YShift L Click§! to decrease §YCorporate Tax Rate§! by 5% (£pol_power_icon [?tax_rate_change_5])\n"
+ tax_action_button_req_enable_TT: "£trigger_yes  [?tax_rate_change]£pol_power_icon"
+ tax_action_button_req_disable_TT: "£trigger_no  [?tax_rate_change]£pol_power_icon"
+ tax_action_button_per_enabled_TT: "£trigger_yes Allowed to Adjust §YPersonal Tax Rates§!"
+ tax_action_button_per_disabled_TT: "£trigger_no Allowed to Adjust §YPersonal Tax Rates§! (Days Remaining: [?no_personal_tax_rate_change:days_left|Y0])"
+ tax_action_button_corp_enabled_TT: "£trigger_yes Allowed to Adjust §YCorporate Tax Rates§!"
+ tax_action_button_corp_disabled_TT: "£trigger_no Allowed to Adjust §YCorporate Tax Rates§! (Days Remaining: [?no_corporate_tax_rate_change:days_left|Y0])"
+ no_corporate_tax_rate_change: "Allowed to Adjust Corporate Tax Rates"
+ no_personal_tax_rate_change: "Allowed to Adjust Personal Tax Rates"
+
+ #####################
+ ### Energy system ###
+ #####################
+ #
+ ### Ideas
+ energy_dynamic_modifier: "National Electrical Grid"
+ energy_dynamic_modifier_TT: "This Spirit displays the sum of fuel consumption from fossil powerplants and direct fuel consumption from non-electrical sources as well as eventual maluses that arise if the power consumption were to be unsatisfied by the power generation."
+ no_fuel_penalties_modifier: "Lack of Fuel Penalties"
+ no_fuel_penalties_modifier_TT: "This Spirit displays the penalties that arise if the country were to consume all its fuel reserves, leaving none for the population to consume."
+ hydroelectric_infrastructure_in_state: "Hydroelectric Infrastructure"
+ hydroelectric_infrastructure_in_state_TT: "Hydroelectric Infrastructure includes all of the hydroelectric dams, storage, and more related to Hydroelectric Energy. The modifier in the state includes the total energy produced as well as the amount of storage it can contain. It contributes to your total energy generation and as such helps provide for your industrial and population energy consumptions."
+ geothermal_infrastructure_in_state: "Geothermal Infrastructure"
+ geothermal_infrastructure_in_state_TT: "Geothermal Infrastructure includes all of the geothermal power plants, and similar Infrastructure. It contributes to your total energy generation and as such helps provide for your industrial and population energy consumptions."
+ renewable_capacity_factor_dyn_mod: "Renewable Energy Hotspot"
+ renewable_capacity_factor_dyn_mod_TT: "This place has particularly favourable conditions for renewable energy generation, either through stable strong winds or a very high average yearly hours of sunlight. This increases the capacity factor of renewable parks built in this state, so they, on average, operate closer to their maximum capacity."
+ heavy_power_restrictions_spirit: "Heavy Power Restrictions"
+ some_power_restrictions_spirit: "Moderate Power Restrictions"
+ some_additional_consumption_spirit: "Moderate Power Consumption Subsidies"
+ heavy_additional_consumption_spirit: "Heavy Power Consumption Subsidies"
+
+ ### Buildings
+ # Renewable Energy Plants
+ synthetic_refinery: "Renewable Energy Infrastructure"
+ synthetic_refinery_plural: "Renewable Energy Infrastructure"
+ synthetic_refinery_desc: "Renewable energy infrastructure is a catch-all for all renewable energy sources. These include but are not limited to; solar parks, wind turbines, biofuel refineries, charcoal plants, biofuel power plants, and more. As such, it uses renewable sources and produces fuel from those sources.\n\nProvides the state with:\nBase Power Gain: §G+0.5§! GW\n"
+ synthetic_refinery_amount: "$VALUE|Y0=$"
+ synthetic_refinery_resource: "£resources_strip|$FRAME$"
+ # Nuclear energy plant
+ nuclear_reactor: "Nuclear Reactor"
+ nuclear_reactor_plural: "Nuclear Reactors"
+ nuclear_reactor_desc: "This building converts nuclear energy into electrical energy, consuming moderately enriched uranium in the process.\n\nProvides the state with:\nBase Power Gain: §G+2§! GW\n"
+ # Fossil Power plants
+ fossil_powerplant: "Fossil Fuel Powerplant"
+ fossil_powerplant_plural: "Fossil Fuel Powerplants"
+ fossil_powerplant_desc: "Fossil Fuel Powerplant is a catch-all for all fossil based thermoelectric energy sources. These include but are not limited to; coal, natural gas and oil. §YFossil Fuel Powerplants§! will idle if energy generation is higher then consumption.\n\nProvides the state with:\nBase Power Gain: §G+1§! GW\n"
+ fossil_powerplant_amount: "$VALUE|Y0=$"
+ fossil_powerplant_resource: "£resources_strip|$FRAME$"
+
+ # Tooltips
+ energy_build_fossil_powerplant_TT: "Changes the number of §YFossil Fuel Powerplants§! by [?temp_change|0+] in [ROOT.GetNameWithFlag] (Current: [?number_of_fossil_pps|Y0])"
+ build_battery_park_effect_TT: "Changes the number of §YBattery Parks§! by [?temp_change|0+] in [ROOT.GetNameWithFlag] (Current: [?number_of_battery_parks|Y0])"
+ synthetic_refinery_energy_tt: "Energy Gain: §G500§!"
+ currently_considering_an_offer: "[FROM.GetNameWithFlag] is currently considering an offer\n"
+ has_nuclear_reactors_tt: "[THIS.GetNameWithFlag] has at least 1 §Y$nuclear_reactor$§! (Current: [?nuclear_reactors|Y0])\n"
+ recently_bought_fuel_tt: "Recently Bought Fuel From the Market. (Days Left: [?recently_bought_fuel:days_left|0Y])"
+ building_fossil_fuel_powerplant_tt: "A fossil fuel powerplant will be built in approximately 90 days"
+
+ #####################################
+ ### Dynamic research slots system ###
+ #####################################
+ research_slots_decisions: "Research Slots"
+ research_slots_decisions_desc: "£ai_research_texticon §1Research capability§! of our country is determined by two factors: §Ytotal industry size§! (GDP) and §Ydevelopment level§! (GDP/c).        \n\n£ai_research_texticon §YResearch slots from industry size§!: [?research_slots_from_gdp|C.0] (GDP required: $$[?GLOBAL.gdp_slot^research_slots_from_gdp|Y0] b)\n£ai_research_texticon §YResearch slots from development level§!: [?research_slots_from_gdp_c|C.0] (GDP/c required: $$[?GLOBAL.gdp_c_slot^research_slots_from_gdp_c|Y0] k)         [research_slots_status]    \n\n£education_budget_cost_factor_texticon  §1Our education§! spending is increased by §Y[?research_slot_modifier|.0%]§! due to our amount of §1research slots§!.The education spending increase from §1research slots§! is §Y(0.04 * x) - 0.02§! where x is your §1research slots§!."
+ gdp_gain_slot: "§YExpand§! Laboratories"
+ #gdp_gain_slot: "Next slot from GDP at: $$[?GLOBAL.gdp_slot^next_slot_from_gdp|Y0] b"
+ gdp_gain_slot.tt: "GDP ($$[?gdp_total|Y] b) > $$[?GLOBAL.gdp_slot^next_slot_from_gdp|Y0] b"
+ gdp_c_gain_slot: "§YUpgrade§! Laboratory Equipment"
+ #gdp_c_gain_slot: "Next slot from GDP/c at: $$[?GLOBAL.gdp_c_slot^next_slot_from_gdp_c|Y0] k"
+ gdp_c_gain_slot.tt: "GDP/c ($$[?gdp_per_capita|Y] k) > $$[?GLOBAL.gdp_c_slot^next_slot_from_gdp_c|Y0] k"
+ calculate_new_education_spending_tt: "After we gain a new research slot our new education spending increase will be: [?research_slot_tot|%0R].\n"
+
+ gdp_remove_slot: "§RShut Down§! Laboratories"
+ gdp_remove_slot.tt: ""
+ gdp_c_remove_slot: "§RDowngrade§! Laboratory Equipment"
+ gdp_c_remove_slot.tt: ""
+
+ gdp_lose_slot: "Laboratories Understaffed"
+ #gdp_lose_slot: "GDP slot lost below: $$[?GLOBAL.gdp_slot^research_slots_from_gdp|Y0] b"
+ gdp_lose_slot.tt: "GDP ($$[?gdp_total|Y] b) > $$[?GLOBAL.gdp_slot^research_slots_from_gdp|Y0] b"
+ gdp_c_lose_slot: "Laboratory Equipment Shortage"
+ #gdp_c_lose_slot: "GDP/c slot lost below: $$[?GLOBAL.gdp_c_slot^research_slots_from_gdp_c|Y0] k"
+ gdp_c_lose_slot.tt: "GDP/c ($$[?gdp_per_capita|Y] k) > $$[?GLOBAL.gdp_c_slot^research_slots_from_gdp_c|Y0] k"
+
+ research_slots_status: "\n\n£repair_civ_factory_texticon §YIndustry Size                               £efficiency_growth_texticon Development Level§!\n£gdp_capita_cost_factor_texticon  GDP §Y$$[?GLOBAL.gdp_slot^1]b§!           [gdp_slot_1_status] £gdp_capita_cost_factor_texticon GDP/c §Y$$[?GLOBAL.gdp_c_slot^1]k§!   [gdp_c_slot_1_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^2]b§!      [gdp_slot_2_status]  £gdp_capita_cost_factor_texticon GDP/c §Y$$[?GLOBAL.gdp_c_slot^2]k§! [gdp_c_slot_2_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^3]b§!    [gdp_slot_3_status]  £gdp_capita_cost_factor_texticon GDP/c §Y$$[?GLOBAL.gdp_c_slot^3]k§! [gdp_c_slot_3_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^4]b§!    [gdp_slot_4_status]  £gdp_capita_cost_factor_texticon  GDP/c §Y$$[?GLOBAL.gdp_c_slot^4]k§! [gdp_c_slot_4_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^5]b§!  [gdp_slot_5_status]   £gdp_capita_cost_factor_texticon GDP/c §Y$$[?GLOBAL.gdp_c_slot^5]k§! [gdp_c_slot_5_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^6]b§!  [gdp_slot_6_status] £gdp_capita_cost_factor_texticon GDP/c §Y$$[?GLOBAL.gdp_c_slot^6]k§! [gdp_c_slot_6_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^7]b§!  [gdp_slot_7_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^8]b§!  [gdp_slot_8_status]\n£gdp_capita_cost_factor_texticon GDP §Y$$[?GLOBAL.gdp_slot^9]b§!  [gdp_slot_9_status]"
+ research_slot_locked: "§RLOCKED§!          "
+ research_slot_available: "§YAVAILABLE   §!"
+ research_slot_in_progress: "§CIN PROGRESS§!"
+ research_slot_unlocked: "§GUNLOCKED§!    "

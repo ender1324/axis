@@ -27,7 +27,14 @@ add_ideas = {
 	sl_protectionist_tariffs
 	sl_state_controlled_unions
 	sl_twelve_hour_workday
-	sl_tiny_unemployment_benefits
+	# Public Structure
+	sl_state_policing4
+	sl_penal_labour
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits2
+	# Military Structure
+	sl_military_spending4
 	# Secondary Leaders
 	GER_SL_adolf_hitler_idea
 }
@@ -47,6 +54,34 @@ set_popularities = {
 	national_socialism = 41
 	occultism = 17
 }
+
+# Economy System
+set_variable = { gdp_per_capita = 20.928 } # in reichmarks :troll:
+set_variable = { var = debt value = 2200.4 } # war
+set_variable = { var = treasury value = 128 }
+set_variable = { var = corporate_tax_rate value = 14 }
+set_variable = { var = population_tax_rate value = 23 }
+set_variable = { var = int_investments value = 41 } # low international investments
+every_owned_state = {
+	set_variable = { productivity_state_var = 1100 }
+}
+# Conquered territories
+97 = { set_variable = { productivity_state_var = 850 } } # byastok
+98 = { set_variable = { productivity_state_var = 850 } } # plock
+87 = { set_variable = { productivity_state_var = 850 } } # lodz
+814 = { set_variable = { productivity_state_var = 850 } } # suduva
+17 = { set_variable = { productivity_state_var = 900 } } # nanzig
+845 = { set_variable = { productivity_state_var = 900 } } # geneva
+964 = { set_variable = { productivity_state_var = 900 } } # northern schleswig
+# Efficient states
+42 = { set_variable = { productivity_state_var = 1200 } } # mosseland
+51 = { set_variable = { productivity_state_var = 1200 } } # rhineland
+989 = { set_variable = { productivity_state_var = 1200 } } # ostrhineland
+9 = { set_variable = { productivity_state_var = 1200 } } # bohmen
+75 = { set_variable = { productivity_state_var = 1200 } } # mahren
+set_variable = { overall_productivity = 1013 }
+
+
 create_faction = "Wohlstandsbündnis"
 add_to_faction = GER
 add_to_faction = ITA

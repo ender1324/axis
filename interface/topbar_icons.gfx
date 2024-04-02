@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	SpriteType = { 
+		name = "GFX_war_exhaustion"
+		texturefile = "gfx/interface/war_exhaustion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_war_exhaustion"
+		texturefile = "gfx/interface/decisions/decision_cat_war_exhaustion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_box_wider"
+		texturefile = "gfx/interface/generic_box_wider.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_box_narrow"
+		texturefile = "gfx/interface/generic_box_narrow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_box_smallest_100"
+		texturefile = "gfx/interface/generic_box_smallest_100px.dds"
+	}
+}

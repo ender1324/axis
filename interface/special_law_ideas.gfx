@@ -205,25 +205,134 @@ spriteTypes = {
 		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_no_work_hour_limits.dds"
 	}
 
+	##########################
+	###  Public Structure  ###
+	##########################
+	# Population Control
+	spriteType = {
+		name = "GFX_idea_sl_encouraged_growth"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_population_control/sl_encouraged_growth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_natural_growth"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_population_control/sl_natural_growth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_controlled_birth_rates"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_population_control/sl_controlled_birth_rates.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_racial_purity"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_population_control/sl_racial_purity.dds"
+	}
+	# State policing
+	spriteType = {
+		name = "GFX_idea_sl_state_policing1"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_state_policing/sl_state_policing1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_policing2"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_state_policing/sl_state_policing2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_policing3"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_state_policing/sl_state_policing3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_policing4"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_state_policing/sl_state_policing4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_policing5"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_state_policing/sl_state_policing5.dds"
+	}
+	# Penal System
+	spriteType = {
+		name = "GFX_idea_sl_penal_rehabilitation"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_penal_system/sl_penal_rehabilitation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_penal_incarceration"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_penal_system/sl_penal_incarceration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_penal_labour"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_penal_system/sl_penal_labour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_penal_slavery"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_penal_system/sl_penal_slavery.dds"
+	}
+	# Education System
+	spriteType = {
+		name = "GFX_idea_sl_education_system1"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_education_system/sl_education_system1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_education_system2"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_education_system/sl_education_system2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_education_system3"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_education_system/sl_education_system3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_education_system4"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_education_system/sl_education_system4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_education_system5"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_education_system/sl_education_system5.dds"
+	}
+	# Healthcare system
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system1"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system2"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system3"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system4"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system5"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_healthcare_system6"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_healthcare_system/sl_healthcare_system6.dds"
+	}
 	# Unemployment
 	spriteType = {
-		name = "GFX_idea_sl_no_unemployment_benefits"
-		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_no_unemployment_benefits.dds"
+		name = "GFX_idea_sl_unemployment_benefits1"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_unemployment_benefits/sl_unemployment_benefits1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_sl_tiny_unemployment_benefits"
-		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_tiny_unemployment_benefits.dds"
+		name = "GFX_idea_sl_unemployment_benefits2"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_unemployment_benefits/sl_unemployment_benefits2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_sl_basic_unemployment_benefits"
-		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_basic_unemployment_benefits.dds"
+		name = "GFX_idea_sl_unemployment_benefits3"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_unemployment_benefits/sl_unemployment_benefits3.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_sl_generous_unemployment_benefits"
-		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_generous_unemployment_benefits.dds"
+		name = "GFX_idea_sl_unemployment_benefits4"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_unemployment_benefits/sl_unemployment_benefits4.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_sl_high_unemployment_benefits"
-		texturefile = "gfx/ideas/special_laws/economic_structure/sl_unemployment_benefits/sl_high_unemployment_benefits.dds"
+		name = "GFX_idea_sl_unemployment_benefits5"
+		texturefile = "gfx/ideas/special_laws/public_structure/sl_unemployment_benefits/sl_unemployment_benefits5.dds"
 	}
+	############################
+	###  Military Structure  ###
+	############################
+	# Military Spending
+	### TODO ADD MIL SPENDING ICONS
 }

@@ -12,20 +12,28 @@ set_politics = {
 }
 
 add_ideas = {
-	# LAWS
+	# Special Laws
+	# Government Structure
 	sl_unitary_state
 	sl_state_press
 	sl_state_atheism
 	sl_racial_hierarchy
 	sl_legal_guardianship
 	sl_banned_protests
-	# economy laws
+	# Economy Structure
 	sl_planned_economy
 	sl_no_taxation
 	sl_high_tariffs
 	sl_illegal_unions
 	sl_no_work_hour_limits
-	sl_no_unemployment_benefits
+	# Public Structure
+	sl_state_policing5
+	sl_penal_slavery
+	sl_education_system1
+	sl_healthcare_system1
+	sl_unemployment_benefits1
+	# Military Structure
+	sl_military_spending6
 }
 
 set_popularities = {

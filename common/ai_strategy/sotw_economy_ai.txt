@@ -1,0 +1,667 @@
+## Generic Save PP when needed!!!
+save_pp_for_laws = {
+	enable = {
+		has_country_flag = AI_economic_downspiral
+	}
+	abort = {
+		NOT = { has_country_flag = AI_economic_downspiral }
+	}
+
+	ai_strategy = { type = pp_spend_priority id = relation value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = general value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = admiral value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = decision value = -9999 }
+	ai_strategy = { type = pp_spend_priority id = idea value = 2500 } #Focus on Editing LAWS
+	ai_strategy = { type = pp_spend_amount id = idea value = 500 }
+}
+
+# save_pp_for_laws_flag_aggresive_economic_ai = {
+# 	enable = {
+# 		NOT = {
+# 			has_idea = economic_boom
+# 		}
+# 	}
+# 	abort = { has_idea = economic_boom }
+
+# 	ai_strategy = { type = pp_spend_priority id = relation value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = general value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = admiral value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = decision value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = idea value = 2500 } #Focus on Editing LAWS
+# 	ai_strategy = { type = pp_spend_amount id = idea value = 700 }
+# }
+
+# save_pp_for_laws_flag_aggresive_economic_ai_2 = {
+# 	enable = {
+# 		NOT = {
+# 			has_idea = negligible_corruption
+# 		}
+# 	}
+# 	abort = { has_idea = negligible_corruption }
+
+# 	ai_strategy = { type = pp_spend_priority id = relation value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = general value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = admiral value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = guarantee value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = decision value = -9999 }
+# 	ai_strategy = { type = pp_spend_priority id = idea value = 2500 } #Focus on Editing LAWS
+# 	ai_strategy = { type = pp_spend_amount id = idea value = 800 }
+# }
+
+default_military_ratio_to_civvies = {
+	allowed = {
+		needs_special_income = no
+	}
+	enable = {
+		has_war = no
+		threat < 0.30
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			threat > 0.30
+			is_fascist_ideology = yes
+			any_other_country = {
+				OR = {
+					is_justifying_wargoal_against = THIS
+					has_wargoal_against = THIS
+				}
+			}
+		}
+	}
+
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -20 }
+}
+
+##Military Factories Reducers
+minor_production_of_factories = {
+	allowed = {
+		is_major_player = no
+	}
+	enable = {
+		OR = {
+			has_war = no
+			threat < 0.40
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 50
+	}
+}
+
+major_production_of_factories1 = {
+	allowed = {
+		is_major_player = no
+	}
+	enable = {
+		is_major = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 12
+	}
+}
+
+minor_military_factories = {
+	allowed = {
+		is_major_player = no
+	}
+	enable = {
+		has_war = yes
+		num_of_military_factories < 8
+	}
+	abort = {
+		num_of_military_factories > 15
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 5
+	}
+}
+
+#AI fix construction
+AI_production_of_factories_USA = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		date < 1957.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 15
+	}
+}
+
+AI_minor_military_factories = {
+	allowed = {
+		is_major_player = no
+	}
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 3
+		num_of_military_factories < 1
+	}
+	abort = {
+		num_of_military_factories > 3
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 10
+	}
+}
+
+AI_major_military_factories = {
+	allowed = {
+		is_major_player = yes
+	}
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 100
+		num_of_military_factories < 35
+	}
+	abort = {
+		num_of_military_factories > 35
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 20
+	}
+}
+
+AI_major_military_factories2 = {
+	allowed = {
+		AND = {
+			is_major_player = no
+			is_major = yes
+		}
+	}
+	enable = {
+		has_war = yes
+		num_of_military_factories < 8
+	}
+	abort = {
+		num_of_military_factories > 20
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 10
+	}
+}
+
+AI_military_factories_Russia = {
+	allowed = {
+		tag = RUS
+	}
+	enable = {
+		date > 1956.1.1
+		num_of_civilian_factories > 50
+		num_of_military_factories < 30
+	}
+	abort = {
+		num_of_military_factories > 40
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 50
+	}
+}
+
+AI_military_factories_USA = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		date > 1956.1.1
+		num_of_civilian_factories > 100
+		num_of_military_factories < 50
+	}
+	abort = {
+		num_of_military_factories > 80
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 50
+	}
+}
+
+AI_military_factories_USA2 = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		date > 1957.1.1
+		num_of_civilian_factories > 120
+		num_of_military_factories < 80
+	}
+	abort = {
+		num_of_military_factories > 120
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 10
+	}
+}
+
+AI_military_factories_Canada = {
+	allowed = {
+		tag = CAN
+	}
+	enable = {
+		date > 1956.1.1
+		num_of_civilian_factories > 30
+		num_of_military_factories < 10
+	}
+	abort = {
+		num_of_military_factories > 20
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 50
+	}
+}
+
+AI_military_factories_Germany = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		date > 1956.1.1
+		num_of_military_factories < 60
+	}
+	abort = {
+		num_of_military_factories > 70
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 50
+	}
+}
+
+AI_military_factories_Germany2 = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		date > 1956.1.1
+		num_of_military_factories < 100
+	}
+	abort = {
+		num_of_military_factories > 99
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 10
+	}
+}
+
+
+AI_ratio_military = {
+	enable = {
+		num_of_military_factories > 8
+	}
+	abort = {
+		num_of_military_factories < 15
+	}
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -25 }
+}
+
+AI_block_ratio_military2 = {
+	allowed = {
+		NOT = { tag = GER }
+	}
+	enable = {
+		num_of_military_factories > 200
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -50 }
+}
+
+AI_block_ratio_military_germany = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		num_of_military_factories < 100
+	}
+	abort = {
+		num_of_military_factories > 101
+	}
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 40 } #
+}
+
+AI_block_ratio_military_germany2 = {
+	allowed = { tag = GER }
+	enable = {
+		num_of_civilian_factories > 150
+		num_of_military_factories < 200
+		num_of_military_factories > 100
+	}
+	abort = {
+		num_of_military_factories > 199
+	}
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 } #A positive value means more military factories.
+}
+
+AI_ratio_military_USA = {
+	allowed = { tag = USA }
+	enable = {
+		num_of_available_civilian_factories  > 120
+		num_of_military_factories < 100
+	}
+	abort = {
+		num_of_available_civilian_factories < 121
+		num_of_military_factories > 99
+	}
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 50 }
+}
+
+AI_generic_office_construction = {
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 40
+	}
+	abort = {
+		num_of_civilian_factories < 41
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = offices
+		value = 1
+	}
+}
+
+AI_generic_office_construction_sup = {
+	allowed = {
+		is_major_player = yes
+	}
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 150
+
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 155
+			date > 1956.1.1
+		}
+
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = offices
+		value = 10
+	}
+}
+
+AI_generic_office_construction1_RUS = {
+	allowed = { tag = RUS }
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 50
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 53
+			date > 1956.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = offices
+		value = 2
+	}
+}
+
+AI_generic_office_construction2_RUS = {
+	allowed = {
+		tag = RUS
+	}
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 60
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 63
+			date > 1956.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = offices
+		value = 5
+	}
+}
+
+AI_generic_office_construction3_RUS = {
+	allowed = {
+		tag = SOV
+	}
+	enable = {
+		has_war = no
+		num_of_civilian_factories > 100
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 111
+			date > 1957.1.1
+		}
+	}
+	ai_strategy = {
+		type = building_target
+		id = offices
+		value = 10
+	}
+}
+
+AI_minor_production_of_dockyard = {
+	allowed = {
+		NOT = {
+			tag = TMS
+			tag = KAZ
+			tag = UZB
+			tag = TAJ
+			tag = AFG
+			tag = RKK
+		}
+	}
+	enable = {
+		num_of_available_civilian_factories > 10
+	}
+	abort = {
+		num_of_available_civilian_factories < 15
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 1
+	}
+}
+
+AI_major_production_of_dockyard = {
+	allowed = {
+		is_major_player = yes
+	}
+	enable = {
+		num_of_civilian_factories < 80
+	}
+	abort = {
+		num_of_civilian_factories > 95
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 8
+	}
+}
+
+AI_major_production_of_dockyard2 = {
+	allowed = {
+		is_major_player = yes
+	}
+	enable = {
+		num_of_civilian_factories < 150
+	}
+	abort = {
+		num_of_civilian_factories > 200
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 17
+	}
+}
+
+AI_idea_focus = {
+	allowed = {
+		check_variable = { treasury_rate > 5.00 }
+	}
+	enable = {
+		NOT = {
+			has_idea = sl_unemployment_benefits5
+			has_idea = sl_healthcare_system6
+			has_idea = sl_education_system5
+		}
+	}
+	abort = {
+		OR = {
+			OR = {
+				has_idea = sl_unemployment_benefits5
+				has_idea = sl_healthcare_system6
+				has_idea = sl_education_system5
+			}
+			ai_has_high_deficit = yes
+		}
+
+	}
+	ai_strategy = { type = pp_spend_priority id = idea value = 5000 }
+}
+
+# Energy AI
+AI_fuel_power_plant_focuses = {
+	enable = {
+		check_variable = { energy_sum < energy_consumption }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = fossil_powerplant
+		value = 200
+	}
+}
+
+AI_build_fuel_silos = {
+	enable = {
+		date > 1955.1.1
+		has_fuel < 1000000
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = fuel_silo
+		value = 10
+	}
+}
+
+AI_build_nuclear_reactors = {
+	enable = {
+		date < 1955.1.1
+		has_tech = nuclear_reactor
+		check_variable = { nuclear_reactors < 5 }
+		check_variable = { uranium_amount > 0 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = 3
+	}
+}
+
+AI_build_nuclear_reactors_2 = {
+	enable = {
+		date > 1954.1.1
+		has_tech = nuclear_reactor
+		check_variable = { total_unemployed_percentage_display < 0.010 } # 1% unemployment
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = 15
+	}
+}
+
+AI_build_renewable_energy_infrastructure = {
+	enable = {
+		date > 1958.1.1
+		check_variable = { total_unemployed_percentage_display < 0.010 } # 1% unemployment
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = synthetic_refinery
+		value = 20
+	}
+}
+
+AI_stop_building_civilian_industry = {
+	enable = {
+		check_variable = {
+			total_unemployed_percentage_display < 0.01
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = building_target id = industrial_complex value = -50 }
+	ai_strategy = { type = building_target id = arms_factory value = -50 }
+	ai_strategy = { type = building_target id = dockyard value = -50 }
+
+	# Create Other Infrastructure While Low unemployment
+	ai_strategy = { type = building_target id = radar_station value = 25 }
+	ai_strategy = { type = building_target id = infrastructure value = 25 }
+}

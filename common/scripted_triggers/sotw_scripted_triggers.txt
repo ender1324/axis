@@ -1,0 +1,117 @@
+# is german or german rk
+is_german_or_germanrk = {
+	OR = {
+		original_tag = GER
+		original_tag = SSW # SS Serbia
+		# Western RKs
+		original_tag = RKN
+		original_tag = RNO
+		original_tag = RKD
+		# original_tag = RKF french rk
+		# Eastern RKs
+		original_tag = RKP
+		original_tag = RKO
+		original_tag = RKU
+		original_tag = RKR
+		# Misc RKs
+		original_tag = RKM
+	}
+}
+
+# Should always be militarly strong
+is_major_player = {
+	OR = {
+		# STSD
+		original_tag = USA
+		original_tag = CAN
+		original_tag = AST
+		# German sphere
+		original_tag = GER
+		# Italy
+		original_tag = ITA
+		# Co-Prosperity
+		original_tag = JAP
+	}
+}
+
+# For low expectations and quality of life
+is_shithole_country = {
+	original_tag = SSW # SS Serbia
+	# Western RKs
+	original_tag = RKN
+	original_tag = RNO
+	original_tag = RKD
+	# original_tag = RKF french rk
+	# Eastern RKs
+	original_tag = RKP
+	original_tag = RKO
+	original_tag = RKU
+	original_tag = RKR
+	# Misc RKs
+	original_tag = RKM
+	# Japanese china
+	original_tag = MAN
+	AND = {
+		original_tag = CHI
+		is_subject_of = JAP
+	}
+	original_tag = YUN
+	# Japanese-imposed Sweatshops
+	original_tag = INS
+	original_tag = MAL
+	# Italian fun
+	original_tag = AOI
+	AND = {
+		original_tag = PAL
+		is_subject_of = ITA
+	}
+	AND = {
+		original_tag = UAE
+		is_subject_of = ITA
+	}
+	# Colonialism...
+	original_tag = FFA
+	original_tag = GHA
+	original_tag = SAF
+	AND = {
+		original_tag = CAR
+		date < 1956.1.1
+	}
+	# facts
+	is_in_africa = yes
+}
+
+is_in_africa = {
+	capital_scope = { is_on_continent = africa }
+}
+
+is_in_asia = {
+	capital_scope = { is_on_continent = asia }
+}
+
+is_in_europe = {
+	capital_scope = { is_on_continent = europe }
+}
+
+is_in_south_america = {
+	capital_scope = { is_on_continent = south_america }
+}
+
+is_in_north_america = {
+	capital_scope = { is_on_continent = north_america }
+}
+
+is_in_the_americas = {
+	OR = {
+		capital_scope = { is_on_continent = north_america }
+		capital_scope = { is_on_continent = south_america }
+	}
+}
+
+is_in_the_middle_east = {
+	capital_scope = { is_on_continent = middle_east }
+}
+
+is_in_oceania = {
+	capital_scope = { is_on_continent = oceania }
+}
