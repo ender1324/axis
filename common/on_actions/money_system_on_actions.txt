@@ -9,7 +9,7 @@ on_actions = {
 			# Initialize On Startup
 			set_variable = { global.average_world_productivity = 650 }
 			# needs to be in country scope?
-			GER = {
+			ENG = {
 				setup_starting_world_hydropower = yes
 			}
 
