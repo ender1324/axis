@@ -162,6 +162,18 @@
  heavy_additional_consumption_spirit: "Heavy Power Consumption Subsidies"
 
  ### Buildings
+ # Civillian factories
+ industrial_complex: "Civilian Industry"
+ industrial_complex_plural: "Civilian Industries"
+ industrial_complex_desc: "This building provides the state with industry for production of civilian goods or construction of new buildings. Can be converted to military industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y360K§!\nBase GDP Output per §YCivilian Industry§!: $§Y20 Billion§!\nBase Energy Consumption: §R-0.4§! GW"
+ # Military Factories
+ arms_factory: "Military Industry"
+ arms_factory_plural: "Military Industries"
+ arms_factory_desc: "This building provides the state with industry for production of new military equipment. Can be converted to civilian industry if needed.\n\nProvides the state with:\nBase Number of Required Workers: §Y25K§!\nBase GDP Output per §YMilitary Industry§!: $§Y1 Billion§!\nBase Energy Consumption: §R-0.4§! GW" #\n\nFuel per day (K): §R-240.00§!
+ # Naval dockyard
+ dockyard: "Naval Dockyard"
+ dockyard_plural: "Naval Dockyards"
+ dockyard_desc: "This building provides the state with industry for building new ships.\n\nProvides the state with:\nBase Number of Required Workers: §Y25K§!\nBase GDP Output per §YNaval Yard§!: $§Y1 Billion§!\nBase Energy Consumption: §R-0.4§! GW"
  # Renewable Energy Plants
  synthetic_refinery: "Renewable Energy Infrastructure"
  synthetic_refinery_plural: "Renewable Energy Infrastructure"
