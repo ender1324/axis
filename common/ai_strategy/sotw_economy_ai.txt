@@ -110,7 +110,7 @@ major_production_of_factories1 = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 12
+		value = 15
 	}
 }
 
@@ -146,7 +146,7 @@ AI_production_of_factories_USA = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 15
+		value = 30
 	}
 }
 
