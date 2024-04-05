@@ -26,22 +26,49 @@
  SL_status_primeminister: "PM"
  SL_status_marshall: "Marshall"
  SL_status_fuhrer: "Fuhrer"
+ SL_status_forer: "Fører"
  SL_status_president: "President"
  SL_status_vicepresident: "Vice President"
  # First in Command leader status
  SL_status_reichspresident: "Reichspräsident"
+ SL_status_reichkommissar: "Reichskommissar"
+ SL_status_plenipotentiary: "Plenipotentiary"
  SL_status_ficdefault: "Leader"
  
  ####################
  ###    GERMANY   ###
  ####################
  SL_name_adolf_hitler: "$GER_adolf_hitler$"
- SL_trait_adolf_hitler: "§Y$figurehead_fuhrer$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_FACTOR$: §R-5.00%§!\n  - Stability while at war: §R-10.00%§!"
+ SL_trait_adolf_hitler: "§Y$figurehead_fuhrer$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_OFFENSIVE_WAR_FACTOR$: §R-10.00%§!"
  SL_name_with_trait_adolf_hitler: "§Y$GER_adolf_hitler$§!\n$SL_trait_adolf_hitler$"
  SL_diplomacy_name_with_trait_adolf_hitler: "§Y$GER_adolf_hitler$§!\n$SL_fancy_status$\n$SL_trait_adolf_hitler$"
  SL_desc_adolf_hitler: "$GER_SL_adolf_hitler_idea_desc$"
  GER_SL_adolf_hitler_idea: "$GER_adolf_hitler$"
  GER_SL_adolf_hitler_idea_desc: "Adolf Hitler, the architect of Europe's darkest hour, now languishes in the twilight of his reign. In the aftermath of his victory in World War II, Hitler's dreams of a Thousand Year Reich seemed within grasp. The conquered lands of Europe lay prostrate before him, their peoples subjugated and their resistance crushed beneath the iron heel of German supremacy. §RYet, victory came at a cost.§!\n\nBy 1953, the Reich stands as a colossus, stretching from the Atlantic shores to the distant steppes of Russia. But beneath the facade of triumph lies a nation teetering on the brink of collapse. The strains of war have taken their toll, plunging the German economy into turmoil and stretching the resources of the Reich to their limits.\n\nHitler's once unassailable grip on power has faltered, his mind now clouded by the ravages of schizophrenia. In 1949, as his condition deteriorated, the §0inner circle§! seized control, relegating him to the sidelines of power. Now, the decisions that shape the destiny of the Reich are made not by Hitler's vision, but by the machinations of his \"trusted\" ministers and the newly empowered Reichspräsident who had been selected as a successor by his will before.\n\nAs Hitler fades into obscurity, spending his days in isolated vacation homes, his legacy becomes increasingly tarnished. The Reich finds itself overstretched, its grip on vast swathes of territory from Poland to Western Russia tenuous at best. The once mighty war machine, fueled by conquest and fueled by ideology, now struggles to maintain control amidst simmering resistance and resentment from subjugated populations. §RAnd the partisans don't seem to be giving up...§!\n\nBut even in his twilight years, the specter of Hitler's legacy looms large over Europe. The scars of his reign, marked by discrimination, genocide, and unspeakable atrocities, continue to haunt the collective consciousness of those oppressed by it. As Hitler's grip on reality weakens, his final days serve as a grim reminder of the dangers of unchecked ambition and the horrors of tyranny. In the end, the Führer who once held the fate of nations in his hands fades into history, §Ras even the mightiest of tyrants are ultimately mortal.§!\n\n§0Even if Germany has not given up on its dreams of greatness yet, it is clear it won't be Hitler who completes them...§!"
+
+ ######################################
+ ###   Reichkommissariat Danemark   ###
+ ######################################
+ Cay_Lembcke: "Cay Lembcke"
+ SL_name_Cay_Lembcke: "$Cay_Lembcke$"
+ SL_trait_Cay_Lembcke: "§Y$forer_denmark$§!\n  - $national_socialism_acceptance$: §G+50§!\n  - $MODIFIER_RECRUITABLE_POPULATION_FACTOR$: §G10.00%§!\n  - $MODIFIER_TRADE_TO_OVERLORD_FACTOR$: §R+20.00%§!\n  - $MODIFIER_CIC_TO_OVERLORD_FACTOR$: §R+10.00%§!"
+ SL_name_with_trait_Cay_Lembcke: "§Y$Cay_Lembcke$§!\n$SL_trait_Cay_Lembcke$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Cay_Lembcke: "§Y$Cay_Lembcke$§!\n$SL_fancy_status$\n$SL_trait_Cay_Lembcke$"
+ SL_desc_Cay_Lembcke: "$RKD_SL_Cay_Lembcke_idea_desc$"
+ RKD_SL_Cay_Lembcke_idea: "$Cay_Lembcke$"
+ RKD_SL_Cay_Lembcke_idea_desc: "§LDuring World War II, Lembcke was known for his leadership of National Socialist Workers' Party of Denmark within Danish politics, advocating for the implementation of the same radical policies Germany had started to implement. As the wehrmacht occupied the country, he seized the opportunity to advance his agenda, pleading for funding from Germany and unifying organizations sympathetic to the Nazi cause.\n\nWith the establishment of the collaborationist Danish government, Lembcke's influence grew, with the German administration finding him as a useful puppet to use in the future. As the forerunner of the Danish National Socialist Party, he positioned himself as a champion of Danish interests, promoting collaboration with the Axis powers in exchange for false promises of sovereignty and independence.\n\nAfter the war had ended, Lembcke had already ensured the DNSAP would be the ruling party of the new Danish state. The democratic-aligned government either fled or was imprisoned and Denmark was reorganized into a Reichkommissariat for the new world order. In his role as the Fører of the population and a key figure in the civilian administration, Lembcke works closely with the Reich's Plenipotentiary, to ensure the smooth implementation of Germanization policies. While cooperating with the wishes of Germania, he also seeks to advance the interests of his own party, using his position of power to consolidate influence and promote his vision, even one day having ambition of rising to the proper Plenipotentiary to the Reich.\n\nYet, with all the betreyal and collaboration, Best knows the power structure does not allow for that to happen, and with Lembckes allegiance torn between the aspirations of his party and the demands of his German overlords, the status quo in Reichkommissariat Danemark will continue for years to come...§!"
+
+ #######################################
+ ###   Reichkommissariat Norwegien   ###
+ #######################################
+ Vidkun_Quisling: "Vidkun Quisling"
+ SL_name_Vidkun_Quisling: "$Vidkun_Quisling$"
+ SL_trait_Vidkun_Quisling: "§Y$country_traitor_norway$§!\n  - $MODIFIER_TRADE_TO_OVERLORD_FACTOR$: §R+20.00%§!\n  - $MODIFIER_CIC_TO_OVERLORD_FACTOR$: §R+10.00%§!\n  - $MODIFIER_MIC_TO_OVERLORD_FACTOR$: §R+10.00%§!\n  - $MODIFIER_SURRENDER_LIMIT$: §R-10.00%§!"
+ SL_name_with_trait_Vidkun_Quisling: "§Y$Vidkun_Quisling$§!\n$SL_trait_Vidkun_Quisling$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Vidkun_Quisling: "§Y$Vidkun_Quisling$§!\n$SL_fancy_status$\n$SL_trait_Vidkun_Quisling$"
+ SL_desc_Vidkun_Quisling: "$RNO_SL_Vidkun_Quisling_idea_desc$"
+ RNO_SL_Vidkun_Quisling_idea: "$Vidkun_Quisling$"
+ RNO_SL_Vidkun_Quisling_idea_desc: "§LDuring World War II, Quisling's collaborationist regime sought to align Norway with the Axis powers, betraying the trust of his own people for the promise of power. His tenure as Minister President of Norway during the German occupation saw the imposition of drastic measures and the handover of the sovergnity of the country, all in service to the Axis cause.\n\nToday, Quisling finds himself ensconced in a gilded cage, his once grand ambitions reduced to mere ceremonial duties. The real power in Norway lies not with him, but with the Reichskommissar Josef Terboven, who deftly manipulates the levers of control behind the scenes, leaving Quisling marginalized and impotent in matters of state.\n\nThe man who once envisioned himself to a new order under the banner of Nasjonal Samling finds himself relegated to a mere figurehead, stripped of authority by his erstwhile allies turned overlords. Despite his diminished status, Quisling harbors secret ambitions of reclaiming power for himself. However, the German administration, backed by Terboven's grip on the region, ensures that Quisling remains nothing more than a figurehead, incapable of influencing any significant decisions.§!"
 
  ####################
  ###    CANADA    ###
@@ -54,6 +81,27 @@
  SL_desc_Elizabeth_II: "$CAN_SL_Elizabeth_II_idea_desc$"
  CAN_SL_Elizabeth_II_idea: "$Elizabeth_II$"
  CAN_SL_Elizabeth_II_idea_desc: "§LElizabeth Alexandra Mary was never supposed to be Queen. Born in 1926 during the reign of her grandfather George V, she was the eldest daughter of the king's second son, Albert, Prince of York. When her father acceded to the throne in 1936 following the abdication of his brother, a young Elizabeth became the heir apparent to the British throne.\n\nDuring the Second World War, a then-fourteen Princess Elizabeth fled Britain to their dominion in Canada, her father and the rest of the royal family and government joining her following the fall of the British Isles. The British crown was left divided, with George VI claiming the throne from Canada and the former king Edward placed on the throne by the Germans. Elizabeth acceded to this competition when her father died in 1952, leaving her as Queen Elizabeth II.\n\nHer reign has been respectable, compared to her adversary in London. Scaling back the crown's major sway over their Canadian hosts, she has won the people of the domains she still lays claim over. But as tensions begin to rise again across the globe, the Canadians are starting to grow tired of hosting the large community of British exiles and their politics.§!\n§RIf Canada commits too strongly to the British cause, there will be dire consequences...§!"
+
+ ##############
+ ### Norway ###
+ ##############
+ Haakon_VII: "Haakon VII"
+ SL_name_Haakon_VII: "$Haakon_VII$"
+ SL_trait_Haakon_VII: "§Y$popular_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+15.00%§!"
+ SL_name_with_trait_Haakon_VII: "§Y$Haakon_VII$§!\n$SL_trait_Haakon_VII$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Haakon_VII: "§Y$Haakon_VII$§!\n$SL_fancy_status$\n$SL_trait_Haakon_VII$"
+ SL_desc_Haakon_VII: "$NOR_SL_Haakon_VII_idea_desc$"
+ NOR_SL_Haakon_VII_idea: "$Haakon_VII$"
+ NOR_SL_Haakon_VII_idea_desc: "§LAs the Quisling regime seized control of the Norwegian mainland, Hakon and the royal family were forced into exile, seeking refuge in the United Kingdom. Settling in Kensington, they clung to the remnants of a shattered nation, their spirits unbroken despite the encroaching shadow of the German occupation.\n\nBut as the ongoing war reached the British shores, Haakon and his family were once again uprooted, fleeing across the Atlantic to the relative safety of Montreal. From there, the Norwegian government-in-exile de-facto moved to the desolate island of Jan Mayen, far removed from the chaos and turmoil of war-torn Europe.\n\nIn the last years of his life, he finds himself isolated in his residence, his duties as king overshadowed by the practical responsibilities of the exile government. While the Prime Minister handles the day-to-day affairs of the Norwegian exiles in Canada, Haakon's presence serves as the last hope for those back home and the remaining resistance, who use his \"H7\" monogram as a symbol of resistance against the German occupation.\n\nGermanization policies, enforced by the German regime continue trying to extinguish the Norwegian identity, leaving Haakon worried about his people who are trapped in a cycle of education about a culture that's not theirs.\n\nDespite the darkness that surrounds them, he clings to the belief that one day, Norway will be free once more. With each passing day, the posibility of war increases and knowing that as long as the spirit of Norway burns bright, there remains hope for a brighter tomorrow.§!"
+
+ Olav_V: "Olav V"
+ SL_name_Olav_V: "$Haakon_VII$"
+ SL_trait_Olav_V: "§Y$veteran_king$§!\n  - $MODIFIER_WAR_SUPPORT_FACTOR$: §G+5.00%§!\n  - [GER.GetFlag]§Y[GER.GetName]§!\n   $MODIFIER_ATTACK_BONUS_AGAINST_A_COUNTRY$: §G+15.00%§!\n   $MODIFIER_DEFENSE_BONUS_AGAINST_A_COUNTRY$: §G+10.00%§!"
+ SL_name_with_trait_Olav_V: "§Y$Olav_V$§!\n$SL_trait_Olav_V$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Olav_V: "§Y$Olav_V$§!\n$SL_fancy_status$\n$SL_trait_Olav_V$"
+ SL_desc_Olav_V: "$NOR_SL_Olav_V_idea_desc$"
+ NOR_SL_Olav_V_idea: "$Olav_VII$"
+ NOR_SL_Olav_V_idea_desc: "§LFollowing the evacuation of his father, King Hakon VII, to Montreal along with the rest of the government in exile, Olav refused to abandon the fight against the Reichskommissariat of Norway. Establishing resistance headquarters in Jan Mayen, he marshaled his military expertise gained from service in the Norwegian army during World War II to orchestrate daring resistance operations from the Faroe Islands.\n\nWith each clandestine mission, Olav garnered widespread admiration and support among the Norwegian population, who looked to him as a symbol of defiance against the German occupiers. His popularity soared as tales of his bravery and determination spread throughout the occupied homeland, fueling the resistance and bolstering the spirit of the oppressed.\n\nNow, with the passing of his father and the weight of the crown upon his brow, Olav inherits the solemn duty to lead his people to liberation. Determined to free Norway from the clutches of the German bootlickers and oppressors at Oslo, he rallies the remnants of the Norwegian resistance to his cause, forging a path towards a future of freedom.\n\nAs the geopolitical athmosphere heats up again, the exiles prepare to liberate the homeland with courage in their hearts. The support of his people at his back, he embarks on a journey determined to reclaim his homeland from the grip of the nazis.§!"
 
  ###############
  ### ENGLAND ###

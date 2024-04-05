@@ -1,0 +1,17 @@
+characters = {
+	RNO_josef_terboven = {
+		name = RNO_josef_terboven
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Josef_Terboven"
+			}
+		}
+		country_leader = {
+			desc = RNO_josef_terboven_desc
+			ideology = national_socialism_subtype
+			expire = 1999.01.01
+			traits = {
+			}
+		}
+	}
+}

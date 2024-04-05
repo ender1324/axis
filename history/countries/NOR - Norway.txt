@@ -4,6 +4,32 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	# LAWS
+	sl_unitary_state
+	sl_extremist_censorship
+	sl_secularism
+	sl_minorities_state_protection
+	sl_total_equality
+	sl_controlled_protests
+	# economy laws
+	sl_interventionism
+	sl_flat_taxation
+	sl_low_tariffs
+	sl_allowed_unions
+	sl_eight_hour_workday
+	# Public Structure
+	sl_state_policing2
+	sl_penal_incarceration
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits3
+	# Military Structure
+	sl_military_spending0
+	# Secondary Leaders
+	NOR_SL_Haakon_VII_idea
+}
+
 set_politics = {
 	ruling_party = paternalism
 	last_election = "1953.01.01"
@@ -26,5 +52,9 @@ set_popularities = {
 	national_socialism = 0
 	occultism = 0
 }
+
+recruit_character = NOR_haakon_VII
+recruit_character = NOR_olav_V
+recruit_character = NOR_oscar_torp
 
 set_convoys = 50

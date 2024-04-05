@@ -1,14 +1,41 @@
 # Used in the diplomacy GUI to show the main leader status
 defined_text = {
 	name = SL_main_status
+	# ReichsPresident
 	text = {
 		trigger = { tag = GER }
 		localization_key = SL_status_reichspresident
 	}
+	# Reichskommissar
+	text = {
+		trigger = {
+			OR = {
+				tag = RKN
+				tag = RNO
+				tag = RKO
+				tag = RKU
+				tag = RKR
+				tag = RKK
+				tag = RKM
+			}
+		}
+		localization_key = SL_status_reichkommissar
+	}
+	# Plenipotentiary
+	text = {
+		trigger = {
+			OR = {
+				tag = RKD
+			}
+		}
+		localization_key = SL_status_plenipotentiary
+	}
+	# Prime Minister
 	text = {
 		trigger = {
 			OR = {
 				tag = CAN
+				tag = NOR
 				tag = ENG
 			}
 		}
@@ -20,26 +47,38 @@ defined_text = {
 # Used in the diplomacy GUI to show the secondary leader status
 defined_text = {
 	name = SL_second_status
+	# Fuhrer
 	text = {
 		trigger = {
 			tag = GER
 		}
 		localization_key = SL_status_fuhrer
 	}
-	# Canada
+	# Fører
 	text = {
 		trigger = {
-			AND = {
-				tag = CAN
+			OR = {
+				tag = RKD
+				tag = RNO
+			}
+		}
+		localization_key = SL_status_forer
+	}
+	# Queen
+	text = {
+		trigger = {
+			OR = {
 				has_idea = CAN_SL_Elizabeth_II_idea
 			}
 		}
 		localization_key = SL_status_queen
 	}
-	# England
+	# King
 	text = {
 		trigger = {
 			OR = {
+				tag = NOR
+				tag = DEN
 				tag = ENG
 				tag = FER
 			}
@@ -56,10 +95,29 @@ defined_text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }
 		localization_key = GFX_portrait_GER_adolf_hitler
 	}
+	# RK Denmark
+	text = {
+		trigger = { has_idea = RKD_SL_Cay_Lembcke_idea }
+		localization_key = GFX_portrait_Cay_Lembcke
+	}
+	# RK Norwegien
+	text = {
+		trigger = { has_idea = RNO_SL_Vidkun_Quisling_idea }
+		localization_key = GFX_portrait_Vidkun_Quisling
+	}
 	# Canada
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = GFX_portrait_CAN_Elizabeth_II
+	}
+	# Norway
+	text = {
+		trigger = { has_idea = NOR_SL_Haakon_VII_idea }
+		localization_key = GFX_portrait_haakon_VII
+	}
+	text = {
+		trigger = { has_idea = NOR_SL_Olav_V_idea }
+		localization_key = GFX_portrait_olav_V
 	}
 	# England
 	text = {
@@ -86,10 +144,29 @@ defined_text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }
 		localization_key = SL_name_adolf_hitler
 	}
+	# RK Denmark
+	text = {
+		trigger = { has_idea = RKD_SL_Cay_Lembcke_idea }
+		localization_key = SL_name_Cay_Lembcke
+	}
+	# RK Norwegien
+	text = {
+		trigger = { has_idea = RNO_SL_Vidkun_Quisling_idea }
+		localization_key = SL_name_Vidkun_Quisling
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_name_Elizabeth_II
+	}
+	# Norway
+	text = {
+		trigger = { has_idea = NOR_SL_Haakon_VII_idea }
+		localization_key = SL_name_Haakon_VII
+	}
+	text = {
+		trigger = { has_idea = NOR_SL_Olav_V_idea }
+		localization_key = SL_name_Olav_V
 	}
 	# ENGLAND
 	text = {
@@ -117,10 +194,29 @@ defined_text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }
 		localization_key = SL_name_with_trait_adolf_hitler
 	}
+	# RK denmark
+	text = {
+		trigger = { has_idea = RKD_SL_Cay_Lembcke_idea }
+		localization_key = SL_name_with_trait_Cay_Lembcke
+	}
+	# RK Norwegien
+	text = {
+		trigger = { has_idea = RNO_SL_Vidkun_Quisling_idea }
+		localization_key = SL_name_with_trait_Vidkun_Quisling
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_name_with_trait_Elizabeth_II
+	}
+	# Norway
+	text = {
+		trigger = { has_idea = NOR_SL_Haakon_VII_idea }
+		localization_key = SL_name_with_trait_Haakon_VII
+	}
+	text = {
+		trigger = { has_idea = NOR_SL_Olav_V_idea }
+		localization_key = SL_name_with_trait_Olav_V
 	}
 	# ENGLAND
 	text = {
@@ -142,10 +238,29 @@ defined_text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }
 		localization_key = SL_diplomacy_name_with_trait_adolf_hitler
 	}
+	# RK Denmark
+	text = {
+		trigger = { has_idea = RKD_SL_Cay_Lembcke_idea }
+		localization_key = SL_diplomacy_name_with_trait_Cay_Lembcke
+	}
+	# RK Norwegien
+	text = {
+		trigger = { has_idea = RNO_SL_Vidkun_Quisling_idea }
+		localization_key = SL_diplomacy_name_with_trait_Vidkun_Quisling
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_diplomacy_name_with_trait_Elizabeth_II
+	}
+	# Norway
+	text = {
+		trigger = { has_idea = NOR_SL_Haakon_VII_idea }
+		localization_key = SL_diplomacy_name_with_trait_Haakon_VII
+	}
+	text = {
+		trigger = { has_idea = NOR_SL_Olav_V_idea }
+		localization_key = SL_diplomacy_name_with_trait_Olav_V
 	}
 	# ENGLAND
 	text = {
@@ -167,10 +282,29 @@ defined_text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }
 		localization_key = SL_desc_adolf_hitler
 	}
+	# RK Denmark
+	text = {
+		trigger = { has_idea = RKD_SL_Cay_Lembcke_idea }
+		localization_key = SL_desc_Cay_Lembcke
+	}
+	# RK Norwegien
+	text = {
+		trigger = { has_idea = RNO_SL_Vidkun_Quisling_idea }
+		localization_key = SL_desc_Vidkun_Quisling
+	}
 	# CANADA
 	text = {
 		trigger = { has_idea = CAN_SL_Elizabeth_II_idea }
 		localization_key = SL_desc_Elizabeth_II
+	}
+	# Norway
+	text = {
+		trigger = { has_idea = NOR_SL_Haakon_VII_idea }
+		localization_key = SL_desc_Haakon_VII
+	}
+	text = {
+		trigger = { has_idea = NOR_SL_Olav_V_idea }
+		localization_key = SL_desc_Olav_V
 	}
 	# ENGLAND
 	text = {

@@ -13,6 +13,32 @@ ideas = {
 
 			traits = { figurehead_fuhrer }
 		}
+		# RK Danemark
+		RKD_SL_Cay_Lembcke_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { forer_denmark }
+		}
+		# RK Norwegien
+		RNO_SL_Vidkun_Quisling_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { country_traitor_norway }
+		}
 		# CANADA
 		CAN_SL_Elizabeth_II_idea = {
 			allowed = {
@@ -26,6 +52,33 @@ ideas = {
 			removal_cost = -1
 			
 			traits = { popular_figurehead }
+		}
+		# Norway
+		NOR_SL_Haakon_VII_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+		}
+		NOR_SL_Olav_V_idea = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			traits = { veteran_king }
 		}
 		# ENGLAND
 		ENG_SL_Edward_VIII_idea = {

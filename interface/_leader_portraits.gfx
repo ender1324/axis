@@ -16,6 +16,7 @@ spriteTypes = {
 		name = "GFX_portrait_unknown_female"
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
+
 	# Germany
 	spriteType = {
 		name = "GFX_portrait_GER_adolf_hitler"
@@ -31,6 +32,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_SSW_heinrich_himmler"
 		textureFile = "gfx/leaders/SSW/Portrait_Serbia_Heinrich_Himmler.dds"
+	}
+
+	# Reichkommissariat Danemark
+	spriteType = {
+		name = "GFX_portrait_Werner_Best"
+		textureFile = "gfx/leaders/RKD/Portrait_Werner_Best.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cay_Lembcke"
+		textureFile = "gfx/leaders/RKD/Portrait_Cay_Lembcke.dds"
+	}
+
+	# Reichkommissariat Norwegien
+	spriteType = {
+		name = "GFX_portrait_Josef_Terboven"
+		textureFile = "gfx/leaders/RNO/Portrait_Josef_Terboven.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Vidkun_Quisling"
+		textureFile = "gfx/leaders/RNO/Portrait_Vidkun_Quisling.dds"
 	}
 
 	# Scotland
@@ -69,6 +90,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_CAN_Elizabeth_II"
 		textureFile = "gfx/leaders/CAN/Portrait_Canada_Elizabeth.dds"
+	}
+
+	# Norway
+	spriteType = {
+		name = "GFX_portrait_haakon_VII"
+		textureFile = "gfx/leaders/NOR/Portrait_Haakon_VII.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_olav_V"
+		textureFile = "gfx/leaders/NOR/Portrait_Olav_V.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_oscar_torp"
+		textureFile = "gfx/leaders/NOR/Portrait_Oscar_Torp.dds"
 	}
 
 	# General Russian Portraits

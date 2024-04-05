@@ -1,0 +1,50 @@
+characters = {
+	NOR_haakon_VII = {
+		name = Haakon_VII
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_haakon_VII"
+			}
+		}
+		country_leader = {
+			desc = NOR_SL_Haakon_VII_idea_desc
+			ideology = absolute_monarchy_subtype
+			expire = 1957.11.01
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	NOR_olav_V = {
+		name = Olav_V
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_olav_V"
+			}
+		}
+		country_leader = {
+			desc = NOR_SL_Olav_V_idea_desc
+			ideology = absolute_monarchy_subtype
+			expire = 1991.01.17
+			traits = {
+				veteran_king
+			}
+		}
+	}
+	NOR_oscar_torp = {
+		name = NOR_oscar_torp
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_oscar_torp"
+			}
+		}
+		country_leader = {
+			desc = NOR_oscar_torp_desc
+			ideology = big_tent_subtype
+			expire = 1999.01.01 # dont expire
+			traits = {
+				likes_allies
+			}
+		}
+	}
+}

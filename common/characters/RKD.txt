@@ -1,0 +1,17 @@
+characters = {
+	RKD_werner_best = {
+		name = RKD_werner_best
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Werner_Best"
+			}
+		}
+		country_leader = {
+			desc = RKD_werner_best_desc
+			ideology = national_socialism_subtype
+			expire = 1999.01.01
+			traits = {
+			}
+		}
+	}
+}
