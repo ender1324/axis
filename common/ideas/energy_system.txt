@@ -40,5 +40,39 @@ ideas = {
 				tax_gain_multiplier_modifier = 0.075
 			}
 		}
+
+		# M oney system ideas
+		projects_infrastructure_idea = {
+			name = projects_infrastructure_tt
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea infrastructure_investiture_idea" }
+			modifier = {
+				production_speed_infrastructure_factor = 0.20
+				production_speed_internet_station_factor = 0.20
+			}
+		}
+
+		projects_civilian_factories_idea = {
+			name = projects_civilian_factories_tt
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea industrial_projects_idea" }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+			}
+		}
+
+		projects_offices_idea = {
+			name = projects_offices_tt
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea service_constructions_idea" }
+			modifier = {
+				production_speed_offices_factor = 0.20
+			}
+		}
+
+		projects_military_factories_idea = {
+			name = projects_military_factories_tt
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea arms_industry_stipends_idea" }
+			modifier = {
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
 	}
 }

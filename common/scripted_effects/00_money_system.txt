@@ -72,7 +72,7 @@ ingame_update_setup = {
 		calculate_ai_taxes_desire = yes
 	}
 
-	#Visuals
+	# GUI
 	update_display = yes
 	if = {
 		limit = { is_debug = yes }
@@ -83,6 +83,7 @@ ingame_update_setup = {
 		force_update_map_mode = { mapmode = energy_consumption_map_mode }
 		force_update_map_mode = { mapmode = productivity_map_mode }
 	}
+	calculate_economy_balance_value = yes
 
 	# Dirty UI
 	if = { limit = { NOT = { has_variable = global.update_monie_ui } }
@@ -2570,4 +2571,22 @@ setup_starting_world_productivity = {
 		}
 	}
 	update_employment_productivity_output_dynamic_modifier = yes
+}
+
+calculate_economy_balance_value = {
+	# income + expenses
+	set_temp_variable = { spending_volume = display_income }
+	add_to_temp_variable = { spending_volume = display_expense }
+	
+	# what % is expense from the spending volume [% = (expense / volume) * 100]
+	set_temp_variable = { expense_percentage = display_expense }
+	divide_temp_variable = { expense_percentage = spending_volume }
+	multiply_temp_variable = { expense_percentage = 100 }
+	round_temp_variable = expense_percentage
+	clamp_temp_variable = { var = expense_percentage min = 15 max = 85 } # dont let the gui not show income or expense
+
+	# what % is income from spending volume
+	#set_temp_variable = { income_percentage = 100 }
+	#subtract_from_temp_variable = { income_percentage = income_percentage }
+
 }

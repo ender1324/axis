@@ -1,0 +1,84 @@
+spriteTypes = {
+	# Core.gfx
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_thin_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_no_top"
+		#size= { x=192 y=192 } i dont remember why i commented this out and honestly i dont fucking care
+		textureFile = "gfx//interface//tiles//tiled_window_no_top.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_full_very_rounded"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_window_full_very_rounded.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	# generalstuff.gfx
+	spriteType = {
+		name = "GFX_generic_box_wider"
+		texturefile = "gfx/interface/genericview/generic_box_wider.dds"
+	}
+
+	spriteType = {
+		name = "GFX_closebutton"
+		texturefile = "gfx//interface//genericview//closebutton.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_closebutton_small"
+		texturefile = "gfx//interface//genericview//closebutton_small.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+	spriteType = {
+		name = "GFX_header_bg"
+		texturefile = "gfx/interface/genericview/header_bg.dds"
+	}
+
+	# My own additions
+	spriteType = {
+		name = "GFX_arrow_up_small"
+		textureFile = "gfx//interface//genericview//arrow_up_small.dds"
+	}
+	spriteType = {
+		name = "GFX_arrow_down_small"
+		textureFile = "gfx//interface//genericview//arrow_down_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_economy_box"
+		textureFile = "gfx//interface//genericview//generic_economy_box.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_economy_box_small"
+		textureFile = "gfx//interface//genericview//generic_economy_box_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tinted_plus_button"
+		textureFile = "gfx//interface//genericview//tinted_plus_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tinted_minus_button"
+		textureFile = "gfx//interface//genericview//tinted_minus_button.dds"
+	}
+}

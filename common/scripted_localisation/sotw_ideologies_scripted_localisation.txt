@@ -60,7 +60,7 @@ defined_text = {
 		trigger = {
 			has_country_leader_ideology = anarchy_subtype
 		}
-		localization_key = anarchism_subtype
+		localization_key = anarchy_subtype
 	}
 	text = {
 		localization_key = anarchism

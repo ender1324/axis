@@ -267,6 +267,22 @@ calculate_energy_use = {
 	multiply_variable = { non_electric_fuel_display = 24 }
 
 	force_update_dynamic_modifier = yes
+
+	# energy gui balance thing
+	calculate_energy_balance_percentage = yes
+}
+
+calculate_energy_balance_percentage = {
+	# generation + consumption
+	set_temp_variable = { energy_volume = energy_sum }
+	add_to_temp_variable = { energy_volume = energy_consumption }
+	
+	# what % is usage from the energy volume [% = (usage / volume) * 100]
+	set_temp_variable = { energy_usage_percentage = energy_consumption }
+	divide_temp_variable = { energy_usage_percentage = energy_volume }
+	multiply_temp_variable = { energy_usage_percentage = 100 }
+	round_temp_variable = energy_usage_percentage
+	clamp_temp_variable = { var = energy_usage_percentage min = 15 max = 85 } # dont let the gui not show income or expense
 }
 
 energy_on_daily = {
