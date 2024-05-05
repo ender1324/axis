@@ -141,4 +141,16 @@ spriteTypes = {
 		name = "GFX_portrait_PRC_mao_zedong"
 		textureFile = "gfx/leaders/PRC/Portrait_China_Mao_Zedong.dds"
 	}
+
+	# Free France
+	spriteType = {
+		name = "GFX_portrait_charles_degaulle"
+		textureFile = "gfx/leaders/FFA/Portrait_Charles_DeGaulle.dds"
+	}
+
+	# China
+	spriteType = {
+		name = "GFX_portrait_wang_jingwei"
+		textureFile = "gfx/leaders/CHI/Portrait_Wang_Jingwei.dds"
+	}
 }

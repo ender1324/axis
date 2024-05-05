@@ -73,7 +73,7 @@
  legitimate_heir:0 "Legitimate Heir"
  collaborator_king:0 "The Collaborator King"
  #### New traits added by mod
- canadian_stsd_cofounder: "The Canadian STSD Co-Founder"
+ canadian_stsd_cofounder: "STSD Co-Founder"
  figurehead_fuhrer: "The Fading Fuhrer"
  exiled_kadet: "The Exiled Kadet"
  returning_emir: "The Returning Emir"
@@ -82,6 +82,7 @@
  veteran_king: "The Veteran King"
  forer_denmark: "Fører of Dänemark"
  country_traitor_norway: "Landsforræder"
+ last_soldier_standing: "Last Solder Standing"
 
  #### IDK
  SEAWOLF_TRIGGER_TT:0 "More than 80% submarines in fleet"

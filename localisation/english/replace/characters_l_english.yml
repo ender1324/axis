@@ -28,6 +28,12 @@
  CAN_louis_laurent: "Louis St. Laurent"
  CAN_john_diefenbaker: "John Diefenbaker"
  CAN_lester_pearson: "Lester B. Pearson"
+ ###################
+ ### Free France ###
+ ###################
+ # LEADERS
+ FFA_charles_degaulle: "Charles De Gaulle"
+ FFA_charles_degaulle_desc: "Responsibility for Free France's demise weighs heavily upon his shoulders. The betrayal of former allies, the abandonment by the United States, and the relentless advance of the German forces have left him isolated and vulnerable. Yet, he refuses to surrender to despair.\n\nIn a desperate bid to maintain French rule in Africa, De Gaulle turns to harsh measures. Pan-africanists gain ground in the East, threatening the already absent stability he has fought so hard to preserve. Crackdowns on native resistance are often done, trying to preserve the remnants of colonial authority.\n\nBut fate is a cruel mistress, and even the best-laid plans crumble in the face of adversity. The Spanish State's invasion of Mauritania, driven by Franco's colonial ambitions, ignited a powder keg of chaos. The Pan-Africanist militias emerged from the depths of the jungle, while the collaborationist traitors reveal their true colors.\n\nProvince by province, Free France collapsed under the weight of its own decay. De Gaulle and his colonial army retreated to Senegal, holding the border against the encroaching tide of chaos. Survival became their sole objective, as the lack of interest from Spain and the absence of resistance prolong their tenuous existence.\n\nDe Gaulle plots his return, his eyes fixed on reclaiming the old colonial mandates and, ultimately, liberating the French mainland. Though the path ahead is difficult to swallow, he refuses to surrender.\n\n§BFor in the heart of Africa,§! §Wthe flame of French§! §Rresistance still flickers§!."
  ##############
  ### Norway ###
  ##############
@@ -87,6 +93,11 @@
  ################################
  # LEADERS
  RRO_alexy_I: "Patriarch Alexy I"
+ ######################
+ ### Japanese China ###
+ ######################
+ CHI_wang_jingwei: "Wang Jingwei"
+ CHI_wang_jingwei_desc: "Wang's belief in China's salvation rested solely upon his shoulders. With little faith in China's ability to emerge victorious from the chaos of war, he turned to the Japanese as early as 1938, seeking to lead a government under their auspices. In 1940, his pleas were answered, and he ascended to the position of head of state of the Japanese-backed collaborationist government.\n\nFounded upon the principles of Pan-Asianism, anti-communism, and opposition to Chiang Kai-shek, Wang's government held the promise of a new dawn for China. Yet, as the years passed, he watched helplessly as that promise crumbled before his eyes.\n\nThe Japanese, far from benevolent benefactors, exploited the Pan-Asianist settlement to further their own interests. They tore apart concessions from China, transforming swathes of territory into corporate playgrounds while enforcing extreme demands upon the rest of the nation. Wang's vision of China as an equal partner was shattered, replaced by the grim reality of a nation reduced to a mere exporter of food, goods, and raw resources to Japan.\n\nIn the industrialists' relentless pursuit of profit, China became little more than a sandbox for their experiments, its people mere pawns in their game of power and greed. Wang finds himself powerless to stem the exploitation and despair.\n\§RAnd he will be forever remembered as the man who sold China to the Japanese for nothing§!"
  ##########################
  ### Far-Eastern Russia ###
  ##########################

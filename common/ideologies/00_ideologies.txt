@@ -208,6 +208,7 @@ ideologies = {
 		types = {
 			paternalism_subtype = {}
 			big_tent_subtype = {}
+			anocracy_subtype = {}
 		}
 		dynamic_faction_names = {}
 		color = { 175 175 175 }

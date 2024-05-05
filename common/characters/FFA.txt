@@ -1,0 +1,19 @@
+characters = {
+	FFA_Charles_DeGaulle = {
+		name = FFA_charles_degaulle
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_charles_degaulle"
+			}
+		}
+
+		country_leader = {
+			desc = FFA_charles_degaulle_desc
+			ideology = anocracy_subtype
+			expire = 1999.1.1
+			traits = {
+				last_soldier_standing
+			}
+		}
+	}
+}

@@ -29,4 +29,6 @@ set_popularities = {
 	occultism = 3
 }
 
+recruit_character = FFA_Charles_DeGaulle
+
 set_convoys = 50

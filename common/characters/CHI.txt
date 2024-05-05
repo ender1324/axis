@@ -1,0 +1,15 @@
+characters = {
+	CHI_Wang_Jingwei = {
+		name = CHI_wang_jingwei
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_wang_jingwei"
+			}
+		}
+		country_leader = {
+			desc = CHI_wang_jingwei_desc
+			ideology = despotism_subtype
+			expire = 1953.2.20 # todo idk fix
+		}
+	}
+}
