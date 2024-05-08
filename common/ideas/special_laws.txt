@@ -2770,7 +2770,7 @@ ideas = {
             }
 
             on_add = {
-				custom_effect_tooltip = sl_unemployment_benefits3
+				custom_effect_tooltip = sl_unemployment_benefits3_tt
 
 				set_variable = { sl_unemployment_benefits = 3 }
 				ingame_update_setup = yes

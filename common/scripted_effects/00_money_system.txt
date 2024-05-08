@@ -486,8 +486,8 @@ update_military_rate = {
 	#Set the base cost for each spending level based on size of military industry ( [num_of_mil_factories + num_of_naval_factories]/modifier )
 	multiply_variable = { array_defence_spend^0 = 0.001 }
 	multiply_variable = { array_defence_spend^0 = 0.46 }
-	multiply_variable = { array_defence_spend^1 = 0.015 }
-	multiply_variable = { array_defence_spend^2 = 0.01 }
+	multiply_variable = { array_defence_spend^1 = 0.01 }
+	multiply_variable = { array_defence_spend^2 = 0.015 }
 	multiply_variable = { array_defence_spend^3 = 0.02 }
 	multiply_variable = { array_defence_spend^4 = 0.03 }
 	multiply_variable = { array_defence_spend^5 = 0.05 }
