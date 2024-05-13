@@ -27,6 +27,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
+	corneredTileSpriteType = {
+		name = "GFX_mini_tooltip"
+		size= {x=32 y=32 }
+		texturefile = "gfx/interface/tiles/tiled_mini_dialog.dds"
+		borderSize = { x=12 y=12 }
+	}
+
 	# generalstuff.gfx
 	spriteType = {
 		name = "GFX_generic_box_wider"

@@ -22,7 +22,7 @@ spriteTypes = {
 		name = "GFX_fuel_state"
 		texturefile = "gfx/interface/topbar/fuel_state_icon.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
-		noOfFrames = 3		
+		noOfFrames = 3
 	}
 
 	spriteType = {
@@ -230,7 +230,12 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_topbar_convoys"
-		texturefile = "gfx/interface/topbar/topbar_convoys.dds"
+		texturefile = "gfx/interface/topbar_convoys.dds"
+	}
+
+	spriteType = {
+		name = "GFX_equipment_icon"
+		textureFile = "gfx/interface/equipment_icon.dds"
 	}
 
 	spriteType = {

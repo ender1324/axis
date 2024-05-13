@@ -140,7 +140,7 @@ guiTypes = {
 		iconType ={
 			name ="manpower_icon"
 			spriteType = "GFX_manpower_icon"
-			position = { x= 331 y = 3 }
+			position = { x= 331 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -165,7 +165,7 @@ guiTypes = {
 		iconType ={
 			name ="stability_icon"
 			spriteType = "GFX_stability_icon"
-			position = { x= 184 y = 5 }
+			position = { x= 184 y = 4 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -190,7 +190,7 @@ guiTypes = {
 		iconType ={
 			name ="war_support_icon"
 			spriteType = "GFX_war_support_icon"
-			position = { x= 257 y = 6 }
+			position = { x= 257 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -207,7 +207,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "land"
-			position = { x= 796 y = 5}
+			position = { x= 796 y = 4}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -240,7 +240,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "navy"
-			position = { x= 854 y = 5}
+			position = { x= 854 y = 4}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -273,7 +273,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air"
-			position = { x= 912 y = 5}
+			position = { x= 912 y = 4}
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -306,7 +306,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "cp"
-			position = { x= 732 y = 5}
+			position = { x= 732 y = 4}
 			clipping = no
 			size = { width=62 height=30 }
 			Orientation = UPPER_LEFT
@@ -319,7 +319,7 @@ guiTypes = {
 			iconType = {
 				name ="command_power_icon"
 				spriteType = "GFX_command_power"
-				position = { x= 5 y = 3 }
+				position = { x= 3 y = 1 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
 			}
@@ -374,7 +374,7 @@ guiTypes = {
 		iconType ={
 			name ="convoys_icon"
 			spriteType = "GFX_topbar_convoys"
-			position = { x= 646 y = 9 }
+			position = { x= 647 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -444,7 +444,7 @@ guiTypes = {
 		iconType = {
 			name ="supply_icon"
 			spriteType = "GFX_equipment_icon"
-			position = { x= 575 y = 8 }
+			position = { x= 573 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}		
 		
