@@ -584,6 +584,7 @@ is_germanic = {
 		original_tag = LUX
 		original_tag = BEL
 		original_tag = AUS
+		is_german_or_germanrk = yes
 	}
 }
 

@@ -1,0 +1,70 @@
+state_control_change_effect = {
+	if = {
+		limit = {
+			controller = { is_german_or_germanrk = yes }
+		}
+		meta_effect = {
+			text = {
+			  set_state_name = STATE_[ID]_german
+			}
+			ID = "[THIS.GetID]"
+		}
+	}
+	else_if = {
+		limit = {
+			controller = {
+				OR = {
+					original_tag = ITA
+					AND = {
+						is_subject_of = ITA
+						OR = {
+							has_autonomy_state = autonomy_colony
+							is_puppet = yes
+						}
+					}
+				}
+			}
+		}
+		meta_effect = {
+			text = {
+			  set_state_name = STATE_[ID]_italian
+			}
+			ID = "[THIS.GetID]"
+		}
+	}
+	else_if = {
+		limit = {
+			controller = {
+				is_russian_warlord = yes
+			}
+		}
+		meta_effect = {
+			text = {
+			  set_state_name = STATE_[ID]_russian
+			}
+			ID = "[THIS.GetID]"
+		}
+	}
+	else_if = {
+		limit = {
+			controller = {
+				OR = {
+					original_tag = JAP
+					OR = {
+						has_autonomy_state = autonomy_colony
+						is_puppet = yes
+					}
+				}
+			}
+		}
+		meta_effect = {
+			text = {
+			  set_state_name = STATE_[ID]_japanese
+			}
+			ID = "[THIS.GetID]"
+		}
+	}
+	else = {
+		reset_state_name = yes
+	}
+}

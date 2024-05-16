@@ -1,79 +1,110 @@
 on_actions = {
+	### State / City name changing ###
 	on_startup = {
 		effect = {
-			# Game rules
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = renaming_of_states_setting
-						option = PHOHIBIT_RENAMING
-					}
-				}
-				set_global_flag = sotw_state_renaming_disabled_flag
-			}
-			#one-time renaming upon the game start if player decided to use state renaming game rule - Fantom
-			if = {
-				#placed here to make sure it happends in decolonized/fragmented world toos
-				limit = {
-					NOT = {
-						has_global_flag = sotw_state_renaming_disabled_flag
-					}
-				}
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = endonyms_enabled
+                    }
+                }
+				set_global_flag = endonyms_enabled
 				every_state = {
-					meta_effect = {
-						text = {
-							FAK = {
-								FAK_lord_debug = {
-									set_character_name = STATE_[STATE_NUMBER]_RENAMING
-								}
-							}
-						}
-						STATE_NUMBER = "[THIS.getID]"
-					}
-					meta_effect = {
-						text = {
-							THIS = {
-								set_state_name = "[NEW_STATE_NAME]"
-							}
-						}
-						NEW_STATE_NAME = "[FAK.GetLeader]"
+						state_control_change_effect = yes
+				}
+            }
+        }
+	}
+	
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms_enabled 
+				}
+				ROOT.ROOT = {
+					every_state = {
+						state_control_change_effect = yes
 					}
 				}
 			}
 		}
 	}
-	###---> On State Control Changed <><> <><> <><>
-	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms_enabled
+				}
+				ROOT.ROOT = {
+					every_state = {
+						state_control_change_effect = yes
+					}
+				}
+			}
+		}
+	}
+
 	on_state_control_changed = {
 		effect = {
 			if = {
-				#state renaming tool for possible dynamical name changes, inspired by Kaiserreichs way to do that (in particular, the presence of meta effects) - Fantom
 				limit = {
-					NOT = {
-						has_global_flag = sotw_state_renaming_disabled_flag
-					}
+					has_global_flag = endonyms_enabled
 				}
-				meta_effect = {
-					text = {
-						FAK = {
-							FAK_lord_debug = {
-								set_character_name = STATE_[STATE_NUMBER]_RENAMING
-							}
-						}
-					}
-					STATE_NUMBER = "[FROM.FROM.getID]"
-				}
-				meta_effect = {
-					text = {
-						FROM.FROM = {
-							set_state_name = "[NEW_STATE_NAME]"
-						}
-					}
-					NEW_STATE_NAME = "[FAK.GetLeader]"
+				FROM.FROM = {
+					state_control_change_effect = yes
 				}
 			}
 		}
 	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms_enabled
+				}
+				ROOT.ROOT = {
+					every_state = {
+						state_control_change_effect = yes
+					}
+				}
+			}
+		}
+    }
+
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms_enabled
+				}
+				FROM.FROM = {
+					every_state = {
+						state_control_change_effect = yes
+					}
+				}
+			}
+		}
+    }
+
+    # ROOT is winner, FROM gets annexed.
+    on_annex  = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms_enabled
+				}
+				FROM.FROM = {
+					every_state = {
+						state_control_change_effect = yes
+					}
+				}
+			}
+		}
+    }
+	### END OF STATE / CITY NAME CHANGING ###
 	# Automatically give military access to countries you are sending volunteers to
 	on_send_volunteers = {
 		effect = {

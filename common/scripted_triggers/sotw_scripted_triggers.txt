@@ -13,8 +13,36 @@ is_german_or_germanrk = {
 		original_tag = RKO
 		original_tag = RKU
 		original_tag = RKR
+		original_tag = RKK
 		# Misc RKs
 		original_tag = RKM
+	}
+}
+
+# Is russian warlord
+is_russian_warlord = {
+	OR = {
+		# normal tags
+		original_tag = SOV
+		original_tag = RUS
+
+		# warlords
+		original_tag = RAR
+		original_tag = NEN
+		original_tag = COD
+		original_tag = DFR
+		original_tag = ROA
+		original_tag = MAG
+		original_tag = WSR
+		original_tag = CIA
+		original_tag = RMU
+		original_tag = SPE
+		original_tag = ALT
+		original_tag = RDC
+		original_tag = FER
+
+		# Russian dominance
+		original_tag = KAZ
 	}
 }
 
@@ -77,7 +105,7 @@ is_shithole_country = {
 		original_tag = CAR
 		date < 1956.1.1
 	}
-	# facts
+	# Unfortunate circumstances
 	is_in_africa = yes
 }
 
