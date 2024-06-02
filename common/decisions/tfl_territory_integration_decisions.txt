@@ -1,0 +1,169 @@
+territory_reintegration_category = {
+	# only the core polish cities
+	repolonization_basic_polish_territory = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = POL
+			is_german_or_germanrk = no
+		}
+
+		available = {
+			owns_state = 10
+			owns_state = 92
+			owns_state = 90
+			owns_state = 88
+			NOT = { has_global_flag = repolonized_basic_polish_territory }
+		}
+
+		visible = {
+			any_controlled_state = {
+				is_core_of = POL
+			}
+		}
+
+		cost = 5
+		days_remove = 7
+
+		remove_effect = {
+			add_stability = 0.02
+			set_province_name = {
+				id = 3544
+				name = "Warszawa"
+			}
+			set_province_name = {
+				id = 9427
+				name = "Krakow"
+			}
+			set_province_name = {
+				id = 9412
+				name = "Cieszyn"
+			}
+			set_province_name = {
+				id = 442
+				name = "Tarnów"
+			}
+			set_province_name = {
+				id = 11430
+				name = "Kielce"
+			}
+			set_province_name = {
+				id = 3458
+				name = "Radom"
+			}
+			set_province_name = {
+				id = 402
+				name = "Siedlce"
+			}
+			set_province_name = {
+				id = 11399
+				name = "Lublin"
+			}
+			88 = {
+				add_manpower = -549312
+				remove_core_of = RKP
+				add_claim_by = RKP
+			}
+			set_global_flag = repolonized_basic_polish_territory
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	regermanization_basic_polish_territory = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = RKP
+		}
+
+		available = {
+			owns_state = 10
+			owns_state = 92
+			owns_state = 90
+			owns_state = 88
+			has_global_flag = repolonized_basic_polish_territory
+		}
+
+		visible = {
+			any_controlled_state = {
+				is_core_of = POL
+			}
+		}
+
+		cost = 5
+		days_remove = 7
+
+		remove_effect = {
+			add_stability = 0.02
+			reset_province_name = 3544
+			reset_province_name = 9427
+			reset_province_name = 9412
+			reset_province_name = 442
+			reset_province_name = 11430
+			reset_province_name = 3458
+			reset_province_name = 402
+			88 = {
+				add_manpower = 549312
+				add_core_of = RKP
+			}
+			clr_global_flag = repolonized_basic_polish_territory
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	repolonization_lightly_germanized_territories = {
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = POL
+			is_german_or_germanrk = no
+		}
+
+		available = {
+			# lodz
+			owns_state = 87
+			# plock
+			owns_state = 98
+			# byastok
+			owns_state = 97
+			NOT = { has_global_flag = repolonized_lightly_germanized_cities }
+		}
+
+		visible = {
+			OR = {
+				controls_state = 87
+				controls_state = 98
+				controls_state = 97
+			}
+		}
+
+		cost = 10
+		days_remove = 14
+
+		remove_effect = {
+			set_province_name = {
+				id = 9508
+				name = "Lodz"
+			}
+			set_province_name = {
+				id = 3230
+				name = "Plock"
+			}
+			set_province_name = {
+				id = 11301
+				name = "Bialystok"
+			}
+			set_province_name = {
+				id = 3254
+				name = "Suwalki"
+			}
+			set_global_flag = repolonized_lightly_germanized_cities
+		}
+	}
+}

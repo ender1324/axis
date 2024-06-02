@@ -1,0 +1,3 @@
+territory_reintegration_category = {
+	priority = 5
+}
