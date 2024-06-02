@@ -6,6 +6,7 @@ credit for things i did not make:
 - Road to 56 (States, assets and infantry research)
 - Beyond Earth mod (assets and map)
 - Better Mechanics: War Exhaustion and Better Training (mechanics integrated)
+- REAL CASUALTIES (https://steamcommunity.com/sharedfiles/filedetails/?id=3244248294)
 - Better Laws and Policies (assets and ideas)
 - Too Many Ideologies (ideology rework base icons)
 - Ultimate Tech Tree (research tree images)
