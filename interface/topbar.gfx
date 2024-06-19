@@ -156,18 +156,31 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_world_tension_icon_big_strip"
-		texturefile = "gfx/interface/world_tension_icon_big_strip.dds"
+		texturefile = "gfx/interface/topbar/world_tension_icon_big_strip.dds"
 		noOfFrames = 10		
 	}
 	
 	spriteType = {
 		name = "GFX_date_pause_button_bg"
-		texturefile = "gfx/interface/date_pause_button_bg.dds"
+		texturefile = "gfx/interface/topbar/date_pause_button_bg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_date_button_speedup"
+		textureFile = "gfx/interface/topbar/button_speedup.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_date_button_speeddown"
+		textureFile = "gfx/interface/topbar/button_speeddown.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 
 	frameAnimatedSpriteType = {
 		name = "GFX_date_pause_button"
-		texturefile = "gfx/interface/date_pause_button.dds"
+		texturefile = "gfx/interface/topbar/date_pause_button.dds"
 		noOfFrames = 2
 		animation_rate_fps = 1
 		looping = yes
@@ -374,19 +387,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_airoverview_button"
 		texturefile = "gfx/interface/topbar/airoverview_button.dds"
-		noOfFrames = 2		
+		#noOfFrames = 2		
 	}	
 	
 	spriteType = {
 		name = "GFX_navyoverview_button"
 		texturefile = "gfx/interface/topbar/navyoverview_button.dds"
-		noOfFrames = 2		
+		#noOfFrames = 2		
 	}	
 	
 	spriteType = {
 		name = "GFX_armyoverview_button"
 		texturefile = "gfx/interface/topbar/armyoverview_button.dds"
-		noOfFrames = 2		
+		#noOfFrames = 2		
 	}
 	
 	spriteType = {
