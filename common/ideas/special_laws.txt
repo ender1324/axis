@@ -243,13 +243,14 @@ ideas = {
             }
             modifier = {
                 monthly_population = 0.1
+				total_workforce_modifier = 0.05
                 political_power_cost = 0.05
                 stability_factor = 0.05
                 war_stability_factor = -0.05
                 resistance_target = -0.05
                 resistance_damage_to_garrison = -0.1
                 compliance_growth = 0.05
-                non_core_manpower = 0.2
+                non_core_manpower = 0.08 # 0.2 -> 0.08 | was too powerful before
             }
             cancel_if_invalid = no
         }
@@ -275,6 +276,7 @@ ideas = {
             modifier = {
                 political_power_cost = 0.05
                 monthly_population = -0.1
+				total_workforce_modifier = -0.05
                 party_popularity_stability_factor = 0.1
                 war_support_factor = 0.1
                 improve_relations_maintain_cost_factor = 0.1
@@ -294,18 +296,18 @@ ideas = {
             modifier = {
                 political_power_cost = 0.1
                 monthly_population = -0.2
+				total_workforce_modifier = -0.1
                 improve_relations_maintain_cost_factor = 0.2
                 resistance_target = 0.05
-                resistance_target_on_our_occupied_states = 0.1
+				resistance_activity = 0.15
                 compliance_growth = -0.1
-                compliance_growth_on_our_occupied_states = -0.3
-                non_core_manpower = -0.2
+                non_core_manpower = -0.1 # -0.2 to -0.1, non-core manpower is low either way so previous debuff was too harsh
                 required_garrison_factor = 0.2
                 consumer_goods_factor = -0.05
-                local_resources_factor = 0.03
-                production_speed_buildings_factor = 0.03
-                industrial_capacity_factory = 0.03
-                industry_free_repair_factor = 0.1
+                local_resources_factor = 0.04
+                production_speed_buildings_factor = 0.04
+                industrial_capacity_factory = 0.04
+                industry_free_repair_factor = 0.2
             }
         }
     }
@@ -321,7 +323,8 @@ ideas = {
             }
             modifier = {
                 monthly_population = -0.10
-                recruitable_population_factor = 0.05
+				total_workforce_modifier = 0.1
+                conscription_factor = 0.05
                 industrial_capacity_factory = 0.1
                 production_speed_buildings_factor = 0.1
                 research_speed_factor = 0.05
@@ -349,6 +352,7 @@ ideas = {
             }
             modifier = {
                 monthly_population = 0.2
+				total_workforce_modifier = -0.2
                 stability_factor = 0.05
                 consumer_goods_factor = 0.05
             }
@@ -669,7 +673,8 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = -0.1
-                trade_opinion_factor = 0.40
+				resource_export_multiplier_modifier = -0.1
+                trade_opinion_factor = 0.25
                 license_purchase_cost = -0.50
                 license_production_speed = 0.25
             }
@@ -685,7 +690,8 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = -0.5
-                trade_opinion_factor = 0.20
+				resource_export_multiplier_modifier = -0.5
+                trade_opinion_factor = 0.15
                 license_purchase_cost = -0.25
                 license_production_speed = 0.13
             }
@@ -713,8 +719,9 @@ ideas = {
             }
 
             modifier = {
-                consumer_goods_factor = 0.03
-                trade_opinion_factor = -0.20
+                consumer_goods_factor = 0.04
+				resource_export_multiplier_modifier = 0.05
+                trade_opinion_factor = -0.1
                 license_purchase_cost = 0.10
                 license_production_speed = -0.12
             }
@@ -729,8 +736,9 @@ ideas = {
             }
 
             modifier = {
-                consumer_goods_factor = 0.06
-                trade_opinion_factor = -0.40
+                consumer_goods_factor = 0.07
+				resource_export_multiplier_modifier = 0.1
+                trade_opinion_factor = -0.15
                 license_purchase_cost = 0.50
                 license_production_speed = -0.30
             }
@@ -1715,7 +1723,7 @@ ideas = {
             level = 3
 
             modifier = {
-                political_power_cost = 0.03
+                political_power_cost = -0.03
                 stability_factor = 0.03
                 research_speed_factor = 0.05
                 production_factory_max_efficiency_factor = 0.04
@@ -1817,7 +1825,7 @@ ideas = {
         sl_education_system4 = {
             level = 4
             modifier = {
-                political_power_cost = 0.05
+                political_power_cost = -0.05
                 stability_factor = 0.05
                 research_speed_factor = 0.12
                 production_factory_max_efficiency_factor = 0.08
@@ -1920,7 +1928,7 @@ ideas = {
             level = 5
 
             modifier = {
-                political_power_cost = 0.1
+                political_power_cost = -0.1
                 stability_factor = 0.1
                 research_speed_factor = 0.24
                 production_factory_max_efficiency_factor = 0.12
