@@ -205,6 +205,32 @@ spriteTypes = {
 		texturefile = "gfx/ideas/special_laws/economic_structure/sl_work_hours/sl_no_work_hour_limits.dds"
 	}
 
+	# Immigration policy
+	spriteType = {
+		name = "GFX_idea_sl_immigration_closed"
+		textureFile = "gfx/ideas/special_laws/economic_structure/sl_immigration_policy/sl_immigration_closed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_immigration_controlled"
+		textureFile = "gfx/ideas/special_laws/economic_structure/sl_immigration_policy/sl_immigration_controlled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_immigration_encouraged"
+		textureFile = "gfx/ideas/special_laws/economic_structure/sl_immigration_policy/sl_immigration_encouraged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_immigration_open"
+		textureFile = "gfx/ideas/special_laws/economic_structure/sl_immigration_policy/sl_immigration_open.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sl_immigration_subsidized"
+		textureFile = "gfx/ideas/special_laws/economic_structure/sl_immigration_policy/sl_immigration_subsidized.dds"
+	}
+
 	##########################
 	###  Public Structure  ###
 	##########################

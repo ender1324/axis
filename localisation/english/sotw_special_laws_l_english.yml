@@ -80,6 +80,11 @@
  sl_no_work_hour_limits: "No Work Hour Limits"
  
  sl_immigration_policy: "Immigration Policy"
+ sl_immigration_closed: "Closed Migration"
+ sl_immigration_controlled: "Controlled Immigration"
+ sl_immigration_open: "Open Immigration"
+ sl_immigration_encouraged: "Encouraged Immigration"
+ sl_immigration_subsidized: "Subsidized Immigration"
 
  public_structure: "Public Structure"
 

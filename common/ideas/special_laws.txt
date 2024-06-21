@@ -922,6 +922,83 @@ ideas = {
         }
     }
 
+	sl_immigration_policy = {
+		law = yes
+		use_list_view = yes
+
+		sl_immigration_closed = {
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = sl_cant_remove_tt
+					always = no
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				monthly_population = -0.1
+			}
+		}
+
+		sl_immigration_controlled = {
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = sl_cant_remove_tt
+					always = no
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		sl_immigration_open = {
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = sl_cant_remove_tt
+					always = no
+				}
+			}
+
+			modifier = {
+				monthly_population = 0.1
+				research_speed_factor = 0.03
+			}
+		}
+
+		sl_immigration_encouraged = {
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = sl_cant_remove_tt
+					always = no
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = 0.25
+				research_speed_factor = 0.8
+				social_cost_multiplier_modifier = 0.05
+			}
+		}
+
+		sl_immigration_subsidized = {
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = sl_cant_remove_tt
+					always = no
+				}
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				monthly_population = 0.60
+				research_speed_factor = 0.12
+				social_cost_multiplier_modifier = 0.1
+			}
+		}
+	}
 
 
     ########################
