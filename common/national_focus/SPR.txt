@@ -1,0 +1,3149 @@
+focus_tree = {
+    id = spain_focus
+    continuous_focus_position = { x = 60 y = 2970 }
+    country = {
+        factor = 0
+        modifier = {
+            add = 20
+            tag = SPR
+        }
+    }
+############ terrorist decisions
+    focus = {
+        id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 6
+        y = 0
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism2
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = { focus = SPR_terrorism  }
+        x = -1
+        y = 1
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism3
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = { focus = SPR_terrorism  }
+        x = 1
+        y = 1
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism4
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism2 }
+        prerequisite = {  focus = SPR_terrorism3 }
+        x = 0
+        y = 2
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism5
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism4 }
+        mutually_exclusive = {
+            focus = SPR_terrorism6
+        }
+        x = -2
+        y = 3
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism6
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism4 }
+        mutually_exclusive = {
+            focus = SPR_terrorism5
+        }
+        x = 3
+        y = 3
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism7
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism5     }
+        x = -3
+        y = 4
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism8
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism7     }
+        x = -3
+        y = 5
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism9
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism5     }
+        x = -1
+        y = 4
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism10
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism9     }
+        x = -1
+        y = 5
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = SPR_terrorism11
+        relative_position_id = SPR_terrorism
+        icon = GFX_goal_generic_allies_build_infantry
+        prerequisite = {  focus = SPR_terrorism8   }
+        prerequisite = {  focus = SPR_terrorism10     }
+        x = -2
+        y = 6
+        cost = 8
+        search_filters = {  FOCUS_FILTER_RESEARCH }
+        
+        available_if_capitulated = yes
+
+        completion_reward = {
+        }
+    }
+
+focus = {
+    id = SPR_terrorism12
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism6     }
+    x = 1
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism13
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism6     }
+    x = 3
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism14
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism6     }
+    x = 5
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism15
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism12     }
+    x = 1
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism16
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism13     }
+    x = 3
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism17
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism14    }
+    x = 5
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_terrorism18
+    relative_position_id = SPR_terrorism
+    icon = GFX_goal_generic_allies_build_infantry
+    prerequisite = {  focus = SPR_terrorism15    }
+    prerequisite = {  focus = SPR_terrorism16    }
+    x = 2
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+######## political
+focus = {
+    id = SPR_political1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 20
+    y = 0
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political1 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political1 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political1 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political2 }
+    prerequisite = {  focus = SPR_political3 }
+    prerequisite = {  focus = SPR_political4 }
+    mutually_exclusive = {focus = SPR_political6}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political2 }
+    prerequisite = {  focus = SPR_political3 }
+    prerequisite = {  focus = SPR_political4 }
+    mutually_exclusive = {focus = SPR_political5}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -6
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political5 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political5 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political5 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -6
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political7 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political8 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political9 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -6
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political10 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political12 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political11 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political13 }
+    prerequisite = {  focus = SPR_political15 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political3 }
+    prerequisite = {  focus = SPR_political4 }
+    prerequisite = {  focus = SPR_political2 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political17 }
+
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political18 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political6 }
+    mutually_exclusive = {focus = SPR_political21}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political6 }
+    mutually_exclusive = {focus = SPR_political20}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political6 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political23
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political20 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political24
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political21 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political25
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political22 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political26
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political23 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political27
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political24 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political28
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political25 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political29
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political28 }
+    prerequisite = {  focus = SPR_political27 }
+    
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_political30
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_political1
+    available_if_capitulated = yes
+    prerequisite = {  focus = SPR_political26 }
+    prerequisite = {  focus = SPR_political19 }
+    
+    completion_reward = {
+    }
+}
+#### industry focuses
+focus = {
+    id = SPR_industry1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 38
+    y = 0
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry1}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry2}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry1}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry1}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry5}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry3}
+    prerequisite = {focus = SPR_industry6}
+    prerequisite = {focus = SPR_industry4}
+    mutually_exclusive = {focus = SPR_industry8}
+    mutually_exclusive = {focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry4}
+    prerequisite = {focus = SPR_industry3}
+    prerequisite = {focus = SPR_industry6}
+    mutually_exclusive = {focus = SPR_industry7}
+    mutually_exclusive = {focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry6}
+    prerequisite = {focus = SPR_industry3}
+    prerequisite = {focus = SPR_industry4}
+    mutually_exclusive = {focus = SPR_industry7}
+    mutually_exclusive = {focus = SPR_industry8}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry7 focus = SPR_industry8 focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry7 focus = SPR_industry8 focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry7}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_industry8 }
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry7}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry9}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry15}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry17}
+    prerequisite = { focus = SPR_industry12}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 6
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry14}
+    prerequisite = { focus = SPR_industry16}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 7
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry13}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 7
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry13}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 7
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry13}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry23
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 8
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry22}
+    prerequisite = { focus = SPR_industry21}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_industry24
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 9
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_industry1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_industry23 focus = SPR_industry20}
+    completion_reward = {
+    }
+}
+###### science
+focus = {
+    id = SPR_science1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 31
+    y = 0
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 1
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science1}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science2}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 2
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science2}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science4}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science4}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science3}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 3
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science3}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 5
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science5 focus = SPR_science7}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = {focus = SPR_science6}
+    prerequisite = {focus = SPR_science5}
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_science11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 4
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    relative_position_id = SPR_science1
+    available_if_capitulated = yes
+    prerequisite = { focus = SPR_science7}
+    prerequisite = {focus = SPR_science8}
+    completion_reward = {
+    }
+}
+##### army
+focus = {
+    id = SPR_army1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 48
+    y = 0
+    cost = 8
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army2}
+    prerequisite = {focus = SPR_army3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 3
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 3
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army5}
+    mutually_exclusive = {focus = SPR_army10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army8}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army5}
+    mutually_exclusive = {focus = SPR_army8}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army6}
+    mutually_exclusive = {focus = SPR_army14}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army12}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army6}
+    mutually_exclusive = {focus = SPR_army12}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army14}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army7}
+    mutually_exclusive = {focus = SPR_army18}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army16}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 4
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army7}
+    mutually_exclusive = {focus = SPR_army16}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 5
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army18}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 6
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army9 focus = SPR_army11}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 6
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army13 focus = SPR_army15}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 6
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army19 focus = SPR_army17}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army23
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 7
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army20 }
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army24
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 7
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army21 }
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army25
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 7
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army22 }
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army26
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 9
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army23}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army27
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 8
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army23}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army28
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 9
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army23}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army29
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 8
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army30
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 8
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army31
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 9
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army32
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 10
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army29}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army33
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 10
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army30}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army34
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 11
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army32}
+    prerequisite = {focus = SPR_army33}
+    prerequisite = {focus = SPR_army31}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army35
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 9
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army36
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 8
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_army37
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 9
+    cost = 8
+    relative_position_id = SPR_army1
+    prerequisite = {focus = SPR_army25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+##separatistwars
+focus = {
+    id = SPR_eta1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 7
+    cost = 1
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 2
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta2}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 4
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta5}
+    mutually_exclusive = {focus = SPR_eta7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 4
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta5}
+    mutually_exclusive = {focus = SPR_eta6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 5
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta6 focus = SPR_eta7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_eta9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 2
+    cost = 1
+    relative_position_id = SPR_eta1
+    prerequisite = {focus = SPR_eta3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+#####SPR_morroco
+focus = {
+    id = SPR_morroco1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 31
+    y = 6
+    cost = 3
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 1
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = {focus = SPR_morroco1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 1
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = {focus = SPR_morroco1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 1
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = {focus = SPR_morroco1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 2
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = {focus = SPR_morroco2 focus = SPR_morroco3 focus = SPR_morroco4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 2
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = { focus = SPR_morroco3 focus = SPR_morroco4 focus = SPR_morroco2}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_morroco7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 3
+    relative_position_id = SPR_morroco1
+    prerequisite = { focus = SPR_morroco5}
+    prerequisite = { focus = SPR_morroco6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americaw1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 3
+    cost = 3
+    relative_position_id = SPR_morroco1
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americaw2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_americaw1
+    prerequisite = {focus = SPR_americaw1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americaw3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_americaw1
+    prerequisite = {focus = SPR_americaw1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americaw4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 3
+    relative_position_id = SPR_americaw1
+    prerequisite = {focus = SPR_americaw1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americal1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 3
+    cost = 3
+    relative_position_id = SPR_morroco1
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americal2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_americal1
+    prerequisite = {focus = SPR_americal1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americal3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_americal1
+    prerequisite = {focus = SPR_americal1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_americal4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 3
+    relative_position_id = SPR_americal1
+    prerequisite = {focus = SPR_americal2}
+    prerequisite = {focus = SPR_americal3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 3
+    cost = 3
+    relative_position_id = SPR_americal1
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy2}
+    prerequisite = {focus = SPR_democracy3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -6
+    y = 3
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 3
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 3
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 3
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -7
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy5 focus = SPR_democracy6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -8
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy9}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -6
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy9}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -7
+    y = 7
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy13}
+    prerequisite = {focus = SPR_democracy12}
+    prerequisite = {focus = SPR_democracy11}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy6 focus = SPR_democracy5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy21}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy17}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy18}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 7
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy19}
+    prerequisite = {focus = SPR_democracy16}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy15}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy23
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy24
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy22}
+    prerequisite = {focus = SPR_democracy23}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy25
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy26
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy27
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 7
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy26}
+    prerequisite = {focus = SPR_democracy25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy28
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy8}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy29
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 7
+    y = 4
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy8}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy30
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy28 focus = SPR_democracy23}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy31
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy28}
+    prerequisite = {focus = SPR_democracy29}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy32
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 8
+    y = 5
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy28}
+    prerequisite = {focus = SPR_democracy29}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy36
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 7
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy31}
+    prerequisite = {focus = SPR_democracy32}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy33
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 6
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy28}
+    prerequisite = {focus = SPR_democracy31}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy34
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 7
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy32}
+    prerequisite = {focus = SPR_democracy33}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_democracy35
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 8
+    cost = 3
+    relative_position_id = SPR_democracy1
+    prerequisite = {focus = SPR_democracy14 focus = SPR_democracy20 focus = SPR_democracy27 focus = SPR_democracy34}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+####francopaths
+focus = {
+    id = SPR_outcome1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 7
+    cost = 3
+    relative_position_id = SPR_political1
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 1
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 1
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 1
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome2}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -7
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -7
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -7
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome9}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -5
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome9}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome13}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -4
+    y = 6
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome14 focus = SPR_outcome8 focus = SPR_outcome11 focus = SPR_outcome12}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome3}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome16}
+    prerequisite = {focus = SPR_outcome17}
+    prerequisite = {focus = SPR_outcome18}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome19}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+
+focus = {
+    id = SPR_outcome21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome19}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome20}
+    prerequisite = {focus = SPR_outcome21}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome23
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 6
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome22}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome24
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome25
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 2
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome4}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome26
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome24 focus = SPR_outcome25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome27
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 5
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome25 focus = SPR_outcome24}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome28
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome26}
+    prerequisite = {focus = SPR_outcome27}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome29
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 4
+    y = 5
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome28}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome30
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 6
+    y = 4
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome25}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_outcome31
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 3
+    cost = 3
+    relative_position_id = SPR_outcome1
+    prerequisite = {focus = SPR_outcome16}
+    prerequisite = {focus = SPR_outcome17}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+#####################SPR_falange
+focus = {
+    id = SPR_falange1
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 48
+    y = 12
+    cost = 3
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange2
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 1
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange3
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange4
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 1
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange5
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 1
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange1}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange6
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 2
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange2}
+    prerequisite = {focus = SPR_falange3}
+    prerequisite = {focus = SPR_falange4}
+    prerequisite = {focus = SPR_falange5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange7
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 2
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange2}
+    prerequisite = {focus = SPR_falange3}
+    prerequisite = {focus = SPR_falange4}
+    prerequisite = {focus = SPR_falange5}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange8
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -3
+    y = 3
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange9
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 3
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange6}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange10
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 3
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange11
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 3
+    y = 3
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange7}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange12
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -2
+    y = 4
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange11}
+    prerequisite = {focus = SPR_falange10}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange13
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 4
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange9}
+    prerequisite = {focus = SPR_falange8}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange14
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 5
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange12}
+    prerequisite = {focus = SPR_falange13}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange15
+    icon = GFX_goal_generic_allies_build_infantry
+    x = -1
+    y = 6
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange14}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange16
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 1
+    y = 6
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange14}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange17
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 7
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange16}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange18
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 7
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange16}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange19
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 8
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange18}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange20
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 9
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange19}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange21
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 0
+    y = 10
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange20}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+focus = {
+    id = SPR_falange22
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 2
+    y = 8
+    cost = 3
+    relative_position_id = SPR_falange1
+    prerequisite = {focus = SPR_falange17}
+    search_filters = {  FOCUS_FILTER_RESEARCH }
+    available_if_capitulated = yes
+    completion_reward = {
+    }
+}
+}
