@@ -141,7 +141,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_map_modes_bottom_bg"
-		texturefile = "gfx/interface/mapmode/mapmode_bottom_bg.dds"
+		texturefile = "gfx/interface/mgapmode/mapmode_bottom_bg.dds"
 	}
 
 	spriteType = {
