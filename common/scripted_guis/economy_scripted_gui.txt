@@ -757,7 +757,7 @@ scripted_gui = {
 
 			### Economy stuff ###
 			# Population Tax Rate Clicks
-			increase_population_tax_click = {
+			population_tax_rate_minus_click = {
 				ai_will_do = {
 					factor = 25
 					modifier = {
@@ -809,7 +809,7 @@ scripted_gui = {
 					}
 				}
 			}
-			decrease_population_tax_click = {
+			population_tax_rate_plus_click = {
 				ai_will_do = {
 					factor = 25
 					# Generic
@@ -859,7 +859,7 @@ scripted_gui = {
 				}
 			}
 			# Corporate Tax Rate Clicks
-			increase_corporate_tax_click = {
+			corporate_tax_rate_plus_click = {
 				ai_will_do = {
 					factor = 35
 					modifier = {
@@ -925,7 +925,7 @@ scripted_gui = {
 					}
 				}
 			}
-			decrease_corporate_tax_click = {
+			corporate_tax_rate_minus_click = {
 				ai_will_do = {
 					factor = 25
 					modifier = {
