@@ -1060,7 +1060,12 @@ scripted_gui = {
 		dirty = "global.num_days"
 
 		# Hides/Opens the Container
-		visible = { has_country_flag = open_popinfo_screen }
+		visible = {
+			OR = {
+				is_ai = yes
+				has_country_flag = open_popinfo_screen
+			}
+		}
 
 		properties = {
 			welfare_spending_1_icon = {
