@@ -858,6 +858,7 @@ guiTypes = {
 		}
 	}
 
+	### ECONOMY TAB ###
 	containerWindowType = {
 		name = "countryeconomicsview"
 		position = { x = 0 y=0 }
@@ -895,6 +896,15 @@ guiTypes = {
 		buttonType = {
 			name = "open_construction"
 			position = { x = -90 y = 9 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			buttonFont = "Main_14_black"
+			#shortcut = "E"
+			orientation = "UPPER_RIGHT"
+		}
+
+		buttonType = {
+			name = "open_populationinfo"
+			position = { x = -100 y = 9 }
 			quadTextureSprite = "GFX_arrow_down_small"
 			buttonFont = "Main_14_black"
 			#shortcut = "E"

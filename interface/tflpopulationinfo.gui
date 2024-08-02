@@ -1,0 +1,366 @@
+@lon_we_1_icon_y = 50
+@lon_we_2_icon_y = 100
+@lon_we_3_icon_y = 150
+@lon_we_4_icon_y = 200
+@lon_we_5_icon_y = 250
+@lon_we_6_icon_y = 300
+@lon_we_1_icon_x = 20
+@lon_we_2_icon_x = 50
+@lon_we_3_icon_x = 80
+@lon_we_4_icon_x = 110
+@lon_we_5_icon_x = 140
+@lon_we_6_icon_x = 170
+@lon_we_7_icon_x = 200
+@lon_we_8_icon_x = 230
+@lon_we_9_icon_x = 260
+@lon_we_10_icon_x = 290
+
+guiTypes = {
+	containerWindowType = {
+		name = "tflpopulationinfo_window"
+		position = { x = 400 y = 5 }
+		show_position = { x = 545 y = 5 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=450 height=360 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_full_very_rounded"
+		}
+
+		instantTextboxType = {
+			name = "popinfo_title"
+			position = { x = 28 y = 7 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = { x = 0 y = 0 }
+			text = "Population Info"
+			maxWidth = 400
+			maxHeight = 20
+			format = left
+		}
+
+		# Protest square things
+		containerWindowType = {
+			name = "protest_mechanic_section"
+			position = { x = 0 y = 100 }
+
+			instantTextBoxType = {
+				name = "protests_main_text"
+				position = { x = 20 y = -50 }
+				font = "hoi_18mbs"
+				text = "protests_main_text"
+				pdx_tooltip = expected_social_spending_tt
+				format = left
+				maxWidth = 400
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "expected_social_spending"
+				position = { x = 20 y = 28 }
+				font = "hoi_18mbs"
+				text = "expected_social_spending"
+				pdx_tooltip = expected_social_spending_tt
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name = "expected_health_spending"
+				position = { x = 20 y = 80 }
+				font = "hoi_18mbs"
+				text = "expected_health_spending"
+				pdx_tooltip = expected_health_spending_tt
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name = "expected_edu_spending"
+				position = { x = 20 y = 130 }
+				font = "hoi_18mbs"
+				text = "expected_edu_spending"
+				pdx_tooltip = expected_edu_spending_tt
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name = "expected_police_spending"
+				position = { x = 20 y = 180 }
+				font = "hoi_18mbs"
+				text = "expected_police_spending"
+				pdx_tooltip = expected_police_spending_tt
+				format = left
+				maxHeight = 24
+			}
+
+			iconType = {
+				name ="welfare_spending_1_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_1_icon_x y = @lon_we_1_icon_y }
+				pdx_tooltip = sl_unemployment_benefits1
+			}
+			iconType = {
+				name ="welfare_spending_2_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_2_icon_x y = @lon_we_1_icon_y }
+				pdx_tooltip = sl_unemployment_benefits2
+			}
+			iconType = {
+				name ="welfare_spending_3_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_3_icon_x y = @lon_we_1_icon_y }
+				pdx_tooltip = sl_unemployment_benefits3
+			}
+			iconType = {
+				name ="welfare_spending_4_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_4_icon_x y = @lon_we_1_icon_y }
+				pdx_tooltip = sl_unemployment_benefits4
+			}
+			iconType = {
+				name = "welfare_spending_5_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_5_icon_x y = @lon_we_1_icon_y }
+				pdx_tooltip = sl_unemployment_benefits5
+			}
+
+			iconType = {
+				name ="health_spending_1_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_1_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system1
+			}
+			iconType = {
+				name ="health_spending_2_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_2_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system2
+			}
+			iconType = {
+				name ="health_spending_3_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_3_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system3
+			}
+			iconType = {
+				name ="health_spending_4_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_4_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system4
+			}
+			iconType = {
+				name = "health_spending_5_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_5_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system5
+			}
+			iconType = {
+				name = "health_spending_6_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_6_icon_x y = @lon_we_2_icon_y }
+				pdx_tooltip = sl_healthcare_system6
+			}
+
+			iconType = {
+				name ="edu_spending_1_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_1_icon_x y = @lon_we_3_icon_y }
+				pdx_tooltip = sl_education_system1
+			}
+			iconType = {
+				name ="edu_spending_2_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_2_icon_x y = @lon_we_3_icon_y }
+				pdx_tooltip = sl_education_system2
+			}
+			iconType = {
+				name ="edu_spending_3_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_3_icon_x y = @lon_we_3_icon_y }
+				pdx_tooltip = sl_education_system3
+			}
+			iconType = {
+				name ="edu_spending_4_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_4_icon_x y = @lon_we_3_icon_y }
+				pdx_tooltip = sl_education_system4
+			}
+			iconType = {
+				name = "edu_spending_5_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_5_icon_x y = @lon_we_3_icon_y }
+				pdx_tooltip = sl_education_system5
+			}
+
+			iconType = {
+				name ="police_spending_1_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_1_icon_x y = @lon_we_4_icon_y }
+				pdx_tooltip = sl_state_policing1
+			}
+			iconType = {
+				name ="police_spending_2_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_2_icon_x y = @lon_we_4_icon_y }
+				pdx_tooltip = sl_state_policing2
+			}
+			iconType = {
+				name ="police_spending_3_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_3_icon_x y = @lon_we_4_icon_y }
+				pdx_tooltip = sl_state_policing3
+			}
+			iconType = {
+				name ="police_spending_4_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_4_icon_x y = @lon_we_4_icon_y }
+				pdx_tooltip = sl_state_policing4
+			}
+			iconType = {
+				name = "police_spending_5_icon"
+				spriteType = "GFX_expected_spending_empty"
+				position = { x = @lon_we_5_icon_x y = @lon_we_4_icon_y }
+				pdx_tooltip = sl_state_policing5
+			}
+		}
+
+		# EMPLOYMENT AND MIGRATION INFO
+		# Employment Container
+		containerWindowType = {
+			name = "employment_migration_info"
+			position = { x = 204 y = 200 }
+
+			# instantTextBoxType = {
+			# 	name = "employment"
+			# 	position = { x = 2 y = 0 }
+			# 	font = "hoi_24header"
+			# 	format = left
+			# 	maxWidth = 250
+			# 	maxHeight = 24
+			# 	fixedsize = yes
+			# 	text = "EMPLOYMENT"
+			# 	pdx_tooltip = "EMPLOYMENT_TOOLTIP"
+			# 	pdx_tooltip_delayed = "EMPLOYMENT_TOOLTIP_DELAYED"
+			# }
+			instantTextBoxType = {
+				name = "unemployment_threshold"
+				position = { x = 0 y = 24 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 225
+				maxHeight = 24
+				fixedsize = yes
+				text = "UNEMPLOYMENT_THRESHOLD"
+				pdx_tooltip = "UNEMPLOYMENT_THRESHOLD_TT"
+			}
+			instantTextBoxType = {
+				name = "unemployment_threshold_rate"
+				position = { x = 178 y = 24 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "UNEMPLOYMENT_THRESHOLD_RATE"
+				pdx_tooltip = "UNEMPLOYMENT_THRESHOLD_TT"
+			}
+			instantTextBoxType = {
+				name = "unemployment"
+				position = { x = 0 y = 48 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "UNEMPLOYMENT"
+				pdx_tooltip = "EMPLOYMENT_TOOLTIP"
+				pdx_tooltip_delayed = "EMPLOYMENT_TOOLTIP_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "unemployment_rate"
+				position = { x = 144 y = 48 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "UNEMPLOYMENT_RATE"
+				pdx_tooltip = "EMPLOYMENT_TOOLTIP"
+				pdx_tooltip_delayed = "EMPLOYMENT_TOOLTIP_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "employment_average"
+				position = { x = 0 y = 72 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "EMPLOYMENT_AVERAGE"
+				pdx_tooltip = "EMPLOYMENT_AVERAGE_TT"
+				pdx_tooltip_delayed = "EMPLOYMENT_AVERAGE_TT_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "employment_average_rate"
+				position = { x = 190 y = 72 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "EMPLOYMENT_AVERAGE_RATE"
+				pdx_tooltip = "EMPLOYMENT_AVERAGE_TT"
+				pdx_tooltip_delayed = "EMPLOYMENT_AVERAGE_TT_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "maximum_migration_rate"
+				position = { x = 0 y = 96 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "MAXIMUM_MIGRATION_RATE"
+				pdx_tooltip = "MAXIMUM_MIGRATION_RATE_TT"
+				pdx_tooltip_delayed = "MAXIMUM_MIGRATION_RATE_TT_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "maximum_migration_rate_value"
+				position = { x = 178 y = 96 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "MAXIMUM_MIGRATION_RATE_VALUE"
+				pdx_tooltip = "MAXIMUM_MIGRATION_RATE_TT"
+				pdx_tooltip_delayed = "MAXIMUM_MIGRATION_RATE_TT_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "net_migration_rate"
+				position = { x = 0 y = 120 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "NET_MIGRATION_RATE"
+				pdx_tooltip = "NET_MIGRATION_RATE_TT"
+				pdx_tooltip_delayed = "NET_MIGRATION_RATE_TT_DELAYED"
+			}
+			instantTextBoxType = {
+				name = "net_migration_rate_value"
+				position = { x = 192 y = 120 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 250
+				maxHeight = 24
+				fixedsize = yes
+				text = "NET_MIGRATION_RATE_VALUE"
+				pdx_tooltip = "NET_MIGRATION_RATE_TT"
+				pdx_tooltip_delayed = "NET_MIGRATION_RATE_TT_DELAYED"
+			}
+		}
+	}
+}

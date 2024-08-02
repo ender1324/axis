@@ -791,6 +791,13 @@ set_law_desire_vars = {
 	else = {
 		set_variable = { protest_state_policing_desire = 1 } #Failsafe Measure
 	}
+	add_to_variable = { protest_state_policing_desire = modifier@expected_police_modifier }
+	round_variable = protest_state_policing_desire
+	clamp_variable = {
+		var = protest_state_policing_desire
+		min = 1
+		max = 5
+	}
 
 	if = {
 		limit = { has_country_flag = wants_edu_01 }
@@ -814,6 +821,13 @@ set_law_desire_vars = {
 	}
 	else = {
 		set_variable = { protest_education_system_desire = 1 } #Failsafe Measure
+	}
+	add_to_variable = { protest_education_system_desire = modifier@expected_education_modifier }
+	round_variable = protest_education_system_desire
+	clamp_variable = {
+		var = protest_education_system_desire
+		min = 1
+		max = 6
 	}
 
 	if = {
@@ -843,6 +857,13 @@ set_law_desire_vars = {
 	else = {
 		set_variable = { protest_healthcare_system_desire = 1 } #Failsafe Measure
 	}
+	add_to_variable = { protest_healthcare_system_desire = modifier@expected_healthcare_modifier }
+	round_variable = protest_healthcare_system_desire
+	clamp_variable = {
+		var = protest_healthcare_system_desire
+		min = 1
+		max = 6
+	}
 
 	if = {
 		limit = { has_country_flag = wants_social_01 }
@@ -866,6 +887,13 @@ set_law_desire_vars = {
 	}
 	else = {
 		set_variable = { protest_unemployment_benefits_desire = 1 } #Failsafe Measure
+	}
+	add_to_variable = { protest_unemployment_benefits_desire = modifier@expected_welfare_modifier }
+	round_variable = protest_unemployment_benefits_desire
+	clamp_variable = {
+		var = protest_unemployment_benefits_desire
+		min = 1
+		max = 5
 	}
 
 	#Military Spending Laws

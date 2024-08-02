@@ -1,0 +1,854 @@
+defined_text = {
+	name = police_spending_protest_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > THIS.sl_state_policing }
+		}
+		localization_key = red_police_spending_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire < THIS.sl_state_policing }
+		}
+		localization_key = green_police_spending_TT
+	}
+	text = {
+		localization_key = yellow_police_spending_TT
+	}
+}
+
+defined_text = {
+	name = edu_spending_protest_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > THIS.sl_education_system }
+		}
+		localization_key = red_edu_spending_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire < THIS.sl_education_system }
+		}
+		localization_key = green_edu_spending_TT
+	}
+	text = {
+		localization_key = yellow_edu_spending_TT
+	}
+}
+
+defined_text = {
+	name = health_spending_protest_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > THIS.sl_healthcare_system }
+		}
+		localization_key = red_health_spending_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire < THIS.sl_healthcare_system }
+		}
+		localization_key = green_health_spending_TT
+	}
+	text = {
+		localization_key = yellow_health_spending_TT
+	}
+}
+
+defined_text = {
+	name = social_spending_protest_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > THIS.sl_unemployment_benefits }
+		}
+		localization_key = red_social_spending_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire < THIS.sl_unemployment_benefits }
+		}
+		localization_key = green_social_spending_TT
+	}
+	text = {
+		localization_key = yellow_social_spending_TT
+	}
+}
+
+# defined_text = {
+# 	name = military_spending_protest_TT
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire > THIS.Military_Spending }
+# 		}
+# 		localization_key = red_military_spending_TT
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire < THIS.Military_Spending }
+# 		}
+# 		localization_key = green_military_spending_TT
+# 	}
+# 	text = {
+# 		localization_key = yellow_military_spending_TT
+# 	}
+# }
+
+#desired spending as text
+defined_text = {
+	name = exp_police_spending_text_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 1 }
+		}
+		localization_key = sl_state_policing1
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 2 }
+		}
+		localization_key = sl_state_policing2
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 3 }
+		}
+		localization_key = sl_state_policing3
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 4 }
+		}
+		localization_key = sl_state_policing4
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 5 }
+		}
+		localization_key = sl_state_policing5
+	}
+}
+
+defined_text = {
+	name = exp_edu_spending_text_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 1 }
+		}
+		localization_key = sl_education_system1
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 2 }
+		}
+		localization_key = sl_education_system2
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 3 }
+		}
+		localization_key = sl_education_system3
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 4 }
+		}
+		localization_key = sl_education_system4
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 5 }
+		}
+		localization_key = sl_education_system5
+	}
+}
+
+defined_text = {
+	name = exp_health_spending_text_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 1 }
+		}
+		localization_key = sl_healthcare_system1
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 2 }
+		}
+		localization_key = sl_healthcare_system2
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 3 }
+		}
+		localization_key = sl_healthcare_system3
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 4 }
+		}
+		localization_key = sl_healthcare_system4
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 5 }
+		}
+		localization_key = sl_healthcare_system5
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 6 }
+		}
+		localization_key = sl_healthcare_system6
+	}
+}
+
+defined_text = {
+	name = exp_social_spending_text_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 1 }
+		}
+		localization_key = sl_unemployment_benefits1
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 2 }
+		}
+		localization_key = sl_unemployment_benefits2
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 3 }
+		}
+		localization_key = sl_unemployment_benefits3
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 4 }
+		}
+		localization_key = sl_unemployment_benefits4
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 5 }
+		}
+		localization_key = sl_unemployment_benefits5
+	}
+}
+
+# defined_text = {
+# 	name = exp_military_spending_text_TT
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 1 }
+# 		}
+# 		localization_key = defence_00
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 2 }
+# 		}
+# 		localization_key = defence_01
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 3 }
+# 		}
+# 		localization_key = defence_02
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 4 }
+# 		}
+# 		localization_key = defence_03
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 5 }
+# 		}
+# 		localization_key = defence_04
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 6 }
+# 		}
+# 		localization_key = defence_05
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 7 }
+# 		}
+# 		localization_key = defence_06
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { THIS.protest_military_spending_desire = 8 }
+# 		}
+# 		localization_key = defence_07
+# 	}
+# }
+
+defined_text = {
+	name = protest_strength_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_strength < 20 }
+		}
+		localization_key = green_protest_strength_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_strength < 50 }
+		}
+		localization_key = yellow_protest_strength_TT
+	}
+	text = {
+		localization_key = red_protest_strength_TT
+	}
+}
+
+defined_text = {
+	name = protest_radicalisation_TT
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_radicalisation < 2 }
+		}
+		localization_key = green_protest_radicalisation_TT
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_radicalisation < 5 }
+		}
+		localization_key = yellow_protest_radicalisation_TT
+	}
+	text = {
+		localization_key = red_protest_radicalisation_TT
+	}
+}
+
+defined_text = {
+	name = fuel_protests_TT
+	text = {
+		trigger = {
+			has_fuel < 1
+		}
+		localization_key = no_fuel_protests_TT
+	}
+	text = {
+		localization_key = fuel_protests_TT
+	}
+}
+
+########################################
+### POPULATION INFO GUI SCRIPTED LOC ###
+########################################
+defined_text = {
+	name = GET_WELFARE_SPENDING_LEVEL_1_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.sl_unemployment_benefits > 0 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_WELFARE_SPENDING_LEVEL_2_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire = 1 }
+			check_variable = { THIS.sl_unemployment_benefits > 1 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 1 }
+			check_variable = { THIS.sl_unemployment_benefits > 1 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 1 }
+			check_variable = { THIS.sl_unemployment_benefits = 1 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_WELFARE_SPENDING_LEVEL_3_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire < 3 }
+			check_variable = { THIS.sl_unemployment_benefits > 2 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 2 }
+			check_variable = { THIS.sl_unemployment_benefits > 2 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 2 }
+			check_variable = { THIS.sl_unemployment_benefits < 3 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_WELFARE_SPENDING_LEVEL_4_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire < 4 }
+			check_variable = { THIS.sl_unemployment_benefits > 3 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 3 }
+			check_variable = { THIS.sl_unemployment_benefits > 3 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 3 }
+			check_variable = { THIS.sl_unemployment_benefits < 4 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_WELFARE_SPENDING_LEVEL_5_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire < 5 }
+			check_variable = { THIS.sl_unemployment_benefits > 4 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 4 }
+			check_variable = { THIS.sl_unemployment_benefits > 4 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_unemployment_benefits_desire > 4 }
+			check_variable = { THIS.sl_unemployment_benefits < 5 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_1_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.sl_healthcare_system > 0 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_2_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 1 }
+			check_variable = { THIS.sl_healthcare_system > 1 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 1 }
+			check_variable = { THIS.sl_healthcare_system > 1 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 1 }
+			check_variable = { THIS.sl_healthcare_system = 1 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_3_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire < 3 }
+			check_variable = { THIS.sl_healthcare_system > 2 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 2 }
+			check_variable = { THIS.sl_healthcare_system > 2 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 2 }
+			check_variable = { THIS.sl_healthcare_system < 3 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_4_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire < 4 }
+			check_variable = { THIS.sl_healthcare_system > 3 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 3 }
+			check_variable = { THIS.sl_healthcare_system > 3 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 3 }
+			check_variable = { THIS.sl_healthcare_system < 4 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_5_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire < 5 }
+			check_variable = { THIS.sl_healthcare_system > 4 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 4 }
+			check_variable = { THIS.sl_healthcare_system > 4 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire > 4 }
+			check_variable = { THIS.sl_healthcare_system < 5 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_HEALTH_SPENDING_LEVEL_6_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire < 6 }
+			check_variable = { THIS.sl_healthcare_system > 5 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 6 }
+			check_variable = { THIS.sl_healthcare_system = 6 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_healthcare_system_desire = 6 }
+			check_variable = { THIS.sl_healthcare_system < 6 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+
+defined_text = {
+	name = GET_EDU_SPENDING_LEVEL_1_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.sl_education_system > 0 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_EDU_SPENDING_LEVEL_2_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 1 }
+			check_variable = { THIS.sl_education_system > 1 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 1 }
+			check_variable = { THIS.sl_education_system > 1 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 1 }
+			check_variable = { THIS.sl_education_system = 1 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_EDU_SPENDING_LEVEL_3_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire < 3 }
+			check_variable = { THIS.sl_education_system > 2 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 2 }
+			check_variable = { THIS.sl_education_system > 2 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 2 }
+			check_variable = { THIS.sl_education_system < 3 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_EDU_SPENDING_LEVEL_4_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire < 4 }
+			check_variable = { THIS.sl_education_system > 3 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 3 }
+			check_variable = { THIS.sl_education_system > 3 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire > 3 }
+			check_variable = { THIS.sl_education_system < 4 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_EDU_SPENDING_LEVEL_5_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire < 5 }
+			check_variable = { THIS.sl_education_system > 4 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 5 }
+			check_variable = { THIS.sl_education_system = 5 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_education_system_desire = 5 }
+			check_variable = { THIS.sl_education_system < 5 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+
+defined_text = {
+	name = GET_POLICE_SPENDING_LEVEL_1_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.sl_state_policing > 0 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_POLICE_SPENDING_LEVEL_2_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 1 }
+			check_variable = { THIS.sl_state_policing > 1 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 1 }
+			check_variable = { THIS.sl_state_policing > 1 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 1 }
+			check_variable = { THIS.sl_state_policing = 1 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_POLICE_SPENDING_LEVEL_3_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire < 3 }
+			check_variable = { THIS.sl_state_policing > 2 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 2 }
+			check_variable = { THIS.sl_state_policing > 2 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 2 }
+			check_variable = { THIS.sl_state_policing < 3 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_POLICE_SPENDING_LEVEL_4_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire < 4 }
+			check_variable = { THIS.sl_state_policing > 3 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 3 }
+			check_variable = { THIS.sl_state_policing > 3 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire > 3 }
+			check_variable = { THIS.sl_state_policing < 4 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}
+defined_text = {
+	name = GET_POLICE_SPENDING_LEVEL_5_COLOR
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire < 5 }
+			check_variable = { THIS.sl_state_policing > 4 }
+		}
+		localization_key = "GFX_expected_spending_blue"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 5 }
+			check_variable = { THIS.sl_state_policing = 5 }
+		}
+		localization_key = "GFX_expected_spending_green"
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.protest_state_policing_desire = 5 }
+			check_variable = { THIS.sl_state_policing < 5 }
+		}
+		localization_key = "GFX_expected_spending_red"
+	}
+	text = {
+		localization_key = "GFX_expected_spending_white"
+	}
+}

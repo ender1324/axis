@@ -163,7 +163,7 @@
  GDP_TOTAL_DESC: "Our Gross Domestic Product (GDP) is the value measure of all products and services produced in the country. Millennium Dawn uses GDP adjusted with PPP (Purchasing Power Parity) as this value takes local economic conditions into effect, making country comparison more useful."
  NUM_GDP_TOTAL: "$$§Y[?ROOT.gdp_total|1]§!b"
  NUM_GDP_TOTAL_DESC: "Our GDP is currently $§Y[?ROOT.gdp_total|3]§! billion"
- NUM_GDP_TOTAL_DELAYED_DESC: "Approximate Contribution of Industries by Percent:\n§PCivilian Factories§!: [?ROOT.civil_fac_percent|%]\n§OMilitary Factories§!: [?ROOT.military_fac_percent|%]\n§BNaval Dockyards§!: [?ROOT.dockyard_fac_percent|%]\n§COffice Parks§!: [?ROOT.office_fac_percent|%]\n§GAgriculture§!: [?ROOT.agriculture_percent|%]\n§GResource Extraction§!: [?ROOT.resources_percent|%]\n"
+ NUM_GDP_TOTAL_DELAYED_DESC: "Approximate Contribution of Industries by Percent:\nCivilian Factories: [?ROOT.civil_fac_percent|%]\n§OMilitary Factories§!: [?ROOT.military_fac_percent|%]\n§BNaval Dockyards§!: [?ROOT.dockyard_fac_percent|%]\n§COffice Parks§!: [?ROOT.office_fac_percent|%]\n§GAgriculture§!: [?ROOT.agriculture_percent|%]\n§GResource Extraction§!: [?ROOT.resources_percent|%]\n"
  GDP_PER_CAPITA: "/C:"
  GDP_PER_CAPITA_DESC: "This number represents our GDP per Capita or GDP/C. It represents the output of every person in the nation."
  GDP_PER_CAPITA_DELAYED_DESC: "Current impact of GDP per Capita on our nation:\nConstruction Speed: [?production_speed_buildings_factor_gdp_modifier|%+]\nMonthly Population: [?monthly_population_gdp_modifier|%+1]\nResearch Speed: [?research_speed_factor_gdp_modifier|%+]\nStability: [?stability_factor_gdp_modifier|%+]\nTotal Workforce: [?total_workforce_gdp_c_modifier_var|%+]\nFossil Powerplant Construction Speed: [?fossil_pp_construction_gdp_c_modifier_var|%+]\n"
@@ -195,7 +195,7 @@
  F_TREASURY_TOOLTIP: "GDP of §Y[THIS.GetName]§!: $§Y[?gdp_total|0]§!b\nGDP/C of §Y[THIS.GetName]§!: $§Y[?gdp_per_capita]§!k\n---------\nThey have $[?treasury] §Hbillion§! in the treasury.\nTheir weekly balance is $[?treasury_rate|+] §Hbillion§!."
  F_INT_INVESTMENTS_TOOLTIP: "They have $[?int_investments] §Hbillion§! in investments in other countries.\nThey earn $[?int_investments_rate] §Hbillion§! weekly in §Hinvestment income§! from their total investments."
  F_EXPENSE_GAIN_TOOLTIP: "They lose $[?display_expense] §Hbillion§! each week in expenditure."
- F_EXPENSE_GAIN_TOOLTIP_DELAYED: "§CBureaucracy:§! $§R[?bureaucracy_gain|-3]§!\n§ODefence:§! $§R[?defence_gain|-3]§!\n§YInternal Security:§! $§R[?security_gain|-3]§!\n§JEducation:§! $§R[?education_gain|-3]§!\n§PHealth:§! $§R[?health_gain|-3]§!\n§BWelfare:§! $§R[?welfare_gain|-3]§!\n§RInterest on Debt:§! $§R[?debt_rate|-3]§!\n§HAdditional Expenses:§! $§R[?additional_expenses_rate|-3]§!\n\nTotal Expenditure: $§R[?display_expense]§!"
+ F_EXPENSE_GAIN_TOOLTIP_DELAYED: "§CBureaucracy:§! $§R[?bureaucracy_gain|-3]§!\n§ODefence:§! $§R[?defence_gain|-3]§!\n§YInternal Security:§! $§R[?security_gain|-3]§!\nEducation: $§R[?education_gain|-3]§!\nHealth: $§R[?health_gain|-3]§!\n§BWelfare:§! $§R[?welfare_gain|-3]§!\n§RInterest on Debt:§! $§R[?debt_rate|-3]§!\n§HAdditional Expenses:§! $§R[?additional_expenses_rate|-3]§!\n\nTotal Expenditure: $§R[?display_expense]§!"
  F_TAX_RATE_TOOLTIP: "Their §HAverage Tax Rate§! is [?tax_rate]%.\n\n§YCorporate Tax Rate:§! [?corporate_tax_rate]%\n§YPopulation Tax Rate:§! [?population_tax_rate]%\n"
  F_TAX_GAIN_TOOLTIP: "They gain $[?display_income] §Hbillion§! each week in income."
  F_TAX_GAIN_TOOLTIP_DELAYED: "GDP of §Y[THIS.GetName]§!: $§Y[?THIS.gdp_total|0]§!b\nGDP/C of §Y[THIS.GetName]§!: $§Y[?THIS.gdp_per_capita]§!k\n---------\n§CPopulation Income:§! $§G[?population_tax|+3]§!\n§LCorporate Income:§! $§G[?corporate_tax|+3]§!\n§GInternational Investments:§! $§G[?int_investments_rate|+3]§!\n§YResource Exports:§! $§G[?resource_sale_rate|+3]§!\n§HAdditional Income:§! $§G[?additional_income_rate|+3]§!\n\nGross Income: $§G[?display_income]§!"
@@ -256,13 +256,6 @@
  investment_cost_modifier: "£investment_cost_modifier_texticon  §YForeign Investment§! Cost Modifier"
  receiving_investment_duration_modifier: "£receiving_investment_duration_modifier_texticon  §YReceiving Foreign Investment§! Duration Modifier"
  receiving_investment_cost_modifier: "£receiving_investment_cost_modifier_texticon  §YReceiving Foreign Investment§! Cost Modifier"
- # Protest system
- expected_welfare_modifier: "§YExpected Welfare Spending§!"
- expected_healthcare_modifier: "§YExpected Healthcare Spending§!"
- expected_education_modifier: "§YExpected Education Spending§!"
- expected_police_modifier: "§YExpected Police Spending§!"
- expected_adm_modifier: "§YExpected Administrative Spending§!"
- expected_mil_modifier: "§YExpected Military Spending§!"
  # Employment and Productivity
  state_productivity_growth_modifier: "State Productivity Growth Factor"
  country_productivity_growth_modifier: "Country Productivity Growth Factor"
@@ -441,3 +434,95 @@
  research_slot_available: "§YAVAILABLE   §!"
  research_slot_in_progress: "§CIN PROGRESS§!"
  research_slot_unlocked: "§GUNLOCKED§!    "
+
+ #######################
+ ### POPULATION INFO ###
+ #######################
+ expected_social_spending: "§CSocial spending§! status"
+ expected_health_spending: "§CHealthcare spending§! status"
+ expected_adm_spending: "§CAdministrative spending§! status"
+ expected_edu_spending: "§CEducation spending§! status"
+ expected_police_spending: "§CPolice spending§! status"
+ expected_defence_spending: "§CDefence spending§! status"
+ protests_main_text: "We need to meet expectations of our citizens to avoid protests and other bad social developments.\nCurrent §YProtest Strength§!: [protest_strength_TT]\nCurrent §YProtest Radicalisation§!: [protest_radicalisation_TT][fuel_protests_TT]\n"
+ ### Tooltips ###
+ OPEN_POPINFO_BUTTON: "Open Population Info"
+ OPEN_POPINFO_BUTTON_TT: "This screen will contain schematic information on expected governmental spending, expected protest movement strength and radicalisation."
+ PROTEST_TITLE: "Expected Laws"
+ CLOSE_PROTEST_SCREEN: "Close Expected Laws Screen"
+ expected_law_mechanic_tt: "Purpose of §YExpected Laws§!\n"
+ EL_green_square_explanation_tt: "§GGreen§! squares represent the level of spending required by our citizens and covered by our current spending."
+ EL_blue_square_explanation_tt: "§BBlue§! squares represent the level of spending NOT required by our citizens but covered by our current spending."
+ EL_red_square_explanation_tt: "§RRed§! squares represent the level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength."
+ EL_white_square_explanation_tt: "White squares represent possible levels of spending, which are not covered or expected."
+
+
+ expected_social_spending_tt: "How to read the report:\n§GGreen§! squares represent the level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+ expected_health_spending_tt: "How to read the report:\n§GGreen§! squares represent level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+ expected_adm_spending_tt: "How to read the report:\n§GGreen§! squares represent level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+ expected_edu_spending_tt: "How to read the report:\n§GGreen§! squares represent level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+ expected_police_spending_tt: "How to read the report:\n§GGreen§! squares represent level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+ expected_defence_spending_tt: "How to read the report:\n§GGreen§! squares represent level of spending required by our citizens and covered by our current spending\n§RRed§! squares represent level of spending required by our citizens and NOT covered by our current spending - this is the source of protests gaining strength\n§BBlue§! squares represent level of spending NOT required by our citizens but covered by our current spending\nWhite squares represent possible levels of spending, which are not covered or expected"
+
+ red_adm_spending_TT: "§ROur expected administrative spending is - [exp_adm_spending_text_TT]\n§!"
+ green_adm_spending_TT: "§GOur expected administrative spending is - [exp_adm_spending_text_TT]\n§!"
+ yellow_adm_spending_TT: "§YOur expected administrative spending is - [exp_adm_spending_text_TT]\n§!"
+
+ red_police_spending_TT: "§ROur expected police spending is - [exp_police_spending_text_TT]\n§!"
+ green_police_spending_TT: "§GOur expected police spending is - [exp_police_spending_text_TT]\n§!"
+ yellow_police_spending_TT: "§YOur expected police spending is - [exp_police_spending_text_TT]\n§!"
+
+ red_edu_spending_TT: "§ROur expected education spending is - [exp_edu_spending_text_TT]\n§!"
+ green_edu_spending_TT: "§GOur expected education spending is - [exp_edu_spending_text_TT]\n§!"
+ yellow_edu_spending_TT: "§YOur expected education spending is - [exp_edu_spending_text_TT]\n§!"
+
+ red_health_spending_TT: "§ROur expected healthcare spending is - [exp_health_spending_text_TT]\n§!"
+ green_health_spending_TT: "§GOur expected healthcare spending is - [exp_health_spending_text_TT]\n§!"
+ yellow_health_spending_TT: "§YOur expected healthcare spending is - [exp_health_spending_text_TT]\n§!"
+
+ red_social_spending_TT: "§ROur expected social spending is - [exp_social_spending_text_TT]\n§!"
+ green_social_spending_TT: "§GOur expected social spending is - [exp_social_spending_text_TT]\n§!"
+ yellow_social_spending_TT: "§YOur expected social spending is - [exp_social_spending_text_TT]\n§!"
+
+ green_protest_strength_TT: "§G[?THIS.protest_strength]§!"
+ red_protest_strength_TT: "§R[?THIS.protest_strength]§!"
+ yellow_protest_strength_TT: "§Y[?THIS.protest_strength]§!"
+
+ red_military_spending_TT: "§ROur expected military spending is - [exp_military_spending_text_TT]\n§!"
+ green_military_spending_TT: "§GOur expected military spending is - [exp_military_spending_text_TT]\n§!"
+ yellow_military_spending_TT: "§YOur expected military spending is - [exp_military_spending_text_TT]\n§!"
+
+ green_protest_radicalisation_TT: "§G[?THIS.protest_radicalisation]§!"
+ red_protest_radicalisation_TT: "§R[?THIS.protest_radicalisation]§!"
+ yellow_protest_radicalisation_TT: "§Y[?THIS.protest_radicalisation]§!"
+
+ no_fuel_protests_TT: "\n§RWe are getting additional radicalisation from the lack of fuel!§!"
+ fuel_protests_TT: ""
+
+ # MODIFIERS
+ expected_welfare_modifier: "§YExpected Unemployment Benefits Spending§!"
+ expected_healthcare_modifier: "§YExpected Healthcare Spending§!"
+ expected_education_modifier: "§YExpected Education Spending§!"
+ expected_police_modifier: "§YExpected Police Spending§!"
+
+ ### EMPLOYMENT AND MIGRATION INFO
+ UNEMPLOYMENT_THRESHOLD: "§3Unemployment Threshold:§!"
+ UNEMPLOYMENT_THRESHOLD_RATE: "[?ROOT.unemployment_threshold_display_var|%Y]"
+ UNEMPLOYMENT_THRESHOLD_TT: "§YHigh Unemployment Threshold§! is the value of §YUnemployment§! your nation can reach without starting to suffer adverse effects from §YHigh Unemployment§!. Exceeding this value you will start to suffer increases to your £social_cost_multiplier_modifier_texticon §YSocial Spending Cost§! and reductions to your £stability_texticon  Stability.\n\n§YModifiers from High Unemployment§!\n£stability_texticon  Stability: [?ROOT.high_unemployment_modifier_var|%+]\n£social_cost_multiplier_modifier_texticon §YSocial Spending Cost§! Multiplier: [?ROOT.high_unemployment_modifier_var_2|%-]"
+ EMPLOYMENT_TOOLTIP: "Breakdown of the Workforce"
+ EMPLOYMENT_TOOLTIP_DELAYED: "Total Workforce:§Y[?ROOT.workforce_total_display|3]§!\nShare of Population in the workforce:§Y[?ROOT.workforce_total_percentage_display|%]§!\n\nMillion Workers per Sector:\n§GMilitary Factories§!: [?ROOT.workers_in_mil_facs|3]\n§BNaval Factories§!: [?ROOT.workers_in_dockyards|3]\n§OCivilian Factories§!: [?ROOT.workers_in_civ_facs|3]\n§COffices§!: [?ROOT.workers_in_offices|3]\n§GAgriculture§!: [?ROOT.agriculture_workers|3]\n§CResource Extraction§!: [?ROOT.resource_sector_workers|3]\n§RUnemployed & Subsistence§!: [?ROOT.total_unemployed|3]\n\nCurrent Unemployment: §R[?ROOT.total_unemployed_percentage_display|%]§!\n\n§YHigh Unemployment Threshold:§! [?ROOT.unemployment_threshold_display_var|%0]\n\n§YModifiers from High Unemployment§!\n£stability_texticon  Stability: [?ROOT.high_unemployment_modifier_var|%+]\n£social_cost_multiplier_modifier_texticon §YSocial Spending Cost§! Multiplier: [?ROOT.high_unemployment_modifier_var_2|%-]"
+ EMPLOYMENT_AVERAGE: "Average Worker Fulfillment:"
+ EMPLOYMENT_AVERAGE_RATE: "[?ROOT.average_worker_fulfillment|%0]"
+ EMPLOYMENT_AVERAGE_TT: "Work Fulfillment"
+ EMPLOYMENT_AVERAGE_TT_DELAYED: "§YWorker Fulfillment§! is the value that represents how many workers your country has working compared to what is required by our buildings.\n\n§YAverage Worker Fulfillment:§! [?ROOT.average_worker_fulfillment|%0]\n\n§YWorker Fulfillment by Building:§!\nCivilian Factories: §Y[?ROOT.civilian_factories_manpower_fulfillment|%]§!\nMilitary Factories: §Y[?ROOT.military_factories_manpower_fulfillment|%]§!\nNaval Factories: §Y[?ROOT.naval_factories_manpower_fulfillment|%]§!\nOffices: §Y[?ROOT.offices_manpower_fulfillment|%]§!\nCommercialized Agriculture Districts: §Y[?ROOT.agriculture_district_manpower_fulfillment|%]§!\n"
+ UNEMPLOYMENT: "§YUnemployment Rate:§!"
+ UNEMPLOYMENT_RATE: "[?ROOT.total_unemployed_percentage_display|%-]"
+
+ MAXIMUM_MIGRATION_RATE: "§LMaximum Migration Rate:§!"
+ MAXIMUM_MIGRATION_RATE_VALUE: "[?ROOT.max_net_immigration_rate|%Y]"
+ MAXIMUM_MIGRATION_RATE_TT: "Maximum Migration Rate"
+ MAXIMUM_MIGRATION_RATE_TT_DELAYED: "The §YMaximum Migration Rate§! is the country's total potential §YMigration§! into the country. It is modified by your §YEconomic Cycle§!, §YProductivity§!, §YCurrent Ruling Party§!, §YWorker Fulfillment§!, §YUnemployment Rate§!, §YWar Support§! and whether you are at war. The value cannot be directly increased outside of the above metric and you can capture more of the §YMigration Rate§! by increasing your §YMigration Law§! or via national focuses, ideas or decisions. Furthermore, your §YNet Migration Rate§! is calculated as your §Ymaximum Migration Rate§! which is then multiplied by §YBase Net Migration Rate§! modified by your §YNet Migration Rate Value Factor§!.\n\n§YImpacts on Maximum Migration Rate:§!\n--------------\n§YMax from Productivity§!:  [?immigration_productivity_calculations_display|%+]\n§OMax Worker Fulfillment/Unemployment Rate§!:  [?immigration_employment_factor_display|%+]\n§GGovernment Ruling Party§!:  [?immigration_government_factor_display|%+]\nRefugees from Neighbors at War:  [?neighbour_war_refugees_display|%+]\n§nOur Countries Refugees From Being at War§!:  [?personal_war_refugees_display|%+]\n§LEconomic Cycle/Ideas§!:  [?modifier@maximum_migration_rate_value|%+]"
+ NET_MIGRATION_RATE: "Current Net Migration Rate:"
+ NET_MIGRATION_RATE_VALUE: "[?ROOT.net_immigration_rate|%+]"
+ NET_MIGRATION_RATE_TT: "Current Net Migration Rate"
+ NET_MIGRATION_RATE_TT_DELAYED: "Your nation's §YCurrent Net Migration Rate§! is the current amount of §YMigration§! within the country. It is modified by either national content or by adjusting your §YMigration Laws§!. The value is calculated as your §Ymaximum Migration Rate§! which is then multiplied by §YBase Net Migration Rate§! modified by your §YNet Migration Rate Value Factor§!\n\nLaw, Idea and Tech impact on §YBase Net Migration Rate§!: [?modifier@base_migration_rate_value|+%0]\nLaw, Idea and Tech impact on §YNet Migration Rate Value Factor§!: [?modifier@migration_rate_value_factor|+%0]"

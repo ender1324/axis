@@ -245,6 +245,15 @@ scripted_gui = {
 					clr_country_flag = open_economy_screen
 				}
 			}
+			open_populationinfo_click = {
+				if = {
+					limit = { NOT = { has_country_flag = open_popinfo_screen } }
+					set_country_flag = open_popinfo_screen
+				}
+				else = {
+					clr_country_flag = open_popinfo_screen
+				}
+			}
 			close_button_click = {
 				clr_country_flag = open_economy_screen
 			}
@@ -1039,4 +1048,101 @@ scripted_gui = {
 			# }
 		}
 	}
+
+	#####################################################
+	### POPULATION INFO POPULAR FROM CONSTRUCTION TAB ###
+	#####################################################
+	population_info_constructiontab = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "tflpopulationinfo_window"
+
+		dirty = "global.num_days"
+
+		# Hides/Opens the Container
+		visible = { has_country_flag = open_popinfo_screen }
+
+		properties = {
+			welfare_spending_1_icon = {
+				image = "[GET_WELFARE_SPENDING_LEVEL_1_COLOR]"
+			}
+			welfare_spending_2_icon = {
+				image = "[GET_WELFARE_SPENDING_LEVEL_2_COLOR]"
+			}
+			welfare_spending_3_icon = {
+				image = "[GET_WELFARE_SPENDING_LEVEL_3_COLOR]"
+			}
+			welfare_spending_4_icon = {
+				image = "[GET_WELFARE_SPENDING_LEVEL_4_COLOR]"
+			}
+			welfare_spending_5_icon = {
+				image = "[GET_WELFARE_SPENDING_LEVEL_5_COLOR]"
+			}
+
+			health_spending_1_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_1_COLOR]"
+			}
+			health_spending_2_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_2_COLOR]"
+			}
+			health_spending_3_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_3_COLOR]"
+			}
+			health_spending_4_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_4_COLOR]"
+			}
+			health_spending_5_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_5_COLOR]"
+			}
+			health_spending_6_icon = {
+				image = "[GET_HEALTH_SPENDING_LEVEL_6_COLOR]"
+			}
+
+			edu_spending_1_icon = {
+				image = "[GET_EDU_SPENDING_LEVEL_1_COLOR]"
+			}
+			edu_spending_2_icon = {
+				image = "[GET_EDU_SPENDING_LEVEL_2_COLOR]"
+			}
+			edu_spending_3_icon = {
+				image = "[GET_EDU_SPENDING_LEVEL_3_COLOR]"
+			}
+			edu_spending_4_icon = {
+				image = "[GET_EDU_SPENDING_LEVEL_4_COLOR]"
+			}
+			edu_spending_5_icon = {
+				image = "[GET_EDU_SPENDING_LEVEL_5_COLOR]"
+			}
+
+			police_spending_1_icon = {
+				image = "[GET_POLICE_SPENDING_LEVEL_1_COLOR]"
+			}
+			police_spending_2_icon = {
+				image = "[GET_POLICE_SPENDING_LEVEL_2_COLOR]"
+			}
+			police_spending_3_icon = {
+				image = "[GET_POLICE_SPENDING_LEVEL_3_COLOR]"
+			}
+			police_spending_4_icon = {
+				image = "[GET_POLICE_SPENDING_LEVEL_4_COLOR]"
+			}
+			police_spending_5_icon = {
+				image = "[GET_POLICE_SPENDING_LEVEL_5_COLOR]"
+			}
+
+		}
+	}
+
+	# protest_system_rework_gui = {
+	# 	context_type = player_context
+	# 	window_name = "protest_mechanic_decision_ui_window"
+
+	# 	dirty = global.num_days
+
+	# 	visible = {
+	# 		ROOT = { has_country_flag = open_popinfo_screen }
+	# 	}
+
+
+	# }
 }
