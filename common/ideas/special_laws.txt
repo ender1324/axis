@@ -673,7 +673,7 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = -0.1
-				resource_export_multiplier_modifier = -0.1
+				resource_export_multiplier_modifier = -0.12
                 trade_opinion_factor = 0.25
                 license_purchase_cost = -0.50
                 license_production_speed = 0.25
@@ -689,8 +689,8 @@ ideas = {
             }
 
             modifier = {
-                consumer_goods_factor = -0.5
-				resource_export_multiplier_modifier = -0.5
+                consumer_goods_factor = -0.05
+				resource_export_multiplier_modifier = -0.07
                 trade_opinion_factor = 0.15
                 license_purchase_cost = -0.25
                 license_production_speed = 0.13
@@ -758,8 +758,8 @@ ideas = {
             }
 
             modifier = {
-                political_power_cost = 0.15
-                stability_factor = -0.15
+                political_power_cost = 0.10
+                stability_factor = -0.10
                 consumer_goods_factor = 0.05
                 production_factory_start_efficiency_factor = -0.10
                 line_change_production_efficiency_factor = -0.15
@@ -767,6 +767,7 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.1
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
+				drift_defence_factor = 0.1
             }
         }
 
@@ -779,8 +780,8 @@ ideas = {
             }
 
             modifier = {
-                political_power_cost = 0.1
-                stability_factor = -0.1
+                political_power_cost = 0.05
+                stability_factor = -0.05
                 consumer_goods_factor = 0.025
                 production_factory_start_efficiency_factor = -0.075
                 line_change_production_efficiency_factor = -0.10
@@ -788,6 +789,7 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.075
                 industrial_capacity_factory = 0.025
                 industrial_capacity_dockyard = 0.025
+				drift_defence_factor = 0.1
             }
         }
 
@@ -807,7 +809,7 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.075
                 industrial_capacity_factory = -0.025
                 industrial_capacity_dockyard = -0.025 
-                drift_defence_factor = 0.1
+                drift_defence_factor = 0.05
             }
         }
 
@@ -827,7 +829,7 @@ ideas = {
                 production_factory_max_efficiency_factor = -0.1
                 industrial_capacity_factory = -0.05
                 industrial_capacity_dockyard = -0.05 
-                drift_defence_factor = 0.1
+                drift_defence_factor = -0.05
             }
         }
     }
@@ -845,12 +847,12 @@ ideas = {
             }
 
             modifier = {
-                monthly_population = 0.05
+                monthly_population = 0.075
                 stability_factor = 0.05
-                consumer_goods_factor = 0.05
-                industrial_capacity_factory = -0.05
-                industrial_capacity_dockyard = -0.05
-                production_factory_efficiency_gain_factor = -0.03
+                consumer_goods_factor = 0.075
+                industrial_capacity_factory = -0.075
+                industrial_capacity_dockyard = -0.075
+                production_factory_efficiency_gain_factor = -0.05
             }
         }
 
@@ -895,10 +897,10 @@ ideas = {
             modifier = {
                 monthly_population = -0.15
                 stability_factor = -0.15
-                consumer_goods_factor = -0.05
+                consumer_goods_factor = -0.075
                 industrial_capacity_factory = 0.08
                 industrial_capacity_dockyard = 0.08
-                production_factory_efficiency_gain_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.075
             }
         }
 
@@ -912,12 +914,12 @@ ideas = {
 
             modifier = {
                 local_resources = 0.1
-                monthly_population = -0.3
-                stability_factor = -0.3
-                consumer_goods_factor = -0.08
-                industrial_capacity_factory = 0.1
-                industrial_capacity_dockyard = 0.1
-                production_factory_efficiency_gain_factor = 0.1
+                monthly_population = -0.35
+                stability_factor = -0.25
+                consumer_goods_factor = -0.1
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+                production_factory_efficiency_gain_factor = 0.15
             }
         }
     }
@@ -1574,7 +1576,9 @@ ideas = {
                 political_power_cost = 0.05
                 war_support_factor = -0.05
                 production_speed_buildings_factor = 0.05
-                industry_free_repair_factor = 0.40
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+                industry_free_repair_factor = 0.50
                 required_garrison_factor = 0.05
             }
 
@@ -1616,6 +1620,10 @@ ideas = {
                 resistance_damage_to_garrison = 0.05
                 compliance_growth = -0.1
                 production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
                 repair_speed_arms_factory_factor = 0.75
                 repair_speed_industrial_complex_factor = 0.75
                 industry_free_repair_factor = 1
@@ -1652,11 +1660,11 @@ ideas = {
         sl_education_system1 = {
             level = 1
             modifier = {
-                stability_factor = -0.5
+                stability_factor = -0.05
                 research_speed_factor = -0.2
                 research_sharing_per_country_bonus_factor = -0.5
-                experience_gain_factor = -0.4
-                experience_loss_factor = 0.2
+                experience_gain_factor = -0.2
+                experience_loss_factor = 0.1
                 productivity_growth_modifier = -0.2
             }
 
@@ -2094,10 +2102,10 @@ ideas = {
 
             modifier = {
                 war_support_factor = -0.1
-                weekly_casualties_war_support = -0.01
+                weekly_casualties_war_support = -0.0001
                 monthly_population = -0.3
                 army_morale_factor = -0.1
-                experience_loss_factor = 0.2
+                experience_loss_factor = 0.25
             }
 
             on_add = {
@@ -2289,7 +2297,7 @@ ideas = {
                 political_power_gain = 0.05
                 stability_factor = 0.03
                 war_support_factor = 0.03
-                weekly_casualties_war_support = 0.010
+                weekly_casualties_war_support = 0.0001
 				monthly_population = 0.25
 				army_morale_factor = 0.05
                 experience_loss_factor = -0.05
@@ -2399,7 +2407,7 @@ ideas = {
                 political_power_gain = 0.1
                 stability_factor = 0.06
                 war_support_factor = 0.06
-                weekly_casualties_war_support = 0.015
+                weekly_casualties_war_support = 0.00015
 				monthly_population = 0.40
 				army_morale_factor = 0.075
                 experience_loss_factor = -0.1
@@ -2508,7 +2516,7 @@ ideas = {
                 political_power_gain = 0.15
                 stability_factor = 0.09
                 war_support_factor = 0.09
-                weekly_casualties_war_support = 0.02
+                weekly_casualties_war_support = 0.0002
 				monthly_population = 0.55
 				army_morale_factor = 0.10
                 experience_loss_factor = -0.15
@@ -2615,7 +2623,7 @@ ideas = {
                 political_power_gain = 0.2
                 stability_factor = 0.12
                 war_support_factor = 0.12
-                weekly_casualties_war_support = 0.025
+                weekly_casualties_war_support = 0.00025
 				monthly_population = 0.75
 				army_morale_factor = 0.125
                 experience_loss_factor = -0.2
@@ -3197,8 +3205,8 @@ ideas = {
             }
 
             modifier = {
-				stability_weekly = 0.02
-				war_support_weekly = -0.05
+				stability_weekly = 0.0002
+				war_support_weekly = -0.0005
 
 				max_command_power = -80
 				command_power_gain = -0.5
@@ -3265,7 +3273,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.11
 				production_speed_arms_factory_factor = 0.02
 				production_speed_dockyard_factor = 0.02
-				stability_factor = -0.05
 				war_stability_factor = 0.05
 				mil_facs_worker_requirement_modifier = 0.1
 				military_factories_productivity = 0.1
@@ -3417,7 +3424,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.22
 				production_speed_arms_factory_factor = 0.04
 				production_speed_dockyard_factor = 0.04
-				stability_factor = -0.10
+				stability_factor = -0.05
 				war_stability_factor = 0.10
 				mil_facs_worker_requirement_modifier = 0.2
 				military_factories_productivity = 0.2
@@ -3585,7 +3592,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.33
 				production_speed_arms_factory_factor = 0.06
 				production_speed_dockyard_factor = 0.06
-				stability_factor = -0.15
+				stability_factor = -0.075
 				war_stability_factor = 0.15
 				mil_facs_worker_requirement_modifier = 0.3
 				military_factories_productivity = 0.3
@@ -3710,7 +3717,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.44
 				production_speed_arms_factory_factor = 0.09
 				production_speed_dockyard_factor = 0.09
-				stability_factor = -0.20
+				stability_factor = -0.10
 				war_stability_factor = 0.20
 				mil_facs_worker_requirement_modifier = 0.45
 				military_factories_productivity = 0.45
@@ -3759,7 +3766,7 @@ ideas = {
 					add = 1
 					has_idea = sl_military_spending3
 				}
-				modifier = { # Salafists want to increase military
+				modifier = { # Totalitarian want to increase military
 					factor = 4
 					has_idea = sl_military_spending3
 					OR = {
@@ -3836,7 +3843,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.55
 				production_speed_arms_factory_factor = 0.12
 				production_speed_dockyard_factor = 0.12
-				stability_factor = -0.25
+				stability_factor = -0.125
 				war_stability_factor = 0.25
 				mil_facs_worker_requirement_modifier = 0.6
 				military_factories_productivity = 0.6
@@ -3977,7 +3984,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.66
 				production_speed_arms_factory_factor = 0.16
 				production_speed_dockyard_factor = 0.16
-				stability_factor = -0.30
+				stability_factor = -0.15
 				war_stability_factor = 0.30
 				mil_facs_worker_requirement_modifier = 0.8
 				military_factories_productivity = 0.8
