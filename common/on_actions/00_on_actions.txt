@@ -7,6 +7,22 @@ on_actions = {
 		}
 	}
 
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+		effect = {
+			FROM = {
+				if = { limit = { is_ai = yes }
+					ai_update_build_units = yes
+				}
+			}
+
+			# reset every day, stays lingering for some time after justification is finished
+			set_country_flag = { flag = country_is_justified_on_flag value = 1 days = 70 }
+		}
+	}
+
 	# country
 	on_new_term_election = {
 		random_events = {

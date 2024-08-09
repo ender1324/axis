@@ -936,7 +936,13 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.1
-				monthly_population = -0.1
+				base_migration_rate_value = 0.02
+			}
+
+			
+			on_add = {
+				custom_effect_tooltip = sl_immigration_closed_tt
+				ingame_update_setup = yes
 			}
 		}
 
@@ -950,6 +956,12 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
+				base_migration_rate_value = 0.10
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_immigration_controlled_tt
+				ingame_update_setup = yes
 			}
 		}
 
@@ -962,8 +974,13 @@ ideas = {
 			}
 
 			modifier = {
-				monthly_population = 0.1
+				base_migration_rate_value = 0.20
 				research_speed_factor = 0.03
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_immigration_open_tt
+				ingame_update_setup = yes
 			}
 		}
 
@@ -977,9 +994,14 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1
-				monthly_population = 0.25
-				research_speed_factor = 0.8
+				base_migration_rate_value = 0.30
+				research_speed_factor = 0.08
 				social_cost_multiplier_modifier = 0.05
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_immigration_encouraged_tt
+				ingame_update_setup = yes
 			}
 		}
 
@@ -993,9 +1015,14 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.15
-				monthly_population = 0.60
+				base_migration_rate_value = 0.50
 				research_speed_factor = 0.12
 				social_cost_multiplier_modifier = 0.1
+			}
+
+			on_add = {
+				custom_effect_tooltip = sl_immigration_subsidized_tt
+				ingame_update_setup = yes
 			}
 		}
 	}

@@ -31,7 +31,7 @@ NDefines.NAI.NUM_SILOS_PER_CIVILIAN_FACTORIES = 0.03		-- ai will try to build a 
 NDefines.NAI.NUM_SILOS_PER_MILITARY_FACTORIES = 0.03		-- ai will try to build a silo per this ratio of mil factories
 NDefines.NAI.NUM_SILOS_PER_DOCKYARDS = 0.03
 NDefines.NAI.BUILDING_TARGETS_BUILDING_PRIORITIES = {				-- buildings in order of priority when considering building targets strategies. First has the greatest priority, omitted has the lowest. NOTE: not all buildings are supported by building targets strategies.
-'fossil_powerplant', 'industrial_complex', 'synthetic_refinery', 'nuclear_reactor', 'fuel_silo', 'offices', 'infrastructure', 'arms_factory'
+'fossil_powerplant', 'industrial_complex', 'synthetic_refinery', 'nuclear_reactor', 'fuel_silo', 'offices', 'infrastructure', 'agriculture_district', 'arms_factory'
 }
 
 ---- Military additions

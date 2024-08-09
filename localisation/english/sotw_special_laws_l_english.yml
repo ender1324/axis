@@ -80,11 +80,16 @@
  sl_no_work_hour_limits: "No Work Hour Limits"
  
  sl_immigration_policy: "Immigration Policy"
- sl_immigration_closed: "Closed Migration"
- sl_immigration_controlled: "Controlled Immigration"
+ sl_immigration_closed: "Closed Borders"
+ sl_immigration_closed_tt: "\n$$[migration_laws_rate_05] §Hbillion§! is being spent on Migration Control.\n$current_migration_rate$"
+ sl_immigration_controlled: "Heavily Regulated Migration"
+ sl_immigration_controlled_tt: "\n$$[migration_laws_rate_04] §Hbillion§! is being spent on Migration Control.\n$current_migration_rate$"
  sl_immigration_open: "Open Immigration"
+ sl_immigration_open_tt: "\n$$[migration_laws_rate_03] §Hbillion§! is being spent on Migration Control.\n$current_migration_rate$"
  sl_immigration_encouraged: "Encouraged Immigration"
+ sl_immigration_encouraged_tt: "\n$$[migration_laws_rate_02] §Hbillion§! is being spent on Migration Control.\n$current_migration_rate$"
  sl_immigration_subsidized: "Subsidized Immigration"
+ sl_immigration_subsidized_tt: "\n$$[migration_laws_rate_01] §Hbillion§! is being spent on Migration Control.\n$current_migration_rate$"
 
  public_structure: "Public Structure"
 

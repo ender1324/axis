@@ -27,7 +27,9 @@ add_ideas = {
 	sl_protectionist_tariffs
 	sl_state_controlled_unions
 	sl_twelve_hour_workday
+	sl_immigration_controlled
 	# Public Structure
+	sl_racial_purity
 	sl_state_policing4
 	sl_penal_labour
 	sl_education_system3

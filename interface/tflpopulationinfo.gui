@@ -333,7 +333,7 @@ guiTypes = {
 				maxWidth = 250
 				maxHeight = 24
 				fixedsize = yes
-				text = "MAXIMUM_MIGRATION_RATE_VALUE"
+				text = "MAXIMUM_MIGRATION_RATE_GUI_VALUE"
 				pdx_tooltip = "MAXIMUM_MIGRATION_RATE_TT"
 				pdx_tooltip_delayed = "MAXIMUM_MIGRATION_RATE_TT_DELAYED"
 			}

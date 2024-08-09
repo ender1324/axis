@@ -333,7 +333,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "convert_ic_button"
-				position = { x = -98 y = 428 }
+				position = { x = -52 y = 428 }
 				quadTextureSprite ="GFX_convert_ic_button"
 				buttonFont = "Main_14_black"
 				Orientation = "UPPER_RIGHT"
