@@ -138,8 +138,8 @@ spriteTypes = {
 
 	# Chinese People's Resistance Front
 	spriteType = {
-		name = "GFX_portrait_PRC_mao_zedong"
-		textureFile = "gfx/leaders/PRC/Portrait_China_Mao_Zedong.dds"
+		name = "GFX_portrait_PRC_mao_zedong" # this is the code name
+		textureFile = "gfx/leaders/PRC/Portrait_China_Mao_Zedong.dds" # this is the directory
 	}
 
 	# Free France
