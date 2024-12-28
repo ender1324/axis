@@ -33,6 +33,7 @@ technologies = {
 			position = { x = -2 y = 0 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -88,6 +89,7 @@ technologies = {
 			position = { x = -2 y = 2 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -151,6 +153,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -203,6 +206,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -259,6 +263,7 @@ technologies = {
 			position = { x = 0 y = 10 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -307,6 +312,7 @@ technologies = {
 			position = { x = -2 y = 8 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -352,6 +358,7 @@ technologies = {
 			position = { x = -2 y = 12 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -420,6 +427,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -467,6 +475,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -513,6 +522,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -552,6 +562,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -591,6 +602,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -627,6 +639,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			rocketry
 			mio_cat_all_artillery_equipment
@@ -697,6 +710,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -765,6 +779,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -832,6 +847,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -907,6 +923,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -972,6 +989,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -1027,6 +1045,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_tank
@@ -1114,6 +1133,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air
@@ -1163,6 +1183,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air
@@ -1222,6 +1243,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air
@@ -1280,6 +1302,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air
@@ -1329,6 +1352,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air
@@ -1379,6 +1403,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			artillery
 			cat_anti_air

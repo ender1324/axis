@@ -21,6 +21,6 @@ state = {
 		add_claim_by = LUX
 	}
 
-	provinces= { 6583 }
+	provinces= { 6583 13427 }
 	local_supplies=0.0 
 }

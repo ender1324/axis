@@ -31,6 +31,7 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -83,6 +84,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -160,6 +162,7 @@ technologies = {
 		# 	position = { x = 6 y = 8 }
 		# }
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -229,6 +232,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -293,6 +297,7 @@ technologies = {
 			position = { x = 0 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -335,6 +340,7 @@ technologies = {
 			position = { x = 2 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -369,6 +375,7 @@ technologies = {
 			position = { x = 2 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -426,6 +433,7 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -483,6 +491,7 @@ technologies = {
 			position = { x = 2 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -530,6 +539,7 @@ technologies = {
 			position = { x = 2 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			cat_heavy_fighter
@@ -566,6 +576,7 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -606,6 +617,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -646,6 +658,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -686,6 +699,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -722,6 +736,7 @@ technologies = {
 			position = { x = 0 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -766,6 +781,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -808,6 +824,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -853,6 +870,7 @@ technologies = {
 			position = { x = 2 y = 4 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -911,6 +929,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -954,6 +973,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -983,6 +1003,7 @@ technologies = {
 			position = { x = 2 y = 4 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1028,6 +1049,7 @@ technologies = {
 			position = { x = 4 y = 4 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1061,6 +1083,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1102,6 +1125,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1138,6 +1162,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1179,6 +1204,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1221,6 +1247,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1258,6 +1285,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1301,6 +1329,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1333,6 +1362,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1360,6 +1390,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1398,6 +1429,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1432,6 +1464,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1466,6 +1499,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1495,6 +1529,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1529,6 +1564,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1563,6 +1599,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1597,6 +1634,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_air }
 		categories = {
 			air_equipment
 			plane_modules_tech

@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_GER_never_ending_war"
+		textureFile = "gfx/ideas/GER/GER_never_ending_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_uncurbed_ambitions"
+		textureFile = "gfx/ideas/GER/GER_uncurbed_ambitions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_legacy_massacre"
+		textureFile = "gfx/ideas/GER/GER_legacy_massacre.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_false_opportunities"
+		textureFile = "gfx/ideas/GER/GER_false_opportunities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_failure_system"
+		textureFile = "gfx/ideas/GER/GER_failure_system.dds"
+	}
+}

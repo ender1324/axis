@@ -1,0 +1,25 @@
+state = {
+	id = 1092
+	name = "STATE_1092"
+	manpower = 42000
+	state_category = small_island
+	
+	history = {
+		owner = GER
+		add_core_of = ENG
+		add_claim_by = GER
+		victory_points = { 13425 1 }
+		buildings = {
+			infrastructure = 3
+			13425 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces = {
+		13425
+	}
+
+	local_supplies = 1.0 
+}

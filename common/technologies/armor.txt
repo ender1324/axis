@@ -31,6 +31,15 @@ technologies = {
 		# 	light_art
 		# 	light_spaa
 		# }
+
+		special_project_specialization = { specialization_land }
+        categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -81,6 +90,15 @@ technologies = {
 		# 	light_art
 		# 	light_spaa
 		# }
+
+		special_project_specialization = { specialization_land }
+        categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -131,6 +149,15 @@ technologies = {
 		# 	light_art
 		# 	light_spaa
 		# }
+
+		special_project_specialization = { specialization_land }
+        categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -181,6 +208,15 @@ technologies = {
 		# 	light_art
 		# 	light_spaa
 		# }
+
+		special_project_specialization = { specialization_land }
+        categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -264,6 +300,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -299,6 +336,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -333,6 +371,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -355,6 +394,7 @@ technologies = {
 			base = 0
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -413,6 +453,7 @@ technologies = {
 			}
 		}
 	
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -472,6 +513,7 @@ technologies = {
 			}
 		}
 	
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -526,6 +568,7 @@ technologies = {
 			}
 		}
 	
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -565,6 +608,7 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -605,6 +649,7 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -640,6 +685,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -665,6 +711,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -711,6 +758,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -790,6 +838,7 @@ technologies = {
 		# 	motorized_rocket_unit
 		# }
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -838,6 +887,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -886,6 +936,7 @@ technologies = {
 			position = { x = 0 y = @1958 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1174,6 +1225,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor
@@ -1223,6 +1275,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor
@@ -1267,6 +1320,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor

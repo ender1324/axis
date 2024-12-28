@@ -27,6 +27,7 @@ technologies = {
 		# 	flamethrower
 		# }
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -86,6 +87,7 @@ technologies = {
 			position = { x = 2 y = -1 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -95,44 +97,22 @@ technologies = {
 		}
 	}
 
-	# fucking support weapons
+	# Support weapons
 	support_weapons = {
 
-		infantry = {
+		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
+
+		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-		mountaineers = {
+		}
+
+		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		ifv_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
 		}
 		
 		path = {
@@ -184,39 +164,22 @@ technologies = {
 	
 	support_weapons2 = {
 
-		infantry = {
+		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
+
+		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-		mountaineers = {
+		}
+
+		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		ifv_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
+
+		category_vehicle_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -233,6 +196,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -276,39 +240,22 @@ technologies = {
 	
 	support_weapons3 = {
 
-		infantry = {
+		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
+
+		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-		mountaineers = {
+		}
+
+		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		ifv_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
+
+		category_vehicle_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -325,6 +272,7 @@ technologies = {
 			position = { x = 0 y = @1954 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -360,39 +308,22 @@ technologies = {
 	
 	support_weapons4 = {
 
-		infantry = {
+		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
+
+		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-		mountaineers = {
+		}
+
+		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		ifv_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
+
+		category_vehicle_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -409,6 +340,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -444,39 +376,22 @@ technologies = {
 
 	support_weapons5 = {
 
-		infantry = {
+		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
+
+		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
-		mountaineers = {
+		}
+
+		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		ifv_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
+
+		category_vehicle_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -488,6 +403,7 @@ technologies = {
 			position = { x = 0 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -559,6 +475,7 @@ technologies = {
 			position = { x = 0 y = -1 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -591,6 +508,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -624,6 +542,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -684,6 +603,7 @@ technologies = {
 			position = { x = 0 y = @1954 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -725,6 +645,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -787,6 +708,7 @@ technologies = {
 			position = { x = 0 y = @1958 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -829,6 +751,7 @@ technologies = {
 			position = { x = 0 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -884,6 +807,7 @@ technologies = {
 			position = { x = 0 y = @1961 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -942,6 +866,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 		}
@@ -983,6 +908,7 @@ technologies = {
 			position = { x = 2 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			anti_tank_infantry_weapons
@@ -1027,6 +953,7 @@ technologies = {
 			position = { x = 2 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			anti_tank_infantry_weapons
@@ -1066,6 +993,7 @@ technologies = {
 			position = { x = 2 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			anti_tank_infantry_weapons
@@ -1106,6 +1034,7 @@ technologies = {
 			position = { x = 3 y = @1954 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			night_vision
 		}
@@ -1146,6 +1075,7 @@ technologies = {
 			position = { x = 3 y = @1958 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			night_vision
 		}
@@ -1197,6 +1127,7 @@ technologies = {
 			position = { x = 0 y = -1 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			camo_tech
@@ -1234,6 +1165,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			camo_tech
@@ -1271,6 +1203,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			camo_tech
@@ -1303,6 +1236,7 @@ technologies = {
 			position = { x = 0 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			camo_tech
@@ -1342,6 +1276,7 @@ technologies = {
 			position = { x = 0 y = -1 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			winter_clothing_tech
@@ -1390,6 +1325,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			winter_clothing_tech
@@ -1431,6 +1367,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			winter_clothing_tech
@@ -1472,6 +1409,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			winter_clothing_tech
@@ -1508,6 +1446,7 @@ technologies = {
 			position = { x = 0 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			winter_clothing_tech
@@ -1747,6 +1686,7 @@ technologies = {
 			position = { x = 0 y = -1 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			summer_clothing_tech
@@ -1787,6 +1727,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			summer_clothing_tech
@@ -1827,6 +1768,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			summer_clothing_tech
@@ -1868,6 +1810,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			summer_clothing_tech
@@ -1911,6 +1854,7 @@ technologies = {
 			position = { x = 0 y = @1960 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			infantry_weapons
 			summer_clothing_tech

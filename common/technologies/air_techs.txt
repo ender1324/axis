@@ -28,6 +28,7 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -106,6 +107,7 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -211,6 +213,7 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -320,6 +323,7 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			light_fighter
@@ -424,6 +428,7 @@ technologies = {
 			cv_fighter4
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			jet_technology
@@ -504,6 +509,7 @@ technologies = {
 			cv_CAS1
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			cas_bomber
@@ -597,6 +603,7 @@ technologies = {
 			cv_CAS2
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			cas_bomber
@@ -710,6 +717,7 @@ technologies = {
 			cv_CAS3
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			cas_bomber
@@ -808,6 +816,7 @@ technologies = {
 			cv_CAS4
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			light_air
 			cas_bomber
@@ -911,6 +920,7 @@ technologies = {
 			cv_naval_bomber1
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			naval_air
 			naval_bomber
@@ -1015,6 +1025,7 @@ technologies = {
 			cv_naval_bomber2
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			naval_air
 			air_equipment
@@ -1128,6 +1139,7 @@ technologies = {
 			cv_naval_bomber3
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			naval_air
 			naval_bomber
@@ -1228,6 +1240,7 @@ technologies = {
 			cv_naval_bomber4
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			naval_air
 			naval_bomber
@@ -1339,6 +1352,7 @@ technologies = {
 			position = { x = 2 y = 2 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -1369,6 +1383,7 @@ technologies = {
 			position = { x = -2 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1400,6 +1415,7 @@ technologies = {
 			position = { x = -2 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1431,6 +1447,7 @@ technologies = {
 			position = { x = -2 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1457,6 +1474,7 @@ technologies = {
 			position = { x = -2 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1488,6 +1506,7 @@ technologies = {
 			position = { x = 10 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1531,6 +1550,7 @@ technologies = {
 			position = { x = 10 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			air_equipment
@@ -1577,6 +1597,7 @@ technologies = {
 			position = { x = 2 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -1632,6 +1653,7 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -1687,6 +1709,7 @@ technologies = {
 			position = { x = 2 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			tactical_bomber
@@ -1732,6 +1755,7 @@ technologies = {
 			position = { x = 2 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
 			jet_technology
@@ -1767,6 +1791,7 @@ technologies = {
 			position = { x = 6 y = 4 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -1803,6 +1828,7 @@ technologies = {
 			position = { x = 6 y = 6 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -1840,6 +1866,7 @@ technologies = {
 			position = { x = 6 y = 8 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			air_equipment
@@ -1872,6 +1899,7 @@ technologies = {
 			position = { x = 6 y = 10 }
 		}
 		
+		special_project_specialization = { specialization_air }
 		categories = {
 			heavy_air
 			jet_technology

@@ -1,0 +1,25 @@
+state={
+	id=1109
+	name="STATE_1109"
+	resources = {
+		oil = 4
+	}
+	provinces={
+		4932 13423
+	}
+	history = {
+		owner = ITA
+		add_core_of = SAU
+		add_claim_by = UAE
+		victory_points = {
+			13423 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=10212
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

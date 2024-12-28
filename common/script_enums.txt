@@ -70,7 +70,9 @@ script_enum_equipment_stat = {
 	air_ground_attack
 	air_visibility_factor
 	railway_gun_attack 			#Cannot be used with MIOS
-	railway_gun_attack_range 	#I think this needs to be changed in a define, not here since its cached at start
+	railway_gun_attack_range_index_in_define
+	railway_gun_hours_between_redistribution
+	railway_gun_annex_ratio
 	max_organisation			#Cannot be used with MIOS
 	max_strength				##Cannot be used with MIOS
 	maximum_speed	
@@ -89,6 +91,10 @@ script_enum_equipment_stat = {
 	night_penalty				#Cannot be used with MIOS
 	build_cost_ic
 	naval_weather_penalty_factor
+
+	#GD
+	recovery
+	additional_collateral_damage
 }
 
 script_enum_production_stat = {
@@ -133,6 +139,13 @@ script_enum_equipment_category = {
 	anti_tank
 	rocket
 	flame
+
+	#land_cruiser
+	emplacement_gun_ammo
+	ballistic_missile
+	nuclear_missile
+	sam_missile
+	missile_launcher
 }
 
 script_enum_equipment_bonus_type = {
@@ -177,6 +190,10 @@ script_enum_equipment_bonus_type = {
 	anti_tank
 	rocket
 	flame
+
+	# special projects
+	helicopter_equipment
+	helicopter_equipment_1
 
 	# Equipment archetypes & types
 	destroyer
@@ -509,4 +526,21 @@ script_enum_equipment_bonus_type = {
 	main_battle_aa_chassis_3
 	# amphibious_tank_equipment_1
 	# amphibious_tank_equipment_2
+
+	#GD
+	emplacement_gun_ammo
+	ballistic_missile
+	nuclear_missile
+	nuclear_missile_equipment
+	nuclear_missile_equipment_1
+	nuclear_missile_equipment_2
+	nuclear_missile_equipment_3
+	sam_missile
+	sam_missile_equipment
+	sam_missile_equipment_1
+	missile_launcher
+	ballistic_missile_equipment
+	ballistic_missile_equipment_1
+	ballistic_missile_equipment_2
+	ballistic_missile_equipment_3
 }

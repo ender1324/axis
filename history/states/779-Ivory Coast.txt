@@ -4,16 +4,16 @@ state={
 	name="STATE_779" # Ivory Coast
 	manpower = 3850734
 	
-	state_category = pastoral
+	state_category = rural
 	history={
 		owner = IVO
 		add_core_of = IVO
 		add_claim_by = FFA
 		victory_points = {
-			10803 2
+			10803 5
 		}
 		victory_points = {
-			8065 1
+			8065 3
 		}
 		buildings = {
 			infrastructure = 2
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		5013 5070 8065 8122 10762 10803
+		5013 5070 8065 8122 10762 10803 13452
 	}
 
 	local_supplies=1.0 

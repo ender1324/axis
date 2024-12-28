@@ -6,7 +6,7 @@ state={
 		rubber=70 
 	}
 	provinces={
-		12113 
+		12113 5057
 	}
 	history = {
 		owner = INS

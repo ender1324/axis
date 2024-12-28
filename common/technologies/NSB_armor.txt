@@ -75,6 +75,8 @@ technologies = {
 				date > "1955.1.1"
 			}
 		}
+
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -136,6 +138,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -189,6 +192,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -237,6 +241,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -319,6 +324,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -366,6 +372,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -413,6 +420,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -456,6 +464,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -495,6 +504,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -535,6 +545,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -570,6 +581,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -595,6 +607,7 @@ technologies = {
 			position = { x = 0 y = @1958 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -652,6 +665,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -706,6 +720,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -761,6 +776,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -809,6 +825,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -869,6 +886,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -927,6 +945,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -982,6 +1001,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -1032,6 +1052,7 @@ technologies = {
 			}
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			armor
 			mio_cat_tech_all_armor_and_modules
@@ -1074,6 +1095,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1153,6 +1175,7 @@ technologies = {
 		# 	motorized_rocket_unit
 		# }
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1201,6 +1224,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1249,6 +1273,7 @@ technologies = {
 			position = { x = 0 y = @1958 }
 		}
 
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1536,6 +1561,7 @@ technologies = {
 			position = { x = 0 y = @1945 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor
@@ -1585,6 +1611,7 @@ technologies = {
 			position = { x = 0 y = @1953 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor
@@ -1629,6 +1656,7 @@ technologies = {
 			position = { x = 0 y = @1956 }
 		}
 		
+		special_project_specialization = { specialization_land }
 		categories = {
 			motorized_equipment
 			armor

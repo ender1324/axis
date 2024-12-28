@@ -1,0 +1,30 @@
+state={
+	id=1091
+	name="STATE_1091"
+	provinces={
+		543 557 5283 11525 
+	}
+	history={
+		victory_points = {
+			11525 1
+		}
+		victory_points = {
+			5283 1
+		}
+		owner = GER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			anti_air_building = 1
+			5283 = {
+				bunker = 1
+			}
+		}
+		add_core_of = GER
+		add_claim_by = CZE
+	}
+	manpower=650000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

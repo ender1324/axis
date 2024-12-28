@@ -1,0 +1,73 @@
+ideas = {
+	country = {
+		GER_never_ending_war = {
+			name = GER_never_ending_war
+			picture = GER_never_ending_war
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				weekly_manpower = -500
+				war_support_weekly = -0.0001
+				personnel_cost_multiplier_modifier = 0.10
+				productivity_growth_modifier = -0.01
+			}
+		}
+
+		GER_uncurbed_ambitions = {
+			name = GER_uncurbed_ambitions
+			picture = GER_uncurbed_ambitions
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				education_cost_multiplier_modifier = 0.05
+				custom_modifier_tooltip = GER_uncurbed_ambitions_modifier
+			}
+		}
+
+		GER_legacy_massacre = {
+			picture = GER_legacy_massacre
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				stability_weekly = -0.01
+				equipment_cost_multiplier_modifier = 0.05
+				custom_modifier_tooltip = GER_legacy_massacre_modifier
+			}
+		}
+
+		GER_false_opportunities = {
+			picture = GER_false_opportunities
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				monthly_population = -0.5
+				migration_rate_value_factor = -0.1
+				social_cost_multiplier_modifier = 0.1
+				drift_defence_factor = -0.1
+			}
+		}
+
+		GER_failure_system = {
+			picture = GER_failure_system
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				stability_weekly = -0.01
+				research_speed_factor = -0.05
+				police_cost_multiplier_modifier = 0.10
+				paternalism_drift = 0.01
+			}
+		}
+	}
+}

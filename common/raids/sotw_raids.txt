@@ -1,0 +1,7 @@
+types = {
+	anticrash = {
+		building = {
+			types = facility
+		}
+	}
+}
