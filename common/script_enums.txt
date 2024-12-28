@@ -534,13 +534,15 @@ script_enum_equipment_bonus_type = {
 	nuclear_missile_equipment
 	nuclear_missile_equipment_1
 	nuclear_missile_equipment_2
-	nuclear_missile_equipment_3
-	sam_missile
-	sam_missile_equipment
-	sam_missile_equipment_1
+	# sam_missile
+	# sam_missile_equipment
+	# sam_missile_equipment_1
 	missile_launcher
 	ballistic_missile_equipment
 	ballistic_missile_equipment_1
 	ballistic_missile_equipment_2
 	ballistic_missile_equipment_3
+	land_cruiser
+	explosive_ammo_equipment
+	explosive_ammo_equipment_1
 }

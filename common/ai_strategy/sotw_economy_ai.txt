@@ -607,7 +607,7 @@ AI_build_fuel_silos = {
 AI_build_nuclear_reactors = {
 	enable = {
 		date < 1955.1.1
-		has_tech = nuclear_reactor
+		#has_tech = nuclear_reactor
 		check_variable = { nuclear_reactors < 5 }
 		check_variable = { uranium_amount > 0 }
 	}
@@ -623,7 +623,7 @@ AI_build_nuclear_reactors = {
 AI_build_nuclear_reactors_2 = {
 	enable = {
 		date > 1954.1.1
-		has_tech = nuclear_reactor
+		#has_tech = nuclear_reactor
 		check_variable = { total_unemployed_percentage_display < 0.010 } # 1% unemployment
 	}
 	abort_when_not_enabled = yes

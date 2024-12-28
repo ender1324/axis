@@ -1653,7 +1653,7 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				factor = 0
-				command_power < @tier1_cp_cost_cp_cost
+				command_power < @tier1_cp_cost
 			}
 		}
 	}

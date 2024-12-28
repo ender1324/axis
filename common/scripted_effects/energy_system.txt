@@ -160,7 +160,7 @@ calculate_energy_use = {
 	if = {
 		limit = {
 			# TODO: TEMP fix later
-			has_tech = nuclear_reactor
+			always = no
 		}
 		set_variable = { nuclear_fuel_consumption = modifier@nuclear_fuel_consumption }
 		set_temp_variable = { nuclear_fuel_consumption_multiplier = 1 }

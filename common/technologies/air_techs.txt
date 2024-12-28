@@ -1758,7 +1758,6 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		categories = {
 			medium_air
-			jet_technology
 			tactical_bomber
 			jet_technology
 			mio_cat_all_medium_aircraft_and_modules
@@ -1904,7 +1903,6 @@ technologies = {
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
-			jet_technology
 			mio_cat_all_heavy_aircraft_and_modules
 		}
 		

@@ -863,6 +863,14 @@
  cv_nav_bomber_equipment_3_short: "1960 Carrier Bomber" 
  cv_nav_bomber_equipment_3_desc: "An modern naval bomber modified to launch from and land on aircraft carriers." 
 
+ # Emplacement gun ammo
+ explosive_ammo_equipment: "$mega_gun_emplacement$"
+ explosive_ammo_equipment_short: "$mega_gun_emplacement$"
+ explosive_ammo_equipment_desc: "A high-explosive projectile that can be fired from a Large Caliber Multi-Charge Gun, capable of reaching targets at very long range."
+ explosive_ammo_equipment_1: "$mega_gun_emplacement$"
+ explosive_ammo_equipment_1_short: "$mega_gun_emplacement$"
+ explosive_ammo_equipment_1_desc: "A high-explosive projectile that can be fired from a Large Caliber Multi-Charge Gun, capable of reaching targets at very long range."
+
  # Plane Airframes [TECH NAMES]
  ww2_planes: "WW2 Planes"
  early_bomber: "WW2 Bombers"

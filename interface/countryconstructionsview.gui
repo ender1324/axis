@@ -1883,7 +1883,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "economy_budget_balance_income"
 				position = { x = 12 y = 13 }
-				font = "cg_18b"
+				#font = "cg_18b"
 				format = left
 				maxWidth = 80
 				maxHeight = 24
@@ -1894,7 +1894,7 @@ guiTypes = {
 				name = "economy_budget_balance_expense"
 				position = { x = -92 y = 13 }
 				orientation = UPPER_RIGHT
-				font = "cg_18b"
+				#font = "cg_18b"
 				format = right
 				maxWidth = 80
 				maxHeight = 24
@@ -1958,7 +1958,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "economy_energy_balance_generation"
 					position = { x = 12 y = 13 }
-					font = "cg_18b"
+					#font = "cg_18b"
 					format = left
 					maxWidth = 80
 					maxHeight = 24
@@ -1970,7 +1970,7 @@ guiTypes = {
 					name = "economy_budget_balance_consumption"
 					position = { x = -92 y = 13 }
 					orientation = UPPER_RIGHT
-					font = "cg_18b"
+					#font = "cg_18b"
 					format = right
 					maxWidth = 80
 					maxHeight = 24
@@ -2239,7 +2239,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "open_economy_container"
-		orientation = "UPPER_LEFT"
+		orientation = UPPER_LEFT
 		position = { x = 400 y = 12 }
 		
 

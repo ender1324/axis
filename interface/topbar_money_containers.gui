@@ -5,7 +5,7 @@ guiTypes = {
 
 		buttonType ={
 			name ="hide_money_bg"
-			spriteType = "GFX_AC_left_arrow"
+			spriteType = "GFX_arrow_down_small"
 			position = { x=0 y=0 }
 		}
 
@@ -27,7 +27,7 @@ guiTypes = {
 
 		buttonType ={
 			name ="show_money_bg"
-			spriteType = "GFX_AC_right_arrow"
+			spriteType = "GFX_arrow_up_small"
 			position = { x=0 y=0 }
 		}
 
