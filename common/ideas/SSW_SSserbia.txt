@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+		SSW_black_hole_europe = {
+			name = SSW_black_hole_europe
+			picture = SSW_black_hole_europe
+			allowed = {
+				tag = SSW
+			}
+
+			modifier = {
+				civilian_intel_to_others = -10
+				army_intel_to_others = -10
+				foreign_subversive_activites = 0.1
+				trade_opinion_factor = -1
+				min_export = -1
+			}
+		}
+
+		SSW_new_blood_old_land = {
+			name = SSW_new_blood_old_land
+			picture = SSW_new_blood_old_land
+			allowed = {
+				tag = SSW
+			}
+
+			modifier = {
+				stability_weekly = -0.005
+				monthly_population = 0.5
+				weekly_manpower = 100
+				total_workforce_modifier = 0.1
+				high_unemployment_threshold_modifier = 0.9
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		SSW_burning_structure = {
+			name = SSW_burning_structure
+			picture = SSW_burning_structure
+			allowed = {
+				tag = SSW
+			}
+
+			modifier = {
+				experience_gain_army = 0.1
+				
+				monthly_population = -1
+				weekly_manpower = -700
+				army_attack_factor = -0.5
+				army_defence_factor = -0.25
+				army_org_factor = -0.2
+				productivity_growth_modifier = -0.1
+				tax_gain_multiplier_modifier = -0.4
+				police_cost_multiplier_modifier = 0.25
+				bureaucracy_cost_multiplier_modifier = -0.25
+				occultism_drift = -0.1
+				custom_modifier_tooltip = SSW_burning_structure_modifier
+			}
+		}
+
+		SSW_ultimate_goal = {
+			name = SSW_ultimate_goal
+			picture = SSW_ultimate_goal
+			allowed = {
+				tag = SSW
+			}
+
+			modifier = {
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
+				conscription_factor = 0.3
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				production_speed_nuclear_reactor_factor = 0.50
+				custom_modifier_tooltip = SSW_ultimate_goal_modifier
+			}	
+		}
+	}
+}

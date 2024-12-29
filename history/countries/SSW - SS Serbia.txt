@@ -12,6 +12,11 @@ set_politics = {
 }
 
 add_ideas = {
+	# Country
+	SSW_black_hole_europe
+	SSW_new_blood_old_land
+	SSW_burning_structure
+	SSW_ultimate_goal
 	# Special Laws
 	# Government Structure
 	sl_unitary_state

@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_SSW_black_hole_europe"
+		textureFile = "gfx/ideas/SSW/SSW_black_hole_europe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SSW_new_blood_old_land"
+		textureFile = "gfx/ideas/SSW/SSW_new_blood_old_land.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SSW_burning_structure"
+		textureFile = "gfx/ideas/SSW/SSW_burning_structure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SSW_ultimate_goal"
+		textureFile = "gfx/ideas/SSW/SSW_ultimate_goal.dds"
+	}
+}

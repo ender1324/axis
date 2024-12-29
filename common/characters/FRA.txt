@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = GER_joseph_goebbels_desc
+			#desc = GER_joseph_goebbels_desc
 			ideology = fascism_subtype
 			expire = 1968.7.23
 			traits = {
