@@ -1,0 +1,114 @@
+characters = {
+	FRA_Fernand_de_Brinon = {
+		name = FRA_Fernand_de_Brinon
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Fernand_de_Brinon"
+			}
+		}
+		country_leader = {
+			desc = GER_joseph_goebbels_desc
+			ideology = fascism_subtype
+			expire = 1968.7.23
+			traits = {
+				eager_collaborator
+			}
+		}
+	}
+	FRA_Jean_Louis_Tixier_Vignancour = {
+		name = FRA_Jean_Louis_Tixier_Vignancour
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Jean_Louis_Tixier_Vignancour"
+			}
+		}
+		#country_leader = {
+		#	ideology = fascism_subtype
+		#	expire = 1961.1.12
+		#	traits = {
+		#		popular_figurehead2
+		#	}
+		#}
+	}
+	FRA_Edgar_Puaud = {
+		name = FRA_Edgar_Puaud
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Edgar_Puaud"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism_subtype
+			expire = 1961.1.12
+			traits = {
+				likes_germany
+				prince_of_terror
+				dictator
+			}
+		}
+	}
+	FRA_Jean_Marie_Le_Pen = {
+		name = FRA_Jean_Marie_Le_Pen
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Jean_Marie_Le_Pen"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			expire = 1964.1.12
+			traits = {
+				likes_germany
+				headstrong
+			}
+		}
+	}
+	FRA_Francois_Mitterrand = {
+		name = FRA_Francois_Mitterrand
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Edgar_Puaud"
+			}
+		}
+		country_leader = {
+			ideology = progressivism_subtype
+			expire = 1964.1.12
+			traits = {
+				democratic_reformer
+				dislikes_germany
+			}
+		}
+	}
+	FRA_Edmond_Giscard_Estaing = {
+		name = FRA_Edmond_Giscard_Estaing
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Edgar_Puaud"
+			}
+		}
+		country_leader = {
+			ideology = liberal_subtype
+			expire = 1964.1.12
+			traits = {
+				democratic_reformer
+				dislikes_germany
+			}
+		}
+	}
+	FRA_Antoine_Pinay = {
+		name = FRA_Antoine_Pinay
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Edgar_Puaud"
+			}
+		}
+		country_leader = {
+			ideology = conservatism_subtype
+			expire = 1964.1.12
+			traits = {
+				democratic_reformer
+				
+			}
+		}
+	}
+}

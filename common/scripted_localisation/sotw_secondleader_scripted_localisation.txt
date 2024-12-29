@@ -134,6 +134,11 @@ defined_text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
 		localization_key = GFX_portrait_RUS_Vsevolod
 	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = GFX_portrait_FRA_Jean_Louis_Tixier_Vignancour
+	}
 	text = { localization_key = GFX_leader_unknown }
 }
 
@@ -184,6 +189,11 @@ defined_text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
 		localization_key = SL_name_Vsevolod
 	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_name_Jean_Louis_Tixier_Vignancour
+	}
 	text = { localization_key = SL_name }
 }
 
@@ -220,13 +230,18 @@ defined_text = {
 	}
 	# ENGLAND
 	text = {
-		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
-		localization_key = SL_name_with_trait_Edward_VIII
+		trigger = { has_idea = ENG_SL_Edward_VIII_idea }  
+		localization_key = SL_name_with_trait_Edward_VIII    
 	}
 	# Far-Eastern Russia
 	text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
 		localization_key = SL_name_with_trait_Vsevolod
+	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_name_with_trait_Jean_Louis_Tixier_Vignancour
 	}
 	text = { localization_key = SL_name_with_trait }
 }
@@ -272,6 +287,11 @@ defined_text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
 		localization_key = SL_diplomacy_name_with_trait_Vsevolod
 	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_diplomacy_name_with_trait_Jean_Louis_Tixier_Vignancour
+	}
 	text = { localization_key = SL_diplomacy_name_with_trait }
 }
 
@@ -315,6 +335,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
 		localization_key = SL_desc_Vsevolod
+	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_desc_Jean_Louis_Tixier_Vignancour
 	}
 	text = { localization_key = SL_desc }
 }

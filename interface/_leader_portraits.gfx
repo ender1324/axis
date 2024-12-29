@@ -153,4 +153,21 @@ spriteTypes = {
 		name = "GFX_portrait_wang_jingwei"
 		textureFile = "gfx/leaders/CHI/Portrait_Wang_Jingwei.dds"
 	}
+	#France
+	spriteType = {
+		name = "GFX_portrait_FRA_Fernand_de_Brinon"
+		textureFile = "gfx/leaders/FRA/FRA_Fernand_de_Brinon.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_Jean_Louis_Tixier_Vignancour"
+		textureFile = "gfx/leaders/FRA/FRA_Jean_Louis_Tixier_Vignancour.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_Edgar_Puaud"
+		textureFile = "gfx/leaders/FRA/FRA_Edgar_Puaud.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_Jean_Marie_Le_Pen"
+		textureFile = "gfx/leaders/FRA/FRA_Jean_Marie_Le_Pen.dds"
+	}
 }

@@ -1,0 +1,32 @@
+﻿l_english:
+ ##### ############################ #####
+ ##### France #####
+ ##### ############################ #####
+
+
+FRA_progressivism_party: "UDSR"
+FRA_progressivism_party_long: "Union démocratique et socialiste de la Résistance"
+FRA_liberal_democracy_party: "CdM-L"
+FRA_liberal_democracy_party_long: "Conseil des Ministres-Les Libérales"
+FRA_conservatism_party: "CdM-R"
+FRA_conservatism_party_long: "Conseil des Ministres-Les Réformistes"
+FRA_fascism_party: "CdM"
+FRA_fascism_party_long: "Conseil des Ministres"
+FRA_national_socialism_party: "CdM-LP"
+FRA_national_socialism_party_long: "Conseil des Ministres-Le Pen"
+FRA_ultranationalism_party: "PRF"
+FRA_ultranationalism_party_long: "Partie de la Renaissance Française"
+
+FRA_Divided_Council: "Divided Council"
+FRA_Economic_Crisis: "Economic Crisis"
+FRA_Legion_Charlemagne: "Dawn of Legion Charlemagne"
+FRA_La_Milice_Francaise: "La Milice Française"
+
+##EVENT##
+
+FRA.4.t: "Brinon was Assasinated!"
+FRA.4.d: "Our nation's president, Fernand de Brinon, was assassinated during a parade in the city of Oreland! In a symphony of police whistles, chants and shouts, a rebel against the government snuck into the audience and when he got close to the president's car, he pulled out a pistol and shot Brinon 3 times in the head. In a second, the atmosphere turned to shouts of panic and the sound of cops rushing towards the president, our militia managed to arrest the shooter and he is awaiting trial. Our doctors did their best, but it was too late for Brinon. France mourns the death of the president, while the council debates the next president of France."
+FRA.4.a: "Stay Calm! Stay Calm!"
+FRA.5.t: "The Next President"
+
+

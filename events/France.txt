@@ -1,0 +1,132 @@
+add_namespace = FRA
+
+country_event = {
+	id = FRA.1
+	title = FRA.1.t
+	desc = FRA.1.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.1.a
+        }
+	}
+country_event = {
+	id = FRA.2
+	title = FRA.2.t
+	desc = FRA.2.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.2.a
+        }
+	}
+country_event = {
+	id = FRA.3
+	title = FRA.3.t
+	desc = FRA.3.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.3.a
+        }
+	}
+country_event = {
+	id = FRA.4
+	title = FRA.4.t
+	desc = FRA.4.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FRA.4.a
+		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+		kill_country_leader = yes
+		country_event = { id = FRA.5 days = 5 }
+        add_country_leader_role = {
+            character = FRA_Jean_Louis_Tixier_Vignancour
+            promote_leader = yes
+                country_leader = {
+                  ideology = fascism_subtype
+                  expire = "1965.1.1.1"
+                  traits = { popular_figurehead2 }
+              }
+           }
+        }
+	}
+country_event = {
+	id = FRA.5
+	title = FRA.5.t
+	desc = FRA.5.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+			}
+		}
+		name = FRA.5.a
+		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+        
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+			}
+		}
+		name = FRA.5.b
+		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+        set_politics = {
+			ruling_party = national_socialism
+			elections_allowed = no
+			last_election = "1953.01.01"
+			election_frequency = 48
+
+
+	   }
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+			}
+		}
+		name = FRA.5.c
+		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+        set_politics = {
+			ruling_party = ultranationalism
+			elections_allowed = no
+			last_election = "1953.01.01"
+			election_frequency = 48
+	   }
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+			}
+		}
+		name = FRA.5.d
+		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+        set_politics = {
+			ruling_party = conservatism
+			elections_allowed = no
+			last_election = "1953.01.01"
+			election_frequency = 48
+	   }
+	}
+}

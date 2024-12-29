@@ -4,8 +4,52 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	# Country
+	FRA_Divided_Council
+	FRA_Economic_Crisis
+	FRA_Legion_Charlemagne
+	FRA_La_Milice_Francaise
+	# LAWS
+	sl_devolved_unitary_state
+	sl_state_press
+	sl_state_atheism
+	sl_racial_hierarchy
+	sl_women_in_workplace
+	sl_banned_protests
+	# economy laws
+	sl_rentier_economy
+	sl_low_income_taxation
+	sl_protectionist_tariffs
+	sl_state_controlled_unions
+	sl_twelve_hour_workday
+	sl_immigration_controlled
+	# Public Structure
+	sl_racial_purity
+	sl_state_policing4
+	sl_penal_labour
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits2
+	# Military Structure
+	sl_military_spending4
+	# Secondary Leaders
+	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+}
+
+
+
+recruit_character = FRA_Fernand_de_Brinon
+recruit_character = FRA_Jean_Louis_Tixier_Vignancour
+recruit_character = FRA_Edgar_Puaud
+recruit_character = FRA_Jean_Marie_Le_Pen
+recruit_character = FRA_Francois_Mitterrand
+recruit_character = FRA_Antoine_Pinay
+recruit_character = FRA_Edmond_Giscard_Estaing
+
+
 set_politics = {
-	ruling_party = despotism
+	ruling_party = fascism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,17 +58,17 @@ set_politics = {
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
-	socialism = 5
-	progressivism = 5
+	communism = 0
+	socialism = 0
+	progressivism = 0
 	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	conservatism = 15
+	paternalism = 0
+	despotism = 10
+	ultranationalism = 4
+	fascism = 55
+	national_socialism = 10
+	occultism = 1
 }
 
 set_convoys = 50
