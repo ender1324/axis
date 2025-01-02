@@ -46,24 +46,20 @@ spriteTypes = {
 		name = "GFX_state_constructions"
 		textureFile = "gfx//interface//constructionview//state_constructions.dds"
 	}
-	spriteType = {
-		name = "GFX_constructions_bg4"
-		textureFile = "gfx//interface//constructionview//constructions_bg4.dds"
-	}
 
 	spriteType = {
-		name = "GFX_constructions_bg3"
-		textureFile = "gfx//interface//constructions_bg3.dds"
+		name = "GFX_facility_constructions"
+		texturefile = "gfx//interface//constructionview//facility_constructions.dds"
+		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_constructions_bg2"
-		textureFile = "gfx//interface//constructions_bg2.dds"
-	}
-
-	spriteType = {
-		name = "GFX_constructions_bg1"
-		textureFile = "gfx//interface//constructions_bg1.dds"
+	corneredTileSpriteType = {
+		name = "GFX_construction_buildings_background"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//constructionview//construction_buildings_background.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
 	spriteType = {

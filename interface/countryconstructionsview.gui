@@ -236,109 +236,162 @@ guiTypes = {
 		containerWindowType = {
 			name = "possible_constructions"
 			position = { x = 438 y = 38 }
-			size = { width = 104 height = 585 }
+			size = { width = 104 height = 100%% }
 
-			iconType = {
-				name = "constructions_bg1"
-				position = { x = 0 y = 6 }
-				quadTextureSprite = "GFX_constructions_bg4"
+			containerWindowType = {
+				name = "possible_state_constructions"
+				position = { x = 0 y = 8 }
+				size = { width = 100 height = 234 } # height = 100% / bandaid fixed
+				
+				background = {
+					name = "state_buildings_background"
+					quadTextureSprite = "GFX_construction_buildings_background"
+					pdx_tooltip = "STATE_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "state_constructions"
+					position = { x = 5 y = 4 }
+					quadTextureSprite = "GFX_state_constructions"
+				}
+				
+				instantTextboxType = {
+					name = "state_constructions_text"
+					position = { x = 48 y = 14 }
+					font = "hoi_18mbs"
+					text = "State"
+					maxWidth = 40
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+				
+				gridBoxType = {
+					name = "non_shared_item_grid"
+					position = { x = 4 y = 46 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 2
+					format = "UPPER_LEFT"
+				}
 			}
 
-			iconType = {
-				name = "constructions_bg2"
-				position = { x = 0 y = 248 }
-				quadTextureSprite = "GFX_constructions_bg4"
+			containerWindowType = {
+				name = "possible_shared_constructions"
+				position = { x = 0 y = 70 }
+				size = { width = 100 height = 234 } # height = 100% / bandaid fixed
+				clipping = no
+
+				background = {
+					name = "shared_buildings_background"
+					quadTextureSprite = "GFX_construction_buildings_background"
+					pdx_tooltip = "SHARED_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "shared_constructions"
+					position = { x = 5 y = 4 }
+					quadTextureSprite = "GFX_shared_constructions"
+				}
+				
+				instantTextboxType = {
+					name = "shared_constructions_text"
+					position = { x = 48 y = 14 }
+					font = "hoi_18mbs"
+					text = "Shared"
+					maxWidth = 50
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+				
+				
+				gridBoxType = {
+					name = "shared_item_grid"
+					position = { x = 4 y = 46 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 2
+					format = "UPPER_LEFT"
+				}
 			}
 
-			iconType = {
-				name = "constructions_bg3"
-				position = { x = 0 y = 490 }
-				quadTextureSprite = "GFX_constructions_bg4"
-			}
+			containerWindowType = {
+				name = "possible_province_constructions"
+				position = { x = 0 y = 88 }
+				size = { width = 100 height = 190 } # height = 100% / bandaid fixed
+				clipping = no
 
-			iconType = {
-				name = "state_constructions"
-				position = { x = 5 y = 10 }
-				quadTextureSprite = "GFX_state_constructions"
-			}
+				background = {
+					name = "province_buildings_background"
+					quadTextureSprite = "GFX_construction_buildings_background"
+					pdx_tooltip = "PROVINCE_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
 
-			instantTextboxType = {
-				name = "state_constructions_text"
-				position = { x = 52 y = 20 }
-				font = "hoi_18mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "State"
-				maxWidth = 40
-				format = center
+				iconType = {
+					name = "province_constructions"
+					position = { x = 5 y = 4 }
+					quadTextureSprite = "GFX_province_constructions"
+				}
+				
+				instantTextboxType = {
+					name = "province_constructions_text"
+					position = { x = 48 y = 14 }
+					font = "hoi_18mbs"
+					text = "Single"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+				
+				gridBoxType = {
+					name = "province_item_grid"
+					position = { x = 4 y = 46 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 2
+					format = "UPPER_LEFT"
+				}
 			}
+			
+			
+			containerWindowType = {
+				name = "possible_facility_constructions"
+				position = { x = 0 y = 150 }
+				size = { width = 100 height = 146 } # height = 100% -> static / bandaid fixed
+			
+				background = {
+					name = "facility_buildings_background"
+					quadTextureSprite = "GFX_construction_buildings_background"
+					pdx_tooltip = "FACILITY_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
 
-			iconType = {
-				name = "shared_constructions"
-				position = { x = 5 y = 252 }
-				quadTextureSprite = "GFX_shared_constructions"
-			}
-
-			instantTextboxType = {
-				name = "shared_constructions_text"
-				position = { x = 46 y = 262 }
-				font = "hoi_18mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "Shared"
-				maxWidth = 50
-				format = center
-			}
-
-			iconType = {
-				name = "province_constructions"
-				position = { x = 5 y = 495 }
-				quadTextureSprite = "GFX_province_constructions"
-			}
-
-			instantTextboxType = {
-				name = "province_constructions_text"
-				position = { x = 42 y = 504 }
-				font = "hoi_18mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "Single"
-				maxWidth = 50
-				format = center
-			}
-
-			gridBoxType = {
-				name = "non_shared_item_grid"
-				position = { x = 6 y = 51 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 2
-				format = "UPPER_LEFT"
-			}
-
-			gridBoxType = {
-				name = "shared_item_grid"
-				position = { x = 6 y = 292 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 2
-				format = "UPPER_LEFT"
-			}
-
-			gridBoxType = {
-				name = "province_item_grid"
-				position = { x = 6 y = 532 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 46 height = 44 }
-				max_slots_horizontal = 2
-				format = "UPPER_LEFT"
-			}
-
-			buttonType = {
-				name = "convert_ic_button"
-				position = { x = -52 y = 428 }
-				quadTextureSprite ="GFX_convert_ic_button"
-				buttonFont = "Main_14_black"
-				Orientation = "UPPER_RIGHT"
-				pdx_tooltip = "CONSTRUCTION_CONVERT_IC_TOOLTIP"
-				pdx_tooltip_delayed = "CONSTRUCTION_CONVERT_IC_TOOLTIP_DELAYED"
+				iconType = {
+					name = "facility_constructions"
+					position = { x = 5 y = 5 }
+					quadTextureSprite = "GFX_facility_constructions"
+				}
+				
+				instantTextboxType = {
+					name = "facility_constructions_text"
+					position = { x = 46 y = 14 }
+					font = "hoi_18mbs"
+					text = "Facility"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+				
+				gridBoxType = {
+					name = "facility_item_grid"
+					position = { x = 4 y = 46 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 2
+					format = "UPPER_LEFT"
+				}
 			}
 		}
 
@@ -388,6 +441,30 @@ guiTypes = {
 
 		iconType = {
 			name = "start_construction_overlay"
+			position = { x = -1 y = 0 }
+			quadTextureSprite = "GFX_construction_glow_overlay"
+		}
+	}
+
+	containerWindowType = {
+		name = "convert_ic_entry"
+		position = { x=22 y=430 }
+		size = { width = 45 height = 45 }
+		clipping = no
+		
+		buttonType = {
+			name = "convert_ic_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_convert_ic_button"
+			clicksound = click_default
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "CONSTRUCTION_CONVERT_IC_TOOLTIP"
+			pdx_tooltip_delayed = "CONSTRUCTION_CONVERT_IC_TOOLTIP_DELAYED"
+		}
+		
+		iconType = {
+			name = "convert_ic_overlay"
 			position = { x = -1 y = 0 }
 			quadTextureSprite = "GFX_construction_glow_overlay"
 		}
@@ -867,6 +944,7 @@ guiTypes = {
 		hide_animation_type = accelerated
 		animation_time = 300
 		size = { width=550 height=100%% }
+		verticalScrollbar = "right_vertical_slider"
 		
 		background = {
 			name = "Background"
@@ -2156,7 +2234,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "economy_bottom_bar"
 			position = { x = 4 y = 940 }
-			size = { width = 500 height = 100 }
+			size = { width = 500 height = 60 }
 
 			containerWindowType = {
 				name = "economy_left_misc_buttons"
