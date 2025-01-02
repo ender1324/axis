@@ -77,7 +77,7 @@ country_event = {
 		}
 		name = FRA.5.a
 		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
-        
+        load_focus_tree = { tree = France_Vignancour_Tree }
 	}
 	option = {
 		ai_chance = {
@@ -87,13 +87,14 @@ country_event = {
 			}
 		}
 		name = FRA.5.b
+		load_focus_tree = { tree = France_LePen_Tree }
 		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
         set_politics = {
 			ruling_party = national_socialism
 			elections_allowed = no
 			last_election = "1953.01.01"
 			election_frequency = 48
-
+ 
 
 	   }
 	}
@@ -120,7 +121,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		name = FRA.5.d
+		name = FRA.5.e
 		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
         set_politics = {
 			ruling_party = conservatism

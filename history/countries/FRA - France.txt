@@ -44,7 +44,6 @@ recruit_character = FRA_Jean_Louis_Tixier_Vignancour
 recruit_character = FRA_Edgar_Puaud
 recruit_character = FRA_Jean_Marie_Le_Pen
 recruit_character = FRA_Francois_Mitterrand
-recruit_character = FRA_Antoine_Pinay
 recruit_character = FRA_Edmond_Giscard_Estaing
 
 
