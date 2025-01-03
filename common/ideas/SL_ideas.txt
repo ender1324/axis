@@ -108,5 +108,19 @@ ideas = {
 
 			traits = { wary_figurehead }
 		}
+		# France
+		FRA_SL_Jean_Louis_Tixier_Vignancour_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { popular_figurehead2 }
+		}
 	}
 }
