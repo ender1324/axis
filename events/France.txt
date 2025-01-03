@@ -107,6 +107,7 @@ country_event = {
 		}
 		name = FRA.5.c
 		remove_ideas = 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+	    load_focus_tree = { tree = France_Puaud_Tree }
         set_politics = {
 			ruling_party = ultranationalism
 			elections_allowed = no
