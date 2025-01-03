@@ -36,8 +36,15 @@ focus_tree = {
 	shared_focus = FRA_France_Around_The_World  
   
 }
-
-
+#### Puaud Tree ####
+focus_tree = {
+	id = France_Puaud_Tree
+	country = { factor = 0 }
+	default = no
+	continuous_focus_position = { x = 50 y = 5000 }  
+	shared_focus = FRA_Rise_of_the_Legion  
+  
+}
 
 
 
@@ -62,7 +69,7 @@ shared_focus = {
 	x = 11
 	y = 1
 	completion_reward = {
-		country_event = FRA.2
+		add_political_power = 100
 	}
 }
 shared_focus = {
@@ -75,7 +82,7 @@ shared_focus = {
 	x = 13
 	y = 1
 	completion_reward = {
-		country_event = FRA.2
+		add_stability = 0.1
 	}
 }
 shared_focus = {
@@ -104,7 +111,7 @@ shared_focus = {
 	x = 12
 	y = 3
 	completion_reward = {
-		country_event = FRA.2
+		add_political_power = 60
 	}
 }
 shared_focus = {
@@ -117,7 +124,22 @@ shared_focus = {
 	x = 12
 	y = 4
 	completion_reward = {
-		country_event = FRA.2
+	  add_popularity = {
+          ideology = ultranational_socialism
+          popularity = 0.1
+       }
+	  add_popularity = {
+          ideology = national_socialism
+          popularity = 0.1
+       }
+	  add_popularity = {
+          ideology = fascism
+          popularity = 0.1
+       }
+	  add_popularity = {
+          ideology = authoritarian_democrat
+          popularity = 0.1
+       }
 	}
 }
 shared_focus = {
@@ -130,7 +152,7 @@ shared_focus = {
 	x = 12
 	y = 5
 	completion_reward = {
-		country_event = FRA.2
+		country_event = FRA.3
 	}
 }
 shared_focus = {
@@ -156,7 +178,18 @@ shared_focus = {
 	x = 14
 	y = 5
 	completion_reward = {
-		country_event = FRA.2
+		add_popularity = {
+          ideology = authoritarian_democrat
+          popularity = 0.05
+       }
+		add_popularity = {
+          ideology = social_liberal
+          popularity = 0.09
+       }
+		add_popularity = {
+          ideology = social_democrat
+          popularity = 0.09
+       }
 	}
 }
 shared_focus = {
@@ -175,7 +208,8 @@ shared_focus = {
 	x = 12
 	y = 6
 	completion_reward = {
-		country_event = FRA.2
+		add_stability = 0.1
+        add_war_support = 0.1
 	}
 }
 shared_focus = {
@@ -269,7 +303,38 @@ shared_focus = {
 	x = 17
 	y = 4
 	completion_reward = {
-		country_event = FRA.2
+		  1 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		  }
+		 17 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		  }
+		 19 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		  }
+		 15 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -330,7 +395,7 @@ shared_focus = {
 	x = 12
 	y = 7
 	completion_reward = {
-		country_event = FRA.2
+		add_stability = 0.05
 	}
 }
 shared_focus = {
@@ -356,7 +421,7 @@ shared_focus = {
 	x = 13
 	y = 8
 	completion_reward = {
-		country_event = FRA.2
+		add_war_support = 0.1
 	}
 }
 shared_focus = {
@@ -963,6 +1028,557 @@ shared_focus = {
 	}
 	x = 37
 	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+
+
+
+
+##############
+##Puaud##
+##############
+shared_focus = {
+	id = FRA_Rise_of_the_Legion
+	icon = GFX_goal_rhineland
+	cost = 4.2
+	x = 12
+	y = 0
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_French_Awaken
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Rise_of_the_Legion
+	}
+	cost = 4.2
+	x = 12
+	y = 1
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Embrace_Totalitarism
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_French_Awaken
+	}
+	cost = 4.2
+	x = 12
+	y = 2
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Under_The_CCTV_Eye
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Embrace_Totalitarism
+	}
+	cost = 4.2
+	x = 11
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_End_The_Council
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Embrace_Totalitarism
+	}
+	cost = 4.2
+	x = 13
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Puaud_Cult
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Under_The_CCTV_Eye
+	}
+	prerequisite = {
+		focus = FRA_End_The_Council
+	}
+	cost = 4.2
+	x = 12
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Ears_in_Homes
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Under_The_CCTV_Eye
+	}
+	prerequisite = {
+		focus = FRA_End_The_Council
+	}
+	cost = 4.2
+	x = 10
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Eye_In_Streets
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Under_The_CCTV_Eye
+	}
+	prerequisite = {
+		focus = FRA_End_The_Council
+	}
+	cost = 4.2
+	x = 14
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_A_Portrait_In_Every_Homes
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Puaud_Cult
+	}
+	prerequisite = {
+		focus = FRA_Ears_in_Homes
+	}
+	prerequisite = {
+		focus = FRA_Eye_In_Streets
+	}
+	cost = 4.2
+	x = 13
+	y = 5
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Erase_Every_Opposision
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Puaud_Cult
+	}
+	prerequisite = {
+		focus = FRA_Ears_in_Homes
+	}
+	prerequisite = {
+		focus = FRA_Eye_In_Streets
+	}
+	cost = 4.2
+	x = 11
+	y = 5
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Under_The_Rightfull_Savior
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_A_Portrait_In_Every_Homes
+	}
+	prerequisite = {
+		focus = FRA_Erase_Every_Opposision
+	}
+	cost = 4.2
+	x = 12
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_French_Fuhrer
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Under_The_Rightfull_Savior
+	}
+	cost = 4.2
+	x = 12
+	y = 7
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_New_Culture
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_French_Awaken
+	}
+	cost = 4.2
+	x = 5
+	y = 2
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Re_Education
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_New_Culture
+	}
+	cost = 4.2
+	x = 4
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_Frank_Generation
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Re_Education
+	}
+	cost = 4.2
+	x = 4
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Memory_of_the_Celts
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_New_Culture
+	}
+	cost = 4.2
+	x = 6
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Frankish_Gauls_cultural_syncretism
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Memory_of_the_Celts
+	}
+	cost = 4.2
+	x = 6
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Toward_Brutalist_Architecture
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_Frank_Generation
+	}
+	prerequisite = {
+		focus = FRA_Frankish_Gauls_cultural_syncretism
+	}
+	cost = 4.2
+	x = 5
+	y = 5
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_High_Towers_of_Paris
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Toward_Brutalist_Architecture
+	}
+	cost = 4.2
+	x = 4
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_City_of_Minimalism
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Toward_Brutalist_Architecture
+	}
+	cost = 4.2
+	x = 6
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Pure_Brutalism_Design
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_High_Towers_of_Paris
+	}
+	prerequisite = {
+		focus = FRA_City_of_Minimalism
+	}
+	cost = 4.2
+	x = 5
+	y = 7
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Toward_Purity
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_French_Awaken
+	}
+	cost = 4.2
+	x = 17
+	y = 2
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Codify_The_Racial_Code
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Toward_Purity
+	}
+	cost = 4.2
+	x = 16
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_French_Aryan
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Toward_Purity
+	}
+	cost = 4.2
+	x = 18
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Know_Our_Ennemies
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Codify_The_Racial_Code
+	}
+	cost = 4.2
+	x = 16
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Ban_All_Separatist_Movement
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_French_Aryan
+	}
+	cost = 4.2
+	x = 18
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Frank_Nationalism
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Ban_All_Separatist_Movement
+	}
+	prerequisite = {
+		focus = FRA_Know_Our_Ennemies
+	}
+	cost = 4.2
+	x = 17
+	y = 5
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_Second_Charlemagne
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Frank_Nationalism
+	}
+	cost = 4.2
+	x = 16
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_Franks_Reborn
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Frank_Nationalism
+	}
+	cost = 4.2
+	x = 18
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_Last_Step
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_Second_Charlemagne
+	}
+	prerequisite = {
+		focus = FRA_The_Franks_Reborn
+	}
+	cost = 4.2
+	x = 17
+	y = 7
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+
+shared_focus = {
+	id = FRA_Second_Industrial_Revolution
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Rise_of_the_Legion
+	}
+	cost = 4.2
+	x = 25
+	y = 1
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_The_New_Way_of_Life
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Second_Industrial_Revolution
+	}
+	cost = 4.2
+	x = 25
+	y = 2
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Punish_Laxation
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_New_Way_of_Life
+	}
+	cost = 4.2
+	x = 24
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Labors_for_your_Nations
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Punish_Laxation
+	}
+	cost = 4.2
+	x = 24
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Ultra_Meritocracy
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_The_New_Way_of_Life
+	}
+	cost = 4.2
+	x = 26
+	y = 3
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Earns_Your_Goods
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Ultra_Meritocracy
+	}
+	cost = 4.2
+	x = 26
+	y = 4
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Open_Labors_Camps
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Labors_for_your_Nations
+	}
+	prerequisite = {
+		focus = FRA_Earns_Your_Goods
+	}
+	cost = 4.2
+	x = 25
+	y = 5
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_Work_The_Slaves
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Open_Labors_Camps
+	}
+	cost = 4.2
+	x = 25
+	y = 6
+	completion_reward = {
+		country_event = FRA.1
+	}
+}
+shared_focus = {
+	id = FRA_A_New_France
+	icon = GFX_goal_rhineland
+	prerequisite = {
+		focus = FRA_Work_The_Slaves
+	}
+	cost = 4.2
+	x = 25
+	y = 7
 	completion_reward = {
 		country_event = FRA.1
 	}
