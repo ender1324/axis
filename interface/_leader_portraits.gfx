@@ -142,6 +142,28 @@ spriteTypes = {
 		textureFile = "gfx/leaders/PRC/Portrait_China_Mao_Zedong.dds" # this is the directory
 	}
 
+	# General Reichkommisarriat
+	spriteType = {
+		name = "GFX_portrait_RKU_Erich_Koch" 
+		textureFile = "gfx/leaders/RKU/RKU_Erich_Koch.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_portrait_RKP_Hans_Frank" 
+		textureFile = "gfx/leaders/RKP/RKP_Hans_Frank.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_portrait_RKR_Siegfried_Kashe" 
+		textureFile = "gfx/leaders/RKR/RKR_Siegfried_Kashe.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_portrait_RKO_Hinrich_Lohse" 
+		textureFile = "gfx/leaders/RKO/RKO_Hinrich_Lohse.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_portrait_RKK_Emil_Maurice" 
+		textureFile = "gfx/leaders/RKK/RKK_Emil_Maurice.dds" # this is the directory
+	}
+
 	# Free France
 	spriteType = {
 		name = "GFX_portrait_charles_degaulle"
