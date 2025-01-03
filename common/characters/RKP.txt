@@ -1,0 +1,15 @@
+characters = {
+	RKP_Hans_Frank = {
+		name = RKP_Hans_Frank
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKP_Hans_Frank"
+			}
+		}
+		country_leader = {
+			desc = RKP_Hans_Frank_desc
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}

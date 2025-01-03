@@ -1,0 +1,15 @@
+characters = {
+	RKK_Emil_Maurice = {
+		name = RKK_Emil_Maurice
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKK_Emil_Maurice"
+			}
+		}
+		country_leader = {
+			desc = RKK_Emil_Maurice_desc
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}
