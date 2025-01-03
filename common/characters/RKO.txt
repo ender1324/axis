@@ -1,0 +1,15 @@
+characters = {
+	RKO_Hinrich_Lohse = {
+		name = RKO_Hinrich_Lohse
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKO_Hinrich_Lohse"
+			}
+		}
+		country_leader = {
+			desc = RKO_Hinrich_Lohse_desc
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}

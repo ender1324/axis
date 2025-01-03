@@ -1,0 +1,15 @@
+characters = {
+	RKR_Siegfried_Kashe = {
+		name = RKR_Siegfried_Kashe
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKR_Siegfried_Kashe"
+			}
+		}
+		country_leader = {
+			desc = RKR_Siegfried_Kashe_desc
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}

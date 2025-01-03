@@ -1,0 +1,15 @@
+characters = {
+	RKU_erich_koch = {
+		name = RKU_erich_koch
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKU_Erich_Koch"
+			}
+		}
+		country_leader = {
+			desc = RKU_erich_koch_desc
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}
