@@ -50,7 +50,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_facility_constructions"
 		texturefile = "gfx//interface//constructionview//facility_constructions.dds"
-		legacy_lazy_load = no
 	}
 
 	corneredTileSpriteType = {
