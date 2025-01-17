@@ -4,10 +4,10 @@ state={
 	name="STATE_654" # Gorno-Altaysk
 	manpower = 303510
 	
-	state_category = pastoral
+	state_category = rural
 
 	history={
-		owner = ALT
+		owner = MEN
 		buildings = {
 			infrastructure = 1
 		}

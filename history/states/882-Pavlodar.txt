@@ -10,7 +10,7 @@ state = {
 
 	history = {
 		owner = ALT
-		add_core_of = alt
+		add_core_of = ALT
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
@@ -18,7 +18,7 @@ state = {
 		}
 		add_core_of = SOV
 		victory_points = {
-			7708 1
+			7708 3
 		}
 	}
 

@@ -5,7 +5,7 @@ state = {
 	history = {
 		owner = KAZ
 		victory_points = {
-			7597 1
+			7597 3
 		}
 		add_core_of = KAZ
 		buildings = {
@@ -21,7 +21,7 @@ state = {
 	}
 	manpower = 447020
 	buildings_max_level_factor = 1.000
-	state_category = pastoral
+	state_category = rural
 
 	local_supplies = 0.0 
 }

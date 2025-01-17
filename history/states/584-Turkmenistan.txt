@@ -17,7 +17,7 @@ state={
 			}
 		}
 		victory_points = {
-			10742 3
+			10742 7
 		}
 		victory_points = {
 			7560 1
@@ -34,6 +34,6 @@ state={
 	}
 	manpower=1354523
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=developed_rural
 	local_supplies=4.000
 }

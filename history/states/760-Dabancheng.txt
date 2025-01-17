@@ -9,7 +9,7 @@ state={
 	state_category = rural
 	history={
 		victory_points = {
-			12524 1
+			12524 5
 		}
 		owner = PRC
 		add_core_of = SIK

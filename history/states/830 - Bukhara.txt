@@ -9,7 +9,7 @@ state = {
 		owner = BUK
 		
 		victory_points = {
-			1573 2 
+			1573 5
 		}
 		victory_points = {
 			10671 1 

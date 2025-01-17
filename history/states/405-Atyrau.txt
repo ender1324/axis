@@ -8,10 +8,10 @@ state = {
 		owner = UZB
 		
 		victory_points = {
-			1459 3 
+			1459 10
 		}
 		victory_points = {
-			10488 1 
+			10488 3
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
