@@ -11,7 +11,7 @@ spriteTypes = {
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_no_top"
-		#size= { x=192 y=192 } i dont remember why i commented this out and honestly i dont fucking care
+		#size= { x=192 y=192 } i dont remember why i commented this out
 		textureFile = "gfx//interface//tiles//tiled_window_no_top.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
@@ -57,6 +57,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_header_bg"
 		texturefile = "gfx/interface/genericview/header_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_conveyor_collapse_btn"
+		textureFile = "gfx//interface//genericview//conveyor_collapse_btn.dds"
+		noOfFrames = 2
 	}
 
 	# My own additions
