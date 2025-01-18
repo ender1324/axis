@@ -67,4 +67,10 @@ spriteTypes = {
 		name = "GFX_battery_park_build"
 		texturefile = "gfx/interface/economyview/battery_park_build.dds"
 	}
+
+	spriteType = {
+		name = "GFX_eco_tab_selector"
+		textureFile = "gfx/interface/economyview/tab_selector.dds"
+		noOfFrames = 2
+	}
 }

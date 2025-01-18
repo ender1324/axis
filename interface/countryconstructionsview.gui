@@ -973,8 +973,9 @@ guiTypes = {
 
 		buttonType = {
 			name = "open_construction"
-			position = { x = -90 y = 9 }
-			quadTextureSprite = "GFX_arrow_down_small"
+			position = { x = -174 y = 12 }
+			quadTextureSprite = "GFX_eco_tab_selector"
+			frame = 2
 			buttonFont = "Main_14_black"
 			#shortcut = "E"
 			orientation = "UPPER_RIGHT"
@@ -982,11 +983,12 @@ guiTypes = {
 
 		buttonType = {
 			name = "open_populationinfo"
-			position = { x = -100 y = 9 }
-			quadTextureSprite = "GFX_arrow_down_small"
+			position = { x = -100 y = 10 }
+			quadTextureSprite = "GFX_chevron_left_right"
 			buttonFont = "Main_14_black"
 			#shortcut = "E"
 			orientation = "UPPER_RIGHT"
+			frame = 1
 		}
 
 		buttonType = {
@@ -2318,13 +2320,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "open_economy_container"
 		orientation = UPPER_LEFT
-		position = { x = 400 y = 12 }
+		position = { x = 376 y = 12 }
 		
 
 		buttonType = {
 			name = "open_economy"
 			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_arrow_down_small"
+			quadTextureSprite = "GFX_eco_tab_selector"
 			buttonFont = "Main_14_black"
 			#shortcut = "E"
 			orientation = "UPPER_LEFT"

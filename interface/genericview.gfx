@@ -86,6 +86,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_chevron_left_right"
+		textureFile = "gfx/interface/genericview/chevron_left_right.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
 		name = "GFX_tinted_plus_button"
 		textureFile = "gfx//interface//genericview//tinted_plus_button.dds"
 	}
