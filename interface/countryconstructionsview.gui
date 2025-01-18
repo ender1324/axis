@@ -370,7 +370,7 @@ guiTypes = {
 				iconType = {
 					name = "facility_constructions"
 					position = { x = 5 y = 5 }
-					quadTextureSprite = "GFX_facility_constructions"
+					quadTextureSprite = "GFX_facility_constructions1"
 				}
 				
 				instantTextboxType = {

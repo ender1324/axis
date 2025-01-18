@@ -52,6 +52,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//constructionview//facility_constructions.dds"
 	}
 
+	spriteType = {
+		name = "GFX_facility_constructions1"
+		texturefile = "gfx//interface//constructionview//facility_constructions.dds"
+	}
+
 	corneredTileSpriteType = {
 		name = "GFX_construction_buildings_background"
 		size= { x=192 y=192 }
