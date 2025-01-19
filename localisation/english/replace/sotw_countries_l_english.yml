@@ -167,17 +167,37 @@
  SSW_GER_subject_ADJ: "Südslawien"
 
  # Italy
- ITA: "Italy"
- ITA_DEF: "Italy"
- ITA_ADJ: "Italian"
+ ITA:0 "Kingdom of Italy"
+ ITA_DEF:0 "Kingdom of Italy"
+ ITA_ADJ:0 "Italian"
 
  # Italian Emirates / UAE
  UAE: "United Arab Emirates"
  UAE_DEF: "the United Arab Emirates"
  UAE_ADJ: "Emirati"
- UAE_subject: "$OVERLORDADJ$ Arabian Administration"
- UAE_subject_DEF: "the $OVERLORDADJ$ Arabian Administration"
- UAE_subject_ADJ: "Arab"
+ UAE_ITA_subject: "Amministrazione del Golfo italiano"
+ UAE_ITA_subject_DEF: "Il Amministrazione del Golfo italiano"
+ UAE_ITA_subject_ADJ: "Italian"
+
+ # Balkan
+ GRE_ITA_subject: "Hellenic State"
+ GRE_ITA_subject_DEF: "the Hellenic State"
+ GRE_ITA_subject_ADJ: "Greek"
+ ALB_ITA_subject: "Kingdom of Albania"
+ ALB_ITA_subject_DEF: "Il Protettorato italiano dell'Albania"
+ ALB_ITA_subject_ADJ: "Albanian"
+
+#North Africa
+ TUN_ITA_subject: "Regno di Tunisia"
+ TUN_ITA_subject_DEF: "Il Regno di Tunisia"
+ TUN_ITA_subject_ADJ: "Tunisian"
+ IAL: "Zona Militare Dell'Algeria"
+ IAL_DEF: "Il Zona Militare Dell'Algeria"
+ IAL_ADJ: "Algerian"
+ FGL: "Territoire Militaire d'Algérie"
+ FGL_DEF: "Le Territoire Militaire d'Algérie"
+ FGL_ADJ: "Algérien"
+
 
  # Egypt
  EGY: "Egypt"
@@ -194,6 +214,9 @@
  PAL_subject: "$OVERLORDADJ$ Levantine Administration"
  PAL_subject_DEF: "the $OVERLORDADJ$ Levantine Administration"
  PAL_subject_ADJ: "Levantine"
+ PAL_ITA_subject: "Territorio militare di Levante"
+ PAL_ITA_subject_DEF: "Il Territorio militare di Levante"
+ PAL_ITA_subject_ADJ: "Levantine"
 
  # Israel
  ISR: "Israel"
@@ -668,14 +691,27 @@
  CAM_JAP_subject: "Kingdom of Kampuchea"
  CAM_JAP_subject_DEF: "the Kingdom of Kampuchea"
  CAM_JAP_subject_ADJ: "Kampuchean"
+ MAL_JAP_subject: "Kingdom of Malaysia"
+ MAL_JAP_subject_DEF: "the Kingdom of Malaysia"
+ MAL_JAP_subject_ADJ: "Malaysian"
+
+
+
+# Oceania
+ PMA: "Papua Gunseibu"
+ PMA_DEF: "The Papua Military Government"
+ PMA_ADJ: "Papuan"
 
  # India
  RAJ: "India"
  RAJ_DEF: "India"
  RAJ_ADJ: "Indian"
- AZH: "Provisional Government of Free India"
+ AZH: "Azad Hind"
  AZH_DEF: "the Provisional Government of Free India"
  AZH_ADJ: "Indian"
+ SKI: "Sikkim"
+ SKI_DEF: "the Kingdom of Sikkim"
+ SKI_ADJ: "Sikkian"
 
  # Central African Republic
  CAR: "Central African Republic"
