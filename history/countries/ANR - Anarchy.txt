@@ -1,4 +1,4 @@
-capital = 516
+capital = 713
 
 set_stability = 0
 set_war_support = 0

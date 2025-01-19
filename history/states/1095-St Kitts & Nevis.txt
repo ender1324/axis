@@ -8,7 +8,7 @@ state={
 
 	history={
 		add_core_of = ENG
-		owner = ENG
+		owner = CAN
 		victory_points = {
 			13441 1
 		}

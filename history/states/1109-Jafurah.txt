@@ -8,7 +8,7 @@ state={
 		4932 13423
 	}
 	history = {
-		owner = ITA
+		owner = UAE
 		add_core_of = SAU
 		add_claim_by = UAE
 		victory_points = {

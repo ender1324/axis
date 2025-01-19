@@ -4,9 +4,14 @@ state={
 	name="STATE_1058"
 	state_category = wasteland
 	impassable = yes
+	resources = {
+		oil = 8
+	}
 	history = {
-		owner = IAL
+		owner = ALG
 		add_core_of = ALG
+		add_claim_by = FAL
+		
 		buildings = {
 			infrastructure = 0
 		}

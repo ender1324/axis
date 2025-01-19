@@ -12,12 +12,15 @@ RNO = "countries/RK_Norwegen.txt"
 RKM = "countries/RK_Mittleafrika.txt"
 SSW = "countries/SS_Serbia.txt"
 #RKS = "countries/RK_Sudafrika.txt"
+# French Algeria
+FAL = "countries/French_Algeria.txt"
 
 # Free france
 FFA = "countries/Free_France.txt"
 
 # Co-Prosperity Sphere puppets
 AZH = "countries/Azad_Hind.txt"
+SKI = "countries/Sikkim.txt"
 
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"

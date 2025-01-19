@@ -75,10 +75,6 @@ set_autonomy = {
 	target = MAL
 	autonomy_state = autonomy_dominion
 }
-set_autonomy = {
-	target = PMA
-	autonomy_state = autonomy_colony
-}
 
 
 set_convoys = 50

@@ -70,4 +70,9 @@ set_popularities = {
 	occultism = 1
 }
 
+set_autonomy = {
+	target = FAL
+	autonomous_state = autonomy_integrated_puppet
+}
+
 set_convoys = 50

@@ -93,7 +93,8 @@ FFA = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 57 113 228 }
 }
-FGL = {
+# French Algeria
+FAL = {
 	color = rgb { 28 62 112 }
 	color_ui = rgb { 28 62 112 }
 }
@@ -101,19 +102,16 @@ FGL = {
 #######################
 ###      JAPAN      ###
 #######################
+# Azad Hind Government
 AZH = {
 	color = rgb { 4 106 56 }
 	color_ui = rgb { 4 106 56 }
 }
+# Sikkim
 SKI = {
 	color = rgb { 150 126 120 }
 	color_ui = rgb { 150 126 120 }
 }
-PMA = {
-	color = rgb { 224 139 130 }
-	color_ui = rgb { 224 139 130 }
-}
-
 
 ################################
 ###     RUSSIAN WARLORDS     ###
@@ -254,10 +252,6 @@ YUG = {
 SWI = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
-}
-IAL = {
-	color = rgb { 49  124  43 }
-	color_ui = rgb { 49  124  43 }
 }
 TUR = {
 	color = rgb { 171 190 152 }

@@ -60,11 +60,7 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 }
 set_autonomy = {
-	target = TUN
-	autonomous_state = autonomy_colony
-}
-set_autonomy = {
-	target = IAL
+	target = ALG
 	autonomous_state = autonomy_colony
 }
 
