@@ -8,7 +8,8 @@ state = {
 	history = {
 
 		add_core_of = PNG
-		owner = JAP
+		add_core_of = PMA
+		owner = PMA
 
 		buildings = {
 			infrastructure = 1

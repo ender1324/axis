@@ -2,7 +2,7 @@ state={
 	id=933
 	name="STATE_933"
 	history={
-		owner = ITA
+		owner = IAL
 		add_core_of = ALG
 		victory_points = {
 			12034 1 

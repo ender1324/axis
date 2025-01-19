@@ -11,7 +11,7 @@ state={
 		victory_points = {
 			9809 3 
 		}
-		owner = ITA
+		owner = MNT
 		add_claim_by = ITA
 		buildings = {
 			infrastructure = 2
@@ -20,7 +20,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = SER
+		add_core_of = MNT
 	}
 
 	provinces={
