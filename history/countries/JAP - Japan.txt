@@ -33,7 +33,7 @@ add_to_faction = SIA
 add_to_faction = AZH
 add_to_faction = FER
 add_to_faction = INS
-add_to_faction = MAL
+add_to_faction = BHU
 
 set_autonomy = {
 	target = MAN
@@ -71,5 +71,14 @@ set_autonomy = {
 	target = BRM
 	autonomy_state = autonomy_dominion
 }
+set_autonomy = {
+	target = MAL
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = PMA
+	autonomy_state = autonomy_colony
+}
+
 
 set_convoys = 50

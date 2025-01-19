@@ -40,6 +40,10 @@ set_autonomy = {
 	autonomous_state = autonomy_dominion
 }
 set_autonomy = {
+	target = MNT
+	autonomous_state = autonomy_dominion
+}
+set_autonomy = {
 	target = AOI
 	autonomous_state = autonomy_colony
 }
@@ -53,6 +57,14 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = UAE
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = TUN
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = IAL
 	autonomous_state = autonomy_colony
 }
 
