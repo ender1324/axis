@@ -1,4 +1,4 @@
-﻿capital = 654 #Oyrot/Gorno-Altaysk
+﻿capital = 40 # Altay
 
 # Starting tech
 set_technology = {
