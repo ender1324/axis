@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_FFA_birds_cage"
+		textureFile = "gfx/ideas/FFA/FFA_birds_cage.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FFA_all_alone"
+		textureFile = "gfx/ideas/FFA/FFA_all_alone.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FFA_widespread_defeatism"
+		textureFile = "gfx/ideas/FFA/FFA_widespread_defeatism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FFA_state_of_economy"
+		textureFile = "gfx/ideas/FFA/FFA_state_of_economy.dds"
+	}
+}

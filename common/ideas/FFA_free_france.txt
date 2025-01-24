@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		FFA_birds_cage = {
+			name = FFA_birds_cage
+			picture = FFA_birds_cage
+			allowed = {
+				original_tag = FFA
+			}
+
+			modifier = {
+				progressivism_drift = 0.01
+				communism_drift = 0.01
+			}
+		}
+		FFA_all_alone = {
+			name = FFA_all_alone
+			picture = FFA_all_alone
+			allowed = {
+				original_tag = FFA
+			}
+
+			modifier = {
+				political_power_cost = 0.05
+				surrender_limit = -0.1
+				improve_relations_maintain_cost_factor = 0.1
+				conservatism_drift = 0.01
+				socialism_drift = 0.01
+			}
+		}
+	}
+}

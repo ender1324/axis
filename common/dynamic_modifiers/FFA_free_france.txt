@@ -1,0 +1,24 @@
+FFA_widespread_defeatism = {
+	icon = GFX_idea_FFA_widespread_defeatism
+	enable = { tag = FFA }
+
+	war_support_factor = FFA_defeatism_war_support_factor
+	conscription_factor = FFA_defeatism_conscription_factor
+	non_core_manpower = FFA_defeatism_non_core_manpower
+	army_morale_factor = FFA_defeatism_army_morale_factor
+	offence = FFA_defeatism_offence
+	defence = FFA_defeatism_defence
+	resistance_target = FFA_defeatism_resistance_target
+}
+FFA_state_of_economy = {
+	icon = GFX_idea_FFA_state_of_economy
+	enable = { tag = FFA }
+
+	stability_factor = FFA_economy_stability_factor
+	consumer_goods_factor = FFA_economy_consumer_goods_factor
+	production_speed_industrial_complex_factor = FFA_economy_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = FFA_economy_production_speed_arms_factory_factor
+	production_speed_offices_factor = FFA_economy_production_speed_offices_factor
+	production_speed_agriculture_district_factor = FFA_economy_production_speed_agriculture_district_factor
+	industrial_capacity_factory = FFA_economy_industrial_capacity_factory
+}
