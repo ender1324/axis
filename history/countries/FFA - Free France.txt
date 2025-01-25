@@ -31,7 +31,7 @@ add_ideas = {
 
 # Widespread Defeatism dynamic idea setup
 add_dynamic_modifier = { modifier = FFA_widespread_defeatism }
-set_variable = { FFA_defeatism_war_support_factor = 0.2 }
+set_variable = { FFA_defeatism_war_support_factor = -0.2 }
 set_variable = { FFA_defeatism_conscription_factor = -0.2 }
 set_variable = { FFA_defeatism_non_core_manpower = -0.05 }
 set_variable = { FFA_defeatism_army_morale_factor = -0.25 }
