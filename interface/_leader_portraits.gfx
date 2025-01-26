@@ -192,4 +192,18 @@ spriteTypes = {
 		name = "GFX_portrait_FRA_Jean_Marie_Le_Pen"
 		textureFile = "gfx/leaders/FRA/FRA_Jean_Marie_Le_Pen.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_FRA_Charles_Huntziger"
+		textureFile = "gfx/leaders/FRA/FRA_Charles_Huntziger.dds"
+	}
+    #Azad Hind
+	spriteType = {
+		name = "GFX_portrait_AZH_Subhas_Chandra_Bose"
+		textureFile = "gfx/leaders/AZH/AZH_Subhas_Chandra_Bose.dds"
+	}
+    #Anarchy
+	spriteType = {
+		name = "GFX_portrait_ZZZ_Anarchy_Siberia"
+		textureFile = "gfx/leaders/ZZZ/ZZZ_Anarchy_Siberia.dds"
+	}
 }

@@ -119,5 +119,9 @@ spriteType = {
 		name = "GFX_FRA_It_Time_To_Fix_The_Economy"
 		texturefile = "gfx/interface/goals/FRA/GFX_FRA_It_Time_To_Fix_The_Economy.dds"
 	}
+	spriteType = {
+		name = "GFX_FRA_The_Prime_Minister"
+		texturefile = "gfx/interface/goals/FRA/GFX_FRA_The_Prime_Minister.dds"
+	}
 }
 

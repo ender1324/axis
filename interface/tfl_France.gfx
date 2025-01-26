@@ -1,0 +1,24 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_FRA_The_Unpopular_Succesor"
+		textureFile = "gfx/ideas/FRA/FRA_The_Unpopular_Succesor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRA_La_Milice"
+		textureFile = "gfx/ideas/FRA/FRA_La_Milice.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Workshop_of_the_Pact"
+		textureFile = "gfx/ideas/FRA/FRA_Workshop_of_the_Pact.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRA_The_Two_Realm"
+		textureFile = "gfx/ideas/FRA/FRA_The_Two_Realm.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Illegal_German_Settlements"
+		textureFile = "gfx/ideas/FRA/FRA_Illegal_German_Settlements.dds"
+	}
+}
