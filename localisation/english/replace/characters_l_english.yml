@@ -103,6 +103,12 @@
  PRC_mao_zedong: "Mao Zedong"
  PRC_mao_zedong_desc: "During the cataclysmic backdrop of the Japanese ambitions in World War II, China's fate took a devastating turn. Once divided and helpless before the onslaught of imperial ambitions, the nation found itself torn asunder by the ferocity of the second Sino-Japanese War. In the wake of the Japanese victory, China lays humiliated, its lands carved up and its people subjected to the yoke of foreign domination.\n\nFor Mao, the harrowing realities of occupation served as a crucible, forging his resolve and shaping his destiny. From the blood-soaked fields of guerrilla warfare against Japanese invaders, Mao emerged as a beacon of hope amidst the darkest of hours. As the Japanese juggernaut pushed the United Front out of Eastern China, leaving a trail of devastation in its wake, Mao recognized the urgent need for a new strategy.\n\nFrom the remote bastions of Qinghai and Sinkiang, Mao orchestrates a symphony of resistance, marshaling the leftover collective will of the Chinese people against the occupiers and their collaborationist puppets. With unwavering determination, he leads his forces in a relentless campaign of asymmetrical warfare, often striking at the city of Chengdo.\n\nBut Mao's vision extends beyond the battlefield. It extends far beyond the immediate goal of expelling foreign invaders. It encompasses the revolutionary transformation of Chinese society itself. By mobilizing the masses to actively participate in their own liberation, he seeks to overturn centuries of feudal oppression and imperialist exploitation, laying the groundwork for a truly egalitarian and socialist society. His vision now called §RMaoism§!.\n\nYet, amidst the chaos of war, Mao does not hide his hatred for internal dissent. With ruthless methods, he identifies and removes defeatists and nationalist sympathizers, whose allegiance wavers in the face of adversity. The critical party purges, a necessary and agonizing measure, serve to cleanse the movement of traitors and strengthen its resolve against the collaborationist Kuomintang, whose betrayal inflicted deep wounds upon the nation's spirit.\n\n§RNone shall betray the revolution.§!"
  # As the sun sets over the barren landscapes of Western China, Mao Zedong stands as the leader of the only left centralized resistance. His unwavering commitment to the cause of liberation, even if adjusted to serve his vision, inspire countless souls to join the ranks of the resistance, forging a legacy that will echo through the annals of history. In the resistance, the spirit of China finds its champion, §9its guiding light in the darkest of times.§!"
+ ##################
+ ### Azad Hind ###
+ ##################
+ # LEADERS
+ AZH_Subhas_Chandra_Bose: "Subhas Chandra Bose"
+ AZH_Subhas_Chandra_Bose_desc: ""
  ##################################
  ### RUSSIAN DEMOCRATIC COUNCIL ###
  ##################################
@@ -137,9 +143,13 @@
  ### France ###
  ##########################
  FRA_Fernand_de_Brinon: "Fernand de Brinon"
+ FRA_Fernand_de_Brinon_desc: "When the main dictator of a country die, it often harder to continue the regime in good stability, as the successor is not as charismatic as the previous one was. This explain well Fernand de Brinon, born in 1885 at Libourne, member of a wealthy family, he studied political science and laws but then become a journalist. Even before the war, Brinon met Hitler, who was still not know as the ruler of Europe, and due to him, many frenchs tough of Hitler as an man of peace. After Pétain's death, Brinon was choose as the next president of the French State, but compared to the marshall, Brinon was not charismatic as him nor was even know for an important military victory, adding to that the lose of Alscace to the Germans again and Nancy made the Frenchs more tired of this collaboration.\n\nFernand de Brinon find himself in a tense situation, his more populist prime minister; Tixier Vignancour, is an useful ally, as his speech manage to keep Brinon's popularity stable, but the many illegal settlers from Germany and the rising Wallonian nationalist movements put his regime at risk.§!"
  FRA_Jean_Louis_Tixier_Vignancour: "Jean-Louis Tixier-Vignancour"
  FRA_Edgar_Puaud: "Edgar Puaud"
  FRA_Jean_Marie_Le_Pen: "Jean Marie Le Pen"
  FRA_Francois_Mitterrand: "François Mitterrand"
  FRA_Antoine_Pinay: "Antoine Pinay"
  FRA_Edmond_Giscard_Estaing: "Edmond Giscard d'Estaing"
+ FRA_Charles_Huntziger: "Charles Huntziger"
+ ##ZZZ
+ ZZZ_Anarchy_Siberia: "Anarchy"
