@@ -1,8 +1,8 @@
 ideas = {
 	country = {
-		FRA_Divided_Council = {
-			name = FRA_Divided_Council
-			picture = GER_never_ending_war
+		FRA_The_Unpopular_Succesor = {
+			name = FRA_The_Unpopular_Succesor
+			picture = FRA_The_Unpopular_Succesor
 			allowed = {
 				original_tag = FRA
 			}
@@ -12,43 +12,55 @@ ideas = {
 				war_support_weekly = -0.1	
 			}
 		}
-		FRA_Economic_Crisis = {
-			name = FRA_Economic_Crisis
-			picture = GER_never_ending_war
+		FRA_La_Milice = {
+			name = FRA_La_Milice
+			picture = FRA_La_Milice
 			allowed = {
 				original_tag = FRA
 			}
 
 			modifier = {
-				productivity_growth_modifier = -0.1
-				research_speed_factor = -0.05
-			    equipment_cost_multiplier_modifier = 0.05
+				stability_factor = 0.15
+				personnel_cost_multiplier_modifier = 0.1
 			}
 		}
-		FRA_Legion_Charlemagne = {
-			name = FRA_Legion_Charlemagne
-			picture = GER_never_ending_war
+		FRA_Workshop_of_the_Pact = {
+			name = FRA_Workshop_of_the_Pact
+			picture = FRA_Workshop_of_the_Pact
 			allowed = {
 				original_tag = FRA
 			}
 
 			modifier = {
-				ultranationalism_drift = 0.01
-			    national_socialism_drift = 0.01
-			    occultism_drift = 0.01
+				productivity_growth_modifier = 0.15
+                social_cost_multiplier_modifier = -0.1
+               	stability_factor = -0.1
+      			conscription_factor = -0.1
 			}
 		}
-		FRA_La_Milice_Francaise = {
-			name = FRA_La_Milice_Francaise
-			picture = GER_never_ending_war
+		FRA_The_Two_Realm = {
+			name = FRA_The_Two_Realm
+			picture = FRA_The_Two_Realm
 			allowed = {
 				original_tag = FRA
 			}
 
 			modifier = {
-				stability_weekly = -0.10
-			    fascism_drift = 0.01
-			    personnel_cost_multiplier_modifier = -0.10
+				war_support_factor = 0.1
+			    monthly_population = 0.05
+			}
+		}
+		FRA_Illegal_German_Settlements = {
+			name = FRA_Illegal_German_Settlements
+			picture = FRA_Illegal_German_Settlements
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+			    stability_factor = -0.1
+				migration_rate_value_factor = 0.05
+			    monthly_population = 0.05
 			}
 		}
 	}
