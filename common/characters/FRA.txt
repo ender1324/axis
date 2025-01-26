@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = GER_joseph_goebbels_desc
+			desc = FRA_Fernand_de_Brinon_desc
 			ideology = fascism_subtype
 			expire = 1968.7.23
 			traits = {
@@ -87,11 +87,27 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism_subtype
+			ideology = paternalism_subtype
 			expire = 1964.1.12
 			traits = {
 				democratic_reformer
 				dislikes_germany
+			}
+		}
+	}
+	FRA_Charles_Huntziger = {
+		name = FRA_Charles_Huntziger
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_FRA_Charles_Huntziger"
+			}
+		}
+		country_leader = {
+			desc = GER_joseph_goebbels_desc
+			ideology = despotism_subtype
+			expire = 1968.7.23
+			traits = {
+				hawk
 			}
 		}
 	}
