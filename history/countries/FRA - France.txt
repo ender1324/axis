@@ -6,33 +6,11 @@ set_technology = {
 
 add_ideas = {
 	# Country
-	FRA_Divided_Council
-	FRA_Economic_Crisis
-	FRA_Legion_Charlemagne
-	FRA_La_Milice_Francaise
-	# LAWS
-	sl_devolved_unitary_state
-	sl_state_press
-	sl_state_atheism
-	sl_racial_hierarchy
-	sl_women_in_workplace
-	sl_banned_protests
-	# economy laws
-	sl_rentier_economy
-	sl_low_income_taxation
-	sl_protectionist_tariffs
-	sl_state_controlled_unions
-	sl_twelve_hour_workday
-	sl_immigration_controlled
-	# Public Structure
-	sl_racial_purity
-	sl_state_policing4
-	sl_penal_labour
-	sl_education_system3
-	sl_healthcare_system3
-	sl_unemployment_benefits2
-	# Military Structure
-	sl_military_spending4
+	FRA_The_Unpopular_Succesor
+	FRA_La_Milice
+	FRA_Workshop_of_the_Pact
+	FRA_The_Two_Realm
+	FRA_Illegal_German_Settlements
 	# Secondary Leaders
 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
 }
@@ -45,6 +23,7 @@ recruit_character = FRA_Edgar_Puaud
 recruit_character = FRA_Jean_Marie_Le_Pen
 recruit_character = FRA_Francois_Mitterrand
 recruit_character = FRA_Edmond_Giscard_Estaing
+recruit_character = FRA_Charles_Huntziger
 
 
 set_politics = {
