@@ -1,0 +1,172 @@
+ideas = {
+	country = {
+		SOE_Leader_of_Europe = {
+			name = SOE_Leader_of_Europe
+			picture = SOE_Leader_of_Europe
+
+			modifier = {
+
+			}
+		}
+		SOE_Prosperity_Ally = {
+			name = SOE_Prosperity_Ally
+			picture = SOE_Prosperity_Ally
+
+			modifier = {
+
+			}
+		}
+		SOE_Kollaborateur_Staat = {
+			name = SOE_Kollaborateur_Staat
+			picture = SOE_Kollaborateur_Staat
+
+			modifier = {
+
+			}
+		}
+		SOE_Marionettenstaat = {
+			name = SOE_Marionettenstaat
+			picture = SOE_Marionettenstaat
+
+			modifier = {
+
+			}
+		}
+		SOE_Reichskommissariat = {
+			name = SOE_Reichskommissariat
+			picture = SOE_Reichskommissariat
+
+			modifier = {
+
+			}
+		}
+		SOE_Integrated_Reichskommissariat = {
+			name = SOE_Integrated_Reichskommissariat
+			picture = SOE_Integrated_Reichskommissariat
+
+			modifier = {
+
+			}
+		}
+		SOE_Pakt_Observer = {
+			name = SOE_Pakt_Observer
+			picture = SOE_Pakt_Observer
+
+			modifier = {
+
+			}
+		}
+		SOE_Italian_Colonial_State = {
+			name = SOE_Italian_Colonial_State
+			picture = SOE_Italian_Colonial_State
+
+			modifier = {
+
+			}
+		}
+		SOE_Italian_Military_Administration = {
+			name = SOE_Italian_Military_Administration
+			picture = SOE_Italian_Military_Administration
+
+			modifier = {
+
+			}
+		}
+		SOE_Italian_Collaborator_State = {
+			name = SOE_Italian_Collaborator_State
+			picture = SOE_Italian_Collaborator_State
+
+			modifier = {
+
+			}
+		}
+		SOE_Master_of_Asia = {
+			name = SOE_Integrated_Reichskommissariat
+			picture = SOE_Master_of_Asia
+
+			modifier = {
+
+			}
+		}
+		SOE_Asia_Collaborator_State = {
+			name = SOE_Asia_Collaborator_State
+			picture = SOE_Asia_Collaborator_State
+
+			modifier = {
+
+			}
+		}
+		SOE_Japan_Vassal = {
+			name = SOE_Japan_Vassal
+			picture = SOE_Japan_Vassal
+
+			modifier = {
+
+			}
+		}
+		SOE_Japan_Total_Puppet = {
+			name = SOE_Japan_Total_Puppet
+			picture = SOE_Japan_Total_Puppet
+
+			modifier = {
+
+			}
+		}
+		SOE_Semi_Independant_State = {
+			name = SOE_Semi_Independant_State
+			picture = SOE_Semi_Independant_State
+
+			modifier = {
+
+			}
+		}
+		SOE_Resource_Extraction_Zone = {
+			name = SOE_Resource_Extraction_Zone
+			picture = SOE_Resource_Extraction_Zone
+
+			modifier = {
+
+			}
+		}
+		SOE_Sphere_Observer = {
+			name = SOE_Sphere_Observer
+			picture = SOE_Sphere_Observer
+
+			modifier = {
+
+			}
+		}
+		SOE_Leader_of_the_Free_World = {
+			name = SOE_Leader_of_the_Free_World
+			picture = GER_never_ending_war
+
+			modifier = {
+
+			}
+		}
+		SOE_Co_Equal_Partner = {
+			name = SOE_Co_Equal_Partner
+			picture = GER_never_ending_war
+
+			modifier = {
+
+			}
+		}
+		SOE_STSR_Member = {
+			name = SOE_STSR_Member
+			picture = GER_never_ending_war
+
+			modifier = {
+
+			}
+		}
+		SOE_STSR_Observer = {
+			name = SOE_STSR_Observer
+			picture = GER_never_ending_war
+
+			modifier = {
+
+			}
+		}
+    }
+}
