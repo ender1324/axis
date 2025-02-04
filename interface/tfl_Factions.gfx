@@ -1,0 +1,66 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_SOE_Leader_of_Europe"
+		textureFile = "gfx/ideas/SOE/SOE_Leader_of_Europe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Prosperity_Ally"
+		textureFile = "gfx/ideas/SOE/SOE_Prosperity_Ally.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Kollaborateur_Staat"
+		textureFile = "gfx/ideas/SOE/SOE_Kollaborateur_Staat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Reichskommissariat"
+		textureFile = "gfx/ideas/SOE/SOE_Reichskommissariat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Integrated_Reichskommissariat"
+		textureFile = "gfx/ideas/SOE/SOE_Integrated_Reichskommissariat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Pakt_Observer"
+		textureFile = "gfx/ideas/SOE/SOE_Pakt_Observer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Italian_Colonial_State"
+		textureFile = "gfx/ideas/SOE/SOE_Italian_Colonial_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Italian_Military_Administration"
+		textureFile = "gfx/ideas/SOE/SOE_Italian_Military_Administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Italian_Collaborator_State"
+		textureFile = "gfx/ideas/SOE/SOE_Italian_Collaborator_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Master_of_Asia"
+		textureFile = "gfx/ideas/SOE/SOE_Master_of_Asia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Asia_Collaborator_State"
+		textureFile = "gfx/ideas/SOE/SOE_Asia_Collaborator_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Japan_Vassal"
+		textureFile = "gfx/ideas/SOE/SOE_Japan_Vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Japan_Total_Puppet"
+		textureFile = "gfx/ideas/SOE/SOE_Japan_Total_Puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Semi_Independant_State"
+		textureFile = "gfx/ideas/SOE/SOE_Semi_Independant_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Resource_Extraction_Zone"
+		textureFile = "gfx/ideas/SOE/SOE_Resource_Extraction_Zone.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Sphere_Observer"
+		textureFile = "gfx/ideas/SOE/SOE_Sphere_Observer.dds"
+	}
+}
