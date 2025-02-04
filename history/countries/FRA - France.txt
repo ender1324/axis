@@ -10,9 +10,11 @@ add_ideas = {
 	FRA_La_Milice
 	FRA_Workshop_of_the_Pact
 	FRA_The_Two_Realm
-	FRA_Illegal_German_Settlements
+	FRA_German_Military_Restrictions
 	# Secondary Leaders
 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
+	#faction
+	SOE_Kollaborateur_Staat
 }
 
 
@@ -20,7 +22,7 @@ add_ideas = {
 recruit_character = FRA_Fernand_de_Brinon
 recruit_character = FRA_Jean_Louis_Tixier_Vignancour
 recruit_character = FRA_Edgar_Puaud
-recruit_character = FRA_Jean_Marie_Le_Pen
+recruit_character = FRA_Jacque_Doriot
 recruit_character = FRA_Francois_Mitterrand
 recruit_character = FRA_Edmond_Giscard_Estaing
 recruit_character = FRA_Charles_Huntziger
@@ -39,13 +41,13 @@ set_popularities = {
 	communism = 0
 	socialism = 0
 	progressivism = 0
-	liberalism = 5
-	conservatism = 15
-	paternalism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 10
 	despotism = 10
 	ultranationalism = 4
 	fascism = 55
-	national_socialism = 10
+	national_socialism = 20
 	occultism = 1
 }
 

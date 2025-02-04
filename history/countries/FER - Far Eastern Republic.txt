@@ -14,6 +14,7 @@ set_politics = {
 add_ideas = {
 	# Secondary Leader
 	FER_SL_Vsevolod_idea
+	SOE_Japan_Vassal
 }
 
 set_popularities = {

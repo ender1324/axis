@@ -4,6 +4,12 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	# Country
+	FAL_OAS
+	FAL_Algerian_Unrest
+}
+
 set_politics = {
 	ruling_party = despotism
 	last_election = "1953.01.01"
@@ -16,15 +22,15 @@ set_popularities = {
 	vanguardism = 0
 	communism = 5
 	socialism = 5
-	progressivism = 5
-	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 10
+	despotism = 15
 	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	fascism = 45
+	national_socialism = 15
+	occultism = 0
 }
 
 set_convoys = 50

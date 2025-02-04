@@ -5,6 +5,10 @@ set_technology = {
 }
 
 add_ideas = {
+   SOE_Reichskommissariat
+}
+
+add_ideas = {
 	# Special Laws
 	# Government Structure
 	sl_unitary_state

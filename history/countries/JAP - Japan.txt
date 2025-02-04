@@ -4,6 +4,10 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+   SOE_Master_of_Asia
+}
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1953.01.01"
@@ -27,7 +31,7 @@ set_popularities = {
 	occultism = 0
 }
 
-create_faction = "Greater East Asian Co-Prosperity Sphere"
+create_faction = "Dai Tōa Kyōeiken"
 add_to_faction = JAP
 add_to_faction = SIA
 add_to_faction = AZH
@@ -75,6 +79,11 @@ set_autonomy = {
 	target = MAL
 	autonomy_state = autonomy_dominion
 }
+set_autonomy = {
+	target = PNG
+	autonomy_state = autonomy_dominion
+}
 
+diplomatic_relation = { country = TIB relation = non_aggression_pact }
 
 set_convoys = 50

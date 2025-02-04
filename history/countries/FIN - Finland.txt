@@ -1,6 +1,8 @@
 ﻿capital = 111
 
-
+add_ideas = {
+   SOE_Pakt_Observer
+}
 
 set_technology = {
 	infantry_weapons = 1

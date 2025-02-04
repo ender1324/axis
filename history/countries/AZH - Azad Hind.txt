@@ -5,6 +5,11 @@ set_autonomy = {
 	autonomy_state = autonomy_puppet
 }
 
+add_ideas = {
+   SOE_Asia_Collaborator_State
+}
+
+
 set_technology = {
 	infantry_weapons = 1
 }

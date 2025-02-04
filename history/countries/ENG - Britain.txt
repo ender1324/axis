@@ -28,5 +28,9 @@ set_popularities = {
 }
 
 add_ideas = ENG_SL_Edward_VIII_idea
+add_ideas = ENG_Tamed_Lion
+add_ideas = ENG_Free_British_Corps
+add_ideas = ENG_Legacy_of_the_Bombings
+add_ideas = SOE_Kollaborateur_Staat
 
 set_convoys = 50

@@ -4,6 +4,9 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+   SOE_Reichskommissariat
+}
 
 recruit_character = RKR_Siegfried_Kashe
 

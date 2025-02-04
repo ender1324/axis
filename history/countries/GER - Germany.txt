@@ -45,6 +45,8 @@ add_ideas = {
 	sl_military_spending4
 	# Secondary Leaders
 	GER_SL_adolf_hitler_idea
+	#Faction
+	SOE_Leader_of_Europe
 }
 
 set_popularities = {
