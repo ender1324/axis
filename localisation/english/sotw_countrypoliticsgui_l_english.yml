@@ -126,31 +126,38 @@
  SL_desc_Vsevolod: "$FER_SL_Vsevolod_idea_desc$"
  FER_SL_Vsevolod_idea: "$FER_Vsevolod$"
  FER_SL_Vsevolod_idea_desc: "Born into exile in the United Kingdom, Vsevolod spent his formative years in the hallowed halls of London, sheltered from the storms of war that ravaged his homeland. Yet, fate would not be kind to him, for when the Reich invaded the British Isles, he was seized by the Gestapo and condemned to the horrors of Sachsenhausen concentration camp as a \"special prisoner.\"\n\nBarely clinging to life from the brutality of the camp, Vsevolod's salvation came in the form of an unexpected offer from the Far-Eastern Russian State. With Japanese diplomatic support, and the Germans having no use for him, he was returned to Russia and crowned as Tsar in a solemn ceremony in Irkutsk. But the crown upon his head brought no solace, he was a way to legitimize the oppressive regime of Rodzaevsky and the Russian Fascist Party, serving the Japanese interests while ripping its own people.\n\nForced into the role of a puppet monarch, Vsevolod became a prisoner of his own palace, a mere pawn in Rodzaevsky's game of power. Isolated and despondent, he fell into obscurity, searching for a chance to reclaim his dignity and redeem himself in the eyes of his people.\n\nThat chance came in the form of a daring plot by white officers opposed to Rodzaevsky's regime. In secret, they approached Vsevolod, offering him the opportunity to lend his support to a monarchist coup and break free from the shackles that the Fascists have put him in. With the weight of his nation's destiny resting on his shoulders, Vsevolod grasps for hope, knowing that the fate of Russia hangs in the balance.\n\nAs he waits in agonizing anticipation for news from the conspirators, Vsevolod immerses himself in the litte amount of literature available to him, drawing strength from the tales of Russia's storied past and the resilience of its people.\n\n§0For in the depths of despair, he finds the ember of hope burning bright, fueling his determination to fight for the liberation of his motherland and the restoration of its rightful place among the nations of the world.§!"
-  ##########################
- ### France ###
+ ##########################
+ ###       France       ###
  ##########################
  FRA_Jean_Louis_Tixier_Vignancour: "Jean-Louis Tixier-Vignancour"
  SL_name_Jean_Louis_Tixier_Vignancour: "$FRA_Jean_Louis_Tixier_Vignancour$"
- SL_trait_Jean_Louis_Tixier_Vignancour: "§Y$wary_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §R-5.00%§!\n  - $MODIFIER_WAR_SUPPORT_FACTOR$: §G+5.00%§!\n  - $MODIFIER_SURRENDER_LIMIT$: §R-5.00%§!"
+ SL_trait_Jean_Louis_Tixier_Vignancour: "§Y$popular_figurehead2$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+5.00%§!"
  SL_name_with_trait_Jean_Louis_Tixier_Vignancour: "§Y$FRA_Jean_Louis_Tixier_Vignancour$§!\n$SL_trait_Jean_Louis_Tixier_Vignancour$" # Tooltip for political screen
  SL_diplomacy_name_with_trait_Jean_Louis_Tixier_Vignancour: "§Y$FRA_Jean_Louis_Tixier_Vignancour$§!\n$SL_fancy_status$\n$SL_trait_Jean_Louis_Tixier_Vignancour$"
  SL_desc_Jean_Louis_Tixier_Vignancour: "$FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc$"
  FRA_SL_Jean_Louis_Tixier_Vignancour_idea: "$FRA_Jean_Louis_Tixier_Vignancour$"
- FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc: "§!"
+ FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc: "Future idea locs for Jean-Louis Tixier-Vignancour"
 
- ##VIETNAM##
+ ##########################
+ ###       Vietnam      ###
+ ##########################
  VIN_Bao_Dai: "Bao Dai"
- SL_name_VIN_Bao_Dai_idea: "$VIN_Bao_Dai$"
- SL_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_trait_Bao_Dai$"
- SL_diplomacy_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_fancy_status$\n$SL_trait_Bao_Dai$"
- VIN_SL_Bao_Dai_idea: "$VIN_Bao_Dai_idea_desc$"
- VIN_SL_Bao_Dai_idea_desc: "His Imperial Majesty§!."
+ SL_name_Bao_Dai: "$VIN_Bao_Dai$"
+ SL_trait_Bao_Dai: "§Y$constitutional_monarch$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+5.00%§!"
+ SL_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_trait_Bao_Dai$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_fancy_status$\n$SL_trait_Bao_Dai$" # Tooltip for diplomacy
+ SL_desc_Bao_Dai: "$VIN_SL_Bao_Dai_idea_desc$"
+ VIN_SL_Bao_Dai_idea: "$VIN_Bao_Dai$"
+ VIN_SL_Bao_Dai_idea_desc: "TBA"
 
- ##Cambodia##
+ ##########################
+ ###      Cambodia      ###
+ ##########################
  CAM_Norodom_Sihanouk: "Norodom Sihanouk"
- SL_name_CAM_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk$"
- SL_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_trait_Norodom_Sihanouk$"
- SL_diplomacy_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_fancy_status$\n$SL_trait_Norodom_Sihanouk$"
+ SL_name_Norodom_Sihanouk: "$CAM_Norodom_Sihanouk$"
+ SL_trait_Norodom_Sihanouk: "§Y$constitutional_monarch$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §R-5.00%§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+5.00%§!"
+ SL_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_trait_Norodom_Sihanouk$" # Tooltip for political screen
+ SL_diplomacy_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_fancy_status$\n$SL_trait_Norodom_Sihanouk$" # Tooltip for diplomacy
  SL_desc_Norodom_Sihanouk: "$CAM_SL_Norodom_Sihanouk_idea_desc$"
- CAM_SL_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk_idea_desc$"
- CAM_SL_Norodom_Sihanouk_idea_desc: "His Imperial Majesty§!."
+ CAM_SL_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk$"
+ CAM_SL_Norodom_Sihanouk_idea_desc: "TBA"

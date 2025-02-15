@@ -197,6 +197,16 @@ defined_text = {
 		trigger = { tag = SCO }
 		localization_key = "Walter I"
 	}
+	# Vietnam
+	text = {
+		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
+		localization_key = SL_name_Bao_Dai
+	}
+	# Cambodia
+	text = {
+		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
+		localization_key = SL_name_Norodom_Sihanouk
+	}
 	# Far-Eastern Russia
 	text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
@@ -206,16 +216,6 @@ defined_text = {
 	text = {
 		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
 		localization_key = SL_name_Jean_Louis_Tixier_Vignancour
-	}
-	# Vietnam
-	text = {
-		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
-		localization_key = SL_name_VIN_Bao_Dai_idea
-	}
-	# Cambodia
-	text = {
-		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
-		localization_key = SL_name_CAM_Norodom_Sihanouk_idea
 	}
 	text = { localization_key = SL_name }
 }
@@ -256,16 +256,6 @@ defined_text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }  
 		localization_key = SL_name_with_trait_Edward_VIII    
 	}
-	# Far-Eastern Russia
-	text = {
-		trigger = { has_idea = FER_SL_Vsevolod_idea }
-		localization_key = SL_name_with_trait_Vsevolod
-	}
-	# France
-	text = {
-		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
-		localization_key = SL_name_with_trait_Jean_Louis_Tixier_Vignancour
-	}
 	# Vietnam
 	text = {
 		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
@@ -275,6 +265,16 @@ defined_text = {
 	text = {
 		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
 		localization_key = SL_name_with_trait_Norodom_Sihanouk
+	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_name_with_trait_Vsevolod
+	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_name_with_trait_Jean_Louis_Tixier_Vignancour
 	}
 	text = { localization_key = SL_name_with_trait }
 }
@@ -315,6 +315,16 @@ defined_text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_diplomacy_name_with_trait_Edward_VIII
 	}
+	# Vietnam
+	text = {
+		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
+		localization_key = SL_diplomacy_name_with_trait_Bao_Dai
+	}
+	# Cambodia
+	text = {
+		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
+		localization_key = SL_diplomacy_name_with_trait_Norodom_Sihanouk
+	}
 	# Far-Eastern Russia
 	text = {
 		trigger = { has_idea = FER_SL_Vsevolod_idea }
@@ -326,16 +336,6 @@ defined_text = {
 		localization_key = SL_diplomacy_name_with_trait_Jean_Louis_Tixier_Vignancour
 	}
 	text = { localization_key = SL_diplomacy_name_with_trait }
-	# Vietnam
-	text = {
-		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
-		localization_key = SL_diplomacy_name_with_trait_Bao_Dai
-	}
-	# Cambodia
-	text = {
-		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
-		localization_key = SL_diplomacy_name_with_trait_Norodom_Sihanouk
-	}
 }
 
 defined_text = {
@@ -374,16 +374,6 @@ defined_text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }
 		localization_key = SL_desc_Edward_VIII
 	}
-	# Far-Eastern Russia
-	text = {
-		trigger = { has_idea = FER_SL_Vsevolod_idea }
-		localization_key = SL_desc_Vsevolod
-	}
-	# France
-	text = {
-		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
-		localization_key = SL_desc_Jean_Louis_Tixier_Vignancour
-	}
 	# Vietnam
 	text = {
 		trigger = { has_idea = VIN_SL_Bao_Dai_idea }
@@ -393,6 +383,16 @@ defined_text = {
 	text = {
 		trigger = { has_idea = CAM_SL_Norodom_Sihanouk_idea }
 		localization_key = SL_desc_Norodom_Sihanouk
+	}
+	# Far-Eastern Russia
+	text = {
+		trigger = { has_idea = FER_SL_Vsevolod_idea }
+		localization_key = SL_desc_Vsevolod
+	}
+	# France
+	text = {
+		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
+		localization_key = SL_desc_Jean_Louis_Tixier_Vignancour
 	}
 	text = { localization_key = SL_desc }
 }
