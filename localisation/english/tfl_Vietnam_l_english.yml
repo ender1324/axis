@@ -1,0 +1,16 @@
+﻿l_english:
+
+
+VIN_Ngo_Dinh_Diem: "Ngo Dinh Diem"
+
+ #Party Name
+ VIN_communism_party: "Viet Cong"
+ VIN_communism_party_long: "Viet Cong"
+ VIN_vanguardism_party: "NLFV"
+ VIN_vanguardism_party_long: "National Liberation Front of Vietnam"
+ VIN_despotism_party: "Imperial Court"
+ VIN_despotism_party_long: "Imperial Court"
+ VIN_fascism_party: "VNL"
+ VIN_fascism_party_long: "Vietnam National League"
+ VIN_national_socialism_party: "NSLV"
+ VIN_national_socialism_party_long: "National-Socialist League of Vietnam"

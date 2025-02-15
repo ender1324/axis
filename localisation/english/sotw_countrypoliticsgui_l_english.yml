@@ -134,6 +134,23 @@
  SL_trait_Jean_Louis_Tixier_Vignancour: "§Y$wary_figurehead$§!\n  - $MODIFIER_STABILITY_FACTOR$: §R-5.00%§!\n  - $MODIFIER_WAR_SUPPORT_FACTOR$: §G+5.00%§!\n  - $MODIFIER_SURRENDER_LIMIT$: §R-5.00%§!"
  SL_name_with_trait_Jean_Louis_Tixier_Vignancour: "§Y$FRA_Jean_Louis_Tixier_Vignancour$§!\n$SL_trait_Jean_Louis_Tixier_Vignancour$" # Tooltip for political screen
  SL_diplomacy_name_with_trait_Jean_Louis_Tixier_Vignancour: "§Y$FRA_Jean_Louis_Tixier_Vignancour$§!\n$SL_fancy_status$\n$SL_trait_Jean_Louis_Tixier_Vignancour$"
- SL_desc_Jean_Louis_Tixier_Vignancour: "$FRA_SL_Vsevolod_idea_desc$"
+ SL_desc_Jean_Louis_Tixier_Vignancour: "$FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc$"
  FRA_SL_Jean_Louis_Tixier_Vignancour_idea: "$FRA_Jean_Louis_Tixier_Vignancour$"
  FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc: "§!"
+
+ ##VIETNAM##
+ VIN_Bao_Dai: "Bao Dai"
+ SL_name_VIN_Bao_Dai_idea: "$VIN_Bao_Dai$"
+ SL_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_trait_Bao_Dai$"
+ SL_diplomacy_name_with_trait_Bao_Dai: "§Y$VIN_Bao_Dai$§!\n$SL_fancy_status$\n$SL_trait_Bao_Dai$"
+ VIN_SL_Bao_Dai_idea: "$VIN_Bao_Dai_idea_desc$"
+ VIN_SL_Bao_Dai_idea_desc: "His Imperial Majesty§!."
+
+ ##Cambodia##
+ CAM_Norodom_Sihanouk: "Norodom Sihanouk"
+ SL_name_CAM_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk$"
+ SL_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_trait_Norodom_Sihanouk$"
+ SL_diplomacy_name_with_trait_Norodom_Sihanouk: "§Y$CAM_Norodom_Sihanouk$§!\n$SL_fancy_status$\n$SL_trait_Norodom_Sihanouk$"
+ SL_desc_Norodom_Sihanouk: "$CAM_SL_Norodom_Sihanouk_idea_desc$"
+ CAM_SL_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk_idea_desc$"
+ CAM_SL_Norodom_Sihanouk_idea_desc: "His Imperial Majesty§!."

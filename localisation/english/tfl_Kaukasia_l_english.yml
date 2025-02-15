@@ -1,0 +1,59 @@
+﻿l_english:
+
+### Party Names
+ RKK_anarchy_party: "Anarchy"
+ RKK_anarchy_party_long: "Anarchy"
+ RKK_communism_party: "Transcausasian Partisans"
+ RKK_communism_party_long: "Transcausasian Partisans"
+ RKK_occultism_party: "PLoK"
+ RKK_occultism_party_long: "Purified League of Kaukasia"
+ RKK_national_socialism_party: "RdNSDAPdO"
+ RKK_national_socialism_party_long: "Reichskommissar der Nationalsozialistischen Deutschen Arbeiterpartei des Ostens"
+ RKK_fascism_party: "RdNSDAPdO-M"
+ RKK_fascism_party_long: "Reichskommissar der Nationalsozialistischen Deutschen Arbeiterpartei des Ostens-Moderate"
+
+ #Ideas#
+ RKK_Alone_in_the_Dark: "Alone in the Dark"
+ RKK_Minorities_Unrest: "Minorites Unrest"
+ RKK_Land_of_Black_Gold: "Land of Black Gold"
+ RKK_Tourists_Spot: "Tourist's Spot"
+
+
+RKK_The_Colony_in_the_Mountain:0 "The Colony in the Mountain"
+RKK_The_Colony_in_the_Mountain_desc:0 "After the victory of the Fatherland again the bolchevist menace, the region of Caucasia was turned into a colony for the germans to settle in and germanize this land of impurity."
+RKK_The_Apathic_Reichkommissar:0 "The Apathy of Maurice"
+RKK_Clean_Arminiusstadt:0 "Clean Arminiusstadt"
+RKK_Expand_The_Industrial_Sector:0 "Expand the Industrial Sector"
+RKK_Improve_The_German_Streets:0 "Imrove the German Streets"
+RKK_Reorganize_The_Administration:0 "Reorganize the Administration"
+RKK_Rule_Like_a_Colony:0 "Rule like a Colony"
+RKK_Clean_The_Bureaucracy:0 "The Conference"
+RKK_Our_Purpose:0 "Our Purpose"
+RKK_Attract_German_Tourists:0 "Attract German Tourists"
+RKK_The_Ostdeutsh_Train_Compagny:0 "The Ostdeutsh Train Compagny"
+
+##Rosenberg##
+RKK_The_New_Boss:0 "The New Boss"
+RKK_The_New_Boss_desc:0 "Maurice was a traitor and the pawn of Himmler can't be trusted, it's time that the one true national-socialist, Rosenberg to take over the Reichskommissariat and clean it of the degeneracy that flood it."
+RKK_Purge_The_Himmlerits:0 "Purge the Himmlerits"
+RKK_Purge_The_Himmlerits_desc:0 "The Plok are one of the most dangerous faction that inhabit Kaukasia. Serving as Himmler's Puppet."
+RKK_Lead_with_a_Iron_Grip:0 "Lead with an Iron Grip"
+RKK_Reform_The_Party:0 "Reform the Party"
+RKK_Anti_SS_Campaign:0 "Anti-SS Campagin"
+RKK_Loyality_Test:0 "Loyality Test"
+RKK_A_New_RdNSDAPdO:0 "A New RdNSDAPdO"
+RKK_Proclaim_A_New_Aryan_Order:0 "Proclaim a New Aryan Order"
+
+
+#EVENT#
+rkk.1.t: "The Black Mountains"
+rkk.2.t: "The Reichkommissar"
+rkk.2.d: "It was another day for Maurice, passing all days in a desk, filling papers and participating during the common RdNSDAPdO's debate. It was tiring and Maurice didn't wanted to be here, but he couldn't do that, because since Goebbell's rule, Maurice due to his jewish heritage, would have been executed, the post of Reichskommissar of Kaukasia was his only way to save his skin. The Reichkommissar wait another opportunity to flee this hellhole, where the natives want him gone and his party want to replace him with a more devoted person. As Maurice was on his desk, doing his daily task, the phone next to him ringed, thinking of being another complaint from either Rosenberg or the Himmlerits, he answered but this time it was special, the voice behind the call start by 'We have a deal for you...'."
+rkk.2.a: "'Continue'"
+rkk.3.t: "Day of Cleansing"
+rkk.4.t: "The Conference"
+rkk.5.t: "Why we Here"
+rkk.6.t: "A Missing Face"
+rkk.6.d: "Like any morning, the private maid of Maurice enter into his room to wake up the Reichskommissar for another day of work. But this time, as the maid open the door and enter, the bed of Maurice was empty, he was not seen anywhere in the administration. Many theories filled the day, was he was captured by partisans? or by the SS of Himmler? until a investigation done by members of the Reichskommissariat's police found out letters in wich Maurice made a deal the with the American ennemy, they welcomed him in exhange of some informations on the Fatherland. Later, trought the CCTV, Maurice was seen taking a plane during the night, confirming the fact the the Reichskommissar betrayed the Reich. Obvisously, such an news bringed a torrent of arguings and it's time that we choose a succesor or the Reichskommissariat will be left in chaos."
+rkk.6.a: "We need someone like Rosenberg"
+rkk.6.b: "Let the Himmlerits guide us"

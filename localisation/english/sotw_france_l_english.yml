@@ -22,15 +22,16 @@ FRA_ultranationalism_party_long: "Partie de la Renaissance Française"
 FRA_The_Unpopular_Succesor: "The Unpopular Succesor"
 FRA_The_Unpopular_Succesor_desc: "Compared to the Maréchal, Brinon was neither as charismatic nor a revered general. The result is a regime less popular with the French, a popularity already weakened by the loss of Nancy to the Germans and the loss of our colonial empire, and without the Maréchal's oratory skills, submission to Germany is less and less accepted."
 FRA_La_Milice: "La Milice"
+FRA_La_Milice_desc: "To maintain stability over the country, our Milice is a perfect things for that."
 FRA_Workshop_of_the_Pact: "Workshop of the Pact"
 FRA_The_Two_Realm: "The Two Realm"
-FRA_Illegal_German_Settlements: "Illegal German Settlements"
+FRA_German_Military_Restrictions: "German Military Restrictions"
 
 ##EVENT##
 
-fra.1.t: "The Situation of France"
-fra.1.desc: "The Nation of France existed since time ago, the land occupied first by the Gauls than by the Romans in the Antiquity. Then the Germanic hordes come along an invaded the region. It's in 486 that Clovis I united all the Franks and created what is considered now the first French State. Over the course of history, France expanded his border and fought many ennemy such has his historical rivals, England. During the 20th century, France triumphed over the Germans in the Great War, but when the panzers arrived in Paris years later, France was forced to collaborate with is invader and submit to the Swastika. After the war, the nation was reduced of his orignal border and it's colonial empire, their only gain was the french-speaking region of Wallonia. Today, the nation find itself still bond to a weakening reich and many player in the political scheme are ready to take over the nation."
-fra.1.a: "Interesting"
+FRA.1.t: "The Situation of France"
+FRA.1.desc: "The Nation of France existed since time ago, the land occupied first by the Gauls than by the Romans in the Antiquity. Then the Germanic hordes come along an invaded the region. It's in 486 that Clovis I united all the Franks and created what is considered now the first French State. Over the course of history, France expanded his border and fought many ennemy such has his historical rivals, England. During the 20th century, France triumphed over the Germans in the Great War, but when the panzers arrived in Paris years later, France was forced to collaborate with is invader and submit to the Swastika. After the war, the nation was reduced of his orignal border and it's colonial empire, their only gain was the french-speaking region of Wallonia. Today, the nation find itself still bond to a weakening reich and many player in the political scheme are ready to take over the nation."
+FRA.1.a: "Interesting"
 
 
 #FOCUS#
