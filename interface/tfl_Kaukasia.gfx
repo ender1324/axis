@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_RKK_Alone_in_the_Dark"
+		textureFile = "gfx/ideas/RKK/RKK_Alone_in_the_Dark.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RKK_Minorities_Unrest"
+		textureFile = "gfx/ideas/RKK/RKK_Minorities_Unrest.dds"
+	}
+}

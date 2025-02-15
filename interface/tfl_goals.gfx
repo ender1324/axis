@@ -64,6 +64,14 @@ spriteType = {
 		name = "GFX_Generic_Swastika_France_Color"
 		texturefile = "gfx/interface/goals/generic/GFX_Generic_Swastika_France_Color.dds"
 	}
+	spriteType = {
+		name = "GFX_Generic_Himmler"
+		texturefile = "gfx/interface/goals/generic/GFX_Generic_Himmler.dds"
+	}
+	spriteType = {
+		name = "GFX_Serbia_SS_Map"
+		texturefile = "gfx/interface/goals/generic/GFX_Serbia_SS_Map.dds"
+	}
 	############################
 	### French Goals Sprites ###
 	############################
@@ -122,6 +130,61 @@ spriteType = {
 	spriteType = {
 		name = "GFX_FRA_The_Prime_Minister"
 		texturefile = "gfx/interface/goals/FRA/GFX_FRA_The_Prime_Minister.dds"
+	}
+	############################
+	### Kaukasia Goals Sprites ###
+	############################
+	spriteType = {
+		name = "GFX_RKK_The_Colony_in_the_Mountain"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_The_Colony_in_the_Mountain.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Maurice"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Maurice.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Clean_Arminiusstadt"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Clean_Arminiusstadt.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Ostdeutsh_Train"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Ostdeutsh_Train.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Rule_Like_a_Colony"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Rule_Like_a_Colony.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Our_Purpose"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Our_Purpose.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Attract_German_Tourists"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Attract_German_Tourists.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Conference"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Conference.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Improve_The_German_Streets"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Improve_The_German_Streets.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Expand_The_Industrial_Sector"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Expand_The_Industrial_Sector.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Reorganize_The_Administration"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Reorganize_The_Administration.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Rosenberg"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Rosenberg.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Secure_Kaukasia"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Secure_Kaukasia.dds"
 	}
 }
 

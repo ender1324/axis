@@ -163,6 +163,10 @@ spriteTypes = {
 		name = "GFX_portrait_RKK_Emil_Maurice" 
 		textureFile = "gfx/leaders/RKK/RKK_Emil_Maurice.dds" # this is the directory
 	}
+	spriteType = {
+		name = "GFX_portrait_RKK_Odilo_Globotschnig" 
+		textureFile = "gfx/leaders/RKK/RKK_Odilo_Globotschnig.dds" # this is the directory
+	}
 
 	# Free France
 	spriteType = {
@@ -189,8 +193,8 @@ spriteTypes = {
 		textureFile = "gfx/leaders/FRA/FRA_Edgar_Puaud.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_FRA_Jean_Marie_Le_Pen"
-		textureFile = "gfx/leaders/FRA/FRA_Jean_Marie_Le_Pen.dds"
+		name = "GFX_portrait_FRA_Jacque_Doriot"
+		textureFile = "gfx/leaders/FRA/FRA_Jacque_Doriot.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_FRA_Charles_Huntziger"
@@ -201,6 +205,24 @@ spriteTypes = {
 		name = "GFX_portrait_AZH_Subhas_Chandra_Bose"
 		textureFile = "gfx/leaders/AZH/AZH_Subhas_Chandra_Bose.dds"
 	}
+	#Vietnam
+	spriteType = {
+		name = "GFX_Portrait_VIN_Bao_Dai"
+		textureFile = "gfx/leaders/VIN/Portrait_VIN_Bao_Dai.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_VIN_Nguyen_Phan_Long"
+		textureFile = "gfx/leaders/VIN/Portrait_VIN_Nguyen_Phan_Long.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_VIN_Ngo_Diem"
+		textureFile = "gfx/leaders/VIN/Portrait_VIN_Ngo_Diem.dds"
+	}
+	#Cambodia
+	spriteType = {
+		name = "GFX_Portrait_CAM_Norodom_Sihanouk"
+		textureFile = "gfx/leaders/CAM/Portrait_CAM_Norodom_Sihanouk.dds"
+	}				
     #Anarchy
 	spriteType = {
 		name = "GFX_portrait_ZZZ_Anarchy_Siberia"
