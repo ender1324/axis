@@ -7,6 +7,7 @@ set_technology = {
 }
 
 add_ideas = {
+   CAM_SL_Norodom_Sihanouk_idea
    SOE_Japan_Total_Puppet
 }
 

@@ -20,16 +20,16 @@ set_politics = {
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
+	communism = 0
 	socialism = 5
-	progressivism = 5
+	progressivism = 0
 	liberalism = 5
-	conservatism = 5
-	paternalism = 5
+	conservatism = 0
+	paternalism = 40
 	despotism = 5
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 50
+	ultranationalism = 0
+	fascism = 10
+	national_socialism = 30
 	occultism = 5
 }
 
