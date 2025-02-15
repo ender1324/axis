@@ -5,6 +5,10 @@ state={
 	state_category = wasteland
 	impassable = yes
 
+	resources = {
+		uranium = 21
+	}
+
 	history={
 		owner = NGR
 		add_core_of = NGR

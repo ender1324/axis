@@ -3,7 +3,11 @@ state={
 	name="STATE_669"
 	manpower = 314300
 
-	state_category = pastoral
+	state_category = rural
+
+	resources = {
+		uranium = 20
+	}
 
 	history= {
 		owner = INS

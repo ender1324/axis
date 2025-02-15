@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 
+	resources = {
+		uranium = 2
+	}
+
 	history={
 		owner = BUL
 		victory_points = { #Pazardzhik

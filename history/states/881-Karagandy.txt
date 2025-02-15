@@ -2,6 +2,10 @@ state = {
 	id = 881
 	name = "STATE_881" # Karagandy
 
+	resources = {
+		uranium = 14
+	}
+
 	history = {
 		owner = KAZ
 		#victory_points = {

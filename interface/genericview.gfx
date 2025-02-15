@@ -65,6 +65,12 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+	spriteType = {
+		name = "GFX_resources_strip"
+		texturefile = "gfx/interface/resources_strip.dds"
+		noOfFrames = 7
+	}
+
 	# My own additions
 	spriteType = {
 		name = "GFX_arrow_up_small"

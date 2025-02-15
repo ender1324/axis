@@ -6,6 +6,10 @@ state={
 	
 	state_category = developed_rural
 
+	resources = {
+		uranium = 8
+	}
+
 	history={
 		owner = KAZ
 		add_core_of = KAZ

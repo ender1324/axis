@@ -3,7 +3,11 @@ state={
 	id=541
 	name="STATE_541"
 	manpower = 254100
-	state_category = pastoral
+	state_category = developed_rural
+
+	resources = {
+		uranium = 11
+	}
 
 	history={
 		owner = SAF

@@ -2,6 +2,10 @@ state={
 	id=587
 	name="STATE_587"
 
+	resources = {
+		uranium = 1
+	}
+
 	history={
 		owner = KKP
 		add_core_of = KKP

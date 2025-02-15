@@ -2,6 +2,10 @@ state={
 	id=589
 	name="STATE_589"
 
+	resources = {
+		uranium = 3
+	}
+
 	history={
 		owner = KAZ
 		add_core_of = KAZ

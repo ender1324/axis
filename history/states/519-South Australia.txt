@@ -3,6 +3,10 @@ state={
 	id=519
 	name="STATE_519"
 
+	resources = {
+		uranium = 32
+	}
+
 	history={
 		owner = AST
 		buildings = {
@@ -29,7 +33,7 @@ state={
 	}
 	manpower=200800
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 
 	local_supplies=0.0 
 }
