@@ -1,676 +1,264 @@
+#Main tree
 focus_tree = {
-    id = France_intro
-    country = {
-        factor = 0
-        modifier = {
-            add = 10
-            tag = FRA
-        }
-    }
-    default = no
-    continuous_focus_position = { x = 60 y = 3000 }
-    shared_focus = FRA_A_Door_to_Europe
+	id = france_intro
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_A_Door_to_Europe
+}
+
+shared_focus = {
+	id =  FRA_A_Door_to_Europe
+	icon = GFX_Europe_Map
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_A_Door_to_Europe"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 0
 }
 shared_focus = {
-    id = FRA_A_Door_to_Europe
-    icon = GFX_Generic_Clock
-    cost = 3.00
-    x = 12
-    y = 0
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_A_Door_to_Europe"
-        add_political_power = 60
-        hidden_effect = {
-            country_event = { id = fra.1 }
-        }
-    }
+	id =  FRA_Into_The_Council
+	icon = GFX_FRA_Convene_The_Council
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Door_to_Europe
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Into_The_Council"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 1
 }
 shared_focus = {
-    id = FRA_The_Unstable_Council
-    icon = GFX_FRA_Convene_The_Council
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_A_Door_to_Europe
-    }
-    x = 12
-    y = 1
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Unstable_Council"
-        add_political_power = 60
-    }
+	id =  FRA_The_President
+	icon = GFX_Generic_Brinon
+	cost = 4
+	prerequisite = {
+		focus = FRA_Into_The_Council
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_President"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 1
+	y = 2
 }
 shared_focus = {
-    id = FRA_Praise_Brinon
-    icon = GFX_Generic_Brinon
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Unstable_Council
-    }
-    x = 12
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Praise_Brinon"
-        add_political_power = 60
-    }
+	id =  FRA_Dust_off_old_Portraits
+	icon = GFX_FRA_Petain
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_President
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Dust_off_old_Portraits"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 1
+	y = 3
 }
 shared_focus = {
-    id = FRA_The_Prime_Minister
-    icon = GFX_FRA_The_Prime_Minister
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Unstable_Council
-    }
-    x = 14
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Prime_Minister"
-        add_political_power = 60
-    }
+	id =  FRA_The_Prime_Minister
+	icon = GFX_FRA_The_Ministers
+	cost = 4
+	prerequisite = {
+		focus = FRA_Into_The_Council
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Prime_Minister"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 2
 }
 shared_focus = {
-    id = FRA_The_Opposants
-    icon = GFX_FRA_Talk_With_The_Moderate
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Unstable_Council
-    }
-    x = 10
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Opposants"
-        add_political_power = 60
-    }
+	id =  FRA_And_The_Opposants
+	icon = GFX_FRA_Talk_With_The_Moderate
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Prime_Minister
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_And_The_Opposants"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 3
 }
 shared_focus = {
-    id = FRA_The_Spirits_of_Vichy_live_on
-    icon = GFX_FRA_The_Spirit_of_Vichy
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Praise_Brinon
-    }
-    prerequisite = {
-        focus = FRA_The_Prime_Minister
-    }
-    prerequisite = {
-        focus = FRA_The_Opposants
-    }
-    x = 12
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Spirits_of_Vichy_live_on"
-        add_political_power = 60
-    }
+	id =  FRA_The_Resistance_Problem
+	icon = GFX_Generic_People_Rally
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Door_to_Europe
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Resistance_Problem"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = -2
+	y = 1
 }
 shared_focus = {
-    id = FRA_Rejuvenate_Nationalism
-    icon = GFX_FRA_National_French_Youth
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Spirits_of_Vichy_live_on
-    }
-    x = 11
-    y = 4
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Rejuvenate_Nationalism"
-        add_political_power = 60
-    }
+	id =  FRA_The_Legion
+	icon = GFX_FRA_National_French_Youth
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Resistance_Problem
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Legion"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = -3
+	y = 2
 }
 shared_focus = {
-    id = FRA_Cooperation_not_Collaboration
-    icon = GFX_FRA_National_French_Youth
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Rejuvenate_Nationalism
-    }
-    x = 11
-    y = 5
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Cooperation_not_Collaboration"
-        add_political_power = 60
-    }
+	id =  FRA_Reform_The_Army
+	icon = GFX_FRA_Parade_at_Orlean
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Legion
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Reform_The_Army"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = -3
+	y = 3
 }
 shared_focus = {
-    id = FRA_Dust_off_Old_Portraits
-    icon = GFX_FRA_National_French_Youth
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Cooperation_not_Collaboration
-    }
-    x = 11
-    y = 6
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Dust_off_Old_Portraits"
-        add_political_power = 60
-    }
+	id =  FRA_Send_The_Milice
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Resistance_Problem
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Send_The_Milice"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = -1
+	y = 2
 }
 shared_focus = {
-    id = FRA_The_German_Settlers_Right
-    icon = GFX_Generic_People_Rally
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Spirits_of_Vichy_live_on
-    }
-    x = 13
-    y = 4
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_German_Settlers_Right"
-        add_political_power = 60
-    }
+	id =  FRA_Seek_And_Destroy
+	icon = GFX_Generic_Execution
+	cost = 4
+	prerequisite = {
+		focus = FRA_Send_The_Milice
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Seek_And_Destroy"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = -1
+	y = 3
 }
 shared_focus = {
-    id = FRA_Integrate_Wallonia
-    icon = GFX_Generic_People_Rally
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_German_Settlers_Right
-    }
-    x = 13
-    y = 5
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Integrate_Wallonia"
-        add_political_power = 60
-    }
+	id =  FRA_The_Workshop
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Door_to_Europe
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Workshop"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 1
 }
 shared_focus = {
-    id = FRA_Land_of_Opportunity
-    icon = GFX_Generic_People_Rally
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Integrate_Wallonia
-    }
-    x = 13
-    y = 6
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Land_of_Opportunity"
-        add_political_power = 60
-    }
+	id =  FRA_Improve_the_Factories
+	icon = GFX_Generic_Fascist_Demand
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Workshop
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Improve_the_Factories"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 2
 }
 shared_focus = {
-    id = FRA_Unite_the_Ministers
-    icon = GFX_FRA_The_Ministers
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Dust_off_Old_Portraits
-    }
-    prerequisite = {
-        focus = FRA_Land_of_Opportunity
-    }
-    x = 12
-    y = 7
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Unite_the_Ministers"
-        add_political_power = 60
-    }
+	id =  FRA_Attract_German_Investissors
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_Improve_the_Factories
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Attract_German_Investissors"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 3
 }
 shared_focus = {
-    id = FRA_The_Resistance_Problem
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_A_Door_to_Europe
-    }
-    x = 7
-    y = 1
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Resistance_Problem"
-        add_political_power = 60
-    }
+	id =  FRA_The_Corporate_State
+	icon = GFX_Generic_Clock
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Workshop
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Corporate_State"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 2
 }
 shared_focus = {
-    id = FRA_Research_and_Arrest
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Resistance_Problem
-    }
-    x = 7
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Research_and_Arrest"
-        add_political_power = 60
-    }
+	id =  FRA_Follow_The_German_Model
+	icon = GFX_A_Visit_To_Berlin
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Corporate_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Follow_The_German_Model"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 3
 }
 shared_focus = {
-    id = FRA_Send_the_Milice
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    mutually_exclusive = {
-        focus = FRA_Use_The_Police
-    }
-    mutually_exclusive = {
-        focus = FRA_The_Devil_of_France
-    }
-    prerequisite = {
-        focus = FRA_Research_and_Arrest
-    }
-    x = 7
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Send_the_Milice"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Use_The_Police
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    mutually_exclusive = {
-        focus = FRA_Send_the_Milice
-    }
-    mutually_exclusive = {
-        focus = FRA_The_Devil_of_France
-    }
-    prerequisite = {
-        focus = FRA_Research_and_Arrest
-    }
-    x = 5
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Use_The_Police"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_Devil_of_France
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    mutually_exclusive = {
-        focus = FRA_Send_the_Milice
-    }
-    mutually_exclusive = {
-        focus = FRA_Use_The_Police
-    }
-    prerequisite = {
-        focus = FRA_Research_and_Arrest
-    }
-    x = 9
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Devil_of_France"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Listen_the_President
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Devil_of_France
-        focus = FRA_Send_the_Milice
-        focus = FRA_Use_The_Police
-    }
-    x = 7
-    y = 4
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Listen_the_President"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Emergency_Plan
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Listen_the_President
-    }
-    x = 7
-    y = 5
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Emergency_Plan"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Calm_Down_France
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Emergency_Plan
-    }
-    x = 7
-    y = 7
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Calm_Down_France"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_Workshop_of_Europe
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_A_Door_to_Europe
-    }
-    x = 17
-    y = 1
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Workshop_of_Europe"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Empower_the_French_Workers
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    mutually_exclusive = {
-        focus = FRA_The_German_Migrants
-    }
-    prerequisite = {
-        focus = FRA_The_Workshop_of_Europe
-    }
-    x = 16
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Empower_the_French_Workers"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Unite_the_Country
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Empower_the_French_Workers
-    }
-    x = 16
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Unite_the_Country"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Improve_the_SNCF
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Unite_the_Country
-    }
-    x = 16
-    y = 4
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Improve_the_SNCF"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Follow_The_German_Model
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Improve_the_SNCF
-    }
-    x = 16
-    y = 5
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Follow_The_German_Model"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_Industrial_Heart_of_Europe
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Follow_The_German_Model
-    }
-    x = 16
-    y = 6
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Industrial_Heart_of_Europe"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_German_Migrants
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    mutually_exclusive = {
-        focus = FRA_Empower_the_French_Workers
-    }
-    prerequisite = {
-        focus = FRA_The_Workshop_of_Europe
-    }
-    x = 18
-    y = 2
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_German_Migrants"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Trade_over_Europe
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_German_Migrants
-    }
-    x = 18
-    y = 3
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Trade_over_Europe"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_Nancy_Paris_Railroad
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Trade_over_Europe
-    }
-    x = 18
-    y = 4
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Nancy_Paris_Railroad"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Import_German_Goods
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Nancy_Paris_Railroad
-    }
-    x = 18
-    y = 5
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Import_German_Goods"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_The_Reich_Workshop
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Import_German_Goods
-    }
-    x = 18
-    y = 6
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_The_Reich_Workshop"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Made_In_France
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_The_Industrial_Heart_of_Europe
-        focus = FRA_The_Reich_Workshop
-    }
-    x = 17
-    y = 7
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Made_In_France"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Prepare_a_Trip_to_Orlean
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Calm_Down_France
-    }
-    prerequisite = {
-        focus = FRA_Unite_the_Ministers
-    }
-    prerequisite = {
-        focus = FRA_Made_In_France
-    }
-    x = 11
-    y = 8
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Prepare_a_Trip_to_Orlean"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Reunite_the_Council
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Calm_Down_France
-    }
-    prerequisite = {
-        focus = FRA_Unite_the_Ministers
-    }
-    prerequisite = {
-        focus = FRA_Made_In_France
-    }
-    x = 13
-    y = 8
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Reunite_the_Council"
-        add_political_power = 60
-    }
-}
-shared_focus = {
-    id = FRA_Into_The_New_Era
-    icon = GFX_FRA_A_Look_Inside_France
-    cost = 3.00
-    prerequisite = {
-        focus = FRA_Prepare_a_Trip_to_Orlean
-    }
-    prerequisite = {
-        focus = FRA_Reunite_the_Council
-    }
-    x = 12
-    y = 9
-    ai_will_do = {
-        factor = 80
-    }
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus_FRA_Into_The_New_Era"
-        add_political_power = 60
-    }
+	id =  FRA_Another_Morning
+	icon = GFX_Generic_Morning
+	cost = 4
+	prerequisite = {
+		focus = FRA_Follow_The_German_Model
+	}
+	prerequisite = {
+		focus = FRA_Attract_German_Investissors
+	}
+	prerequisite = {
+		focus = FRA_Seek_And_Destroy
+	}
+	prerequisite = {
+		focus = FRA_Reform_The_Army
+	}
+	prerequisite = {
+		focus = FRA_Dust_off_old_Portraits
+	}
+	prerequisite = {
+		focus = FRA_And_The_Opposants
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Another_Morning"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 4
 }
