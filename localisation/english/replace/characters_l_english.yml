@@ -26,31 +26,33 @@
  ###################################
  # LEADERS
  RKU_erich_koch: "Erich Koch"
- RKU_erich_koch_desc: "Erich Koch is a man of many names, but most importantly, he want to conquer east europe and proclaim the greater ostland reich§!"
+ RKU_erich_koch_desc: ""
 ###################################
  ### RK Polen ###
  ###################################
  # LEADERS
  RKP_Hans_Frank: "Hans Frank"
- RKP_Hans_Frank_desc: "Hans Frank is a man of many names, but most importantly, he want to conquer east europe and proclaim the greater ostland reich§!"
+ RKP_Hans_Frank_desc: ""
  ###################################
  ### RK Russland ###
  ###################################
  # LEADERS
  RKR_Siegfried_Kashe: "Siegfried Kasche"
- RKR_Siegfried_Kashe_desc: "Siegfried Kasche is a man of many names, but most importantly, he want to conquer east europe and proclaim the greater ostland reich§!"
+ RKR_Siegfried_Kashe_desc: ""
  ###################################
  ### RK Ostland ###
  ###################################
  # LEADERS
  RKO_Hinrich_Lohse: "Hinrich Lohse"
- RKO_Hinrich_Lohse_desc: "Hinrich Lohse is a man of many names, but most importantly, he want to conquer east europe and proclaim the greater ostland reich§!"
+ RKO_Hinrich_Lohse_desc: ""
  ###################################
  ### RK Kaukasus ###
  ###################################
  # LEADERS
  RKK_Emil_Maurice: "Emil Maurice"
- RKK_Emil_Maurice_desc: "Emil Maurice is alone in a strange land§!"
+ RKK_Emil_Maurice_desc: ""
+ RKK_Odilo_Globotschnig: "Odilo Globotschnig"
+ RKK_Odilo_Globotschnig_desc: ""
  ##############
  ### CANADA ###
  ##############
@@ -146,10 +148,15 @@
  FRA_Fernand_de_Brinon_desc: "When the main dictator of a country die, it often harder to continue the regime in good stability, as the successor is not as charismatic as the previous one was. This explain well Fernand de Brinon, born in 1885 at Libourne, member of a wealthy family, he studied political science and laws but then become a journalist. Even before the war, Brinon met Hitler, who was still not know as the ruler of Europe, and due to him, many frenchs tough of Hitler as an man of peace. After Pétain's death, Brinon was choose as the next president of the French State, but compared to the marshall, Brinon was not charismatic as him nor was even know for an important military victory, adding to that the lose of Alscace to the Germans again and Nancy made the Frenchs more tired of this collaboration.\n\nFernand de Brinon find himself in a tense situation, his more populist prime minister; Tixier Vignancour, is an useful ally, as his speech manage to keep Brinon's popularity stable, but the many illegal settlers from Germany and the rising Wallonian nationalist movements put his regime at risk.§!"
  FRA_Jean_Louis_Tixier_Vignancour: "Jean-Louis Tixier-Vignancour"
  FRA_Edgar_Puaud: "Edgar Puaud"
- FRA_Jean_Marie_Le_Pen: "Jean Marie Le Pen"
+ FRA_Jacque_Doriot: "Jacque Doriot"
  FRA_Francois_Mitterrand: "François Mitterrand"
  FRA_Antoine_Pinay: "Antoine Pinay"
  FRA_Edmond_Giscard_Estaing: "Edmond Giscard d'Estaing"
  FRA_Charles_Huntziger: "Charles Huntziger"
  ##ZZZ
  ZZZ_Anarchy_Siberia: "Anarchy"
+  ################################
+ ###  Vietnam  ###
+ ################################
+ # LEADERS
+ VIN_Nguyen_Phan_Long: "Nguyễn Phan Long"
