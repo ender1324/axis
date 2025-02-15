@@ -1,0 +1,34 @@
+characters = {
+	VIN_Nguyen_Phan_Long = {
+		name = VIN_Nguyen_Phan_Long
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIN_Nguyen_Phan_Long"
+			}
+		}
+		country_leader = {
+			desc = VIN_Nguyen_Phan_Long_desc
+			ideology = despotism_subtype
+			expire = 1980.9.11
+			traits = {
+				anti_communist
+			}
+		}
+	}
+	VIN_Ngo_Dinh_Diem = {
+		name = VIN_Ngo_Dinh_Diem
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_VIN_Ngo_Diem"
+			}
+		}
+		country_leader = {
+			desc = VIN_Ngo_Dinh_Diem_desc
+			ideology = fascism_subtype
+			expire = 1980.9.11
+			traits = {
+				anti_communist
+			}
+		}
+	}	
+}

@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		RKK_Alone_in_the_Dark = {
+			name = RKK_Alone_in_the_Dark
+			picture = RKK_Alone_in_the_Dark
+			allowed = {
+				original_tag = RKK
+			}
+
+			modifier = {
+				political_power_cost = 0.05
+				personnel_cost_multiplier_modifier = 0.1
+				stability_factor = -0.1
+			}
+		}
+		RKK_Minorities_Unrest = {
+			name = RKK_Minorities_Unrest
+			picture = RKK_Minorities_Unrest
+			allowed = {
+				original_tag = RKK
+			}
+
+			modifier = {
+                conscription_factor = -0.1
+				surrender_limit = -0.1
+			}
+		}
+		RKK_Land_of_Black_Gold = {
+			name = RKK_Land_of_Black_Gold
+			picture = FFA_all_alone
+			allowed = {
+				original_tag = RKK
+			}
+
+			modifier = {
+			    local_resources_factor = 0.50
+				fuel_gain_factor = 0.1
+			}
+		}
+		RKK_Tourists_Spot = {
+			name = RKK_Tourists_Spot
+			picture = FFA_all_alone
+			allowed = {
+				original_tag = RKK
+			}
+
+			modifier = {
+			    monthly_population = 0.05
+
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+add_namespace = rkk
+
+country_event = {
+	id = rkk.1 #The Colony in the Mountain
+	title = rkk.1.t
+	desc = rkk.1.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.1.a
+        }
+	}
+country_event = {
+	id = rkk.2 #Maurice
+	title = rkk.2.t
+	desc = rkk.2.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.2.a
+        }
+	}
+country_event = {
+	id = rkk.3 
+	title = rkk.3.t
+	desc = rkk.3.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.3.a
+        }
+	}
+country_event = {
+	id = rkk.4 #A New Bureaucracy
+	title = rkk.4.t
+	desc = rkk.4.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.4.a
+        }
+	}
+country_event = {
+	id = rkk.5 #Maurice get proposed some plans to Germanize Caucasia
+	title = rkk.5.t
+	desc = rkk.5.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.5.a
+        }
+	}
+country_event = {
+	id = rkk.6 #Maurice Flee Caucasia
+	title = rkk.6.t
+	desc = rkk.6.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.6.a
+		load_focus_tree = { tree = Kaukasus_Rosenberg }
+        }
+	option = {
+		name = rkk.6.b
+		load_focus_tree = { tree = Kaukasus_Plot }
+        set_politics = {
+			ruling_party = occultism
+			elections_allowed = no
+			last_election = "1953.01.01"
+			election_frequency = 48
+	   }
+    }
+}

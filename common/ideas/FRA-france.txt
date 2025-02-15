@@ -20,7 +20,7 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = 0.15
+				stability_factor = -0.15
 				personnel_cost_multiplier_modifier = 0.1
 			}
 		}
@@ -50,17 +50,15 @@ ideas = {
 			    monthly_population = 0.05
 			}
 		}
-		FRA_Illegal_German_Settlements = {
-			name = FRA_Illegal_German_Settlements
+		FRA_German_Military_Restrictions = {
+			name = FRA_German_Military_Restrictions
 			picture = FRA_Illegal_German_Settlements
 			allowed = {
 				original_tag = FRA
 			}
 
 			modifier = {
-			    stability_factor = -0.1
-				migration_rate_value_factor = 0.05
-			    monthly_population = 0.05
+			    conscription_factor = -0.9
 			}
 		}
 	}

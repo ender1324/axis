@@ -1,3 +1,45 @@
 ideas = {
+	country = {
+		ENG_Tamed_Lion = {
+			name = ENG_Tamed_Lion
+			picture = GER_never_ending_war
+			allowed = {
+				original_tag = ENG
+			}
 
+			modifier = {
+				stability_factor = -0.15
+
+			}
+		
+		}
+		ENG_Free_British_Corps = {
+			name = ENG_Free_British_Corps
+			picture = GER_never_ending_war
+			allowed = {
+				original_tag = ENG
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = -0.05
+				personnel_cost_multiplier_modifier = 0.1
+			}
+		
+		}
+		ENG_Legacy_of_the_Bombings = {
+			name = ENG_Legacy_of_the_Bombings
+			picture = GER_never_ending_war
+			allowed = {
+				original_tag = ENG
+			}
+
+			modifier = {
+				weekly_manpower = -500
+				personnel_cost_multiplier_modifier = 0.10
+				productivity_growth_modifier = -0.01
+			}
+		
+		}
+	}
 }

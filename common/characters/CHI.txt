@@ -8,8 +8,8 @@ characters = {
 		}
 		country_leader = {
 			desc = CHI_wang_jingwei_desc
-			ideology = despotism_subtype
-			expire = 1953.2.20 # todo idk fix
+			ideology = fascism_subtype
+			expire = 1962.2.20 # todo idk fix
 		}
 	}
 }

@@ -47,11 +47,11 @@ characters = {
 			}
 		}
 	}
-	FRA_Jean_Marie_Le_Pen = {
-		name = FRA_Jean_Marie_Le_Pen
+	FRA_Jacque_Doriot = {
+		name = FRA_Jacque_Doriot
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_FRA_Jean_Marie_Le_Pen"
+				large = "GFX_portrait_FRA_Jacque_Doriot"
 			}
 		}
 		country_leader = {
