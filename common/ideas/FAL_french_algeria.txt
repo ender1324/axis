@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		FAL_OAS = {
+			name = FAL_OAS
+			picture = FFA_birds_cage
+			allowed = {
+				original_tag = FAL
+			}
+
+			modifier = {
+				political_power_cost = 0.05
+				personnel_cost_multiplier_modifier = 0.1
+				stability_factor = 0.05
+			}
+		}
+		FAL_Algerian_Unrest = {
+			name = FAL_Algerian_Unrest
+			picture = FFA_all_alone
+			allowed = {
+				original_tag = FAL
+			}
+
+			modifier = {
+                conscription_factor = -0.1
+				surrender_limit = -0.1
+				stability_factor = -0.05
+			}
+		}
+	}
+}

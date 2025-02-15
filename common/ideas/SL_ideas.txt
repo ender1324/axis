@@ -122,5 +122,33 @@ ideas = {
 
 			traits = { popular_figurehead2 }
 		}
+		# Vietnam
+		VIN_SL_Bao_Dai_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { constitutional_monarch }
+		}
+		# Cambodia
+		CAM_SL_Norodom_Sihanouk_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { constitutional_monarch }
+		}
 	}
 }
