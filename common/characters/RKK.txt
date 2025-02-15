@@ -11,5 +11,18 @@ characters = {
 			ideology = national_socialism_subtype
 			expire = 2008.04.27
 		}
+	}
+	RKK_Odilo_Globotschnig = {
+		name = RKK_Odilo_Globotschnig
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_RKK_Odilo_Globotschnig"
+			}
+		}
+		country_leader = {
+			desc = RKK_Odilo_Globotschnig_desc
+			ideology = aryanracialism_subtype
+			expire = 2008.04.27
+		}
 	}	
 }
