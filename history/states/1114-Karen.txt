@@ -1,0 +1,31 @@
+
+state={
+	id=1114
+	name="STATE_1114"
+	manpower = 847416
+	
+	state_category = developed_rural
+	
+	resources={
+		rubber=5 
+	}
+
+	history={
+		add_core_of = KRN
+		add_core_of = BRM
+		owner = BRM
+		victory_points = {
+			7441 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+        4408 12238 4293 7441
+	}
+
+	local_supplies=0.0 
+}

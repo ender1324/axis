@@ -1,0 +1,31 @@
+
+state={
+	id=1115
+	name="STATE_1115"
+	manpower = 1274104
+	
+	state_category = developed_rural
+	
+	resources={
+		oil=21
+	}
+
+	history={
+		add_core_of = MNO
+		add_core_of = BRM
+		owner = BRM
+		victory_points = {
+			1403 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+        4336 1403 12125
+	}
+
+	local_supplies=0.0 
+}

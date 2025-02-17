@@ -1,0 +1,32 @@
+
+state={
+	id=1117
+	name="STATE_1117"
+	manpower = 620401
+	
+	state_category = developed_rural
+	
+	resources={
+		tungsten=12 
+		steel=5
+	}
+
+	history={
+		add_core_of = BRM
+		add_core_of = KAH
+		owner = BRM
+		victory_points = {
+			4425 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+        4425 8063 1934 4996 4318 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=1118
+	name="STATE_1118"
+	manpower = 5574122
+	
+	state_category = developed_rural
+	
+	resources={
+		rubber=12 
+		oil=15
+	}
+
+	history={
+		add_core_of = BRM
+		owner = BRM
+		victory_points = {
+			12284 2
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+        7382 7254 10223 10182 12284 12267
+	}
+
+	local_supplies=0.0 
+}
