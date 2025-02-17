@@ -1055,3 +1055,36 @@ GRN = {
 	color = rgb { 255 80 80 }
 	color_ui = rgb { 179 0 0 }
 }
+# Burma Breakaway
+AKN = {
+	color = rgb { 63 127 99 }
+	color_ui = rgb { 63 127 99 }
+}
+CHN = {
+	color = rgb { 63 89 99 }
+	color_ui = rgb { 63 89 99 }
+}
+KRN = {
+	color = rgb { 32 46 96 }
+	color_ui = rgb { 32 46 96 }
+}
+MNO = {
+	color = rgb { 124 39 39 }
+	color_ui = rgb { 124 39 39 }
+}
+SHN = {
+	color = rgb { 145 125 29 }
+	color_ui = rgb { 145 125 29 }
+}
+KAH = {
+	color = rgb { 47 76 12 }
+	color_ui = rgb { 47 76 12 }
+}
+JBF = {
+	color = rgb { 226 158 158 }
+	color_ui = rgb { 226 158 158 }
+}
+CBP = {
+	color = rgb { 229 22 22 }
+	color_ui = rgb { 229 22 22 }
+}
