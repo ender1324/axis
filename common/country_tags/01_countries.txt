@@ -22,6 +22,16 @@ FFA = "countries/Free_France.txt"
 AZH = "countries/Azad_Hind.txt"
 SKI = "countries/Sikkim.txt"
 
+#Burma Breakaway 
+AKN = "countries/Arakan.txt"
+CHN = "countries/Chin.txt"
+KRN = "countries/Karen.txt"
+MNO = "countries/Mon.txt"
+SHN = "countries/Shan.txt"
+KAH = "countries/Kachin.txt"
+JBF = "countries/Japanese Force Burma.txt"
+CBP = "countries/Communist Burma.txt"
+
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"
 CIA = "countries/NKVD.txt"
