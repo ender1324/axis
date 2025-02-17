@@ -1,0 +1,30 @@
+capital = 1115
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1953.01.01"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchy = 0
+	vanguardism = 0
+	communism = 10
+	socialism = 15
+	progressivism = 0
+	liberalism = 55
+	conservatism = 0
+	paternalism = 20
+	despotism = 0
+	ultranationalism = 0
+	fascism = 0
+	national_socialism = 0
+	occultism = 0
+}
+
+set_convoys = 50
