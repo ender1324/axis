@@ -720,6 +720,34 @@
  CAR_vanguardism_DEF: "the Central African People's Republic"
  CAR_vanguardism_ADF: "Central African"
 
+ #Burma Breakaway
+ AKN: "Arakan Liberation Army"
+ AKN_DEF: "the Arakan Liberation Army"
+ AKN_ADJ: "Rakhine"
+ CHN: "Chin National Army"
+ CHN_DEF: "the Chin National Army"
+ CHN_ADJ: "Chin"
+ KRN: "Karen National Union"
+ KRN_DEF: "the Karen National Union"
+ KRN_ADJ: "Karen"
+ MNO: "Mon National Liberation Army"
+ MNO_DEF: "the Mon National Liberation Army"
+ MNO_ADJ: "Mon"
+ SHN: "Shan State"
+ SHN_DEF: "the Shan State"
+ SHN_ADJ: "Shan"
+ KAH: "Kachin Independence Army"
+ KAH_DEF: "the Kachin Independence Army"
+ KAH_ADJ: "Kachin"
+ JBF: "15th Army"
+ JBF_DEF: "the 15th Army of Japan"
+ JBF_ADJ: "Japanese"
+ CBP: "Red Army of Burma"
+ CBP_DEF: "the Red Army of Burma"
+ CBP_ADJ: "Burmese" 
+
+
+
  # Misc tags
  FAK: "Fake"
  FAK_DEF: "Fake"
