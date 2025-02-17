@@ -6670,3 +6670,19 @@ STATE_1111_german: "Gyarong"
 STATE_1111_italian: "Gyarong"
 STATE_1111_russian: "Gyarong"
 STATE_1111_japanese: "Gyaruron"
+
+STATE_1112: "Arakan"
+
+STATE_1113: "Chin State"
+
+STATE_1114: "Karen"
+
+STATE_1115: "Mon"
+
+STATE_1116: "Shan States"
+
+STATE_1117: "Kachin"
+
+STATE_1118: "Ayeyarwady"
+
+STATE_1119: "Tanintharyi"
