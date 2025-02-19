@@ -139,8 +139,11 @@
  RKU_ADJ: "Carpatian German"
  
  RKK: "Reichskommissariat Kaukasien"
- RKK_DEF: "The Reichskommissariat Kaukasien"
+ RKK_DEF: "Der Reichskommissariat Kaukasien"
  RKK_ADJ: "Caucasian German"
+ RKK_occultism: "Kaukasien Staat"
+ RKK_occultism_DEF: "Der Kaukasien Staat"
+ RKK_occultism_ADJ: "Caucasian German"
 
  RKD: "Reichskommissariat Dänemark"
  RKD_DEF: "The Reichkommissariat Dänemark"
@@ -755,3 +758,6 @@
  ANR: " "
  ANR_DEF: "the Anarchy"
  ANR_ADJ: "Anarchic"
+ TCS: "Transcaucasian Soviet Partisans"
+ TCS_DEF: "The United Transcaucasian Soviet Partisans"
+ TCS_ADJ: "Transcaucasian"

@@ -53,6 +53,8 @@
  RKK_Emil_Maurice_desc: ""
  RKK_Odilo_Globotschnig: "Odilo Globotschnig"
  RKK_Odilo_Globotschnig_desc: ""
+ RKK_Wilhelm_Keitel: "Wilhelm Keitel"
+ RKK_Wilhelm_Keitel_desc: ""
  ##############
  ### CANADA ###
  ##############
@@ -160,3 +162,7 @@
  ################################
  # LEADERS
  VIN_Nguyen_Phan_Long: "Nguyễn Phan Long"
+ ##############################
+ ### BURMA ###
+ ##############################
+ BRM_Ba_Maw: "Ba Maw"
