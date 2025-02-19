@@ -1,4 +1,7 @@
 add_namespace = rkk
+add_namespace = rkk_R
+add_namespace = rkk_Turkey
+
 
 country_event = {
 	id = rkk.1 #The Colony in the Mountain
@@ -70,16 +73,155 @@ country_event = {
 	
 	option = {
 		name = rkk.6.a
-		load_focus_tree = { tree = Kaukasus_Rosenberg }
+		retire_character = RKK_Emil_Maurice
+        add_country_leader_role = {
+            character = RKK_Wilhelm_Keitel
+            promote_leader = yes
+                country_leader = {
+                  ideology = national_socialism_subtype
+                  expire = "1965.1.1.1"
+            }
+         }
+		load_focus_tree = { tree = Kaukasus_Keitel }
         }
 	option = {
 		name = rkk.6.b
-		load_focus_tree = { tree = Kaukasus_Plot }
+		load_focus_tree = { tree = Kaukasus_Occultism }
         set_politics = {
 			ruling_party = occultism
 			elections_allowed = no
 			last_election = "1953.01.01"
 			election_frequency = 48
 	   }
+    }
+}
+#Rosenberg
+country_event = {
+	id = rkk_R.1 #The New Boss
+	title = rkk_R.1.t
+	desc = rkk_R.1.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk_R.1.a
+        }
+	}
+country_event = {
+	id = rkk_R.2
+	title = rkk_R.2.t
+	desc = rkk_R.2.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk_R.2.a
+        }
+	}
+country_event = {
+	id = rkk_R.3
+	title = rkk_R.3.t
+	desc = rkk_R.3.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk_R.3.a
+        }
+	}
+country_event = {
+    id = rkk_R.4
+	title = rkk_R.4.t
+	desc = rkk_R.4.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rrkk_Rkk.4.a
+        add_popularity = {
+			ideology = occultism
+			popularity = -0.1
+		}
+     }
+}
+country_event = {
+	id = rkk_R.5
+	title = rkk_R.5.t
+	desc = rkk_R.5.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk_R.5.a
+        }
+	}
+
+
+country_event = {
+	id = rkk_Turkey.1 #Turkey surrender
+	title = rkk_Turkey.1.t
+	desc = rkk_Turkey.1.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+
+	trigger = {
+	TAG = RKK
+		TUR = {
+			surrender_progress > 0.05
+	}
+}
+	
+	option = {
+		name = rkk_Turkey.1.a
+		RKK = {
+			transfer_state = 1044
+			transfer_state = 230
+			white_peace = TUR
+		}
+
+    }
+country_event = {
+	id = rkk_Turkey.2 #Kaukasia surrender
+	title = rkk_Turkey.2.t
+	desc = rkk_Turkey.2.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+
+	trigger = {
+	TAG = TUR
+		RKK = {
+			surrender_progress > 0.05
+		}
+	}
+}
+	
+	option = {
+		name = rkk_Turkey.2.a
+		RKK = {
+            white_peace = TUR
+            country_event = { id = rkk.7 days = 3 }
+		}
+
+    }
+}
+country_event = {
+	id = rkk.7 #Transcaucasian Separate
+	title = rkk.7.t
+	desc = rkk.7.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = no
+	
+	option = {
+		name = rkk.7.a
+		TCS = {
+			add_state_core = 238
+			add_state_core = 237
+			transfer_state = 238
+			transfer_state = 237
+		}		
     }
 }
