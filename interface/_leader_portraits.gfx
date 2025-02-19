@@ -167,6 +167,10 @@ spriteTypes = {
 		name = "GFX_portrait_RKK_Odilo_Globotschnig" 
 		textureFile = "gfx/leaders/RKK/RKK_Odilo_Globotschnig.dds" # this is the directory
 	}
+	spriteType = {
+		name = "GFX_Portrait_RKK_Wilhelm_Keitel" 
+		textureFile = "gfx/leaders/RKK/Portrait_RKK_Wilhelm_Keitel.dds" # this is the directory
+	}
 
 	# Free France
 	spriteType = {
@@ -222,7 +226,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_CAM_Norodom_Sihanouk"
 		textureFile = "gfx/leaders/CAM/Portrait_CAM_Norodom_Sihanouk.dds"
-	}				
+	}
+	#Burma
+	spriteType = {
+		name = "GFX_Portrait_BRM_Ba_Maw"
+		textureFile = "gfx/leaders/BRM/Portrait_BRM_Ba_Maw.dds"
+	}					
     #Anarchy
 	spriteType = {
 		name = "GFX_portrait_ZZZ_Anarchy_Siberia"

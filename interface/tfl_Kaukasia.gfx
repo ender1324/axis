@@ -8,4 +8,8 @@ spriteTypes = {
 		name = "GFX_idea_RKK_Minorities_Unrest"
 		textureFile = "gfx/ideas/RKK/RKK_Minorities_Unrest.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_RKK_Land_of_Black_Gold"
+		textureFile = "gfx/ideas/RKK/RKK_Land_of_Black_Gold.dds"
+	}
 }
