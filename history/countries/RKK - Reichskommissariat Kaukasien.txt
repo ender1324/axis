@@ -1,5 +1,8 @@
 capital = 234
 
+set_oob = RKK_1953
+
+
 load_focus_tree = Kaukasus_start
 
 set_technology = {
@@ -7,13 +10,15 @@ set_technology = {
 }
 
 add_ideas = {
-   SOE_Reichskommissariat
    RKK_Alone_in_the_Dark
    RKK_Minorities_Unrest
+   RKK_Land_of_Black_Gold
+   SOE_Reichskommissariat
 }
 
 recruit_character = RKK_Emil_Maurice
 recruit_character = RKK_Odilo_Globotschnig
+recruit_character = RKK_Wilhelm_Keitel
 
 set_politics = {
 	ruling_party = national_socialism
