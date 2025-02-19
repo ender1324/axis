@@ -24,5 +24,16 @@ characters = {
 			ideology = aryanracialism_subtype
 			expire = 2008.04.27
 		}
+	}
+	RKK_Wilhelm_Keitel = {
+		name = RKK_Wilhelm_Keitel
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_RKK_Wilhelm_Keitel"
+			}
+		}
+		country_leader = {
+			desc = RKK_Wilhelm_Keitel_desc
+		}
 	}	
 }

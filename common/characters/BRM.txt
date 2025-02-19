@@ -1,0 +1,15 @@
+characters = {
+	BRM_Ba_Maw = {
+		name = BRM_Ba_Maw
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_BRM_Ba_Maw"
+			}
+		}
+		country_leader = {
+			desc = BRM_Ba_Maw_desc
+			ideology = fascism_subtype
+			expire = 1962.2.20 # todo idk fix
+		}
+	}
+}
