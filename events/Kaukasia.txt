@@ -1,6 +1,7 @@
 add_namespace = rkk
 add_namespace = rkk_R
 add_namespace = rkk_Turkey
+add_namespace = rkk_ss
 
 
 country_event = {
@@ -193,12 +194,10 @@ country_event = {
 	trigger = {
 	TAG = TUR
 		RKK = {
-			surrender_progress > 0.05
+			surrender_progress > 0.1
 		}
 	}
-}
-	
-	option = {
+    option = {
 		name = rkk_Turkey.2.a
 		RKK = {
             white_peace = TUR
@@ -225,3 +224,39 @@ country_event = {
 		}		
     }
 }
+country_event = {
+	id = rkk.8 
+	title = rkk.8.t
+	desc = rkk.8.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.8.a
+        }
+	}
+country_event = {
+	id = rkk.9 
+	title = rkk.9.t
+	desc = rkk.9.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.9.a
+        }
+	}
+country_event = {
+	id = rkk.10 
+	title = rkk.10.t
+	desc = rkk.10.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rkk.10.a
+        }
+	}
