@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_General_RKK_Rudolf_Schmidt"
+		texturefile = "gfx/leaders/RKK/Portrait_General_RKK_Rudolf_Schmidt.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_General_RKK_Rudolf_Schmidt_small"
+		texturefile = "gfx/interface/ideas/RKK/Ministers/idea_RKK_Rudolf_Schmidt.dds"
+	}
+
+}

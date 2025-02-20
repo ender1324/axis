@@ -12,4 +12,32 @@ spriteTypes = {
 		name = "GFX_idea_RKK_Land_of_Black_Gold"
 		textureFile = "gfx/ideas/RKK/RKK_Land_of_Black_Gold.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_RKK_Minorities_Unrest_2"
+		textureFile = "gfx/ideas/RKK/RKK_Minorities_Unrest_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Partisans_Purge"
+		textureFile = "gfx/ideas/RKK/RKK_Partisans_Purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Pure_Caucasian_State"
+		textureFile = "gfx/ideas/RKK/RKK_Pure_Caucasian_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Tourists_Spot"
+		textureFile = "gfx/ideas/RKK/RKK_Tourists_Spot.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Ultra_Militarism"
+		textureFile = "gfx/ideas/RKK/RKK_Ultra_Militarism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Hermit_Kingdom"
+		textureFile = "gfx/ideas/RKK/RKK_Hermit_Kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RKK_Caucasian_Slaves"
+		textureFile = "gfx/ideas/RKK/RKK_Caucasian_Slaves.dds"
+	}
 }
