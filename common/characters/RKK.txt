@@ -35,5 +35,22 @@ characters = {
 		country_leader = {
 			desc = RKK_Wilhelm_Keitel_desc
 		}
+	}
+	RKK_Rudolf_Schmidt={
+		name=RKK_Rudolf_Schmidt
+		portraits={
+			army={
+				large="GFX_Portrait_General_RKK_Rudolf_Schmidt"
+				small= GFX_Portrait_General_RKK_Rudolf_Schmidt_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
 	}	
 }
