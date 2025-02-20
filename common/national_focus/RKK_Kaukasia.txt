@@ -842,11 +842,13 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_From_The_Shadow"
-		country_event = {
-			id = rkk.1
-		}
-    }
-	x = 6
+		add_stability = 0.05
+		add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		}    
+	}
+	x = 9
 	y = 0
 }
 shared_focus = {
@@ -861,18 +863,23 @@ shared_focus = {
         GER = { end_puppet = RKK }
         leave_faction = yes
     }
-	x = 6
+	x = 9
 	y = 1
 }
 shared_focus = {
 	id =  RKK_Loyality_to_Himmler
 	icon = GFX_Generic_Himmler
+	mutually_exclusive = {
+		focus = RKK_Loyality_to_Globotschnig
+	}
 	prerequisite = {
 		focus = RKK_Cut_The_Connection
 	}
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_Loyality_to_Himmler"
+		SSW = { add_opinion_modifier = { target = ROOT modifier = RKK_ss_allies } }
+		RKK = { add_opinion_modifier = { target = SSW modifier = RKK_ss_allies } }
     }
 	x = 15
 	y = 2
@@ -886,6 +893,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Gift_from_Caucasia"
+
     }
 	x = 15
 	y = 3
@@ -899,6 +907,10 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_Request_Officiers"
+        add_timed_idea = {
+            idea = RKK_Officiers_from_Serbia
+            days = 300
+        }		
     }
 	x = 13
 	y = 3
@@ -912,8 +924,664 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_Mimic_Serbia"
+		add_stability = -0.1
+		add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		}  
     }
 	x = 17
 	y = 3
 }
+shared_focus = {
+	id =  RKK_The_SS_Brotherhood
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Gift_from_Caucasia
+	}
+	prerequisite = {
+		focus = RKK_Request_Officiers
+	}
+	prerequisite = {
+		focus = RKK_Mimic_Serbia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_SS_Brotherhood"
+		create_faction = RKK_Arierische_Fraternität
+		RKK = { add_to_faction = SSW }
+    }
 
+	x = 14
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Inflitrate_The_Reichkommissariats
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Gift_from_Caucasia
+	}
+	prerequisite = {
+		focus = RKK_Request_Officiers
+	}
+	prerequisite = {
+		focus = RKK_Mimic_Serbia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Inflitrate_The_Reichkommissariats"
+        RKU = {
+		   add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		    }        
+        }
+        RKR = {
+		   add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		    }        
+        }
+        RKO = {
+		   add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		    }        
+        }
+        RKP = {
+		   add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		    }        
+        }
+    }
+	x = 16
+	y = 4
+}
+shared_focus = {
+	id =  RKK_A_Venue_in_Kaukasia
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_The_SS_Brotherhood
+	}
+	prerequisite = {
+		focus = RKK_Inflitrate_The_Reichkommissariats
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Venue_in_Kaukasia"
+		country_event = {
+			id = rkk.8 
+		}
+    }
+	x = 15
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Extreme_Germanization
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Venue_in_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Extreme_Germanization"
+		add_political_power = -25
+		add_ideas = RKK_Renewed_Germanization             
+    }
+	x = 15
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Extend_The_Slavery_System
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Extreme_Germanization
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Extend_The_Slavery_System"
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		swap_ideas = {
+			remove_idea = RKK_Minorities_Unrest
+			add_idea = RKK_Caucasian_Slaves
+		}		
+    }
+	x = 14
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Black_Cloud_over_Kaukasia
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Extreme_Germanization
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Black_Cloud_over_Kaukasia"
+		remove_ideas = RKK_Alone_in_the_Dark
+    }
+	x = 16
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Last_Step_to_Purity
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Extend_The_Slavery_System
+	}
+	prerequisite = {
+		focus = RKK_Black_Cloud_over_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Last_Step_to_Purity"
+		add_political_power = 50
+		add_war_support = 0.05
+		add_manpower = -3500		
+
+    }
+	x = 15
+	y = 8
+}
+shared_focus = {
+	id =  RKK_Loyality_to_Globotschnig
+	icon = GFX_Generic_Himmler
+	mutually_exclusive = {
+		focus = RKK_Loyality_to_Himmler
+	}
+	prerequisite = {
+		focus = RKK_Cut_The_Connection
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Loyality_to_Globotschnig"
+		SSW = { add_opinion_modifier = { target = ROOT modifier = RKK_traitor } }
+    }
+	x = 3
+	y = 2
+}
+shared_focus = {
+	id =  RKK_The_Hermit_Kingdom
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Loyality_to_Globotschnig
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Hermit_Kingdom"
+		add_stability = 0.05
+		add_ideas = RKK_Hermit_Kingdom
+
+    }
+	x = 3
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Purge_The_Loyalists
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Loyality_to_Globotschnig
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Purge_The_Loyalists"
+		add_manpower = -300
+		add_stability = 0.05
+		add_political_power = -150	
+    }
+	x = 5
+	y = 3
+}
+shared_focus = {
+	id =  RKK_A_Elite_Army
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Loyality_to_Globotschnig
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Elite_Army"
+		load_oob = "RKK_SSD"
+    }
+	x = 1
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Reign_of_Terror
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Elite_Army
+	}
+	prerequisite = {
+		focus = RKK_Purge_The_Loyalists
+	}
+	prerequisite = {
+		focus = RKK_The_Hermit_Kingdom
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Reign_of_Terror"
+		add_stability = -0.1
+		add_political_power = -25
+		add_war_support = -0.1
+
+    }
+	x = 2
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Denounce_Himmler_foolishness 
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Elite_Army
+	}
+	prerequisite = {
+		focus = RKK_Purge_The_Loyalists
+	}
+	prerequisite = {
+		focus = RKK_The_Hermit_Kingdom
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Denounce_Himmler_foolishness"
+		country_event = {
+			id = rkk.9 
+		}		
+    }
+	x = 4
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Hang_Up_New_Portraits
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Denounce_Himmler_foolishness
+	}
+	prerequisite = {
+		focus = RKK_Reign_of_Terror
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Hang_Up_New_Portraits"
+		country_event = {
+			id = rkk.10 
+		}			
+    }
+	x = 3
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Work_The_Land
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Hang_Up_New_Portraits
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Work_The_Land"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+	x = 2
+	y = 7
+}
+shared_focus = {
+	id =  RKK_The_Caucasian_Soul
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Hang_Up_New_Portraits
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Caucasian_Soul"
+		add_popularity = {
+			ideology = occultism
+			popularity = 0.1
+		}  
+    }
+	x = 4
+	y = 7
+}
+shared_focus = {
+	id =  RKK_A_Pure_Kaukasia
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Work_The_Land
+	}
+	prerequisite = {
+		focus = RKK_The_Caucasian_Soul
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Pure_Kaukasia"
+		add_ideas = RKK_Pure_Caucasian_State
+    }
+	x = 3
+	y = 8
+}
+shared_focus = {
+	id =  RKK_Our_Own_Ultimate_Goal
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_A_Pure_Kaukasia focus = RKK_Last_Step_to_Purity
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Our_Own_Ultimate_Goal"
+		add_war_support = 0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 750
+			producer = SSW
+		}
+    }
+	x = 9
+	y = 9
+}
+shared_focus = {
+	id =  RKK_Strike_Turkey
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Our_Own_Ultimate_Goal
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Strike_Turkey"
+		TUR = { add_stability = -0.1 }
+    }
+	x = 7
+	y = 10
+}
+shared_focus = {
+	id =  RKK_incite_ethnic_tension
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Strike_Turkey
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_incite_ethnic_tension"
+		TUR = {
+				add_ideas = RKK_TUR_Armenians_Unrest
+		}
+    }
+	x = 7
+	y = 11
+}
+shared_focus = {
+	id =  RKK_The_Great_Wall_of_Kaukasia
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Strike_Turkey
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Great_Wall_of_Kaukasia"
+		231 = {
+			add_building_construction = {
+				type = bunker
+				province = 3653
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1599
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 12309
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9702
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 6669
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 3656
+				level = 1
+				instant_build = yes
+			}
+		}
+		229 = {
+			add_building_construction = {
+				type = bunker
+				province = 1539
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 1467
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				province = 9715
+				level = 1
+				instant_build = yes
+			}
+	    }
+    }
+	x = 5
+	y = 11
+}
+shared_focus = {
+	id =  RKK_Fall_Rot
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_incite_ethnic_tension
+	}
+	prerequisite = {
+		focus = RKK_The_Great_Wall_of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Fall_Rot"
+		declare_war_on = {
+			target = TUR
+			type = annex_everything
+		}
+    }
+	x = 6
+	y = 12
+}
+shared_focus = {
+	id =  RKK_Strike_Iran
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Our_Own_Ultimate_Goal
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Strike_Iran"
+		PER = { add_stability = -0.1 }
+
+    }
+	x = 11
+	y = 10
+}
+shared_focus = {
+	id =  RKK_Call_The_SUMKA
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Strike_Iran
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Call_The_SUMKA"
+		PER = { 		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		  } 
+        }
+    }
+	x = 11
+	y = 11
+}
+shared_focus = {
+	id =  RKK_Unleash_The_Azeris
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Strike_Iran
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Unleash_The_Azeris"
+		PER = {
+				add_ideas = RKK_PER_Azeri_Unrest
+		}
+    }
+	x = 13
+	y = 11
+}
+shared_focus = {
+	id =  RKK_Fall_Blau
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Call_The_SUMKA
+	}
+	prerequisite = {
+		focus = RKK_Unleash_The_Azeris
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Fall_Blau"
+		declare_war_on = {
+			target = PER
+			type = annex_everything
+		}
+    }
+	x = 12
+	y = 12
+}
+shared_focus = {
+	id =  RKK_Stabilize_The_Empire
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Fall_Rot
+	}
+	prerequisite = {
+		focus = RKK_Fall_Blau
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Stabilize_The_Empire"
+    }
+	x = 9
+	y = 13
+}
+shared_focus = {
+	id =  RKK_Exploit_The_Land
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Stabilize_The_Empire
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Exploit_The_Land"
+    }
+	x = 8
+	y = 14
+}
+shared_focus = {
+	id =  RKK_Use_Far_Right_paramilitary
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Stabilize_The_Empire
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Use_Far_Right_paramilitary"
+    }
+	x = 10
+	y = 14
+}
+shared_focus = {
+	id =  RKK_To_Last_A_Thousand_Years
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	prerequisite = {
+		focus = RKK_Stabilize_The_Empire
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_To_Last_A_Thousand_Years"
+    }
+	x = 9
+	y = 15
+}
