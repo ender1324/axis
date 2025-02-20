@@ -498,6 +498,12 @@ opinion_modifiers = {
 	huge_increase = {
 		value = 50
 	}
+	RKK_ss_allies = {
+		value = 40
+	}
+	RKK_traitor = {
+		value = -40
+	}
 
 	##### TRADE MODIFIERS
 	embargo = {
