@@ -409,6 +409,11 @@
  AST_DEF: "the Australasian Union"
  AST_ADJ: "Australasian"
 
+ #Romania
+ ROM_national_socialism: "Republic of Romania"
+ ROM_national_socialism_DEF: "the Republic of Romania"
+ ROM_national_socialism_ADJ: "Romanian"
+
  # Russia and warlords
  SOV: "Russia"
  SOV_DEF: "Russia"
@@ -678,7 +683,7 @@
 
  # Siam
  SIA: "Thailand"
- SIA_DEF: "Thailand"
+ SIA_DEF: "Kingdom of Thailand"
  SIA_ADJ: "Thai"
 
  # Indochina
@@ -708,7 +713,7 @@
  RAJ: "India"
  RAJ_DEF: "India"
  RAJ_ADJ: "Indian"
- AZH: "Bengal"
+ AZH: "Government of Bengal"
  AZH_DEF: "the Provisional Government of Free India"
  AZH_ADJ: "Indian"
  SKI: "Sikkim"

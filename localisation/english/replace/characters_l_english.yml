@@ -111,8 +111,13 @@
  ### Azad Hind ###
  ##################
  # LEADERS
- AZH_Subhas_Chandra_Bose: "Subhas Chandra Bose"
- AZH_Subhas_Chandra_Bose_desc: ""
+ AZH_Mohan_Singh: "Mohan Singh"
+ AZH_Mohan_Singh_desc: ""
+  ##################################
+ ### Transcaucasian Partisans ###
+ ##################################
+ # LEADERS
+ TCS_Lavrenty_Beria: "Lavrenty Beria"
  ##################################
  ### RUSSIAN DEMOCRATIC COUNCIL ###
  ##################################
@@ -155,6 +160,10 @@
  FRA_Antoine_Pinay: "Antoine Pinay"
  FRA_Edmond_Giscard_Estaing: "Edmond Giscard d'Estaing"
  FRA_Charles_Huntziger: "Charles Huntziger"
+ ##########################
+ ## Romania ###
+ ##########################
+ ROM_Horia_Sima: "Horia Sima"
  ##ZZZ
  ZZZ_Anarchy_Siberia: "Anarchy"
   ################################
