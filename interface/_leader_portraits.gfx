@@ -105,6 +105,11 @@ spriteTypes = {
 		name = "GFX_portrait_oscar_torp"
 		textureFile = "gfx/leaders/NOR/Portrait_Oscar_Torp.dds"
 	}
+	#Transcaucasian Partisans
+	spriteType = {
+		name = "GFX_portrait_TCS_Lavrenty_Beria"
+		textureFile = "gfx/leaders/TCS/Portrait_TCS_Lavrenty_Beria.dds"
+	}	
 
 	# General Russian Portraits
 	spriteType = {
@@ -204,10 +209,23 @@ spriteTypes = {
 		name = "GFX_portrait_FRA_Charles_Huntziger"
 		textureFile = "gfx/leaders/FRA/FRA_Charles_Huntziger.dds"
 	}
+	#Romania
+	spriteType = {
+		name = "GFX_Portrait_ROM_Horia_Sima"
+		textureFile = "gfx/leaders/ROM/Portrait_ROM_Horia_Sima.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ROM_Ion_Antonescu"
+		textureFile = "gfx/leaders/ROM/Portrait_ROM_Ion_Antonescu.dds"
+	}		
     #Azad Hind
 	spriteType = {
-		name = "GFX_portrait_AZH_Subhas_Chandra_Bose"
-		textureFile = "gfx/leaders/AZH/AZH_Subhas_Chandra_Bose.dds"
+		name = "GFX_Portrait_AZH_Subhas_Chandra_Bose"
+		textureFile = "gfx/leaders/AZH/Portrait_AZH_Subhas_Chandra_Bose.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_AZH_Mohan_Singh"
+		textureFile = "gfx/leaders/AZH/Portrait_AZH_Mohan_Singh.dds"
 	}
 	#Vietnam
 	spriteType = {
