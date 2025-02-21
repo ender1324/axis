@@ -10,14 +10,14 @@ state={
 	}
 
 	history={
-		owner = AZH
+		owner = TIB
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12730 1 
 		}
-		add_claim_by = PRC
+		add_core_of = TIB
 		add_core_of = AZH
 		add_core_of = RAJ
 	}

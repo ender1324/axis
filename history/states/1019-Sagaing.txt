@@ -4,7 +4,7 @@ state={
 	manpower=918273
 	state_category = rural
 	provinces={
-		1082 1197 4087 4588 10386 10486 12335 12464 12492 
+		1082 4087 4588 10386 10486 12335 12464 12492 
 	}
 	history={
 		owner = BRM
