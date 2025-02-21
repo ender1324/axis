@@ -1,0 +1,58 @@
+division_template = {
+	name = "Partizany Kavkaza"
+	division_names_group = TCS_PAR
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Krasnaja Zvezdnaja Armija"
+	division_names_group = TCS_KZA
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 775
+		division_template = "Partizany Kavkaza"
+		start_experience_factor = 0.84
+		start_equipment_factor = 0.8
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3779
+		division_template = "Partizany Kavkaza"
+		start_experience_factor = 0.84
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11724
+		division_template = "Krasnaja Zvezdnaja Armija"
+		start_experience_factor = 0.84
+		start_equipment_factor = 0.8
+	}
+}
