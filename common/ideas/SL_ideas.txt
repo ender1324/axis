@@ -150,5 +150,33 @@ ideas = {
 
 			traits = { constitutional_monarch }
 		}
+		# Azad Hind
+		AZH_SL_Subhas_Chandra_Bose_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { popular_figurehead2 }
+		}
+		# Romania
+		ROM_SL_Ion_Antonescu_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { headstrong }
+		}
 	}
 }
