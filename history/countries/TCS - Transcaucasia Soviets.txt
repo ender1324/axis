@@ -4,6 +4,8 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = TCS_Lavrenty_Beria
+
 set_politics = {
 	ruling_party = vanguardism
 	last_election = "1953.01.01"

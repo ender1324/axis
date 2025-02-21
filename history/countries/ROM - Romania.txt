@@ -4,8 +4,15 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = ROM_Horia_Sima
+
+add_ideas = {
+    ROM_SL_Ion_Antonescu_idea
+
+}
+
 set_politics = {
-	ruling_party = despotism
+	ruling_party = national_socialism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,17 +21,17 @@ set_politics = {
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
-	communism = 5
-	socialism = 5
-	progressivism = 5
-	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	communism = 0
+	socialism = 0
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 10
+	despotism = 25
+	ultranationalism = 0
+	fascism = 10
+	national_socialism = 55
+	occultism = 0
 }
 
 set_convoys = 50
