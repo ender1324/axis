@@ -1,0 +1,17 @@
+characters = {
+	ROM_Horia_Sima = {
+		name = ROM_Horia_Sima
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_ROM_Horia_Sima"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			expire = 1982.11.10
+			traits = {
+				prince_of_terror
+			}
+		}
+	}	
+}

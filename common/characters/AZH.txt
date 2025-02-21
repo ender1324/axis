@@ -1,0 +1,15 @@
+characters = {
+	AZH_Mohan_Singh = {
+		name = AZH_Mohan_Singh
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_AZH_Mohan_Singh"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_subtype
+			desc = AZH_Mohan_Singh_desc
+			expire = 1999.1.1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	TCS_Lavrenty_Beria = {
+		name = TCS_Lavrenty_Beria
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_TCS_Lavrenty_Beria"
+			}
+		}
+		country_leader = {
+			ideology = vanguardism_subtype
+			expire = 1982.11.10
+			traits = {
+				prince_of_terror
+			}
+		}
+	}	
+}
