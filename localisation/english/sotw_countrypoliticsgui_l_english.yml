@@ -27,8 +27,9 @@
  SL_status_marshall: "Marshall"
  SL_status_fuhrer: "Fuhrer"
  SL_status_forer: "Fører"
- SL_status_president: "President"
+ SL_status_President: "President"
  SL_status_vicepresident: "Vice President"
+ SL_status_Conducator: "Conducător"
  # First in Command leader status
  SL_status_reichspresident: "Reichspräsident"
  SL_status_reichkommissar: "Reichskommissar"
@@ -137,6 +138,17 @@
  SL_desc_Jean_Louis_Tixier_Vignancour: "$FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc$"
  FRA_SL_Jean_Louis_Tixier_Vignancour_idea: "$FRA_Jean_Louis_Tixier_Vignancour$"
  FRA_SL_Jean_Louis_Tixier_Vignancour_idea_desc: "Future idea locs for Jean-Louis Tixier-Vignancour"
+ ##########################
+ ###       Romania      ###
+ ##########################
+ ROM_Ion_Antonescu: "Ion Antonescu"
+ SL_name_Ion_Antonescu: "$ROM_Ion_Antonescu$"
+ SL_trait_Ion_Antonescu: "§Y$headstrong$§!\n  - $MODIFIER_POLITICAL_POWER_FACTOR$: §G+15.00%§!"
+ SL_name_with_trait_Ion_Antonescu: "§Y$ROM_Ion_Antonescu$§!\n$SL_trait_Ion_Antonescu$"
+ SL_diplomacy_name_with_trait_Ion_Antonescu: "§Y$ROM_Ion_Antonescu$§!\n$SL_fancy_status$\n$SL_trait_Ion_Antonescu$"
+ SL_desc_Ion_Antonescu: "$ROM_SL_Ion_Antonescu_idea_desc$"
+ ROM_SL_Ion_Antonescu_idea: "$ROM_Ion_Antonescu$"
+ ROM_SL_Ion_Antonescu_idea_desc: "TBA"
 
  ##########################
  ###       Vietnam      ###
@@ -161,3 +173,15 @@
  SL_desc_Norodom_Sihanouk: "$CAM_SL_Norodom_Sihanouk_idea_desc$"
  CAM_SL_Norodom_Sihanouk_idea: "$CAM_Norodom_Sihanouk$"
  CAM_SL_Norodom_Sihanouk_idea_desc: "TBA"
+
+###########################
+###      Azad Hind      ###
+###########################
+AZH_Subhas_Chandra_Bose: "Subhas Chandra Bose"
+SL_name_Subhas_Chandra_Bose: "$AZH_Subhas_Chandra_Bose$"
+SL_trait_Subhas_Chandra_Bose: "§Y$popular_figurehead2$§!\n  - $MODIFIER_STABILITY_FACTOR$: §G+5.00%§!"
+SL_name_with_trait_Subhas_Chandra_Bose: "§Y$AZH_Subhas_Chandra_Bose$§!\n$SL_trait_Subhas_Chandra_Bose$"
+SL_diplomacy_name_with_trait_Subhas_Chandra_Bose: "§Y$AZH_Subhas_Chandra_Bose$§!\n$SL_fancy_status$\n$SL_trait_Subhas_Chandra_Bose$"
+SL_desc_Subhas_Chandra_Bose: "$AZH_SL_Subhas_Chandra_Bose_idea_desc$"
+AZH_SL_Subhas_Chandra_Bose_idea: "$AZH_Subhas_Chandra_Bose$"
+AZH_SL_Subhas_Chandra_Bose_idea_desc: "TBA"
