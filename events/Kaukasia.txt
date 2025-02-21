@@ -83,17 +83,21 @@ country_event = {
                   expire = "1965.1.1.1"
             }
          }
+        hidden_effect = {
 		load_focus_tree = { tree = Kaukasus_Keitel }
+	        }
         }
 	option = {
 		name = rkk.6.b
-		load_focus_tree = { tree = Kaukasus_Occultism }
         set_politics = {
 			ruling_party = occultism
 			elections_allowed = no
 			last_election = "1953.01.01"
 			election_frequency = 48
-	   }
+	    }
+        hidden_effect = {
+		load_focus_tree = { tree = Kaukasus_Occultism }
+	    }
     }
  }
 country_event = {
@@ -102,7 +106,7 @@ country_event = {
 	desc = rkk.7.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
-	is_triggered_only = no
+	is_triggered_only = yes
 	
 	option = {
 		name = rkk.7.a
@@ -111,6 +115,12 @@ country_event = {
 			add_state_core = 237
 			transfer_state = 238
 			transfer_state = 237
+			declare_war_on = { target = RKK type = annex_everything }
+            hidden_effect = {
+			    load_oob = TCS_1953
+			    leave_faction = yes			    
+                GER = { end_puppet = RKK }
+		    }
 		}		
     }
  }
@@ -150,6 +160,28 @@ country_event = {
 		name = rkk.10.a
         }
 	}
+country_event = {
+	id = rkk.11 #Victory again Partisans
+	title = rkk.11.t
+	desc = rkk.11.d
+	picture = GFX_report_event_FIN_helsinki_bombed
+	
+	is_triggered_only = yes
+
+	trigger = {
+	TAG = RKK
+		TCS = {
+			has_capitulated = yes
+		}
+	}
+	
+	option = {
+		name = rkk.11.a
+		GER = { 
+		   puppet = RKK
+        }
+	}
+ }
 
 #Rosenberg
 country_event = {
