@@ -682,7 +682,7 @@
  PNG_JAP_subject_ADJ: "Papuan"
 
  # Siam
- SIA: "Thailand"
+ SIA: "Kingdom of Thailand"
  SIA_DEF: "Kingdom of Thailand"
  SIA_ADJ: "Thai"
 
@@ -763,6 +763,6 @@
  ANR: " "
  ANR_DEF: "the Anarchy"
  ANR_ADJ: "Anarchic"
- TCS: "Transcaucasian Soviet Partisans"
- TCS_DEF: "The United Transcaucasian Soviet Partisans"
+ TCS: "Soviet Partisans Front of Caucasia"
+ TCS_DEF: "The United Transcaucasian Soviet Red Army"
  TCS_ADJ: "Transcaucasian"
