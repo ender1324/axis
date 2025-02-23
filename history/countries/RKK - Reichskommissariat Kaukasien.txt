@@ -11,10 +11,34 @@ set_technology = {
 }
 
 add_ideas = {
+   # Country
    RKK_Alone_in_the_Dark
    RKK_Minorities_Unrest
    RKK_Land_of_Black_Gold
    SOE_Reichskommissariat
+   # Special Laws
+   sl_devolved_unitary_state
+   sl_state_press
+   sl_state_atheism
+   sl_racial_hierarchy
+   sl_legal_guardianship
+   sl_banned_protests
+   # economy laws
+   sl_rentier_economy
+   sl_low_income_taxation
+   sl_free_trade_tariffs
+   sl_illegal_unions
+   sl_eighteen_hour_workday
+   sl_immigration_subsidized
+   # Public Structure
+   sl_racial_purity
+   sl_state_policing4
+   sl_penal_labour
+   sl_education_system2
+   sl_healthcare_system2
+   sl_unemployment_benefits1
+   # Military Structure
+   sl_military_spending2
 }
 
 set_politics = {
