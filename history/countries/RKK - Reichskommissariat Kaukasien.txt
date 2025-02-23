@@ -1,14 +1,13 @@
 capital = 234
 
 set_oob = RKK_1953
-
-
 load_focus_tree = Kaukasus_start
 
 set_technology = {
 	infantry_weapons = 1
 	support_weapons = 1
-	motorized_infantry = 1
+	tech_trucks = 1
+	basic_artillery = 1
 }
 
 add_ideas = {
@@ -17,11 +16,6 @@ add_ideas = {
    RKK_Land_of_Black_Gold
    SOE_Reichskommissariat
 }
-
-recruit_character = RKK_Emil_Maurice
-recruit_character = RKK_Odilo_Globotschnig
-recruit_character = RKK_Wilhelm_Keitel
-recruit_character = RKK_Rudolf_Schmidt
 
 set_politics = {
 	ruling_party = national_socialism
@@ -45,5 +39,10 @@ set_popularities = {
 	national_socialism = 54
 	occultism = 32
 }
+
+recruit_character = RKK_Emil_Maurice
+recruit_character = RKK_Odilo_Globotschnig
+recruit_character = RKK_Wilhelm_Keitel
+recruit_character = RKK_Rudolf_Schmidt
 
 set_convoys = 50

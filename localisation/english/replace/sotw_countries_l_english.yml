@@ -517,6 +517,11 @@
  BUK_DEF: "the Emirate of Bukhara"
  BUK_ADJ: "Bukharian"
 
+ # Partisans
+ TCS: "Soviet Partisan Front of Caucasia"
+ TCS_DEF: "The Transcaucasian Partisans"
+ TCS_ADJ: "Transcaucasian"
+
  # USA/America
  USA: "United States of America"
  USA_DEF: "the United States of America"
@@ -763,6 +768,3 @@
  ANR: " "
  ANR_DEF: "the Anarchy"
  ANR_ADJ: "Anarchic"
- TCS: "Soviet Partisans Front of Caucasia"
- TCS_DEF: "The United Transcaucasian Soviet Red Army"
- TCS_ADJ: "Transcaucasian"

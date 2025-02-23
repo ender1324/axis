@@ -33,7 +33,9 @@ characters = {
 			}
 		}
 		country_leader = {
+			ideology = national_socialism_subtype
 			desc = RKK_Wilhelm_Keitel_desc
+			expire = 2000.01.01
 		}
 	}
 	RKK_Rudolf_Schmidt={

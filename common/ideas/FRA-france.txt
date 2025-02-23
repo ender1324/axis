@@ -59,6 +59,7 @@ ideas = {
 
 			modifier = {
 			    conscription_factor = -0.9
+				offence = -0.1
 			}
 		}
 	}

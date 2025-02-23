@@ -48,6 +48,9 @@ ALT = "countries/Altay.txt"
 MAG = "countries/Magnitogorsk.txt"
 WSR = "countries/Western_Siberian_Republic.txt"
 
+# Partisans
+TCS = "countries/Transcaucasian_Partisans.txt"
+
 # Misc tags
 ANR = "countries/Anarchy.txt"
 FAK = "countries/Fake.txt"

@@ -38,11 +38,6 @@ RKK = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
-TCS = {
-	color = rgb { 68  26  26 }
-	color_ui = rgb { 68  26  26 }
-}
-
 
 # RK Danemark
 RKD = {
@@ -192,6 +187,14 @@ WSR = {
 	color_ui = { 150 162 181 }
 }
 
+#######################
+###    Partisans    ###
+#######################
+# Kaukasian partisans
+TCS = {
+	color = rgb { 68 26 26 }
+	color_ui = rgb { 68 26 26 }
+}
 
 #######################
 ###      OTHERS     ###
