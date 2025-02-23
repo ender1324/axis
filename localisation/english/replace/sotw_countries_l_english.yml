@@ -718,12 +718,15 @@
  RAJ: "India"
  RAJ_DEF: "India"
  RAJ_ADJ: "Indian"
- AZH: "Government of Bengal"
+ AZH: "Bengal"
  AZH_DEF: "the Provisional Government of Free India"
  AZH_ADJ: "Indian"
  SKI: "Sikkim"
  SKI_DEF: "the Kingdom of Sikkim"
  SKI_ADJ: "Sikkian"
+ ASS: "Assam"
+ ASS_DEF: "Autonomous Province of Assam"
+ ASS_ADJ: "Assamese"
 
  # Central African Republic
  CAR: "Central African Republic"

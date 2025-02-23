@@ -21,6 +21,7 @@ FFA = "countries/Free_France.txt"
 # Co-Prosperity Sphere puppets
 AZH = "countries/Azad_Hind.txt"
 SKI = "countries/Sikkim.txt"
+ASS = "countries/Assam.txt"
 
 #Burma Breakaway 
 AKN = "countries/Arakan.txt"

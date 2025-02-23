@@ -109,8 +109,12 @@ AZH = {
 }
 # Sikkim
 SKI = {
-	color = rgb { 150 126 120 }
-	color_ui = rgb { 150 126 120 }
+	color = rgb { 16 76 30 }
+	color_ui = rgb { 16 76 30 }
+}
+ASS = {
+	color = rgb { 24 68 46 }
+	color_ui = rgb { 24 68 46 }
 }
 
 ################################

@@ -5,7 +5,7 @@ set_autonomy = {
 	autonomy_state = autonomy_puppet
 }
 set_autonomy = {
-	target = NEP
+	target = ASS
 	autonomy_state = autonomy_puppet
 }
 
