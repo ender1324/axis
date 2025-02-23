@@ -69,8 +69,20 @@ spriteType = {
 		texturefile = "gfx/interface/goals/generic/GFX_Generic_Himmler.dds"
 	}
 	spriteType = {
+		name = "GFX_Generic_Ayan"
+		texturefile = "gfx/interface/goals/generic/GFX_Generic_Ayan.dds"
+	}
+	spriteType = {
 		name = "GFX_Serbia_SS_Map"
 		texturefile = "gfx/interface/goals/generic/GFX_Serbia_SS_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_Radio_Tower"
+		texturefile = "gfx/interface/goals/generic/GFX_Generic_Radio_Tower.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_Parade"
+		texturefile = "gfx/interface/goals/generic/GFX_Generic_Parade.dds"
 	}
 	############################
 	### French Goals Sprites ###
@@ -189,6 +201,62 @@ spriteType = {
 	spriteType = {
 		name = "GFX_RKK_Wind_of_Change"
 		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Wind_of_Change.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_From_the_shadow"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_From_the_shadow.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Cut_The_Connection"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Cut_The_Connection.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Generic_Globotschnig"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Generic_Globotschnig.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Mimic_Serbia"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Mimic_Serbia.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_SS_Brotherhood"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_SS_Brotherhood.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Request_Officiers"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Request_Officiers.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_A_Gift_from_Kaukasia"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_A_Gift_from_Kaukasia.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Extend_The_Slavery_System"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Extend_The_Slavery_System.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Extreme_Germanization"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Extreme_Germanization.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Hang_Up_New_Portraits"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Hang_Up_New_Portraits.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_A_Trip_in_Kaukasia"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_A_Trip_in_Kaukasia.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Denounce_Himmler_foolishness"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Denounce_Himmler_foolishness.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_The_Hermit_Kingdom"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_The_Hermit_Kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_RKK_Pure_Kaukasia"
+		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Pure_Kaukasia.dds"
 	}
 }
 
