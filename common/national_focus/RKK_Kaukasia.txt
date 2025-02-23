@@ -948,7 +948,7 @@ shared_focus = {
 	cost = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus RKK_The_SS_Brotherhood"
-		create_faction = RKK_Arierische_Fraternität
+		create_faction = RKK_Arierische_Fraternitat
 		RKK = { add_to_faction = SSW }
     }
 
