@@ -23,6 +23,7 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = FRA_National_Dawn
+	continuous_focus_position = { x = 50 y = 7000 }
 }
 
 shared_focus = {
@@ -499,5 +500,207 @@ shared_focus = {
 		country_event = { id = FRA.1 days = 0 }
 	}
 	x = 1
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Extend_The_Factories
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Enforce_Corporatism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Extend_The_Factories"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Rebuild_The_Nation
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Extend_The_Factories
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Rebuild_The_Nation"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Arsenal_of_Paris
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Secure_The_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Arsenal_of_Paris"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Lower_The_Restrictions
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Arsenal_of_Paris
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Lower_The_Restrictions"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 3
+}
+shared_focus = {
+	id =  FRA_National_French_Youth
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Lower_The_Restrictions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_National_French_Youth"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Purge_The_Army
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Arsenal_of_Paris
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Purge_The_Army"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Promote_The_Milice
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Purge_The_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Promote_The_Milice"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 4
+}
+shared_focus = {
+	id =  FRA_The_French_Wehrmacht
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Promote_The_Milice
+	}
+	prerequisite = {
+		focus = FRA_National_French_Youth
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_French_Wehrmacht"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Loyality_to_Our_Boss
+	icon = GFX_A_Visit_To_Berlin
+	cost = 4
+	prerequisite = {
+		focus = FRA_Secure_The_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Loyality_to_Our_Boss"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Lessons_From_the_Gestapo
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_Loyality_to_Our_Boss
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Lessons_From_the_Gestapo"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 13
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Mass_Arrest
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_Lessons_From_the_Gestapo
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Mass_Arrest"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 13
+	y = 4
+}
+shared_focus = {
+	id =  FRA_French_German_Joint_Operation
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_Loyality_to_Our_Boss
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_French_German_Joint_Operation"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Request_Officiers
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_French_German_Joint_Operation
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Request_Officiers"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Venue_In_Paris
+	icon = GFX_Generic_Nazi_Flag
+	cost = 4
+	prerequisite = {
+		focus = FRA_Mass_Arrest
+	}
+	prerequisite = {
+		focus = FRA_Request_Officiers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Venue_In_Paris"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
 	y = 5
 }
