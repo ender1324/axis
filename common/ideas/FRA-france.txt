@@ -62,5 +62,42 @@ ideas = {
 				offence = -0.1
 			}
 		}
+		FRA_German_Military_Restrictions2 = {
+			name = FRA_German_Military_Restrictions2
+			picture = FRA_Illegal_German_Settlements
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+			    conscription_factor = -0.7
+				offence = -0.05
+			}
+		}
+		FRA_German_Investissors = {
+			name = FRA_German_Investissors
+			picture = RKK_Ultra_Militarism
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+			    monthly_population = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		FRA_Corporate_State = {
+			name = FRA_Corporate_State
+			picture = RKK_Ultra_Militarism
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industry_repair_factor = 0.5
+				production_speed_buildings_factor = 0.035
+			}
+		}
 	}
 }

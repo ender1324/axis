@@ -43,12 +43,12 @@ set_popularities = {
 	progressivism = 0
 	liberalism = 0
 	conservatism = 0
-	paternalism = 10
+	paternalism = 11
 	despotism = 10
 	ultranationalism = 4
 	fascism = 55
 	national_socialism = 20
-	occultism = 1
+	occultism = 0
 }
 
 set_autonomy = {

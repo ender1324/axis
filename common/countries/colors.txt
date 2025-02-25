@@ -253,6 +253,10 @@ ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
 }
+ALG = {
+	color = rgb { 153 102 51 }
+	color_ui = rgb { 153 102 51 }
+}
 ROM = {
 	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
@@ -431,11 +435,11 @@ SIA = {
 }
 SIK = {
 	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 71 190 152 }
 }
 TIB = {
 	color = rgb { 80 115 45}
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 80 115 45 }
 }
 URG = {
 	color = rgb { 171 190 152 }
@@ -447,7 +451,7 @@ VEN = {
 }
 YUN = {
 	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color_ui = rgb { 114 148 80 }
 }
 USA = {
 	color = rgb { 20 133 237 }
@@ -483,8 +487,8 @@ HAI = {
 	color_ui = rgb { 174 113 113 }
 }
 YEM = {
-	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color = rgb { 185 68 68 }
+	color_ui = rgb { 185 68 68 }
 }
 OMA = {
 	color = rgb { 155 101 107 }

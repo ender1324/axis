@@ -11,6 +11,19 @@ focus_tree = {
 	default = no
 	shared_focus = FRA_A_Door_to_Europe
 }
+#Doriot Tree
+focus_tree = {
+	id = france_Doriot
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_A_Door_to_Europe
+}
 
 shared_focus = {
 	id =  FRA_A_Door_to_Europe
@@ -32,7 +45,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Into_The_Council"
-		country_event = { id = FRA.1 days = 0 }
+		add_political_power = 100
 	}
 	x = 2
 	y = 1
@@ -46,7 +59,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_President"
-		country_event = { id = FRA.1 days = 0 }
+		add_stability = 0.1
 	}
 	x = 1
 	y = 2
@@ -60,7 +73,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Dust_off_old_Portraits"
-		country_event = { id = FRA.1 days = 0 }
+		country_event = { id = FRA.2 days = 0 }
 	}
 	x = 1
 	y = 3
@@ -74,7 +87,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Prime_Minister"
-		country_event = { id = FRA.1 days = 0 }
+		country_event = { id = FRA.3 days = 0 }
 	}
 	x = 3
 	y = 2
@@ -88,7 +101,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_And_The_Opposants"
-		country_event = { id = FRA.1 days = 0 }
+		country_event = { id = FRA.4 days = 0 }
 	}
 	x = 3
 	y = 3
@@ -102,7 +115,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Resistance_Problem"
-		country_event = { id = FRA.1 days = 0 }
+		add_command_power = 100
+		army_experience = 50
 	}
 	x = -2
 	y = 1
@@ -116,7 +130,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Legion"
-		country_event = { id = FRA.1 days = 0 }
+		add_popularity = {
+			ideology = ultranationalism
+			popularity = 0.05
+		}
 	}
 	x = -3
 	y = 2
@@ -130,7 +147,12 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Reform_The_Army"
-		country_event = { id = FRA.1 days = 0 }
+		add_war_support = 0.1
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
 	}
 	x = -3
 	y = 3
@@ -144,7 +166,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Send_The_Milice"
-		country_event = { id = FRA.1 days = 0 }
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.05
+		}
 	}
 	x = -1
 	y = 2
@@ -158,7 +183,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Seek_And_Destroy"
-		country_event = { id = FRA.1 days = 0 }
+		add_stability = -0.1
+	    add_manpower = -350
 	}
 	x = -1
 	y = 3
@@ -172,7 +198,13 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Workshop"
-		country_event = { id = FRA.1 days = 0 }
+		16 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+		    }
+	    }
 	}
 	x = 6
 	y = 1
@@ -186,7 +218,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Improve_the_Factories"
-		country_event = { id = FRA.1 days = 0 }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+		}
 	}
 	x = 5
 	y = 2
@@ -200,7 +236,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Attract_German_Investissors"
-		country_event = { id = FRA.1 days = 0 }
+		add_manpower = 250
+		add_ideas = FRA_German_Investissors
 	}
 	x = 5
 	y = 3
@@ -214,7 +251,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Corporate_State"
-		country_event = { id = FRA.1 days = 0 }
+		add_ideas = FRA_Corporate_State
 	}
 	x = 7
 	y = 2
@@ -228,7 +265,8 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Follow_The_German_Model"
-		country_event = { id = FRA.1 days = 0 }
+		GER = { add_opinion_modifier = { target = ROOT modifier = attache_sent } }
+		FRA = { add_opinion_modifier = { target = GER modifier = attache_sent } }
 	}
 	x = 7
 	y = 3
@@ -257,8 +295,209 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus FRA_Another_Morning"
-		country_event = { id = FRA.1 days = 0 }
+		country_event = { id = FRA.5 days = 3 }
+		add_stability = 0.1
+		add_war_support = 0.1
+
 	}
 	x = 2
 	y = 4
+}
+
+#DORIOT#
+shared_focus = {
+	id =  FRA_National_Dawn
+	icon = GFX_FRA_Nation_Over_All
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_National_Dawn"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 0
+}
+shared_focus = {
+	id =  FRA_Secure_The_State
+	icon = GFX_FRA_Talk_With_The_Moderate
+	cost = 4
+	prerequisite = {
+		focus = FRA_National_Dawn
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Secure_The_State"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 1
+}
+shared_focus = {
+	id =  FRA_The_Republic_of_Doriot
+	icon = GFX_FRA_The_Spirit_of_Vichy
+	cost = 4
+	prerequisite = {
+		focus = FRA_Secure_The_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Republic_of_Doriot"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id =  FRA_French_National_Socialism
+	icon = GFX_Generic_Swastika_France_Color
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Republic_of_Doriot
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_French_National_Socialism"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Reign_of_Terror
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_French_National_Socialism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Reign_of_Terror"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Unite_The_Council
+	icon = GFX_FRA_Convene_The_Council
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Republic_of_Doriot
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Unite_The_Council"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Test_of_Loyality
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Unite_The_Council
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Test_of_Loyality"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Mandatory_Party_Membership
+	icon = GFX_FRA_The_Ministers
+	cost = 4
+	prerequisite = {
+		focus = FRA_Reign_of_Terror
+	}
+	prerequisite = {
+		focus = FRA_Test_of_Loyality
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Mandatory_Party_Membership"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Ministry_of_Security
+	icon = GFX_FRA_A_Look_Inside_France
+	cost = 4
+	prerequisite = {
+		focus = FRA_Mandatory_Party_Membership
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Ministry_of_Security"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 6
+}
+shared_focus = {
+	id =  FRA_The_Cult_of_Doriot
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Ministry_of_Security
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Cult_of_Doriot"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 7
+}
+shared_focus = {
+	id =  FRA_A_Workshop_of_Iron
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Secure_The_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_A_Workshop_of_Iron"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Enforce_Corporatism
+	icon = GFX_FRA_It_Time_To_Fix_The_Economy
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Workshop_of_Iron
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Enforce_Corporatism"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Puppet_The_Corporations
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Enforce_Corporatism
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Puppet_The_Corporations"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 1
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Total_Control
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Puppet_The_Corporations
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Total_Control"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 1
+	y = 5
 }

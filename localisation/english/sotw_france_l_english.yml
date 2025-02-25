@@ -14,10 +14,10 @@ FRA_fascism_party: "CdM"
 FRA_fascism_party_long: "Conseil des Ministres"
 FRA_despotism_party: "ASplDF"
 FRA_despotism_party_long: "Armée Secrète pour la Défense Française"
-FRA_national_socialism_party: "CdM-LP"
-FRA_national_socialism_party_long: "Conseil des Ministres-Les Radicaux"
-FRA_ultranationalism_party: "PRF"
-FRA_ultranationalism_party_long: "Partie de la Renaissance Française"
+FRA_national_socialism_party: "CdM-CD"
+FRA_national_socialism_party_long: "Conseil des Ministres-Clique de Doriot"
+FRA_ultranationalism_party: "LC"
+FRA_ultranationalism_party_long: "Légion Charlemagne"
 
 FRA_The_Unpopular_Succesor: "The Unpopular Succesor"
 FRA_The_Unpopular_Succesor_desc: "Compared to the Maréchal, Brinon was neither as charismatic nor a revered general. The result is a regime less popular with the French, a popularity already weakened by the loss of Nancy to the Germans and the loss of our colonial empire, and without the Maréchal's oratory skills, submission to Germany is less and less accepted."
@@ -26,6 +26,8 @@ FRA_La_Milice_desc: "To maintain stability over the country, our Milice is a per
 FRA_Workshop_of_the_Pact: "Workshop of the Pact"
 FRA_The_Two_Realm: "The Two Realm"
 FRA_German_Military_Restrictions: "German Military Restrictions"
+FRA_German_Investissors: "German Investissors"
+FRA_Corporate_State: "Corporate State"
 
 ##EVENT##
 
@@ -35,3 +37,33 @@ FRA.1.a: "Interesting"
 
 
 #FOCUS#
+FRA_A_Door_to_Europe: "A Door to Europe"
+FRA_Into_The_Council: "Into the Council"
+FRA_The_President: "The President"
+FRA_Dust_off_old_Portraits: "Dust Off Old Portraits"
+FRA_The_Prime_Minister: "The Prime Minister"
+FRA_And_The_Opposants: "And the Oppossants"
+FRA_The_Resistance_Problem: "The Resistance Problem"
+FRA_The_Legion: "The Legion"
+FRA_Reform_The_Army: "Reform the Army"
+FRA_Send_The_Milice: "Send the Milice"
+FRA_Seek_And_Destroy: "Seek and Destroy"
+FRA_The_Workshop: "The Workshop"
+FRA_Improve_the_Factories: "Improve the Factories"
+FRA_Attract_German_Investissors: "Attract German Investissors"
+FRA_The_Corporate_State: "The Corporate State"
+FRA_Follow_The_German_Model: "Follow the German Model"
+FRA_Another_Morning: "Another Morning"
+
+#DORIOT#
+FRA_National_Dawn: "National Dawn"
+FRA_Secure_The_State: "Secure The State"
+FRA_The_Republic_of_Doriot: "Doriot's Republic"
+FRA_French_National_Socialism: "National-Socialisme à la Française"
+FRA_Reign_of_Terror: "Reign of Terror"
+FRA_Unite_The_Council: "Unite the Council"
+FRA_Test_of_Loyality: "Test of Loyality"
+FRA_Mandatory_Party_Membership: "Mandatory Party Membership"
+FRA_Ministry_of_Security: "Minister of Security"
+FRA_The_Cult_of_Doriot: "The Cult of Doriot"
+
