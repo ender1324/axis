@@ -22,7 +22,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = FRA_A_Door_to_Europe
+	shared_focus = FRA_National_Dawn
 }
 
 shared_focus = {

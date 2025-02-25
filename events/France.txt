@@ -70,3 +70,20 @@ country_event = {
 				   }				
 				}
 			}
+			country_event = {
+				id = FRA.6 #Succesor
+				title = FRA.6.t
+				desc = FRA.5.d
+				picture = GFX_report_event_FIN_helsinki_bombed
+				
+				is_triggered_only = yes
+				
+				option = {
+					name = FRA.6.a
+					kill_country_leader = yes
+					set_politics = {
+						ruling_party = national_socialism
+					   }
+					   load_focus_tree = france_Doriot				
+					}
+				}
