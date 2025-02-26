@@ -11,6 +11,9 @@ add_ideas = {
 	FRA_Workshop_of_the_Pact
 	FRA_The_Two_Realm
 	FRA_German_Military_Restrictions
+	#Minister
+	FRA_Costantini_Pierre_idea
+	FRA_Marcel_Deat_idea
 	# Secondary Leaders
 	FRA_SL_Jean_Louis_Tixier_Vignancour_idea
 	#faction
@@ -26,6 +29,8 @@ recruit_character = FRA_Jacque_Doriot
 recruit_character = FRA_Francois_Mitterrand
 recruit_character = FRA_Edmond_Giscard_Estaing
 recruit_character = FRA_Charles_Huntziger
+recruit_character = FRA_Costantini_Pierre
+recruit_character = FRA_Marcel_Deat
 
 
 set_politics = {

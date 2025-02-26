@@ -25,6 +25,20 @@ focus_tree = {
 	shared_focus = FRA_National_Dawn
 	continuous_focus_position = { x = 50 y = 7000 }
 }
+#Vignancour Tree
+focus_tree = {
+	id = france_Vignancour
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_The_Populist_President
+	continuous_focus_position = { x = 50 y = 7000 }
+}
 
 shared_focus = {
 	id =  FRA_A_Door_to_Europe
@@ -531,6 +545,48 @@ shared_focus = {
 	y = 5
 }
 shared_focus = {
+	id =  FRA_Improve_Wheat_Production
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Rebuild_The_Nation focus = FRA_Total_Control
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Improve_Wheat_Production"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Oppossants_to_the_Farm
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Improve_Wheat_Production
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Oppossants_to_the_Farm"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 1
+	y = 7
+}
+shared_focus = {
+	id =  FRA_Invite_German_Farmers
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Improve_Wheat_Production
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Invite_German_Farmers"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 7
+}
+shared_focus = {
 	id =  FRA_Arsenal_of_Paris
 	icon = GFX_FRA_The_Spirit_of_Vichy
 	cost = 4
@@ -703,4 +759,59 @@ shared_focus = {
 	}
 	x = 14
 	y = 5
+}
+shared_focus = {
+	id =  FRA_Wonder_of_Atom
+	icon = GFX_A_Visit_To_Berlin
+	cost = 4
+	prerequisite = {
+		focus = FRA_Secure_The_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Wonder_of_Atom"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Build_The_Plants
+	icon = GFX_A_Visit_To_Berlin
+	cost = 4
+	prerequisite = {
+		focus = FRA_Wonder_of_Atom
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Build_The_Plants"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Project_Napoleon
+	icon = GFX_A_Visit_To_Berlin
+	cost = 4
+	prerequisite = {
+		focus = FRA_Build_The_Plants
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Project_Napoleon"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 4
+}
+
+#Vignancour Tree
+shared_focus = {
+	id =  FRA_The_Populist_President
+	icon = GFX_Europe_Map
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Populist_President"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 8
+	y = 0
 }

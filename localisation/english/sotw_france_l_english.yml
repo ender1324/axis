@@ -3,6 +3,10 @@
  ##### France #####
  ##### ############################ #####
 
+#Minister#
+FRA_Costantini_Pierre: "Costantini Pierre"
+FRA_Marcel_Deat: "Marcel Deat"
+
 
 FRA_progressivism_party: "UDSR"
 FRA_progressivism_party_long: "Union démocratique et socialiste de la Résistance"
@@ -71,7 +75,10 @@ FRA_Enforce_Corporatism: "Enforce Corporatism"
 FRA_Puppet_The_Corporations: "Puppet the Corporations"
 FRA_Total_Control: "Total Control"
 FRA_Extend_The_Factories: "Extend the Factories"
-FRA_Rebuild_The_Nation: "Rebuild the Nation"
+FRA_Rebuild_The_Nation: "Work will Set You Free"
+FRA_Improve_Wheat_Production: "Improve Wheat Production"
+FRA_Oppossants_to_the_Farm: "Send Oppossants to the Farms"
+FRA_Invite_German_Farmers: "Invite German Farmers"
 FRA_Arsenal_of_Paris: "Arsenal of Paris"
 FRA_Lower_The_Restrictions: "Lower the Restrictions"
 FRA_National_French_Youth: "National French Youth"
@@ -84,3 +91,6 @@ FRA_Mass_Arrest: "Mass Arrest"
 FRA_French_German_Joint_Operation: "French-German Joint Operation"
 FRA_Request_Officiers: "Request Officiers"
 FRA_Venue_In_Paris: "Plan a Venue in Paris"
+FRA_Wonder_of_Atom: "Wonders of Atom"
+FRA_Build_The_Plants: "Build the Plants"
+FRA_Project_Napoleon: "Project Napoléon"

@@ -1,0 +1,18 @@
+# posititon #
+minister_of_security = {}
+minister_of_economy = {} 
+foregin_minister = {} 
+
+#ideology
+occultism = {} 
+ultranationalism  = {} 
+national_socialism = {} 
+fascism = {} 
+despotism = {} 
+paternalism = {} 
+conservatism = {} 
+liberalism = {} 
+progressivism = {} 
+socialism = {} 
+communism = {} 
+vanguardism = {} 

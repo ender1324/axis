@@ -111,4 +111,38 @@ characters = {
 			}
 		}
 	}
+	FRA_Costantini_Pierre={ 
+		name=FRA_Costantini_Pierre
+		portraits={
+			civilian={
+				small="gfx/characters/ENG/ENG_Willie_Gallacher.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Costantini_Pierre_idea
+			traits = { 
+			minister_of_security
+		    fascism
+		    }
+			can_be_fired = no 
+		}
+	}
+	FRA_Marcel_Deat={ 
+		name=FRA_Marcel_Deat
+		portraits={
+			civilian={
+				small="gfx/ideas/FRA//Minister/FRA_Costantini_Pierre.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = FRA_Marcel_Deat_idea
+			traits = { 
+			minister_of_economy
+		    fascism
+		    }
+			can_be_fired = no 
+		}
+	}
 }
