@@ -156,11 +156,11 @@ calculate_energy_use = {
 	add_to_variable = { energy_sum = fossil_pp_energy_generation }
 
 	# Nuclear energy bullshit
-	set_variable = { uranium_amount = resource@uranium }
+	set_variable = { uranium_amount = resource@uranium } # Uranium balance in the country
+ 	add_to_variable = { uranium_amount = modifier@nuclear_fuel_consumption } # we add the usage of power plants to get the total amount (eg. -10 balance + 12 usage = 2 uranium produced/imported | 21 balance + 50 usage = 71 uranium produced/imported)
 	if = {
 		limit = {
-			# TODO: TEMP fix later
-			always = no
+			NOT = { has_country_flag = disable_nuclear_power_plant_flag }
 		}
 		set_variable = { nuclear_fuel_consumption = modifier@nuclear_fuel_consumption }
 		set_temp_variable = { nuclear_fuel_consumption_multiplier = 1 }
