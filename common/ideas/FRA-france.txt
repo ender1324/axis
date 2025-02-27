@@ -74,6 +74,17 @@ ideas = {
 				offence = -0.05
 			}
 		}
+		FRA_German_Military_Restrictions3 = {
+			name = FRA_German_Military_Restrictions3
+			picture = FRA_Illegal_German_Settlements
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+			    conscription_factor = -0.6
+			}
+		}
 		FRA_German_Investissors = {
 			name = FRA_German_Investissors
 			picture = RKK_Ultra_Militarism
@@ -97,6 +108,17 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industry_repair_factor = 0.5
 				production_speed_buildings_factor = 0.035
+			}
+		}
+		FRA_National_French_Youth = {
+			name = FRA_National_French_Youth
+			picture = RKK_Ultra_Militarism
+			allowed = {
+				original_tag = FRA
+			}
+
+			modifier = {
+			    conscription_factor = 0.05
 			}
 		}
 	}

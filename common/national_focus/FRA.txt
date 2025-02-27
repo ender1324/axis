@@ -403,7 +403,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Test_of_Loyality
-	icon = GFX_Europe_Map
+	icon = GFX_goal_generic_dangerous_deal
 	cost = 4
 	prerequisite = {
 		focus = FRA_Unite_The_Council
@@ -462,7 +462,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_A_Workshop_of_Iron
-	icon = GFX_Europe_Map
+	icon = GFX_goal_generic_construct_mil_factory
 	cost = 4
 	prerequisite = {
 		focus = FRA_Secure_The_State
@@ -490,7 +490,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Puppet_The_Corporations
-	icon = GFX_Europe_Map
+	icon = GFX_goal_generic_forceful_treaty
 	cost = 4
 	prerequisite = {
 		focus = FRA_Enforce_Corporatism
@@ -504,7 +504,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Total_Control
-	icon = GFX_Europe_Map
+	icon = GFX_goal_continuous_suppression
 	cost = 4
 	prerequisite = {
 		focus = FRA_Puppet_The_Corporations
@@ -518,7 +518,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Extend_The_Factories
-	icon = GFX_Europe_Map
+	icon = GFX_goal_generic_construct_civ_factory
 	cost = 4
 	prerequisite = {
 		focus = FRA_Enforce_Corporatism
@@ -630,7 +630,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Purge_The_Army
-	icon = GFX_FRA_The_Spirit_of_Vichy
+	icon = GFX_goal_generic_attack_allies
 	cost = 4
 	prerequisite = {
 		focus = FRA_Arsenal_of_Paris
@@ -689,7 +689,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  FRA_Lessons_From_the_Gestapo
-	icon = GFX_Generic_Nazi_Flag
+	icon = GFX_goal_generic_political_pressure
 	cost = 4
 	prerequisite = {
 		focus = FRA_Loyality_to_Our_Boss
@@ -788,20 +788,6 @@ shared_focus = {
 	x = 18
 	y = 3
 }
-shared_focus = {
-	id =  FRA_Project_Napoleon
-	icon = GFX_A_Visit_To_Berlin
-	cost = 4
-	prerequisite = {
-		focus = FRA_Build_The_Plants
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: focus FRA_Project_Napoleon"
-		country_event = { id = FRA.1 days = 0 }
-	}
-	x = 18
-	y = 4
-}
 
 #Vignancour Tree
 shared_focus = {
@@ -814,4 +800,375 @@ shared_focus = {
 	}
 	x = 8
 	y = 0
+}
+shared_focus = {
+	id =  FRA_A_Triumph_for_the_State
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Populist_President
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_A_Triumph_for_the_State"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 8
+	y = 1
+}
+shared_focus = {
+	id =  FRA_Clean_The_House
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Triumph_for_the_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Clean_The_House"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 8
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Strike_The_Radicals
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Clean_The_House
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Strike_The_Radicals"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Erase_Doriot
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Strike_The_Radicals
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Erase_Doriot"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 7
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Deal_With_The_Reformists
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Clean_The_House
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Deal_With_The_Reformists"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 3
+}
+shared_focus = {
+	id =  FRA_But_Keep_A_Firm_Grip
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Deal_With_The_Reformists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_But_Keep_A_Firm_Grip"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Consolidate_Power
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Erase_Doriot
+	}
+	prerequisite = {
+		focus = FRA_But_Keep_A_Firm_Grip
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Consolidate_Power"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Meet_The_People
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Consolidate_Power
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Meet_The_People"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 6
+}
+shared_focus = {
+	id =  FRA_End_The_Red_Menace
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Consolidate_Power
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_End_The_Red_Menace"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 7
+}
+shared_focus = {
+	id =  FRA_Rally_The_Nationalists
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Consolidate_Power
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Rally_The_Nationalists"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 7
+}
+shared_focus = {
+	id =  FRA_A_New_Army
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Triumph_for_the_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_A_New_Army"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Test_The_Legion
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_New_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Test_The_Legion"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Anti_Terrorist_Tactics
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_New_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Anti_Terrorist_Tactics"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Buy_Modern_Planes
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_New_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Buy_Modern_Planes"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 16
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Our_Own_Panzers
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Buy_Modern_Planes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Our_Own_Panzers"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 16
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Absorb_The_Paramilitary_Groups
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Anti_Terrorist_Tactics
+	}
+	prerequisite = {
+		focus = FRA_Our_Own_Panzers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Absorb_The_Paramilitary_Groups"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Pacify_Algeria
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Absorb_The_Paramilitary_Groups
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Pacify_Algeria"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Strike_The_Resistance
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Absorb_The_Paramilitary_Groups
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Strike_The_Resistance"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 16
+	y = 6
+}
+shared_focus = {
+	id =  FRA_The_Land_of_Algeria
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Triumph_for_the_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Land_of_Algeria"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 21
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Send_More_Settlers
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Land_of_Algeria
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Send_More_Settlers"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 21
+	y = 3
+}
+shared_focus = {
+	id =  FRA_OAS_Blank_Check
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Land_of_Algeria
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_OAS_Blank_Check"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 19
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Extend_The_Port_of_Algier
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_Land_of_Algeria
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Extend_The_Port_of_Algier"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 23
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Wipe_Out_The_FLN
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Send_More_Settlers
+	}
+	prerequisite = {
+		focus = FRA_OAS_Blank_Check
+	}
+	prerequisite = {
+		focus = FRA_Extend_The_Port_of_Algier
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Wipe_Out_The_FLN"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 22
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Pied_Noirs_Welfare_program
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Send_More_Settlers
+	}
+	prerequisite = {
+		focus = FRA_OAS_Blank_Check
+	}
+	prerequisite = {
+		focus = FRA_Extend_The_Port_of_Algier
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Pied_Noirs_Welfare_program"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 20
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Begin_The_Integration
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Wipe_Out_The_FLN
+	}
+	prerequisite = {
+		focus = FRA_Pied_Noirs_Welfare_program
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Begin_The_Integration"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 19
+	y = 5
 }
