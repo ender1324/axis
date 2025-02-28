@@ -60,7 +60,7 @@ energy_dynamic_modifier = {
 	enable = { always = yes }
 	custom_modifier_tooltip = energy_dynamic_modifier_TT
 
-	#maluses for not fulfilling energy requirement
+	# maluses for not fulfilling energy requirement
 	production_speed_buildings_factor = unfulfilled_energy_demand_dynmod_var
 	research_speed_factor = unfulfilled_energy_demand_dynmod_var
 	tax_gain_multiplier_modifier = unfulfilled_energy_demand_dynmod_var_3
@@ -68,10 +68,10 @@ energy_dynamic_modifier = {
 	industrial_capacity_factory = unfulfilled_energy_demand_dynmod_var
 	stability_factor = unfulfilled_energy_demand_dynmod_var_2
 
-	#fuel consumed by fossil power plants and non electric fuel consumption
+	# fuel consumed by fossil power plants and non electric fuel consumption
 	base_fuel_gain = powerplants_and_pop_fuel_consumption
+
 	# uranium consumed by nuclear reactors
-	# this might need changes to the uranium resource getting system
 	country_resource_cost_uranium = nuclear_fuel_consumption
 }
 
