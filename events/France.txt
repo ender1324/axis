@@ -67,25 +67,19 @@ country_event = {
 						  expire = "1965.1.1.1"
 						  traits = { popular_figurehead2 }
 					  }
-				   }
-				   load_focus_tree = france_Vignancour						
+				   }				
 				}
 			}
+##DORIOT##
 			country_event = {
-				id = FRA.6 #Doriot Succesor
-				title = FRA.6.t
+				id = FRA.5
+				title = FRA.5.t
 				desc = FRA.5.d
 				picture = GFX_report_event_FIN_helsinki_bombed
 				
 				is_triggered_only = yes
 				
 				option = {
-					name = FRA.6.a
-					kill_country_leader = yes
-					remove_ideas = FRA_SL_Jean_Louis_Tixier_Vignancour_idea
-					set_politics = {
-						ruling_party = national_socialism
-					   }
-					   load_focus_tree = france_Doriot				
+					name = FRA.5.a
 					}
 				}

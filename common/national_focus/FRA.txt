@@ -39,6 +39,21 @@ focus_tree = {
 	shared_focus = FRA_The_Populist_President
 	continuous_focus_position = { x = 50 y = 7000 }
 }
+#Estaing Tree
+focus_tree = {
+	id = france_Estaing
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	shared_focus = FRA_Springtime_Over_Paris
+	continuous_focus_position = { x = 50 y = 7000 }
+}
+
 
 shared_focus = {
 	id =  FRA_A_Door_to_Europe
@@ -1170,5 +1185,592 @@ shared_focus = {
 		country_event = { id = FRA.1 days = 0 }
 	}
 	x = 19
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Renew_The_Economy
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_A_Triumph_for_the_State
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Renew_The_Economy"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 4
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Work_for_the_Workless
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Renew_The_Economy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Work_for_the_Workless"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Foods_For_the_Factories
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Work_for_the_Workless
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Foods_For_the_Factories"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Poujadist_Ideals
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Renew_The_Economy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Poujadist_Ideals"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Empower_The_Common_People
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Poujadist_Ideals
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Empower_The_Common_People"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 4
+}
+shared_focus = {
+	id =  FRA_The_French_Farmer
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_Empower_The_Common_People
+	}
+	prerequisite = {
+		focus = FRA_Foods_For_the_Factories
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_French_Farmer"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 4
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Accelerate_Agricultural_Mechanization
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_French_Farmer
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Accelerate_Agricultural_Mechanization"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Protect_The_artisans
+	icon = GFX_Europe_Map
+	cost = 4
+	prerequisite = {
+		focus = FRA_The_French_Farmer
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Protect_The_artisans"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 5
+	y = 6
+}
+#Estaing Tree
+shared_focus = {
+	id =  FRA_Springtime_Over_Paris
+	icon = GFX_Europe_Map
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Springtime_Over_Paris"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 0
+}
+shared_focus = {
+	id =  FRA_Push_for_a_Democracy
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Springtime_Over_Paris
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Push_for_a_Democracy"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 1
+}
+shared_focus = {
+	id =  FRA_New_Republic
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Push_for_a_Democracy
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_New_Republic"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Fight_Radicalism
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_New_Republic
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Fight_Radicalism"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Liberalize_The_Council
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Fight_Radicalism
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Liberalize_The_Council"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Lift_Press_Censorship
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_New_Republic
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Lift_Press_Censorship"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Depetainisation_Program
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Lift_Press_Censorship
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Depetainisation_Program"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Modernize_The_Judiciary_System
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Liberalize_The_Council
+	}
+	prerequisite = {
+		focus = FRA_Depetainisation_Program
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Modernize_The_Judiciary_System"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Contain_The_Far_Right
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Modernize_The_Judiciary_System
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Contain_The_Far_Right"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 9
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Speak_With_the_Resistances
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Modernize_The_Judiciary_System
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Speak_With_the_Resistances"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 11
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Announce_New_Elections
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Speak_With_the_Resistances
+	}
+	prerequisite = {
+		focus = FRA_Contain_The_Far_Right
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Announce_New_Elections"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 10
+	y = 7
+}
+shared_focus = {
+	id =  FRA_Reform_The_Education
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Push_for_a_Democracy
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Reform_The_Education"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Search_The_Teachers
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Reform_The_Education
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Search_The_Teachers"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Support_for_the_Academies
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Search_The_Teachers
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Support_for_the_Academies"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Assist_The_Schools
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Support_for_the_Academies
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Assist_The_Schools"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 6
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Economic_Reforms
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Push_for_a_Democracy
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Economic_Reforms"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Help_The_Middle_Class
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Economic_Reforms
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Help_The_Middle_Class"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Anti_unemployment_Program
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Help_The_Middle_Class
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Anti_unemployment_Program"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Secret_American_Investissors
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Economic_Reforms
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Secret_American_Investissors"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 4
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Develop_The_Port_of_Brest
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Secret_American_Investissors
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Develop_The_Port_of_Brest"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 4
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Agricultural_Reforms
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Develop_The_Port_of_Brest
+	}
+	prerequisite = {
+		focus = FRA_Anti_unemployment_Program
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Agricultural_Reforms"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 3
+	y = 5
+}
+shared_focus = {
+	id =  FRA_Farmer_Aids
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Agricultural_Reforms
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Farmer_Aids"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 2
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Modern_Farm_Equipment
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Agricultural_Reforms
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Modern_Farm_Equipment"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 4
+	y = 6
+}
+shared_focus = {
+	id =  FRA_Build_A_New_Army
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Push_for_a_Democracy
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Build_A_New_Army"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 14
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Ban_Paramilitary_Groups
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Build_A_New_Army
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Ban_Paramilitary_Groups"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 13
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Empower_The_Police
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Ban_Paramilitary_Groups
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Empower_The_Police"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 13
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Secret_Militarization
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Build_A_New_Army
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Secret_Militarization"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Help_French_Military_Compagnies
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Secret_Militarization
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Help_French_Military_Compagnies"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Prepare_For_The_Worst
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Help_French_Military_Compagnies
+	}
+	prerequisite = {
+		focus = FRA_Empower_The_Police
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Prepare_For_The_Worst"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 15
+	y = 5
+}
+shared_focus = {
+	id =  FRA_The_Elephant_in_Room
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Push_for_a_Democracy
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_The_Elephant_in_Room"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 2
+}
+shared_focus = {
+	id =  FRA_Contact_In_the_Free_World
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_The_Elephant_in_Room
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Contact_In_the_Free_World"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 3
+}
+shared_focus = {
+	id =  FRA_Meet_De_Gaulle
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Contact_In_the_Free_World
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Meet_De_Gaulle"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
+	y = 4
+}
+shared_focus = {
+	id =  FRA_Pretend_to_Germany
+	icon = GFX_Europe_Map
+	prerequisite = {
+		focus = FRA_Contact_In_the_Free_World
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FRA_Pretend_to_Germany"
+		country_event = { id = FRA.1 days = 0 }
+	}
+	x = 18
 	y = 5
 }
