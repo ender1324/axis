@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_TMS_Toward_Pure_Turkic_State"
+		textureFile = "gfx/ideas/TMS/idea_TMS_Toward_Pure_Turkic_State.dds"
+	}
+}

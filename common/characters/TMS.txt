@@ -1,0 +1,19 @@
+characters = {
+	TMS_Veli_Kayyum_Han = {
+		name = TMS_Veli_Kayyum_Han
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMS/Portrait_TMS_Veli_Kayyum_Han.dds"
+			}
+		}
+		country_leader = {
+			desc = TMS_Veli_Kayyum_Han_desc
+			ideology = fascism_subtype
+			expire = 1980.9.11
+			traits = {
+				anti_communist
+                dictator
+			}
+		}
+	}
+}

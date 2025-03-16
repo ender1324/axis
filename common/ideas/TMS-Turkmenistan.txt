@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		TMS_Toward_Pure_Turkic_State = {
+			name = TMS_Toward_Pure_Turkic_State
+			picture = idea_TMS_Toward_Pure_Turkic_State
+			allowed = {
+				original_tag = TMS
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.3
+				conscription_factor = -0.15
+			}
+		}
+    }
+}

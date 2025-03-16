@@ -516,6 +516,12 @@
  BUK: "Emirate of Bukhara"
  BUK_DEF: "the Emirate of Bukhara"
  BUK_ADJ: "Bukharian"
+ TMS: "Turkmenistan"
+ TMS_DEF: "The State of Turkmenistan"
+ TMS_ADJ: "Turkmen"
+ TMS_fascism: "Turkmenistan"
+ TMS_fascism_DEF: "the State of Turkestan"
+ TMS_fascism_ADJ: "Turkmen"
 
  # Partisans
  TCS: "Soviet Partisan Front of Caucasia"

@@ -1,11 +1,21 @@
 ﻿capital = 584
 
+set_oob = TMS_1953
+
 set_technology = {
 	infantry_weapons = 1
+	support_weapons = 1
+	tech_trucks = 1
+	basic_artillery = 1
+}
+add_ideas = {
+	TMS_Toward_Pure_Turkic_State
 }
 
+recruit_character = TMS_Veli_Kayyum_Han
+
 set_politics = {
-	ruling_party = despotism
+	ruling_party = fascism
 	last_election = "1953.01.01"
 	election_frequency = 48
 	elections_allowed = no
@@ -13,18 +23,18 @@ set_politics = {
 
 set_popularities = {
 	anarchy = 0
-	vanguardism = 0
-	communism = 5
-	socialism = 5
-	progressivism = 5
-	liberalism = 5
+	vanguardism = 3
+	communism = 10
+	socialism = 0
+	progressivism = 0
+	liberalism = 0
 	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
-	national_socialism = 5
-	occultism = 5
+	paternalism = 0
+	despotism = 5
+	ultranationalism = 0
+	fascism = 62
+	national_socialism = 15
+	occultism = 0
 }
 
 set_convoys = 50
