@@ -33,6 +33,9 @@ KAH = "countries/Kachin.txt"
 JBF = "countries/Japanese Force Burma.txt"
 CBP = "countries/Communist Burma.txt"
 
+#Central Asia
+KNA = "countries/Kazakh Nationalist.txt"
+
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"
 CIA = "countries/NKVD.txt"

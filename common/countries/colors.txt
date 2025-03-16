@@ -948,8 +948,8 @@ VLA = {
 	color_ui = rgb { 204 163 0 }
 }
 KKP = {
-	color = rgb { 255 128 0 }
-	color_ui = rgb { 204 102 0 }
+	color = rgb { 159 147 155 }
+	color_ui = rgb { 159 147 155 }
 }
 YAM = {
 	color = rgb { 204 153 0 }
@@ -1103,4 +1103,13 @@ JBF = {
 CBP = {
 	color = rgb { 229 22 22 }
 	color_ui = rgb { 229 22 22 }
+}
+
+KNA = {
+	color = rgb { 52  127  93 }
+	color_ui = rgb { 52  127  93 }
+}
+TMS = {
+	color = rgb { 139 140 110 }
+	color_ui = rgb { 139 140 110 }
 }

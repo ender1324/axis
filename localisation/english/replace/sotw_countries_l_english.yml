@@ -522,6 +522,9 @@
  TMS_fascism: "Turkmenistan"
  TMS_fascism_DEF: "the State of Turkestan"
  TMS_fascism_ADJ: "Turkmen"
+ KNA: "Kazakhstan National Front"
+ KNA_DEF: "The Kazakh State"
+ KNA_ADJ: "Kazakh"
 
  # Partisans
  TCS: "Soviet Partisan Front of Caucasia"

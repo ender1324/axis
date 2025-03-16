@@ -1,0 +1,28 @@
+capital = 587
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1953.01.01"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchy = 0
+	vanguardism = 12
+	communism = 0
+	socialism = 0
+	progressivism = 7
+	liberalism = 0
+	conservatism = 7
+	paternalism = 0
+	despotism = 29
+	ultranationalism = 13
+	fascism = 21
+	national_socialism = 11
+	occultism = 0
+}

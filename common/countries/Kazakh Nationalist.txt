@@ -1,6 +1,4 @@
-
-
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
 
-color = rgb { 139 140 110 }
+color = { 52  127  93 } #light blue/teal?
