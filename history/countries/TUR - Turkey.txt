@@ -4,6 +4,11 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+set_autonomy = {
+	target = IRQ
+	autonomy_state = autonomy_puppet
+}
+
 add_ideas = {
    SOE_Pakt_Observer
 }

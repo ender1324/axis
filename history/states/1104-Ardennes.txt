@@ -13,6 +13,7 @@ state = {
 		owner = FRA
 		add_core_of = FRA
 		add_claim_by = RKN
+		set_demilitarized_zone = yes
 
 		victory_points = {
 			9418 1 # Arlons

@@ -12,6 +12,7 @@ state = {
 
 		owner = FRA
 		add_core_of = FRA
+		set_demilitarized_zone = yes
 
 		victory_points = {
 			3516 5 # Namur

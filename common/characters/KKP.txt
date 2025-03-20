@@ -1,0 +1,18 @@
+characters = {
+	KKP_Nauruzbaev_Inatat = {
+		name = KKP_Nauruzbaev_Inatat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KKP/Portrait_KKP_Nauruzbaev_Inatat.dds"
+			}
+		}
+		country_leader = {
+			desc = KKP_Nauruzbaev_Inatat_desc
+			ideology = despotism_subtype
+			expire = 2008.04.27
+			traits = {
+				reluctant_veteran
+			}
+		}
+	}	
+}

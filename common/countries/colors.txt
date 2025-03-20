@@ -254,8 +254,8 @@ ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 ALG = {
-	color = rgb { 153 102 51 }
-	color_ui = rgb { 153 102 51 }
+	color = rgb { 78 107 58 }
+	color_ui = rgb { 78 107 58 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -270,8 +270,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 135 29 29 }
+	color_ui = rgb { 135 29 29 }
 }
 TUN = {
 	color = rgb { 42 84 39 }
@@ -534,13 +534,13 @@ LBA = {
 }
 
 EGY = {
-	color = rgb { 230 230 70 }
-	color_ui = rgb { 230 230 70 }
+	color = rgb { 93 127  63 }
+	color_ui = rgb { 93 127  63 }
 }
 
 PAL = {
-	color = rgb { 170  125  80 }
-	color_ui = rgb { 170  125  80 }
+	color = rgb { 86  124  49 }
+	color_ui = rgb { 86  124  49 }
 }
 
 LEB = {
@@ -1044,8 +1044,8 @@ KHA = {
 	color_ui = rgb { 25 102 25 }
 }
 AOI = {
-	color = rgb { 0 153 51 }
-	color_ui = rgb { 0 77 26 }
+	color = rgb { 71 96 48 }
+	color_ui = rgb { 71 96 48 }
 }
 LBV = {
 	color = rgb { 179 11 0 }

@@ -1,0 +1,4 @@
+IRQ_TUR = {
+	color = rgb { 163 29 29 }
+	color_ui = rgb { 163 29 29 }
+}

@@ -15,6 +15,7 @@ state={
 		}
 		owner = FRA
 		add_core_of = FRA
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 4 #was: 8
 			industrial_complex = 1

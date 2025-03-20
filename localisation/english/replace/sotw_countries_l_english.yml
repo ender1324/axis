@@ -222,6 +222,11 @@
  PAL_ITA_subject_DEF: "the Levantine Italian Administration"
  PAL_ITA_subject_ADJ: "Levantine"
 
+ #Middle East
+ IRQ_TUR: "Iraqi Arab Repbulic"
+ IRQ_TUR_DEF: "the Arab Republic of Iraq"
+ IRQ_TUR_ADJ: "Iraqi"
+
  # Israel
  ISR: "Israel"
  ISR_DEF: "Israel"
@@ -367,8 +372,8 @@
  SCO_occultism: "Scottish National State"
  SCO_occultism_DEF: "the Scottish National State"
  SCO_occultism_ADJ: "Scottish"
- SCO_national_socialism: "Scottish National Republic"
- SCO_national_socialism_DEF: "the Scottish National Republic"
+ SCO_national_socialism: "Kingdom of Scotland"
+ SCO_national_socialism_DEF: "the Kingdom of Scotland"
  SCO_national_socialism_ADJ: "Scottish"
  SCO_fascism: "Scottish National Republic"
  SCO_fascism_DEF: "the Scottish National Republic"
