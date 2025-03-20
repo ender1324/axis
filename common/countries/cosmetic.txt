@@ -1,4 +1,4 @@
-IRQ_TUR = {
-	color = rgb { 163 29 29 }
-	color_ui = rgb { 163 29 29 }
+ SYR_TUR = {
+	color = rgb { 120 64 48 }
+	color_ui = rgb { 120 64 48 }
 }

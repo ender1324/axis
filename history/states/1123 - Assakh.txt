@@ -1,0 +1,35 @@
+
+state={
+	id=1123
+	name="STATE_1123"
+	manpower = 114110
+	
+	state_category = rural
+	
+	resources={
+		steel=25 # was: 44
+		chromium=20 # was: 36
+		aluminium=1 # was: 2
+	}
+
+	history={
+		owner = TUR
+		add_core_of = KUR
+		buildings = {
+			infrastructure = 2 #was 4
+			arms_factory = 1
+		}
+		victory_points = {
+			1549 1
+		}
+
+	}
+
+	provinces={
+	
+		1549 1578 1606 1634 6883 10882
+
+	}
+
+	local_supplies=0.0 
+}
