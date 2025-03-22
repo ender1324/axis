@@ -531,6 +531,10 @@
  KNA_DEF: "The Kazakh State"
  KNA_ADJ: "Kazakh"
 
+ AFG: "Kingdom of Afghanistan"
+ AFG_DEF: "the Kingdom of Afghanistan"
+ AFG_ADJ: "Afghan"
+
  # Partisans
  TCS: "Soviet Partisan Front of Caucasia"
  TCS_DEF: "The Transcaucasian Partisans"
@@ -694,6 +698,9 @@
  YUN_JAP_subject: "Yunnan Resource Extraction Zone"
  YUN_JAP_subject_DEF: "the Yunnan Resource Extraction Zone"
  YUN_JAP_subject_ADJ: "Yunnanese"
+ MEN: "Mengjiang"
+ MEN_DEF: "the State of Mengjiang"
+ MEN_ADJ: "Mongolian"
 
  # Papua New
  PNG_JAP_subject: "Republic of Papua New Guinea"
@@ -704,6 +711,11 @@
  SIA: "Kingdom of Thailand"
  SIA_DEF: "Kingdom of Thailand"
  SIA_ADJ: "Thai"
+
+ # Persia
+ PER: "Imperial State of Iran"
+ PER_DEF: "the Imperial State of Iran"
+ PER_ADJ: "Iranian"
 
  # Indochina
  VIN: "Vietnam"
@@ -776,7 +788,10 @@
  CBP_DEF: "the Red Army of Burma"
  CBP_ADJ: "Burmese" 
 
-
+ #East Turkestan
+ ETR: "East Turkestan"
+ ETR_DEF: "the Second Republic of East Turkestan"
+ ETR_ADJ: "Uyghur"
 
  # Misc tags
  FAK: "Fake"

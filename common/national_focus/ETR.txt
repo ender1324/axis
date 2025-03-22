@@ -1,0 +1,92 @@
+#Main tree
+focus_tree = {
+	id = East_Turkestan_start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETR
+		}
+	}
+	default = no
+	shared_focus = ETR_A_New_Dawn
+	continuous_focus_position = { x = 50 y = 7000 }
+}
+
+shared_focus = {
+	id =  ETR_A_New_Dawn
+	icon = GFX_Generic_Morning
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_A_New_Dawn"
+		country_event = {
+			id = ETR.1
+		}
+    }
+	x = 6
+	y = 0
+}
+shared_focus = {
+	id =  ETR_The_National_Speech
+	icon = GFX_Generic_Morning
+	prerequisite = {
+		focus = ETR_A_New_Dawn
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_The_National_Speech"
+		country_event = {
+			id = ETR.2
+		}
+    }
+	x = 6
+	y = 1
+}
+shared_focus = {
+	id =  ETR_The_Legitimacy_of_our_Cause
+	icon = GFX_Generic_Morning
+	prerequisite = {
+		focus = ETR_The_National_Speech
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_The_Legitimacy_of_our_Cause"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id =  ETR_For_Those_Who_Died
+	icon = GFX_Generic_Morning
+	prerequisite = {
+		focus = ETR_The_Legitimacy_of_our_Cause
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_For_Those_Who_Died"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 7
+	y = 3
+}
+shared_focus = {
+	id =  ETR_Religious_Motivation
+	icon = GFX_Generic_Morning
+	prerequisite = {
+		focus = ETR_The_Legitimacy_of_our_Cause
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Religious_Motivation"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 5
+	y = 3
+}

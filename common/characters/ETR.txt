@@ -1,0 +1,26 @@
+characters = {
+	ETR_Muhammad_Amin_Bughra = {
+		name = ETR_Muhammad_Amin_Bughra
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ETR/Portrait_East_Turkestan_Muhammad_Amin_Bughra.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			expire = 2008.04.27
+		}
+	}
+	ETR_Isa_Yusuf_Alptekin = {
+		name = ETR_Isa_Yusuf_Alptekin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ETR/Portrait_East_Turkestan_Isa_Yusuf_Alptekin.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism_subtype
+			expire = 2008.04.27
+		}
+	}	
+}

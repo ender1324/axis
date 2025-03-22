@@ -1113,3 +1113,63 @@ TMS = {
 	color = rgb { 139 140 110 }
 	color_ui = rgb { 139 140 110 }
 }
+KAZ = {
+	color = rgb { 163 29 29 }
+	color_ui = rgb { 163 29 29 }
+}
+TAJ = {
+	color = rgb { 51 102 0 }
+	color_ui = rgb { 51 102 0 }
+}
+UZB = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+UZB = {
+	color = rgb { 0 102 102 }
+	color_ui = rgb { 0 102 102 }
+}
+CAR = {
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
+}
+NGA = {
+	color = rgb { 255 204 102 }
+	color_ui = rgb { 255 204 102 }
+}
+NGR = {
+	color = rgb { 255 153 102 }
+	color_ui = rgb { 255 153 102 }
+}
+GNA = {
+	color = rgb { 102 153 255 }
+	color_ui = rgb { 102 153 255 }
+}
+VOL = {
+	color = rgb { 153 153 255 }
+	color_ui = rgb { 153 153 255 }
+}
+MLI = {
+	color = rgb { 204 204 255 }
+	color_ui = rgb { 204 204 255 }
+}
+IVO = {
+	color = rgb { 255 255 204 }
+	color_ui = rgb { 255 255 204 }
+}
+DAH = {
+	color = rgb { 0 51 204 }
+	color_ui = rgb { 0 51 204 }
+}
+TOG = {
+	color = rgb { 0 102 0 }
+	color_ui = rgb { 0 102 0 }
+}
+GHA = {
+	color = rgb { 102 102 51 }
+	color_ui = rgb { 102 102 51 }
+}
+ETR = {
+	color = rgb { 75  184  203 }
+	color_ui = rgb { 75  184  203 }
+}

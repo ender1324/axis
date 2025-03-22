@@ -1,0 +1,39 @@
+﻿l_english:
+ ##### ############################ #####
+ #####          East Turkestan         #####
+ ##### ############################ #####
+
+### Parties ###
+ ETR_national_socialism_party: "MUP"
+ ETR_national_socialism_party_long: "Memliketlik 'Uyrur Partiyisi"
+ ETR_fascism_party: "UIP"
+ ETR_fascism_party_long: "Uyrur 'Ittipaqi Partiyisi"
+ ETR_ultranationalism_party: "MPTIP"
+ ETR_ultranationalism_party_long: "Milliy Pan-Tyrkiye 'Inqilabi Partiyisi"
+ ETR_despotism_party: "STP"
+ ETR_despotism_party_long: "Sherqiy Tyrkistan Partiyisi"
+ ETR_paternalism_party: "STDB"
+ ETR_paternalism_party_long: "Sherqiy Tyrkistan Demokratik Birleshmisi"
+
+
+#Idea
+ETR_Death_to_China: "Death to China"
+ETR_Death_to_China_desc: "Our long oppression under the hans have left us an vengefull soul, not wanting another oppression under the Chineseq of the east. Any element making us remember of China is destroyed, every non-uyghur citizen are either deported or put in forced labor, for our supreme leader, this will be the only way to save Uyghur's culture."
+
+
+
+#FOCUS 
+ETR_A_New_Dawn: "A New Dawn"
+ETR_The_National_Speech: "The National Speech"
+ETR_The_Legitimacy_of_our_Cause: "The Legitimacy of Our Cause"
+ETR_For_Those_Who_Died: "For Those Who Died"
+ETR_Religious_Motivation: "Religious Motivation"
+
+
+#Event
+ETR.1.t: "The Situation of East Turkestan"
+ETR.1.d: "Our nation may exist for just some years now, but the history of our people exist for thousand of years. When the collapse of the Qing empire happened, we tought that this was could finally be free, but the chinese come and crushed our idea of liberty, our culture was menaced and thus, we revolted against the tyranny of the Hans. After blood was dropped, our republic was proclaimed, but in 1934, the Huis, helped by the Hans destroyed our young nation and we were again under a new foregin ruler of the name of Sheng Shicai. When the Japanese force marched into China, the communists from the east moved to our homeland and etablished their base here, against our faith, the communists tried to destroy our culture and our nationalism, we foughts against them again with the help of Japan, and proclaimed the Second Republic of East Turkestan. Now, our nation lay in the north of Xinjiang, but our goal is not finished, brothers and sisters still are under the filthy goverment of Mao and wait each day for a liberation."
+ETR.1.a: "Interesting"
+ETR.2.t: "The Speech"
+ETR.2.d: ""Uyghurs! I speak to you today, our renewed republic need you! For centuries, our proud people have been oppressed and terrorized by the Han and Hui Hordes of the east, they have sacked our cities and stolen our land. When we formed our first republic by the blood of those who fought, the Huis have took the opportunity to attack us with the help of the barbarian Hans, and so, we were ruled by a tyrannical foreginer who tried to erase our culture with the filthy idea that is communism!\n\nThen, the Japaneses come, and have smashed the chineses, we tought that we could have our liberty, but the communists didn't left us free, they marched by thousands from the east like an horde of invadors, and shackled us while propagating their digusting lie of 'Equality' to wipe out our national unity and identity! They wanted to assimilate our people into their own! They wanted to appropriate the land of our ancestors! But again, we fought, and the Japaneses, the liberators of Asia have come to help us defeat these beasts!\n\nEven if we didn't free all of our homeland, we will not lose hope, the red thiefs of the south are weak, and if you, Uyghurs! join our cause, you will live in peace, free from tyranny forever!"\n\n-Speech of Muhammad Amin Bughra"
+ETR.2.a: "An Nation will reclaim it's glory"

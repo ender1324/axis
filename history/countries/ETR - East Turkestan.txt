@@ -1,0 +1,37 @@
+capital = 618
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = ETR_Muhammad_Amin_Bughra
+recruit_character = ETR_Isa_Yusuf_Alptekin
+
+add_ideas = {
+	SIK_Death_to_China
+}
+
+set_politics = {
+	ruling_party = national_socialism
+	last_election = "1953.01.01"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchy = 0
+	vanguardism = 0
+	communism = 0
+	socialism = 0
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 0
+	despotism = 20
+	ultranationalism = 22
+	fascism = 0
+	national_socialism = 58
+	occultism = 0
+}
+
+set_convoys = 50

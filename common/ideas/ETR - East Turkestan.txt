@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		ETR_Death_to_China = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RKK_Partisans_Purge
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.3
+				conscription_factor = -0.35
+			}
+		}
+        
+    }
+}
