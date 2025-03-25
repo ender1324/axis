@@ -122,8 +122,8 @@
  GER_anarchism_DEF: "the German Anarchy"
  GER_anarchism_ADJ: "German"
 
- RKP: "Reichskommissariat Polen"
- RKP_DEF: "The Reichskommissariat Polen"
+ RKP: "Generalgouvernement"
+ RKP_DEF: "The Generalgouvernement"
  RKP_ADJ: "Polish German"
 
  RKO: "Reichskommissariat Ostland"
@@ -170,9 +170,9 @@
  SSW_GER_subject_ADJ: "Südslawien"
 
  # Italy
- ITA:0 "Kingdom of Italy"
- ITA_DEF:0 "Kingdom of Italy"
- ITA_ADJ:0 "Italian"
+ ITA_fascism:0 "Kingdom of Italy"
+ ITA_fascism_DEF:0 "Kingdom of Italy"
+ ITA_fascism_ADJ:0 "Italian"
 
  # Italian Emirates / UAE
  UAE: "United Arab Emirates"
@@ -226,6 +226,9 @@
  SYR_TUR: "Syria"
  SYR_TUR_DEF: "the Arab Republic of Syria"
  SYR_TUR_ADJ: "Syrian"
+ SYR_IRQ: "State of Iraq"
+ SYR_IRQ_DEF: "the Arab Republic of Iraq"
+ SYR_IRQ_ADJ: "Iraqi"
 
  # Israel
  ISR: "Israel"
@@ -676,12 +679,12 @@
  CHI: "China"
  CHI_DEF: "China"
  CHI_ADJ: "Chinese"
- CHI_JAP_subject: "National Government of the Republic of China"
+ CHI_JAP_subject: "Reorganized Republic of China"
  CHI_JAP_subject_DEF: "the National Government of the Republic of China"
  CHI_JAP_subject_ADJ: "Chinese"
- CHI_JAP_fascism_autonomy_puppet: "National Government of the Republic of China"
+ CHI_JAP_fascism_autonomy_puppet: "Reorganized Republic of China"
  CHI_JAP_fascism_autonomy_puppet_DEF: "the National Government of the Republic of China"
- CHI_JAP_fascism_autonomy_integrated_puppet: "National Government of the Republic of China"
+ CHI_JAP_fascism_autonomy_integrated_puppet: "Reorganized Republic of China"
  CHI_JAP_fascism_autonomy_integrated_puppet_DEF: "the National Government of the Republic of China"
  PRC: "Chinese People's Resistance Front"
  PRC_DEF: "the Chinese People's Resistance Front"

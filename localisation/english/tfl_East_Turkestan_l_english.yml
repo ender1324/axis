@@ -4,36 +4,55 @@
  ##### ############################ #####
 
 ### Parties ###
- ETR_national_socialism_party: "MUP"
- ETR_national_socialism_party_long: "Memliketlik 'Uyrur Partiyisi"
- ETR_fascism_party: "UIP"
- ETR_fascism_party_long: "Uyrur 'Ittipaqi Partiyisi"
- ETR_ultranationalism_party: "MPTIP"
- ETR_ultranationalism_party_long: "Milliy Pan-Tyrkiye 'Inqilabi Partiyisi"
- ETR_despotism_party: "STP"
- ETR_despotism_party_long: "Sherqiy Tyrkistan Partiyisi"
- ETR_paternalism_party: "STDB"
- ETR_paternalism_party_long: "Sherqiy Tyrkistan Demokratik Birleshmisi"
+ ETR_national_socialism_party: "CNR"
+ ETR_national_socialism_party_long: "Committee of the National Revolution"
+ ETR_fascism_party: "TNP"
+ ETR_fascism_party_long: "Türk National Party"
+ ETR_ultranationalism_party: "TTL"
+ ETR_ultranationalism_party_long: "True Türk League"
+ ETR_despotism_party: "IPOET"
+ ETR_despotism_party_long: "Islamic Party of East Turkestan"
+ ETR_paternalism_party: "TDU"
+ ETR_paternalism_party_long: "Türk Democratic Union"
 
 
 #Idea
 ETR_Death_to_China: "Death to China"
-ETR_Death_to_China_desc: "Our long oppression under the hans have left us an vengefull soul, not wanting another oppression under the Chineseq of the east. Any element making us remember of China is destroyed, every non-uyghur citizen are either deported or put in forced labor, for our supreme leader, this will be the only way to save Uyghur's culture."
+ETR_Death_to_China_desc: "Our long oppression under the hans have left us an vengefull soul, not wanting another oppression under the Chineseq of the east. Any element making us remember of China is destroyed, every non-Türk citizens are either deported or put in forced labor, for our supreme leader, this will be the only way to save Türk's culture."
 
 
 
 #FOCUS 
 ETR_A_New_Dawn: "A New Dawn"
+ETR_A_New_Dawn_desc: "For centuries, we have been enslaved by foreigners, treating us as inferior, but now, things changed. Our chains were broken and the idea of a free Türk state live on, where our culture could rise and where our childrens can see a bright future ahead. We still didn't have liberated the totality of our homeland but this is just a question of time until we wipe out the communists for good."
 ETR_The_National_Speech: "The National Speech"
+ETR_The_National_Speech_desc: ""
 ETR_The_Legitimacy_of_our_Cause: "The Legitimacy of Our Cause"
-ETR_For_Those_Who_Died: "For Those Who Died"
-ETR_Religious_Motivation: "Religious Motivation"
+ETR_For_Those_Who_Died: "Remember the Fallens"
+ETR_For_Those_Who_Died_desc: "Even if we managed to liberate ourself against the reds, many have lost their life and their blood, they died in the hope that their death could be usefull for the liberation of East Turkestan. When we proclaimed the Republic, we promised to never forget the martyrs."
+ETR_Religious_Motivation: "Religious Zeal"
+ETR_Revive_Nationalism: "Revive Nationalism"
+ETR_Uyghur_Unity: "Türk Unity"
+ETR_The_Supremacy_of_our_People: "The Supremacy of our People"
+ETR_Enforce_Jadidism: "Enforce Jadidism"
+ETR_A_Nation_Reborn: "A Nation Reborn"
+ETR_Ready_the_Army: "Ready the Army"
+ETR_Ask_The_Japan: "Request Japanese Supports"
+ETR_The_Blue_Wolf: "The Blue Wolf"
+ETR_Anti_Communist_Tactics: "Anti-Communist Tactic"
+ETR_East_Turkestan_Forever: "East Turkestan Forever"
 
 
 #Event
 ETR.1.t: "The Situation of East Turkestan"
-ETR.1.d: "Our nation may exist for just some years now, but the history of our people exist for thousand of years. When the collapse of the Qing empire happened, we tought that this was could finally be free, but the chinese come and crushed our idea of liberty, our culture was menaced and thus, we revolted against the tyranny of the Hans. After blood was dropped, our republic was proclaimed, but in 1934, the Huis, helped by the Hans destroyed our young nation and we were again under a new foregin ruler of the name of Sheng Shicai. When the Japanese force marched into China, the communists from the east moved to our homeland and etablished their base here, against our faith, the communists tried to destroy our culture and our nationalism, we foughts against them again with the help of Japan, and proclaimed the Second Republic of East Turkestan. Now, our nation lay in the north of Xinjiang, but our goal is not finished, brothers and sisters still are under the filthy goverment of Mao and wait each day for a liberation."
+ETR.1.d: "Our nation may exist for just some years now, but the history of our people exist for thousand of years. When the collapse of the Qing empire happened, we tought that this was could finally be free, but the chinese come and crushed our idea of liberty, our culture was menaced and thus, we revolted against the tyranny of the Hans. After blood was dropped, our republic was proclaimed, but in 1934, the Huis, helped by the Hans destroyed our young nation and we were again under a new foregin ruler of the name of Sheng Shicai. When the Japanese force marched into China, the communists from the east moved to our homeland and etablished their base here, against our faith, the communists tried to destroy our culture and our nationalism, we foughts against them again with the help of Japan, and proclaimed the Second Republic of East Turkestan. Now, our nation lay in the South of Xinjiang, but our goal is not finished, brothers and sisters still are under the filthy goverment of Mao and wait each day for a liberation."
 ETR.1.a: "Interesting"
 ETR.2.t: "The Speech"
-ETR.2.d: ""Uyghurs! I speak to you today, our renewed republic need you! For centuries, our proud people have been oppressed and terrorized by the Han and Hui Hordes of the east, they have sacked our cities and stolen our land. When we formed our first republic by the blood of those who fought, the Huis have took the opportunity to attack us with the help of the barbarian Hans, and so, we were ruled by a tyrannical foreginer who tried to erase our culture with the filthy idea that is communism!\n\nThen, the Japaneses come, and have smashed the chineses, we tought that we could have our liberty, but the communists didn't left us free, they marched by thousands from the east like an horde of invadors, and shackled us while propagating their digusting lie of 'Equality' to wipe out our national unity and identity! They wanted to assimilate our people into their own! They wanted to appropriate the land of our ancestors! But again, we fought, and the Japaneses, the liberators of Asia have come to help us defeat these beasts!\n\nEven if we didn't free all of our homeland, we will not lose hope, the red thiefs of the south are weak, and if you, Uyghurs! join our cause, you will live in peace, free from tyranny forever!"\n\n-Speech of Muhammad Amin Bughra"
+ETR.2.d: ""Türks! I speak to you today, our renewed republic need you! For centuries, our proud people have been oppressed and terrorized by the Han and Hui Hordes of the east, they have sacked our cities and stolen our land. When we formed our first republic by the blood of those who fought, the Huis have took the opportunity to attack us with the help of the barbarian Hans, and so, we were ruled by a tyrannical foreginer who tried to erase our culture with the filthy idea that is communism!\n\nThen, the Japaneses come, and have smashed the chineses, we tought that we could have our liberty, but the communists didn't left us free, they marched by thousands from the east like an horde of invadors, and shackled us while propagating their digusting lie of 'Equality' to wipe out our national unity and identity! They wanted to assimilate our people into their own! They wanted to appropriate the land of our ancestors! But again, we fought, and the Japaneses, the liberators of Asia have come to help us defeat these beasts!\n\nEven if we didn't free all of our homeland, we will not lose hope, the red thiefs of the north are weak, and if you, Türks! join our cause, you will live in peace, free from tyranny forever!"\n\n-Speech of Muhammad Amin Bughra"
 ETR.2.a: "An Nation will reclaim it's glory"
+ETR.3.t: "Why we Fight"
+ETR.3.d: ""...Many of you ask youself, why should i fight? Why should i die for East Turkestan? Well, i'm here to answer it. You must fight, because your life is linked to our Nation! where can you live? The red liars surround your land! promising equality, but those are all lies! They will work you to death and destroy what made you an Türk! They will burn your mosques, since they are the ennemies of Allah!\n\nTürks! for those who even with all the reasons i said, still flee our nation, i want to ask, will you live in peace? knowing that you left the land that your ancestors fought and worked so the next generation could thrive? Will you don't feel any guilt leaving your family, your friends to a uncertain fate? Will you left our ancestral oppresors destorying our country, country where you were born and you lived? The Committee fight to preserve our identity, our faith, our future, and so, you! must fight and help us build a bright tomorrow"\n\n-Extract from a speech of Muhammad Amin Bughra 'The Future of the Republic'"
+ETR.3.a: "How can someone abandon their homeland?"
+
+ETR.5.t: "Democratic Protest"
+ETR.5.d: "Today, on the streets, many people lead by Ibrahim Mutii protested against our government, their claim to want free election, a multi-party system and free press."

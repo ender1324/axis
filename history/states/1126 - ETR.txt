@@ -1,23 +1,23 @@
 
 state={
-	id=759
-	name="STATE_759"
+	id=1126
+	name="STATE_1126"
 
 	history={
-		owner = PRC
+		owner = ETR
 		add_core_of = SIK
 		add_claim_by = CHI
-		add_core_of = PRC
+		add_core_of = ETR
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
-			2074 1 
+			4973 1 
 		}
 	}
 
 	provinces={
-		1698 2074 4947 5736 10315  
+		1943  4973  10911 
 	}
 	manpower=277000
 	buildings_max_level_factor=1.000

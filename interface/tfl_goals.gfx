@@ -84,6 +84,18 @@ spriteType = {
 		name = "GFX_Generic_Parade"
 		texturefile = "gfx/interface/goals/generic/GFX_Generic_Parade.dds"
 	}
+	spriteType = {
+		name = "GFX_Generic_Japan_Flag"
+		texturefile = "gfx/interface/goals/generic/GFX_Generic_Japan_Flag.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_Anti_Communism_Guns"
+		texturefile = "gfx/interface/goals/generic/Generic_Anti_Communism_Guns.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_Mic"
+		texturefile = "gfx/interface/goals/generic/Generic_Mic.dds"
+	}
 	############################
 	### French Goals Sprites ###
 	############################
@@ -258,5 +270,33 @@ spriteType = {
 		name = "GFX_RKK_Pure_Kaukasia"
 		texturefile = "gfx/interface/goals/RKK/GFX_RKK_Pure_Kaukasia.dds"
 	}
+#EAST TURKESTAN
+    spriteType = {
+	name = "GFX_ETR_The_Legitimacy_of_our_Cause"
+	texturefile = "gfx/interface/goals/ETR/ETR_The_Legitimacy_of_our_Cause.dds"
+    }
+    spriteType = {
+	   name = "GFX_ETR_Religious_Motivation"
+	   texturefile = "gfx/interface/goals/ETR/ETR_Religious_Motivation.dds"
+    }
+	spriteType = {
+		name = "GFX_ETR_Graveyard"
+		texturefile = "gfx/interface/goals/ETR/ETR_Graveyard.dds"
+	}
+	spriteType = {
+		name = "GFX_ETR_East_Turkestan_Map"
+		texturefile = "gfx/interface/goals/ETR/ETR_East_Turkestan_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_ETR_Enforce_Jadidism"
+		texturefile = "gfx/interface/goals/ETR/ETR_Enforce_Jadidism.dds"
+	}
+	spriteType = {
+		name = "GFX_ETR_Blue_Wolf"
+		texturefile = "gfx/interface/goals/ETR/ETR_Blue_Wolf.dds"
+	}
 }
+
+
+
 

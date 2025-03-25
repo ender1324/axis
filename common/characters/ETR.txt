@@ -19,7 +19,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = ultranationalism_subtype
+			ideology = despotism_subtype
 			expire = 2008.04.27
 		}
 	}	

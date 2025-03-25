@@ -28,7 +28,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  ETR_The_National_Speech
-	icon = GFX_Generic_Morning
+	icon = GFX_Generic_Mic
 	prerequisite = {
 		focus = ETR_A_New_Dawn
 	}
@@ -44,7 +44,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  ETR_The_Legitimacy_of_our_Cause
-	icon = GFX_Generic_Morning
+	icon = GFX_ETR_The_Legitimacy_of_our_Cause
 	prerequisite = {
 		focus = ETR_The_National_Speech
 	}
@@ -60,7 +60,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  ETR_For_Those_Who_Died
-	icon = GFX_Generic_Morning
+	icon = GFX_ETR_Graveyard
 	prerequisite = {
 		focus = ETR_The_Legitimacy_of_our_Cause
 	}
@@ -76,7 +76,7 @@ shared_focus = {
 }
 shared_focus = {
 	id =  ETR_Religious_Motivation
-	icon = GFX_Generic_Morning
+	icon = GFX_ETR_Religious_Motivation
 	prerequisite = {
 		focus = ETR_The_Legitimacy_of_our_Cause
 	}
@@ -89,4 +89,179 @@ shared_focus = {
     }
 	x = 5
 	y = 3
+}
+shared_focus = {
+	id =  ETR_Revive_Nationalism
+	icon = GFX_Generic_Fascist_Demand
+	prerequisite = {
+		focus = ETR_For_Those_Who_Died
+	}
+	prerequisite = {
+		focus = ETR_Religious_Motivation
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Revive_Nationalism"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 6
+	y = 4
+}
+shared_focus = {
+	id =  ETR_Uyghur_Unity
+	icon = GFX_ETR_East_Turkestan_Map
+	prerequisite = {
+		focus = ETR_The_National_Speech
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Uyghur_Unity"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 2
+	y = 2
+}
+shared_focus = {
+	id =  ETR_The_Supremacy_of_our_People
+	icon = GFX_Generic_Ayan
+	prerequisite = {
+		focus = ETR_Uyghur_Unity
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_The_Supremacy_of_our_People"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 3
+	y = 3
+}
+shared_focus = {
+	id =  ETR_Enforce_Jadidism 
+	icon = GFX_ETR_Enforce_Jadidism
+	prerequisite = {
+		focus = ETR_Uyghur_Unity
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Enforce_Jadidism"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 1
+	y = 3
+}
+shared_focus = {
+	id =  ETR_A_Nation_Reborn
+	icon = GFX_Generic_People_Rally
+	prerequisite = {
+		focus = ETR_The_Supremacy_of_our_People
+	}
+	prerequisite = {
+		focus = ETR_Enforce_Jadidism
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_A_Nation_Reborn"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 2
+	y = 4
+}
+shared_focus = {
+	id =  ETR_Ready_the_Army
+	icon = GFX_Generic_Parade
+	prerequisite = {
+		focus = ETR_The_National_Speech
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Ready_the_Army"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 10
+	y = 2
+}
+shared_focus = {
+	id =  ETR_Ask_The_Japan
+	icon = GFX_Generic_Japan_Flag
+	prerequisite = {
+		focus = ETR_Ready_the_Army
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Ask_The_Japan"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 9
+	y = 3
+}
+shared_focus = {
+	id =  ETR_The_Blue_Wolf
+	icon = GFX_ETR_Blue_Wolf
+	prerequisite = {
+		focus = ETR_Ready_the_Army
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_The_Blue_Wolf"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 11
+	y = 3
+}
+shared_focus = {
+	id =  ETR_Anti_Communist_Tactics
+	icon = GFX_Generic_Anti_Communism_Guns
+	prerequisite = {
+		focus = ETR_Ask_The_Japan
+	}
+	prerequisite = {
+		focus = ETR_The_Blue_Wolf
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_Anti_Communist_Tactics"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 10
+	y = 4
+}
+shared_focus = {
+	id =  ETR_East_Turkestan_Forever
+	icon = GFX_Generic_Anti_Communism_Guns
+	prerequisite = {
+		focus = ETR_Anti_Communist_Tactics
+	}
+	prerequisite = {
+		focus = ETR_A_Nation_Reborn
+	}
+	prerequisite = {
+		focus = ETR_Revive_Nationalism
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus ETR_East_Turkestan_Forever"
+		country_event = {
+			id = ETR.3
+		}
+    }
+	x = 6
+	y = 5
 }
