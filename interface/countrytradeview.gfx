@@ -54,7 +54,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_trade_filter_bg"
-		texturefile = "gfx/interface/trade_filter_bg.dds"
+		texturefile = "gfx/interface/tradeview/trade_filter_bg.dds"
 	}
 
 	spriteType = {
@@ -75,7 +75,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_country_trade_entry_bg"
-		texturefile = "gfx/interface/country_trade_entry_bg.dds"
+		texturefile = "gfx/interface/tradeview/country_trade_entry_bg.dds"
 		noOfFrames = 3		
 	}
 
@@ -87,7 +87,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_TRADE_resource_btn"
-		texturefile = "gfx/interface/resource_btn.dds"
+		texturefile = "gfx/interface/tradeview/resource_btn.dds"
 		noOfFrames = 2
 	}
 

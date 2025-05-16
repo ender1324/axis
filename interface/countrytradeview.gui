@@ -179,30 +179,30 @@ guiTypes = {
 			}
 		}
 
-		iconType ={
-			name ="trade_divider"
-			spriteType = "GFX_divider"
-			position = { x= 13 y = 347 }
-			Orientation = "UPPER_LEFT"
-		}
+		# iconType ={
+		# 	name ="trade_divider"
+		# 	spriteType = "GFX_divider"
+		# 	position = { x= 13 y = 347 }
+		# 	Orientation = "UPPER_LEFT"
+		# }
 		
 		iconType ={
 			name ="trade_filter_bg"
 			spriteType = "GFX_trade_filter_bg"
-			position = { x= 18 y = 318 }
+			position = { x= 13 y = 312 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		buttonType = {
 			name = "sort_country"
-			position = {x=17 y=440}
+			position = {x=70 y=440}
 			quadTextureSprite ="GFX_trade_filter_btn_country"
 			clicksound = click_scroll
 		}
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 21 y = 447 }
+			position = { x = 72 y = 447 }
 			font = "hoi_16mbs"
 			text = "TRADE_SORT_COUNTRY"
 			maxWidth = 160
@@ -214,14 +214,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "sort_export"
-			position = {x=187 y=440}
+			position = {x=250 y=440}
 			quadTextureSprite ="GFX_trade_filter_btn_export"
 			clicksound = click_scroll
 		}
 
 		instantTextboxType = {
 			name = "export_label"
-			position = { x = 190 y = 447 }
+			position = { x = 254 y = 447 }
 			font = "hoi_16mbs"
 			text = "TRADE_SORT_EXPORT"
 			maxWidth = 90
@@ -233,14 +233,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "sort_request"
-			position = {x=285 y=440}
+			position = {x=356 y=440}
 			quadTextureSprite ="GFX_trade_filter_btn_delivered"
 			clicksound = click_scroll
 		}
 
 		instantTextboxType = {
 			name = "request_label"
-			position = { x = 285 y = 447 }
+			position = { x = 360 y = 447 }
 			font = "hoi_16mbs"
 			text = "TRADE_SORT_REQUEST"
 			maxWidth = 100
@@ -252,14 +252,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "sort_convoys"
-			position = {x=389 y=440}
-			quadTextureSprite ="GFX_trade_filter_btn_convoy"
+			position = {x=460 y=440}
+			quadTextureSprite = "GFX_trade_filter_btn_convoy"
 			clicksound = click_scroll
 		}
 
 		instantTextboxType = {
 			name = "convoys_label"
-			position = { x=403 y=447 }
+			position = { x=466 y=447 }
 			font = "hoi_16mbs"
 			text = "TRADE_SORT_CONVOYS"
 			maxWidth = 66
@@ -269,6 +269,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
+		### BOTTOM RESOURCE SELECTORS ###
 		containerWindowType = {
 			name = "filters"
 			position = { x = 12 y = 268 }	
@@ -279,7 +280,7 @@ guiTypes = {
 				name = "resources_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 400 height = 100%% }
-				slotsize = { width = 85 height = 50 }
+				slotsize = { width = 84 height = 50 }
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
 			}
@@ -304,16 +305,18 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "trade"
-			position = { x = 15 y = 467 }	
-			size = { width = 535 height = 100%% }
+			position = { x = 8 y = 467 }	
+			size = { width = 602 height = 99%% }
 			verticalScrollbar = "right_vertical_slider"
 			scroll_wheel_factor = 45
 			smooth_scrolling = yes
-			margin = {top = 1 bottom = 13 }			
+			
+			margin = { top = 10 bottom = 14
+		               left = 12}		
 				
 			background = {
 				name = "Background"		
-				quadTextureSprite ="GFX_tiled_window_transparent"
+				quadTextureSprite ="GFX_tiled_window_2px_border"
 			}
 			
 			gridBoxType = {
@@ -695,7 +698,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "filter_entry"
-		position = { x = 45 y = -04 }
+		position = { x = 80 y = -4 }
 		size = { width = 168 height = 50 }
 		clipping = no
 
@@ -721,7 +724,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "country_trade_entry"
 		position = { x = 0 y = 0 }
-		size = { width = 511 height = 45 }
+		size = { width = 592 height = 45 }
 		clipping = no
 
 		background = {
@@ -733,25 +736,25 @@ guiTypes = {
 		buttonType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 6 y = 8 }
+			position = { x= 10 y = 10 }
 			#alwaystransparent = yes
 		}
 		
 		iconType ={
 			name ="country_flag_frame"
 			spriteType = "GFX_small_flag_frame_thin"
-			position = { x= 3 y = 6 }
+			position = { x=7 y = 8 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}			
 		
 		instantTextboxType = {
 			name = "country"
-			position = { x = 52 y = 6 }
+			position = { x = 60 y = 10 }
 			font = "hoi_16mbs"
 			text = "name"
 			vertical_alignment = center 			
-			maxWidth = 130
+			maxWidth = 156
 			maxHeight = 28
 			fixedsize = yes
 			alwaystransparent = yes
@@ -759,7 +762,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "exported"
-			position = { x = 272 y = 12 }
+			position = { x = 356 y = 14 }
 			font = "hoi_18mbs"
 			text = ""
 			format = center
@@ -769,7 +772,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "available_export"
-			position = { x = 169 y = 12 }
+			position = { x = 222 y = 14 }
 			font = "hoi_18mbs"
 			text = ""
 			format = center
@@ -779,7 +782,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "convoys"
-			position = { x = 390 y = 12 }
+			position = { x = 473 y = 14 }
 			font = "hoi_18mbs"
 			text = ""
 			format = center
