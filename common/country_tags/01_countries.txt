@@ -35,6 +35,8 @@ CBP = "countries/Communist Burma.txt"
 
 #Central Asia
 KNA = "countries/Kazakh Nationalist.txt"
+ETR = "countries/East Turkestan.txt"
+
 
 # Russian Warlords
 RAR = "countries/Red_Army_Reminants.txt"
