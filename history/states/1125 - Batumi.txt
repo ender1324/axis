@@ -10,11 +10,15 @@ state={
 			3656 1 
 		}
 		victory_points = {
-			3653 2
+			3653 3
 		}
 		buildings = {
 			infrastructure = 2 #was 3
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
 
+			}
 		}
 		add_core_of = GEO
 
