@@ -10,10 +10,10 @@ state={
 	history={
 		owner = BUL
 		victory_points = { #Varna
-			9783 5
+			9783 10
 		}
 		victory_points = { #Burgas
-			9902 3
+			9902 5
 		}
 		victory_points = { #Sliven
 			6967 3
