@@ -927,6 +927,8 @@
  VICTORY_POINTS_3547:0 "Königswinter"	#replaces Bonn, which instead overwrites Koln
  VICTORY_POINTS_3444:0 "Düsseldorf"
  VICTORY_POINTS_11905:0 "Alexandroupolis"
+ BUL_VICTORY_POINTS_11905: "Dedeagach"
+ TUR_VICTORY_POINTS_11905: "Dedeagach"
  VICTORY_POINTS_6652:0 "Craiova"
  VICTORY_POINTS_6727:0 "Cetatea Albă"
  VICTORY_POINTS_2824:0 "Kherson"
@@ -1956,6 +1958,7 @@
  VICTORY_POINTS_4252:0 "Rekata Bay"
  VICTORY_POINTS_13036:0 "Kolonia"
  VICTORY_POINTS_13035:0 "Kosrae"
+ VICTORY_POINTS_9930: "Kavala"
 
 
 #ported from vanilla

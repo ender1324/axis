@@ -1,0 +1,27 @@
+state = {
+	id = 1128
+	name = "STATE_1128"
+	manpower = 120000
+	state_category = rural
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = BUL
+		add_core_of = BUL
+		add_core_of = GRE
+		add_claim_by = TUR
+		victory_points = {
+			9930 5
+		}
+		buildings = {
+			infrastructure = 2
+			9930 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+		}
+	}
+	provinces = { 6990 9791 9930 }
+	local_supplies = 0.2
+}

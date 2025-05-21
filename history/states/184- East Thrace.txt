@@ -22,10 +22,11 @@ state={
 		}
 		add_claim_by = GRE
 		add_core_of = BUL
+		add_core_of = TUR
 	}
 
 	provinces={
-		6990 9791 9930 11774 11905
+		11774 11905
 	}
 
 	local_supplies=0.0 
