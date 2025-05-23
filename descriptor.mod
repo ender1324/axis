@@ -99,4 +99,4 @@ replace_path="map"
 replace_path="map/strategicregions"
 replace_path="portraits"
 
-supported_version="1.15.*"
+supported_version="1.16.*"
