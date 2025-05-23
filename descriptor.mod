@@ -1,4 +1,4 @@
-name="Shadow over Europe"
+name="The Fading Light"
 version="0.0.1"
 tags={
 	"Alternative History"
