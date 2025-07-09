@@ -1,0 +1,25 @@
+state = {
+	id = 1129
+	name = "STATE_1129"
+	manpower = 120000
+	state_category = rural
+	resources = {
+		# none lol
+	}
+	history = {
+		owner = CRO
+		add_core_of = CRO
+		victory_points = {
+			3974 1 # Knin
+		}
+		victory_points = {
+			3601 1 # Korenica
+		}
+		buildings = {
+			infrastructure = 1 # Undeveloped region
+			agriculture_district = 1 # Used for some agriculture
+		}
+	}
+	provinces = { 984 3601 3974 6611 }
+	local_supplies = 0.2
+}

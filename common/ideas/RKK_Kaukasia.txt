@@ -115,16 +115,16 @@ ideas = {
 			name = RKK_TUR_Armenians_Unrest
 			picture = RKK_TUR_Armenians_Unrest
 			allowed = {
-				original_tag = RKK
+				original_tag = TUR
 			}
 
 			modifier = {
 				stability_factor = -0.1
-				targeted_modifier = {
-					tag = RKK
-					attack_bonus_against = -0.1
-					defense_bonus_against = -0.1
-				}
+			}
+			targeted_modifier = {
+				tag = RKK
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
 
@@ -132,16 +132,16 @@ ideas = {
 			name = RKK_PER_Azeri_Unrest
 			picture = RKK_PER_Azeri_Unrest
 			allowed = {
-				original_tag = RKK
+				original_tag = PER
 			}
 
 			modifier = {
 				weekly_manpower = -100
-				targeted_modifier = {
-					tag = RKK
-					attack_bonus_against = -0.1
-					defense_bonus_against = -0.1
-				}
+			}
+			targeted_modifier = {
+				tag = RKK
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
 			}
 		}
 

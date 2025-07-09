@@ -1,0 +1,29 @@
+state={
+	id=1131
+	name="STATE_1131"
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = NOR
+
+		victory_points = {
+			13473 1 # Nordstern
+		}
+
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			13473 = {
+				naval_base = 1
+				coastal_bunker = 3
+			}
+		}
+	}
+	provinces={
+		13473 
+	}
+	manpower=54912
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
