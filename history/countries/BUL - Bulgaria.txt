@@ -1,33 +1,60 @@
 ﻿capital = 48
 
-#TROOPS
-
-
 set_technology = {
 	infantry_weapons = 1
 }
 
 set_politics = {
-	ruling_party = despotism
-	last_election = "1953.01.01"
+	ruling_party = conservatism
+	last_election = "1950.05.12"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+
+add_ideas = {
+	# Country
+	SSW_serbian_refugees
+	# LAWS
+	sl_devolved_unitary_state
+	sl_extremist_censorship
+	sl_state_religion
+	sl_minorities_no_stance
+	sl_women_in_workplace
+	sl_controlled_protests
+	# economy laws
+	sl_interventionism
+	sl_low_income_taxation
+	sl_protectionist_tariffs
+	sl_non_socialist_unions
+	sl_twelve_hour_workday
+	sl_immigration_open
+	# Public Structure
+	sl_natural_growth
+	sl_state_policing2
+	sl_penal_incarceration
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits2
+	# Military Structure
+	sl_military_spending2
+	# Secondary Leaders
+	#GER_SL_adolf_hitler_idea
 }
 
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
 	communism = 5
-	socialism = 5
-	progressivism = 5
-	liberalism = 5
-	conservatism = 5
-	paternalism = 5
-	despotism = 50
-	ultranationalism = 5
-	fascism = 5
+	socialism = 12
+	progressivism = 0
+	liberalism = 25
+	conservatism = 28
+	paternalism = 15
+	despotism = 0
+	ultranationalism = 0
+	fascism = 10
 	national_socialism = 5
-	occultism = 5
+	occultism = 0
 }
 
-set_convoys = 50
+set_convoys = 112

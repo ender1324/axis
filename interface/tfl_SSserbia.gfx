@@ -18,4 +18,9 @@ spriteTypes = {
 		name = "GFX_idea_SSW_ultimate_goal"
 		textureFile = "gfx/ideas/SSW/SSW_ultimate_goal.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_SSW_serbian_refugees"
+		textureFile = "gfx/ideas/SSW/SSW_serbian_refugees.dds"
+	}
 }

@@ -74,5 +74,28 @@ ideas = {
 				custom_modifier_tooltip = SSW_ultimate_goal_modifier
 			}	
 		}
+
+		### For neighbouring countries ###
+		SSW_serbian_refugees = {
+			name = SSW_serbian_refugees
+			picture = SSW_serbian_refugees
+			allowed = {
+				OR = {
+					tag = ROM
+					tag = BUL
+					tag = HUN
+					tag = CRO
+					tag = GRE
+					tag = ALB
+					tag = ITA
+					tag = TUR
+				}
+			}
+
+			modifier = {
+				war_support_factor = -0.01
+				monthly_population = 0.01
+			}
+		}
 	}
 }
