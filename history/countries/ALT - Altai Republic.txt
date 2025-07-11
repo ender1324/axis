@@ -1,5 +1,24 @@
 ﻿capital = 40 # Altay
 
+add_dynamic_modifier = { modifier = RUS_demographic_crisis }
+set_variable = { RUS_demographic_crisis_monthly_population = -1.00 }
+set_variable = { RUS_demographic_crisis_consumer_goods_expected_value = 0.10 }
+set_variable = { RUS_demographic_crisis_social_cost_multiplier_modifier = 0.25 }
+set_variable = { RUS_demographic_crisis_population_tax_income_multiplier_modifier = -0.20 }
+set_variable = { RUS_demographic_crisis_state_productivity_growth_modifier = -0.5 }
+set_variable = { RUS_demographic_crisis_gdp_from_resource_sector_modifier = -0.25 }
+set_variable = { RUS_demographic_crisis_conscription = -0.01 }
+set_variable = { RUS_demographic_crisis_personnel_cost_multiplier_modifier = 0.15 }
+add_dynamic_modifier = { modifier = RUS_military_defeatism }
+set_variable = { RUS_military_defeatism_conscription_factor = -0.50 }
+set_variable = { RUS_military_defeatism_war_support_factor = -0.25 }
+set_variable = { RUS_military_defeatism_experience_gain_army_factor = -0.50 }
+set_variable = { RUS_military_defeatism_weekly_manpower = -500 }
+set_variable = { RUS_military_defeatism_army_attack_against_major_factor = -0.25 }
+set_variable = { RUS_military_defeatism_army_defence_against_major_factor = -0.25 }
+set_variable = { RUS_military_defeatism_org_loss_at_low_org_factor = 0.25 }
+set_variable = { RUS_military_defeatism_surrender_limit = -0.25 }
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -4,6 +4,59 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	# Country
+	# LAWS
+	sl_devolved_unitary_state
+	sl_state_press
+	sl_state_atheism
+	sl_racial_hierarchy
+	sl_women_in_workplace
+	sl_banned_protests
+	# economy laws
+	sl_rentier_economy
+	sl_low_income_taxation
+	sl_protectionist_tariffs
+	sl_state_controlled_unions
+	sl_twelve_hour_workday
+	sl_immigration_closed
+	# Public Structure
+	sl_racial_purity
+	sl_state_policing4
+	sl_penal_labour
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits2
+	# Military Structure
+	sl_military_spending4
+	# Secondary Leaders
+}
+add_dynamic_modifier = { modifier = RUS_german_bombing }
+set_variable = { RUS_german_bombing_monthly_population = -2.50 }
+set_variable = { RUS_german_bombing_stability_factor = -0.15 }
+set_variable = { RUS_german_bombing_consumer_goods_factor = 0.15 }
+set_variable = { RUS_german_bombing_production_factory_efficiency_gain_factor = -0.15 }
+set_variable = { RUS_german_bombing_production_speed_buildings_factor = -0.15 }
+set_variable = { RUS_german_bombing_attrition = 0.05 }
+add_dynamic_modifier = { modifier = RUS_demographic_crisis }
+set_variable = { RUS_demographic_crisis_monthly_population = -1.00 }
+set_variable = { RUS_demographic_crisis_consumer_goods_expected_value = 0.10 }
+set_variable = { RUS_demographic_crisis_social_cost_multiplier_modifier = 0.25 }
+set_variable = { RUS_demographic_crisis_population_tax_income_multiplier_modifier = -0.20 }
+set_variable = { RUS_demographic_crisis_state_productivity_growth_modifier = -0.5 }
+set_variable = { RUS_demographic_crisis_gdp_from_resource_sector_modifier = -0.25 }
+set_variable = { RUS_demographic_crisis_conscription = -0.01 }
+set_variable = { RUS_demographic_crisis_personnel_cost_multiplier_modifier = 0.15 }
+add_dynamic_modifier = { modifier = RUS_military_defeatism }
+set_variable = { RUS_military_defeatism_conscription_factor = -0.50 }
+set_variable = { RUS_military_defeatism_war_support_factor = -0.25 }
+set_variable = { RUS_military_defeatism_experience_gain_army_factor = -0.50 }
+set_variable = { RUS_military_defeatism_weekly_manpower = -500 }
+set_variable = { RUS_military_defeatism_army_attack_against_major_factor = -0.25 }
+set_variable = { RUS_military_defeatism_army_defence_against_major_factor = -0.25 }
+set_variable = { RUS_military_defeatism_org_loss_at_low_org_factor = 0.25 }
+set_variable = { RUS_military_defeatism_surrender_limit = -0.25 }
+
 set_politics = {
 	ruling_party = despotism
 	last_election = "1953.01.01"

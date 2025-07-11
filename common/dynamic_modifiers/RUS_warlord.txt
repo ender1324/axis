@@ -1,0 +1,60 @@
+RUS_german_bombing = {
+	enable = { 
+		OR = {
+			tag = RAR
+			tag = ROA
+			tag = RRO
+			tag = BSK
+			tag = COD
+			tag = MAG
+			tag = DFR
+		}
+	}
+
+	icon = GFX_idea_RUS_german_bombing
+
+	monthly_population = RUS_german_bombing_monthly_population
+	stability_factor = RUS_german_bombing_stability_factor
+	consumer_goods_factor = RUS_german_bombing_consumer_goods_factor
+	production_factory_efficiency_gain_factor = RUS_german_bombing_production_factory_efficiency_gain_factor
+	production_speed_buildings_factor = RUS_german_bombing_production_speed_buildings_factor
+	attrition = RUS_german_bombing_attrition
+	custom_effect_tooltip = {
+		tooltip = RUS_german_bombing_custom_effect_tooltip
+	}
+
+	# Bonuses
+	industry_free_repair_factor = RUS_german_bombing_industry_free_repair_factor
+	static_anti_air_hit_chance_factor = RUS_german_bombing_static_anti_air_hit_chance_factor
+}
+
+RUS_demographic_crisis = {
+	enable = { is_russian_warlord = yes }
+	icon = GFX_idea_RUS_demographic_crisis
+
+	monthly_population = RUS_demographic_crisis_monthly_population
+	consumer_goods_expected_value = RUS_demographic_crisis_consumer_goods_expected_value
+	social_cost_multiplier_modifier = RUS_demographic_crisis_social_cost_multiplier_modifier
+	population_tax_income_multiplier_modifier = RUS_demographic_crisis_population_tax_income_multiplier_modifier
+	state_productivity_growth_modifier = RUS_demographic_crisis_state_productivity_growth_modifier
+	gdp_from_resource_sector_modifier = RUS_demographic_crisis_gdp_from_resource_sector_modifier
+
+	conscription = RUS_demographic_crisis_conscription
+	personnel_cost_multiplier_modifier = RUS_demographic_crisis_personnel_cost_multiplier_modifier
+}
+
+RUS_military_defeatism = {
+	enable = { is_russian_warlord = yes }
+	icon = GFX_idea_RUS_military_defeatism
+
+	conscription_factor = RUS_military_defeatism_conscription_factor
+	war_support_factor = RUS_military_defeatism_war_support_factor
+	experience_gain_army_factor = RUS_military_defeatism_experience_gain_army_factor
+	weekly_manpower = RUS_military_defeatism_weekly_manpower
+	army_attack_factor = RUS_military_defeatism_army_attack_factor
+	army_defence_factor = RUS_military_defeatism_army_defence_factor
+	army_attack_against_major_factor = RUS_military_defeatism_army_attack_against_major_factor
+	army_defence_against_major_factor = RUS_military_defeatism_army_defence_against_major_factor
+	org_loss_at_low_org_factor = RUS_military_defeatism_org_loss_at_low_org_factor
+	surrender_limit = RUS_military_defeatism_surrender_limit
+}

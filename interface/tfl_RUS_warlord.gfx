@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_RUS_german_bombing"
+		textureFile = "gfx/ideas/RUS_warlord/RUS_german_bombing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RUS_demographic_crisis"
+		textureFile = "gfx/ideas/RUS_warlord/RUS_demographic_crisis.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_RUS_military_defeatism"
+		textureFile = "gfx/ideas/RUS_warlord/RUS_military_defeatism.dds"
+	}
+}
