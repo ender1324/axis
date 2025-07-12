@@ -7,8 +7,9 @@ state = {
 		# none lol
 	}
 	history = {
-		owner = CRO
+		owner = ITA
 		add_core_of = CRO
+		add_core_of = ITA
 		victory_points = {
 			3974 1 # Knin
 		}
