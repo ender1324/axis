@@ -1,0 +1,1016 @@
+#Main tree
+focus_tree = {
+	id = Kaukasia_start
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RKK
+		}
+	}
+	default = no
+	shared_focus = RKK_The_Colony_In_The_Mountain
+	continuous_focus_position = { x = 50 y = 7000 }
+}
+
+focus_tree = {
+	id = Huttig_Tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RKK
+		}
+	}
+	default = no
+	shared_focus = RKK_The_New_Boss
+	continuous_focus_position = { x = 50 y = 7000 }
+}
+
+shared_focus = {
+	id =  RKK_The_Colony_In_The_Mountain
+	icon = GFX_RKK_The_Colony_in_the_Mountain
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Colony_In_The_Mountain"
+		country_event = {
+			id = RKK.1
+		}
+    }
+	x = 6
+	y = 0
+}
+shared_focus = {
+	id =  RKK_Our_Place_In_The_Reich
+	icon = GFX_A_Visit_To_Berlin
+	prerequisite = {
+		focus = RKK_The_Colony_In_The_Mountain
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Our_Place_In_The_Reich"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 6
+	y = 1
+}
+shared_focus = {
+	id =  RKK_A_Tourist_Spot
+	icon = GFX_RKK_Attract_German_Tourists
+	prerequisite = {
+		focus = RKK_Our_Place_In_The_Reich
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Tourist_Spot"
+        add_timed_idea = {
+            idea = RKK_Tourists_Spot
+            days = 180
+        }     
+    }
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id =  RKK_Road_To_Arminiusstadt
+	icon = GFX_RKK_Attract_German_Tourists
+	prerequisite = {
+		focus = RKK_A_Tourist_Spot
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Road_To_Arminiusstadt"
+		country_event = {
+			id = RKK.1
+		}
+    }
+	x = 5
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Secure_The_Zones
+	icon = GFX_Generic_Parade
+	prerequisite = {
+		focus = RKK_A_Tourist_Spot
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Secure_The_Zones"
+        add_timed_idea = {
+            idea = RKK_Increased_Security
+            days = 360
+        }     
+    }
+	x = 7
+	y = 3
+}
+shared_focus = {
+	id =  RKK_A_Trip_To_Kaukasia
+	icon = GFX_RKK_A_Trip_in_Kaukasia
+	prerequisite = {
+		focus = RKK_Road_To_Arminiusstadt
+	}
+	prerequisite = {
+		focus = RKK_Secure_The_Zones
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Trip_To_Kaukasia"
+		country_event = {
+			id = RKK.3
+		}
+    }
+	x = 6
+	y = 4
+}
+shared_focus = {
+	id =  RKK_The_Conference
+	icon = GFX_RKK_Conference
+	prerequisite = {
+		focus = RKK_A_Trip_To_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Conference"
+		add_political_power = 100
+		country_event = {
+			id = RKK.4
+		}
+    }
+	x = 3
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Prepare_The_Government
+	icon = GFX_Generic_Swastika
+	prerequisite = {
+		focus = RKK_The_Conference
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Prepare_The_Government"
+        add_political_power = 100
+    }
+	x = 2
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Invite_The_Collaborators
+	icon = GFX_Generic_Fascist_Demand
+	prerequisite = {
+		focus = RKK_The_Conference
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Invite_The_Collaborators"
+		country_event = {
+			id = RKK.5
+		}
+    }
+	x = 4
+	y = 6
+}
+shared_focus = {
+	id =  RKK_The_Conference_Begin
+	icon = GFX_Generic_Mic
+	prerequisite = {
+		focus = RKK_Prepare_The_Government
+	}
+	prerequisite = {
+		focus = RKK_Invite_The_Collaborators
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Conference_Begin"
+		country_event = {
+			id = RKK.6
+		}
+    }
+	x = 3
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Smoke_and_Oil
+	icon = GFX_RKK_Expand_The_Industrial_Sector
+	prerequisite = {
+		focus = RKK_A_Trip_To_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Smoke_and_Oil"
+	    231 = {
+	        add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	        }
+        }
+	    229 = {
+	        add_extra_state_shared_building_slots = 1
+	        add_building_construction = {
+		        type = industrial_complex
+		        level = 1
+		        instant_build = yes
+	        }
+        }
+    }
+	x = 9
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Clean_Arminiusstad
+	icon = GFX_RKK_Clean_Arminiusstadt
+	prerequisite = {
+		focus = RKK_Smoke_and_Oil
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Clean_Arminiusstad"
+		add_political_power = 100
+	    234 = {
+	        add_extra_state_shared_building_slots = 2
+	        add_building_construction = {
+		        type = offices
+		        level = 2
+		        instant_build = yes
+	        }
+        }
+    }
+	x = 8
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Increase_Shipment
+	icon = GFX_RKK_Clean_Arminiusstadt
+	prerequisite = {
+		focus = RKK_Smoke_and_Oil
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Increase_Shipment"
+		234 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		229 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		231 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		821 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+	x = 10
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Land_Of_Black_Gold
+	icon = GFX_RKK_The_Colony_in_the_Mountain
+	prerequisite = {
+		focus = RKK_Increase_Shipment
+	}
+	prerequisite = {
+		focus = RKK_Clean_Arminiusstad
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Land_Of_Black_Gold"
+	    add_ideas = {
+		     RKK_Land_of_Black_Gold
+	    }
+    }
+	x = 9
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Dawn_Over_Caucasia
+	icon = GFX_Generic_Swastika
+	prerequisite = {
+		focus = RKK_The_Conference_Begin
+	}
+	prerequisite = {
+		focus = RKK_Land_Of_Black_Gold
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Dawn_Over_Caucasia"
+        add_stability = 0.1
+		hidden_effect = {
+			country_event = {
+				id = RKK.7
+				days = 10
+		}
+		}
+    }
+	x = 6
+	y = 8
+}
+
+
+##HUTTIG##
+shared_focus = {
+	id =  RKK_The_New_Boss
+	icon = GFX_RKK_Rosenberg
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_New_Boss"
+		country_event = {
+			id = RKK.1
+		}
+    }
+	x = 6
+	y = 0
+}
+shared_focus = {
+	id =  RKK_Proud_Son_Of_Germany
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_The_New_Boss
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Proud_Son_Of_Germany"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 6
+	y = 1
+}
+shared_focus = {
+	id =  RKK_Fog_Over_The_Mountains
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Proud_Son_Of_Germany
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Fog_Over_The_Mountains"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id =  RKK_Iron_Cities
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = {
+		focus = RKK_Fog_Over_The_Mountains
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Iron_Cities"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 4
+	y = 3
+}
+shared_focus = {
+	id =  RKK_The_Heart_Of_Kaukasia
+	icon = GFX_goal_molotov_ribbentrop_pact
+	prerequisite = {
+		focus = RKK_Iron_Cities
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Heart_Of_Kaukasia"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 3
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Increase_The_Raffineries
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = {
+		focus = RKK_Iron_Cities
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Increase_The_Raffineries"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 5
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Expand_The_Cities
+	icon = GFX_goal_generic_fortify_city
+	prerequisite = {
+		focus = RKK_Increase_The_Raffineries
+	}
+	prerequisite = {
+		focus = RKK_The_Heart_Of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Expand_The_Cities"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 4
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Kaukasia_Five_Years_Plan
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Expand_The_Cities
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Kaukasia_Five_Years_Plan"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 3
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Dig_Deeper
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Expand_The_Cities
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Dig_Deeper"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 5
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Pressure_The_Compagnies
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Kaukasia_Five_Years_Plan
+	}
+	prerequisite = {
+		focus = RKK_Dig_Deeper
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Pressure_The_Compagnies"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 4
+	y = 7
+}
+shared_focus = {
+	id =  RKK_The_Pearl_Of_Kaukasia
+	icon = GFX_goal_generic_construct_infrastructure
+	prerequisite = {
+		focus = RKK_Fog_Over_The_Mountains
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Pearl_Of_Kaukasia"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 0
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Destroy_Useless_Buildings
+	icon = GFX_goal_generic_construct_civilian
+	prerequisite = {
+		focus = RKK_The_Pearl_Of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Destroy_Useless_Buildings"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = -1
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Repurpose_The_Bricks
+	icon = GFX_goal_generic_construction
+	prerequisite = {
+		focus = RKK_Destroy_Useless_Buildings
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Repurpose_The_Bricks"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = -1
+	y = 5
+}
+shared_focus = {
+	id =  RKK_U_Bahn_of_Arminiusstadt
+	icon = GFX_goal_generic_position_armies
+	prerequisite = {
+		focus = RKK_The_Pearl_Of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_U_Bahn_of_Arminiusstadt"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 1
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Enforce_Segregation
+	icon = GFX_goal_support_fascism
+	prerequisite = {
+		focus = RKK_U_Bahn_of_Arminiusstadt
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Enforce_Segregation"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 1
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Great_Projects
+	icon = GFX_goal_generic_attack_allies
+	prerequisite = {
+		focus = RKK_Repurpose_The_Bricks
+	}
+	prerequisite = {
+		focus = RKK_Enforce_Segregation
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Great_Projects"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 0
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Fund_From_The_Richs
+	icon = GFX_goal_generic_military_deal
+	prerequisite = {
+		focus = RKK_Great_Projects
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Fund_From_The_Richs"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 0
+	y = 7
+}
+shared_focus = {
+	id =  RKK_The_Castes_Of_Kaukasia
+	icon = GFX_goal_tfv_saf_support_ossebrandwag
+	prerequisite = {
+		focus = RKK_Fog_Over_The_Mountains
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Castes_Of_Kaukasia"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 8
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Limited_Freedom
+	icon = GFX_goal_continuous_restrict_freedom
+	prerequisite = {
+		focus = RKK_The_Castes_Of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Limited_Freedom"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 7
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Keep_An_Eye
+	icon = GFX_goal_generic_intelligence_exchange
+	prerequisite = {
+		focus = RKK_The_Castes_Of_Kaukasia
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Keep_An_Eye"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 9
+	y = 4
+}
+shared_focus = {
+	id =  RKK_Watchtowers_The_Worker_Streets
+	icon = GFX_goal_generic_radar
+	prerequisite = {
+		focus = RKK_Limited_Freedom
+	}
+	prerequisite = {
+		focus = RKK_Keep_An_Eye
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Watchtowers_The_Worker_Streets"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 8
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Reform_The_System
+	icon = GFX_goal_generic_demand_territory
+	prerequisite = {
+		focus = RKK_Watchtowers_The_Worker_Streets
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Reform_The_System"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 8
+	y = 6
+}
+shared_focus = {
+	id =  RKK_A_Calmer_Day
+	icon = GFX_focus_GER_glorify_party_rallies
+	prerequisite = {
+		focus = RKK_Reform_The_System
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Calmer_Day"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 8
+	y = 7
+}
+shared_focus = {
+	id =  RKK_One_Big_Machine
+	icon = GFX_goal_generic_production
+	prerequisite = {
+		focus = RKK_Pressure_The_Compagnies
+	}
+	prerequisite = {
+		focus = RKK_Fund_From_The_Richs
+	}
+	prerequisite = {
+		focus = RKK_A_Calmer_Day
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_One_Big_Machine"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 6
+	y = 8
+}
+shared_focus = {
+	id =  RKK_Kaukasia_Rise
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Proud_Son_Of_Germany
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Kaukasia_Rise"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 2
+}
+shared_focus = {
+	id =  RKK_Purge_The_Weaks
+	icon = GFX_focus_SWE_neither_death_nor_dishonor
+	prerequisite = {
+		focus = RKK_Kaukasia_Rise
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Purge_The_Weaks"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 14
+	y = 3
+}
+shared_focus = {
+	id =  RKK_Purge_The_Traitors
+	icon = GFX_goal_generic_dangerous_deal
+	prerequisite = {
+		focus = RKK_Kaukasia_Rise
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Purge_The_Traitors"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 16
+	y = 3
+}
+shared_focus = {
+	id =  RKK_A_Loyal_Government
+	icon = GFX_focus_ger_oppose_hitler
+	prerequisite = {
+		focus = RKK_Purge_The_Weaks
+	}
+	prerequisite = {
+		focus = RKK_Purge_The_Traitors
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_Loyal_Government"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 4
+}
+shared_focus = {
+	id =  RKK_The_Troubled_North
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_A_Loyal_Government
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Troubled_North"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Hunt_The_Partisans
+	icon = GFX_Generic_Anti_Communism_Guns
+	prerequisite = {
+		focus = RKK_The_Troubled_North
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Hunt_The_Partisans"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Isolate_The_Villages
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Hunt_The_Partisans
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Isolate_The_Villages"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Our_Duty_To_The_Germans
+	icon = GFX_Generic_People_Rally
+	prerequisite = {
+		focus = RKK_A_Loyal_Government
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Our_Duty_To_The_Germans"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 18
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Kaukasia_National_Radio
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Our_Duty_To_The_Germans
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Kaukasia_National_Radio"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 17
+	y = 6
+}
+shared_focus = {
+	id =  RKK_A_TV_In_All_Homes
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Kaukasia_National_Radio
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_A_TV_In_All_Homes"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 17
+	y = 7
+}
+shared_focus = {
+	id =  RKK_The_Aryan_Blood
+	icon = GFX_Generic_Ayan
+	prerequisite = {
+		focus = RKK_Our_Duty_To_The_Germans
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Aryan_Blood"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 19
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Settler_Land_Grants
+	icon = GFX_Generic_Fascist_Demand
+	prerequisite = {
+		focus = RKK_The_Aryan_Blood
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Settler_Land_Grants"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 19
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Kaukasian_Unity
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_A_Loyal_Government
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Kaukasian_Unity"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 12
+	y = 5
+}
+shared_focus = {
+	id =  RKK_Promote_A_New_Culture
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Kaukasian_Unity
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Promote_A_New_Culture"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 11
+	y = 6
+}
+shared_focus = {
+	id =  RKK_Weaken_The_Collaborators
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Kaukasian_Unity
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Weaken_The_Collaborators"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 13
+	y = 6
+}
+shared_focus = {
+	id =  RKK_The_Model_Colony
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_Promote_A_New_Culture
+	}
+	prerequisite = {
+		focus = RKK_Weaken_The_Collaborators
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_The_Model_Colony"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 12
+	y = 7
+}
+shared_focus = {
+	id =  RKK_Burn_Maurice_Failure
+	icon = GFX_Generic_Nazi_Flag
+	prerequisite = {
+		focus = RKK_The_Model_Colony
+	}
+	prerequisite = {
+		focus = RKK_Settler_Land_Grants
+	}
+	prerequisite = {
+		focus = RKK_A_TV_In_All_Homes
+	}
+	prerequisite = {
+		focus = RKK_Isolate_The_Villages
+	}
+	cost = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus RKK_Burn_Maurice_Failure"
+		country_event = {
+			id = RKK.2
+		}
+    }
+	x = 15
+	y = 8
+}
