@@ -138,9 +138,12 @@
  RKU_DEF: "The Reichskommissariat Ukraine"
  RKU_ADJ: "Carpatian German"
  
- RKK: "Reichskommissariat Kaukasien"
- RKK_DEF: "Der Reichskommissariat Kaukasien"
+ RKK: "Reichskommissariat Kaukasia"
+ RKK_DEF: "Der Reichskommissariat Kaukasia"
  RKK_ADJ: "Caucasian German"
+ RKK_fascism: "Reichskommissariat Kaukasia"
+ RKK_fascism_DEF: "Der Reichskommissariat Kaukasia"
+ RKK_fascism_ADJ: "Caucasian German"
  RKK_occultism: "Kaukasien Reich"
  RKK_occultism_DEF: "The Kaukasien Reich"
  RKK_occultism_ADJ: "Caucasian German"
@@ -161,6 +164,10 @@
  RKM_DEF: "The Reichskommissariat Mittleafrika"
  RKM_ADJ: "Mittleafrikan"
 
+ RMA: "RK. Madagaskar"
+ RMA_DEF: "The Reichskommissariat Madagaskar"
+ RMA_ADJ: "Madagaskarian"
+
  # SS Serbia
  SSW: "SS-Arisches-Siedlungsgebiet Südslawiens"
  SSW_DEF: "the SS-Arisches-Siedlungsgebiet Südslawiens"
@@ -170,8 +177,8 @@
  SSW_GER_subject_ADJ: "Südslawien"
 
  # Italy
- ITA_fascism:0 "Kingdom of Italy"
- ITA_fascism_DEF:0 "Kingdom of Italy"
+ ITA_fascism:0 "Italian Empire"
+ ITA_fascism_DEF:0 "the Italian Empire"
  ITA_fascism_ADJ:0 "Italian"
 
  # Italian Emirates / UAE
@@ -751,12 +758,12 @@
 
  # Papua New
  PNG_JAP_subject: "Republic of Papua New Guinea"
- PNG_JAP_subject_DEF: "Free Republic of Papua New Guinea"
+ PNG_JAP_subject_DEF: "the Free Republic of Papua New Guinea"
  PNG_JAP_subject_ADJ: "Papuan"
 
  # Siam
  SIA: "Kingdom of Thailand"
- SIA_DEF: "Kingdom of Thailand"
+ SIA_DEF: "the Kingdom of Thailand"
  SIA_ADJ: "Thai"
 
  # Persia
@@ -791,7 +798,7 @@
  RAJ: "India"
  RAJ_DEF: "India"
  RAJ_ADJ: "Indian"
- AZH: "Bengal"
+ AZH: "Government of Azad Hind"
  AZH_DEF: "the Provisional Government of Free India"
  AZH_ADJ: "Indian"
  SKI: "Sikkim"
