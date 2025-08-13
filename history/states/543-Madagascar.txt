@@ -8,8 +8,9 @@ state={
 	
 	history={
 		add_core_of = MAD
+		add_core_of = RMA
 		add_claim_by = FRA
-		owner = RKM
+		owner = RMA
 		victory_points = {
 			5128 1
 		}

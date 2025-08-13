@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = ASS
+		owner = AZH
 		add_core_of = ASS
 		add_core_of = RAJ
 		add_core_of = AZH

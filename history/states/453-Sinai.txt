@@ -6,7 +6,7 @@ state={
 
 
 	history = {
-		owner = EGY
+		owner = PAL
 		buildings = {
 			infrastructure = 1
 			10099 = {
@@ -24,6 +24,7 @@ state={
 			10099 1
 		}
 		add_core_of = EGY
+		add_core_of = PAL
 
 	}
 
