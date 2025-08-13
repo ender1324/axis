@@ -62,6 +62,10 @@ RKM = {
 	color = rgb { 80 80 80 }
 	color_ui = rgb { 80 80 80 }
 }
+RMA = {
+	color = rgb { 47 56 68 }
+	color_ui = rgb { 47 56 68 }
+}
 
 # SS Serbia
 SSW = {
