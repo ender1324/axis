@@ -1,302 +1,161 @@
-add_namespace = rkk
-add_namespace = rkk_R
-add_namespace = rkk_Turkey
-add_namespace = rkk_ss
+add_namespace = RKK
 
 
 country_event = {
-	id = rkk.1 #The Colony in the Mountain
-	title = rkk.1.t
-	desc = rkk.1.d
+	id = RKK.1 #The Colony in the Mountain
+	title = RKK.1.t
+	desc = RKK.1.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.1.a
+		name = RKK.1.a
         }
 	}
 country_event = {
-	id = rkk.2 #Maurice
-	title = rkk.2.t
-	desc = rkk.2.d
+	id = RKK.2 #Our Place
+	title = RKK.2.t
+	desc = RKK.2.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.2.a
+		name = RKK.2.a
         }
 	}
 country_event = {
-	id = rkk.3 
-	title = rkk.3.t
-	desc = rkk.3.d
+	id = RKK.3 #Trip to Kaukasia
+	title = RKK.3.t
+	desc = RKK.3.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.3.a
+		name = RKK.3.a
         }
 	}
 country_event = {
-	id = rkk.4 #A New Bureaucracy
-	title = rkk.4.t
-	desc = rkk.4.d
+	id = RKK.4 #Conference
+	title = RKK.4.t
+	desc = RKK.4.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.4.a
+		name = RKK.4.a
         }
 	}
 country_event = {
-	id = rkk.5 #Maurice get proposed some plans to Germanize Caucasia
-	title = rkk.5.t
-	desc = rkk.5.d
+	id = RKK.5 #Collaborator
+	title = RKK.5.t
+	desc = RKK.5.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.5.a
+		name = RKK.5.a
         }
 	}
 country_event = {
-	id = rkk.6 #Maurice Flee Caucasia
-	title = rkk.6.t
-	desc = rkk.6.d
+	id = RKK.6 #Conference Begin
+	title = RKK.6.t
+	desc = RKK.6.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.6.a
-		retire_character = RKK_Emil_Maurice
-        add_country_leader_role = {
-            character = RKK_Wilhelm_Keitel
-            promote_leader = yes
-                country_leader = {
-                  ideology = national_socialism_subtype
-                  expire = "1965.1.1.1"
-            }
-         }
-        hidden_effect = {
-		load_focus_tree = { tree = Kaukasus_Keitel }
-	        }
-        }
-	option = {
-		name = rkk.6.b
-        set_politics = {
-			ruling_party = occultism
-			elections_allowed = no
-			last_election = "1953.01.01"
-			election_frequency = 48
-	    }
-        hidden_effect = {
-		load_focus_tree = { tree = Kaukasus_Occultism }
-	    }
-    }
- }
-country_event = {
-	id = rkk.7 #Transcaucasian Separate
-	title = rkk.7.t
-	desc = rkk.7.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk.7.a
-		TCS = {
-			add_state_core = 238
-			add_state_core = 237
-			transfer_state = 238
-			transfer_state = 237
-			declare_war_on = { target = RKK type = annex_everything }
-            hidden_effect = {
-			    load_oob = TCS_1953
-			    leave_faction = yes			    
-                GER = { end_puppet = RKK }
-		    }
-		}		
-    }
- }
-country_event = {
-	id = rkk.8 
-	title = rkk.8.t
-	desc = rkk.8.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk.8.a
+		name = RKK.6.a
         }
 	}
 country_event = {
-	id = rkk.9 
-	title = rkk.9.t
-	desc = rkk.9.d
+	id = RKK.7 #Maurice Plane
+	title = RKK.7.t
+	desc = RKK.7.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk.9.a
+		name = RKK.7.a
+		hidden_effect = {
+          country_event = { id = RKK.8 days = 5 }
         }
 	}
-country_event = {
-	id = rkk.10 
-	title = rkk.10.t
-	desc = rkk.10.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk.10.a
-        }
-	}
-country_event = {
-	id = rkk.11 #Victory again Partisans
-	title = rkk.11.t
-	desc = rkk.11.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-
-	trigger = {
-	TAG = RKK
-		TCS = {
-			has_capitulated = yes
-		}
-	}
-	
-	option = {
-		name = rkk.11.a
-		GER = { 
-		   puppet = RKK
-        }
-	}
- }
-
-#Rosenberg
-country_event = {
-	id = rkk_R.1 #The New Boss
-	title = rkk_R.1.t
-	desc = rkk_R.1.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk_R.1.a
-        }
-	}
-country_event = {
-	id = rkk_R.2
-	title = rkk_R.2.t
-	desc = rkk_R.2.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk_R.2.a
-        }
-	}
-country_event = {
-	id = rkk_R.3
-	title = rkk_R.3.t
-	desc = rkk_R.3.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rkk_R.3.a
-        }
-	}
-country_event = {
-    id = rkk_R.4
-	title = rkk_R.4.t
-	desc = rkk_R.4.d
-	picture = GFX_report_event_FIN_helsinki_bombed
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = rrkk_Rkk.4.a
-        add_popularity = {
-			ideology = occultism
-			popularity = -0.1
-		}
-     }
 }
 country_event = {
-	id = rkk_R.5
-	title = rkk_R.5.t
-	desc = rkk_R.5.d
+	id = RKK.8 #Maurice Leave Caucasia
+	title = RKK.8.t
+	desc = RKK.8.d
 	picture = GFX_report_event_FIN_helsinki_bombed
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = rkk_R.5.a
+		name = RKK.8.a
+		hidden_effect = {
+          country_event = { id = RKK.9 days = 2 }
         }
 	}
-
-
+}
 country_event = {
-	id = rkk_Turkey.1 #Turkey surrender
-	title = rkk_Turkey.1.t
-	desc = rkk_Turkey.1.d
+	id = RKK.9 #Maurice is actually in America
+	title = RKK.9.t
+	desc = RKK.9.d
 	picture = GFX_report_event_FIN_helsinki_bombed
-
-	fire_only_once = yes
-
-
-	trigger = {
-	TAG = RKK
-		TUR = {
-			surrender_progress > 0.05
-	}
- }
+	
+	is_triggered_only = yes
 	
 	option = {
-		name = rkk_Turkey.1.a
-		RKK = {
-			transfer_state = 1044
-			transfer_state = 230
-			white_peace = TUR
-		}
-
+		name = RKK.9.a
+		hidden_effect = {
+          country_event = { id = RKK.10 days = 3 }
+        }
     }
- }
+}
 country_event = {
-	id = rkk_Turkey.2 #Kaukasia surrender
-	title = rkk_Turkey.2.t
-	desc = rkk_Turkey.2.d
+	id = RKK.10 #New Reichkommissar
+	title = RKK.10.t
+	desc = RKK.10.d
 	picture = GFX_report_event_FIN_helsinki_bombed
-
-	fire_only_once = yes
-
-
-	trigger = {
-	TAG = TUR
-		RKK = {
-			surrender_progress > 0.1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RKK.10.a
+		 add_country_leader_role = {
+		 character = RKK_Hans_Huttig
+		 promote_leader = yes
+				country_leader = {
+				ideology = national_socialism_subtype
+				expire = "1970.1.1.1"
+			}
+		}
+		hidden_effect = {
+          load_focus_tree = { tree = Huttig_Tree }
+        }
+	}
+	option = {
+		name = RKK.10.b
+		 add_country_leader_role = {
+		 character = RKK_Odilo_Globotschnig
+		 promote_leader = yes
+				country_leader = {
+				ideology = national_socialism_subtype
+				expire = "1970.1.1.1"
+			}
 		}
 	}
-    option = {
-		name = rkk_Turkey.2.a
-		RKK = {
-            white_peace = TUR
-            country_event = { id = rkk.7 days = 3 }
-		}
-
-    }
- }
+	option = {
+		name = RKK.10.c
+    set_politics = {
+        ruling_party = fascism
+	    elections_allowed = no
+       }
+	}
+}
