@@ -16,7 +16,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			spriteType ="GFX_tiled_bg"
+			spriteType ="GFX_tiled_window_thin_border"
 		}
 
 		containerWindowType = {
@@ -236,16 +236,16 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 
-				iconType = {
-					name = "top_bg"
-					spriteType = "GFX_diplo_upper_diplo_bg"
-					position = { x = 268 y = 0 }
-					alwaystransparent = yes
-				}
+				# iconType = {
+				# 	name = "top_bg"
+				# 	spriteType = "GFX_diplo_upper_diplo_bg"
+				# 	position = { x = 268 y = 0 }
+				# 	alwaystransparent = yes
+				# }
 
 				containerWindowType = {
 					name = "political_pie_chart"
-					position = { x = 271 y = 10 }
+					position = { x = 284 y = 45 }
 					size = { width=330 height=30 }
 					clipping = no
 
@@ -258,13 +258,13 @@ guiTypes = {
 					iconType ={
 						name ="pol_view_bg"
 						spriteType = "GFX_pol_piechart_overlay"
-						position = { x= 16 y = 0 }
+						position = { x= 13 y = -2 }
 					}
 				}
 
 				containerWindowType = {
 					name = "ruling_party_info"
-					position = { x = 380 y = 25 }
+					position = { x = 271 y = 25 }
 					size = { width = 255 height = 60 }
 					clipping = no
 
@@ -273,27 +273,30 @@ guiTypes = {
 						position = { x = 5 y = -10 }
 						font = "hoi_16mbs"
 						text = "party"
-						maxWidth = 140
+						maxWidth = 110
 						maxHeight = 20
+						format = center
 						fixedsize = yes
 					}
 
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = 5 y = 5 }
+						position = { x = 0 y = 5 }
 						font = "hoi_16mbs"
 						text = "ideology"
 						maxWidth = 140
-						maxHeight = 50
+						maxHeight = 20
+						format = center
 					}
 
 					instantTextboxType = {
 						name = "elections"
-						position = { x = 5 y = 35 }
+						position = { x = 4 y = 110 }
 						font = "hoi_16mbs"
 						text = "elections"
-						maxWidth = 140
-						maxHeight = 20
+						maxWidth = 110
+						maxHeight = 40
+						format = center
 					}
 				}
 
@@ -5111,33 +5114,6 @@ guiTypes = {
 	containerWindowType = {
 		name = "diplomacy_vice_leader"
 		position = { x = 147 y = 110 }
-		
-#		iconType = {
-#			name = "vice_leader_picture"
-#			position = { x = 183 y = 58 }
-#			pdx_tooltip = VL_state_tt
-#			pdx_tooltip_delayed = VL_desc_tt
-#		}
-#		
-#		iconType = {
-#			name = "vice_leader_frame"
-#			spriteType = "GFX_pol_leader_frame"
-#			position = { x = 175 y = 44 }		
-#			alwaystransparent = yes
-#		}
-#		
-#		instantTextboxType = {
-#			name = "vice_leader_name"
-#			position = { x = 183 y = 262 }
-#			font = "hoi_18mbs"
-#			text = "[VL_name]"
-#			pdx_tooltip = VL_state_tt
-#			pdx_tooltip_delayed = VL_desc_tt
-#			maxWidth = 155
-#			maxHeight = 36
-#			format = center
-#			vertical_alignment = center
-#		}
 				
 		iconType = {
 			name = "vice_leader_portrait"
@@ -5155,73 +5131,73 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		iconType = {
-			name = "diplo_leader_status_icon"
-			position = { x = 127 y = 100 }
-			spriteType = "GFX_generic_text_bg_88"
-		}
+		# iconType = {
+		# 	name = "diplo_leader_status_icon"
+		# 	position = { x = 127 y = 100 }
+		# 	spriteType = "GFX_generic_text_bg_88"
+		# }
 		
-		instantTextboxType = {
-			name = "diplo_leader_status"
-			position = { x = 129 y = 94 }
-			font = "hoi_18mbs"
-			text = "SL_guiscreen_mainleader_status"
-			maxWidth = 82
-			maxHeight = 36
-			format = center
-			vertical_alignment = center
-			fixedsize = yes
-		}
+		# instantTextboxType = {
+		# 	name = "diplo_leader_status"
+		# 	position = { x = 129 y = 94 }
+		# 	font = "hoi_18mbs"
+		# 	text = "SL_guiscreen_mainleader_status"
+		# 	maxWidth = 82
+		# 	maxHeight = 36
+		# 	format = center
+		# 	vertical_alignment = center
+		# 	fixedsize = yes
+		# }
 		
-		iconType = {
-			name = "diplo_leader_name_icon"
-			position = { x = 230 y = 100 }
-			spriteType = "GFX_generic_text_bg_154"
-		}
+		# iconType = {
+		# 	name = "diplo_leader_name_icon"
+		# 	position = { x = 230 y = 100 }
+		# 	spriteType = "GFX_generic_text_bg_154"
+		# }
 		
-		instantTextboxType = {
-			name = "diplo_leader_name"
-			position = { x = 235 y = 104 }
-			font = "hoi_18mbs"
-			text = "SL_mainleader_name_tt"
-			maxWidth = 145
-			maxHeight = 36
-			fixedsize = yes
-		}
+		# instantTextboxType = {
+		# 	name = "diplo_leader_name"
+		# 	position = { x = 235 y = 104 }
+		# 	font = "hoi_18mbs"
+		# 	text = "SL_mainleader_name_tt"
+		# 	maxWidth = 145
+		# 	maxHeight = 36
+		# 	fixedsize = yes
+		# }
 		
-		iconType = {
-			name = "diplo_vice_leader_status_icon"
-			position = { x = 127 y = 135 }
-			spriteType = "GFX_generic_text_bg_88"
-		}
+		# iconType = {
+		# 	name = "diplo_vice_leader_status_icon"
+		# 	position = { x = 127 y = 135 }
+		# 	spriteType = "GFX_generic_text_bg_88"
+		# }
 		
-		instantTextboxType = {
-			name = "diplo_vice_leader_status"
-			position = { x = 129 y = 129 }
-			font = "hoi_18mbs"
-			text = "SL_guiscreen_secondleader_status"
-			maxWidth = 82
-			maxHeight = 36
-			format = center
-			vertical_alignment = center
-			fixedsize = yes
-		}
+		# instantTextboxType = {
+		# 	name = "diplo_vice_leader_status"
+		# 	position = { x = 129 y = 129 }
+		# 	font = "hoi_18mbs"
+		# 	text = "SL_guiscreen_secondleader_status"
+		# 	maxWidth = 82
+		# 	maxHeight = 36
+		# 	format = center
+		# 	vertical_alignment = center
+		# 	fixedsize = yes
+		# }
 		
-		iconType = {
-			name = "diplo_vice_leader_name_icon"
-			position = { x = 230 y = 135 }
-			spriteType = "GFX_generic_text_bg_154"
-		}
+		# iconType = {
+		# 	name = "diplo_vice_leader_name_icon"
+		# 	position = { x = 230 y = 135 }
+		# 	spriteType = "GFX_generic_text_bg_154"
+		# }
 		
-		instantTextboxType = {
-			name = "diplo_vice_leader_name"
-			position = { x = 235 y = 139 }
-			font = "hoi_18mbs"
-			text = "[SL_name]"
-			maxWidth = 145
-			maxHeight = 36
-			fixedsize = yes
-		}
+		# instantTextboxType = {
+		# 	name = "diplo_vice_leader_name"
+		# 	position = { x = 235 y = 139 }
+		# 	font = "hoi_18mbs"
+		# 	text = "[SL_name]"
+		# 	maxWidth = 145
+		# 	maxHeight = 36
+		# 	fixedsize = yes
+		# }
 	}
 	
 	containerWindowType = {
