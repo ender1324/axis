@@ -116,6 +116,11 @@ spriteTypes = {
 		name = "GFX_portrait_RUS_Vsevolod"
 		textureFile = "gfx/leaders/RUS/Portrait_Russia_Vsevolod.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_RUS_Konstantin_Rodzaevsky"
+		textureFile = "gfx/leaders/RUS/Portrait_RUS_Konstantin_Rodzaevsky.dds"
+	}
+
 
 	# Kazakhstan
 	spriteType = {
@@ -175,6 +180,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_RKK_Wilhelm_Keitel" 
 		textureFile = "gfx/leaders/RKK/Portrait_RKK_Wilhelm_Keitel.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_Portrait_RKK_Otto_Bräutigam" 
+		textureFile = "gfx/leaders/RKK/RKK_Otto_Bräutigam.dds" # this is the directory
+	}
+	spriteType = {
+		name = "GFX_Portrait_RKK_Hans_Huttig" 
+		textureFile = "gfx/leaders/RKK/RKK_Hans_Huttig.dds" # this is the directory
 	}
 
 	# Free France
@@ -249,7 +262,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_BRM_Ba_Maw"
 		textureFile = "gfx/leaders/BRM/Portrait_BRM_Ba_Maw.dds"
-	}					
+	}	
+	#Italian East Africa
+	spriteType = {
+		name = "GFX_Portrait_AOI_Amedeo_di_Savoia_Aosta"
+		textureFile = "gfx/leaders/AOI/Portrait_AOI_Amedeo_di_Savoia_Aosta.dds"
+	}				
     #Anarchy
 	spriteType = {
 		name = "GFX_portrait_ZZZ_Anarchy_Siberia"
