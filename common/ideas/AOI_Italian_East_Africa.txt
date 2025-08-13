@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		AOI_Ethiopan_Unrest = {
+			name = AOI_Ethiopan_Unrest
+			picture = RKK_Alone_in_the_Dark
+			allowed = {
+				original_tag = AOI
+			}
+
+			modifier = {
+				stability_factor = -0.02
+				conscription_factor = -0.1
+				
+			}
+		}
+		AOI_Project_Somalia = {
+			name = AOI_Project_Somalia
+			picture = RKK_Alone_in_the_Dark
+			allowed = {
+				original_tag = AOI
+			}
+
+			modifier = {
+				stability_factor = 0.01
+				conscription_factor = 0.07
+				
+			}
+		}
+		AOI_Eritrean_Young_League = {
+			name = AOI_Eritrean_Young_League
+			picture = RKK_Alone_in_the_Dark
+			allowed = {
+				original_tag = AOI
+			}
+
+			modifier = {
+				conscription_factor = 0.02
+				
+			}
+		}
+    }
+}

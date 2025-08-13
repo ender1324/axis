@@ -1,173 +1,71 @@
 ideas = {
 	country = {
 		RKK_Alone_in_the_Dark = {
-			name = RKK_Alone_in_the_Dark
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
 			picture = RKK_Alone_in_the_Dark
-			allowed = {
-				original_tag = RKK
-			}
-
 			modifier = {
-				political_power_cost = 0.05
-				personnel_cost_multiplier_modifier = 0.1
 				stability_factor = -0.1
-			}
-		}
-
-		RKK_Minorities_Unrest = {
-			name = RKK_Minorities_Unrest
-			picture = RKK_Minorities_Unrest
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-                conscription_factor = -0.2
-				surrender_limit = -0.2
-			}
-		}
-
-		RKK_Minorities_Unrest_2 = {
-			name = RKK_Minorities_Unrest_2
-			picture = RKK_Minorities_Unrest
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
 				conscription_factor = -0.1
-				surrender_limit = -0.1
 			}
 		}
-
-		RKK_Caucasian_Slaves = {
-			name = RKK_Caucasian_Slaves
-			picture = RKK_Caucasian_Slaves
+		RKK_Shipment_To_The_Reich = {
 			allowed = {
-				original_tag = RKK
+				always = no
 			}
-
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RKK_Land_of_Black_Gold
 			modifier = {
-				conscription_factor = -0.4
-				surrender_limit = -0.2
-				local_resources_factor = 0.25
-				fuel_gain_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-				production_speed_agriculture_district_factor = 0.2
+				extra_trade_to_overlord_factor = 0.1
+				local_resources = -0.1
 			}
 		}
-
-		RKK_Ultra_Militarism = {
-			name = RKK_Ultra_Militarism
-			picture = RKK_Ultra_Militarism
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-				offence = 0.1
-				defence = 0.1
-				conscription = 0.01
-			}
-		}
-
-		RKK_Renewed_Germanization = {
-			name = RKK_Renewed_Germanization
-			picture = RKK_Renewed_Germanization
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-				stability_factor = -0.1
-				national_socialism_drift = 0.01
-			}
-		}
-
-		RKK_Hermit_Kingdom = {
-			name = RKK_Hermit_Kingdom
-			picture = RKK_Hermit_Kingdom
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-				war_support_factor = 0.1
-				resistance_target = -1
-				encryption_factor = 0.2
-				trade_opinion_factor = -0.8
-			}
-		}
-
-		RKK_Pure_Caucasian_State = {
-			name = RKK_Pure_Caucasian_State
-			picture = RKK_Pure_Caucasian_State
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-				tax_gain_multiplier_modifier = 0.05
-			}
-		}
-
-		RKK_TUR_Armenians_Unrest = {
-			name = RKK_TUR_Armenians_Unrest
-			picture = RKK_TUR_Armenians_Unrest
-			allowed = {
-				original_tag = TUR
-			}
-
-			modifier = {
-				stability_factor = -0.1
-			}
-			targeted_modifier = {
-				tag = RKK
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-		}
-
-		RKK_PER_Azeri_Unrest = {
-			name = RKK_PER_Azeri_Unrest
-			picture = RKK_PER_Azeri_Unrest
-			allowed = {
-				original_tag = PER
-			}
-
-			modifier = {
-				weekly_manpower = -100
-			}
-			targeted_modifier = {
-				tag = RKK
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-		}
-
-		RKK_Land_of_Black_Gold = {
-			name = RKK_Land_of_Black_Gold
-			picture = FFA_all_alone
-			allowed = {
-				original_tag = RKK
-			}
-
-			modifier = {
-			    local_resources_factor = 0.50
-				fuel_gain_factor = 0.1
-			}
-		}
-
 		RKK_Tourists_Spot = {
-			name = RKK_Tourists_Spot
-			picture = FFA_all_alone
 			allowed = {
-				original_tag = RKK
+				always = no
 			}
-
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RKK_Tourists_Spot
 			modifier = {
-			    monthly_population = 0.05
+				monthly_population = 0.1
 			}
 		}
-	}
+		RKK_Increased_Security = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RKK_Tourists_Spot
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		RKK_Land_of_Black_Gold = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = RKK_Land_of_Black_Gold
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+    }
 }
