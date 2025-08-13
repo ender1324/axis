@@ -19,23 +19,26 @@ characters = {
 				large = "GFX_portrait_RKK_Odilo_Globotschnig"
 			}
 		}
-		country_leader = {
-			desc = RKK_Odilo_Globotschnig_desc
-			ideology = aryanracialism_subtype
-			expire = 2008.04.27
-		}
 	}
-	RKK_Wilhelm_Keitel = {
-		name = RKK_Wilhelm_Keitel
+	RKK_Hans_Huttig = {
+		name = RKK_Hans_Huttig
 		portraits = {
 			civilian = {
-				large = "GFX_Portrait_RKK_Wilhelm_Keitel"
+				large = "GFX_Portrait_RKK_Hans_Huttig"
+			}
+		}
+	}
+	RKK_Otto_Brautigam = {
+		name = RKK_Otto_Brautigam
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_RKK_Otto_Bräutigam"
 			}
 		}
 		country_leader = {
-			ideology = national_socialism_subtype
-			desc = RKK_Wilhelm_Keitel_desc
-			expire = 2000.01.01
+			desc = RKK_Emil_Maurice_desc
+			ideology = fascism_subtype
+			expire = 2008.04.27
 		}
 	}
 	RKK_Rudolf_Schmidt={

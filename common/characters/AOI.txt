@@ -1,0 +1,14 @@
+characters = {
+	AOI_Amedeo_di_Savoia_Aosta = {
+		name = AOI_Amedeo_di_Savoia_Aosta
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_AOI_Amedeo_di_Savoia_Aosta"
+			}
+		}
+		country_leader = {
+			ideology = despotism_subtype
+			expire = 1982.11.10
+		}
+	}	
+}
