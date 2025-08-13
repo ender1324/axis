@@ -10,6 +10,7 @@ RKD = "countries/RK_Danemark.txt"
 RKN = "countries/RK_Niederlande.txt"
 RNO = "countries/RK_Norwegen.txt"
 RKM = "countries/RK_Mittleafrika.txt"
+RMA = "countries/RK_Madagascar.txt"
 SSW = "countries/SS_Serbia.txt"
 #RKS = "countries/RK_Sudafrika.txt"
 # French Algeria
