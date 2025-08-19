@@ -32,6 +32,35 @@ scripted_gui = {
 	}
 }
 
+# this sets the dynamic faction and economy info icons
+scripted_gui = {
+	diplomacy_placeholder_notice = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "faction_status_info"
+		
+		#visible = { always = yes }
+
+		properties = {
+			faction_status_icon = {
+				image = "[faction_info_gfx]"
+			}
+		}
+	}
+}
+
+
+# this should be used for future diplomacy specific GUIs (reserved empty space)
+scripted_gui = {
+	diplomacy_placeholder_notice = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view_diplomacy
+		window_name = "economy_info_diplo"
+		
+		visible = { always = yes }
+	}
+}
+
 #####
 scripted_gui = {
 	subideology_notice = {
@@ -81,16 +110,5 @@ scripted_gui = {
 				always = yes
 			}
 		}
-	}
-}
-
-# this should be used for future diplomacy specific GUIs (reserved empty space)
-scripted_gui = {
-	diplomacy_placeholder_notice = {
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
-		window_name = "diplomacy_placeholder"
-		
-		visible = { always = yes }
 	}
 }

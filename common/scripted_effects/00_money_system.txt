@@ -354,6 +354,10 @@ calculate_additional_income_rate = {
 		add_to_variable = { additional_income_rate = additional_income_microstate_fix_var }
 	}
 
+	if = { limit = { has_idea = SOE_Leader_of_Europe }
+	
+	}
+
 }
 
 #Updates interest rate, is called on init and on_daily in money_system_on_actions.txt

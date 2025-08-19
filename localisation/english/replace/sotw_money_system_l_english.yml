@@ -204,7 +204,7 @@
 
  # Diplo view tooltips
  F_DEBT_TOOLTIP: "They have $[?debt] §Hbillion§! in §Rdebt§!.\nThey currently have a §Hinterest rate§! of [?interest_rate]%.\n\n$§R[?debt_rate|-3]§! §Hbillion§! will be taken from their treasury each week to service the debt.[literacy_rate_tooltip]"
- F_TREASURY_TOOLTIP: "GDP of §Y[THIS.GetName]§!: $§Y[?gdp_total|0]§!b\nGDP/C of §Y[THIS.GetName]§!: $§Y[?gdp_per_capita]§!k\n---------\nThey have $[?treasury] §Hbillion§! in the treasury.\nTheir weekly balance is $[?treasury_rate|+] §Hbillion§!."
+ F_TREASURY_TOOLTIP: "GDP of §Y[THIS.GetName]§!: $§Y[?gdp_total]§!b\nGDP/C of §Y[THIS.GetName]§!: $§Y[?gdp_per_capita]§!k\n---------\nThey have $[?treasury] §Hbillion§! in the treasury.\nTheir weekly balance is $[?treasury_rate|+] §Hbillion§!."
  F_INT_INVESTMENTS_TOOLTIP: "They have $[?int_investments] §Hbillion§! in investments in other countries.\nThey earn $[?int_investments_rate] §Hbillion§! weekly in §Hinvestment income§! from their total investments."
  F_EXPENSE_GAIN_TOOLTIP: "They lose $[?display_expense] §Hbillion§! each week in expenditure."
  F_EXPENSE_GAIN_TOOLTIP_DELAYED: "§CBureaucracy:§! $§R[?bureaucracy_gain|-3]§!\n§ODefence:§! $§R[?defence_gain|-3]§!\n§YInternal Security:§! $§R[?security_gain|-3]§!\nEducation: $§R[?education_gain|-3]§!\nHealth: $§R[?health_gain|-3]§!\n§BWelfare:§! $§R[?welfare_gain|-3]§!\n§RInterest on Debt:§! $§R[?debt_rate|-3]§!\n§HAdditional Expenses:§! $§R[?additional_expenses_rate|-3]§!\n\nTotal Expenditure: $§R[?display_expense]§!"

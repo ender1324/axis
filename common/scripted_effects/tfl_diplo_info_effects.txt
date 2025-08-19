@@ -1,0 +1,35 @@
+# USE IN COUNTRY SCOPE
+# Adds the current country's faction members to an array
+add_country_faction_to_sphere = {
+	if = {
+		limit = { is_faction_leader = yes }
+		clear_array = THIS.influence_sphere
+		add_to_array = {
+			array = THIS.influence_sphere
+			value = THIS
+		}
+
+		# Add every country from the faction
+		every_allied_country = {
+			# UNLESS it already has a sphere
+			limit = { NOT = { is_in_array = { THIS.influence_sphere = THIS } } }
+			add_to_array = {
+				array = PREV.influence_sphere
+				value = THIS
+			}
+		}
+	}
+}
+
+update_country_sphere = {
+	if = {
+		# Check if the country has an influence sphere
+		limit = { is_in_array = { THIS.influence_sphere = THIS } }
+		# If it does, update the GDP of the sphere
+		set_variable = { THIS.sphere_gdp = 0 }
+		for_each_scope_loop = {
+			array = PREV.influence_sphere
+			add_to_variable = { PREV.sphere_gdp = gdp_total }
+		}
+	}
+}

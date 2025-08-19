@@ -1,0 +1,311 @@
+defined_text = {
+	name = "faction_info_gfx"
+
+	text = {
+		trigger = { has_idea = SOE_Leader_of_Europe }
+		localization_key = GFX_idea_SOE_Leader_of_Europe
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Prosperity_Ally }
+		localization_key = GFX_idea_SOE_Prosperity_Ally
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Kollaborateur_Staat }
+		localization_key = GFX_idea_SOE_Kollaborateur_Staat
+	}
+	text = {
+		trigger = { has_idea = SOE_Marionettenstaat }
+		localization_key = GFX_idea_SOE_Marionettenstaat
+	}
+	text = {
+		trigger = { has_idea = SOE_Reichskommissariat }
+		localization_key = GFX_idea_SOE_Reichskommissariat
+	}
+	text = {
+		trigger = { has_idea = SOE_Integrated_Reichskommissariat }
+		localization_key = GFX_idea_SOE_Integrated_Reichskommissariat
+	}
+	text = {
+		trigger = { has_idea = SOE_Pakt_Observer }
+		localization_key = GFX_idea_SOE_Pakt_Observer
+	}
+	text = {
+		trigger = { has_idea = SOE_Italian_Colonial_State }
+		localization_key = GFX_idea_SOE_Italian_Colonial_State
+	}
+	text = {
+		trigger = { has_idea = SOE_Italian_Military_Administration }
+		localization_key = GFX_idea_SOE_Italian_Military_Administration
+	}
+	text = {
+		trigger = { has_idea = SOE_Italian_Collaborator_State }
+		localization_key = GFX_idea_SOE_Italian_Collaborator_State
+	}
+	text = {
+		trigger = { has_idea = SOE_Master_of_Asia }
+		localization_key = GFX_idea_SOE_Master_of_Asia
+	}
+	text = {
+		trigger = { has_idea = SOE_Asia_Collaborator_State }
+		localization_key = GFX_idea_SOE_Asia_Collaborator_State
+	}
+	text = {
+		trigger = { has_idea = SOE_Japan_Vassal }
+		localization_key = GFX_idea_SOE_Japan_Vassal
+	}
+	text = {
+		trigger = { has_idea = SOE_Japan_Total_Puppet }
+		localization_key = GFX_idea_SOE_Japan_Total_Puppet
+	}
+	text = {
+		trigger = { has_idea = SOE_Semi_Independant_State }
+		localization_key = GFX_idea_SOE_Semi_Independant_State
+	}
+	text = {
+		trigger = { has_idea = SOE_Resource_Extraction_Zone }
+		localization_key = GFX_idea_SOE_Resource_Extraction_Zone
+	}
+	text = {
+		trigger = { has_idea = SOE_Sphere_Observer }
+		localization_key = GFX_idea_SOE_Sphere_Observer
+	}
+	text = {
+		trigger = { has_idea = SOE_Leader_of_the_Free_World }
+		localization_key = GFX_idea_SOE_Leader_of_the_Free_World
+	}
+	text = {
+		trigger = { has_idea = SOE_Co_Equal_Partner }
+		localization_key = GFX_idea_SOE_Co_Equal_Partner
+	}
+	text = {
+		trigger = { has_idea = SOE_STSR_Member }
+		localization_key = GFX_idea_SOE_STSR_Member
+	}
+	text = {
+		trigger = { has_idea = SOE_STSR_Observer }
+		localization_key = GFX_idea_SOE_STSR_Observer
+	}
+	text = {
+		localization_key = GFX_idea_unknown
+	}
+}
+
+defined_text = {
+	name = "faction_info_tooltip"
+
+	text = {
+		trigger = { has_idea = SOE_Leader_of_Europe }
+		localization_key = SOE_Leader_of_Europe
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Prosperity_Ally }
+		localization_key = SOE_Prosperity_Ally
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Kollaborateur_Staat }
+		localization_key = SOE_Kollaborateur_Staat
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Marionettenstaat }
+		localization_key = SOE_Marionettenstaat
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Reichskommissariat }
+		localization_key = SOE_Reichskommissariat
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Integrated_Reichskommissariat }
+		localization_key = SOE_Integrated_Reichskommissariat
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Pakt_Observer }
+		localization_key = SOE_Pakt_Observer
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Colonial_State }
+		localization_key = SOE_Italian_Colonial_State
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Military_Administration }
+		localization_key = SOE_Italian_Military_Administration
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Collaborator_State }
+		localization_key = SOE_Italian_Collaborator_State
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Master_of_Asia }
+		localization_key = SOE_Master_of_Asia
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Asia_Collaborator_State }
+		localization_key = SOE_Asia_Collaborator_State
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Japan_Vassal }
+		localization_key = SOE_Japan_Vassal
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Japan_Total_Puppet }
+		localization_key = SOE_Japan_Total_Puppet
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Semi_Independant_State }
+		localization_key = SOE_Semi_Independant_State
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Resource_Extraction_Zone }
+		localization_key = SOE_Resource_Extraction_Zone
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Sphere_Observer }
+		localization_key = SOE_Sphere_Observer
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Leader_of_the_Free_World }
+		localization_key = SOE_Leader_of_the_Free_World
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Co_Equal_Partner }
+		localization_key = SOE_Co_Equal_Partner
+	}
+
+	text = {
+		trigger = { has_idea = SOE_STSR_Member }
+		localization_key = SOE_STSR_Member
+	}
+
+	text = {
+		trigger = { has_idea = SOE_STSR_Observer }
+		localization_key = SOE_STSR_Observer
+	}
+}
+
+defined_text = {
+	name = "faction_info_delayed_tooltip"
+
+	text = {
+		trigger = { has_idea = SOE_Leader_of_Europe }
+		localization_key = SOE_Leader_of_Europe_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Prosperity_Ally }
+		localization_key = SOE_Prosperity_Ally_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Kollaborateur_Staat }
+		localization_key = SOE_Kollaborateur_Staat_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Marionettenstaat }
+		localization_key = SOE_Marionettenstaat_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Reichskommissariat }
+		localization_key = SOE_Reichskommissariat_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Integrated_Reichskommissariat }
+		localization_key = SOE_Integrated_Reichskommissariat_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Pakt_Observer }
+		localization_key = SOE_Pakt_Observer_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Colonial_State }
+		localization_key = SOE_Italian_Colonial_State_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Military_Administration }
+		localization_key = SOE_Italian_Military_Administration_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Italian_Collaborator_State }
+		localization_key = SOE_Italian_Collaborator_State_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Master_of_Asia }
+		localization_key = SOE_Master_of_Asia_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Asia_Collaborator_State }
+		localization_key = SOE_Asia_Collaborator_State_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Japan_Vassal }
+		localization_key = SOE_Japan_Vassal_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Japan_Total_Puppet }
+		localization_key = SOE_Japan_Total_Puppet_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Semi_Independant_State }
+		localization_key = SOE_Semi_Independant_State_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Resource_Extraction_Zone }
+		localization_key = SOE_Resource_Extraction_Zone_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Sphere_Observer }
+		localization_key = SOE_Sphere_Observer_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Leader_of_the_Free_World }
+		localization_key = SOE_Leader_of_the_Free_World_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_Co_Equal_Partner }
+		localization_key = SOE_Co_Equal_Partner_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_STSR_Member }
+		localization_key = SOE_STSR_Member_desc
+	}
+
+	text = {
+		trigger = { has_idea = SOE_STSR_Observer }
+		localization_key = SOE_STSR_Observer_desc
+	}
+}

@@ -94,7 +94,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "opinion_info"
-				position = { x = 341 y = 5 } #position = { x = 425 y = 5 }
+				position = { x = 420 y = 5 } #position = { x = 425 y = 5 }
 				size = { width = 100 height = 60 }
 				clipping = no
 
@@ -139,56 +139,6 @@ guiTypes = {
 				}
 			}
 
-			iconType =
-			{
-				name ="stability_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 447 y = 1 } #position = { x= 370 y = 1 }
-			}
-
-			iconType =
-			{
-				name ="stability_icon"
-				spriteType = "GFX_stability_icon"
-				position = { x= 455 y = 9 } #position = { x= 378 y = 9 }
-			}
-
-			instantTextboxType = {
-				name = "stability_value"
-				position = { x = 446 y = 42 } #position = { x = 369 y = 42 }
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
-			}
-
-			iconType =
-			{
-				name ="war_support_bg"
-				spriteType = "GFX_diplo_unity_bg"
-				position = { x= 490 y = 1 } #position = { x= 414 y = 1 }
-			}
-
-			iconType =
-			{
-				name ="war_support_icon"
-				spriteType = "GFX_war_support_icon"
-				position = { x= 497 y = 9 } #position = { x= 421 y = 9 }
-			}
-
-			instantTextboxType = {
-				name = "war_support_value"
-				position = { x = 490 y = 42 } #osition = { x = 414 y = 42 }
-				font = "hoi_16mbs"
-				text = "100%"
-				maxWidth = 44
-				maxHeight = 20
-				format = center
-			}
-
-
-
 			#------------------------- TAB BUTTONS ----------------------------
 			iconType = {
 				name = "tabs_background"
@@ -214,6 +164,50 @@ guiTypes = {
 			}
 
 			#------------------------- END TAB BUTTONS ----------------------------
+
+			iconType = {
+				name ="stability_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 418 y = 126 } #position = { x= 370 y = 1 }
+			}
+
+			iconType = {
+				name ="stability_icon"
+				spriteType = "GFX_stability_icon"
+				position = { x= 426 y = 132 } #position = { x= 378 y = 9 }
+			}
+
+			instantTextboxType = {
+				name = "stability_value"
+				position = { x = 418 y = 166 } #position = { x = 369 y = 42 }
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
+			}
+
+			iconType = {
+				name ="war_support_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x= 474 y = 126 } #position = { x= 414 y = 1 }
+			}
+
+			iconType = {
+				name ="war_support_icon"
+				spriteType = "GFX_war_support_icon"
+				position = { x= 482 y = 132 } #position = { x= 421 y = 9 }
+			}
+
+			instantTextboxType = {
+				name = "war_support_value"
+				position = { x = 473 y = 166 } #osition = { x = 414 y = 42 }
+				font = "hoi_16mbs"
+				text = "100%"
+				maxWidth = 44
+				maxHeight = 20
+				format = center
+			}
 
 			#------------------------- RELATIONS TAB ----------------------------
 
@@ -258,7 +252,7 @@ guiTypes = {
 					iconType ={
 						name ="pol_view_bg"
 						spriteType = "GFX_pol_piechart_overlay"
-						position = { x= 13 y = -2 }
+						position = { x= 12 y = 2 }
 					}
 				}
 
@@ -273,7 +267,7 @@ guiTypes = {
 						position = { x = 5 y = -10 }
 						font = "hoi_16mbs"
 						text = "party"
-						maxWidth = 110
+						maxWidth = 120
 						maxHeight = 20
 						format = center
 						fixedsize = yes
@@ -281,20 +275,20 @@ guiTypes = {
 
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = 0 y = 5 }
+						position = { x = 5 y = 5 }
 						font = "hoi_16mbs"
 						text = "ideology"
-						maxWidth = 140
+						maxWidth = 120
 						maxHeight = 20
 						format = center
 					}
 
 					instantTextboxType = {
 						name = "elections"
-						position = { x = 4 y = 110 }
+						position = { x = 5 y = 106 }
 						font = "hoi_16mbs"
 						text = "elections"
-						maxWidth = 110
+						maxWidth = 120
 						maxHeight = 40
 						format = center
 					}
@@ -926,6 +920,98 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "faction_status_info"
+		position = { x = 414 y = 288 }
+
+		iconType = {
+			name = "faction_status_icon"
+			spriteType = "[faction_info_gfx]"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "faction_info_tooltip"
+			pdx_tooltip_delayed = "faction_info_delayed_tooltip"
+		}
+
+		iconType = {
+			name = "economy_status_icon"
+			spriteType = "GFX_idea_sl_rentier_economy"
+			position = { x = 60 y = 0 }
+		}
+	}
+
+	# Economy info 
+	containerWindowType = {
+		name = "economy_info_diplo"
+		position = { x = 418 y = 200 }
+		orientation = UPPER_LEFT
+
+		# GDP 
+		containerWindowType = {
+			name = "gdp_info_diplo"
+			position = {x=0 y=0}
+			orientation = UPPER_LEFT
+	
+			buttonType ={
+				name ="gdp_info_bg"
+				spriteType = "GFX_generic_box_widest"
+				position = { x=0 y=0 }
+				#shortcut = "ctrl+k"
+			}
+	
+			iconType = {
+				name ="gdp_info_icon"
+				spriteType = "GFX_graph_icon"
+				position = { x= 6 y = 6 }
+			}
+	
+			instantTextBoxType = {
+				name ="gdp_info_text"
+				position = { x= 28 y = 7 }
+				font = "hoi_18mbs"
+				text = "$[?gdp_total|.0Y]B"
+				format = center
+				maxWidth = 65
+				maxHeight = 24
+				fixedsize = yes
+	
+				pdx_tooltip = "F_TREASURY_TOOLTIP"
+				pdx_tooltip_delayed = "F_TAX_RATE_TOOLTIP"
+			}
+		}
+
+		containerWindowType = {
+			name = "debt_info_diplo"
+			position = {x=0 y=40}
+			orientation = UPPER_LEFT
+	
+			buttonType ={
+				name ="debt_info_bg"
+				spriteType = "GFX_generic_box_widest"
+				position = { x=0 y=0 }
+			}
+	
+			iconType = {
+				name ="debt_info_icon"
+				spriteType = "GFX_debt"
+				position = { x= 5 y = 3 }
+			}
+	
+			instantTextBoxType = {
+				name ="debt_info_text"
+				position = { x= 28 y = 7 }
+				font = "hoi_18mbs"
+				text = "$[?debt|Y0]B"
+				format = centre
+				maxWidth = 65
+				maxHeight = 24
+				fixedsize = yes
+	
+				pdx_tooltip = "F_DEBT_TOOLTIP"
+				pdx_tooltip_delayed = "F_EXPENSE_GAIN_TOOLTIP_DELAYED"
+			}
 		}
 	}
 
@@ -5214,112 +5300,6 @@ guiTypes = {
 			maxHeight = 20
 			fixedsize = yes
 			alwaystransparent = yes
-		}
-	}
-	
-	containerWindowType = {
-		name = "diplomacy_placeholder"
-		position = { x = 425 y = 280 }
-		orientation = UPPER_LEFT
-		
-		containerWindowType = {
-			name = "tax_rate_diplo"
-			position = {x=0 y=0}
-			orientation = UPPER_LEFT
-	
-			buttonType ={
-				name ="tax_rate_bg"
-				spriteType = "GFX_generic_box_wider"
-				position = { x=0 y=0 }
-			}
-	
-			iconType = {
-				name ="tax_rate_icon"
-				spriteType = "GFX_tax_rate"
-				position = { x= -2 y = 0 }
-			}
-	
-			instantTextBoxType = {
-				name ="tax_rate_text"
-				position = { x= 20 y = 4 }
-				font = "hoi_18mbs"
-				text = "[?tax_rate]%"
-				format = centre
-				maxWidth = 55
-				maxHeight = 24
-				fixedsize = yes
-	
-				pdx_tooltip = "F_TAX_RATE_TOOLTIP"
-				pdx_tooltip_delayed = "F_TAX_GAIN_TOOLTIP_DELAYED"
-			}
-		}
-
-		# Profit (ignore name its profit)
-		containerWindowType = {
-			name = "expense_gain_diplo"
-			position = {x=0 y=25}
-			orientation = UPPER_LEFT
-	
-			buttonType ={
-				name ="tax_gain_bg"
-				spriteType = "GFX_generic_box_wider"
-				position = { x=0 y=0 }
-				#shortcut = "ctrl+k"
-			}
-	
-			iconType = {
-				name ="tax_gain_icon"
-				spriteType = "GFX_daily_income"
-				position = { x= -2 y = 0 }
-			}
-	
-			instantTextBoxType = {
-				name ="tax_gain_text"
-				position = { x= 20 y = 4 }
-				font = "hoi_18mbs"
-				text = "[?display_income]"
-				format = centre
-				maxWidth = 55
-				maxHeight = 24
-				fixedsize = yes
-	
-				pdx_tooltip = "F_TAX_GAIN_TOOLTIP"
-				pdx_tooltip_delayed = "F_TAX_GAIN_TOOLTIP_DELAYED"
-			}
-		}
-
-		# This is expenses
-		containerWindowType = {
-			name = "tax_gain_diplo"
-			position = {x=0 y=50 }
-			orientation = UPPER_LEFT
-	
-			buttonType ={
-				name ="expense_gain_bg"
-				spriteType = "GFX_generic_box_wider"
-				position = { x=0 y=0 }
-				#shortcut = "ctrl+k"
-			}
-	
-			iconType = {
-				name ="expense_gain_icon"
-				spriteType = "GFX_daily_expense"
-				position = { x= -2 y = 0 }
-			}
-	
-			instantTextBoxType = {
-				name ="expense_gain_text"
-				position = { x= 20 y = 4 }
-				font = "hoi_18mbs"
-				text = "[?display_expense]"
-				format = centre
-				maxWidth = 55
-				maxHeight = 24
-				fixedsize = yes
-	
-				pdx_tooltip = "F_EXPENSE_GAIN_TOOLTIP"
-				pdx_tooltip_delayed = "F_EXPENSE_GAIN_TOOLTIP_DELAYED"
-			}
 		}
 	}
 }

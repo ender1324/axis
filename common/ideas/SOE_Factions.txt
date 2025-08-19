@@ -1,11 +1,12 @@
 ideas = {
-	country = {
+	hidden_ideas = {
 		SOE_Leader_of_Europe = {
 			name = SOE_Leader_of_Europe
 			picture = SOE_Leader_of_Europe
 
 			modifier = {
-
+				surrender_limit = 0.1
+				
 			}
 		}
 		SOE_Prosperity_Ally = {

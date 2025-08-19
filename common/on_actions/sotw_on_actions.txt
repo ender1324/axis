@@ -105,6 +105,17 @@ on_actions = {
 		}
     }
 	### END OF STATE / CITY NAME CHANGING ###
+
+	### SPHERES OF INFLUENCE SYSTEM ###
+	on_startup = {
+		effect = {
+			GER = {
+				add_country_faction_to_sphere = yes
+				update_country_sphere = yes # Dupe in the money system on_actions so it actually updates after gdp is calculated
+			}
+		}
+	}
+
 	# Automatically give military access to countries you are sending volunteers to
 	on_send_volunteers = {
 		effect = {

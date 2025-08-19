@@ -49,6 +49,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/genericview/generic_box_wider.dds"
 	}
 
+		spriteType = {
+		name = "GFX_generic_box_widest"
+		texturefile = "gfx/interface/genericview/generic_box_widest.dds"
+	}
+
 	spriteType = {
 		name = "GFX_closebutton"
 		texturefile = "gfx//interface//genericview//closebutton.dds"

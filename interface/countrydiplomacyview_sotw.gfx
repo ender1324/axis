@@ -15,6 +15,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_graph_icon"
+		textureFile = "gfx/interface/diplomacyview/chart_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_diplo_filter_entry"
 		textureFile = "gfx/interface/diplomacyview/diplo_filter_entry.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
