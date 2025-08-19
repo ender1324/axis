@@ -2044,6 +2044,7 @@ guiTypes = {
 					maxHeight = 24
 					text = "TOTAL_GENERATION_ENERGY"
 					pdx_tooltip = "ENERGY_GENERATION_TOTAL_TT"
+					pdx_tooltip_delayed = "ENERGY_GENERATION_TOTAL_DELAYED_TT"
 				}
 	
 				instantTextBoxType = {
@@ -2056,6 +2057,7 @@ guiTypes = {
 					maxHeight = 24
 					text = "TOTAL_CONSUMPTION_ENERGY"
 					pdx_tooltip = "TOTAL_CONSUMPTION_ENERGY_TT"
+					pdx_tooltip_delayed = "TOTAL_CONSUMPTION_ENERGY_DELAYED_TT"
 				}
 			}
 
