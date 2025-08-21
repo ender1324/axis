@@ -72,8 +72,6 @@ on_actions = {
 				random_renewable_variable_calculation = yes
 				setup_starting_fossil_powerplants = yes
 				ingame_update_setup = yes
-				# For the influence sphere shit
-				update_country_sphere = yes # DUPE SO IT WORKS
 				# protest system
 				set_variable = { protest_strength = 0 }
 				set_variable = { protest_radicalisation = 0 }	
@@ -94,11 +92,37 @@ on_actions = {
 				add_to_variable = { int_investments = int_investments_rate }
 			}
 			add_to_variable = { treasury = treasury_rate }
+
+			# Pay down debt automatically this weekly tick
+			if = {
+				limit = {
+					check_variable = { treasury_rate > 0 }
+					has_country_flag = automatically_pay_off_debt_enabled
+					check_variable = { debt > 0 }
+				}
+				set_temp_variable = { treasury_rate_debt_payment = treasury_rate }
+				multiply_temp_variable = { treasury_rate_debt_payment = 0.25 }
+				subtract_from_variable = { debt = treasury_rate_debt_payment }
+
+				if = {
+					limit = { check_variable = { debt < 0.001 } }
+					set_variable = { debt = 0 }
+					clr_country_flag = automatically_pay_off_debt_enabled
+				}
+			}
+
+			set_temp_variable = { treasury_rate_gain = treasury_rate }
+			subtract_from_temp_variable = { treasury_rate_gain = treasury_rate_debt_payment }
+
+			add_to_variable = { treasury = treasury_rate_gain }
 			#Automated taking debt - has calculate_interest_rate at the end
 			automated_debt_taker = yes
 
 			random_renewable_variable_calculation = yes
 			worker_requirements_variable_gdpc_converging = yes
+
+			# For the influence sphere shit
+			update_country_sphere = yes # DUPE SO IT WORKS
 		}
 	}
 	on_monthly = {

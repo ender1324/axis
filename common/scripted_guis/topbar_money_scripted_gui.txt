@@ -210,6 +210,19 @@ scripted_gui = {
 				}
 				log = "[GetDateText]: [THIS.GetName]: DEBUG: 1076 Max debt paid (Total Debt: [?debt]b, Interest Rate: [?interest_rate]% balance:[?treasury_rate]b, Total Treasury:[?treasury], Total Treasury Rate:[?treasury_rate])"
 			}
+			
+			# Automatically Pay off Debt
+			debt_bg_alt_shift_right_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = automatically_pay_off_debt_enabled }
+					}
+					set_country_flag = automatically_pay_off_debt_enabled
+				}
+				else = {
+					clr_country_flag = automatically_pay_off_debt_enabled
+				}
+			}
 		}
 
 		triggers = {

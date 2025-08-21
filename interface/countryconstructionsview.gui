@@ -2293,8 +2293,27 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "economy_right_misc_buttons"
-				position = { x = -82 y = -1 }
+				position = { x = -182 y = -1 }
 				orientation = UPPER_RIGHT
+
+				buttonType = {
+					name = "toggle_fossil_fuel_power_plant_generation"
+					position = { x = 96 y = 0 }
+					spriteType = "GFX_double_positive_power"
+					buttonFont = "hoi_16mbs"
+					pdx_tooltip = "toggle_fossil_fuel_power_plant_generation_tt"
+					pdx_tooltip_delayed = "toggle_fossil_fuel_power_plant_generation_delayed_tt"
+					clicksound = click_checkbox
+				}
+				buttonType = {
+					name = "toggle_nuclear_power_plant_generation"
+					position = { x = 140 y = 0 }
+					spriteType = "GFX_double_positive_power"
+					buttonFont = "hoi_16mbs"
+					pdx_tooltip = "toggle_nuclear_power_plant_generation_tt"
+					pdx_tooltip_delayed = "toggle_nuclear_power_plant_generation_delayed_tt"
+					clicksound = click_checkbox
+				}
 
 				buttonType = {
 					name = "build_battery_park_button"

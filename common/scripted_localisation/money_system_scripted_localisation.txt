@@ -59,6 +59,20 @@ defined_text = {
 		localization_key = GOVERNMENT_INVESTMENT_RATE_NO
 	}
 }
+
+defined_text = {
+	name = debt_automatic_repayment_toggled
+	text = {
+		trigger = {
+			has_country_flag = automatically_pay_off_debt_enabled
+		}
+		localization_key = AUTOMATIC_DEBT_REPAYMENT_YES
+	}
+	text = {
+		localization_key = AUTOMATIC_DEBT_REPAYMENT_NO
+	}
+}
+
 # GUI Buttons
 defined_text = {
 	name = tax_button_req
@@ -92,6 +106,92 @@ defined_text = {
 	text = { localization_key = tax_action_button_corp_disabled_TT }
 }
 
+defined_text = {
+	name = heavy_power_restrictions_button
+	text = {
+		trigger = { has_idea = heavy_power_restrictions_spirit }
+		localization_key = GFX_double_negative_ON
+	}
+	text = {
+		localization_key = GFX_double_negative_power
+	}
+}
+
+defined_text = {
+	name = some_power_restrictions_button
+	text = {
+		trigger = { has_idea = some_power_restrictions_spirit }
+		localization_key = GFX_negative_ON
+	}
+	text = {
+		localization_key = GFX_negative_power
+	}
+}
+
+defined_text = {
+	name = no_power_rules_button
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = heavy_power_restrictions_spirit
+					has_idea = some_power_restrictions_spirit
+					has_idea = some_additional_consumption_spirit
+					has_idea = heavy_additional_consumption_spirit
+				}
+			}
+		}
+		localization_key = GFX_default_neutral_ON
+	}
+	text = {
+		localization_key = GFX_neutral_power
+	}
+}
+
+defined_text = {
+	name = some_additional_consumption_button
+	text = {
+		trigger = { has_idea = some_additional_consumption_spirit }
+		localization_key = GFX_positive_ON
+	}
+	text = {
+		localization_key = GFX_positive_power
+	}
+}
+
+defined_text = {
+	name = heavy_additional_consumption_button_image
+	text = {
+		trigger = { has_idea = heavy_additional_consumption_spirit }
+		localization_key = GFX_double_positive_ON
+	}
+	text = {
+		localization_key = GFX_double_positive_power
+	}
+}
+
+defined_text = {
+	name = fossil_fuel_power_planet_toggle
+	text = {
+		trigger = { NOT = { has_country_flag = disable_fossil_fuel_power_plant_flag } }
+		localization_key = GFX_fossil_plants_on
+	}
+	text = {
+		localization_key = GFX_fossil_plants_off
+	}
+}
+
+
+defined_text = {
+	name = nuclear_power_plant_toggle
+	text = {
+		trigger = { NOT = { has_country_flag = disable_nuclear_power_plant_flag } }
+		localization_key = GFX_nuclear_plant_turn_on
+	}
+	text = {
+		localization_key = GFX_nuclear_plant_turn_off
+	}
+}
 ### BANKRUPCY DECISIONS
 defined_text = {
 	name = bankruptcy_treasury_scl
