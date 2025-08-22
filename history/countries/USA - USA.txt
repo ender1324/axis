@@ -11,6 +11,38 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	# Country
+
+	# LAWS
+	sl_federated_state
+	sl_free_press
+	sl_secularism
+	sl_racial_segregation
+	sl_total_equality
+	sl_controlled_protests
+	# economy laws
+	sl_laissez_faire
+	sl_high_income_taxation
+	sl_strategic_tariffs
+	sl_non_socialist_unions
+	sl_twelve_hour_workday
+	sl_immigration_open
+	# Public Structure
+	sl_natural_growth
+	sl_state_policing4
+	sl_penal_labour
+	sl_education_system2
+	sl_healthcare_system3
+	sl_unemployment_benefits3
+	# Military Structure
+	sl_military_spending4
+	# Secondary Leaders
+	
+	#Faction
+	SOE_Leader_of_the_Free_World
+}
+
 set_popularities = {
 	anarchy = 0
 	vanguardism = 0
@@ -27,15 +59,36 @@ set_popularities = {
 	occultism = 5
 }
 
+# Economy System
+set_variable = { gdp_per_capita = 19.928 } # in reichmarks :troll:
+set_variable = { var = debt value = 1885.7 } # war
+set_variable = { var = treasury value = 66 }
+set_variable = { var = corporate_tax_rate value = 26 }
+set_variable = { var = population_tax_rate value = 21 }
+set_variable = { var = int_investments value = 504 } # many investments across the sphere of influence
+every_owned_state = {
+	set_variable = { productivity_state_var = 970 }
+}
+# Shitty states
+381 = { set_variable = { productivity_state_var = 710 } } # wyaoming
+390 = { set_variable = { productivity_state_var = 870 } } # south dakota
+380 = { set_variable = { productivity_state_var = 800 } } # utah
+379 = { set_variable = { productivity_state_var = 800 } } # nevada
+388 = { set_variable = { productivity_state_var = 800 } } # montana
+387 = { set_variable = { productivity_state_var = 800 } } # idaho
+# Good states
+378 = { set_variable = { productivity_state_var = 1200 } } # California
+375 = { set_variable = { productivity_state_var = 1100 } } # Texas
+358 = { set_variable = { productivity_state_var = 1200 } } # New York
+360 = { set_variable = { productivity_state_var = 1300 } } # Pennsylvania
+
 create_faction = "Security Treaty of Sovereign Democracies"
+# North America
 add_to_faction = CAN
 add_to_faction = MEX
 add_to_faction = GUA
-add_to_faction = HON
-add_to_faction = ELS
-add_to_faction = NIC
-add_to_faction = COS
-#add_to_faction = PAN
+add_to_faction = CHL
+# Europe 
 add_to_faction = HOL
 add_to_faction = NOR
 add_to_faction = DEN
@@ -44,14 +97,33 @@ add_to_faction = AUS
 
 # Carribean
 add_to_faction = CUB
-add_to_faction = HAI
-add_to_faction = DOM
+add_to_faction = DOM # NO FASCISM IN NORTH AMERICA
 
+# Protect these nations for strategic reasons
 give_guarantee = PAN
 give_guarantee = COL
+give_guarantee = HAI
+give_guarantee = AST
 
+# Military bases
+give_market_access = CAN
+
+# Every former enemy embargoed
 send_embargo = GER
 send_embargo = ITA
 send_embargo = JAP
+send_embargo = FRA
+send_embargo = ENG
+send_embargo = SPR
+# Minors
+send_embargo = HUN
+send_embargo = ROM
+send_embargo = BUL
+send_embargo = GRE
+send_embargo = FIN
+send_embargo = TUR
 
-set_convoys = 50
+send_embargo = FER
+send_embargo = CHI
+
+set_convoys = 2069

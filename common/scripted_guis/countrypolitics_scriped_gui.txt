@@ -13,9 +13,7 @@ scripted_gui = {
 			}
 		}
 	}
-}
 
-scripted_gui = {
 	diplomacy_vice_leader_situation = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
@@ -30,16 +28,15 @@ scripted_gui = {
 			}
 		}
 	}
-}
 
-# this sets the dynamic faction and economy info icons
-scripted_gui = {
-	diplomacy_placeholder_notice = {
+	# this sets the dynamic faction and economy info icons
+	faction_status_scripted_gui = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
 		window_name = "faction_status_info"
 		
 		#visible = { always = yes }
+		#dirty = global.update_monie_ui
 
 		properties = {
 			faction_status_icon = {
@@ -47,22 +44,18 @@ scripted_gui = {
 			}
 		}
 	}
-}
 
 
-# this should be used for future diplomacy specific GUIs (reserved empty space)
-scripted_gui = {
-	diplomacy_placeholder_notice = {
+	# this should be used for future diplomacy specific GUIs (reserved empty space)
+	economy_info_scripted_gui = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
 		window_name = "economy_info_diplo"
 		
 		visible = { always = yes }
 	}
-}
 
 #####
-scripted_gui = {
 	subideology_notice = {
 		context_type = player_context
 		parent_window_token = politics_tab
@@ -70,9 +63,7 @@ scripted_gui = {
 		
 		visible = { always = yes }
 	}
-}
 
-scripted_gui = {
 	diplomacy_subideology_notice = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
@@ -82,11 +73,9 @@ scripted_gui = {
 		
 		visible = { always = yes }
 	}
-}
 #####
 
-# This is used to switch between the actual BoP and the placeholder for countries without one
-scripted_gui = {
+	# This is used to switch between the actual BoP and the placeholder for countries without one
 	disbop = {
 		context_type = player_context
 		parent_window_token = politics_tab
@@ -94,10 +83,8 @@ scripted_gui = {
 		
 		visible = { has_any_power_balance = no }
 	}
-}
 
-# reserved for future special GUIs to be opened from politics screen
-scripted_gui = {
+	# reserved for future special GUIs to be opened from politics screen
 	politics_special_mechanism = {
 		context_type = player_context
 		parent_window_token = politics_tab

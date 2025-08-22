@@ -139,15 +139,16 @@ ideas = {
 		}
 		SOE_Leader_of_the_Free_World = {
 			name = SOE_Leader_of_the_Free_World
-			picture = GER_never_ending_war
+			picture = SOE_Leader_of_the_Free_World
 
 			modifier = {
+				war_support_factor = 0.10
 
 			}
 		}
 		SOE_Co_Equal_Partner = {
 			name = SOE_Co_Equal_Partner
-			picture = GER_never_ending_war
+			picture = SOE_Co_Equal_Partner
 
 			modifier = {
 
@@ -155,7 +156,7 @@ ideas = {
 		}
 		SOE_STSR_Member = {
 			name = SOE_STSR_Member
-			picture = GER_never_ending_war
+			picture = SOE_STSR_Member
 
 			modifier = {
 
@@ -163,7 +164,7 @@ ideas = {
 		}
 		SOE_STSR_Observer = {
 			name = SOE_STSR_Observer
-			picture = GER_never_ending_war
+			picture = SOE_STSR_Observer
 
 			modifier = {
 

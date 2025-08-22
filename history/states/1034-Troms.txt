@@ -16,12 +16,7 @@ state = {
 		owner = RNO
 		add_claim_by = RNO
 		add_core_of = NOR
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_core_of = SMI
-		}
+		add_core_of = SMI
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -30,6 +25,7 @@ state = {
 				naval_base = 2
 			}
 		}
+		set_demilitarized_zone = yes
 	}
 
 

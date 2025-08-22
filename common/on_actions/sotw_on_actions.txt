@@ -111,7 +111,11 @@ on_actions = {
 		effect = {
 			GER = {
 				add_country_faction_to_sphere = yes
-				update_country_sphere = yes # Dupe in the money system on_actions so it actually updates after gdp is calculated
+				update_country_sphere = yes #
+			}
+			USA = {
+				add_country_faction_to_sphere = yes
+				update_country_sphere = yes # doesnt calculate gdp idk why
 			}
 		}
 	}
@@ -177,6 +181,8 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
+			# Spheres of influence dlc
+			update_country_sphere = yes
 			### War losses being converted to losses in states
 			if = {
 				limit = {

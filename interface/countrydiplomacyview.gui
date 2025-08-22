@@ -929,7 +929,7 @@ guiTypes = {
 
 		iconType = {
 			name = "faction_status_icon"
-			spriteType = "[faction_info_gfx]"
+			spriteType = "GFX_idea_unknown"
 			position = { x = 0 y = 0 }
 			pdx_tooltip = "faction_info_tooltip"
 			pdx_tooltip_delayed = "faction_info_delayed_tooltip"

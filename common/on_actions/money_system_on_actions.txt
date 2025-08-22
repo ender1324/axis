@@ -120,9 +120,6 @@ on_actions = {
 
 			random_renewable_variable_calculation = yes
 			worker_requirements_variable_gdpc_converging = yes
-
-			# For the influence sphere shit
-			update_country_sphere = yes # DUPE SO IT WORKS
 		}
 	}
 	on_monthly = {

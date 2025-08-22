@@ -51,17 +51,17 @@ add_ideas = {
 
 set_popularities = {
 	anarchy = 0
-	vanguardism = 1
-	communism = 2
-	socialism = 2
-	progressivism = 3 
-	liberalism = 2
-	conservatism = 2
-	paternalism = 6
-	despotism = 9
+	vanguardism = 0
+	communism = 0
+	socialism = 0
+	progressivism = 7 
+	liberalism = 0
+	conservatism = 0
+	paternalism = 9
+	despotism = 0
 	ultranationalism = 8
 	fascism = 7
-	national_socialism = 41
+	national_socialism = 52
 	occultism = 17
 }
 

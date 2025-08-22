@@ -63,4 +63,20 @@ spriteTypes = {
 		name = "GFX_idea_SOE_Sphere_Observer"
 		textureFile = "gfx/ideas/SOE/SOE_Sphere_Observer.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOE_Leader_of_the_Free_World"
+		textureFile = "gfx/ideas/SOE/SOE_Leader_of_the_Free_World.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_Co_Equal_Partner"
+		textureFile = "gfx/ideas/SOE/SOE_Co_Equal_Partner.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_STSR_Member"
+		textureFile = "gfx/ideas/SOE/SOE_STSR_Member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOE_STSR_Observer"
+		textureFile = "gfx/ideas/SOE/SOE_STSR_Observer.dds"
+	}
 }

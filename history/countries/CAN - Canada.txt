@@ -11,6 +11,38 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	# Country
+
+	# LAWS
+	sl_federated_state
+	sl_free_press
+	sl_secularism
+	sl_minorities_no_stance
+	sl_total_equality
+	sl_controlled_protests
+	# economy laws
+	sl_interventionism
+	sl_high_income_taxation
+	sl_strategic_tariffs
+	sl_non_socialist_unions
+	sl_twelve_hour_workday
+	sl_immigration_encouraged
+	# Public Structure
+	sl_natural_growth
+	sl_state_policing3
+	sl_penal_incarceration
+	sl_education_system3
+	sl_healthcare_system3
+	sl_unemployment_benefits3
+	# Military Structure
+	sl_military_spending3
+	# Secondary Leaders
+	CAN_SL_Elizabeth_II_idea
+	#Faction
+	SOE_STSR_Member
+}
+
 # Actual results from election + some imaginary results from the axis victory
 set_popularities = {
 	anarchy = 0
@@ -37,6 +69,5 @@ recruit_character = CAN_louis_laurent
 recruit_character = CAN_john_diefenbaker
 recruit_character = CAN_lester_pearson
 recruit_character = CAN_elizabeth_II
-add_ideas = CAN_SL_Elizabeth_II_idea
 
 set_convoys = 50
