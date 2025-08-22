@@ -67,7 +67,7 @@ set_variable = { var = corporate_tax_rate value = 26 }
 set_variable = { var = population_tax_rate value = 21 }
 set_variable = { var = int_investments value = 504 } # many investments across the sphere of influence
 every_owned_state = {
-	set_variable = { productivity_state_var = 970 }
+	set_variable = { productivity_state_var = 950 }
 }
 # Shitty states
 381 = { set_variable = { productivity_state_var = 710 } } # wyaoming
@@ -81,6 +81,7 @@ every_owned_state = {
 375 = { set_variable = { productivity_state_var = 1100 } } # Texas
 358 = { set_variable = { productivity_state_var = 1200 } } # New York
 360 = { set_variable = { productivity_state_var = 1300 } } # Pennsylvania
+set_variable = { overall_productivity = 957 }
 
 create_faction = "Security Treaty of Sovereign Democracies"
 # North America
