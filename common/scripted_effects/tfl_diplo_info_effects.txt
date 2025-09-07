@@ -17,6 +17,7 @@ add_country_faction_to_sphere = {
 				array = PREV.influence_sphere
 				value = THIS
 			}
+			set_variable = { member_sphere = PREV }
 		}
 	}
 }
@@ -27,9 +28,18 @@ update_country_sphere = {
 		limit = { is_in_array = { THIS.influence_sphere = THIS } }
 		# If it does, update the GDP of the sphere
 		set_variable = { THIS.sphere_gdp = 0 }
+		set_variable = { THIS.sphere_gdp_capita = 0 }
 		for_each_scope_loop = {
 			array = PREV.influence_sphere
 			add_to_variable = { PREV.sphere_gdp = gdp_total }
+			add_to_variable = { PREV.sphere_gdp_capita = gdp_per_capita }
+		}
+		divide_variable = { THIS.sphere_gdp_capita = influence_sphere^num }
+		# Add the info variables to every member of the sphere [BANDAID SOLUTION]
+		for_each_scope_loop = {
+			array = PREV.influence_sphere
+			set_variable = { sphere_gdp = PREV.sphere_gdp }
+			set_variable = { sphere_gdp_capita = PREV.sphere_gdp_capita }
 		}
 	}
 }

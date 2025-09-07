@@ -1,6 +1,8 @@
 ﻿l_english:
 
-SOE_Leader_of_Europe: "§HLeader of Europe§!\n\nInfluence Sphere GDP: $$[?sphere_gdp|0]B\nInfluence Sphere GDP/C: $$50K\n\n$MODIFIER_SURRENDER_LIMIT$: §G+10.00%§!\nAdditional Income: $§G5.000§!"
+### Faction LOC ###
+SOE_Leader_of_Europe: "Leader of Europe"
+SOE_Leader_of_Europe_tt: "§HLeader of Europe§!\n\n$MODIFIER_SURRENDER_LIMIT$: §G+10.00%§!\nAdditional Income: $§G5.000§!"
 SOE_Leader_of_Europe_desc: "From all the world, Germany is know as the leader of the old continent. From the shores of Brittany to the white landscape of Russia, the swastika, symbol of the supremacy of the German people fly to a new era where only one empire, one people, one leader rule."
 SOE_Prosperity_Ally: "Ally of the Properity Pakt"
 SOE_Prosperity_Ally_desc: "In the Properity Pakt, many of it's members are government ruled in secret by Germania, but there one exception. Italy, who can have it's own sphere of influence without any interference from the German Reich, making both nations on a semi equal foot."
@@ -23,10 +25,20 @@ SOE_Japan_Total_Puppet: "Dependant Member of the Sphere"
 SOE_Semi_Independant_State: "Semi-Independant State"
 SOE_Resource_Extraction_Zone: "Resource Extraction Zone"
 SOE_Sphere_Observer: "Sphere Observer"
-SOE_Leader_of_the_Free_World: "§HLeader of the Free World§!\n\nInfluence Sphere GDP: $$[?sphere_gdp|0]B\nInfluence Sphere GDP/C: $$50K\n\n$MODIFIER_WAR_SUPPORT_FACTOR$: §G+10.00%§!\nAdditional Expenditure: §R-$15.000§!"
+SOE_Leader_of_the_Free_World: "Leader of the Free World"
+SOE_Leader_of_the_Free_World_tt: "§HLeader of the Free World§!\n\n$MODIFIER_WAR_SUPPORT_FACTOR$: §G+10.00%§!\nAdditional Expenditure: §R0.1% of GDP§!"
+SOE_Leader_of_the_Free_World_desc: "In a world where the former Axis dominate the old continent, the United States of America have taken the role of the leader of the free world. From the Americas to Asia, the stars and stripes fly high as a symbol of freedom and democracy."
 SOE_Co_Equal_Partner: "Co-Equal Member of S.T.S.R."
 SOE_STSR_Member: "S.T.S.R. Member"
 SOE_STSR_Observer: "S.T.S.R. Observer"
 
 faction_info_tooltip: "[faction_info_tooltip]"
 faction_info_delayed_tooltip: "[faction_info_delayed_tooltip]"
+
+### Sphere of Influence ###
+SOI_tt: "[influence_sphere_tooltip]"
+SOI_leader_tt: "§H[THIS.GetAdjectiveCap] Influence Sphere§!\n\nCombined GDP: $$[?sphere_gdp|1Y]B\nAverage GDP/C: $$[?sphere_gdp_capita|3Y]K"
+SOI_member_tt: "§H[?member_sphere.GetAdjectiveCap] Influence Sphere§!\n\nCombined GDP: $$[?sphere_gdp|1Y]B\nAverage GDP/C: $$[?sphere_gdp_capita|3Y]K"
+SOI_no_sphere_tt: "§HNo Sphere of Influence§!"
+SOI_desc: "In the stalemate that grips the world, different blocs have emerged serving their respective ideologies. From the Prosperity Pact to the S.T.S.R., these blocs are fighting for the domination of the world, each one trying to impose their vision of the future to the rest of the world."
+SOI_leader_desc: "In the stalemate that grips the world, different blocs have emerged serving their respective ideologies. From the Prosperity Pact to the S.T.S.R., these blocs are fighting for the domination of the world, each one trying to impose their vision of the future to the rest of the world."

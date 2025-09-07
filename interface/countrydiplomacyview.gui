@@ -939,6 +939,8 @@ guiTypes = {
 			name = "economy_status_icon"
 			spriteType = "GFX_idea_sl_rentier_economy"
 			position = { x = 60 y = 0 }
+			pdx_tooltip = "SOI_tt"
+			pdx_tooltip_delayed = "SOI_desc"
 		}
 	}
 
