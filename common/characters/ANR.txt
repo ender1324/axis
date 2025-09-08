@@ -1,0 +1,14 @@
+characters = {
+	ANR_Anarchy_Siberia = {
+		name = ANR_Anarchy_Siberia
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ANR_Anarchy_Siberia"
+			}
+		}
+		country_leader = {
+			ideology = anarchy_subtype
+			expire = 1982.11.10
+		}
+	}	
+}

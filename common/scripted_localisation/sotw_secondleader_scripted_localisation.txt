@@ -123,6 +123,11 @@ defined_text = {
 
 defined_text = {
 	name = SL_picture
+	# Anarchy
+	text = {
+		trigger = { original_tag = ANR }
+		localization_key = GFX_portrait_SL_unknown
+	}
 	# Germany
 	text = {
 		trigger = { has_idea = GER_SL_adolf_hitler_idea }

@@ -4,7 +4,7 @@ set_stability = 0
 set_war_support = 0
 
 
-recruit_character = ZZZ_Anarchy_Siberia
+recruit_character = ANR_Anarchy_Siberia
 
 set_politics = {
 	ruling_party = anarchy

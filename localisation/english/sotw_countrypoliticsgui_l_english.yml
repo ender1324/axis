@@ -3,10 +3,10 @@
  power_balance_icon_tt: "Balance of power has not been activated yet"
  # Default locs if no hit in scripted LOCs and the loc value itself
  SL_name: "None"
- SL_name_with_trait: ""
- SL_diplomacy_name_with_trait: ""
+ SL_name_with_trait: "§YUnknown§!"
+ SL_diplomacy_name_with_trait: "§YUnknown§!"
 
- SL_desc: ""
+ SL_desc: "This country does not have a defined second in command in their political scene."
  # Tooltips
  SL_name_with_trait_tt: "[SL_name_with_trait]"
  SL_diplomacy_name_with_trait_tt: "[SL_diplomacy_name_with_trait]"

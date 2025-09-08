@@ -17,6 +17,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/leader_unknown_female.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_SL_unknown"
+		texturefile = "gfx/leaders/ANR/ANR_unknown.dds"
+	}
+
 	# Germany
 	spriteType = {
 		name = "GFX_portrait_GER_adolf_hitler"
@@ -270,7 +275,7 @@ spriteTypes = {
 	}				
     #Anarchy
 	spriteType = {
-		name = "GFX_portrait_ZZZ_Anarchy_Siberia"
-		textureFile = "gfx/leaders/ZZZ/ZZZ_Anarchy_Siberia.dds"
+		name = "GFX_portrait_ANR_Anarchy_Siberia"
+		textureFile = "gfx/leaders/ANR/ANR_Anarchy_Siberia.dds"
 	}
 }
