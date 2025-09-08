@@ -9,9 +9,9 @@ ideas = {
 
         sl_city_state = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -31,9 +31,9 @@ ideas = {
 
         sl_unitary_state = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -46,9 +46,9 @@ ideas = {
 
         sl_devolved_unitary_state = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -62,9 +62,9 @@ ideas = {
 
         sl_federated_state = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -81,9 +81,9 @@ ideas = {
 
         sl_communal_state = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -108,9 +108,9 @@ ideas = {
 
         sl_free_press = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -130,9 +130,9 @@ ideas = {
         }
         sl_extremist_censorship = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -152,9 +152,9 @@ ideas = {
         }
         sl_opposition_censorship = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -169,9 +169,9 @@ ideas = {
         }
         sl_state_press = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -190,9 +190,9 @@ ideas = {
 
         sl_state_religion = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -205,9 +205,9 @@ ideas = {
         }
         sl_secularism = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -217,9 +217,9 @@ ideas = {
         }
         sl_state_atheism = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -236,9 +236,9 @@ ideas = {
 
         sl_minorities_state_protection = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -256,9 +256,9 @@ ideas = {
         }
         sl_minorities_no_stance = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -268,9 +268,9 @@ ideas = {
         }
         sl_racial_segregation = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -288,9 +288,9 @@ ideas = {
         }
         sl_racial_hierarchy = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -316,9 +316,9 @@ ideas = {
         use_list_view = yes
         sl_total_equality = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -332,9 +332,9 @@ ideas = {
         }
         sl_women_in_workplace = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -345,9 +345,9 @@ ideas = {
         }
         sl_legal_guardianship = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -364,9 +364,9 @@ ideas = {
 
         sl_banned_protests = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -376,9 +376,9 @@ ideas = {
         }
         sl_controlled_protests = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -388,9 +388,9 @@ ideas = {
         }
         sl_protected_protesting = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -411,9 +411,9 @@ ideas = {
             }
 
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -443,9 +443,9 @@ ideas = {
 
         sl_laissez_faire = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -482,9 +482,9 @@ ideas = {
 
         sl_interventionism = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -501,9 +501,9 @@ ideas = {
 
         sl_market_socialism = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -528,9 +528,9 @@ ideas = {
 
         sl_planned_economy = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -565,9 +565,9 @@ ideas = {
 
         sl_no_taxation = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -580,9 +580,9 @@ ideas = {
 
         sl_high_income_taxation = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -599,9 +599,9 @@ ideas = {
 
         sl_flat_taxation = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -612,9 +612,9 @@ ideas = {
 
         sl_low_income_taxation = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -629,9 +629,9 @@ ideas = {
 
         sl_tax_exemptions = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -645,9 +645,9 @@ ideas = {
 
         sl_tax_haven = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -665,9 +665,9 @@ ideas = {
 
         sl_free_trade_tariffs = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -682,9 +682,9 @@ ideas = {
 
         sl_low_tariffs = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -699,9 +699,9 @@ ideas = {
 
         sl_strategic_tariffs = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -712,9 +712,9 @@ ideas = {
 
         sl_protectionist_tariffs = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -729,9 +729,9 @@ ideas = {
 
         sl_high_tariffs = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -751,9 +751,9 @@ ideas = {
 
         sl_illegal_unions = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -773,9 +773,9 @@ ideas = {
 
         sl_state_controlled_unions = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -795,9 +795,9 @@ ideas = {
 
         sl_non_socialist_unions = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -815,9 +815,9 @@ ideas = {
 
         sl_allowed_unions = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -840,9 +840,9 @@ ideas = {
 
         sl_eight_hour_workday = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -858,9 +858,9 @@ ideas = {
 
         sl_twelve_hour_workday = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 
@@ -872,9 +872,9 @@ ideas = {
         
         sl_fourteen_hour_workday = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -889,9 +889,9 @@ ideas = {
 
         sl_eighteen_hour_workday = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
             modifier = {
@@ -906,9 +906,9 @@ ideas = {
 
         sl_no_work_hour_limits = {
             allowed_to_remove = {
-                always = no
                 custom_trigger_tooltip = {
                     tooltip = sl_cant_remove_tt
+					always = no
                 }
             }
 

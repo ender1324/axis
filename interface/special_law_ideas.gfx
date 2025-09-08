@@ -49,6 +49,20 @@ spriteTypes = {
 		texturefile = "gfx/ideas/special_laws/government_structure/sl_press_freedom/sl_state_press.dds"
 	}
 
+	# Religion Stance
+	spriteType = {
+		name = "GFX_idea_sl_state_religion"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_religion_stance/sl_state_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_secularism"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_religion_stance/sl_secularism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sl_state_atheism"
+		texturefile = "gfx/ideas/special_laws/government_structure/sl_religion_stance/sl_state_atheism.dds"
+	}
+
 	# Minority rights
 	spriteType = {
 		name = "GFX_idea_sl_minorities_state_protection"
