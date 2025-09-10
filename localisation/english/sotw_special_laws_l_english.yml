@@ -47,6 +47,7 @@
  sl_economic_system: "Economic System"
  sl_rentier_economy: "Rentier Economy"
  sl_laissez_faire: "Laissez Faire"
+ sl_laissez_faire_tt: "Enables a free market system which builds factories, offices, dockyards and power plants autonomously. However, you will suffer from a huge reduction of factories you can use and will not be able to build factories yourself efficiently. Having low infrastructure will slow down autonomous construction significantly."
  sl_interventionism: "Dirigisme"
  sl_market_socialism: "Market Socialism"
  sl_planned_economy: "Planned Economy"
