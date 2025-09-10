@@ -38,7 +38,7 @@ add_ideas = {
 	# Military Structure
 	sl_military_spending2
 	# Secondary Leaders
-	#GER_SL_adolf_hitler_idea
+	BUL_SL_boris_idea
 }
 
 set_popularities = {
@@ -56,5 +56,8 @@ set_popularities = {
 	national_socialism = 5
 	occultism = 0
 }
+
+recruit_character = BUL_Dimitr_Gichev
+recruit_character = BUL_Boris_III
 
 set_convoys = 112

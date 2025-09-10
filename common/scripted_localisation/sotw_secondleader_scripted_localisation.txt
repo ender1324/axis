@@ -38,6 +38,7 @@ defined_text = {
 				tag = NOR
 				tag = ENG
 				tag = VIN
+				tag = BUL
 				tag = ROM
 				tag = AZH
 			}
@@ -86,6 +87,7 @@ defined_text = {
 				tag = FER
 				tag = VIN
 				tag = CAM
+				tag = BUL
 			}
 		}
 		localization_key = SL_status_king
@@ -177,6 +179,11 @@ defined_text = {
 		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
 		localization_key = GFX_portrait_FRA_Jean_Louis_Tixier_Vignancour
 	}
+	# Bulgaria
+	text = {
+		trigger = { has_idea = BUL_SL_boris_idea }
+		localization_key = GFX_portrait_Boris_III
+	}
 	# Romania
 	text = {
 		trigger = { has_idea = ROM_SL_Ion_Antonescu_idea }
@@ -262,6 +269,11 @@ defined_text = {
 		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
 		localization_key = SL_name_Jean_Louis_Tixier_Vignancour
 	}
+	# Bulgaria
+	text = {
+		trigger = { has_idea = BUL_SL_boris_idea }
+		localization_key = SL_name_Boris_III
+	}
 	# Romania
 	text = {
 		trigger = { has_idea = ROM_SL_Ion_Antonescu_idea }
@@ -310,6 +322,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = ENG_SL_Edward_VIII_idea }  
 		localization_key = SL_name_with_trait_Edward_VIII    
+	}
+	# Bulgaria
+	text = {
+		trigger = { has_idea = BUL_SL_boris_idea }
+		localization_key = SL_name_with_trait_Boris_III
 	}
 	# Vietnam
 	text = {
@@ -400,6 +417,11 @@ defined_text = {
 		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
 		localization_key = SL_diplomacy_name_with_trait_Jean_Louis_Tixier_Vignancour
 	}
+	# Bulgaria
+	text = {
+		trigger = { has_idea = BUL_SL_boris_idea }
+		localization_key = SL_diplomacy_name_with_trait_Boris_III
+	}
 	# Romania
 	text = {
 		trigger = { has_idea = ROM_SL_Ion_Antonescu_idea }
@@ -468,6 +490,11 @@ defined_text = {
 	text = {
 		trigger = { has_idea = FRA_SL_Jean_Louis_Tixier_Vignancour_idea }
 		localization_key = SL_desc_Jean_Louis_Tixier_Vignancour
+	}
+	# Bulgaria
+	text = {
+		trigger = { has_idea = BUL_SL_boris_idea }
+		localization_key = SL_desc_Boris_III
 	}
 	# Romania
 	text = {

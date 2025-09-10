@@ -122,6 +122,20 @@ ideas = {
 
 			traits = { popular_figurehead2 }
 		}
+		# Bulgaria [BUL]
+		BUL_SL_boris_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			traits = { tsar_unifier }
+		}
 		# Vietnam
 		VIN_SL_Bao_Dai_idea = {
 			allowed = {

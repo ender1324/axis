@@ -1,0 +1,36 @@
+characters = {
+	BUL_Dimitr_Gichev = {
+		name = BUL_dimitr_gichev
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Dimitr_Gichev"
+			}
+		}
+
+		country_leader = {
+			desc = BUL_dimitr_gichev_desc
+			ideology = conservatism_subtype
+			expire = 1999.1.1
+			traits = {
+			}
+		}
+	}
+
+	BUL_Boris_III = {
+		name = BUL_boris_iii
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Boris_III"
+			}
+		}
+
+		country_leader = {
+			desc = BUL_boris_iii_desc
+			ideology = despotism_subtype
+			expire = 1999.1.1
+			traits = {
+				tsar_unifier
+			}
+		}
+	}
+}

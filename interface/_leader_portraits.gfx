@@ -114,7 +114,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_TCS_Lavrenty_Beria"
 		textureFile = "gfx/leaders/TCS/Portrait_TCS_Lavrenty_Beria.dds"
-	}	
+	}
+
+	# Bulgaria
+	spriteType = {
+		name = "GFX_portrait_Boris_III"
+		textureFile = "gfx/leaders/BUL/Portrait_Boris_III.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Dimitr_Gichev"
+		textureFile = "gfx/leaders/BUL/Portrait_Dimitr_Gichev.dds"
+	}
 
 	# General Russian Portraits
 	spriteType = {

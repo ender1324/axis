@@ -179,6 +179,12 @@
  ## Romania ###
  ##########################
  ROM_Horia_Sima: "Horia Sima"
+
+ #########################
+ ###     Bulgaria      ###
+ #########################
+ BUL_dimitr_gichev: "Dimitar Gichev"
+ BUL_dimitr_gichev_desc: "Born in 1883 near Plovdiv, Bulgaria, Gichev was born into an agrarian family, studying Christian theology in Sofia. During World War I, he served as a soldier in the army, later being court-martialled for anti-war activities. \n\nAfter the war, he joined the Bulgarian Agrarian National Union, becoming a prominent figure in the party. In 1920, he was elected as a regional governor of Plovdiv, but was later arrested and imprisoned for his opposition to the government. Following his release, he became a leading figure in the Bulgarian Agrarian National Union, a conservative democratic party. In 1936, he joined the German opposition group called \"Petorkata\" (The Five), which served as a legal opposition to the royal dictatorship. Amidst World War 2, he was appointed as the minister in 1944, but was later arrested and imprisoned for his opposition to the afterwar pro-German government.\n\nThe end of German influence in Bulgaria and the fall of the pro-German government led to a power vacuum, which Gichev sought to fill. With the support of the Agrarian Union and the Bulgarian Orthodox Church, he was able to rally support for his cause. In 1947, he was elected as the Prime Minister of Bulgaria, leading a coalition government that included the Agrarian Union and other conservative parties. He was re-elected in 1951 with a complete majority.\n\nAs Prime Minister, Gichev supported a healthy democratic system, promoting an agrarian economy and continuing the Bulgarisation policy on the newly conquered lands while carefully managing diplomatic relations with Greece and Turkey. Now, nearing the end of his term, Gichev has done his best to keep Bulgaria stable and prosperous, but the future remains uncertain as the world around him continues to change rapidly.§!"
  ##ANR
  ANR_Anarchy_Siberia: "Anarchy"
   ################################

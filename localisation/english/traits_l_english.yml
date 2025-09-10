@@ -56,7 +56,7 @@
  spirit_of_genghis:0 "Spirit Of Genghis"
  indomitable_perseverance:1 "Indomitable Perseverance"
  anti_communist:0 "Anti-Communist"
- anti_nazi_crusader:0 "Anti National-Socialist Crusader"
+ anti_nazi_crusader:0 "Anti German Crusader"
  fascist_sympathies:0 "Fascist Sympathies"
  appeaser:0 "Humble Appeaser"
  anti_communist_crusader:0 "Anti-Communist Crusader"
@@ -83,6 +83,7 @@
  forer_denmark: "Fører of Dänemark"
  country_traitor_norway: "Landsforræder"
  last_soldier_standing: "Last Solder Standing"
+ tsar_unifier: "Tsar Unifier"
 
  #### IDK
  SEAWOLF_TRIGGER_TT:0 "More than 80% submarines in fleet"

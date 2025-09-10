@@ -550,7 +550,7 @@ leader_traits = {
 		targeted_modifier = {
 			tag = FER
 			attack_bonus_against = 0.1
-			defense_bonus_against = 0.01
+			defense_bonus_against = 0.05
 		}
 	}
 	returning_emir = {
@@ -595,6 +595,11 @@ leader_traits = {
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.05
 		}
+	}
+	tsar_unifier = {
+		random = no
+		stability_factor = 0.05
+		conscription_factor = 0.05
 	}
 	### IDEA TRAITS ###
 
