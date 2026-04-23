@@ -1,5 +1,5 @@
 war_exhaustion_category = {
-	priority = 9999
+	priority = 999
 	
 	icon = SOV_propaganda
 

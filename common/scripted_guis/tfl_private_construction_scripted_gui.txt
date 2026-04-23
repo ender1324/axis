@@ -1,0 +1,22 @@
+scripted_gui = {
+	tfl_private_construction_queue = {
+		context_type = decision_category
+		window_name = "tfl_private_construction_queue"
+
+		visible = { always = yes }
+
+		dynamic_lists = {
+			tfl_private_construction_queue_grid = {
+				array = tfl_private_construction_queue
+
+				value = v
+
+				index = i
+
+				change_scope = no
+
+				entry_container = "tfl_private_construction_queue_entry"
+			}
+		}
+	}
+}

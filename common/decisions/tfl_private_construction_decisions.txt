@@ -1,0 +1,177 @@
+private_construction_category = {
+	# Build using all the available investment pool
+	build_all_available_investment = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_country_flag = tfl_private_construction_allowed
+		}
+
+		cost = 0
+		priority = 10
+
+		days_re_enable = 7
+
+		complete_effect = {
+			build_all_private_construction = yes
+		}
+	}
+
+	# Ongoing construction projects
+	ongoing_private_construction_0 = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = tfl_private_construction_allowed }
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = tfl_private_construction_ongoing_0_days
+		is_good = yes
+		#selectable_mission = yes
+		fixed_random_seed = no
+
+		highlight_states = {
+   			highlight_state_targets = {
+        		state = tfl_private_construction_ongoing_0_state
+    		}
+		}
+
+		timeout_effect = {
+			if = {
+				limit = { has_variable = tfl_private_construction_ongoing_0 }
+				var:tfl_private_construction_ongoing_0_state = {
+					meta_effect = {
+						text = {
+							build_[building]_private_construction = yes
+						}
+						building = "[?ROOT.tfl_private_construction_ongoing_0]"
+					}
+				}
+				clear_variable = tfl_private_construction_ongoing_0
+				clear_variable = tfl_private_construction_ongoing_0_days
+				clear_variable = tfl_private_construction_ongoing_0_state
+				clear_variable = tfl_private_construction_ongoing_0_base
+				clear_variable = tfl_private_construction_ongoing_0_random
+				clear_variable = tfl_private_construction_ongoing_0_infra
+			} else = {
+				custom_effect_tooltip = private_construction_mission_not_set_tt
+			}
+		}
+	}
+
+	ongoing_private_construction_1 = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = tfl_private_construction_allowed }
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = tfl_private_construction_ongoing_1_days
+		is_good = yes
+		#selectable_mission = yes
+		fixed_random_seed = no
+
+		highlight_states = {
+   			highlight_state_targets = {
+        		state = tfl_private_construction_ongoing_1_state
+    		}
+		}
+
+		timeout_effect = {
+			if = {
+				limit = { has_variable = tfl_private_construction_ongoing_1 }
+				var:tfl_private_construction_ongoing_1_state = {
+					meta_effect = {
+						text = {
+							build_[building]_private_construction = yes
+						}
+						building = "[?ROOT.tfl_private_construction_ongoing_1]"
+					}
+				}
+				clear_variable = tfl_private_construction_ongoing_1
+				clear_variable = tfl_private_construction_ongoing_1_days
+				clear_variable = tfl_private_construction_ongoing_1_state
+				clear_variable = tfl_private_construction_ongoing_1_base
+				clear_variable = tfl_private_construction_ongoing_1_random
+				clear_variable = tfl_private_construction_ongoing_1_infra
+			} else = {
+				custom_effect_tooltip = private_construction_mission_not_set_tt
+			}
+		}
+	}
+
+	ongoing_private_construction_2 = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			NOT = { has_country_flag = tfl_private_construction_allowed }
+		}
+
+		activation = {
+			always = no
+		}
+
+		days_mission_timeout = tfl_private_construction_ongoing_2_days
+		is_good = yes
+		#selectable_mission = yes
+		fixed_random_seed = no
+
+		highlight_states = {
+   			highlight_state_targets = {
+        		state = tfl_private_construction_ongoing_2_state
+    		}
+		}
+
+		timeout_effect = {
+			if = {
+				limit = { has_variable = tfl_private_construction_ongoing_2 }
+				var:tfl_private_construction_ongoing_2_state = {
+					meta_effect = {
+						text = {
+							build_[building]_private_construction = yes
+						}
+						building = "[?ROOT.tfl_private_construction_ongoing_2]"
+					}
+				}
+				clear_variable = tfl_private_construction_ongoing_2
+				clear_variable = tfl_private_construction_ongoing_2_days
+				clear_variable = tfl_private_construction_ongoing_2_state
+				clear_variable = tfl_private_construction_ongoing_2_base
+				clear_variable = tfl_private_construction_ongoing_2_random
+				clear_variable = tfl_private_construction_ongoing_2_infra
+			} else = {
+				custom_effect_tooltip = private_construction_mission_not_set_tt
+			}
+		}
+	}
+
+	
+}

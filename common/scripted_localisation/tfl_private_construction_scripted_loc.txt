@@ -1,0 +1,1397 @@
+defined_text = {
+	name = "get1BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_industrial_complex"
+	}
+}
+
+defined_text = {
+	name = "get2BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_arms_factory"
+	}
+}
+
+defined_text = {
+	name = "get3BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_dockyard"
+	}
+}
+
+defined_text = {
+	name = "get4BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_offices"
+	}
+}
+
+defined_text = {
+	name = "get5BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_agriculture_district"
+	}
+}
+
+defined_text = {
+	name = "get6BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_fossil_powerplant"
+	}
+}
+
+defined_text = {
+	name = "get7BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_nuclear_reactor"
+	}
+}
+
+defined_text = {
+	name = "get8BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_synthetic_refinery"
+	}
+}
+
+defined_text = {
+	name = "get9BuildingLoc"
+	text = {
+		localization_key = "tfl_pc_infrastructure"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_0"
+	text = {
+		trigger = { 
+			check_variable = { tfl_private_construction_ongoing_0 = 1 }
+		}
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_0 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_0_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_1"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+		text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_1 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_1_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_2"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_2 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_2_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_3"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_3 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_3_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_4"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_4 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_4_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_5"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_5 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_5_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_6"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_6 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_6_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_7"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_7 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_7_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_8"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_8 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_8_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_9"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_9 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_9_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_10"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_10 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_10_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_11"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_11 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_11_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_12"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_12 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_12_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_13"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_13 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_13_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_14"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_14 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_14_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_15"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_15 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_15_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_16"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_16 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_16_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_17"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_17 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_17_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_18"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_18 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_18_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_19"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_19 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_19_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_20"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_20 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_20_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_21"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_21 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_21_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_22"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_22 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_22_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_23"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_23 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_23_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_24"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_24 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_24_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_25"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_25 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_25_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_26"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_26 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_26_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_27"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_27 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_27_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_28"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_28 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_28_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_29"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_29 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_29_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}
+
+defined_text = {
+	name = "private_construction_mission_30"
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 1 } }
+		localization_key = "[get1BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 2 } }
+		localization_key = "[get2BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 3 } }
+		localization_key = "[get3BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 4 } }
+		localization_key = "[get4BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 5 } }
+		localization_key = "[get5BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 6 } }
+		localization_key = "[get6BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 7 } }
+		localization_key = "[get7BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 8 } }
+		localization_key = "[get8BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { tfl_private_construction_ongoing_30 = 9 } }
+		localization_key = "[get9BuildingLoc] Contruction in [?tfl_private_construction_ongoing_30_state.GetName]"
+	}
+	text = {
+		localization_key = "Completed!"
+	}
+}

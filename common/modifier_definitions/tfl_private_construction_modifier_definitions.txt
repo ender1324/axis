@@ -1,0 +1,62 @@
+pc_industrial_complex_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_military_factory_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_dockyard_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_agriculture_district_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_fossil_powerplant_plant_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_nuclear_reactor_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_synthetic_refinery_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_infrastructure_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+pc_offices_efficiency = {
+	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}

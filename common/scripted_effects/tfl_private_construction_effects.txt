@@ -1,0 +1,434 @@
+# The Fading Light - Private Construction Effects
+# Inspired by the Victoria 3 Private Investment Pool mechanic
+# Written by Ender1324
+# Private Construction >>BASE<< Time needed for all buildings
+@minimum_construction_needed = 8
+# 0 - Empty/Placeholder Slot
+@pc_empty_time = 2
+# 1 - Civilian Factory (18 weeks default, 126 days)
+@pc_industrial_complex_time = 18
+# 2 - Military Factory (12 weeks default, 84 days)
+@pc_arms_factory_time = 12
+# 3 - Dockyard (12 weeks default, 84 days)
+@pc_dockyard_time = 12
+# 4 - Agriculture District (10 weeks default, 70 days)
+@pc_agriculture_district_time = 10
+# 5 - Fossil Fuel Power Plant (8 weeks default, 56 days)
+@pc_fossil_powerplant_time = 8
+# 6 - Nuclear Reactor (18 weeks default, 126 days)
+@pc_nuclear_reactor_time = 18
+# 7 - Renewable Energy Power Plant (10 weeks default, 70 days)
+@pc_synthetic_refinery_time = 10
+# 8 - Infrastructure (10 weeks default, 70 days)
+@pc_infrastructure_time = 10
+# 9 - Offices (20 weeks default, 140 days)
+@pc_offices_time = 20
+setup_private_construction = {
+	# 1 CP = 1 WEEK OF BASE CONTRUCTION
+	set_variable = { tfl_private_construction_points = 0 }
+	clear_array = tfl_private_construction_queue
+	add_to_array = {
+		array = tfl_private_construction_queue
+		value = 1
+	}
+	# Ready to go
+	set_country_flag = tfl_private_construction_allowed
+}
+
+update_private_construction_cycle = {
+	# EFFICIENCY - HOW MANY EXTRA FACTORIES WILL BE BUILT PER ONE ONGOING INVESTMENT
+	# Civilian Factory
+	set_variable = { tfl_private_construction_efficiency_1 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_1 = modifier@pc_industrial_complex_efficiency }
+	# Military Factory
+	set_variable = { tfl_private_construction_efficiency_2 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_2 = modifier@pc_military_factory_efficiency }
+	# Dockyard
+	set_variable = { tfl_private_construction_efficiency_3 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_3 = modifier@pc_dockyard_efficiency }
+	# Agriculture District
+	set_variable = { tfl_private_construction_efficiency_4 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_4 = modifier@pc_agriculture_district_efficiency }
+	# Fossil Fuel Power Plant
+	set_variable = { tfl_private_construction_efficiency_5 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_5 = modifier@pc_fossil_powerplant_plant_efficiency }
+	# Nuclear Reactor
+	set_variable = { tfl_private_construction_efficiency_6 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_6 = modifier@pc_nuclear_reactor_efficiency }
+	# Renewable Energy Power Plant
+	set_variable = { tfl_private_construction_efficiency_7 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_7 = modifier@pc_synthetic_refinery_efficiency }
+	# Infrastructure
+	set_variable = { tfl_private_construction_efficiency_8 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_8 = modifier@pc_infrastructure_efficiency }
+	# Offices
+	set_variable = { tfl_private_construction_efficiency_9 = 1 }
+	add_to_variable = { tfl_private_construction_efficiency_9 = modifier@pc_offices_efficiency }
+
+	# Determine how many construction points are going to be given to the player per week
+	set_temp_variable = { construction_points_to_add = 0 }
+	if = {
+		limit = { num_of_factories < 15 }
+		add_to_temp_variable = { construction_points_to_add = @minimum_construction_needed }
+	} else_if = {
+		limit = { num_of_factories < 30 }
+		add_to_temp_variable = { construction_points_to_add = 12 }
+	} else_if = {
+		limit = { num_of_factories < 60 }
+		add_to_temp_variable = { construction_points_to_add = 24 }
+	} else_if = {
+		limit = { num_of_factories < 120 }
+		add_to_temp_variable = { construction_points_to_add = 48 }
+	} else_if = {
+		limit = { num_of_factories <= 240 }
+		add_to_temp_variable = { construction_points_to_add = 96 }
+	} else_if = {
+		limit = { num_of_factories > 240 }
+		add_to_temp_variable = { construction_points_to_add = 126 }
+	}
+}
+
+build_all_private_construction = {
+	if = {
+		limit = { has_country_flag = tfl_private_construction_allowed }
+		set_temp_variable = { pc_amount_built = -1 } # -1 because arrays are 0-indexed
+		for_each_loop = {
+			array = tfl_private_construction_queue
+			value = val
+			index = i
+			break = stop_building
+
+			# CP - Construction points are equal to the base weeks needed to build the according building
+			# Because we want to spend all private construction, we will loop until we spend all construction points
+			# Start going through the queue
+			# and adding the buildings to the ongoing missions
+
+			# Civilian Industry
+			if = { limit = { check_variable = { val = 1 } }
+				# Check if we have enough construction points to continue
+				if = {
+					limit = { check_variable = { tfl_private_construction_points < @pc_industrial_complex_time } }
+					# Abort construction
+					if = { limit = { check_variable = { i = 0 } } country_event = tfl_pc.1 }
+					set_temp_variable = { stop_building = 1 }
+				} else_if = { limit = { has_variable = tfl_private_construction_ongoing_30 }
+					set_temp_variable = { stop_building = 1 } country_event = tfl_pc.2
+				} else = {
+					# Secondly we need to see which state are investors going in build in
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > ROOT.tfl_private_construction_efficiency_1
+								include_locked = no
+							}
+							OR = {
+								# Investors prefer secure, populated and already well developed states
+								AND = {
+									is_in_home_area = yes
+									count_triggers = {
+										amount = 2
+										is_capital = yes # Assumed to be the central industrial hub
+										AND = { state_population_k > 100 infrastructure > 5 } # Good prospects
+										industrial_complex > 5 # Industrial hub already
+									}
+								}
+								# Fallback
+								is_in_home_area = yes
+							}
+						}
+						owner = { set_variable = { tfl_pc_ongoing_state = PREV } }
+					}
+
+					# We have the state, we are sure we have enough construction points to continue
+					subtract_from_variable = { tfl_private_construction_points = @pc_industrial_complex_time }
+					# Loop through the missions to find a free slot
+					set_temp_variable = { ongoing_queue_inserter = 0 }
+					while_loop_effect = {
+						limit = { check_variable = { var = ongoing_queue_inserter value = 30 compare = less_than_or_equals } } # index < or = last mission
+						break = stop_searching
+
+						if = {
+							limit = {
+								# Check if the mission is occupied, if its not, GO
+								meta_trigger = {
+									text = {
+										NOT = { has_active_mission = ongoing_private_construction_[index] }
+									}
+									index = "[?ongoing_queue_inserter]"
+								}
+							}
+
+							set_temp_variable = { base_building_days = @pc_industrial_complex_time } # in weeks rn
+							multiply_temp_variable = { base_building_days = 7 } # now its days
+
+							# Finalized, set the variables, enable the missions
+							meta_effect = {
+								text = {
+									set_temp_variable = { actual_base_building_days = base_building_days }
+									set_temp_variable = { infrastructure_building_day_modifier = [state_id].infrastructure_level }
+									divide_temp_variable = { infrastructure_building_day_modifier = 10 } # 1 -> 0.1 | 5 - > 0.5 | 10 -> 1
+									add_to_temp_variable = { infrastructure_building_day_modifier = 0.5 } # 0.1 -> 0.6 | 0.5 -> 1 | 1 -> 1.5 
+									divide_temp_variable = { base_building_days = infrastructure_building_day_modifier } # Depending on infra we slow down or speedup
+									round_temp_variable = base_building_days # just in case
+
+									set_variable = { tfl_private_construction_ongoing_[index]_base = actual_base_building_days }
+									# Now the random factor which will make some projects faster, others slower
+									set_variable_to_random = {
+										var = tfl_private_construction_ongoing_[index]_random
+										min = -40
+										max = 60
+										integer = yes
+									}
+									set_variable = { tfl_private_construction_ongoing_[index]_infra = infrastructure_building_day_modifier }
+									set_variable = { tfl_private_construction_ongoing_[index] = 1 } # 1 = civilian factory
+									set_variable = { tfl_private_construction_ongoing_[index]_state = [state_id] }
+									set_variable = { tfl_private_construction_ongoing_[index]_days = base_building_days }
+									add_to_variable = { tfl_private_construction_ongoing_[index]_days = tfl_private_construction_ongoing_[index]_random }
+									activate_mission = ongoing_private_construction_[index]
+								}
+								index = "[?ongoing_queue_inserter]"
+								state_id = "[?tfl_pc_ongoing_state.GetID]"
+							}
+							# For the cleanup after the loop
+							add_to_temp_variable = { pc_amount_built = 1 }
+							set_temp_variable = { stop_searching = 1 } # We don't need to search anymore, we've started building what we need to
+						} else = {
+							# All of the queue is used up, stop trying to build more
+							if = { limit = { has_active_mission = ongoing_private_construction_30 } set_temp_variable = { stop_building = 1 } set_temp_variable = { stop_searching = 1 } country_event = tfl_pc.2 }
+						}
+						add_to_temp_variable = { ongoing_queue_inserter = 1 } # index++
+					}
+					# Cleanup
+					clear_variable = tfl_pc_ongoing_state
+				}
+			} else_if = { limit = { check_variable = { val = 2 } }
+				# Check if we have enough construction points to continue
+				if = {
+					limit = { check_variable = { tfl_private_construction_points < @pc_arms_factory_time } }
+					# Abort construction
+					if = { limit = { check_variable = { i = 0 } } country_event = tfl_pc.1 }
+					set_temp_variable = { stop_building = 1 }
+				} else_if = { limit = { has_variable = tfl_private_construction_ongoing_30 }
+					set_temp_variable = { stop_building = 1 } country_event = tfl_pc.2
+				} else = {
+					# Secondly we need to see which state are investors going in build in
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > ROOT.tfl_private_construction_efficiency_2
+								include_locked = no
+							}
+							OR = {
+								# Investors prefer secure, populated and already well developed states
+								AND = {
+									is_in_home_area = yes
+									count_triggers = {
+										amount = 2
+										is_capital = yes # Assumed to be the central industrial hub
+										AND = { state_population_k > 100 infrastructure > 5 } # Good prospects
+										arms_factory > 5 # Industrial hub already
+									}
+								}
+								# Fallback
+								is_in_home_area = yes
+							}
+						}
+						owner = { set_variable = { tfl_pc_ongoing_state = PREV } }
+					}
+
+					# We have the state, we are sure we have enough construction points to continue
+					subtract_from_variable = { tfl_private_construction_points = @pc_arms_factory_time }
+					# Loop through the missions to find a free slot
+					set_temp_variable = { ongoing_queue_inserter = 0 }
+					while_loop_effect = {
+						limit = { check_variable = { var = ongoing_queue_inserter value = 30 compare = less_than_or_equals } } # index < or = last mission
+						break = stop_searching
+
+						if = {
+							limit = {
+								# Check if the mission is occupied, if its not, GO
+								meta_trigger = {
+									text = {
+										NOT = { has_active_mission = ongoing_private_construction_[index] }
+									}
+									index = "[?ongoing_queue_inserter]"
+								}
+							}
+
+							set_temp_variable = { base_building_days = @pc_arms_factory_time } # in weeks rn
+							multiply_temp_variable = { base_building_days = 7 } # now its days
+
+							# Finalized, set the variables, enable the missions
+							meta_effect = {
+								text = {
+									set_temp_variable = { actual_base_building_days = base_building_days }
+									set_temp_variable = { infrastructure_building_day_modifier = [state_id].infrastructure_level }
+									divide_temp_variable = { infrastructure_building_day_modifier = 10 } # 1 -> 0.1 | 5 - > 0.5 | 10 -> 1
+									add_to_temp_variable = { infrastructure_building_day_modifier = 0.5 } # 0.1 -> 0.6 | 0.5 -> 1 | 1 -> 1.5 
+									divide_temp_variable = { base_building_days = infrastructure_building_day_modifier } # Depending on infra we slow down or speedup
+									round_temp_variable = base_building_days # just in case
+
+									set_variable = { tfl_private_construction_ongoing_[index]_base = actual_base_building_days }
+									# Now the random factor which will make some projects faster, others slower
+									set_variable_to_random = {
+										var = tfl_private_construction_ongoing_[index]_random
+										min = -40
+										max = 60
+										integer = yes
+									}
+									set_variable = { tfl_private_construction_ongoing_[index]_infra = infrastructure_building_day_modifier }
+									set_variable = { tfl_private_construction_ongoing_[index] = 2 } # 2 = arms factory
+									set_variable = { tfl_private_construction_ongoing_[index]_state = [state_id] }
+									set_variable = { tfl_private_construction_ongoing_[index]_days = base_building_days }
+									add_to_variable = { tfl_private_construction_ongoing_[index]_days = tfl_private_construction_ongoing_[index]_random }
+									activate_mission = ongoing_private_construction_[index]
+								}
+								index = "[?ongoing_queue_inserter]"
+								state_id = "[?tfl_pc_ongoing_state.GetID]"
+							}
+							# For the cleanup after the loop
+							add_to_temp_variable = { pc_amount_built = 1 }
+							set_temp_variable = { stop_searching = 1 } # We don't need to search anymore, we've started building what we need to
+						} else = {
+							# All of the queue is used up, stop trying to build more
+							if = { limit = { has_active_mission = ongoing_private_construction_30 } set_temp_variable = { stop_building = 1 } set_temp_variable = { stop_searching = 1 } country_event = tfl_pc.2 }
+						}
+						add_to_temp_variable = { ongoing_queue_inserter = 1 } # index++
+					}
+					# Cleanup
+					clear_variable = tfl_pc_ongoing_state
+				}
+			}
+
+			if = { limit = { check_variable = { i = 0 } has_country_flag = tfl_pc_build_one } 
+				clr_country_flag = tfl_pc_build_one
+				set_temp_variable = { stop_building = 1 }
+			}
+		}
+		# Now we need to remove the ongoing construction from the queue
+		set_temp_variable = { queue_remover_index = 0 }
+		while_loop_effect = {
+			limit = { check_variable = { var = queue_remover_index value = pc_amount_built compare = less_than_or_equals } } # index < or = amount to build
+			# remove the buildings we just transfered to ongoing from the queue
+			remove_from_array = {
+				array = tfl_private_construction_queue
+				index = 0 # because the array pushes the rest of the queue forward when index 0 is removed
+			}
+			add_to_temp_variable = { queue_remover_index = 1 } # index++
+		}
+		clear_variable = queue_remover_index
+		clear_variable = tfl_private_construction_amount_to_build
+		clear_variable = stop_building
+		clear_variable = stop_searching
+	}
+}
+
+# Industrial Complex (Civilian Factory)
+build_1_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_1 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = industrial_complex
+			level = ROOT.tfl_private_construction_efficiency_1
+			instant_build = yes
+		}
+}
+
+# Arms Factory (Military Factory)
+build_2_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_2 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = arms_factory
+			level = ROOT.tfl_private_construction_efficiency_2
+			instant_build = yes
+		}
+}
+
+# Dockyard
+build_3_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_3 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = dockyard
+			level = ROOT.tfl_private_construction_efficiency_3
+			instant_build = yes
+		}
+}
+
+# Agriculture District
+build_4_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_4 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = agriculture_district
+			level = ROOT.tfl_private_construction_efficiency_4
+			instant_build = yes
+		}
+}
+
+# Fossil Fuel Power Plant
+build_5_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_5 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = fossil_powerplant
+			level = ROOT.tfl_private_construction_efficiency_5
+			instant_build = yes
+		}
+}
+
+# Nuclear Reactor
+build_6_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_6 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = nuclear_reactor
+			level = ROOT.tfl_private_construction_efficiency_6
+			instant_build = yes
+		}
+}
+
+# Synthetic Refinery (Renewable Energy Power Plant)
+build_7_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_7 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = synthetic_refinery
+			level = ROOT.tfl_private_construction_efficiency_7
+			instant_build = yes
+		}
+}
+
+# Infrastructure
+build_8_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_8 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = infrastructure
+			level = ROOT.tfl_private_construction_efficiency_8
+			instant_build = yes
+		}
+}
+
+# Offices
+build_9_private_construction = {
+		set_temp_variable = { more_slots = 0 }
+		add_to_temp_variable = { more_slots = ROOT.tfl_private_construction_efficiency_9 }
+		add_extra_state_shared_building_slots = more_slots
+		add_building_construction = {
+			type = offices
+			level = ROOT.tfl_private_construction_efficiency_9
+			instant_build = yes
+		}
+}

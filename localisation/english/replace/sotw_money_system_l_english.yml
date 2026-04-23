@@ -560,3 +560,34 @@
  NET_MIGRATION_RATE_VALUE: "[?ROOT.net_immigration_rate|%+]"
  NET_MIGRATION_RATE_TT: "Current Net Migration Rate"
  NET_MIGRATION_RATE_TT_DELAYED: "Your nation's §YCurrent Net Migration Rate§! is the current amount of §YMigration§! within the country. It is modified by either national content or by adjusting your §YMigration Laws§!. The value is calculated as your §Ymaximum Migration Rate§! which is then multiplied by §YBase Net Migration Rate§! modified by your §YNet Migration Rate Value Factor§!\n\nLaw, Idea and Tech impact on §YBase Net Migration Rate§!: [?modifier@base_migration_rate_value|+%0]\nLaw, Idea and Tech impact on §YNet Migration Rate Value Factor§!: [?modifier@migration_rate_value_factor|+%0]"
+
+ ############################
+ ### PRIVATE CONSTRUCTION ###
+ ############################
+ no_building_construction_TT: "§RNo available slots for declared state. Will add to random state with free slots instead.§!"
+ private_construction_category: "Private Construction"
+ private_construction_category_desc: "§YPrivate Construction§! allows private sector investment into construction projects. Depending on your economy type, it allocates a portion of available factories to private construction, constructing buildings without direct government spending."
+ private_construction_ongoing_button_text: "Building: [?v] Time: [?private_construction_ongoing_[?i]:days_left|Y0]"
+ private_construction_mission_not_set_tt: "§YBuilding not set by the private construction system! Will not build anything.§!"
+ tfl_private_construction_allowed: "Private Construction Allowed"
+ # Building add events
+ tfl_pc.1.t: "Not enough construction points to continue the queue."
+ tfl_pc.1.d: "You do not have enough construction points to continue building the queue. Wait until you have enough for the next building and retry building."
+ tfl_pc.1.a: "Thanks Keynes!"
+ tfl_pc.2.t: "Building Construction Queue is full!"
+ tfl_pc.2.d: "The ongoing construction queue is full. Nothing has been built for this cycle.\n\nTips to speed up existing private construction:\n- Improve infrastructure in industrial state\n- Build for factories manually to stack more buildings per cycle\n- Pray to the free market"
+ tfl_pc.2.a: "The project deadline was 3 months ago..."
+ # Decisions and Missions loc
+ ongoing_private_construction_0: "[private_construction_mission_0]"
+ ongoing_private_construction_0_desc: "Timer Modifiers Breakdown:\n\nBase Construction Speed: [?tfl_private_construction_ongoing_0_base|0Y] Days\nInfrastructure Construction Speed Modifier: [?tfl_private_construction_ongoing_0_infra|%W]\nAdditional Random Conditions: [?tfl_private_construction_ongoing_0_random|=-0] Days"
+ ongoing_private_construction_1: "[private_construction_mission_1]"
+ ongoing_private_construction_1_desc: "Timer Modifiers Breakdown:\n\nBase Construction Speed: [?tfl_private_construction_ongoing_1_base|0Y] Days\nInfrastructure Construction Speed Modifier: [?tfl_private_construction_ongoing_1_infra|%W]\nAdditional Random Conditions: [?tfl_private_construction_ongoing_1_random|=-0] Days"
+ tfl_pc_industrial_complex: "§Y$industrial_complex$§!"
+ tfl_pc_arms_factory: "§Y$arms_factory$§!"
+ tfl_pc_dockyard: "§Y$dockyard$§!"
+ tfl_pc_offices: "§Y$offices$§!"
+ tfl_pc_agriculture_district: "§Y$agriculture_district$§!"
+ tfl_pc_fossil_powerplant: "§Y$fossil_powerplant$§!"
+ tfl_pc_nuclear_reactor: "§Y$nuclear_reactor$§!"
+ tfl_pc_synthetic_refinery: "§Y$synthetic_refinery$§!"
+ tfl_pc_infrastructure: "§YInfrastructure§!"

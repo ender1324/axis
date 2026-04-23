@@ -1,0 +1,19 @@
+# Territory Reintegration Category
+territory_reintegration_category = {
+	priority = 5
+}
+# Private Construction Category
+private_construction_category = {
+	priority = 998
+	scripted_gui = tfl_private_construction_queue
+	visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+	available = {
+		always = yes
+	}
+	visible = {
+		has_country_flag = tfl_private_construction_allowed
+	}
+}

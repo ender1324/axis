@@ -1,0 +1,60 @@
+guiTypes = {
+	containerWindowType = {
+		name = "tfl_private_construction_queue"
+		size = { width = 512 height = 356 }
+		position = { x = 0 y = 0 }
+		#orientation = CENTER_UP
+		clipping = no
+
+		background = {
+			quadTextureSprite = "GFX_tiled_window_2px_border"
+		}
+
+		gridBoxType = {
+			name = "tfl_private_construction_queue_grid"
+			position = { x = 16 y = 24 }
+			size = { width = 260 height = 356 }
+			Orientation = upper_left
+			slotsize = {width = 260 height = 48 }
+			#the maximum horizontal gui elements
+			max_slots_horizontal = 1
+			#the maximum vertical gui elements
+			#max_slots_vertical = 1
+		}
+
+		containerWindowType = {
+			name = "tfl_private_construction_right_entries"
+			position = { x = 284 y = 18 }
+			orientation = UPPER_LEFT
+
+			instantTextBoxType = {
+				name = "tfl_private_construction_cp_title"
+				position = { x = 12 y = 12 }
+				text = "Construction Points:"
+			}
+
+			instantTextBoxType = {
+				name = "tfl_private_construction_cp_value"
+				position = { x = 156 y = 12 }
+				text = "[?tfl_private_construction_points|Y0]"
+				maxWidth = 32
+			}
+		}
+	}
+
+	# Queue entries
+	containerWindowType = {
+		name = "tfl_private_construction_queue_entry"
+		size = {width=261 height=34}
+		orientation = UPPER_LEFT
+			
+		buttonType = {
+			name ="tfl_private_construction_queue_button"
+			quadTextureSprite ="GFX_button_261x34"
+			position = { x=0 y=0 }
+			#This will write onto the button the value and index of the array
+			buttonText = "Building: [?v] Queue: [?i]"
+			buttonFont = "hoi_16mbs"
+		}
+	}
+}

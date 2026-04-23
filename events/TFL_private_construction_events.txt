@@ -1,0 +1,27 @@
+add_namespace = tfl_pc
+
+# Not enough construction points for any construction
+country_event = {
+	id = tfl_pc.1
+	title = tfl_pc.1.t
+	desc = tfl_pc.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfl_pc.1.a
+	}
+}
+
+# Counstruction ongoing is full
+country_event = {
+	id = tfl_pc.2
+	title = tfl_pc.2.t
+	desc = tfl_pc.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = tfl_pc.2.a
+	}
+}
